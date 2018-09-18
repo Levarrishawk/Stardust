@@ -5,8 +5,8 @@ jakku_black_trooper_1 = Creature:new {
 	faction = "sith_shadow",
 	level = 200,
 	chanceHit = 11.0,
-	damageMin = 1145,
-	damageMax = 2000,
+	damageMin = 545,
+	damageMax = 1000,
 	baseXp = 20000,
 	baseHAM = 149000,
 	baseHAMmax = 205000,
@@ -39,7 +39,7 @@ jakku_black_trooper_1 = Creature:new {
         {group = "crystal_infinity_white", chance = 150000},
         {group = "clothing_attachments", chance = 150000},
         {group = "armor_attachments", chance = 150000},        
-        {group = "nge_houses_all", chance = 6000000}
+        {group = "nge_housing_all", chance = 6000000}
 			}
 		}
 	},

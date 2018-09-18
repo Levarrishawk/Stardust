@@ -5,8 +5,8 @@ jakku_s_battle_droid = Creature:new {
 	faction = "",
 	level = 200,
 	chanceHit = 18,
-	damageMin = 1200,
-	damageMax = 2300,
+	damageMin = 600,
+	damageMax = 1100,
 	baseXp = 19000,
 	baseHAM = 230000,
 	baseHAMmax = 230000,
@@ -41,7 +41,7 @@ jakku_s_battle_droid = Creature:new {
         {group = "weapons_all", chance = 1050000},
         {group = "clothing_attachments", chance = 150000},
         {group = "armor_attachments", chance = 150000},
-        {group = "nge_houses_all", chance = 6000000}
+        {group = "nge_housing_all", chance = 6000000}
 			},
 			lootChance = 500000
 		}

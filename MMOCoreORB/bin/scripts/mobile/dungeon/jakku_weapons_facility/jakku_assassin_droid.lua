@@ -5,8 +5,8 @@ jakku_assassin_droid = Creature:new {
 	faction = "",
 	level = 100,
 	chanceHit = 10,
-	damageMin = 1645,
-	damageMax = 2000,
+	damageMin = 825,
+	damageMax = 1000,
 	baseXp = 9429,
 	baseHAM = 300000,
 	baseHAMmax = 300000,
@@ -39,7 +39,7 @@ jakku_assassin_droid = Creature:new {
         {group = "crystal_infinity_white", chance = 150000},
         {group = "clothing_attachments", chance = 150000},
         {group = "armor_attachments", chance = 150000},        
-        {group = "nge_houses_all", chance = 6000000}
+        {group = "nge_housing_all", chance = 6000000}
       }
     }
   },
