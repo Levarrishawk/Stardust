@@ -15,7 +15,7 @@ registerScreenPlay("hondo_send_teleporter", true) --Initialize the screenplay IA
 
 --Simply spawns the NPC
 function hondo_send_teleporter:start()
-   spawnMobile("naboo", "hondo_send_teleporter", 1, 0.2, -9.0, -19.7, 0, 1393884)  --disabled until jakku focus test is completed.
+  -- spawnMobile("naboo", "hondo_send_teleporter", 1, 0.2, -9.0, -19.7, 0, 1393884)  --disabled until jakku focus test is completed.
    
 
 end

@@ -692,13 +692,13 @@ includeFile("heroics/imperial_palace_onlooker.lua")
 includeFile("heroics/swoop_race_hutt.lua")
 
 
---[[
+
 -- Florrum hidden world.
 
 includeFile("cities/florrum_outpost.lua")
 includeFile("heroics/hondo_return_teleporter.lua")
 includeFile("heroics/hondo_send_teleporter.lua")
---]]
+
 -- Dromund Kaas
 
 includeFile("poi/kaas_abandon_separ_facility.lua")
