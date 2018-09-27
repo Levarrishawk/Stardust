@@ -154,6 +154,8 @@ void InterplanetarySurveyDroidSessionImplementation::handleMenuSelect(CreatureOb
 		this->targetPlanet = pl->getZoneServer()->getResourceManager()->getPlanetByIndex(chosen);
 		int duration = 1000 * (3600 - (27 * quality));
 		int minutes = duration/60000;
+//	TODO Change calculation here to make the cap on the duration to no more than 2 minutes.  - Lev 9/20/18
+
 
 		StringBuffer buffer;
 		buffer << "Droid sent, ETA for the report is ";
@@ -176,9 +178,10 @@ void InterplanetarySurveyDroidSessionImplementation::handleMenuSelect(CreatureOb
 
 		Reference<InterplanetarySurveyTask*> task = new InterplanetarySurveyTask(data.get());
 		task->schedule(duration); // remove the tools form the world
-
 		ObjectManager::instance()->persistObject(data, 1, "surveys");
 
+
+		//  TODO: Add check here to stop tool from being destroyed.   -- Lev 9/20/18
 		tool->destroyObjectFromWorld(true);
 		tool->destroyObjectFromDatabase(true);
 

@@ -931,7 +931,7 @@ int CombatManager::calculateDamageRange(TangibleObject* attacker, CreatureObject
 		}
 
 		if (damageMitigation > 0)
-			maxDamage = minDamage + (maxDamage - minDamage) * (0.2 * damageMitigation);
+			maxDamage = minDamage + (maxDamage - minDamage) * (1 - (0.2 * damageMitigation));
 	}
 
 	float range = maxDamage - minDamage;
