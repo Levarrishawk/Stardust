@@ -41,20 +41,20 @@
 --which carries forward this exception.
 
 --Determines how often exceptional and legendary items can drop.
-yellowChance = 1000 -- 1 in 1,000
-exceptionalChance = 100000 --1 in 100,000
-legendaryChance = 1000000 --1 in 1,000,000
+yellowChance = 100 -- 1 in 1,000
+exceptionalChance = 10000 --1 in 100,000
+legendaryChance = 50000 --1 in 1,000,000
 --yellowChance = 50 --1 in 50 for testing
 --exceptionalChance = 100 --1 in 100 for testing
 --legendaryChance = 1000 --1 in 1000 for testing
 
 --Determines how much of an increase in the base stats will be applied to the object.
-yellowModifier = 1.5
-exceptionalModifier = 2.5
-legendaryModifier = 5.0
+yellowModifier = 1.25
+exceptionalModifier = 2.0
+legendaryModifier = 3.0
 
 --The chance for random skill mods to be on looted weapons/wearables
-skillModChance = 500 -- 1 in 500
+skillModChance = 100 -- 1 in 500
 
 -- Value ranges for random dots on looted weapons (chance is set individually on the loot items)
 randomDotAttribute = {0, 8} -- See CreatureAttributes.h in src for numbers.
@@ -96,7 +96,7 @@ lootableArmorAttachmentStatMods = {
 	"intimidate_defense",
 	"keep_creature",
 	"knockdown_defense",
---	"melee_defense",
+	"melee_defense",
 	"onehandmelee_accuracy",
 	"onehandmelee_damage",
 	"onehandmelee_speed",
@@ -109,7 +109,7 @@ lootableArmorAttachmentStatMods = {
 	"polearm_speed",
 	"posture_change_down_defense",
 	"posture_change_up_defense",
---	"ranged_defense",
+	"ranged_defense",
 	"rescue",
 	"resistance_bleeding",
 	"resistance_disease",
@@ -202,10 +202,11 @@ lootableClothingAttachmentStatMods = {
 	"intimidate_defense",
 	"keep_creature",
 	"knockdown_defense",
+	"lightsaber_experimentation",
 	"medical_foraging",
 	"medicine_assembly",
 	"medicine_experimentation",
-	--"melee_defense",
+	"melee_defense",
 	"onehandmelee_accuracy",
 	"onehandmelee_damage",
 	"onehandmelee_speed",
@@ -218,7 +219,7 @@ lootableClothingAttachmentStatMods = {
 	"polearm_speed",
 	"posture_change_down_defense",
 	"posture_change_up_defense",
---	"ranged_defense",
+	"ranged_defense",
 	"rescue",
 	"resistance_bleeding",
 	"resistance_disease",
@@ -318,7 +319,7 @@ lootableArmorStatMods = {
 	"medical_foraging",
 	"medicine_assembly",
 	"medicine_experimentation",
---	"melee_defense",
+	"melee_defense",
 	"onehandmelee_accuracy",
 	"onehandmelee_damage",
 	"onehandmelee_speed",
@@ -331,7 +332,7 @@ lootableArmorStatMods = {
 	"polearm_speed",
 	"posture_change_down_defense",
 	"posture_change_up_defense",
---	"ranged_defense",
+	"ranged_defense",
 	"rescue",
 	"resistance_bleeding",
 	"resistance_disease",
@@ -429,7 +430,7 @@ lootableClothingStatMods = {
 	"medical_foraging",
 	"medicine_assembly",
 	"medicine_experimentation",
-	--"melee_defense",
+	"melee_defense",
 	"onehandmelee_accuracy",
 	"onehandmelee_damage",
 	"onehandmelee_speed",
@@ -442,7 +443,7 @@ lootableClothingStatMods = {
 	"polearm_speed",
 	"posture_change_down_defense",
 	"posture_change_up_defense",
-	--"ranged_defense",
+	"ranged_defense",
 	"rescue",
 	"resistance_bleeding",
 	"resistance_disease",
@@ -495,13 +496,13 @@ lootableOneHandedMeleeStatMods = {
 	"intimidate",
 	"intimidate_defense",
 	"knockdown_defense",
---	"melee_defense",
+	"melee_defense",
 	"onehandmelee_accuracy",
 	"onehandmelee_damage",
 	"onehandmelee_speed",
 	"posture_change_down_defense",
 	"posture_change_up_defense",
---	"ranged_defense",
+	"ranged_defense",
 	"rescue",
 	"resistance_bleeding",
 	"resistance_disease",
@@ -534,10 +535,10 @@ lootableTwoHandedMeleeStatMods = {
 	"intimidate",
 	"intimidate_defense",
 	"knockdown_defense",
---	"melee_defense",
+	"melee_defense",
 	"posture_change_down_defense",
 	"posture_change_up_defense",
-	--"ranged_defense",
+	"ranged_defense",
 	"rescue",
 	"resistance_bleeding",
 	"resistance_disease",
@@ -573,7 +574,7 @@ lootableUnarmedStatMods = {
 	"intimidate",
 	"intimidate_defense",
 	"knockdown_defense",
---	"melee_defense",
+	"melee_defense",
 	"posture_change_down_defense",
 	"posture_change_up_defense",
 	"ranged_defense",
@@ -612,7 +613,7 @@ lootablePistolStatMods = {
 	"group_slope_move",
 	"intimidate_defense",
 	"knockdown_defense",
---	"melee_defense",
+	"melee_defense",
 	"pistol_accuracy",
 	"pistol_aim",
 	"pistol_hit_while_moving",
@@ -657,10 +658,10 @@ lootableRifleStatMods = {
 	"heavy_rifle_lightning_speed",
 	"intimidate_defense",
 	"knockdown_defense",
---	"melee_defense",
+	"melee_defense",
 	"posture_change_down_defense",
 	"posture_change_up_defense",
---	"ranged_defense",
+	"ranged_defense",
 	"rescue",
 	"resistance_bleeding",
 	"resistance_disease",
@@ -703,7 +704,7 @@ lootableCarbineStatMods = {
 	"group_slope_move",
 	"intimidate_defense",
 	"knockdown_defense",
---	"melee_defense",
+	"melee_defense",
 	"posture_change_down_defense",
 	"posture_change_up_defense",
 	"ranged_defense",
@@ -740,7 +741,7 @@ lootablePolearmStatMods = {
 	"intimidate",
 	"intimidate_defense",
 	"knockdown_defense",
---	"melee_defense",
+	"melee_defense",
 	"polearm_accuracy",
 	"polearm_speed",
 	"posture_change_down_defense",
@@ -782,7 +783,7 @@ lootableHeavyWeaponStatMods = {
 	"heavyweapon_speed",
 	"intimidate_defense",
 	"knockdown_defense",
---	"melee_defense",
+	"melee_defense",
 	"posture_change_down_defense",
 	"posture_change_up_defense",
 	"ranged_defense",
