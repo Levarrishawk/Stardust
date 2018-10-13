@@ -52,7 +52,7 @@ FullAutoArea1Command = {
   accuracyBonus = 25,
     visMod = 25,
 
-	animation = "fire_lightning_rifle_single_2",
+	animation = "fire_area",
 	animType = GENERATE_INTENSITY,
 
 	combatSpam = "areashot",
