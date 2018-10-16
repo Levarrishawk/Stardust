@@ -29,7 +29,7 @@ Disclaimer:  Portions of the EmuYoda application will break this VM.   I do not 
 
 Bear in mind, we will not provide support for anyone who creates their own server based on this work.   With that said, here is the download link.
 
-https://drive.google.com/open?id=1lv-Zr0ppqYuEVhLLviDmlAR4RIV2kaXv
+https://drive.google.com/open?id=1c_nxU1c_M0_KuFL3zwSC3hz0XLRy7i8S
 
 ### License ###
     Copyright (C) 2017 SWGEmu
