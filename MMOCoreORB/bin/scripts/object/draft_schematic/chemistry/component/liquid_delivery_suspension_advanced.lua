@@ -52,8 +52,8 @@ object_draft_schematic_chemistry_component_liquid_delivery_suspension_advanced =
 	size = 2,
 	factoryCrateSize = 1000,
 
-	xpType = "crafting_medicine_general",
-	xp = 100,
+	xpType = "medical",
+	xp = 450,
 
 	assemblySkill = "medicine_assembly",
 	experimentingSkill = "medicine_experimentation",

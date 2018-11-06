@@ -104,4 +104,8 @@ function TatooineAnchorheadScreenPlay:spawnMobiles()
 	spawnMobile("tatooine", "zucca_boar",300,177.37,29.3367,-5227.44,202.645,0)
 	spawnMobile("tatooine", "zucca_boar",300,171.993,33.695,-5229.99,181.173,0)
 	spawnMobile("tatooine", "zucca_boar",300,-35.6792,30,-5439.35,11.3066,0)
+	
+	-- Mos Stardust Recruiters
+	spawnMobile("tatooine", "rebel_recruiter", 0, 2011.7, 0, -4598.7, 180, 0)
+	spawnMobile("tatooine", "imperial_recruiter", 0, 2027.9, 0, -4598.7, 180, 0)
 end
