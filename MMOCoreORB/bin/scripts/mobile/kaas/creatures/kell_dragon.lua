@@ -5,7 +5,7 @@ kell_dragon = Creature:new {
 	faction = "",
 	level = 275,
 	chanceHit = 27.25,
-	damageMin = 1520,
+	damageMin = 520,
 	damageMax = 1750,
 	baseXp = 26356,
 	baseHAM = 120000,
@@ -33,7 +33,7 @@ kell_dragon = Creature:new {
 	        groups = {
 				{group = "krayt_tissue_rare", chance = 3300000},
         {group = "krayt_dragon_common", chance = 3300000},
-        {group = "pearls_flawless", chance = 3400000}			
+        {group = "krayt_pearls", chance = 3400000}			
 			},
 			lootChance = 5000000
 		},
