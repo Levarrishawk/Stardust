@@ -40,7 +40,7 @@ insane_vitiate_cultist = Creature:new {
 				{group = "melee_weapons", chance = 1500000},
 				{group = "armor_attachments", chance = 1100000},
 				{group = "clothing_attachments", chance = 1100000},
-				{group = "carbines", chance = 1500000}				
+				{group = "nge_housing_all", chance = 1500000}				
 			},
 			lootChance = 6000000
 		}
