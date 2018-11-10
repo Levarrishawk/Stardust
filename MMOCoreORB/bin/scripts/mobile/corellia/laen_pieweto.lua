@@ -11,7 +11,7 @@ laen_pieweto = Creature:new {
 	baseXp = 26654,
 	baseHAM = 1221000,
 	baseHAMmax = 1592000,
-	armor = 3,
+	armor = 1,
 	-- {kinetic,energy,blast,heat,cold,electricity,acid,stun,ls}
 	resists = {65,55,55,75,75,70,55,70,25},
 	meatType = "",

@@ -11,7 +11,7 @@ nightsister_spell_weaver = Creature:new {
 	baseXp = 10174,
 	baseHAM = 54000,
 	baseHAMmax = 63000,
-	armor = 2,
+	armor = 1,
 	-- {kinetic,energy,blast,heat,cold,electricity,acid,stun,ls}
 	resists = {25,50,25,75,75,75,75,75,-1},
 	meatType = "",

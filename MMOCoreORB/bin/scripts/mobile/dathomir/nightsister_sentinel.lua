@@ -11,7 +11,7 @@ nightsister_sentinel = Creature:new {
 	baseXp = 8408,
 	baseHAM = 21000,
 	baseHAMmax = 26000,
-	armor = 1,
+	armor = 0,
 	-- {kinetic,energy,blast,heat,cold,electricity,acid,stun,ls}
 	resists = {35,35,35,75,75,75,75,75,-1},
 	meatType = "",

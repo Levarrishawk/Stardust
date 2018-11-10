@@ -10,7 +10,7 @@ master_tamer_xerthan = Creature:new {
 	baseXp = 20000,
 	baseHAM = 750000,
 	baseHAMmax = 1250000,
-	armor = 2,
+	armor = 1,
 	-- {kinetic, energy, electric, stun, blast, heat, cold, acid, ls}
 	resists = {60,60,35,50,35,50,25,50,15},
 	meatType = "",

@@ -11,7 +11,7 @@ spiderclan_acolyte = Creature:new {
 	baseXp = 6196,
 	baseHAM = 11000,
 	baseHAMmax = 14000,
-	armor = 1,
+	armor = 0,
 	-- {kinetic,energy,blast,heat,cold,electricity,acid,stun,ls}
 	resists = {25,65,75,40,75,75,40,75,-1},
 	meatType = "",

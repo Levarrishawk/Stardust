@@ -11,7 +11,7 @@ spiderclan_stalker = Creature:new {
 	baseXp = 9150,
 	baseHAM = 40000,
 	baseHAMmax = 55000,
-	armor = 1,
+	armor = 0,
 	-- {kinetic,energy,blast,heat,cold,electricity,acid,stun,ls}
 	resists = {40,60,40,75,75,75,75,75,-1},
 	meatType = "",

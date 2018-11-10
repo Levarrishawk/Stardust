@@ -9,7 +9,7 @@ malkloc_plainswalker = Creature:new {
 	baseXp = 7945,
 	baseHAM = 29000,
 	baseHAMmax = 36000,
-	armor = 1,
+	armor = 0,
 	-- {kinetic,energy,blast,heat,cold,electricity,acid,stun,ls}
 	resists = {200,150,25,-1,-1,-1,25,200,-1},
 	meatType = "meat_herbivore",

@@ -10,7 +10,7 @@ axkva_min = Creature:new {
 	baseXp = 28549,
 	baseHAM = 495000,
 	baseHAMmax = 521000,
-	armor = 3,
+	armor = 1,
 	-- {kinetic,energy,blast,heat,cold,electricity,acid,stun,ls}
 	resists = {75,75,75,75,75,75,75,75,-1},
 	meatType = "",

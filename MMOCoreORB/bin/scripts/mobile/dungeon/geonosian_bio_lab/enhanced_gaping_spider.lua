@@ -11,7 +11,7 @@ enhanced_gaping_spider = Creature:new {
 	baseXp = 10267,
 	baseHAM = 250000,
 	baseHAMmax = 329000,
-	armor = 2,
+	armor = 1,
 	-- {kinetic,energy,blast,heat,cold,electricity,acid,stun,ls}
 	resists = {50,35,25,95,45,35,25,45,5},
 	meatType = "",

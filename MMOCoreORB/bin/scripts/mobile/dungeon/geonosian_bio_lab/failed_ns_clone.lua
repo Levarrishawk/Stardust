@@ -10,7 +10,7 @@ failed_ns_clone = Creature:new {
 	baseXp = 28654,
 	baseHAM = 191000,
 	baseHAMmax = 232000,
-	armor = 2,
+	armor = 1,
 	-- {kinetic,energy,blast,heat,cold,electricity,acid,stun,ls}
 	resists = {55,55,55,55,55,55,55,55,15},
 	meatType = "",

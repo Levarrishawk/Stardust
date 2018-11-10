@@ -11,7 +11,7 @@ chiss_poacher_director = Creature:new {
 	baseXp = 20000,
 	baseHAM = 450000,
 	baseHAMmax = 500000,
-	armor = 2,
+	armor = 1,
 	-- {kinetic, energy, electric, stun, blast, heat, cold, acid, ls}
 	resists = {60,60,35,50,35,50,25,50,15},
 	meatType = "",

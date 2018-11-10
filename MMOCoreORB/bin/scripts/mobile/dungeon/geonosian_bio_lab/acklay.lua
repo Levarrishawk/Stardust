@@ -11,7 +11,7 @@ acklay = Creature:new {
 	baseXp = 49884,
 	baseHAM = 1216000,
 	baseHAMmax = 1258000,
-	armor = 2,
+	armor = 1,
 	-- {kinetic,energy,blast,heat,cold,electricity,acid,stun,ls}
 	resists = {40,45,55,55,45,45,40,40,25},
 	meatType = "",

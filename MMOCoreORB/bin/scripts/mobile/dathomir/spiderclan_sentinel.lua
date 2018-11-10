@@ -11,7 +11,7 @@ spiderclan_sentinel = Creature:new {
 	baseXp = 8778,
 	baseHAM = 21000,
 	baseHAMmax = 26000,
-	armor = 1,
+	armor = 0,
 	-- {kinetic,energy,blast,heat,cold,electricity,acid,stun,ls}
 	resists = {45,75,35,40,75,75,25,75,-1},
 	meatType = "",

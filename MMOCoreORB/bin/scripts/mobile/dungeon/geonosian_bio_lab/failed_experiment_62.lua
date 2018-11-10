@@ -10,7 +10,7 @@ failed_experiment_62 = Creature:new {
 	baseXp = 49884,
 	baseHAM = 551600,
 	baseHAMmax = 648000,
-	armor = 2,
+	armor = 1,
 	-- {kinetic,energy,blast,heat,cold,electricity,acid,stun,ls}
 	resists = {0,0,0,0,0,0,0,0,0},
 	meatType = "",

@@ -9,7 +9,7 @@ krayt_dragon_ancient = Creature:new {
 	baseXp = 28549,
 	baseHAM = 410000,
 	baseHAMmax = 501000,
-	armor = 3,
+	armor = 1,
 	-- {kinetic,energy,blast,heat,cold,electricity,acid,stun,ls}
 	resists = {65,65,65,65,65,65,65,65,-1},
 	meatType = "meat_carnivore",

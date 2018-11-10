@@ -11,7 +11,7 @@ nightsister_ranger = Creature:new {
 	baseXp = 7761,
 	baseHAM = 12000,
 	baseHAMmax = 15000,
-	armor = 1,
+	armor = 0,
 	-- {kinetic,energy,blast,heat,cold,electricity,acid,stun,ls}
 	resists = {30,30,30,75,75,75,75,75,-1},
 	meatType = "",

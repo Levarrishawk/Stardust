@@ -11,7 +11,7 @@ force_crystal_hunter = Creature:new {
 	baseXp = 10921,
 	baseHAM = 34000,
 	baseHAMmax = 40000,
-	armor = 2,
+	armor = 1,
 	-- {kinetic,energy,blast,heat,cold,electricity,acid,stun,ls}
 	resists = {75,75,35,25,75,55,35,35,10},
 	meatType = "",

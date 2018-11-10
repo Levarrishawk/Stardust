@@ -11,7 +11,7 @@ chiss_poacher_hunter = Creature:new {
 	baseXp = 20000,
 	baseHAM = 80000,
 	baseHAMmax = 120000,
-	armor = 2,
+	armor = 1,
 	-- {kinetic, energy, electric, stun, blast, heat, cold, acid, ls}
 	resists = {50,50,50,50,50,50,50,50,15},
 	meatType = "",

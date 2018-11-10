@@ -9,7 +9,7 @@ tusken_king = Creature:new {
 	baseXp = 9522,
 	baseHAM = 24000,
 	baseHAMmax = 30000,
-	armor = 2,
+	armor = 1,
 	-- {kinetic,energy,blast,heat,cold,electricity,acid,stun,ls}
 	resists = {45,35,5,80,-1,50,5,5,-1},
 	meatType = "",

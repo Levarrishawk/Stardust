@@ -9,7 +9,7 @@ force_crystal_hunter_captain = Creature:new {
 	baseXp = 26921,
 	baseHAM = 135200,
 	baseHAMmax = 162000,
-	armor = 2,
+	armor = 1,
 	-- {kinetic,energy,blast,heat,cold,electricity,acid,stun,ls}
 	resists = {65,65,35,25,55,45,35,35,15},
 	meatType = "",

@@ -11,7 +11,7 @@ dark_jedi_knight = Creature:new {
 	baseXp = 25266,
 	baseHAM = 261000,
 	baseHAMmax = 320000,
-	armor = 3,
+	armor = 1,
 	-- {kinetic,energy,blast,heat,cold,electricity,acid,stun,ls}
 	resists = {75,75,75,75,75,75,75,75,-1},
 	meatType = "",

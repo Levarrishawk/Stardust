@@ -11,7 +11,7 @@ spiderclan_crawler = Creature:new {
 	baseXp = 8130,
 	baseHAM = 12000,
 	baseHAMmax = 15000,
-	armor = 1,
+	armor = 0,
 	-- {kinetic,energy,blast,heat,cold,electricity,acid,stun,ls}
 	resists = {25,75,75,25,75,75,75,75,-1},
 	meatType = "",

@@ -10,7 +10,7 @@ enhanced_rancor = Creature:new {
 	baseXp = 79336,
 	baseHAM = 950000,
 	baseHAMmax = 1000000,
-	armor = 3,
+	armor = 1,
 	-- {kinetic,energy,blast,heat,cold,electricity,acid,stun,ls}
 	resists = {55,60,45,70,70,70,45,45,35},
 	meatType = "meat_carnivore",

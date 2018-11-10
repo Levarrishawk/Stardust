@@ -11,7 +11,7 @@ singing_mountain_clan_councilwoman = Creature:new {
 	baseXp = 24180,
 	baseHAM = 261000,
 	baseHAMmax = 320000,
-	armor = 3,
+	armor = 1,
 	-- {kinetic,energy,blast,heat,cold,electricity,acid,stun,ls}
 	resists = {75,35,35,75,75,75,75,75,-1},
 	meatType = "",

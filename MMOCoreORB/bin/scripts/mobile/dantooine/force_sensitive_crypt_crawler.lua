@@ -11,7 +11,7 @@ force_sensitive_crypt_crawler = Creature:new {
 	baseXp = 9057,
 	baseHAM = 16000,
 	baseHAMmax = 19000,
-	armor = 2,
+	armor = 1,
 	-- {kinetic,energy,blast,heat,cold,electricity,acid,stun,ls}
 	resists = {45,45,0,0,0,0,0,0,-1},
 	meatType = "",

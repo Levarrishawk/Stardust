@@ -11,7 +11,7 @@ force_sensitive_renegade = Creature:new {
 	baseXp = 1668,
 	baseHAM = 12000,
 	baseHAMmax = 15000,
-	armor = 2,
+	armor = 1,
 	-- {kinetic,energy,blast,heat,cold,electricity,acid,stun,ls}
 	resists = {0,0,0,0,0,0,0,0,-1},
 	meatType = "",

@@ -11,7 +11,7 @@ force_trained_archaist = Creature:new {
 	baseXp = 2593,
 	baseHAM = 13000,
 	baseHAMmax = 16000,
-	armor = 2,
+	armor = 1,
 	-- {kinetic,energy,blast,heat,cold,electricity,acid,stun,ls}
 	resists = {45,45,0,0,0,0,0,0,-1},
 	meatType = "",

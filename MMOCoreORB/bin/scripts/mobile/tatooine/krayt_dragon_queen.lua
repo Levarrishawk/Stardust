@@ -10,7 +10,7 @@ krayt_dragon_queen = Creature:new {
 	baseXp = 28549,
 	baseHAM = 710000,
 	baseHAMmax = 1201000,
-	armor = 3,
+	armor = 1,
 	-- {kinetic,energy,blast,heat,cold,electricity,acid,stun,ls}
 	resists = {195,195,195,195,165,195,195,195,-1},
 	meatType = "meat_carnivore",

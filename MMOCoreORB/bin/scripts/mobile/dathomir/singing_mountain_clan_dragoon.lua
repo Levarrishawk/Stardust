@@ -11,7 +11,7 @@ singing_mountain_clan_dragoon = Creature:new {
 	baseXp = 8964,
 	baseHAM = 40000,
 	baseHAMmax = 49000,
-	armor = 2,
+	armor = 1,
 	-- {kinetic,energy,blast,heat,cold,electricity,acid,stun,ls}
 	resists = {45,45,75,35,75,35,35,35,-1},
 	meatType = "",

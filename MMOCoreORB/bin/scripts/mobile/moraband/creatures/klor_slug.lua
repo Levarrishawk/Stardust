@@ -9,7 +9,7 @@ klor_slug = Creature:new {
 	baseXp = 3921,
 	baseHAM = 10300,
 	baseHAMmax = 23012,
-	armor = 1,
+	armor = 0,
 	-- {kinetic,energy,blast,heat,cold,electricity,acid,stun,ls}
 	resists = {65,80,55,25,70,70,20,35,15},
 	meatType = "",

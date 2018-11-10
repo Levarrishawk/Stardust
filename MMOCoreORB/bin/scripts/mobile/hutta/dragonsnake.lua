@@ -9,7 +9,7 @@ dragonsnake= Creature:new {
 	baseXp = 3521,
 	baseHAM = 70800,
 	baseHAMmax = 113000,
-	armor = 1,
+	armor = 0,
 
 	-- {kinetic,energy,blast,heat,cold,electricity,acid,stun,ls}
 	resists = {60,60,60,50,40,20,40,60,15},

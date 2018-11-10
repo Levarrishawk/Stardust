@@ -11,7 +11,7 @@ forsaken_force_drifter = Creature:new {
 	baseXp = 7668,
 	baseHAM = 11000,
 	baseHAMmax = 14000,
-	armor = 1,
+	armor = 0,
 	-- {kinetic,energy,blast,heat,cold,electricity,acid,stun,ls}
 	resists = {35,35,35,35,35,35,35,35,-1},
 	meatType = "",

@@ -9,7 +9,7 @@ juvenile_canyon_krayt_dragon = Creature:new {
 	baseXp = 11577,
 	baseHAM = 54000,
 	baseHAMmax = 64000,
-	armor = 2,
+	armor = 1,
 	-- {kinetic,energy,blast,heat,cold,electricity,acid,stun,ls}
 	resists = {55,55,15,15,55,15,15,15,-1},
 	meatType = "meat_carnivore",

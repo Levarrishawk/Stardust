@@ -9,7 +9,7 @@ krayt_dragon_adolescent = Creature:new {
 	baseXp = 28549,
 	baseHAM = 110000,
 	baseHAMmax = 201000,
-	armor = 3,
+	armor = 1,
 	-- {kinetic,energy,blast,heat,cold,electricity,acid,stun,ls}
 	resists = {55,55,15,15,55,15,15,15,-1},
 	meatType = "meat_carnivore",

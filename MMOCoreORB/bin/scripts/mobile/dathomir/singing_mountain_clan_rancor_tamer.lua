@@ -11,7 +11,7 @@ singing_mountain_clan_rancor_tamer = Creature:new {
 	baseXp = 7207,
 	baseHAM = 12000,
 	baseHAMmax = 15000,
-	armor = 1,
+	armor = 0,
 	-- {kinetic,energy,blast,heat,cold,electricity,acid,stun,ls}
 	resists = {25,25,65,-1,65,30,30,30,-1},
 	meatType = "",

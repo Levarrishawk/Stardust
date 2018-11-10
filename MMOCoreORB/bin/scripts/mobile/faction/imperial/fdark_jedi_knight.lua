@@ -9,7 +9,7 @@ fdark_jedi_knight = Creature:new {
 	baseXp = 25266,
 	baseHAM = 261000,
 	baseHAMmax = 320000,
-	armor = 2,
+	armor = 1,
 	-- {kinetic, energy, electric, stun, blast, heat, cold, acid, ls}
 	resists = {75,75,75,75,75,75,75,75,-1},
 	meatType = "",

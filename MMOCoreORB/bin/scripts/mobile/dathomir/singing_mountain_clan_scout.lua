@@ -11,7 +11,7 @@ singing_mountain_clan_scout = Creature:new {
 	baseXp = 7207,
 	baseHAM = 42000,
 	baseHAMmax = 55000,
-	armor = 1,
+	armor = 0,
 	-- {kinetic,energy,blast,heat,cold,electricity,acid,stun,ls}
 	resists = {30,30,75,-1,75,30,30,30,-1},
 	meatType = "",

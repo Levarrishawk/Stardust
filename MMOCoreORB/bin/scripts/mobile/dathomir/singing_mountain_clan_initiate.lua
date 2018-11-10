@@ -11,7 +11,7 @@ singing_mountain_clan_initiate = Creature:new {
 	baseXp = 4916,
 	baseHAM = 10000,
 	baseHAMmax = 12000,
-	armor = 1,
+	armor = 0,
 	-- {kinetic,energy,blast,heat,cold,electricity,acid,stun,ls}
 	resists = {30,30,75,-1,65,-1,-1,35,-1},
 	meatType = "",

@@ -11,7 +11,7 @@ nightsister_initiate = Creature:new {
 	baseXp = 5830,
 	baseHAM = 18000,
 	baseHAMmax = 21000,
-	armor = 1,
+	armor = 0,
 	-- {kinetic,energy,blast,heat,cold,electricity,acid,stun,ls}
 	resists = {10,10,10,100,100,100,100,100,-1},
 	meatType = "",

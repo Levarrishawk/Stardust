@@ -10,7 +10,7 @@ enhanced_force_jawa_lord = Creature:new {
 	baseXp = 9296845,
 	baseHAM = 2306000,
 	baseHAMmax = 2652000,
-	armor = 2,
+	armor = 1,
 	-- {kinetic,energy,blast,heat,cold,electricity,acid,stun,ls}
 	resists = {65,65,65,65,65,65,65,65,25},
 	meatType = "",

@@ -9,7 +9,7 @@ tusken_observer = Creature:new {
 	baseXp = 14789,
 	baseHAM = 75000,
 	baseHAMmax = 90000,
-	armor = 2,
+	armor = 1,
 	-- {kinetic,energy,blast,heat,cold,electricity,acid,stun,ls}
 	resists = {15,75,15,75,75,75,75,75,-1},
 	meatType = "",

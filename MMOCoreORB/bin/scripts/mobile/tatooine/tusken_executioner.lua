@@ -9,7 +9,7 @@ tusken_executioner = Creature:new {
 	baseXp = 26654,
 	baseHAM = 321000,
 	baseHAMmax = 392000,
-	armor = 3,
+	armor = 1,
 	-- {kinetic,energy,blast,heat,cold,electricity,acid,stun,ls}
 	resists = {65,25,25,75,75,70,55,70,-1},
 	meatType = "",

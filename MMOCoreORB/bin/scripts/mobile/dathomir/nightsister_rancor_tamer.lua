@@ -11,7 +11,7 @@ nightsister_rancor_tamer = Creature:new {
 	baseXp = 7299,
 	baseHAM = 16000,
 	baseHAMmax = 19000,
-	armor = 1,
+	armor = 0,
 	-- {kinetic,energy,blast,heat,cold,electricity,acid,stun,ls}
 	resists = {30,30,30,50,50,50,50,75,-1},
 	meatType = "",

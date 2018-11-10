@@ -9,7 +9,7 @@ tusken_witch_doctor = Creature:new {
 	baseXp = 10174,
 	baseHAM = 54000,
 	baseHAMmax = 63000,
-	armor = 2,
+	armor = 1,
 	-- {kinetic,energy,blast,heat,cold,electricity,acid,stun,ls}
 	resists = {5,75,5,75,75,75,75,75,-1},
 	meatType = "",

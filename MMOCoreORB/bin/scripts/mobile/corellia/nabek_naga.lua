@@ -10,7 +10,7 @@ nabek_naga = Creature:new {
 	baseXp = 26654,
 	baseHAM = 821000,
 	baseHAMmax = 1192000,
-	armor = 2,
+	armor = 1,
 	-- {kinetic,energy,blast,heat,cold,electricity,acid,stun,ls}
 	resists = {75,45,55,80,80,70,55,70,20},
 	meatType = "",

@@ -11,7 +11,7 @@ dark_adept = Creature:new {
 	baseXp = 13178,
 	baseHAM = 89000,
 	baseHAMmax = 122432,
-	armor = 2,
+	armor = 1,
 	-- {kinetic,energy,blast,heat,cold,electricity,acid,stun,ls}
 	resists = {80,80,80,80,80,80,80,80,-1},
 	meatType = "",

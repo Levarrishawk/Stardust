@@ -11,7 +11,7 @@ untrained_wielder_of_the_dark_side = Creature:new {
 	baseXp = 7288,
 	baseHAM = 16000,
 	baseHAMmax = 19500,
-	armor = 1,
+	armor = 0,
 	-- {kinetic, energy, electric, stun, blast, heat, cold, acid, ls}
 	resists = {45,45,35,5,45,25,15,15,10},
 	meatType = "",
