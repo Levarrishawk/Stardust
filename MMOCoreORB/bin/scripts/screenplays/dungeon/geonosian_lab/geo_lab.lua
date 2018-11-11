@@ -337,7 +337,7 @@ function GeonosianLabScreenPlay:spawnMobiles()
 	-->>Enhanced Rancor Mini-Boss<<<
 
 	-->>Dark Jedi Jawa []Raid Boss[]<<--
-	spawnMobile("yavin4", "enhanced_force_jawa_lord",2700, 4.0, -34, -347.3, -91, 1627822) -- 45 minute respawn
+	--spawnMobile("yavin4", "enhanced_force_jawa_lord",2700, 4.0, -34, -347.3, -91, 1627822) -- 45 minute respawn
 	-->>Dark Jedi Jawa []Raid Boss[]<<--
 end
 
