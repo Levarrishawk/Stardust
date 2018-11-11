@@ -135,7 +135,7 @@ function GeonosianLabScreenPlay:spawnSceneObjects()
 	end
 end
 
-function GeonosianLab:spawnMobiles()
+function GeonosianLabScreenPlay:spawnMobiles()
   -- cave_entrance (1627781)
   spawnMobile("yavin4", "biogenic_crazyguy", 1, -2.8, 10.8, 10.2, 69, 1627781)
 
