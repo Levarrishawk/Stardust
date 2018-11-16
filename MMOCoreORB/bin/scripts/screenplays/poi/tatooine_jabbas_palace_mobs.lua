@@ -101,10 +101,10 @@ function TatooineJabbasPalaceMobsScreenPlay:spawnStatics()
 
   pNpc = spawnMobile("tatooine", "commoner_tatooine", 60, -15.4, 0.1, 87.7, 42, 1177498)
   self:setMoodString(pNpc, "nervous")
-
+--  If Hutta is not enabled will produce error in console indicating nil value in line 255 on this screenplay
   pNpc = spawnMobile("hutta", "fringer", 300, -8.7, 2.0, 49.6, 347, 390000177)
   createEvent(5000, "TatooineJabbasPalaceMobsScreenPlay", "palaceConverse", pNpc, "")
-
+--
   pNpc = spawnMobile("tatooine", "jawa", 300, -23.0, 3.0, 59.0, 0, 1177474)
   createEvent(5000, "TatooineJabbasPalaceMobsScreenPlay", "palaceConverseJawa", pNpc, "")
 
