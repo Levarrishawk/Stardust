@@ -45,9 +45,7 @@ object_tangible_wearables_armor_snowtrooper_armor_snowtrooper_chest_plate = obje
 
 	templateType = ARMOROBJECT,
 
-	objectMenuComponent = "ArmorObjectMenuComponent",
-
-	faction = "rebel",
+  faction = "Imperial",
 
 	playerRaces = { "object/creature/player/bothan_male.iff",
         "object/creature/player/bothan_female.iff",

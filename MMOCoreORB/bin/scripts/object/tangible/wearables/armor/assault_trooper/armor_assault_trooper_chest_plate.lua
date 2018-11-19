@@ -45,9 +45,7 @@ object_tangible_wearables_armor_assault_trooper_armor_assault_trooper_chest_plat
 
 	templateType = ARMOROBJECT,
 
-	objectMenuComponent = "ArmorObjectMenuComponent",
-
-	faction = "imperial",
+  faction = "Imperial",
 
 	playerRaces = { "object/creature/player/bothan_male.iff",
         "object/creature/player/bothan_female.iff",

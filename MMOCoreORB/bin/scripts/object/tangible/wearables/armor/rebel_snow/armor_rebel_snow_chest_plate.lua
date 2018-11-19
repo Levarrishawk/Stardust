@@ -45,9 +45,7 @@ object_tangible_wearables_armor_rebel_snow_armor_rebel_snow_chest_plate = object
 
 	templateType = ARMOROBJECT,
 
-	objectMenuComponent = "ArmorObjectMenuComponent",
-
-	faction = "rebel",
+  faction = "Rebel",
 
 	playerRaces = { "object/creature/player/bothan_male.iff",
         "object/creature/player/bothan_female.iff",
