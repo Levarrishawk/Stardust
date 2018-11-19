@@ -27,7 +27,7 @@ object_draft_schematic_armor_armor_marauder_s01_chest_plate = object_draft_schem
    contribution = {100, 100, 100, 100, 100, 100, 100, 100, 100},
 
 
-   targetTemplate = "object/tangible/wearables/armor/marauder/armor_marauder_s01_chest.iff",
+   targetTemplate = "object/tangible/wearables/armor/marauder/armor_marauder_s01_chest_plate.iff",
 
    additionalTemplates = {
              }
