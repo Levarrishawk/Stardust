@@ -110,7 +110,7 @@ object_tangible_wearables_armor_scout_trooper_armor_scout_trooper_utility_belt =
 	mindEncumbrance = 1,
 
 	-- LIGHT, MEDIUM, HEAVY
-	rating = HEAVY,
+	rating = LIGHT,
 
 	kinetic = 15,
 	energy = 15,
