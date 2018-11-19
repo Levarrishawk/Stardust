@@ -34,4 +34,4 @@ object_draft_schematic_armor_armor_marauder_s01_boots = object_draft_schematic_a
 
 }
 
-ObjectTemplates:addTemplate(object_draft_schematic_armor_armor_marauder_s01_boots, "object/tangible/wearables/armor/marauder/armor_marauder_s01_boots.iff")
+ObjectTemplates:addTemplate(object_draft_schematic_armor_armor_marauder_s01_boots, "object/draft_schematic/armor/armor_appearance_marauder_s01_boots.iff")

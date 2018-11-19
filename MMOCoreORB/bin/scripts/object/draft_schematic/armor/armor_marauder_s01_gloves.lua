@@ -34,4 +34,4 @@ object_draft_schematic_armor_armor_marauder_s01_gloves = object_draft_schematic_
 
 }
 
-ObjectTemplates:addTemplate(object_draft_schematic_armor_armor_marauder_s01_gloves, "object/tangible/wearables/armor/marauder/armor_marauder_s01_gloves.iff")
+ObjectTemplates:addTemplate(object_draft_schematic_armor_armor_marauder_s01_gloves, "object/draft_schematic/armor/armor_appearance_marauder_s01_gloves.iff")

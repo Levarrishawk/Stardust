@@ -34,4 +34,4 @@ object_draft_schematic_armor_armor_marauder_s02_bicep_l = object_draft_schematic
 
 }
 
-ObjectTemplates:addTemplate(object_draft_schematic_armor_armor_marauder_s02_bicep_l, "object/tangible/wearables/armor/marauder/armor_marauder_s02_bicep_l.iff")
+ObjectTemplates:addTemplate(object_draft_schematic_armor_armor_marauder_s02_bicep_l, "object/draft_schematic/armor/armor_appearance_marauder_s02_bicep_l.iff")
