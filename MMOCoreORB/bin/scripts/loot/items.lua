@@ -1429,3 +1429,13 @@ includeFile("items/loot_schematic/rebel_house_loot_schematic.lua")
 includeFile("items/loot_schematic/relaxation_house_loot_schematic.lua")
 includeFile("items/loot_schematic/sith_house_loot_schematic.lua")
 
+includeFile("items/armor/armor_clone_trooper_imperial_s01_gloves.lua")
+includeFile("items/armor/armor_clone_trooper_imperial_s01_bicep_l.lua")
+includeFile("items/armor/armor_clone_trooper_imperial_s01_bicep_r.lua")
+includeFile("items/armor/armor_clone_trooper_imperial_s01_bracer_l.lua")
+includeFile("items/armor/armor_clone_trooper_imperial_s01_bracer_r.lua")
+includeFile("items/armor/armor_clone_trooper_imperial_s01_boots.lua")
+includeFile("items/armor/armor_clone_trooper_imperial_s01_chest_plate.lua")
+includeFile("items/armor/armor_clone_trooper_imperial_s01_helmet.lua")
+includeFile("items/armor/armor_clone_trooper_imperial_s01_leggings.lua")
+

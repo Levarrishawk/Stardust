@@ -459,3 +459,6 @@ includeFile("groups/infinity/orkellian_slug_blood.lua")
 -- All NGE Houses
 includeFile("groups/deeds/structure/nge_housing_all.lua")  --deeds
 includeFile("groups/schematic/structure/nge_houses_all.lua")  --schematics
+
+-- New Armors
+includeFile("groups/armor/clone_trooper_imperial.lua")
