@@ -1998,7 +1998,7 @@ schematics = {
   {path="object/draft_schematic/armor/armor_appearance_rebel_assault_gloves.iff"},
   {path="object/draft_schematic/armor/armor_appearance_rebel_assault_helmet.iff"},
   {path="object/draft_schematic/armor/armor_appearance_rebel_assault_leggings.iff"},
-  {path="object/draft_schematic/armor/armor_appearance_rebel_assault_utility_belt.iff"},
+  --{path="object/draft_schematic/armor/armor_appearance_rebel_assault_utility_belt.iff"},  -- No IFF for it.
   
   {path="object/draft_schematic/armor/armor_appearance_rebel_assault_bicep_l_gcw.iff"},
   {path="object/draft_schematic/armor/armor_appearance_rebel_assault_bicep_r_gcw.iff"},

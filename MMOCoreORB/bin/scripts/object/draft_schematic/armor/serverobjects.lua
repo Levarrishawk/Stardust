@@ -235,7 +235,7 @@ includeFile("draft_schematic/armor/armor_appearance_rebel_assault_helmet_gcw.lua
 includeFile("draft_schematic/armor/armor_appearance_rebel_assault_leggings_gcw.lua")
 includeFile("draft_schematic/armor/armor_appearance_rebel_assault_utility_belt_gcw.lua")
 
-includeFile("draft_schematic/armor/armor_appearance_rebel_assault_bicep_l_gcw.lua")
+includeFile("draft_schematic/armor/armor_appearance_rebel_assault_bicep_l.lua")
 includeFile("draft_schematic/armor/armor_appearance_rebel_assault_bicep_r.lua")
 includeFile("draft_schematic/armor/armor_appearance_rebel_assault_boots.lua")
 includeFile("draft_schematic/armor/armor_appearance_rebel_assault_bracer_l.lua")
@@ -244,7 +244,7 @@ includeFile("draft_schematic/armor/armor_appearance_rebel_assault_chest.lua")
 includeFile("draft_schematic/armor/armor_appearance_rebel_assault_gloves.lua")
 includeFile("draft_schematic/armor/armor_appearance_rebel_assault_helmet.lua")
 includeFile("draft_schematic/armor/armor_appearance_rebel_assault_leggings.lua")
-includeFile("draft_schematic/armor/armor_appearance_rebel_assault_utility_belt.lua")
+--includeFile("draft_schematic/armor/armor_appearance_rebel_assault_utility_belt.lua")   -- No IFF
 
 includeFile("draft_schematic/armor/armor_appearance_rebel_battle_bicep_l_gcw.lua")
 includeFile("draft_schematic/armor/armor_appearance_rebel_battle_bicep_r_gcw.lua")
