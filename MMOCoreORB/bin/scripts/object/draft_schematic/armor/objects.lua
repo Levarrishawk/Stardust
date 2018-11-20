@@ -1568,6 +1568,85 @@ ObjectTemplates:addClientTemplate(object_draft_schematic_armor_shared_armor_segm
 
 --  New Objects Start --
 
+object_draft_schematic_armor_shared_armor_appearance_assault_trooper_bicep_l = SharedDraftSchematicObjectTemplate:new {
+  clientTemplateFileName = "object/draft_schematic/armor/shared_armor_appearance_assault_trooper_bicep_l.iff"
+}
+
+ObjectTemplates:addClientTemplate(object_draft_schematic_armor_shared_armor_appearance_assault_trooper_bicep_l, "object/draft_schematic/armor/shared_armor_appearance_assault_trooper_bicep_l.iff")
+------------------------------------------------------------------------------------------------------------------------------------
+
+
+object_draft_schematic_armor_shared_armor_appearance_assault_trooper_bicep_r = SharedDraftSchematicObjectTemplate:new {
+  clientTemplateFileName = "object/draft_schematic/armor/shared_armor_appearance_assault_trooper_bicep_r.iff"
+}
+
+ObjectTemplates:addClientTemplate(object_draft_schematic_armor_shared_armor_appearance_assault_trooper_bicep_r, "object/draft_schematic/armor/shared_armor_appearance_assault_trooper_bicep_r.iff")
+------------------------------------------------------------------------------------------------------------------------------------
+
+
+object_draft_schematic_armor_shared_armor_appearance_assault_trooper_boots = SharedDraftSchematicObjectTemplate:new {
+  clientTemplateFileName = "object/draft_schematic/armor/shared_armor_appearance_assault_trooper_boots.iff"
+}
+
+ObjectTemplates:addClientTemplate(object_draft_schematic_armor_shared_armor_appearance_assault_trooper_boots, "object/draft_schematic/armor/shared_armor_appearance_assault_trooper_boots.iff")
+------------------------------------------------------------------------------------------------------------------------------------
+
+
+object_draft_schematic_armor_shared_armor_appearance_assault_trooper_bracer_l = SharedDraftSchematicObjectTemplate:new {
+  clientTemplateFileName = "object/draft_schematic/armor/shared_armor_appearance_assault_trooper_bracer_l.iff"
+}
+
+ObjectTemplates:addClientTemplate(object_draft_schematic_armor_shared_armor_appearance_assault_trooper_bracer_l, "object/draft_schematic/armor/shared_armor_appearance_assault_trooper_bracer_l.iff")
+------------------------------------------------------------------------------------------------------------------------------------
+
+
+object_draft_schematic_armor_shared_armor_appearance_assault_trooper_bracer_r_ = SharedDraftSchematicObjectTemplate:new {
+  clientTemplateFileName = "object/draft_schematic/armor/shared_armor_appearance_assault_trooper_bracer_r_gcw.iff"
+}
+
+ObjectTemplates:addClientTemplate(object_draft_schematic_armor_shared_armor_appearance_assault_trooper_bracer_r, "object/draft_schematic/armor/shared_armor_appearance_assault_trooper_bracer_r.iff")
+------------------------------------------------------------------------------------------------------------------------------------
+
+
+object_draft_schematic_armor_shared_armor_appearance_assault_trooper_chest = SharedDraftSchematicObjectTemplate:new {
+  clientTemplateFileName = "object/draft_schematic/armor/shared_armor_appearance_assault_trooper_chest.iff"
+}
+
+ObjectTemplates:addClientTemplate(object_draft_schematic_armor_shared_armor_appearance_assault_trooper_chest, "object/draft_schematic/armor/shared_armor_appearance_assault_trooper_chest.iff")
+------------------------------------------------------------------------------------------------------------------------------------
+
+
+object_draft_schematic_armor_shared_armor_appearance_assault_trooper_gloves = SharedDraftSchematicObjectTemplate:new {
+  clientTemplateFileName = "object/draft_schematic/armor/shared_armor_appearance_assault_trooper_gloves.iff"
+}
+
+ObjectTemplates:addClientTemplate(object_draft_schematic_armor_shared_armor_appearance_assault_trooper_gloves, "object/draft_schematic/armor/shared_armor_appearance_assault_trooper_gloves.iff")
+------------------------------------------------------------------------------------------------------------------------------------
+
+
+object_draft_schematic_armor_shared_armor_appearance_assault_trooper_helmet = SharedDraftSchematicObjectTemplate:new {
+  clientTemplateFileName = "object/draft_schematic/armor/shared_armor_appearance_assault_trooper_helmet.iff"
+}
+
+ObjectTemplates:addClientTemplate(object_draft_schematic_armor_shared_armor_appearance_assault_trooper_helmet, "object/draft_schematic/armor/shared_armor_appearance_assault_trooper_helmet.iff")
+------------------------------------------------------------------------------------------------------------------------------------
+
+
+object_draft_schematic_armor_shared_armor_appearance_assault_trooper_leggings = SharedDraftSchematicObjectTemplate:new {
+  clientTemplateFileName = "object/draft_schematic/armor/shared_armor_appearance_assault_trooper_leggings.iff"
+}
+
+ObjectTemplates:addClientTemplate(object_draft_schematic_armor_shared_armor_appearance_assault_trooper_leggings, "object/draft_schematic/armor/shared_armor_appearance_assault_trooper_leggings.iff")
+------------------------------------------------------------------------------------------------------------------------------------
+
+
+object_draft_schematic_armor_shared_armor_appearance_assault_trooper_utility_belt = SharedDraftSchematicObjectTemplate:new {
+  clientTemplateFileName = "object/draft_schematic/armor/shared_armor_appearance_assault_trooper_utility_belt.iff"
+}
+
+ObjectTemplates:addClientTemplate(object_draft_schematic_armor_shared_armor_appearance_assault_trooper_utility_belt, "object/draft_schematic/armor/shared_armor_appearance_assault_trooper_utility_belt.iff")
+------------------------------------------------------------------------------------------------------------------------------------
+
 object_draft_schematic_armor_shared_armor_appearance_assault_trooper_bicep_l_gcw = SharedDraftSchematicObjectTemplate:new {
   clientTemplateFileName = "object/draft_schematic/armor/shared_armor_appearance_assault_trooper_bicep_l_gcw.iff"
 }
