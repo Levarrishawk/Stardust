@@ -92,8 +92,8 @@ includeFile("draft_schematic/armor/armor_appearance_assault_trooper_helmet_gcw.l
 includeFile("draft_schematic/armor/armor_appearance_assault_trooper_leggings_gcw.lua")
 includeFile("draft_schematic/armor/armor_appearance_assault_trooper_utility_belt_gcw.lua")
 
-includeFile("draft_schematic/armor/armor_appearance_assault_trooper_bicep_llua")
-includeFile("draft_schematic/armor/armor_appearance_assault_trooper_bicep_rlua")
+includeFile("draft_schematic/armor/armor_appearance_assault_trooper_bicep_l.lua")
+includeFile("draft_schematic/armor/armor_appearance_assault_trooper_bicep_r.lua")
 includeFile("draft_schematic/armor/armor_appearance_assault_trooper_boots.lua")
 includeFile("draft_schematic/armor/armor_appearance_assault_trooper_bracer_l.lua")
 includeFile("draft_schematic/armor/armor_appearance_assault_trooper_bracer_r.lua")
@@ -218,10 +218,11 @@ includeFile("draft_schematic/armor/armor_marauder_s03_helmet.lua")
 includeFile("draft_schematic/armor/armor_marauder_s01_gloves.lua")
 includeFile("draft_schematic/armor/armor_marauder_s02_gloves.lua")
 includeFile("draft_schematic/armor/armor_marauder_s03_gloves.lua")
+--[[   -- There are no marauder belts.
 includeFile("draft_schematic/armor/armor_marauder_s01_belt.lua")
 includeFile("draft_schematic/armor/armor_marauder_s02_belt.lua")
 includeFile("draft_schematic/armor/armor_marauder_s03_belt.lua")
-
+--]]
 
 includeFile("draft_schematic/armor/armor_appearance_rebel_assault_bicep_l_gcw.lua")
 includeFile("draft_schematic/armor/armor_appearance_rebel_assault_bicep_r_gcw.lua")

@@ -1600,8 +1600,8 @@ ObjectTemplates:addClientTemplate(object_draft_schematic_armor_shared_armor_appe
 ------------------------------------------------------------------------------------------------------------------------------------
 
 
-object_draft_schematic_armor_shared_armor_appearance_assault_trooper_bracer_r_ = SharedDraftSchematicObjectTemplate:new {
-  clientTemplateFileName = "object/draft_schematic/armor/shared_armor_appearance_assault_trooper_bracer_r_gcw.iff"
+object_draft_schematic_armor_shared_armor_appearance_assault_trooper_bracer_r = SharedDraftSchematicObjectTemplate:new {
+  clientTemplateFileName = "object/draft_schematic/armor/shared_armor_appearance_assault_trooper_bracer_r.iff"
 }
 
 ObjectTemplates:addClientTemplate(object_draft_schematic_armor_shared_armor_appearance_assault_trooper_bracer_r, "object/draft_schematic/armor/shared_armor_appearance_assault_trooper_bracer_r.iff")
