@@ -1897,7 +1897,19 @@ schematics = {
   {path="object/draft_schematic/armor/armor_appearance_assault_trooper_gloves.iff"},
   {path="object/draft_schematic/armor/armor_appearance_assault_trooper_helmet.iff"},
   {path="object/draft_schematic/armor/armor_appearance_assault_trooper_boots.iff"},
-
+  
+  {path="object/draft_schematic/armor/armor_appearance_assault_trooper_bicep_l_gcw.iff"},
+  {path="object/draft_schematic/armor/armor_appearance_assault_trooper_bicep_r_gcw.iff"},
+  {path="object/draft_schematic/armor/armor_appearance_assault_trooper_bracer_r_gcw.iff"},
+  {path="object/draft_schematic/armor/armor_appearance_assault_trooper_bracer_l_gcw.iff"},
+  {path="object/draft_schematic/armor/armor_appearance_assault_trooper_gloves_gcw.iff"},
+  {path="object/draft_schematic/armor/armor_appearance_assault_trooper_leggings_gcw.iff"},
+  {path="object/draft_schematic/armor/armor_appearance_assault_trooper_chest_gcw.iff"},
+  {path="object/draft_schematic/armor/armor_appearance_assault_trooper_gloves_gcw.iff"},
+  {path="object/draft_schematic/armor/armor_appearance_assault_trooper_helmet_gcw.iff"},
+  {path="object/draft_schematic/armor/armor_appearance_assault_trooper_boots_gcw.iff"},
+  
+  
   --Infiltrator Armor
   {path="object/draft_schematic/armor/armor_appearance_infiltrator_s01_belt.iff"},
   {path="object/draft_schematic/armor/armor_appearance_infiltrator_s01_bracer_r.iff"},
@@ -1975,4 +1987,40 @@ schematics = {
   {path="object/draft_schematic/armor/armor_appearance_marauder_s03_leggings.iff"},
   {path="object/draft_schematic/armor/armor_appearance_marauder_s03_helmet.iff"},
   {path="object/draft_schematic/armor/armor_appearance_marauder_s03_chest.iff"},
+  
+  --rebel assault
+  {path="object/draft_schematic/armor/armor_appearance_rebel_assault_bicep_l.iff"},
+  {path="object/draft_schematic/armor/armor_appearance_rebel_assault_bicep_r.iff"},
+  {path="object/draft_schematic/armor/armor_appearance_rebel_assault_boots.iff"},
+  {path="object/draft_schematic/armor/armor_appearance_rebel_assault_bracer_l.iff"},
+  {path="object/draft_schematic/armor/armor_appearance_rebel_assault_bracer_r.iff"},
+  {path="object/draft_schematic/armor/armor_appearance_rebel_assault_chest.iff"},
+  {path="object/draft_schematic/armor/armor_appearance_rebel_assault_gloves.iff"},
+  {path="object/draft_schematic/armor/armor_appearance_rebel_assault_helmet.iff"},
+  {path="object/draft_schematic/armor/armor_appearance_rebel_assault_leggings.iff"},
+  {path="object/draft_schematic/armor/armor_appearance_rebel_assault_utility_belt.iff"},
+  
+  {path="object/draft_schematic/armor/armor_appearance_rebel_assault_bicep_l_gcw.iff"},
+  {path="object/draft_schematic/armor/armor_appearance_rebel_assault_bicep_r_gcw.iff"},
+  {path="object/draft_schematic/armor/armor_appearance_rebel_assault_boots_gcw.iff"},
+  {path="object/draft_schematic/armor/armor_appearance_rebel_assault_bracer_l_gcw.iff"},
+  {path="object/draft_schematic/armor/armor_appearance_rebel_assault_bracer_r_gcw.iff"},
+  {path="object/draft_schematic/armor/armor_appearance_rebel_assault_chest_gcw.iff"},
+  {path="object/draft_schematic/armor/armor_appearance_rebel_assault_gloves_gcw.iff"},
+  {path="object/draft_schematic/armor/armor_appearance_rebel_assault_helmet_gcw.iff"},
+  {path="object/draft_schematic/armor/armor_appearance_rebel_assault_leggings_gcw.iff"},
+  {path="object/draft_schematic/armor/armor_appearance_rebel_assault_utility_belt_gcw.iff"},
+  
+  {path="object/draft_schematic/armor/armor_appearance_rebel_assault_bicep_l_camo.iff"},
+  {path="object/draft_schematic/armor/armor_appearance_rebel_assault_bicep_r_camo.iff"},
+  {path="object/draft_schematic/armor/armor_appearance_rebel_assault_boots_camo.iff"},
+  {path="object/draft_schematic/armor/armor_appearance_rebel_assault_bracer_l_camo.iff"},
+  {path="object/draft_schematic/armor/armor_appearance_rebel_assault_bracer_r_camo.iff"},
+  {path="object/draft_schematic/armor/armor_appearance_rebel_assault_chest_camo.iff"},
+  {path="object/draft_schematic/armor/armor_appearance_rebel_assault_gloves_camo.iff"},
+  {path="object/draft_schematic/armor/armor_appearance_rebel_assault_helmet_camo.iff"},
+  {path="object/draft_schematic/armor/armor_appearance_rebel_assault_leggings_camo.iff"},
+  {path="object/draft_schematic/armor/armor_appearance_rebel_assault_utility_belt_camo.iff"},
+  
+  
 }

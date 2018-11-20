@@ -1,8 +1,8 @@
-object_draft_schematic_armor_armor_appearance_rebel_assault_bracer_r_gcw = object_draft_schematic_armor_shared_armor_appearance_rebel_assault_bracer_r_gcw:new {
+object_draft_schematic_armor_armor_appearance_rebel_assault_helmet = object_draft_schematic_armor_shared_armor_appearance_rebel_assault_helmet:new {
   
    templateType = DRAFTSCHEMATIC,
 
-   customObjectName = "Rebel Assault Armor Right Bracer (GCW)",
+   customObjectName = "Rebel Assault Armor Helmet",
 
    craftingToolTab = 2, -- (See DraftSchematicObjectTemplate.h)
    complexity = 1,
@@ -28,10 +28,10 @@ object_draft_schematic_armor_armor_appearance_rebel_assault_bracer_r_gcw = objec
    contribution = {100, 100, 100, 100, 100, 100, 100, 100, 100},
 
 
-   targetTemplate = "object/draft_schematic/armor/armor_appearance_rebel_assault_bracer_r_gcw.iff",
+   targetTemplate = "object/draft_schematic/armor/armor_appearance_rebel_assault_helmet.iff",
 
    additionalTemplates = {
              }
 }
 
-ObjectTemplates:addTemplate(object_draft_schematic_armor_armor_appearance_rebel_assault_bracer_r_gcw, "object/draft_schematic/armor/armor_appearance_rebel_assault_bracer_r_gcw.iff")
+ObjectTemplates:addTemplate(object_draft_schematic_armor_armor_appearance_rebel_assault_helmet, "object/draft_schematic/armor/armor_appearance_rebel_assault_helmet.iff")
