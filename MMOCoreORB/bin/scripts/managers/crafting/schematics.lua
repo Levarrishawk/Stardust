@@ -2010,7 +2010,8 @@ schematics = {
   {path="object/draft_schematic/armor/armor_appearance_rebel_assault_helmet_gcw.iff"},
   {path="object/draft_schematic/armor/armor_appearance_rebel_assault_leggings_gcw.iff"},
   {path="object/draft_schematic/armor/armor_appearance_rebel_assault_utility_belt_gcw.iff"},
-  
+  --[[
+    -- Camo variant does not have a schematic object in IFF.   Will be Loot Drop.
   {path="object/draft_schematic/armor/armor_appearance_rebel_assault_bicep_l_camo.iff"},
   {path="object/draft_schematic/armor/armor_appearance_rebel_assault_bicep_r_camo.iff"},
   {path="object/draft_schematic/armor/armor_appearance_rebel_assault_boots_camo.iff"},
@@ -2021,6 +2022,7 @@ schematics = {
   {path="object/draft_schematic/armor/armor_appearance_rebel_assault_helmet_camo.iff"},
   {path="object/draft_schematic/armor/armor_appearance_rebel_assault_leggings_camo.iff"},
   {path="object/draft_schematic/armor/armor_appearance_rebel_assault_utility_belt_camo.iff"},
+  --]]
   
   
 }
