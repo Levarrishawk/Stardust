@@ -462,3 +462,5 @@ includeFile("groups/schematic/structure/nge_houses_all.lua")  --schematics
 
 -- New Armors
 includeFile("groups/armor/clone_trooper_imperial.lua")
+includeFile("groups/armor/clone_trooper_rebel.lua")
+includeFile("groups/armor/clone_trooper_neutral.lua")
