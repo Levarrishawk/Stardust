@@ -73,7 +73,7 @@ end
 
 function KaasSeparatistScreenPlay:spawnSceneObjects()
   
-  spawnSceneObject("kaas", "object/static/structure/general/cave_wall_damprock_style_01.iff", -100, -33.8, -222.7, 36000131, math.rad(0) )
+  --spawnSceneObject("kaas", "object/static/structure/general/cave_wall_damprock_style_01.iff", -100, -33.8, -222.7, 36000131, math.rad(0) )
  
 end
 
