@@ -1,7 +1,7 @@
 force_crystal_infinity_white = {
 	minimumLevel = 0,
 	maximumLevel = -1,
-	customObjectName = "Infinity White",
+	customObjectName = "Ahsoka's Purity",
 	directObjectTemplate = "object/tangible/component/weapon/lightsaber/lightsaber_module_force_crystal.iff",
 	craftingValues = {
 		{"mindamage",55,55,0},
