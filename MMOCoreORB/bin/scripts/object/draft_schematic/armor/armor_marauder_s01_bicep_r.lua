@@ -2,7 +2,7 @@ object_draft_schematic_armor_armor_marauder_s01_bicep_r = object_draft_schematic
 
    templateType = DRAFTSCHEMATIC,
 
-   customObjectName = "Marauder Armor Right Bicep Starter",
+   customObjectName = "Marauder Armor Right Bicep",
 
    craftingToolTab = 2, -- (See DraftSchematicObjectTemplate.h)
    complexity = 1,

@@ -2,7 +2,7 @@ object_draft_schematic_armor_armor_marauder_s02_leggings = object_draft_schemati
 
    templateType = DRAFTSCHEMATIC,
 
-   customObjectName = "Marauder Armor Pants Intermediate",
+   customObjectName = "Marauder Armor Pants",
 
    craftingToolTab = 2, -- (See DraftSchematicObjectTemplate.h)
    complexity = 1,

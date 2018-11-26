@@ -2,7 +2,7 @@ object_draft_schematic_armor_armor_marauder_s02_gloves = object_draft_schematic_
 
    templateType = DRAFTSCHEMATIC,
 
-   customObjectName = "Marauder Armor Gloves Intermediate",
+   customObjectName = "Marauder Armor Gloves",
 
    craftingToolTab = 2, -- (See DraftSchematicObjectTemplate.h)
    complexity = 1,

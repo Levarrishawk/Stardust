@@ -2,7 +2,7 @@ object_draft_schematic_armor_armor_marauder_s02_belt = object_draft_schematic_ar
 
    templateType = DRAFTSCHEMATIC,
 
-   customObjectName = "Marauder Armor Belt Intermediate",
+   customObjectName = "Marauder Armor Belt",
 
    craftingToolTab = 2, -- (See DraftSchematicObjectTemplate.h)
    complexity = 1,

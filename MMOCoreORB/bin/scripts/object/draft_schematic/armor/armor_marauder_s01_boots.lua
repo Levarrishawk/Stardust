@@ -2,7 +2,7 @@ object_draft_schematic_armor_armor_marauder_s01_boots = object_draft_schematic_a
 
    templateType = DRAFTSCHEMATIC,
 
-   customObjectName = "Marauder Armor Boots Starter",
+   customObjectName = "Marauder Armor Boots",
 
    craftingToolTab = 2, -- (See DraftSchematicObjectTemplate.h)
    complexity = 1,

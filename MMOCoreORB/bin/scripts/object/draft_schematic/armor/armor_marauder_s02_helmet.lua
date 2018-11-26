@@ -2,7 +2,7 @@ object_draft_schematic_armor_armor_marauder_s02_helmet = object_draft_schematic_
 
    templateType = DRAFTSCHEMATIC,
 
-   customObjectName = "Marauder Armor Helmet Starter",
+   customObjectName = "Marauder Armor Helmet",
 
    craftingToolTab = 2, -- (See DraftSchematicObjectTemplate.h)
    complexity = 1,

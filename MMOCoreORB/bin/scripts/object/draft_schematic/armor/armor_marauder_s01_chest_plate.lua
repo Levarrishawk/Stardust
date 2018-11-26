@@ -2,7 +2,7 @@ object_draft_schematic_armor_armor_marauder_s01_chest_plate = object_draft_schem
 
    templateType = DRAFTSCHEMATIC,
 
-   customObjectName = "Marauder Armor Chest Plate Starter",
+   customObjectName = "Marauder Armor Chest Plate",
 
    craftingToolTab = 2, -- (See DraftSchematicObjectTemplate.h)
    complexity = 1,

@@ -2,7 +2,7 @@ object_draft_schematic_armor_armor_marauder_s02_bracer_l = object_draft_schemati
 
    templateType = DRAFTSCHEMATIC,
 
-   customObjectName = "Marauder Armor Left Bracer Intermediate",
+   customObjectName = "Marauder Armor Left Bracer",
 
    craftingToolTab = 2, -- (See DraftSchematicObjectTemplate.h)
    complexity = 1,
