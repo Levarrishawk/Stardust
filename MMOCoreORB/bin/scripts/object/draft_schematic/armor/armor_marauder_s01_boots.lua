@@ -22,7 +22,7 @@ object_draft_schematic_armor_armor_marauder_s01_boots = object_draft_schematic_a
    ingredientTemplateNames = {"craft_clothing_ingredients_n", "craft_clothing_ingredients_n", "craft_clothing_ingredients_n", "craft_clothing_ingredients_n"},
    ingredientTitleNames = {"appearance_fragments", "armor_core_frame", "load_bearing_harness", "reinforcement"},
    ingredientSlotType = {0, 0, 0, 1},
-   resourceTypes = {"hide_scaley", "fiberplast_corellia", "metal", "petrochem_inert_polymer", "object/tangible/component/armor/shared_armor_segment_padded.iff"},
+   resourceTypes = {"hide_scaley", "fiberplast_corellia", "metal", "object/tangible/component/armor/shared_armor_segment_padded.iff"},
    resourceQuantities = {10, 10, 5, 1},
    contribution = {100, 100, 100, 100},
 
