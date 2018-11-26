@@ -7,7 +7,7 @@ object_draft_schematic_armor_armor_appearance_rebel_assault_bracer_r = object_dr
    craftingToolTab = 2, -- (See DraftSchematicObjectTemplate.h)
    complexity = 1,
    size = 4,
-   factoryCrateSize = 0,
+
 
    xpType = "crafting_clothing_armor",
    xp = 420,
