@@ -27,7 +27,7 @@ function kaas_city_ruins_mellichae:spawnMobiles()
 end
  
 function kaas_city_ruins_mellichae:notifyTriggerDead(pTrigger, pPlayer)
-        local pBoss = spawnMobile("jakku", "vitiate", 0, -0.2, -43.3, -150.7, 0, 36000020)
+        local pBoss = spawnMobile("kaas", "vitiate", 0, -0.2, -43.3, -150.7, 0, 36000020)
         ObjectManager.withCreatureObject(pBoss, function(oBoss)
         writeData("kaas_city_ruins_mellichae:spawnState", 1)
         writeData("kaasboss1", oBoss:getObjectID())

@@ -78,6 +78,32 @@ function KaasSeparatistScreenPlay:spawnMobiles()
 	spawnMobile("kaas", "kaas_s_battle_droid", 900, -70.7, -33.8, -228.1, -90, 36000132)
 	
 	spawnMobile("kaas", "kaas_battle_droid", 900, -62.9, -34, -252.2, -90, 36000133)
+	
+	spawnMobile("kaas", "kaas_s_battle_droid", 900, -130.3, -33.8, -228.1, 90, 36000135)
+	
+	spawnMobile("kaas", "kaas_battle_droid", 900, -125.8, -34, -267.6, 0, 36000138)
+	
+	spawnMobile("kaas", "kaas_battle_droid", 900, -133.1, -34.2, -303.1, 0, 36000139)
+	spawnMobile("kaas", "kaas_battle_droid", 900, -139.1, -34, -303.1, 0, 36000139)
+	
+	spawnMobile("kaas", "nanite_infected_human_cyborg", 900, -136, -33.8, -349.2, 0, 36000140)
+	spawnMobile("kaas", "nanite_infected_human_cyborg_alt", 900, -140.5, -34.1, -348.8, 0, 36000140)
+	spawnMobile("kaas", "nanite_infected_human_cyborg_alt", 900, -130, -33.7, -348.9, -30, 36000140)
+	
+	spawnMobile("kaas", "nanite_reanimated_clone_trooper", 900, -136, -35, -386.8, 10, 36000140)
+	spawnMobile("kaas", "nanite_reanimated_clone_trooper", 900, -127.5, -34, -374.3, -29, 36000140)
+	spawnMobile("kaas", "nanite_reanimated_clone_trooper", 900, -150.8, -33.9, -374.5, 29, 36000140)
+	spawnMobile("kaas", "nanite_reanimated_clone_trooper", 900, -134.9, -34.4, -366.9, -38, 36000140)
+	
+	spawnMobile("kaas", "nanite_reanimated_clone_trooper", 900, -65.7, -33.7, -365.1, -147, 36000141)
+  spawnMobile("kaas", "nanite_reanimated_clone_trooper", 900, -60, -33.5, -376.1, -71, 36000141)
+  spawnMobile("kaas", "nanite_reanimated_clone_trooper", 900, -71.7, -34.1, -381.5, 9, 36000141)
+  spawnMobile("kaas", "nanite_reanimated_clone_trooper", 900, -81.9, -33.9, -362.2, 169, 36000141)
+  
+  spawnMobile("kaas", "nanite_infected_human_cyborg", 900, -62.3, -34.1, -407.5, -59, 36000142)
+	spawnMobile("kaas", "nanite_infected_human_cyborg_alt", 900, -26, -33.9, -407.5, -89, 36000142)
+	
+	spawnMobile("kaas", "kaas_s_battle_droid", 900, -11.9, -34, -412.8, 180, 36000143)
 
 end
 
