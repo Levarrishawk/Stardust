@@ -6,7 +6,7 @@ object_draft_schematic_armor_armor_marauder_s01_boots = object_draft_schematic_a
 
    craftingToolTab = 2, -- (See DraftSchematicObjectTemplate.h)
    complexity = 1,
-   size = 4,
+   size = 3,
 
    xpType = "crafting_clothing_armor",
    xp = 80,
