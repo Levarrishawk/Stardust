@@ -34,4 +34,5 @@ object_draft_schematic_armor_armor_marauder_s02_helmet = object_draft_schematic_
 
 }
 
+
 ObjectTemplates:addTemplate(object_draft_schematic_armor_armor_marauder_s02_helmet, "object/draft_schematic/armor/armor_appearance_marauder_s02_helmet.iff")

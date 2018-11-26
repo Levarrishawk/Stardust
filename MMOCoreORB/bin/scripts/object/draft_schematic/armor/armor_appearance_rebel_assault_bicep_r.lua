@@ -16,9 +16,9 @@ object_draft_schematic_armor_armor_appearance_rebel_assault_bicep_r = object_dra
    experimentingSkill = "armor_experimentation",
    customizationSkill = "armor_customization",
 
-   customizationOptions = {2},
-   customizationStringNames = {"/private/index_color_1"},
-   customizationDefaults = {0},
+   customizationOptions = {},
+   customizationStringNames = {},
+   customizationDefaults = {},
 
    ingredientTemplateNames = {"craft_clothing_ingredients_n", "craft_clothing_ingredients_n", "craft_clothing_ingredients_n", "craft_clothing_ingredients_n", "craft_clothing_ingredients_n", "craft_clothing_ingredients_n", "craft_clothing_ingredients_n", "craft_clothing_ingredients_n"},
    ingredientTitleNames = {"appearance_fragments", "armor_core_frame", "armor_core", "load_bearing_harness", "reinforcement", "enhancement_cartridge", "appearance_enhancement_one", "appearance_enhancement_two"},
