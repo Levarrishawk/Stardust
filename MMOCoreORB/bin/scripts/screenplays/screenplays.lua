@@ -716,6 +716,8 @@ includeFile("poi/kaas_city_ruins_mellichae.lua")
 includeFile("poi/kaas_dark_force_shrine.lua")
 includeFile("poi/kaas_smuggler_starport.lua")
 
+includeFile("poi/kaas_abandon_separ_facility_necrosis.lua")
+
 --Chandrila Convos
 includeFile("heroics/chandriltech_greeter.lua")
 

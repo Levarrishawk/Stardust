@@ -41,21 +41,6 @@ master_tamer_xerthan = Creature:new {
 			},
 			lootChance = 9000000,  -- 90% chance for this group
 		},
-		{
-				groups = {
-				{group = "power_crystals", chance = 2500000},
-				{group = "clothing_attachments", chance = 2500000},   
-				{group = "armor_attachments", chance = 2500000},
-				{group = "named_crystals", chance = 2500000},
-			},
-			lootChance = 9000000,  -- 90% chance for this group	
-		},
-		{
-				groups = {
-				{group = "power_crystals", chance =10000000},
-				},
-			lootChance = 5000000, -- 50% chance for 3rd crystal.
-		},
 	},
 	weapons = {"pirate_weapons_heavy"},
 	reactionStf = "@npc_reaction/fancy",

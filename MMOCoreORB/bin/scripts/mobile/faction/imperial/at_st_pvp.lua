@@ -4,8 +4,8 @@ at_st_pvp = Creature:new {
 	faction = "imperial",
 	level = 125,
 	chanceHit = 4.75,
-	damageMin = 70,
-	damageMax = 100,
+	damageMin = 270,
+	damageMax = 400,
 	baseXp = 11859,
 	baseHAM = 25000,
   baseHAMmax = 25000,
@@ -26,7 +26,20 @@ at_st_pvp = Creature:new {
 	diet = NONE,
 
 	templates = {"object/mobile/atst.iff"},
-	lootGroups = {},
+	lootGroups = {
+    {
+      groups = {
+        {group = "color_crystals", chance = 100000},
+        {group = "rebel_assault", chance = 6000000},
+        {group = "weapons_all", chance = 1100000},
+        {group = "armor_all", chance = 1100000},
+        {group = "clothing_attachments", chance = 150000},
+        {group = "armor_attachments", chance = 150000},
+        {group = "rebel_officer_common", chance = 400000},
+        {group = "wearables_all", chance = 1000000}
+      }
+    }
+  },
 	conversationTemplate = "",
 	defaultAttack = "defaultdroidattack",
 	defaultWeapon = "object/weapon/ranged/vehicle/vehicle_atst_ranged.iff",

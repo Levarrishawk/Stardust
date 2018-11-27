@@ -45,7 +45,7 @@ rebel_commando_pvp = Creature:new {
 				{group = "carbines", chance = 1200000},
 				{group = "clothing_attachments", chance = 250000},
 				{group = "armor_attachments", chance = 250000},
-				{group = "wearables_common", chance = 1000000}
+				{group = "assault_trooper", chance = 1000000}
 			}
 		}
 	},

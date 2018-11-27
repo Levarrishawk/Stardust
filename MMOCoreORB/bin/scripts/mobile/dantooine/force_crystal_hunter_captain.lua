@@ -50,14 +50,7 @@ force_crystal_hunter_captain = Creature:new {
 			},
             lootChance = 6500000
         },
-		{ -- Jedi Specific Loot Group
-			groups =
-			{
-				{group = "jedi_clothing_attachments", chance = 4000000},
-				{group = "named_crystals", chance = 6000000},
-			},
-			lootChance = 750000,
-		},
+		
 	},
 	weapons = {"mixed_force_weapons"},
 	conversationTemplate = "",

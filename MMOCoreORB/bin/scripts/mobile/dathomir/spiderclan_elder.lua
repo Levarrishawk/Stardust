@@ -61,21 +61,7 @@ spiderclan_elder = Creature:new {
 				{group = "vehicle_house_group", chance = 1000000},    -- 50% * 10% = 5%
 			},
 			lootChance = 5000000,    -- 50% chance for this loot group
-		},
-		{ -- Jedi Specific Loot Group
-			groups =
-			{
-				{group = "named_crystals", chance = 10000000},
-			},
-			lootChance = 1500000,
-		},
-		{ -- Jedi Specific Loot Group
-			groups =
-			{
-				{group = "jedi_clothing_attachments", chance = 10000000}, -- 100% * 10% = 10%
-			},
-			lootChance = 1000000,
-		},
+		},		
 	},
 	weapons = {"mixed_force_weapons"},
 	conversationTemplate = "",

@@ -6,8 +6,8 @@ fbase_stormtrooper_captain_extreme = Creature:new {
 	faction = "imperial",
 	level = 180,
 	chanceHit = 9.0,
-	damageMin = 1045,
-	damageMax = 1800,
+	damageMin = 45,
+	damageMax = 800,
 	baseXp = 18000,
 	baseHAM = 119000,
 	baseHAMmax = 165000,
@@ -33,7 +33,7 @@ fbase_stormtrooper_captain_extreme = Creature:new {
 		{
 			groups = {
 				{group = "color_crystals", chance = 100000},
-				{group = "junk", chance = 6000000},
+				{group = "rebel_assault", chance = 6000000},
 				{group = "weapons_all", chance = 1100000},
 				{group = "armor_all", chance = 1100000},
 				{group = "clothing_attachments", chance = 150000},

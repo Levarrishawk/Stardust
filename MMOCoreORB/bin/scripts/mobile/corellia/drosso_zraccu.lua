@@ -44,8 +44,7 @@ drosso_zraccu = Creature:new {
 				groups = {
 				{group = "power_crystals", chance = 2500000},
 				{group = "clothing_attachments", chance = 2500000},
-				{group = "armor_attachments", chance = 2500000},
-				{group = "named_crystals", chance = 2500000},
+				{group = "armor_attachments", chance = 2500000},			
 			},
 			lootChance = 9000000,  -- 90% chance for this group
 		},

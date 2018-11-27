@@ -41,15 +41,7 @@ force_crystal_hunter = Creature:new {
 				{group = "holocron_light", chance = 250000},
 				{group = "clothing_attachments", chance = 500000}
 			},
-		},
-		{ -- Jedi Specific Loot Group
-			groups =
-			{
-				{group = "jedi_clothing_attachments", chance = 4000000},
-				{group = "named_crystals", chance = 6000000},
-			},
-			lootChance = 500000,
-		},
+		},		
 	},
 	weapons = {"mixed_force_weapons"},
 	conversationTemplate = "",

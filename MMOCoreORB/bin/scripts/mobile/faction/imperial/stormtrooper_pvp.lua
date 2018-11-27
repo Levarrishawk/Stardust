@@ -6,7 +6,7 @@ stormtrooper_pvp = Creature:new {
 	level = 25,
 	chanceHit = 0.36,
 	damageMin = 10,
-	damageMax = 100,
+	damageMax = 400,
 	baseXp = 2637,
 	baseHAM = 7200,
 	baseHAMmax = 8800,
@@ -29,21 +29,19 @@ stormtrooper_pvp = Creature:new {
 
 	templates = {"object/mobile/dressed_stormtrooper_m.iff"},
 	lootGroups = {
-		{
-			groups = {
-				{group = "color_crystals", chance = 100000},
-				{group = "junk", chance = 3400000},
-				{group = "rifles", chance = 1200000},
-				{group = "pistols", chance = 1200000},
-				{group = "melee_weapons", chance = 1200000},
-				{group = "carbines", chance = 1200000},
-				{group = "clothing_attachments", chance = 250000},
-				{group = "armor_attachments", chance = 250000},
-				{group = "stormtrooper_common", chance = 700000},
-				{group = "wearables_common", chance = 500000}
-			}
-		}
-	},
+    {
+      groups = {
+        {group = "color_crystals", chance = 100000},
+        {group = "junk", chance = 6000000},
+        {group = "weapons_all", chance = 1100000},
+        {group = "rebel_assault", chance = 1100000},
+        {group = "clothing_attachments", chance = 150000},
+        {group = "armor_attachments", chance = 150000},
+        {group = "rebel_officer_common", chance = 400000},
+        {group = "wearables_all", chance = 1000000}
+      }
+    }
+  },
 	weapons = {"stormtrooper_weapons"},
 	conversationTemplate = "",
 	reactionStf = "@npc_reaction/stormtrooper",

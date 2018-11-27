@@ -39,7 +39,7 @@ fbase_rebel_soldier_hard = Creature:new {
 		{
 			groups = {
 				{group = "color_crystals", chance = 200000},
-				{group = "junk", chance = 6000000},
+				{group = "assault_trooper", chance = 6000000},
 				{group = "weapons_all", chance = 1250000},
 				{group = "armor_all", chance = 1250000},
 				{group = "clothing_attachments", chance = 150000},

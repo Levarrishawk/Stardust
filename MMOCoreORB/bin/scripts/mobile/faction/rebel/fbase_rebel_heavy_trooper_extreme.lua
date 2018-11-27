@@ -6,8 +6,8 @@ fbase_rebel_heavy_trooper_extreme = Creature:new {
 	faction = "rebel",
 	level = 200,
 	chanceHit = 11.0,
-	damageMin = 1145,
-	damageMax = 2000,
+	damageMin = 750,
+	damageMax = 800,
 	baseXp = 20000,
 	baseHAM = 149000,
 	baseHAMmax = 205000,
@@ -36,7 +36,7 @@ fbase_rebel_heavy_trooper_extreme = Creature:new {
 		{
 			groups = {
 				{group = "color_crystals", chance = 300000},
-				{group = "junk", chance = 6000000},
+				{group = "assault_trooper", chance = 6000000},
 				{group = "holocron_dark", chance = 150000},
 				{group = "holocron_light", chance = 150000},
 				{group = "weapons_all", chance = 1050000},

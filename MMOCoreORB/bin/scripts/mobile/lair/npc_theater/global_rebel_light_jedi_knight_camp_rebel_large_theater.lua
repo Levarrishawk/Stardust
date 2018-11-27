@@ -1,6 +1,5 @@
 global_rebel_light_jedi_knight_camp_rebel_large_theater = Lair:new {
-	mobiles = {
-		{"light_jedi_knight",2},
+	mobiles = {		
 		{"rebel_droideka",1},
 		{"fbase_rebel_elite_heavy_trooper_hard",2},
 		{"specforce_marine",4},

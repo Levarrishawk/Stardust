@@ -1,6 +1,5 @@
 global_imperial_dark_jedi_camp_imperial_large_theater = Lair:new {
 	mobiles = {
-		{"fdark_jedi_knight", 2},
 		{"at_st", 1},
 		{"fbase_elite_dark_trooper_hard", 2},
 		{"stormtrooper_captain",1},

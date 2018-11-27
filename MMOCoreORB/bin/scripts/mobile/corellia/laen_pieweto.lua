@@ -39,42 +39,7 @@ laen_pieweto = Creature:new {
 
 			},
 			lootChance = 9000000,  -- 90% chance for this group
-		},
-		{
-			groups = {
-				{group = "power_crystals", chance = 3000000},
-				{group = "clothing_attachments", chance = 3000000},   
-				{group = "armor_attachments", chance = 3000000},
-				{group = "chiss_poacher_backpack_custom", chance = 1000000},
-			},
-			lootChance = 6000000,  -- 60% chance for this group	
-		},
-		{
-			groups = {
-				{group = "power_crystals", chance =10000000},
-				},
-			lootChance = 5000000, -- 50% chance for 3rd crystal.
-		},
-		{ -- Chiss backpack
-			groups = {
-				{group = "chiss_poacher_backpack_custom", chance = 10000000},
-			},
-			lootChance = 10000000,    -- Guarunteed Drop
-		},
-		{ -- Jedi Specific Loot Group
-			groups =
-			{
-				{group = "named_crystals", chance = 10000000},
-			},
-			lootChance = 10000000, -- Guarunteed Drop
-		},
-		{ -- Jedi Specific Loot Group
-			groups =
-			{
-				{group = "jedi_clothing_attachments", chance = 10000000}, -- 20% * 100% = 20%
-			},
-			lootChance = 2000000,  -- 10% chance for this group
-		},
+		},			
 	},
 	weapons = {"mixed_force_weapons"},
 	reactionStf = "@npc_reaction/fancy",
