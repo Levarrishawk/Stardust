@@ -7,7 +7,7 @@ fbase_dark_trooper_hard = Creature:new {
 	level = 260,
 	chanceHit = 1.0,
 	damageMin = 645,
-	damageMax = 1000,
+	damageMax = 800,
 	baseXp = 10000,
 	baseHAM = 24000,
 	baseHAMmax = 30000,
@@ -33,7 +33,7 @@ fbase_dark_trooper_hard = Creature:new {
 		{
 			groups = {
 				{group = "color_crystals", chance = 300000},
-				{group = "junk", chance = 6000000},
+				{group = "rebel_assault", chance = 6000000},
 				{group = "holocron_dark", chance = 150000},
 				{group = "holocron_light", chance = 150000},
 				{group = "weapons_all", chance = 1050000},

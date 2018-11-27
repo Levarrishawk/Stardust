@@ -75,21 +75,7 @@ nightsister_elder = Creature:new {
 				{group = "nightsister_clothing", chance = 10000000},    -- 12.5% * 100% = 12.5%
 			},
 			lootChance = 1250000,
-		},
-		{ -- Jedi Specific Loot Group
-			groups =
-			{
-				{group = "named_crystals", chance = 10000000},  -- 15% * 100% = 15%
-			},
-			lootChance = 1500000, -- 15% chance for this group
-		},
-		{ -- Jedi Specific Loot Group
-			groups =
-			{
-				{group = "jedi_clothing_attachments", chance = 10000000}, -- 10% * 100% = 10%
-			},
-			lootChance = 1000000,  -- 10% chance for this group
-		},
+		},		
 	},
 	weapons = {"mixed_force_weapons"},
 	conversationTemplate = "",

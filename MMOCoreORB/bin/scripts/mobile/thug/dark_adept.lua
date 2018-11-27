@@ -66,15 +66,7 @@ dark_adept = Creature:new {
 				{group = "dark_jedi_common", chance = 1000000},
 			},
 			lootChance = 1500000,
-		},
-		{ -- Jedi Specific Loot Group
-			groups = 
-			{	
-				{group = "jedi_clothing_attachments", chance = 5000000},
-				{group = "named_crystals", chance = 5000000},
-			},
-			lootChance = 500000,
-		},
+		},	
 	},
 	weapons = {"dark_jedi_weapons_gen2"},
 	conversationTemplate = "",

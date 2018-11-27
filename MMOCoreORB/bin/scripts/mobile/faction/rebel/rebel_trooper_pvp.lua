@@ -6,8 +6,8 @@ rebel_trooper_pvp = Creature:new {
 	faction = "rebel",
 	level = 25,
   chanceHit = 0.36,
-  damageMin = 20,
-  damageMax = 100,
+  damageMin = 10,
+  damageMax = 400,
   baseXp = 2637,
   baseHAM = 7200,
   baseHAMmax = 8800,
@@ -46,7 +46,7 @@ rebel_trooper_pvp = Creature:new {
 				{group = "carbines", chance = 1000000},
 				{group = "clothing_attachments", chance = 100000},
 				{group = "armor_attachments", chance = 100000},
-				{group = "wearables_common", chance = 1000000}
+				{group = "assault_trooper", chance = 1000000}
 			}
 		}
 	},

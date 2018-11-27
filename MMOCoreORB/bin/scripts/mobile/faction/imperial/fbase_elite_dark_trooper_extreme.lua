@@ -6,8 +6,8 @@ fbase_elite_dark_trooper_extreme = Creature:new {
 	faction = "imperial",
 	level = 270,
 	chanceHit = 18.0,
-	damageMin = 1495,
-	damageMax = 2700,
+	damageMin = 495,
+	damageMax = 1000,
 	baseXp = 27000,
 	baseHAM = 254000,
 	baseHAMmax = 345000,
@@ -33,7 +33,7 @@ fbase_elite_dark_trooper_extreme = Creature:new {
 		{
 			groups = {
 				{group = "color_crystals", chance = 300000},
-				{group = "junk", chance = 6000000},
+				{group = "rebel_assault", chance = 6000000},
 				{group = "holocron_dark", chance = 150000},
 				{group = "holocron_light", chance = 150000},
 				{group = "weapons_all", chance = 1050000},

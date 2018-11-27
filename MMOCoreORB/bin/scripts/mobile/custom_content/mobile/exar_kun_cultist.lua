@@ -43,42 +43,7 @@ exar_kun_cultist = Creature:new {
 				{group = "dark_jedi_common", chance = 2000000},
 			},
 			lootChance = 8000000,
-		},
-		{
-			groups = {
-				{group = "clothing_attachments", chance = 1500000},
-				{group = "rifles", chance = 2500000},
-				{group = "pistols", chance = 2500000},
-				{group = "carbines", chance = 2500000},
-				{group = "dark_jedi_common", chance = 1000000},
-			},
-			lootChance = 7000000,
-		},
-		{
-			groups = {
-				{group = "clothing_attachments", chance = 1500000},
-				{group = "rifles", chance = 2500000},
-				{group = "pistols", chance = 2500000},
-				{group = "carbines", chance = 2500000},
-				{group = "dark_jedi_common", chance = 1000000},
-			},
-			lootChance = 1000000,
-		},
-		{ -- Jedi Specific Loot Group
-			groups =
-			{
-				{group = "named_crystals", chance = 10000000},
-			},
-			lootChance = 2500000,
-		},
-		{ 	-- Jedi Specific Loot Group 2 - 30%
-			groups ={
-				{group = "jedi_clothing_attachments", chance = 2500000},	-- 40% * 25% = 10%
-				{group = "ngerobes2", chance = 7500000}	                    -- 40% * 70% = 30%
-
-			},
-			lootChance = 1000000,
-		},
+		},		
 		{ -- Veteran Rewards
 			groups =
 			{

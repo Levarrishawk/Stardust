@@ -38,58 +38,7 @@ nabek_naga = Creature:new {
 
 			},
 			lootChance = 9000000,  -- 90% chance for this group
-		},
-		{
-			groups = {
-				{group = "power_crystals", chance = 3300000},
-				{group = "clothing_attachments", chance = 3300000},   
-				{group = "armor_attachments", chance = 3300000},
-				{group = "wearables_scarce", chance = 100000},
-			},
-			lootChance = 6000000,  -- 60% chance for this group	
-		},
-		{
-			groups = {
-				{group = "power_crystals", chance =10000000},
-				},
-			lootChance = 5000000, -- 50% chance for 3rd crystal.
-		},
-		{ -- Chiss backpack
-			groups = {
-				{group = "chiss_poacher_backpack_custom", chance = 10000000},
-			},
-			lootChance = 1000000,    -- 10% chance for drop
-		},
-		{ -- Jedi Specific Loot Group
-			groups =
-			{
-				{group = "named_crystals", chance = 10000000},
-			},
-			lootChance = 10000000, -- Guarunteed Drop
-		},
-		{ -- Jedi Specific Loot Group
-			groups =
-			{
-				{group = "jedi_clothing_attachments", chance = 10000000}, -- 10% * 100% = 10%
-			},
-			lootChance = 1000000,  -- 10% chance for this group
-		},
-		{ -- New NGE Robes
-			groups =
-			{
-				{group = "ngerobes1", chance = 6500000}, -- 100% * 65% = 65%
-				{group = "ngerobes2", chance = 3500000}, -- 100% * 35% = 35%
-			},
-			lootChance = 10000000,  -- 100% chance for this group
-		},
-		{ -- New NGE Robes
-			groups =
-			{
-				{group = "ngerobes1", chance = 6500000}, -- 5% * 65% = 3.25%
-				{group = "ngerobes2", chance = 3500000}, -- 5% * 35% = 1.75%
-			},
-			lootChance = 500000,  -- 5% chance for this group
-		},
+		},		
 	},
 	weapons = {"dark_jedi_weapons_gen3"},
 	reactionStf = "@npc_reaction/fancy",

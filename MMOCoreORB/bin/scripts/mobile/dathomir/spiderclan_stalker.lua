@@ -49,15 +49,7 @@ spiderclan_stalker = Creature:new {
 				{group = "wearables_common", chance = 2500000},
 			},
 			lootChance = 4500000,
-		},
-		{ -- Jedi Specific Loot Group
-			groups =
-			{
-				{group = "jedi_clothing_attachments", chance = 5000000},    -- 7.5% * 50% = 3.75%
-				{group = "named_crystals", chance = 5000000},
-			},
-			lootChance = 750000,   -- 7.5% chance for this group
-		},
+		},	
 	},
 	weapons = {"mixed_force_weapons"},
 	conversationTemplate = "",

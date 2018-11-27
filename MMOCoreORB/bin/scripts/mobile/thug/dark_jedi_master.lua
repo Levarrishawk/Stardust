@@ -68,22 +68,7 @@ dark_jedi_master = Creature:new {
 				{group = "dark_jedi_common", chance = 1000000},
 			},
 			lootChance = 4500000,
-		},
-		{ -- Jedi Specific Loot Group
-			groups =
-			{
-				{group = "named_crystals", chance = 10000000},
-			},
-			lootChance = 2500000,
-		},
-		{ 	-- Jedi Specific Loot Group 2 - 30%
-			groups ={
-				{group = "jedi_clothing_attachments", chance = 2500000},	-- 40% * 25% = 10%
-				{group = "ngerobes2", chance = 7500000}	                    -- 40% * 70% = 30%
-
-			},
-			lootChance = 4000000,
-		},
+		},	
 	},
 	weapons = {"dark_jedi_weapons_gen4"},
 	conversationTemplate = "",

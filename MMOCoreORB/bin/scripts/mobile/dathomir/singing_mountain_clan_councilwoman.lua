@@ -50,32 +50,7 @@ singing_mountain_clan_councilwoman = Creature:new {
 				{group = "wearables_scarce", chance = 1000000},
 			},
 			lootChance = 7500000,   -- 75% chance for this group
-		},
-		{
-			groups = {
-				{group = "power_crystals", chance = 2000000},
-				{group = "clothing_attachments", chance = 2000000},   -- 50% * 20% = 10%
-				{group = "armor_attachments", chance = 2000000},      -- 50% * 20% = 10%
-				{group = "wearables_rare", chance = 2000000},
-				{group = "wearables_scarce", chance = 1000000},
-				{group = "vehicle_house_group", chance = 1000000},    -- 50% * 10% = 5%
-			},
-			lootChance = 5000000,    -- 50% chance for this loot group
-		},
-		{ -- Jedi Specific Loot Group
-			groups =
-			{
-				{group = "named_crystals", chance = 10000000},
-			},
-			lootChance = 1500000,
-		},
-		{ -- Jedi Specific Loot Group
-			groups =
-			{
-				{group = "jedi_clothing_attachments", chance = 10000000}, -- 100% * 10% = 10%
-			},
-			lootChance = 1000000,
-		},
+		},	
 	},
 	weapons = {"mixed_force_weapons"},
 	conversationTemplate = "",

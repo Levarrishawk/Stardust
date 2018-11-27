@@ -7,7 +7,7 @@ fbase_rebel_soldier_extreme = Creature:new {
 	level = 160,
 	chanceHit = 7.0,
 	damageMin = 945,
-	damageMax = 1600,
+	damageMax = 1000,
 	baseXp = 16000,
 	baseHAM = 89000,
 	baseHAMmax = 125000,
@@ -36,18 +36,19 @@ fbase_rebel_soldier_extreme = Creature:new {
 		"object/mobile/dressed_rebel_trooper_sullustan_male_01.iff"
 	},
 	lootGroups = {
-		{
-			groups = {
-				{group = "color_crystals", chance = 200000},
-				{group = "junk", chance = 6000000},
-				{group = "weapons_all", chance = 1250000},
-				{group = "armor_all", chance = 1250000},
-				{group = "clothing_attachments", chance = 150000},
-				{group = "armor_attachments", chance = 150000},
-				{group = "wearables_all", chance = 1000000}
-			}
-		}
-	},
+    {
+      groups = {
+        {group = "color_crystals", chance = 100000},
+        {group = "assault_trooper", chance = 6000000},
+        {group = "weapons_all", chance = 1100000},
+        {group = "armor_all", chance = 1100000},
+        {group = "clothing_attachments", chance = 150000},
+        {group = "armor_attachments", chance = 150000},
+        {group = "rebel_officer_common", chance = 400000},
+        {group = "wearables_all", chance = 1000000}
+      }
+    }
+  },
 	weapons = {"rebel_weapons_medium"},
 	conversationTemplate = "",
 	reactionStf = "@npc_reaction/military",

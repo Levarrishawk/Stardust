@@ -33,59 +33,7 @@ light_jedi_knight = Creature:new {
 		"object/mobile/dressed_jedi_trainer_twilek_female_01.iff",
     	},
 	
-	lootGroups = {
-		{
-			groups = { -- DarkJedi LootGroup
-				{group = "holocron_light", chance = 4000000},
-				{group = "dark_jedi_common", chance = 6000000},
-			},
-			lootChance = 5500000,
-		},
-		{
-			groups = {
-				{group = "power_crystals", chance = 1500000},
-				{group = "named_crystals", chance = 2500000},
-				{group = "clothing_attachments", chance = 1000000},
-				{group = "melee_weapons", chance = 2500000},
-				{group = "dark_jedi_common", chance = 2500000},
-			},
-			lootChance = 6500000,
-		},
-		{
-			groups = {
-				{group = "clothing_attachments", chance = 1000000},
-				{group = "rifles", chance = 2500000},
-				{group = "pistols", chance = 2000000},
-				{group = "carbines", chance = 2500000},
-				{group = "dark_jedi_common", chance = 2000000},
-			},
-			lootChance = 4500000,
-		},
-		{
-			groups = {
-				{group = "clothing_attachments", chance = 1000000},
-				{group = "rifles", chance = 2000000},
-				{group = "pistols", chance = 2500000},
-				{group = "carbines", chance = 2500000},
-				{group = "dark_jedi_common", chance = 2000000},
-			},
-			lootChance = 3500000,
-		},
-		{ 	-- Jedi Specific Loot Group 1 - 11%
-			groups ={
-				{group = "jedi_clothing_attachments", chance = 10000000}				
-			},
-			lootChance = 1100000,
-		},
-		{ 	-- Jedi Specific Loot Group 2 - 14%
-			groups ={
-				{group = "jedi_clothing_attachments", chance = 5000000},	-- 12% * 50% = 6%
-				{group = "ngerobes1", chance = 5000000}	                    -- 12% * 50% = 6%
-		
-			},
-			lootChance = 1400000,
-		},
-	},
+	lootGroups = {},
 	weapons = {"dark_jedi_weapons_gen3"},
 	conversationTemplate = "",
 	attacks = merge(lightsabermaster,forcepowermaster)

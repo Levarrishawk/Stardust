@@ -36,7 +36,7 @@ fbase_rebel_heavy_trooper_hard = Creature:new {
 		{
 			groups = {
 				{group = "color_crystals", chance = 300000},
-				{group = "junk", chance = 6000000},
+				{group = "assault_trooper", chance = 6000000},
 				{group = "holocron_dark", chance = 150000},
 				{group = "holocron_light", chance = 150000},
 				{group = "weapons_all", chance = 1050000},

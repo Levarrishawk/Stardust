@@ -29,19 +29,19 @@ fbase_stormtrooper_hard = Creature:new {
 
 	templates = {"object/mobile/dressed_stormtrooper_m.iff"},
 	lootGroups = {
-		{
-			groups = {
-				{group = "color_crystals", chance = 100000},
-				{group = "junk", chance = 6000000},
-				{group = "weapons_all", chance = 1200000},
-				{group = "armor_all", chance = 1200000},
-				{group = "clothing_attachments", chance = 150000},
-				{group = "armor_attachments", chance = 150000},
-				{group = "stormtrooper_common", chance = 200000},
-				{group = "wearables_all", chance = 1000000}
-			}
-		}
-	},
+    {
+      groups = {
+        {group = "color_crystals", chance = 100000},
+        {group = "rebel_assault", chance = 6000000},
+        {group = "weapons_all", chance = 1100000},
+        {group = "armor_all", chance = 1100000},
+        {group = "clothing_attachments", chance = 150000},
+        {group = "armor_attachments", chance = 150000},
+        {group = "rebel_officer_common", chance = 400000},
+        {group = "wearables_all", chance = 1000000}
+      }
+    }
+  },
 	weapons = {"stormtrooper_weapons"},
 	conversationTemplate = "",
 	reactionStf = "@npc_reaction/stormtrooper",
