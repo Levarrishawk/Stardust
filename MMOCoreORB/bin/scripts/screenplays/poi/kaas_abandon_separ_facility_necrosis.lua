@@ -65,16 +65,16 @@ function kaas_abandon_separ_facility_necrosis:boss_damage(pBoss, pPlayer)
   local bossMaxAction = boss:getMaxHAM(3)
   local bossMaxMind = boss:getMaxHAM(6)
    
-  local x1 = -0.2
-  local y1 = -150.7
+  local x1 = 17.8
+  local y1 = -372.5
   local x2 = boss:getPositionX()
   local y2 = boss:getPositionY()
    
   local distance = ((x2 - x1)*(x2 - x1)) + ((y2 - y1)*(y2 - y1))
-  local maxDistance = 45
+  local maxDistance = 60
    
   if distance > (maxDistance * maxDistance) then
-  spatialChat(pBoss, "Do not fear death...")
+  spatialChat(pBoss, "You coward!  Run if you must.")
  
 
 
