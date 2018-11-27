@@ -29,17 +29,7 @@ vash_dlarku = Creature:new {
 	--Miniboss
 	templates = {"object/mobile/dressed_tatooine_jabba_henchman.iff"},
 
-		lootGroups = {
-		{
-				groups = {
-				{group = "power_crystals", chance = 2500000},
-				{group = "color_crystals", chance = 2500000},
-				{group = "armor_attachments", chance = 2500000},
-				{group = "clothing_attachments", chance = 2500000},
-
-			},
-			lootChance = 9000000,  -- 90% chance for this group
-	},
+		lootGroups = {},
 	weapons = {"st_bombardier_weapons"},
 	attacks = merge(commandomaster,marksmanmaster,brawlermaster),
 	--Special Attacks
