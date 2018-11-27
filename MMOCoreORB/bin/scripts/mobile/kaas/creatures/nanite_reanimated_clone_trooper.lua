@@ -27,7 +27,7 @@ nanite_reanimated_clone_trooper = Creature:new {
   optionsBitmask = AIENABLED,
   diet = CARNIVORE,
 
-	templates = {"object/mobile/outbreak_undead_boss_m_hum_01.iff"},
+	templates = {"object/mobile/outbreak_undead_deathtrooper_09_m.iff"},
 	lootGroups = {
     {
       groups = {
