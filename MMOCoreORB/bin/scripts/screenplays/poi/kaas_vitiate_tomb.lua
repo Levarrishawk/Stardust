@@ -29,6 +29,18 @@ function KaasVitiateScreenPlay:spawnMobiles()
   pMobile = spawnMobile("kaas", "insane_vitiate_cultist", 60, 5884, 80, -1075, -116, 0)
   self:setMoodString(pMobile, "neutral")
   AiAgent(pMobile):setAiTemplate("idlewander")   
+  
+  pMobile = spawnMobile("kaas", "insane_vitiate_cultist", 60, 5871, 80, -1074, -116, 0)
+  self:setMoodString(pMobile, "neutral")
+  AiAgent(pMobile):setAiTemplate("idlewander")   
+  
+  pMobile = spawnMobile("kaas", "insane_vitiate_cultist", 60, 5875, 80, -1085, -116, 0)
+  self:setMoodString(pMobile, "neutral")
+  AiAgent(pMobile):setAiTemplate("idlewander")  
+  
+  pMobile = spawnMobile("kaas", "insane_vitiate_cultist", 60, 5887, 80, -1102, -116, 0)
+  self:setMoodString(pMobile, "neutral")
+  AiAgent(pMobile):setAiTemplate("idlewander")  
 
   spawnMobile("kaas", "sith_ghost", 200, -10.9, 0.0, -2.4, 179, 36000092) 
   spawnMobile("kaas", "insane_vitiate_cultist", 200, -19.4, 0.0, -2.5, 90, 36000092)  
