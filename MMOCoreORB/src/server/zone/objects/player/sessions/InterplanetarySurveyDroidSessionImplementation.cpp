@@ -182,8 +182,13 @@ void InterplanetarySurveyDroidSessionImplementation::handleMenuSelect(CreatureOb
 
 
 		//  TODO: Add check here to stop tool from being destroyed.   -- Lev 9/20/18
-		tool->destroyObjectFromWorld(true);
-		tool->destroyObjectFromDatabase(true);
+		// Rather than always using a tool per survey droid, simply damage it.
+				tool->setConditionDamage(tool->getConditionDamage() + 40, true);
+				// If the damage is greater than the remaining condition, trash it.
+				if (tool->isDestroyed()) {
+					tool->destroyObjectFromWorld(true);
+					tool->destroyObjectFromDatabase(true);
+				}
 
 		tangibleObject->decreaseUseCount();
 		cancelSession();

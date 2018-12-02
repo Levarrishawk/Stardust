@@ -4,8 +4,8 @@ death_watch_s_battle_droid = Creature:new {
 	faction = "",
 	level = 300,
 	chanceHit = 1.8,
-	damageMin = 1080,
-	damageMax = 1890,
+	damageMin = 700,
+	damageMax = 1000,
 	baseXp = 19000,
 	baseHAM = 172500,
 	baseHAMmax = 323000,
@@ -33,8 +33,7 @@ death_watch_s_battle_droid = Creature:new {
 	lootGroups = {
 		{
 			groups = {
-				{group = "death_watch_bunker_commoners", chance = 6500000},
-				{group = "stap_speeder", chance = 3500000}     -- 25% * 35% = 8.75%
+				{group = "death_watch_bunker_commoners", chance = 6500000},			
 			},
 			lootChance = 2500000    -- 25% chance of this group
 		},

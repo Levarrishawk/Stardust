@@ -1,15 +1,16 @@
 death_watch_overlord = Creature:new {
-	objectName = "",
-	customName = "Drartih Oure (a Death Watch Overlord)",
+	objectName = "@mob/creature_names:mand_bunker_dthwatch_gold",
+  randomNameType = NAME_GENERIC,
+  randomNameTag = true,
 	socialGroup = "death_watch",
-	faction = "",
+  faction = "",
 	level = 315,
 	chanceHit = 1.3,
-	damageMin = 1645,
-	damageMax = 2500,
+	damageMin = 800,
+	damageMax = 1100,
 	baseXp = 20948,
-	baseHAM = 350000,
-	baseHAMmax = 550000,
+	baseHAM = 150000,
+	baseHAMmax = 250000,
 	armor = 1,
 	resists = {80,80,90,80,45,45,100,70,25},
 	meatType = "",
@@ -53,26 +54,7 @@ death_watch_overlord = Creature:new {
 				{group = "armor_attachments", chance = 10000000},
 			},
 			lootChance = 2000000
-		},
-		{
-			groups =
-			{
-				{group = "power_crystals", chance = 10000000},
-			},
-			lootChance = 3000000,
-		},
-		{--- Musty Bunker Group
-			groups = {
-				{group = "musty_house_group", chance =  10000000},    -- 15% * 100% = 15%
-			},
-			lootChance = 1500000
-		},
-		{--- Mandalorian Armor Segment Group
-			groups = {
-				{group = "armor_segment_mandalorian", chance =  10000000},    -- 10 * 100% = 10
-			},
-			lootChance = 1000000
-		}
+		},		
 	},
 	weapons = {"dark_trooper_weapons"},
 	conversationTemplate = "",
