@@ -28,8 +28,8 @@ tkanovice = { {"unarmedhit2",""},{"unarmedbodyhit1",""},{"unarmeddizzy1",""},{"u
 
 --creature level 26 to 30 use base profession master with these depending on weapons in their weapons groups
 bountyhuntermid = { {"firelightningcone1",""},{"firelightningsingle1",""},{"bleedingshot",""},{"underhandshot",""},{"eyeshot",""}}
-commandomid = { {"flamecone1",""},{"flamesingle1",""},{"fireacidcone1",""},{"fireacidsingle1",""} }
-carbineermid = {}-- {"actionshot2",""},{"fullautosingle2",""},{"fullautoarea2",""},{"scattershot2",""},{"legshot3",""},{"burstshot2",""},{"wildshot1",""},{"chargeshot1",""},{"cripplingshot",""} }
+commandomid = {} --{"flamecone1",""},{"flamesingle1",""},{"fireacidcone1",""},{"fireacidsingle1",""} }
+carbineermid = { {"actionshot2",""},{"fullautosingle2",""},{"fullautoarea2",""},{"scattershot2",""},{"legshot3",""},{"burstshot2",""},{"wildshot1",""},{"chargeshot1",""},{"cripplingshot",""} }
 pistoleermid = { {"bodyshot3",""},{"healthshot2",""},{"pointblanksingle2",""},{"pistolmeleedefense2",""},{"disarmingshot1",""},{"doubletap",""},{"stoppingshot",""} }
 riflemanmid = { {"headshot3",""},{"strafeshot1",""},{"mindshot2",""},{"flushingshot2",""},{"flurryshot2",""},{"startleshot1",""} }
 fencermid = { {"melee1hhit2",""},{"melee1hscatterhit1",""},{"melee1hhealthhit1",""},{"melee1hbodyhit3",""},{"melee1hblindhit2",""},{"melee1hdizzyhit2",""},{"melee1hspinattack2",""} }
