@@ -17,6 +17,7 @@ function buffTerminalMenuComponent:handleObjectMenuSelect(pSceneObject, pPlayer,
 
 	if selectedID == 20 then
 		CreatureObject(pPlayer):enhanceCharacter()
+		CreatureObject(pPlayer):playMusicMessage("sound/vo_meddroid_01.snd")
 	elseif selectedID == 21 then
 		for i = 0, 8 do
 			CreatureObject(pPlayer):setWounds(i, 0)
