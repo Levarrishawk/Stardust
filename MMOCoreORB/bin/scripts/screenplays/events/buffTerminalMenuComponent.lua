@@ -23,10 +23,7 @@ function buffTerminalMenuComponent:handleObjectMenuSelect(pSceneObject, pPlayer,
     sui.setPrompt("It will cost 5000 Credits to receive a Medical Health Enhancement.  Do you wish to proceed?")
     sui.setTitle("Medical Enhancement Droid")
     sui.setCancelButtonText("Cancel") -- Cancel  
-    sui.setOkButtonText("OK") -- Dark Jedi Council
-    -- Other Button setup subscribe
-    sui.setProperty("btnRevert", "OnPress", "RevertWasPressed=1\r\nparent.btnOk.press=t")
-    sui.subscribeToPropertyForEvent(SuiEventType.SET_onClosedOk, "btnRevert", "RevertWasPressed")
+    sui.setOkButtonText("OK") -- OK   
 
     sui.sendTo(pPlayer)   	  	
 	
