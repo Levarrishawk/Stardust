@@ -1,9 +1,11 @@
+local ObjectManager = require("managers.object.object_manager")
+
 buffTerminalMenuComponent = {  }
 
 function buffTerminalMenuComponent:fillObjectMenuResponse(pSceneObject, pMenuResponse, pPlayer)
 	local response = LuaObjectMenuResponse(pMenuResponse)
 	response:addRadialMenuItem(20, 3, "Get Buffs")
-	--response:addRadialMenuItem(21, 3, "Clear Wounds")
+	
 end
 
 function buffTerminalMenuComponent:handleObjectMenuSelect(pSceneObject, pPlayer, selectedID)
@@ -15,15 +17,10 @@ function buffTerminalMenuComponent:handleObjectMenuSelect(pSceneObject, pPlayer,
 		return 0
 	end
 
-	if selectedID == 20 then
+	if selectedID == 20 then	  
 		CreatureObject(pPlayer):enhanceCharacter()
 		CreatureObject(pPlayer):playMusicMessage("sound/vo_meddroid_01.snd")
-	elseif selectedID == 21 then
-		for i = 0, 8 do
-			CreatureObject(pPlayer):setWounds(i, 0)
-		end
-
-		CreatureObject(pPlayer):setShockWounds(0)
+	
 	end
 
 	return 0
