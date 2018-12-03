@@ -42,7 +42,7 @@ function buffTerminalMenuComponent:handleBuffChoice(pPlayer, pSui, eventIndex, .
   
   if (cancelPressed) then   
     return 
-  elseif (eventIndex == 0) then -- Chose Dark Side
+  elseif (eventIndex == 0) then -- Buff the player
     CreatureObject(pPlayer):enhanceCharacter()
     CreatureObject(pPlayer):playMusicMessage("sound/vo_meddroid_01.snd")
     CreatureObject(pPlayer):playEffect("clienteffect/medic_enhance_strength.cef", "")
