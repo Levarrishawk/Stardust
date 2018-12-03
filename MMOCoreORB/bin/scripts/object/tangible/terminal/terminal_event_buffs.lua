@@ -42,7 +42,7 @@
 
 
 object_tangible_terminal_terminal_event_buffs = object_tangible_terminal_shared_terminal_event_buffs:new {
-	customName = "Buffs",
+	customName = "Medical Enhancement Droid",
 	objectMenuComponent = "buffTerminalMenuComponent",
 }
 
