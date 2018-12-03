@@ -20,6 +20,8 @@ function buffTerminalMenuComponent:handleObjectMenuSelect(pSceneObject, pPlayer,
 	if selectedID == 20 then	  
 		CreatureObject(pPlayer):enhanceCharacter()
 		CreatureObject(pPlayer):playMusicMessage("sound/vo_meddroid_01.snd")
+		CreatureObject(pPlayer):subtractCashCredits(5000)
+    CreatureObject(pPlayer):sendSystemMessage("You successfully make a payment of 5000 credits.")
 	
 	end
 
