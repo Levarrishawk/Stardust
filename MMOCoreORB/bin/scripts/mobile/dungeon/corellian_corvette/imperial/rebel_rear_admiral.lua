@@ -7,10 +7,10 @@ rebel_rear_admiral = Creature:new {
 	level = 200,
 	chanceHit = 16,
 	damageMin = 145,
-	damageMax = 700,
+	damageMax = 400,
 	baseXp = 19008,
-	baseHAM = 160000,
-	baseHAMmax = 195000,
+	baseHAM = 60000,
+	baseHAMmax = 95000,
 	armor = 1,
 	resists = {30,35,0,0,30,30,80,65,-1},
 	meatType = "",
@@ -37,7 +37,7 @@ rebel_rear_admiral = Creature:new {
 		{
 			groups = {
 				{group = "color_crystals", chance = 100000},
-				{group = "junk", chance = 4700000},
+				{group = "assault_trooper", chance = 4700000},
 				{group = "rifles", chance = 1000000},
 				{group = "pistols", chance = 1000000},
 				{group = "melee_weapons", chance = 1000000},
