@@ -46,7 +46,7 @@ rebel_trooper = Creature:new {
 				{group = "carbines", chance = 1000000},
 				{group = "clothing_attachments", chance = 100000},
 				{group = "armor_attachments", chance = 100000},
-				{group = "wearables_common", chance = 1000000}
+				{group = "assault_trooper", chance = 1000000}
 			}
 		}
 	},

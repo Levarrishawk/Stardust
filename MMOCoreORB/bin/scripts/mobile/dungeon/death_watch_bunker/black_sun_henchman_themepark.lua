@@ -73,7 +73,7 @@ black_sun_henchman_themepark = Creature:new {
 	},
 	weapons = {"pirate_weapons_heavy"},
 	conversationTemplate = "",
-	attacks = merge(bountyhuntermaster,marksmanmaster,brawlermaster)
+	attacks = {}, --(bountyhuntermaster,marksmanmaster,brawlermaster)
 }
 
 CreatureTemplates:addCreatureTemplate(black_sun_henchman_themepark, "black_sun_henchman_themepark")

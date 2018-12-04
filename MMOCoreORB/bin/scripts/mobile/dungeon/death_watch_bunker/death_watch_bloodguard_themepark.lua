@@ -59,7 +59,7 @@ death_watch_bloodguard_themepark = Creature:new {
 	},
 	weapons = {"pirate_weapons_heavy"},
 	conversationTemplate = "",
-	attacks = merge(bountyhuntermaster,marksmanmaster,brawlermaster,tkamaster)
+	attacks = {}, --merge(bountyhuntermaster,marksmanmaster,brawlermaster,tkamaster)
 }
 
 CreatureTemplates:addCreatureTemplate(death_watch_bloodguard_themepark, "death_watch_bloodguard_themepark")

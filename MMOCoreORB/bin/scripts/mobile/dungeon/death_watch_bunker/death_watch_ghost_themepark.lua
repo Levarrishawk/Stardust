@@ -78,7 +78,7 @@ death_watch_ghost_themepark = Creature:new {
 	},
 	weapons = {"pirate_weapons_heavy"},
 	conversationTemplate = "",
-	attacks = merge(bountyhuntermaster,marksmanmaster,brawlermaster,pikemanmaster,fencermaster,swordsmanmaster)
+	attacks = {}, --(bountyhuntermaster,marksmanmaster,brawlermaster,pikemanmaster,fencermaster,swordsmanmaster)
 }
 
 CreatureTemplates:addCreatureTemplate(death_watch_ghost_themepark, "death_watch_ghost_themepark")

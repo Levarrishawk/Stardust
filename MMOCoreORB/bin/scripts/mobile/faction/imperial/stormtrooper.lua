@@ -40,7 +40,7 @@ stormtrooper = Creature:new {
 				{group = "clothing_attachments", chance = 250000},
 				{group = "armor_attachments", chance = 250000},
 				{group = "stormtrooper_common", chance = 700000},
-				{group = "wearables_common", chance = 500000}
+				{group = "rebel_assault", chance = 500000}
 			}
 		}
 	},
