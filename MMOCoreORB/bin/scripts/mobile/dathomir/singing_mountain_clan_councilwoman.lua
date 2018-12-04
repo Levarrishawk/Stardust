@@ -6,11 +6,11 @@ singing_mountain_clan_councilwoman = Creature:new {
 	faction = "mtn_clan",
 	level = 331, -- Should drop Flawless Crystals
 	chanceHit = 10.5,
-	damageMin = 1190,
-	damageMax = 2050,
+	damageMin = 500,
+	damageMax = 800,
 	baseXp = 24180,
-	baseHAM = 261000,
-	baseHAMmax = 320000,
+	baseHAM = 61000,
+	baseHAMmax = 100000,
 	armor = 1,
 	-- {kinetic,energy,blast,heat,cold,electricity,acid,stun,ls}
 	resists = {75,35,35,75,75,75,75,75,-1},

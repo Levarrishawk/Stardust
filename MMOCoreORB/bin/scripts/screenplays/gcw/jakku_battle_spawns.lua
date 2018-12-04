@@ -130,15 +130,15 @@ function JakkuBattleScreenPlay:spawnMobiles()
   
    -- Imperial Encampment (exterior) 
    
-  pMobile = spawnMobile("jakku", "at_at", 60, -5928.6, 41.9, 6110.3, -177, 0)
+  pMobile = spawnMobile("jakku", "at_at_pvp", 300, -5928.6, 41.9, 6110.3, -177, 0)
   self:setMoodString(pMobile, "neutral")
   AiAgent(pMobile):setAiTemplate("idlewander")
   
-  pMobile = spawnMobile("jakku", "at_at", 60, -6051.5, 38.1, 6118.2, -172, 0)
+  pMobile = spawnMobile("jakku", "at_at_pvp", 300, -6051.5, 38.1, 6118.2, -172, 0)
   self:setMoodString(pMobile, "neutral")
   AiAgent(pMobile):setAiTemplate("idlewander")
   
-  pMobile = spawnMobile("jakku", "at_at", 60, -5990.3, 36.0, 6189.2, -172, 0)
+  pMobile = spawnMobile("jakku", "at_at_pvp", 300, -5990.3, 36.0, 6189.2, -172, 0)
   self:setMoodString(pMobile, "neutral")
   AiAgent(pMobile):setAiTemplate("idlewander")
   
