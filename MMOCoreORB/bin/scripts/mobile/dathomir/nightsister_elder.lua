@@ -6,11 +6,11 @@ nightsister_elder = Creature:new {
 	faction = "nightsister",
 	level = 331, -- Should drop Flawless Crystals
 	chanceHit = 15.25,
-	damageMin = 1120,
-	damageMax = 1950,
+	damageMin = 500,
+	damageMax = 950,
 	baseXp = 26654,
-	baseHAM = 321000,
-	baseHAMmax = 392000,
+	baseHAM = 91000,
+	baseHAMmax = 122000,
 	armor = 1,
 	-- {kinetic,energy,blast,heat,cold,electricity,acid,stun,ls}
 	resists = {65,25,25,75,75,70,55,70,-1},

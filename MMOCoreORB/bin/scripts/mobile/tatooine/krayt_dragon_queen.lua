@@ -5,14 +5,14 @@ krayt_dragon_queen = Creature:new {
 	faction = "",
 	level = 350,
 	chanceHit = 65,
-	damageMin = 3170,
-	damageMax = 5550,
+	damageMin = 600,
+	damageMax = 850,
 	baseXp = 28549,
-	baseHAM = 710000,
-	baseHAMmax = 1201000,
+	baseHAM = 200000,
+	baseHAMmax = 200000,
 	armor = 1,
 	-- {kinetic,energy,blast,heat,cold,electricity,acid,stun,ls}
-	resists = {195,195,195,195,165,195,195,195,-1},
+	resists = {65,65,65,65,65,65,65,65,-1},
 	meatType = "meat_carnivore",
 	meatAmount = 1000,
 	hideType = "hide_bristley",
@@ -79,7 +79,7 @@ krayt_dragon_queen = Creature:new {
 				{group = "weapons_all", chance = 2000000},
 				{group = "armor_all", chance = 2000000},
 				{group = "armor_attachments", chance = 2000000},  -- 9% chance
-				{group = "vehicle_house_group", chance = 1000000},    -- 45% * 10% = 4.5%
+			--	{group = "vehicle_house_group", chance = 1000000},    -- 45% * 10% = 4.5%
 			},
 			lootChance = 4500000,
 		},
