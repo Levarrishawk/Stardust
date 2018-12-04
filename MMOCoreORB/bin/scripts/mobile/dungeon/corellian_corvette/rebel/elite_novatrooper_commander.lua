@@ -7,10 +7,10 @@ elite_novatrooper_commander = Creature:new {
 	level = 201,
 	chanceHit = 16,
 	damageMin = 145,
-	damageMax = 1000,
+	damageMax = 400,
 	baseXp = 19104,
-	baseHAM = 160000,
-	baseHAMmax = 195000,
+	baseHAM = 60000,
+	baseHAMmax = 95000,
 	armor = 1,
 	resists = {60,75,80,30,5,5,30,45,-1},
 	meatType = "",
@@ -32,7 +32,7 @@ elite_novatrooper_commander = Creature:new {
 		{
 			groups = {
 				{group = "color_crystals", chance = 100000},
-				{group = "junk", chance = 6200000},
+				{group = "rebel_assault", chance = 6200000},
 				{group = "rifles", chance = 550000},
 				{group = "pistols", chance = 550000},
 				{group = "melee_weapons", chance = 550000},
