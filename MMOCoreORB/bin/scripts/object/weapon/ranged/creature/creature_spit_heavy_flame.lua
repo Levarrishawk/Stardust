@@ -81,7 +81,7 @@ object_weapon_ranged_creature_creature_spit_heavy_flame = object_weapon_ranged_c
 
 	-- The values below are the default values.  To be used for blue frog objects primarily
 	healthAttackCost = 0,
-	actionAttackCost = 0,
+	actionAttackCost = 300,
 	mindAttackCost = 0,
 	forceCost = 0,
 
