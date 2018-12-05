@@ -2,7 +2,7 @@ velsoIntel =	{
 	itemTemplates = { "object/tangible/loot/dungeon/corellian_corvette/imperial_destroy_filler01.iff", "object/tangible/loot/dungeon/corellian_corvette/imperial_destroy_filler02.iff", "object/tangible/loot/dungeon/corellian_corvette/imperial_destroy_intel.iff" },
 }
 
-velsoTicketInfo = { depPlanet = "naboo", faction = "imperial", missionType = "destroy" }
+velsoTicketInfo = { depPlanet = "lok", faction = "imperial", missionType = "destroy" }
 
 velsoCompensation = { { compType = "faction", faction = "imperial",  amount = 100 } }
 
