@@ -1720,7 +1720,7 @@ bool CombatManager::applySpecialAttackCost(CreatureObject* attacker, WeaponObjec
 	*/
 	if (attacker->isAiAgent()){
 
-		action = (action * (attacker->getMaxHAM(CreatureAttribute::ACTION) * 0.15));
+		action = (attacker->getMaxHAM(CreatureAttribute::ACTION) * 0.15);
 
 		if (attacker->getHAM(CreatureAttribute::HEALTH) <= health)
 			return false;
@@ -1740,6 +1740,7 @@ bool CombatManager::applySpecialAttackCost(CreatureObject* attacker, WeaponObjec
 		if (mind > 0)
 			attacker->inflictDamage(attacker, CreatureAttribute::MIND, mind, true, true, true);
 		return true;
+
 	} else{
 		if (attacker->getHAM(CreatureAttribute::HEALTH) <= health)
 			return false;
