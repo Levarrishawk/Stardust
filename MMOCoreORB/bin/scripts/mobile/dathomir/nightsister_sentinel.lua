@@ -40,17 +40,6 @@ nightsister_sentinel = Creature:new {
 			},
 			lootChance = 3500000,
 		},
-		{
-			groups = {
-				
-				{group = "rifles", chance = 2500000},
-				{group = "pistols", chance = 2500000},
-				{group = "carbines", chance = 2500000},
-				{group = "wearables_common", chance = 1500000},
-				{group = "nightsister_clothing", chance = 1000000},     -- 30% * 10% = 3% chance
-			},
-			lootChance = 3000000,  -- 30% chance for this group
-		},
 	},
 	weapons = {"mixed_force_weapons"},
 	conversationTemplate = "",
