@@ -2674,8 +2674,10 @@ void CreatureObjectImplementation::activateHAMRegeneration(int latency) {
 	if (isIncapacitated() || isDead())
 		return;
 
+	/*		// Allow NPC Action Regen in Combat
 	if (!isPlayerCreature() && isInCombat())
 		return;
+	*/
 
 	float modifier = (float)latency/1000.f;
 
@@ -2687,7 +2689,7 @@ void CreatureObjectImplementation::activateHAMRegeneration(int latency) {
 	// this formula gives the amount of regen per second
 	uint32 healthTick = (uint32) ceil((float) Math::max(0, getHAM(
 			CreatureAttribute::CONSTITUTION)) * 13.0f / 2100.0f * modifier);
-	uint32 actionTick = 250; /*(uint32) ceil((float) Math::max(0, getHAM(
+	uint32 actionTick = (getMaxHAM(CreatureAttribute::ACTION) * 0.125); /*(uint32) ceil((float) Math::max(0, getHAM(
 			CreatureAttribute::STAMINA)) * 13.0f / 2100.0f * modifier); */
 	uint32 mindTick = (uint32) ceil((float) Math::max(0, getHAM(
 			CreatureAttribute::WILLPOWER)) * 13.0f / 2100.0f * modifier);

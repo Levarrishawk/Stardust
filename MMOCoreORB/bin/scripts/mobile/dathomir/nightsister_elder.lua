@@ -68,14 +68,7 @@ nightsister_elder = Creature:new {
 				{group = "nightsister_bicep_r_s01", chance = 2000000},   -- 1% * 20% = 0.2%
 			},
 			lootChance = 100000,    -- 1% chance for this group
-		},
-		{ -- Nightsister Clothing Loot Group
-			groups =
-			{
-				{group = "nightsister_clothing", chance = 10000000},    -- 12.5% * 100% = 12.5%
-			},
-			lootChance = 1250000,
-		},		
+		},	
 	},
 	weapons = {"mixed_force_weapons"},
 	conversationTemplate = "",

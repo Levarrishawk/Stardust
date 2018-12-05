@@ -50,7 +50,7 @@ tkamaster = { {"unarmedhit3",""},{"unarmedleghit1",""},{"unarmedbodyhit1",""},{"
 
 --npc jedi skills
 lightsabermaster = { {"saberheadhit1",""},{"saber1hhit1",""},{"sabercombohit1",""},{"saber1hflurry",""},{"saberbodyhit1",""},{"saber2hfrenzy",""},{"saber2hhit1",""},{"saber2hphantom",""},{"sabersweep1",""},{"saberpolearmdervish",""},{"saberpolearmhit1",""},{"saberleghit1",""},{"saberspinattack1",""},{"saberslash1",""},{"saberthrow1",""} }
-forcepowermaster = { {"forcelightningsingle2",""},{"forcelightningcone2",""},{"mindblast2",""},{"forceknockdown2",""},{"forceweaken2",""},{"forcethrow2",""},{"forcechoke",""} }
+forcepowermaster = { {"forcelightningsingle2",""},{"forcelightningcone2",""},{"mindblast2",""},{"forceknockdown2",""},{"forcethrow2",""},{"forcechoke",""} }
 
 -- npc force wielders use standard profession mastery with the addition of this command
 forcewielder ={ {"forcelightningsingle1",""},{"mindblast1",""},{"forcechoke",""},{"forceweaken1",""},{"forceknockdown1",""},{"forcelightningcone1",""} }
