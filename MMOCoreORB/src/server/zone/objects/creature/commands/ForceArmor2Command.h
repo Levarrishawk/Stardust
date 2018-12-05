@@ -19,7 +19,7 @@ public:
 
 		singleUseEventTypes.add(ObserverEventType::FORCEBUFFHIT);
 
-		skillMods.put("force_armor", 25);
+		skillMods.put("force_armor", 50);
 	}
 
 	int doQueueCommand(CreatureObject* creature, const uint64& target, const UnicodeString& arguments) const {
