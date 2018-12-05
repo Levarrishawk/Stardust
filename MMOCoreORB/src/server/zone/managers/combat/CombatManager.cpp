@@ -1718,26 +1718,49 @@ bool CombatManager::applySpecialAttackCost(CreatureObject* attacker, WeaponObjec
 	action = attacker->calculateCostAdjustment(CreatureAttribute::QUICKNESS, action);
 	mind = attacker->calculateCostAdjustment(CreatureAttribute::FOCUS, mind);
 	*/
+	if (attacker->isAiAgent()){
 
-	if (attacker->getHAM(CreatureAttribute::HEALTH) <= health)
-		return false;
+		action = (action * (attacker->getMaxHAM(CreatureAttribute::ACTION) * 0.15));
 
-	if (attacker->getHAM(CreatureAttribute::ACTION) <= action)
-		return false;
+		if (attacker->getHAM(CreatureAttribute::HEALTH) <= health)
+			return false;
 
-	if (attacker->getHAM(CreatureAttribute::MIND) <= mind)
-		return false;
+		if (attacker->getHAM(CreatureAttribute::ACTION) <= action)
+			return false;
 
-	if (health > 0)
-		attacker->inflictDamage(attacker, CreatureAttribute::HEALTH, health, true, true, true);
+		if (attacker->getHAM(CreatureAttribute::MIND) <= mind)
+			return false;
 
-	if (action > 0)
-		attacker->inflictDamage(attacker, CreatureAttribute::ACTION, action, true, true, true);
+		if (health > 0)
+			attacker->inflictDamage(attacker, CreatureAttribute::HEALTH, health, true, true, true);
 
-	if (mind > 0)
-		attacker->inflictDamage(attacker, CreatureAttribute::MIND, mind, true, true, true);
+		if (action > 0)
+			attacker->inflictDamage(attacker, CreatureAttribute::ACTION, action, true, true, true);
+
+		if (mind > 0)
+			attacker->inflictDamage(attacker, CreatureAttribute::MIND, mind, true, true, true);
+		return true;
+	} else{
+		if (attacker->getHAM(CreatureAttribute::HEALTH) <= health)
+			return false;
+
+		if (attacker->getHAM(CreatureAttribute::ACTION) <= action)
+			return false;
+
+		if (attacker->getHAM(CreatureAttribute::MIND) <= mind)
+			return false;
+
+		if (health > 0)
+			attacker->inflictDamage(attacker, CreatureAttribute::HEALTH, health, true, true, true);
+
+		if (action > 0)
+			attacker->inflictDamage(attacker, CreatureAttribute::ACTION, action, true, true, true);
+
+		if (mind > 0)
+			attacker->inflictDamage(attacker, CreatureAttribute::MIND, mind, true, true, true);
 
 	return true;
+	}
 }
 
 void CombatManager::applyStates(CreatureObject* creature, CreatureObject* targetCreature, const CreatureAttackData& data) {
