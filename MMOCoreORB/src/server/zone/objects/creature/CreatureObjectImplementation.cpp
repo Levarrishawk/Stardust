@@ -2674,8 +2674,10 @@ void CreatureObjectImplementation::activateHAMRegeneration(int latency) {
 	if (isIncapacitated() || isDead())
 		return;
 
+	/*		// Allow NPC Action Regen in Combat
 	if (!isPlayerCreature() && isInCombat())
 		return;
+	*/
 
 	float modifier = (float)latency/1000.f;
 
