@@ -109,7 +109,7 @@ minimumpoolexcludes = jtlresources
 -- The random pool includes is a table of resources and weights. The higher the weight, the more likely the resource is to be chosen when a random pool resource shifts.
   -- The random pool will never include the items in the excludes
   -- The random pool spawns a total number of resources equal to the size
-randompoolincludes = { {"metal", 32}, {"ore", 13}, {"fuel_petrochem_solid", 6}, {"radioactive", 4}, {"gemstone", 12}, {"gas", 16}, {"water", 2}, {"fuel_petrochem_liquid", 7}, {"petrochem_inert", 8}, {"petrochem_fuel_liquid_type4", 1}, {"steeel_ditanium", 1}, {"copper_platinite", 1} }
+randompoolincludes = { {"metal", 32}, {"ore", 13}, {"fuel_petrochem_solid", 6}, {"radioactive", 4}, {"gemstone", 12}, {"gas", 16}, {"water", 2}, {"fuel_petrochem_liquid", 7}, {"petrochem_inert", 8}, {"petrochem_fuel_liquid_type4", 6}, {"steel_ditanium", 6}, {"copper_platinite", 6}, {"steel_kiirium", 6}, {"steel_duralloy", 6}, {"steel_neutronium", 6} }
 randompoolexcludes = jtlresources..",iron,fiberplast"
 randompoolsize = 27
 
