@@ -1720,7 +1720,7 @@ bool CombatManager::applySpecialAttackCost(CreatureObject* attacker, WeaponObjec
 	*/
 	if (attacker->isAiAgent()){
 
-		action = (attacker->getMaxHAM(CreatureAttribute::ACTION) * 0.05);
+		action = (attacker->getMaxHAM(CreatureAttribute::ACTION) * 0.01);
 
 		if (attacker->getHAM(CreatureAttribute::HEALTH) <= health)
 			return false;
