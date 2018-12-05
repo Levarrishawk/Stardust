@@ -1691,8 +1691,8 @@ void CombatManager::doDodge(TangibleObject* attacker, WeaponObject* weapon, Crea
 }
 
 bool CombatManager::applySpecialAttackCost(CreatureObject* attacker, WeaponObject* weapon, const CreatureAttackData& data) {
-	if (data.isForceAttack())// || attacker->isAiAgent())
-		return true;
+	//if (data.isForceAttack())// || attacker->isAiAgent())
+	//	return true;
 
 	float force = weapon->getForceCost() * data.getForceCostMultiplier();
 
@@ -1720,7 +1720,7 @@ bool CombatManager::applySpecialAttackCost(CreatureObject* attacker, WeaponObjec
 	*/
 	if (attacker->isAiAgent()){
 
-		action = (attacker->getMaxHAM(CreatureAttribute::ACTION) * 0.1);
+		action = (attacker->getMaxHAM(CreatureAttribute::ACTION) * 0.05);
 
 		if (attacker->getHAM(CreatureAttribute::HEALTH) <= health)
 			return false;
