@@ -41,7 +41,7 @@
 --this exception also makes it possible to release a modified version 
 
 
-object_weapon_ranged_rifle_rifle_geo_drill = object_weapon_ranged_rifle_shared_rifle_geo_drill:new {
+object_weapon_ranged_rifle_rifle_pvp = object_weapon_ranged_rifle_shared_rifle_pvp:new {
 	
 	playerRaces = { "object/creature/player/bothan_male.iff",
 				"object/creature/player/bothan_female.iff",
@@ -132,4 +132,4 @@ object_weapon_ranged_rifle_rifle_geo_drill = object_weapon_ranged_rifle_shared_r
 	experimentalCombineType = {0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
 }
 
-ObjectTemplates:addTemplate(object_weapon_ranged_rifle_rifle_geo_drill, "object/weapon/ranged/rifle/rifle_geo_drill.iff")
+ObjectTemplates:addTemplate(object_weapon_ranged_rifle_rifle_pvp, "object/weapon/ranged/rifle/rifle_pvp.iff")

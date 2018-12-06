@@ -41,7 +41,7 @@
 --this exception also makes it possible to release a modified version 
 
 
-object_weapon_ranged_rifle_rifle_geo_drill = object_weapon_ranged_rifle_shared_rifle_geo_drill:new {
+object_weapon_ranged_rifle_rifle_ld1 = object_weapon_ranged_rifle_shared_rifle_ld1:new {
 	
 	playerRaces = { "object/creature/player/bothan_male.iff",
 				"object/creature/player/bothan_female.iff",
@@ -69,7 +69,7 @@ object_weapon_ranged_rifle_rifle_geo_drill = object_weapon_ranged_rifle_shared_r
 	attackType = RANGEDATTACK,
 
 	-- ENERGY, KINETIC, ELECTRICITY, STUN, BLAST, HEAT, COLD, ACID, FORCE, LIGHTSABER
-	damageType = ENERGY,
+	damageType = KINETIC,
 
 	-- NONE, LIGHT, MEDIUM, HEAVY
 	armorPiercing = NONE,
@@ -132,4 +132,4 @@ object_weapon_ranged_rifle_rifle_geo_drill = object_weapon_ranged_rifle_shared_r
 	experimentalCombineType = {0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
 }
 
-ObjectTemplates:addTemplate(object_weapon_ranged_rifle_rifle_geo_drill, "object/weapon/ranged/rifle/rifle_geo_drill.iff")
+ObjectTemplates:addTemplate(object_weapon_ranged_rifle_rifle_ld1, "object/weapon/ranged/rifle/rifle_ld1.iff")
