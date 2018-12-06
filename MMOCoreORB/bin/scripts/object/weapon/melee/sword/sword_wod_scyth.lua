@@ -1,4 +1,4 @@
-object_weapon_melee_2h_sword_2h_sword_battleaxe_quest = object_weapon_melee_2h_sword_shared_2h_sword_battleaxe_quest:new {
+object_weapon_melee_sword_sword_wod_scyth = object_weapon_melee_sword_shared_sword_wod_scyth:new {
 
 	playerRaces = { "object/creature/player/bothan_male.iff",
 				"object/creature/player/bothan_female.iff",
@@ -34,59 +34,59 @@ object_weapon_melee_2h_sword_2h_sword_battleaxe_quest = object_weapon_melee_2h_s
 	-- combat_rangedspecialize_bactarifle, combat_rangedspecialize_rifle, combat_rangedspecialize_pistol, combat_rangedspecialize_heavy, combat_rangedspecialize_carbine
 	-- combat_meleespecialize_unarmed, combat_meleespecialize_twohand, combat_meleespecialize_polearm, combat_meleespecialize_onehand, combat_general,
 	-- combat_meleespecialize_twohandlightsaber, combat_meleespecialize_polearmlightsaber, combat_meleespecialize_onehandlightsaber
-	xpType = "combat_meleespecialize_twohand",
+	xpType = "combat_meleespecialize_onehand",
 
 	-- See http://www.ocdsoft.com/files/certifications.xls
-	certificationsRequired = { "cert_sword_2h_axe" },
+	certificationsRequired = { "cert_sword_01" },
 	-- See http://www.ocdsoft.com/files/accuracy.xls
-	creatureAccuracyModifiers = { "twohandmelee_accuracy" },
+	creatureAccuracyModifiers = { "onehandmelee_accuracy" },
 
 	-- See http://www.ocdsoft.com/files/defense.xls
 	defenderDefenseModifiers = { "melee_defense" },
 
 	-- Leave as "dodge" for now, may have additions later
-	defenderSecondaryDefenseModifiers = { "counterattack" },
+	defenderSecondaryDefenseModifiers = { "dodge" },
 
-	defenderToughnessModifiers = { "twohandmelee_toughness" },
+	defenderToughnessModifiers = { "onehandmelee_toughness" },
 
 	-- See http://www.ocdsoft.com/files/speed.xls
-	speedModifiers = { "twohandmelee_speed" },
+	speedModifiers = { "onehandmelee_speed" },
 
 	-- Leave blank for now
 	damageModifiers = { },
 
 
 	-- The values below are the default values.  To be used for blue frog objects primarily
-	healthAttackCost = 42,
-	actionAttackCost = 15,
-	mindAttackCost = 10,
+	healthAttackCost = 22,
+	actionAttackCost = 22,
+	mindAttackCost = 22,
 	forceCost = 0,
 
 	pointBlankRange = 0,
-	pointBlankAccuracy = 5,
+	pointBlankAccuracy = 10,
 
-	idealRange = 5,
-	idealAccuracy = 5,
+	idealRange = 3,
+	idealAccuracy = 10,
 
-	maxRange = 5,
-	maxRangeAccuracy = 5,
+	maxRange = 4,
+	maxRangeAccuracy = 10,
 
-	minDamage = 60,
-	maxDamage = 250,
+	minDamage = 20,
+	maxDamage = 90,
 
-	attackSpeed = 4.5,
+	attackSpeed = 3.5,
 
-	woundsRatio = 17,
+	woundsRatio = 14,
 
 	numberExperimentalProperties = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
 	experimentalProperties = {"XX", "XX", "SR", "SR", "SR", "SR", "SR", "SR", "SR", "XX", "SR", "XX", "SR", "SR", "SR"},
 	experimentalWeights = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
 	experimentalGroupTitles = {"null", "null", "expDamage", "expDamage", "expDamage", "expDamage", "exp_durability", "expRange", "expRange", "null", "expRange", "null", "expEffeciency", "expEffeciency", "expEffeciency"},
 	experimentalSubGroupTitles = {"null", "null", "mindamage", "maxdamage", "attackspeed", "woundchance", "hitpoints", "zerorangemod", "maxrangemod", "midrange", "midrangemod", "maxrange", "attackhealthcost", "attackactioncost", "attackmindcost"},
-	experimentalMin = {0, 0, 53, 88, 5.6, 12, 750, 0, 0, 3, 0, 4, 52, 17, 10},
-	experimentalMax = {0, 0, 98, 163, 4.1, 22, 1500, 10, 10, 3, 10, 4, 26, 8, 4},
+	experimentalMin = {0, 0, 14, 63, 4.6, 9, 750, 5, 5, 3, 5, 4, 27, 29, 29},
+	experimentalMax = {0, 0, 26, 117, 3.2, 18, 1500, 15, 15, 3, 15, 4, 15, 15, 15},
 	experimentalPrecision = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
 	experimentalCombineType = {0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
 }
 
-ObjectTemplates:addTemplate(object_weapon_melee_2h_sword_2h_sword_battleaxe_quest, "object/weapon/melee/2h_sword/2h_sword_battleaxe_quest.iff")
+ObjectTemplates:addTemplate(object_weapon_melee_sword_sword_wod_scyth, "object/weapon/melee/sword/sword_wod_scyth.iff")

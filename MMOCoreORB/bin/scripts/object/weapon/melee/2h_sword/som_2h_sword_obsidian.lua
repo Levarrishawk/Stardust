@@ -1,4 +1,4 @@
-object_weapon_melee_2h_sword_2h_sword_battleaxe_quest = object_weapon_melee_2h_sword_shared_2h_sword_battleaxe_quest:new {
+object_weapon_melee_2h_sword_som_2h_sword_obsidian = object_weapon_melee_2h_sword_shared_som_2h_sword_obsidian:new {
 
 	playerRaces = { "object/creature/player/bothan_male.iff",
 				"object/creature/player/bothan_female.iff",
@@ -37,7 +37,7 @@ object_weapon_melee_2h_sword_2h_sword_battleaxe_quest = object_weapon_melee_2h_s
 	xpType = "combat_meleespecialize_twohand",
 
 	-- See http://www.ocdsoft.com/files/certifications.xls
-	certificationsRequired = { "cert_sword_2h_axe" },
+	certificationsRequired = { "cert_sword_2h_maul" },
 	-- See http://www.ocdsoft.com/files/accuracy.xls
 	creatureAccuracyModifiers = { "twohandmelee_accuracy" },
 
@@ -71,8 +71,8 @@ object_weapon_melee_2h_sword_2h_sword_battleaxe_quest = object_weapon_melee_2h_s
 	maxRange = 5,
 	maxRangeAccuracy = 5,
 
-	minDamage = 60,
-	maxDamage = 250,
+	minDamage = 75,
+	maxDamage = 125,
 
 	attackSpeed = 4.5,
 
@@ -89,4 +89,4 @@ object_weapon_melee_2h_sword_2h_sword_battleaxe_quest = object_weapon_melee_2h_s
 	experimentalCombineType = {0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
 }
 
-ObjectTemplates:addTemplate(object_weapon_melee_2h_sword_2h_sword_battleaxe_quest, "object/weapon/melee/2h_sword/2h_sword_battleaxe_quest.iff")
+ObjectTemplates:addTemplate(object_weapon_melee_2h_sword_som_2h_sword_obsidian, "object/weapon/melee/2h_sword/som_2h_sword_obsidian.iff")

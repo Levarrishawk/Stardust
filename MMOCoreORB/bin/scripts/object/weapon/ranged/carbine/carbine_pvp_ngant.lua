@@ -41,7 +41,7 @@
 --this exception also makes it possible to release a modified version 
 
 
-object_weapon_ranged_rifle_rifle_geo_drill = object_weapon_ranged_rifle_shared_rifle_geo_drill:new {
+object_weapon_ranged_carbine_carbine_pvp_ngant = object_weapon_ranged_carbine_shared_carbine_pvp_ngant:new {
 	
 	playerRaces = { "object/creature/player/bothan_male.iff",
 				"object/creature/player/bothan_female.iff",
@@ -77,23 +77,23 @@ object_weapon_ranged_rifle_rifle_geo_drill = object_weapon_ranged_rifle_shared_r
 	-- combat_rangedspecialize_bactarifle, combat_rangedspecialize_rifle, combat_rangedspecialize_pistol, combat_rangedspecialize_heavy, combat_rangedspecialize_carbine
 	-- combat_meleespecialize_unarmed, combat_meleespecialize_twohand, combat_meleespecialize_polearm, combat_meleespecialize_onehand, combat_general,
 	-- combat_meleespecialize_twohandlightsaber, combat_meleespecialize_polearmlightsaber, combat_meleespecialize_onehandlightsaber
-	xpType = "combat_rangedspecialize_rifle",
+	xpType = "combat_rangedspecialize_carbine",
 
 	-- See http://www.ocdsoft.com/files/certifications.xls
-	certificationsRequired = { "cert_rifle_cdef" },
+	certificationsRequired = { "cert_carbine_cdef" },
 	-- See http://www.ocdsoft.com/files/accuracy.xls
-	creatureAccuracyModifiers = { "rifle_accuracy" },
+	creatureAccuracyModifiers = { "carbine_accuracy" },
 
-	creatureAimModifiers = { "rifle_aim", "aim" },
+	creatureAimModifiers = { "carbine_aim", "aim" },
 
 	-- See http://www.ocdsoft.com/files/defense.xls
 	defenderDefenseModifiers = { "ranged_defense" },
 
 	-- Leave as "dodge" for now, may have additions later
-	defenderSecondaryDefenseModifiers = { "block" },
+	defenderSecondaryDefenseModifiers = { "counterattack" },
 
 	-- See http://www.ocdsoft.com/files/speed.xls
-	speedModifiers = { "rifle_speed" },
+	speedModifiers = { "carbine_speed" },
 
 	-- Leave blank for now
 	damageModifiers = { },
@@ -111,15 +111,15 @@ object_weapon_ranged_rifle_rifle_geo_drill = object_weapon_ranged_rifle_shared_r
 	idealRange = 50,
 	idealAccuracy = 100,
 
-	maxRange = 150,
+	maxRange = 200,
 	maxRangeAccuracy = 100,
 
-	minDamage = 9999998,
-	maxDamage = 9999999,
+	minDamage = 99998,
+	maxDamage = 99999,
 
 	attackSpeed = 1,
 
-	woundsRatio = 95,
+	woundsRatio = 80,
 
 	numberExperimentalProperties = {1, 1, 2, 2, 2, 2, 2, 2, 1, 1, 1, 2, 2, 2, 2},
 	experimentalProperties = {"XX", "XX", "CD", "OQ", "CD", "OQ", "CD", "OQ", "CD", "OQ", "CD", "OQ", "CD", "OQ", "XX", "XX", "XX", "CD", "OQ", "CD", "OQ", "CD", "OQ", "CD", "OQ"},
@@ -132,4 +132,4 @@ object_weapon_ranged_rifle_rifle_geo_drill = object_weapon_ranged_rifle_shared_r
 	experimentalCombineType = {0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
 }
 
-ObjectTemplates:addTemplate(object_weapon_ranged_rifle_rifle_geo_drill, "object/weapon/ranged/rifle/rifle_geo_drill.iff")
+ObjectTemplates:addTemplate(object_weapon_ranged_carbine_carbine_pvp_ngant, "object/weapon/ranged/carbine/carbine_pvp_ngant.iff")
