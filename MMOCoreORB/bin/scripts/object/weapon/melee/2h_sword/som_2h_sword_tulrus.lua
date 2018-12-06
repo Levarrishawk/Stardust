@@ -37,7 +37,7 @@ object_weapon_melee_2h_sword_som_2h_sword_tulrus = object_weapon_melee_2h_sword_
 	xpType = "combat_meleespecialize_twohand",
 
 	-- See http://www.ocdsoft.com/files/certifications.xls
-	certificationsRequired = { "cert_sword_2h_axe" },
+	certificationsRequired = { "cert_sword_2h_maul" },
 	-- See http://www.ocdsoft.com/files/accuracy.xls
 	creatureAccuracyModifiers = { "twohandmelee_accuracy" },
 

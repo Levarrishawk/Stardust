@@ -37,7 +37,7 @@ object_weapon_melee_2h_sword_2h_sword_kun_massassi = object_weapon_melee_2h_swor
 	xpType = "combat_meleespecialize_twohand",
 
 	-- See http://www.ocdsoft.com/files/certifications.xls
-	certificationsRequired = { "cert_sword_2h_axe" },
+	certificationsRequired = { "cert_sword_2h_maul" },
 	-- See http://www.ocdsoft.com/files/accuracy.xls
 	creatureAccuracyModifiers = { "twohandmelee_accuracy" },
 
