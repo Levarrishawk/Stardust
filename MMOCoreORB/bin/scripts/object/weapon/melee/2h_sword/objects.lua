@@ -576,13 +576,6 @@ object_weapon_melee_2h_sword_shared_2h_sword_sith = SharedWeaponObjectTemplate:n
 
 ObjectTemplates:addClientTemplate(object_weapon_melee_2h_sword_shared_2h_sword_sith, "object/weapon/melee/2h_sword/shared_2h_sword_sith.iff")
 -- -----------------------------------------------------------------------------------------------------------
-object_weapon_melee_2h_sword_shared_2h_sword_wod_scyth = SharedWeaponObjectTemplate:new {
-  clientTemplateFileName = "object/weapon/melee/2h_sword/shared_2h_sword_wod_scyth.iff"
-  
-}
-
-ObjectTemplates:addClientTemplate(object_weapon_melee_2h_sword_shared_2h_sword_wod_scyth, "object/weapon/melee/2h_sword/shared_2h_sword_wod_scyth.iff")
--- -----------------------------------------------------------------------------------------------------------
 object_weapon_melee_2h_sword_shared_som_2h_sword_obsidian = SharedWeaponObjectTemplate:new {
   clientTemplateFileName = "object/weapon/melee/2h_sword/shared_som_2h_sword_obsidian.iff"
   
