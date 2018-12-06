@@ -6,7 +6,7 @@ bruceTicketInfo = { depPlanet = "chandrila", faction = "neutral", missionType = 
 
 bruceCompensation = { { compType = "credits", amount = 487 } }
 
-bruce_mcbrain = { planetName = "chandrila", npcTemplate = "corvette_neutral_bruce", x = 5.0, z = -0.9, y = 13.6, direction = 167, cellID = 35791448, position = STAND }
+bruce_mcbrain = { planetName = "chandrila", npcTemplate = "corvette_neutral_bruce", x = 5.7, z = -0.9, y = 21.8, direction = 167, cellID = 35791448, position = STAND }
 
 ticketGiverBruce = CorvetteTicketGiverLogic:new {
 	npc = bruce_mcbrain,
