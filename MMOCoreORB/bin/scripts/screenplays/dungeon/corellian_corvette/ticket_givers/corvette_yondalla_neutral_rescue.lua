@@ -6,7 +6,7 @@ yondallaTicketInfo = { depPlanet = "chandrila", faction = "neutral", missionType
 
 yondallaCompensation = { { compType = "credits", amount = 500 } }
 
-yondalla = { planetName = "chandrila", npcTemplate = "corvette_neutral_yondalla", x = 17.0, z = -0.9, y = 13.4, direction = 173, cellID = 35791446, position = STAND }
+yondalla = { planetName = "chandrila", npcTemplate = "corvette_neutral_yondalla", x = 16.8, z = -0.9, y = 23.3, direction = 173, cellID = 35791446, position = STAND }
 
 ticketGiverYondalla = CorvetteTicketGiverLogic:new {
 	npc = yondalla,
