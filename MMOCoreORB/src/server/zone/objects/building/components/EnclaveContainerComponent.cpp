@@ -86,20 +86,20 @@ bool EnclaveContainerComponent::checkCellPermission(SceneObject* sceneObject, Cr
 
 	PlayerObject* ghost = creature->getPlayerObject();
 
-	if (ghost == NULL)
+	if (ghost == nullptr)
 		return false;
 
 	if (ghost->hasGodMode())
 		return true;
 
 	if (ghost->getZone()->getZoneName() != "yavin4")
-			return true;
+		return true;
 
 	int enclaveType = 0;
 
 	ManagedReference<SceneObject*> enclave = sceneObject->getParent().get();
 
-	if (enclave == NULL)
+	if (enclave == nullptr)
 		return false;
 
 	if (enclave->getServerObjectCRC() == STRING_HASHCODE("object/building/yavin/light_enclave.iff"))
@@ -111,11 +111,13 @@ bool EnclaveContainerComponent::checkCellPermission(SceneObject* sceneObject, Cr
 
 	FrsData* frsData = ghost->getFrsData();
 
-	if (frsData == NULL)
+	if (frsData == nullptr)
 		return false;
 
 	if (frsData->getCouncilType() != enclaveType)
 		return false;
+
+
 
 	SortedVector<String>* groups = ghost->getPermissionGroups();
 	ContainerPermissions* permissions = sceneObject->getContainerPermissions();

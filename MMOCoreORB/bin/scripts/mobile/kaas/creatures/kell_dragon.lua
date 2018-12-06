@@ -35,7 +35,7 @@ kell_dragon = Creature:new {
         {group = "krayt_dragon_common", chance = 3300000},
         {group = "krayt_pearls", chance = 3400000}			
 			},
-			lootChance = 5000000
+			lootChance = 10000000
 		},
 		{
 	        groups = {
@@ -45,7 +45,7 @@ kell_dragon = Creature:new {
 				{group = "rifles", chance = 2000000},
 				{group = "wearables_scarce", chance = 2000000},				
 			},
-			lootChance = 2500000
+			lootChance = 25000000
 		}
 	},
 	weapons = {},
