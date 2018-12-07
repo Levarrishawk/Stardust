@@ -466,3 +466,6 @@ includeFile("groups/armor/clone_trooper_rebel.lua")
 includeFile("groups/armor/clone_trooper_neutral.lua")
 includeFile("groups/armor/assault_trooper.lua")
 includeFile("groups/armor/rebel_assault.lua")
+
+-- New Weapons
+includeFile("groups/weapon/master_carbines.lua")
