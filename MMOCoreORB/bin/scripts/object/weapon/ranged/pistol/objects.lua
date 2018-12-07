@@ -1549,7 +1549,7 @@ object_weapon_ranged_pistol_shared_pistol_kyd21_generic = SharedWeaponObjectTemp
 
 ObjectTemplates:addClientTemplate(object_weapon_ranged_pistol_shared_pistol_kyd21_generic, "object/weapon/ranged/pistol/shared_pistol_kyd21_generic.iff")
 ---------------------------------------------- 
-object_weapon_ranged_pistol_shared_pistol_mandlorian = SharedWeaponObjectTemplate:new {
+object_weapon_ranged_pistol_shared_pistol_mandalorian = SharedWeaponObjectTemplate:new {
   clientTemplateFileName = "object/weapon/ranged/pistol/shared_pistol_mandalorian.iff"
   
 }

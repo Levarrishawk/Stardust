@@ -854,6 +854,14 @@ object_weapon_ranged_carbine_shared_carbine_heroic_sd = SharedWeaponObjectTempla
 ObjectTemplates:addClientTemplate(object_weapon_ranged_carbine_shared_carbine_heroic_sd, "object/weapon/ranged/carbine/shared_carbine_heroic_sd.iff")
 ------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------
+object_weapon_ranged_carbine_shared_carbine_mandalorian = SharedWeaponObjectTemplate:new {
+  clientTemplateFileName = "object/weapon/ranged/carbine/shared_carbine_mandalorian.iff"
+  
+}
+
+ObjectTemplates:addClientTemplate(object_weapon_ranged_carbine_shared_carbine_mandalorian, "object/weapon/ranged/carbine/shared_carbine_mandalorian.iff")
+------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------
 object_weapon_ranged_carbine_shared_carbine_kun_massassi = SharedWeaponObjectTemplate:new {
   clientTemplateFileName = "object/weapon/ranged/carbine/shared_carbine_kun_massassi.iff"
   
