@@ -1287,7 +1287,7 @@ object_weapon_ranged_rifle_shared_rifle_geo_drill = SharedWeaponObjectTemplate:n
 
 }
 
-ObjectTemplates:addClientTemplate(object_weapon_ranged_rifle_shared_rifle_geo_drill "object/weapon/ranged/rifle/shared_rifle_geo_drill.iff")
+ObjectTemplates:addClientTemplate(object_weapon_ranged_rifle_shared_rifle_geo_drill, "object/weapon/ranged/rifle/shared_rifle_geo_drill.iff")
 ----------------------------------------------------------------------------------------
 object_weapon_ranged_rifle_shared_rifle_ld1 = SharedWeaponObjectTemplate:new {
   clientTemplateFileName = "object/weapon/ranged/rifle/shared_rifle_ld1.iff"
