@@ -1386,7 +1386,7 @@ object_weapon_melee_sword_shared_som_sword_obsidian = SharedWeaponObjectTemplate
   
 }
 
-ObjectTemplates:addClientTemplate(object_weapon_melee_sword_shared_som_sword_mustafar_obsidian, "object/weapon/melee/sword/shared_som_sword_obsidian.iff")
+ObjectTemplates:addClientTemplate(object_weapon_melee_sword_shared_som_sword_obsidian, "object/weapon/melee/sword/shared_som_sword_obsidian.iff")
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 object_weapon_melee_sword_shared_sword_acid = SharedWeaponObjectTemplate:new {
