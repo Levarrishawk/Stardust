@@ -69,7 +69,7 @@ object_weapon_ranged_carbine_carbine_geo = object_weapon_ranged_carbine_shared_c
   attackType = RANGEDATTACK,
 
   -- ENERGY, KINETIC, ELECTRICITY, STUN, BLAST, HEAT, COLD, ACID, FORCE, LIGHTSABER
-  damageType = ENERGY,
+  damageType = STUN,
 
   -- NONE, LIGHT, MEDIUM, HEAVY
   armorPiercing = LIGHT,

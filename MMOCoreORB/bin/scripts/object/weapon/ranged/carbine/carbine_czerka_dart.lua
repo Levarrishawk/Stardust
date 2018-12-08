@@ -69,7 +69,7 @@ object_weapon_ranged_carbine_carbine_czerka_dart = object_weapon_ranged_carbine_
   attackType = RANGEDATTACK,
 
   -- ENERGY, KINETIC, ELECTRICITY, STUN, BLAST, HEAT, COLD, ACID, FORCE, LIGHTSABER
-  damageType = ENERGY,
+  damageType = KINETIC,
 
   -- NONE, LIGHT, MEDIUM, HEAVY
   armorPiercing = LIGHT,

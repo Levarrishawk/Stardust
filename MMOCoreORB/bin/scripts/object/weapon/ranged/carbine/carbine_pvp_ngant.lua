@@ -69,7 +69,7 @@ object_weapon_ranged_carbine_carbine_pvp_ngant = object_weapon_ranged_carbine_sh
   attackType = RANGEDATTACK,
 
   -- ENERGY, KINETIC, ELECTRICITY, STUN, BLAST, HEAT, COLD, ACID, FORCE, LIGHTSABER
-  damageType = ENERGY,
+  damageType = ACID,
 
   -- NONE, LIGHT, MEDIUM, HEAVY
   armorPiercing = LIGHT,
