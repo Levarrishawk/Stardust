@@ -69,7 +69,7 @@ object_weapon_ranged_pistol_pistol_mandalorian = object_weapon_ranged_pistol_sha
   attackType = RANGEDATTACK,
 
   -- ENERGY, KINETIC, ELECTRICITY, STUN, BLAST, HEAT, COLD, ACID, FORCE, LIGHTSABER
-  damageType = ENERGY,
+  damageType = ELECTRICITY,
 
   -- NONE, LIGHT, MEDIUM, HEAVY
   armorPiercing = LIGHT,

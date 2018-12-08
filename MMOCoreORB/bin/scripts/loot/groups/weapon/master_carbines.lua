@@ -5,7 +5,7 @@ master_carbines = {
 	minimumLevel = 0,
 	maximumLevel = 0,
 	lootItems = {
-		{itemTemplate = "carbine_alliance_needler", weight = 800000},
+		{itemTemplate = "carbine_alliance_needler", weight = 900000},
 		{itemTemplate = "carbine_bothan_bola", weight = 900000},
 		{itemTemplate = "carbine_charric", weight = 800000},
 		{itemTemplate = "carbine_czerka_dart", weight = 800000},
@@ -16,7 +16,7 @@ master_carbines = {
 		{itemTemplate = "carbine_proton", weight = 900000},
 		{itemTemplate = "carbine_pvp_ngant", weight = 800000},
 		{itemTemplate = "carbine_pvp", weight = 800000},
-		{itemTemplate = "som_carbine_republic_sfor", weight = 900000}
+		{itemTemplate = "som_carbine_republic_sfor", weight = 800000}
 	}
 }
 

@@ -69,7 +69,7 @@ object_weapon_ranged_rifle_rifle_proton = object_weapon_ranged_rifle_shared_rifl
   attackType = RANGEDATTACK,
 
   -- ENERGY, KINETIC, ELECTRICITY, STUN, BLAST, HEAT, COLD, ACID, FORCE, LIGHTSABER
-  damageType = ENERGY,
+  damageType = ELECTRICITY,
 
   -- NONE, LIGHT, MEDIUM, HEAVY
   armorPiercing = LIGHT,

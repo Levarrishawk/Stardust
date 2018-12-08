@@ -1,7 +1,7 @@
 pistol_pvp = {
 	minimumLevel = 0,
 	maximumLevel = -1,
-	customObjectName = "",
+	customObjectName = "Stardust Pistol",
 	directObjectTemplate = "object/weapon/ranged/pistol/pistol_pvp.iff",
 	craftingValues = {
 		{"mindamage",45,216,0},

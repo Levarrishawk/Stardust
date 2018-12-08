@@ -69,7 +69,7 @@ object_weapon_ranged_rifle_rifle_bounty_dc15 = object_weapon_ranged_rifle_shared
   attackType = RANGEDATTACK,
 
   -- ENERGY, KINETIC, ELECTRICITY, STUN, BLAST, HEAT, COLD, ACID, FORCE, LIGHTSABER
-  damageType = ENERGY,
+  damageType = STUN,
 
   -- NONE, LIGHT, MEDIUM, HEAVY
   armorPiercing = LIGHT,

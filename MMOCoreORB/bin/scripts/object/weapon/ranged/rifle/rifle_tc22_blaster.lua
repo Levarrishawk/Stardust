@@ -69,7 +69,7 @@ object_weapon_ranged_rifle_rifle_tc22_blaster = object_weapon_ranged_rifle_share
   attackType = RANGEDATTACK,
 
   -- ENERGY, KINETIC, ELECTRICITY, STUN, BLAST, HEAT, COLD, ACID, FORCE, LIGHTSABER
-  damageType = ENERGY,
+  damageType = BLAST,
 
   -- NONE, LIGHT, MEDIUM, HEAVY
   armorPiercing = LIGHT,
