@@ -56,8 +56,7 @@ death_watch_blastromech = Creature:new {
 	conversationTemplate = "",
 	weapons = {"st_bombardier_weapons"},
 	attacks = merge(commandomaster),
-		attacks = {{"intimidationattack","stateAccuracyBonus=100"},
-				{"flamecone2","accuracyBonus=50"},{"flamecone2","accuracyBonus=100"},{"flamesingle2","accuracyBonus=75"},
+		attacks = {{"intimidationattack","stateAccuracyBonus=100"},			
 			},
 
 }

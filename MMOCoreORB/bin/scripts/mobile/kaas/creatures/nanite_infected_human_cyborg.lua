@@ -28,7 +28,14 @@ nanite_infected_human_cyborg = Creature:new {
   diet = CARNIVORE,
 
 	templates = {"object/mobile/outbreak_undead_boss_m_hum_02.iff"},
-	lootGroups = {},
+	lootGroups = {
+	{
+      groups = {
+        {group = "clone_war_weapons", chance = 10000000}    -- 25% * 35% = 8.75%
+      },
+      lootChance = 2500000    -- 25% chance of this group
+    },
+	},
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {

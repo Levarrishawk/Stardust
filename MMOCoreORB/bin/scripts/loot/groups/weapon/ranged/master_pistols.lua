@@ -4,11 +4,10 @@ master_pistols = {
 	description = "",
 	minimumLevel = 0,
 	maximumLevel = 0,
-	lootItems = {		
-		{itemTemplate = "pistol_alliance_disruptor", weight = 1000000},
-		{itemTemplate = "pistol_deathhammer", weight = 800000},
-		{itemTemplate = "pistol_flare", weight = 300000},
-		{itemTemplate = "pistol_flechette", weight = 500000},
+	lootItems = {		 
+		{itemTemplate = "pistol_alliance_disruptor", weight = 1000000}, --
+		{itemTemplate = "pistol_flare", weight = 300000}, --
+		{itemTemplate = "pistol_flechette", weight = 500000}, --
 		{itemTemplate = "pistol_heroic_sd", weight = 400000},
 		{itemTemplate = "pistol_intimidator", weight = 500000},
 		{itemTemplate = "pistol_kyd21_generic", weight = 300000},

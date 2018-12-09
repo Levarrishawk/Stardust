@@ -10,7 +10,7 @@ vitiate = Creature:new {
 	baseHAM = 240000,
 	baseHAMmax = 300000,
 	armor = 0,
-	resists = {70,70,70,70,70,70,70,70,50},
+	resists = {50,50,50,50,50,50,50,50,50},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -30,17 +30,16 @@ vitiate = Creature:new {
 	lootGroups = {
     {
       groups = {
-        {group = "holocron_dark", chance = 600000},
-        {group = "holocron_light", chance = 600000},
-        {group = "crystals_premium", chance = 600000},
-        {group = "nge_housing_all", chance = 100000},
-        {group = "color_crystals", chance = 1300000},
-        {group = "melee_weapons", chance = 1300000},
-        {group = "armor_attachments", chance = 1100000},
-        {group = "clothing_attachments", chance = 1100000},
-        {group = "krayt_pearls", chance = 1300000},
-        {group = "dark_jedi_common", chance = 800000}
-      }
+        {group = "holocron_dark", chance = 1000000},
+        {group = "crystal_infinity_white", chance = 1000000},
+        {group = "named_crystals", chance = 1000000},
+        {group = "massassi_sith_weapons", chance = 1000000},
+        {group = "armor_attachments", chance = 2000000},
+        {group = "clothing_attachments", chance = 2000000},
+        {group = "kaas_weapons", chance = 1000000},
+        {group = "dark_jedi_common", chance = 1000000}
+      },
+      lootChance = 10000000,
     }
   },
 	weapons = {"dark_jedi_weapons_gen4"},

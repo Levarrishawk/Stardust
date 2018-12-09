@@ -38,6 +38,13 @@ death_watch_wraith = Creature:new {
 			lootChance = 5000000
 		},
 		{
+      groups = {
+        {group = "dwb_weapons",   chance = 6500000},
+        {group = "dwb_weapons", chance = 3500000},
+      },
+      lootChance = 5000000
+    },
+		{
 			groups = {
 				{group = "clothing_attachments", chance = 10000000},
 			},

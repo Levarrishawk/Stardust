@@ -446,12 +446,26 @@ includeFile("groups/armor/clone_trooper_neutral.lua")
 includeFile("groups/armor/assault_trooper.lua")
 includeFile("groups/armor/rebel_assault.lua")
 
--- New Weapons
+-- New Weapons  Master Groups
 includeFile("groups/weapon/ranged/master_carbines.lua")
 includeFile("groups/weapon/ranged/master_rifles.lua")
 includeFile("groups/weapon/ranged/master_pistols.lua")
-
 includeFile("groups/weapon/melee/master_2h_swords.lua")
 includeFile("groups/weapon/melee/master_polearms.lua")
 includeFile("groups/weapon/melee/master_melee.lua")
 includeFile("groups/weapon/melee/master_swords.lua")
+
+-------------------------------------
+-- Start Specific Dungon Groups for new weapons
+-- ----------------------------------
+
+-- DWB
+includeFile("groups/weapon/dungeon/dwb_weapons.lua")
+includeFile("groups/weapon/dungeon/geo_weapons.lua")
+includeFile("groups/weapon/dungeon/massassi_sith_weapons.lua")
+includeFile("groups/weapon/dungeon/clone_war_weapons.lua")
+includeFile("groups/weapon/dungeon/jakku_weapons.lua")
+includeFile("groups/weapon/dungeon/kaas_weapons.lua")
+includeFile("groups/weapon/dungeon/chandriltech_weapons.lua")
+includeFile("groups/weapon/dungeon/black_suh_weapons.lua")
+includeFile("groups/weapon/dungeon/elite_weapons.lua")

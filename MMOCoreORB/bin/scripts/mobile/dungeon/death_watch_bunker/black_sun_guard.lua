@@ -39,6 +39,12 @@ black_sun_guard = Creature:new {
 			lootChance = 7500000,
 		},
 		{
+      groups = {
+        {group = "black_sun_weapons", chance = 10000000},
+      },
+      lootChance = 2500000
+    },
+		{
 			groups = {
 				{group = "junk", chance = 3400000},
 				{group = "wearables_common", chance = 3300000},

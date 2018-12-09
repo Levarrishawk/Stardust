@@ -32,15 +32,15 @@ novatrooper_commander = Creature:new {
 		{
 			groups = {
 				{group = "color_crystals", chance = 100000},
-				{group = "junk", chance = 6200000},
-				{group = "rifles", chance = 550000},
-				{group = "pistols", chance = 550000},
-				{group = "melee_weapons", chance = 550000},
-				{group = "carbines", chance = 550000},
-				{group = "clothing_attachments", chance = 25000},
-				{group = "armor_attachments", chance = 25000},
-				{group = "imperial_officer_common", chance = 450000},
-				{group = "wearables_rare", chance = 1000000}
+        {group = "junk", chance = 4250000},
+        {group = "master_rifles", chance = 1000000},
+        {group = "master_pistols", chance = 1000000},
+        {group = "master_melee", chance = 1000000},
+        {group = "master_carbines", chance = 1000000},
+        {group = "clothing_attachments", chance = 100000},
+        {group = "armor_attachments", chance = 100000},
+        {group = "rebel_officer_common", chance = 450000},
+        {group = "wearables_scarce", chance = 1000000}
 			}
 		}
 	},

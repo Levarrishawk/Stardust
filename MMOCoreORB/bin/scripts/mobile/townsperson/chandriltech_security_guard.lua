@@ -5,7 +5,7 @@ chandriltech_security_guard = Creature:new {
 	level = 150,
 	chanceHit = 0.31,
 	damageMin = 160,
-	damageMax = 170,
+	damageMax = 670,
 	baseXp = 831,
 	baseHAM = 24000,
 	baseHAMmax = 30000,
@@ -29,7 +29,7 @@ chandriltech_security_guard = Creature:new {
 	lootGroups = {
 		{
 			groups = {
-				{group = "junk", chance = 5000000},
+				{group = "chandriltech_weapons", chance = 5000000},
 				{group = "rifles", chance = 1000000},
 				{group = "pistols", chance = 1000000},
 				{group = "melee_weapons", chance = 1000000},
