@@ -451,3 +451,7 @@ includeFile("groups/weapon/ranged/master_carbines.lua")
 includeFile("groups/weapon/ranged/master_rifles.lua")
 includeFile("groups/weapon/ranged/master_pistols.lua")
 
+includeFile("groups/weapon/melee/master_2h_swords.lua")
+includeFile("groups/weapon/melee/master_polearms.lua")
+includeFile("groups/weapon/melee/master_melee.lua")
+includeFile("groups/weapon/melee/master_swords.lua")

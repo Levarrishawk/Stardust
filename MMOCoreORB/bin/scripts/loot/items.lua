@@ -1523,7 +1523,7 @@ includeFile("items/weapon/rifle_westar_m5.lua")
 includeFile("items/weapon/som_rifle_dp23.lua")
 includeFile("items/weapon/som_rifle_mustafar_disruptor.lua")
 
-
+-- New Melee
 
 includeFile("items/weapon/two_handed_sword_kashyyk.lua")
 includeFile("items/weapon/two_handed_sword_kun_massassi.lua")
