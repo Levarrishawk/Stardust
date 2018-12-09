@@ -365,7 +365,6 @@ includeFile("groups/wearables/wearables_scarce.lua")
 includeFile("groups/wearables/wearables_uncommon.lua")
 
 -- custom items
---includeFile("groups/weapon/infinity_lightsaber.lua")
 includeFile("groups/named_crystals.lua")
 
 includeFile("groups/npc/meatlump_melee_components.lua")
@@ -403,20 +402,6 @@ includeFile("groups/crystal_dilly_dillys_damnation.lua")
 -- includeFile("groups/smuggler/smug_medical.lua")
 -- includeFile("groups/smuggler/smug_wep.lua")
 
-------------------------------Boogles Custom------------------------------
---Geo--
-includeFile("groups/geonosian_lab/boogles_geo_group/geonosian_epic.lua")
-includeFile("groups/geonosian_lab/boogles_geo_group/geo_rancor.lua")
---Geo--
-
---Wearables--
-includeFile("groups/wearables/boogles_wearables_geo/mastery_geocave_jewelry.lua")
---Wearables--
-
---Jedi Custom--
-includeFile("groups/boogles_custom/jedi_clothing_attachments.lua")
---Jedi Custom--
-------------------------------Boogles Custom------------------------------
 
 ------------------------------Halloween-----------------------------------
 includeFile("groups/halloween/enhanced_spider.lua")
@@ -434,9 +419,8 @@ includeFile("groups/nge_house_group.lua")
 includeFile("groups/musty_house_group.lua")
 includeFile("groups/vehicle_house_group.lua")
 
--- NGE Robe Groups
-includeFile("groups/wearables/ngerobes1.lua")
-includeFile("groups/wearables/ngerobes2.lua")
+
+
 
 -- Veteran Rewards
 includeFile("groups/veteran_rewards/veteran_rewards_90_days.lua")

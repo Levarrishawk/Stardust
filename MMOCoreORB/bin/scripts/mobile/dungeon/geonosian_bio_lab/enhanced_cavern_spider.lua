@@ -54,9 +54,8 @@ enhanced_cavern_spider = Creature:new {
 	        groups =
 			{
 
-				{group = "geonosian_relic", chance = 2500000},
+				{group = "geonosian_relic", chance = 4000000},
 				{group = "geonosian_common", chance = 6000000},
-				{group = "mastery_geocave_jewelry", chance = 1500000},
 			},
 			lootChance = 7000000,
 		},

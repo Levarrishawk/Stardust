@@ -33,13 +33,6 @@ failed_experiment_62 = Creature:new {
 		{
 	        groups =
 			{
-				{group = "geonosian_epic", chance = 10000000},
-			},
-			lootChance = 3500000,
-		},
-		{
-	        groups =
-			{
 				{group = "armor_attachments", chance = 10000000},
 			},
 			lootChance = 3500000,
@@ -57,20 +50,6 @@ failed_experiment_62 = Creature:new {
 				{group = "geonosian_cubes", chance = 10000000},
 			},
 			lootChance = 4500000,
-		},
-		{
-			groups =
-			{
-				{group = "acklay", chance = 10000000},
-			},
-			lootChance = 4500000,
-		},
-		{
-			groups =
-			{
-				{group = "acklay", chance = 10000000},
-			},
-			lootChance = 3500000,
 		},
 		{
 			groups =
