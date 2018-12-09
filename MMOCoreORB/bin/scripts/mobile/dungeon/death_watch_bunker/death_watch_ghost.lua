@@ -32,7 +32,7 @@ death_watch_ghost = Creature:new {
 	lootGroups = {
 		{
 			groups = {
-				{group = "death_watch_bunker_commoners",   chance = 6500000},
+				{group = "dwb_weapons",   chance = 6500000},
 				{group = "death_watch_bunker_lieutenants", chance = 3500000},
 			},
 			lootChance = 4000000

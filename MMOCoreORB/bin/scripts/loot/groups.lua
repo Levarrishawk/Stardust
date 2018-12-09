@@ -365,7 +365,6 @@ includeFile("groups/wearables/wearables_scarce.lua")
 includeFile("groups/wearables/wearables_uncommon.lua")
 
 -- custom items
---includeFile("groups/weapon/infinity_lightsaber.lua")
 includeFile("groups/named_crystals.lua")
 
 includeFile("groups/npc/meatlump_melee_components.lua")
@@ -403,20 +402,6 @@ includeFile("groups/crystal_dilly_dillys_damnation.lua")
 -- includeFile("groups/smuggler/smug_medical.lua")
 -- includeFile("groups/smuggler/smug_wep.lua")
 
-------------------------------Boogles Custom------------------------------
---Geo--
-includeFile("groups/geonosian_lab/boogles_geo_group/geonosian_epic.lua")
-includeFile("groups/geonosian_lab/boogles_geo_group/geo_rancor.lua")
---Geo--
-
---Wearables--
-includeFile("groups/wearables/boogles_wearables_geo/mastery_geocave_jewelry.lua")
---Wearables--
-
---Jedi Custom--
-includeFile("groups/boogles_custom/jedi_clothing_attachments.lua")
---Jedi Custom--
-------------------------------Boogles Custom------------------------------
 
 ------------------------------Halloween-----------------------------------
 includeFile("groups/halloween/enhanced_spider.lua")
@@ -432,11 +417,9 @@ includeFile("groups/stap_speeder.lua")
 -- NGE House groups
 includeFile("groups/nge_house_group.lua")
 includeFile("groups/musty_house_group.lua")
-includeFile("groups/vehicle_house_group.lua")
 
--- NGE Robe Groups
-includeFile("groups/wearables/ngerobes1.lua")
-includeFile("groups/wearables/ngerobes2.lua")
+
+
 
 -- Veteran Rewards
 includeFile("groups/veteran_rewards/veteran_rewards_90_days.lua")
@@ -452,10 +435,6 @@ includeFile("groups/veteran_rewards/veteran_rewards_900_days.lua")
 includeFile("groups/veteran_rewards/veteran_rewards_990_days.lua")
 includeFile("groups/veteran_rewards/veteran_rewards_1080_days.lua")
 
--- May Fourth
-includeFile("groups/infinity/hssiss_venom.lua")
-includeFile("groups/infinity/orkellian_slug_blood.lua")
-
 -- All NGE Houses
 includeFile("groups/deeds/structure/nge_housing_all.lua")  --deeds
 includeFile("groups/schematic/structure/nge_houses_all.lua")  --schematics
@@ -466,3 +445,27 @@ includeFile("groups/armor/clone_trooper_rebel.lua")
 includeFile("groups/armor/clone_trooper_neutral.lua")
 includeFile("groups/armor/assault_trooper.lua")
 includeFile("groups/armor/rebel_assault.lua")
+
+-- New Weapons  Master Groups
+includeFile("groups/weapon/ranged/master_carbines.lua")
+includeFile("groups/weapon/ranged/master_rifles.lua")
+includeFile("groups/weapon/ranged/master_pistols.lua")
+includeFile("groups/weapon/melee/master_2h_swords.lua")
+includeFile("groups/weapon/melee/master_polearms.lua")
+includeFile("groups/weapon/melee/master_melee.lua")
+includeFile("groups/weapon/melee/master_swords.lua")
+
+-------------------------------------
+-- Start Specific Dungon Groups for new weapons
+-- ----------------------------------
+
+-- DWB
+includeFile("groups/weapon/dungeon/dwb_weapons.lua")
+includeFile("groups/weapon/dungeon/geo_weapons.lua")
+includeFile("groups/weapon/dungeon/massassi_sith_weapons.lua")
+includeFile("groups/weapon/dungeon/clone_war_weapons.lua")
+includeFile("groups/weapon/dungeon/jakku_weapons.lua")
+includeFile("groups/weapon/dungeon/kaas_weapons.lua")
+includeFile("groups/weapon/dungeon/chandriltech_weapons.lua")
+includeFile("groups/weapon/dungeon/black_sun_weapons.lua")
+includeFile("groups/weapon/dungeon/elite_weapons.lua")

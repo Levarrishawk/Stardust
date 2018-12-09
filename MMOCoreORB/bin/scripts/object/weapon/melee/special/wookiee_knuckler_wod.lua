@@ -69,7 +69,7 @@ object_weapon_melee_special_wookiee_knuckler_wod = object_weapon_melee_special_s
 	attackType = MELEEATTACK,
 
 	-- ENERGY, KINETIC, ELECTRICITY, STUN, BLAST, HEAT, COLD, ACID, FORCE, LIGHTSABER
-	damageType = KINETIC,
+	damageType = ACID,
 
 	-- NONE, LIGHT, MEDIUM, HEAVY
 	armorPiercing = NONE,
@@ -77,26 +77,27 @@ object_weapon_melee_special_wookiee_knuckler_wod = object_weapon_melee_special_s
 	-- combat_rangedspecialize_bactarifle, combat_rangedspecialize_rifle, combat_rangedspecialize_pistol, combat_rangedspecialize_heavy, combat_rangedspecialize_carbine
 	-- combat_meleespecialize_unarmed, combat_meleespecialize_twohand, combat_meleespecialize_polearm, combat_meleespecialize_onehand, combat_general,
 	-- combat_meleespecialize_twohandlightsaber, combat_meleespecialize_polearmlightsaber, combat_meleespecialize_onehandlightsaber
-	xpType = "combat_meleespecialize_twohand",
+	xpType = "combat_meleespecialize_unarmed",
 
-	-- See http://www.ocdsoft.com/files/certifications.xls
-	certificationsRequired = { "cert_sword_2h_axe" },
-	-- See http://www.ocdsoft.com/files/accuracy.xls
-	creatureAccuracyModifiers = { "twohandmelee_accuracy" },
+  -- See http://www.ocdsoft.com/files/certifications.xls
+  certificationsRequired = { "cert_vibroknuckler" },
+  -- See http://www.ocdsoft.com/files/accuracy.xls
+  creatureAccuracyModifiers = { "unarmed_accuracy" },
 
-	-- See http://www.ocdsoft.com/files/defense.xls
-	defenderDefenseModifiers = { "melee_defense" },
+  -- See http://www.ocdsoft.com/files/defense.xls
+  defenderDefenseModifiers = { "melee_defense" },
 
-	-- Leave as "dodge" for now, may have additions later
-	defenderSecondaryDefenseModifiers = { "counterattack" },
+  -- should be defensive acuity only
+  defenderSecondaryDefenseModifiers = { "unarmed_passive_defense" },
 
-	defenderToughnessModifiers = { "twohandmelee_toughness" },
+  defenderToughnessModifiers = { "unarmed_toughness" },
 
-	-- See http://www.ocdsoft.com/files/speed.xls
-	speedModifiers = { "twohandmelee_speed" },
+  -- See http://www.ocdsoft.com/files/speed.xls
+  speedModifiers = { "unarmed_speed" },
 
-	-- Leave blank for now
-	damageModifiers = { },
+  -- Leave blank for now
+  damageModifiers = { "unarmed_damage" },
+
 
 
 	-- The values below are the default values.  To be used for blue frog objects primarily

@@ -33,7 +33,7 @@ klor_slug = Creature:new {
 	lootGroups = {
     {
       groups = {
-        {group = "pistols", chance = 750000},
+        {group = "massassi_sith_weapons", chance = 5000000},
         {group = "heavy_weapons", chance = 500000},
         {group = "rifles", chance = 750000},
         {group = "carbines", chance = 500000},

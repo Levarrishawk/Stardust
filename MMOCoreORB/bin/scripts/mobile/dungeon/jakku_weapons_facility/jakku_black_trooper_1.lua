@@ -31,15 +31,15 @@ jakku_black_trooper_1 = Creature:new {
 	lootGroups = {
 		{
 			groups = {
-				{group = "color_crystals", chance = 2000000},
-        {group = "power_crystals", chance = 4000000},
-        {group = "holocron_dark", chance = 150000},
-        {group = "holocron_light", chance = 150000},
-        {group = "weapons_all", chance = 1050000},
-        {group = "crystal_infinity_white", chance = 150000},
-        {group = "clothing_attachments", chance = 150000},
-        {group = "armor_attachments", chance = 150000},        
-        {group = "nge_housing_all", chance = 6000000}
+				{group = "color_crystals", chance = 1000000},
+        {group = "power_crystals", chance = 1000000},
+        {group = "holocron_dark", chance = 1000000},
+        {group = "holocron_light", chance = 1000000},
+        {group = "weapons_all", chance = 1000000},
+        {group = "crystal_infinity_white", chance = 1000000},
+        {group = "clothing_attachments", chance = 1000000},
+        {group = "armor_attachments", chance = 1000000},        
+        {group = "jakku_weapons", chance = 2000000}
 			}
 		}
 	},

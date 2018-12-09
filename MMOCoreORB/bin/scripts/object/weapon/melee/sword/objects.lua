@@ -1386,7 +1386,7 @@ object_weapon_melee_sword_shared_som_sword_obsidian = SharedWeaponObjectTemplate
   
 }
 
-ObjectTemplates:addClientTemplate(object_weapon_melee_sword_shared_som_sword_mustafar_obsidian, "object/weapon/melee/sword/shared_som_sword_obsidian.iff")
+ObjectTemplates:addClientTemplate(object_weapon_melee_sword_shared_som_sword_obsidian, "object/weapon/melee/sword/shared_som_sword_obsidian.iff")
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 object_weapon_melee_sword_shared_sword_acid = SharedWeaponObjectTemplate:new {
@@ -1443,14 +1443,6 @@ object_weapon_melee_sword_shared_sword_rsf = SharedWeaponObjectTemplate:new {
 }
 
 ObjectTemplates:addClientTemplate(object_weapon_melee_sword_shared_sword_rsf, "object/weapon/melee/sword/shared_sword_rsf.iff")
---------------------------------------------------------------------------------
---------------------------------------------------------------------------------
-object_weapon_melee_sword_shared_sword_wod_scyth = SharedWeaponObjectTemplate:new {
-  clientTemplateFileName = "object/weapon/melee/sword/shared_sword_wod_scyth.iff"
-  
-}
-
-ObjectTemplates:addClientTemplate(object_weapon_melee_sword_shared_sword_wod_scyth, "object/weapon/melee/sword/shared_sword_wod_scyth.iff")
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 object_weapon_melee_sword_shared_sword_wookiee = SharedWeaponObjectTemplate:new {

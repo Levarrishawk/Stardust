@@ -44,6 +44,13 @@ death_watch_overlord = Creature:new {
 			lootChance = 5000000
 		},
 		{
+      groups = {
+        {group = "dwb_weapons", chance =  500000},
+        {group = "dwb_weapons", chance  = 9500000}
+      },
+      lootChance = 5000000
+    },
+		{
 			groups = {
 				{group = "clothing_attachments", chance = 10000000},
 			},

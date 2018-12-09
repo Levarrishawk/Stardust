@@ -41,40 +41,15 @@ enhanced_gaping_spider = Creature:new {
 		{
 			groups =
 			{
-				{group = "fire_breathing_spider", chance = 10000000},
-			},
-			lootChance = 5000000,
-		},
-		{
-			groups =
-			{
-				{group = "fire_breathing_spider", chance = 5500000},
-				{group = "geonosian_epic", chance = 4500000},
-			},
-			lootChance = 5500000,
-		},
-		{
-			groups =
-			{
 				{group = "armor_attachments", chance = 10000000}, -- 25%
 			},
 			lootChance = 2500000,
 		},
-
-		{
-			groups =
-			{
-				{group = "fire_breathing_spider", chance = 5500000},
-				{group = "geonosian_epic", chance = 4500000},
-			},
-			lootChance = 4500000,
-		},
 		{
 	        groups =
 			{
-				{group = "armor_attachments", chance = 500000},
+				{group = "armor_attachments", chance = 1000000},
 				{group = "geonosian_relic", chance = 9000000},
-				{group = "mastery_geocave_jewelry", chance = 500000},
 			},
 			lootChance = 7500000,
 		},

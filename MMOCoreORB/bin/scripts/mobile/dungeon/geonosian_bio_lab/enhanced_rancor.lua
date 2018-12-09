@@ -33,8 +33,7 @@ enhanced_rancor = Creature:new {
 		{
 	        	groups =
 			{
-				{group = "geonosian_common", chance = 6000000},
-				{group = "mastery_geocave_jewelry", chance = 4000000},
+				{group = "geonosian_common", chance = 10000000},
 			},
 			lootChance = 7500000,
 		},
@@ -65,32 +64,6 @@ enhanced_rancor = Creature:new {
 				{group = "armor_attachments", chance = 10000000},
 			},
 			lootChance = 3500000,
-		},
-		{
-			groups =
-			{
-				{group = "geonosian_epic", chance = 10000000},
-			},
-			lootChance = 3500000,
-		},
-		{
-			groups =
-			{
-				{group = "geonosian_epic", chance = 10000000},
-			},
-			lootChance = 2500000,
-		},
-		{
-			groups = {
-				{group = "geo_rancor", chance = 10000000},
-			},
-			lootChance = 5500000,
-		},
-		{
-			groups = {
-				{group = "geo_rancor", chance = 10000000},
-			},
-			lootChance = 4500000,
 		},
 		{
 			groups =

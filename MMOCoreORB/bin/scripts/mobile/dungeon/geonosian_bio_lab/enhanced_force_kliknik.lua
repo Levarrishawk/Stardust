@@ -47,9 +47,8 @@ enhanced_force_kliknik = Creature:new {
 	        groups =
 			{
 
-				{group = "geonosian_relic", chance = 3500000},
+				{group = "geonosian_relic", chance = 4000000},
 				{group = "geonosian_common", chance = 5000000},
-				{group = "mastery_geocave_jewelry", chance = 1500000},
 			},
 			lootChance = 2500000,
 		},

@@ -44,92 +44,92 @@
 object_weapon_ranged_pistol_pistol_mandalorian = object_weapon_ranged_pistol_shared_pistol_mandalorian:new {
 
 	playerRaces = { "object/creature/player/bothan_male.iff",
-				"object/creature/player/bothan_female.iff",
-				"object/creature/player/human_male.iff",
-				"object/creature/player/human_female.iff",
-				"object/creature/player/ithorian_male.iff",
-				"object/creature/player/ithorian_female.iff",
-				"object/creature/player/moncal_male.iff",
-				"object/creature/player/moncal_female.iff",
-				"object/creature/player/rodian_male.iff",
-				"object/creature/player/rodian_female.iff",
-				"object/creature/player/sullustan_male.iff",
-				"object/creature/player/sullustan_female.iff",
-				"object/creature/player/trandoshan_male.iff",
-				"object/creature/player/trandoshan_female.iff",
-				"object/creature/player/twilek_male.iff",
-				"object/creature/player/twilek_female.iff",
-				"object/creature/player/wookiee_male.iff",
-				"object/creature/player/wookiee_female.iff",
-				"object/creature/player/zabrak_male.iff",
-				"object/creature/player/zabrak_female.iff" },
+        "object/creature/player/bothan_female.iff",
+        "object/creature/player/human_male.iff",
+        "object/creature/player/human_female.iff",
+        "object/creature/player/ithorian_male.iff",
+        "object/creature/player/ithorian_female.iff",
+        "object/creature/player/moncal_male.iff",
+        "object/creature/player/moncal_female.iff",
+        "object/creature/player/rodian_male.iff",
+        "object/creature/player/rodian_female.iff",
+        "object/creature/player/sullustan_male.iff",
+        "object/creature/player/sullustan_female.iff",
+        "object/creature/player/trandoshan_male.iff",
+        "object/creature/player/trandoshan_female.iff",
+        "object/creature/player/twilek_male.iff",
+        "object/creature/player/twilek_female.iff",
+        "object/creature/player/wookiee_male.iff",
+        "object/creature/player/wookiee_female.iff",
+        "object/creature/player/zabrak_male.iff",
+        "object/creature/player/zabrak_female.iff" },
 
-	-- RANGEDATTACK, MELEEATTACK, FORCEATTACK, TRAPATTACK, GRENADEATTACK, HEAVYACIDBEAMATTACK,
-	-- HEAVYLIGHTNINGBEAMATTACK, HEAVYPARTICLEBEAMATTACK, HEAVYROCKETLAUNCHERATTACK, HEAVYLAUNCHERATTACK
-	attackType = RANGEDATTACK,
+  -- RANGEDATTACK, MELEEATTACK, FORCEATTACK, TRAPATTACK, GRENADEATTACK, HEAVYACIDBEAMATTACK, 
+  -- HEAVYLIGHTNINGBEAMATTACK, HEAVYPARTICLEBEAMATTACK, HEAVYROCKETLAUNCHERATTACK, HEAVYLAUNCHERATTACK
+  attackType = RANGEDATTACK,
 
-	-- ENERGY, KINETIC, ELECTRICITY, STUN, BLAST, HEAT, COLD, ACID, FORCE, LIGHTSABER
-	damageType = BLAST,
+  -- ENERGY, KINETIC, ELECTRICITY, STUN, BLAST, HEAT, COLD, ACID, FORCE, LIGHTSABER
+  damageType = ELECTRICITY,
 
-	-- NONE, LIGHT, MEDIUM, HEAVY
-	armorPiercing = NONE,
+  -- NONE, LIGHT, MEDIUM, HEAVY
+  armorPiercing = LIGHT,
 
-	-- combat_rangedspecialize_bactarifle, combat_rangedspecialize_rifle, combat_rangedspecialize_pistol, combat_rangedspecialize_heavy, combat_rangedspecialize_carbine
-	-- combat_meleespecialize_unarmed, combat_meleespecialize_twohand, combat_meleespecialize_polearm, combat_meleespecialize_onehand, combat_general,
-	-- combat_meleespecialize_twohandlightsaber, combat_meleespecialize_polearmlightsaber, combat_meleespecialize_onehandlightsaber
-	xpType = "combat_rangedspecialize_heavy",
+  -- combat_rangedspecialize_bactarifle, combat_rangedspecialize_rifle, combat_rangedspecialize_pistol, combat_rangedspecialize_heavy, combat_rangedspecialize_carbine
+  -- combat_meleespecialize_unarmed, combat_meleespecialize_twohand, combat_meleespecialize_polearm, combat_meleespecialize_onehand, combat_general,
+  -- combat_meleespecialize_twohandlightsaber, combat_meleespecialize_polearmlightsaber, combat_meleespecialize_onehandlightsaber
+  xpType = "combat_rangedspecialize_pistol",
+  
+  -- See http://www.ocdsoft.com/files/certifications.xls
+  certificationsRequired = { "cert_pistol_republic_blaster" },
+  -- See http://www.ocdsoft.com/files/accuracy.xls
+  creatureAccuracyModifiers = { "pistol_accuracy" },
 
-	-- See http://www.ocdsoft.com/files/certifications.xls
-	certificationsRequired = { "cert_pistol_launcher" },
-	-- See http://www.ocdsoft.com/files/accuracy.xls
-	creatureAccuracyModifiers = { "pistol_accuracy" },
+  creatureAimModifiers = { "pistol_aim", "aim" },
 
-	creatureAimModifiers = { "pistol_aim", "aim" },
+  -- See http://www.ocdsoft.com/files/defense.xls
+  defenderDefenseModifiers = { "ranged_defense" },
 
-	-- See http://www.ocdsoft.com/files/defense.xls
-	defenderDefenseModifiers = { "ranged_defense" },
+  -- Leave as "dodge" for now, may have additions later
+  defenderSecondaryDefenseModifiers = { "dodge" },
 
-	-- Leave as "dodge" for now, may have additions later
-	defenderSecondaryDefenseModifiers = { "dodge" },
+  -- See http://www.ocdsoft.com/files/speed.xls
+  speedModifiers = { "pistol_speed" },
 
-	-- See http://www.ocdsoft.com/files/speed.xls
-	speedModifiers = { "pistol_speed" },
+  -- Leave blank for now
+  damageModifiers = { },
+  
 
-	-- Leave blank for now
-	damageModifiers = { },
+  -- The values below are the default values.  To be used for blue frog objects primarily
+  healthAttackCost = 0,
+  actionAttackCost = 300,
+  mindAttackCost = 0,
+  forceCost = 0,
 
+  pointBlankAccuracy = 0,
+  pointBlankRange = 0,
 
-	-- The values below are the default values.  To be used for blue frog objects primarily
-	healthAttackCost = 15,
-	actionAttackCost = 45,
-	mindAttackCost = 15,
-	forceCost = 0,
+  idealRange = 20,
+  idealAccuracy = 40,
 
-	pointBlankRange = 0,
-	pointBlankAccuracy = 0,
+  maxRange = 64,
+  maxRangeAccuracy = -80,
 
-	idealRange = 15,
-	idealAccuracy = -10,
+  minDamage = 18,
+  maxDamage = 88,
 
-	maxRange = 64,
-	maxRangeAccuracy = -70,
+  attackSpeed = 4,
 
-	minDamage = 35,
-	maxDamage = 175,
+  woundsRatio = 15,
 
-	attackSpeed = 4,
-
-	woundsRatio = 18,
-
-	numberExperimentalProperties = {1, 1, 2, 2, 2, 2, 1, 2, 2, 2, 2, 2},
-	experimentalProperties = {"XX", "XX", "CD", "OQ", "CD", "OQ", "CD", "OQ", "CD", "OQ", "XX", "CD", "OQ", "CD", "OQ", "CD", "OQ", "CD", "OQ", "CD", "OQ"},
-	experimentalWeights = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
-	experimentalGroupTitles = {"null", "null", "expDamage", "expDamage", "expDamage", "expDamage", "null", "exp_durability", "expRange", "expEffeciency", "expEffeciency", "expEffeciency"},
-	experimentalSubGroupTitles = {"null", "null", "mindamage", "maxdamage", "attackspeed", "woundchance", "roundsused", "hitpoints", "midrangemod", "attackhealthcost", "attackactioncost", "attackmindcost"},
-	experimentalMin = {0, 0, 17, 91, 5.5, 13, 1, 750, -15, 20, 58, 20},
-	experimentalMax = {0, 0, 33, 169, 3.7, 23, 3, 1500, 0, 10, 31, 10},
-	experimentalPrecision = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-	experimentalCombineType = {0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
+  numberExperimentalProperties = {1, 1, 2, 2, 2, 2, 2, 2, 1, 1, 2, 2, 2, 2},
+  experimentalProperties = {"XX", "XX", "CD", "OQ", "CD", "OQ", "CD", "OQ", "CD", "OQ", "CD", "OQ", "CD", "OQ", "XX", "XX", "CD", "OQ", "CD", "OQ", "CD", "XX", "XX", "XX"},
+  experimentalWeights = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
+  experimentalGroupTitles = {"null", "null", "expDamage", "expDamage", "expDamage", "expDamage", "exp_durability", "expRange", "null", "null", "expRange", "null", "null", "null"},
+  experimentalSubGroupTitles = {"null", "null", "mindamage", "maxdamage", "attackspeed", "woundchance", "hitpoints", "zerorangemod", "maxrangemod", "midrange", "midrangemod", "attackhealthcost", "attackactioncost", "attackmindcost"},
+  experimentalMin = {0, 0, 45, 216, 2, 10, 750, -5, -80, 20, -2, 0, 300, 0},
+  experimentalMax = {0, 0, 248, 425, 2, 20, 1500, 10, -80, 20, 18, 0, 300, 0},
+  experimentalPrecision = {0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+  experimentalCombineType = {0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
 }
 
 ObjectTemplates:addTemplate(object_weapon_ranged_pistol_pistol_mandalorian, "object/weapon/ranged/pistol/pistol_mandalorian.iff")

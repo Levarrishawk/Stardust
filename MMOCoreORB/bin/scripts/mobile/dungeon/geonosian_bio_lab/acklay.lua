@@ -69,12 +69,6 @@ acklay = Creature:new {
 				},
 				lootChance = 4500000,
 		},
-		{ 	
-			groups ={
-					{group = "jedi_clothing_attachments", chance = 10000000},				
-				},
-				lootChance = 1500000,
-		},
 		{
 	        groups =
 			{
@@ -82,20 +76,6 @@ acklay = Creature:new {
 				{group = "acklay", chance = 9500000}
 			},
 			lootChance = 3500000,
-		},
-		{
-	        groups =
-			{
-				{group = "geonosian_epic", chance = 10000000},
-			},
-			lootChance = 2500000,
-		},
-		{
-	        groups =
-			{
-				{group = "geonosian_epic", chance = 10000000},
-			},
-			lootChance = 2500000,
 		},
 		{
 			groups =

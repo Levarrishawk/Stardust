@@ -39,6 +39,12 @@ nanite_reanimated_clone_trooper = Creature:new {
     },
     {
       groups = {
+        {group = "clone_war_weapons", chance = 10000000}    -- 25% * 35% = 8.75%
+      },
+      lootChance = 2500000    -- 25% chance of this group
+    },
+    {
+      groups = {
         {group = "armor_attachments", chance = 5000000},
         {group = "clothing_attachments", chance = 5000000},
       },

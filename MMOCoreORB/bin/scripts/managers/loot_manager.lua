@@ -202,7 +202,6 @@ lootableClothingAttachmentStatMods = {
 	"intimidate_defense",
 	"keep_creature",
 	"knockdown_defense",
-	"lightsaber_experimentation",
 	"medical_foraging",
 	"medicine_assembly",
 	"medicine_experimentation",
@@ -253,7 +252,26 @@ lootableClothingAttachmentStatMods = {
 	"warcry",
 	"weapon_assembly",
 	"weapon_experimentation",
-	"weapon_repair"
+	"weapon_repair",
+	"jedi_saber_assembly",
+  "jedi_saber_experimentation",
+  "jedi_force_power_regen",
+  "jedi_force_power_max",
+  "onehandlightsaber_accuracy",
+  "onehandlightsaber_speed",
+  "polearmlightsaber_accuracy",
+  "polearmlightsaber_speed",
+  "twohandlightsaber_accuracy",
+  "twohandlightsaber_speed",
+  "force_assembly",
+  "force_choke",
+  "forcethrow_accuracy",
+  "force_failure_reduction",
+  "force_repair_bonus",
+  "forceintimidate_accuracy",
+  "forceknockdown_accuracy",
+  "forcelightning_accuracy",
+  "forceweaken_accuracy"
 }
 
 lootableArmorStatMods = {
@@ -475,7 +493,26 @@ lootableClothingStatMods = {
 	"warcry",
 	"weapon_assembly",
 	"weapon_experimentation",
-	"weapon_repair"
+	"weapon_repair",
+	"jedi_saber_assembly",
+  "jedi_saber_experimentation",
+  "jedi_force_power_regen",
+  "jedi_force_power_max",
+  "onehandlightsaber_accuracy",
+  "onehandlightsaber_speed",
+  "polearmlightsaber_accuracy",
+  "polearmlightsaber_speed",
+  "twohandlightsaber_accuracy",
+  "twohandlightsaber_speed",
+  "force_assembly",
+  "force_choke",
+  "forcethrow_accuracy",
+  "force_failure_reduction",
+  "force_repair_bonus",
+  "forceintimidate_accuracy",
+  "forceknockdown_accuracy",
+  "forcelightning_accuracy",
+  "forceweaken_accuracy"
 }
 
 lootableOneHandedMeleeStatMods = {
