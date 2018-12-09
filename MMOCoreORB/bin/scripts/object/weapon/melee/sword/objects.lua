@@ -1445,14 +1445,6 @@ object_weapon_melee_sword_shared_sword_rsf = SharedWeaponObjectTemplate:new {
 ObjectTemplates:addClientTemplate(object_weapon_melee_sword_shared_sword_rsf, "object/weapon/melee/sword/shared_sword_rsf.iff")
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
-object_weapon_melee_sword_shared_sword_wod_scyth = SharedWeaponObjectTemplate:new {
-  clientTemplateFileName = "object/weapon/melee/sword/shared_sword_wod_scyth.iff"
-  
-}
-
-ObjectTemplates:addClientTemplate(object_weapon_melee_sword_shared_sword_wod_scyth, "object/weapon/melee/sword/shared_sword_wod_scyth.iff")
---------------------------------------------------------------------------------
---------------------------------------------------------------------------------
 object_weapon_melee_sword_shared_sword_wookiee = SharedWeaponObjectTemplate:new {
   clientTemplateFileName = "object/weapon/melee/sword/shared_sword_wookiee.iff"
   
