@@ -448,7 +448,7 @@ includeFile("groups/armor/assault_trooper.lua")
 includeFile("groups/armor/rebel_assault.lua")
 
 -- New Weapons
---includeFile("groups/weapon/master_carbines.lua")
+includeFile("groups/weapon/master_carbines.lua")
 includeFile("groups/weapon/master_rifles.lua")
 includeFile("groups/weapon/master_pistols.lua")
 
