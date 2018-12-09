@@ -1380,10 +1380,6 @@ includeFile("items/veteran_rewards/painting_07.lua")
 includeFile("items/veteran_rewards/painting_08.lua")
 includeFile("items/veteran_rewards/painting_09.lua")
 
--- May fourth
-
---includeFile("items/infinity/may_fourth/hssiss_lizard_venom.lua")
---includeFile("items/infinity/may_fourth/ork_slug_blood.lua")
 
 -- ALL Nge House DEEDs
 includeFile("items/deed/player_house_deed/atat_house_deed.lua")
@@ -1528,12 +1524,12 @@ includeFile("items/weapon/som_rifle_dp23.lua")
 includeFile("items/weapon/som_rifle_mustafar_disruptor.lua")
 
 
---[[
+
 includeFile("items/weapon/two_handed_sword_kashyyk.lua")
 includeFile("items/weapon/two_handed_sword_kun_massassi.lua")
 includeFile("items/weapon/two_handed_sword_pvp_bf_01.lua")
 includeFile("items/weapon/two_handed_sword_sith.lua")
-includeFile("items/weapon/som_two_handed_sword_obsidianlua")
+includeFile("items/weapon/som_two_handed_sword_obsidian.lua")
 includeFile("items/weapon/som_two_handed_sword_tulrus.lua")
 
 includeFile("items/weapon/polearm_lance_cryo.lua")
@@ -1566,4 +1562,3 @@ includeFile("items/weapon/sword_rebel.lua")
 includeFile("items/weapon/sword_rsf.lua")
 includeFile("items/weapon/sword_wookiee.lua")
 
---]]
