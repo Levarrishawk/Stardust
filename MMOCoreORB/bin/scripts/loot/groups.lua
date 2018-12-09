@@ -452,10 +452,6 @@ includeFile("groups/veteran_rewards/veteran_rewards_900_days.lua")
 includeFile("groups/veteran_rewards/veteran_rewards_990_days.lua")
 includeFile("groups/veteran_rewards/veteran_rewards_1080_days.lua")
 
--- May Fourth
-includeFile("groups/infinity/hssiss_venom.lua")
-includeFile("groups/infinity/orkellian_slug_blood.lua")
-
 -- All NGE Houses
 includeFile("groups/deeds/structure/nge_housing_all.lua")  --deeds
 includeFile("groups/schematic/structure/nge_houses_all.lua")  --schematics
