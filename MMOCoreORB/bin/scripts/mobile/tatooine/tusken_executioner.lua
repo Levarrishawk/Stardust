@@ -68,7 +68,6 @@ tusken_executioner = Creature:new {
 				{group = "clothing_attachments", chance = 2000000},   -- 50% * 20% = 10%
 				{group = "wearables_rare", chance = 2000000},
 				{group = "wearables_scarce", chance = 1000000},
-				{group = "vehicle_house_group", chance = 1000000},    -- 50% * 10% = 5%
 			},
 			lootChance = 5000000,  -- 50% chance for this group
 		},

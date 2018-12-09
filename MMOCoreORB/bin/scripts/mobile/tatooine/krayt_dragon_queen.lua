@@ -79,7 +79,6 @@ krayt_dragon_queen = Creature:new {
 				{group = "weapons_all", chance = 2000000},
 				{group = "armor_all", chance = 2000000},
 				{group = "armor_attachments", chance = 2000000},  -- 9% chance
-			--	{group = "vehicle_house_group", chance = 1000000},    -- 45% * 10% = 4.5%
 			},
 			lootChance = 4500000,
 		},

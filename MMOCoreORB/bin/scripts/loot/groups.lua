@@ -417,7 +417,6 @@ includeFile("groups/stap_speeder.lua")
 -- NGE House groups
 includeFile("groups/nge_house_group.lua")
 includeFile("groups/musty_house_group.lua")
-includeFile("groups/vehicle_house_group.lua")
 
 
 
