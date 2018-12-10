@@ -5078,3 +5078,8 @@ object_tangible_wearables_base_shared_cybernetic_base = SharedTangibleObjectTemp
 	clientTemplateFileName = "object/tangible/wearables/base/shared_cybernetic_base.iff"
 }
 ObjectTemplates:addClientTemplate(object_tangible_wearables_base_shared_cybernetic_base, "object/tangible/wearables/base/shared_cybernetic_base.iff")
+
+object_tangible_wearables_base_shared_base_fannypack = SharedTangibleObjectTemplate:new {
+	clientTemplateFileName = "object/tangible/wearables/base/shared_base_fannypack.iff"
+}
+ObjectTemplates:addClientTemplate(object_tangible_wearables_base_shared_base_fannypack, "object/tangible/wearables/base/shared_base_fannypack.iff")
