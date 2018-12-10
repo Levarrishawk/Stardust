@@ -1,4 +1,5 @@
---Copyright (C) 2009 <SWGEmu>
+--Copyright (C) 2010 <SWGEmu>
+
 
 --This File is part of Core3.
 
@@ -38,19 +39,10 @@
 --it is their choice whether to do so. The GNU Lesser General Public License
 --gives permission to release a modified version without this exception;
 --this exception also makes it possible to release a modified version
---which carries forward this exception.
 
 
-object_tangible_furniture_base_shared_furniture_base = SharedTangibleObjectTemplate:new {
-	clientTemplateFileName = "object/tangible/furniture/base/shared_furniture_base.iff"
-	
+object_tangible_loot_base_loot_base = object_tangible_loot_base_shared_loot_base:new {
+
 }
 
-ObjectTemplates:addClientTemplate(object_tangible_furniture_base_shared_furniture_base, "object/tangible/furniture/base/shared_furniture_base.iff")
---
-object_tangible_furniture_base_shared_flag_city_base = SharedTangibleObjectTemplate:new {
-  clientTemplateFileName = "object/tangible/furniture/base/shared_flag_city_base.iff"
-  
-}
-
-ObjectTemplates:addClientTemplate(object_tangible_furniture_base_shared_flag_city_base, "object/tangible/furniture/base/shared_flag_city_base.iff")
+ObjectTemplates:addTemplate(object_tangible_loot_base_loot_base, "object/tangible/loot/base/loot_base.iff")
