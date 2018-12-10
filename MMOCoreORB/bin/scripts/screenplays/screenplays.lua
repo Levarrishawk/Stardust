@@ -32,6 +32,7 @@ includeFile("../custom_scripts/screenplays/screenplays.lua")
 includeFile("helperfuncs.lua")
 includeFile("playerTriggers.lua")
 includeFile("poi/corellia_rogue_corsec_base.lua")
+includeFile("sphelper.lua")
 
 
 -- Theme parks

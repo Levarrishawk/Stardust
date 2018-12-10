@@ -4,7 +4,7 @@ som_sword_obsidian = {
 	minimumLevel = 0,
 	maximumLevel = -1,
 	customObjectName = "",
-	directObjectTemplate = "object/weapon/melee/baton/som_sword_obsidian.iff",
+	directObjectTemplate = "object/weapon/melee/sword/som_sword_obsidian.iff",
 	craftingValues = {
 		{"mindamage",225,335,0},
 		{"maxdamage",246,400,0},

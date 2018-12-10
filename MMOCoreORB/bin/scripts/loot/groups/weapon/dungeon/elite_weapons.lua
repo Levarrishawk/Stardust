@@ -9,8 +9,9 @@ elite_weapons = {
 		{itemTemplate = "rifle_adventurer", weight = 1500000},
 		{itemTemplate = "melee_ep3_loot_soulstinger", weight = 1500000},
 		{itemTemplate = "pistol_heroic_sd", weight = 1500000},
-		{itemTemplate = "carbine_alliance_needler", weight = 1500000},
-		{itemTemplate = "som_lance_xandank", weight = 1500000},
+		{itemTemplate = "carbine_alliance_needler", weight = 1000000},
+		{itemTemplate = "carbine_proton", weight = 1000000},
+		{itemTemplate = "som_lance_xandank", weight = 1000000},
 		{itemTemplate = "sword_mace_junti", weight = 1000000}		
 	}
 }
