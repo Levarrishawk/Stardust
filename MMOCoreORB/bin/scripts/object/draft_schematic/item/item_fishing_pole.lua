@@ -51,8 +51,8 @@ object_draft_schematic_item_item_fishing_pole = object_draft_schematic_item_shar
    complexity = 1, 
    size = 1, 
 
-   xpType = "crafting_general", 
-   xp = 36, 
+   xpType = "merchant", 
+   xp = 360, 
 
    assemblySkill = "general_assembly", 
    experimentingSkill = "general_experimentation", 
