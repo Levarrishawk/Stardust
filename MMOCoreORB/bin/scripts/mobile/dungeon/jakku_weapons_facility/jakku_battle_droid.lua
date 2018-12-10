@@ -35,9 +35,9 @@ jakku_battle_droid = Creature:new {
 	lootGroups = {
     {
       groups = {      
-        {group = "jakku_weapons", chance = 3000000},
-        {group = "clothing_attachments", chance = 4000000},
-        {group = "armor_attachments", chance = 4000000}
+        {group = "jakku_weapons", chance = 300000},
+        {group = "clothing_attachments", chance = 400000},
+        {group = "armor_attachments", chance = 400000}
       }
     }
   },
