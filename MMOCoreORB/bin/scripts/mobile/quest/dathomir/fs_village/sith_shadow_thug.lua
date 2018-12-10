@@ -2,7 +2,7 @@ sith_shadow_thug = Creature:new {
 	objectName = "@mob/creature_names:shadow_thug",
 	socialGroup = "sith_shadow",
 	faction = "sith_shadow",
-	level = 51,
+	level = 151,
 	chanceHit = 0.47,
 	damageMin = 395,
 	damageMax = 500,
@@ -55,10 +55,10 @@ sith_shadow_thug = Creature:new {
 	lootGroups = {
 		{
 			groups = {
-				{group = "elite_weapons", chance = 4000000},
-				{group = "tailor_components", chance = 1500000},
+				{group = "junk", chance = 4000000},
+				{group = "tailor_components", chance = 2000000},
 				{group = "loot_kit_parts", chance = 1500000},
-				{group = "printer_parts", chance = 1000000},
+				{group = "elite_weapons", chance = 500000},
 				{group = "wearables_common", chance = 1000000},
 				{group = "clothing_attachments", chance = 500000},
 				{group = "armor_attachments", chance = 500000},
