@@ -44,10 +44,8 @@
 object_tangible_wearables_armor_mandalorian_armor_mandalorian_leggings = object_tangible_wearables_armor_mandalorian_shared_armor_mandalorian_leggings:new {
 	templateType = ARMOROBJECT,
 
-  certificationsRequired = { "secondary_bountyhunter_novice",
-          "combat_mando_novice",
-          "combat_soldier_novice",
-          "combat_shocktrooper_novice"},
+  certificationsRequired = { "combat_bountyhunter_novice",
+          "combat_commando_novice"},
   
   objectMenuComponent = "ArmorObjectMenuComponent",
   
@@ -95,7 +93,9 @@ object_tangible_wearables_armor_mandalorian_armor_mandalorian_leggings = object_
 				"object/mobile/vendor/zabrak_male.iff" },
 	
 	-- Damage types in WeaponObject
-	vulnerability = NONE,
+	vulnerability = ELECTRICITY,
+
+  specialResists = LIGHTSABER,
 
 	-- These are default Blue Frog stats, These are also used as temporary DWB crafting stats. Needs to be adjusted to random color, and Blast should be a Special Resist. Encumberance on boots and all arm/hand armor are estimated. Helm/Chest/Leggings are correct. 
 	healthEncumbrance = 0,
