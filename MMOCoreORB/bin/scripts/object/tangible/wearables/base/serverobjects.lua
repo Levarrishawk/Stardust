@@ -132,3 +132,13 @@ includeFile("tangible/wearables/base/wearables_base.lua")
 
 -- Custom
 includeFile("tangible/wearables/base/base_jedicloak.lua")
+includeFile("tangible/wearables/base/base_cybernetic_arm_l.lua")
+includeFile("tangible/wearables/base/base_cybernetic_arm_r.lua")
+includeFile("tangible/wearables/base/base_cybernetic_arm_legs.lua")
+includeFile("tangible/wearables/base/base_cybernetic_torso.lua")
+includeFile("tangible/wearables/base/cybernetic_base.lua")
+includeFile("tangible/wearables/base/base_cybernetic_forearm_l.lua")
+includeFile("tangible/wearables/base/base_cybernetic_forearm_r.lua")
+includeFile("tangible/wearables/base/base_cybernetic_hand_l.lua")
+includeFile("tangible/wearables/base/base_cybernetic_hand_r.lua")
+includeFile("tangible/wearables/base/base_fannypack.lua")

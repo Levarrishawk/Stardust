@@ -92,7 +92,7 @@ playerRaces = { "object/creature/player/bothan_male.iff",
         "object/mobile/vendor/zabrak_male.iff" },
 
 -- Damage types in WeaponObject
-vulnerability = STUN + LIGHTSABER,
+vulnerability = STUN,
 
 specialResists = ELECTRICITY,
 

@@ -4505,3 +4505,38 @@ object_mobile_skeleton_shared_vr_mynock = SharedCreatureObjectTemplate:new {
 
 ObjectTemplates:addClientTemplate(object_mobile_skeleton_shared_vr_mynock, "object/mobile/skeleton/shared_vr_mynock.iff")
 --f
+
+object_mobile_skeleton_shared_sher_kar = SharedCreatureObjectTemplate:new {
+  clientTemplateFileName = "object/mobile/skeleton/shared_sher_kar.iff"
+}
+ObjectTemplates:addClientTemplate(object_mobile_skeleton_shared_sher_kar, "object/mobile/skeleton/shared_sher_kar.iff")
+--***********************************************************************************************************************************************
+object_mobile_skeleton_shared_tanray = SharedCreatureObjectTemplate:new {
+  clientTemplateFileName = "object/mobile/skeleton/shared_tanray.iff"
+}
+ObjectTemplates:addClientTemplate(object_mobile_skeleton_shared_tanray, "object/mobile/skeleton/shared_tanray.iff")
+--***********************************************************************************************************************************************
+object_mobile_skeleton_shared_tulrus = SharedCreatureObjectTemplate:new {
+  clientTemplateFileName = "object/mobile/skeleton/shared_tulrus.iff"
+}
+ObjectTemplates:addClientTemplate(object_mobile_skeleton_shared_tulrus, "object/mobile/skeleton/shared_tulrus.iff")
+
+object_mobile_skeleton_shared_bm_cat_predatory = SharedCreatureObjectTemplate:new {
+  clientTemplateFileName = "object/mobile/skeleton/shared_bm_cat_predatory.iff"
+}
+ObjectTemplates:addClientTemplate(object_mobile_skeleton_shared_bm_cat_predatory, "object/mobile/skeleton/shared_bm_cat_predatory.iff")
+--
+object_mobile_skeleton_shared_dug = SharedCreatureObjectTemplate:new {
+  clientTemplateFileName = "object/mobile/skeleton/shared_dug.iff"
+}
+ObjectTemplates:addClientTemplate(object_mobile_skeleton_shared_dug, "object/mobile/skeleton/shared_dug.iff")
+--***********************************************************************************************************************************************
+object_mobile_skeleton_shared_hawk_bat = SharedCreatureObjectTemplate:new {
+  clientTemplateFileName = "object/mobile/skeleton/shared_hawk_bat.iff"
+}
+ObjectTemplates:addClientTemplate(object_mobile_skeleton_shared_hawk_bat, "object/mobile/skeleton/shared_hawk_bat.iff")
+
+object_mobile_skeleton_shared_varactyl = SharedCreatureObjectTemplate:new {
+  clientTemplateFileName = "object/mobile/skeleton/shared_varactyl.iff"
+}
+ObjectTemplates:addClientTemplate(object_mobile_skeleton_shared_varactyl, "object/mobile/skeleton/shared_varactyl.iff")

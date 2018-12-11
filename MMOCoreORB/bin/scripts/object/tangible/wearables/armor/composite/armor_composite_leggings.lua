@@ -91,7 +91,9 @@ object_tangible_wearables_armor_composite_armor_composite_leggings = object_tang
 				"object/mobile/vendor/zabrak_male.iff" },
 
 	-- Damage types in WeaponObject
-	vulnerability = NONE,
+	vulnerability = BLAST,
+
+  specialResists = ENERGY,
 
 	-- These are default Blue Frog stats
 	healthEncumbrance = 0,
