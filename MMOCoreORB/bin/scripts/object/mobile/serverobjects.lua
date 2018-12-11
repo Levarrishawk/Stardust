@@ -2663,3 +2663,4 @@ includeFile("mobile/shared_space_comm_quest_hortrix_steelarm_chiss_m.lua")
 
 -- New Content NPCs
 includeFile("mobile/atxt.lua")
+includeFile("mobile/bm_mobile.lua")
