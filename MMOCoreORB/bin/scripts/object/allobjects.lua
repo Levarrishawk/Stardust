@@ -894,6 +894,7 @@ includeFile("custom_content/building/tatooine/objects.lua")
 
 includeFile("custom_content/intangible/vehicle/objects.lua")
 
+includeFile("custom_content/static/base/objects.lua")
 includeFile("custom_content/static/christmas/objects.lua")
 includeFile("custom_content/static/creature/objects.lua")
 includeFile("custom_content/static/firework/objects.lua")
