@@ -85,7 +85,8 @@ object_building_general_space_dungeon_star_destroyer = object_building_general_s
     spawningPoints = {
       { x = -7.75978, z = 175.522, y = -34.3437, ow = 0.897693, ox = 0, oz = 0, oy = -0.440621, cellid = 33 }
       }, -- { x, z, y, ow, ox, oy, oz, cellid }
-  templateType = CLONINGBUILDING 
+  templateType = CLONINGBUILDING,
+  facilityType = CLONER_STANDARD, 
  
 }
 
