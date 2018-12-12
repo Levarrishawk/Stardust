@@ -71,8 +71,8 @@ object_building_general_space_dungeon_star_destroyer = object_building_general_s
                 {templateFile = "object/tangible/terminal/terminal_elevator_up.iff", x = 19.9312, z = 140.585, y = 430.471, ox = 0, oy = 0, oz = 0, ow = 1, cellid = 48, containmentType = -1},              
                 {templateFile = "object/tangible/terminal/terminal_elevator_down.iff", x = 19.9312, z = 453.359, y = 430.471, ox = 0, oy = 0, oz = 0, ow = 1, cellid = 48, containmentType = -1},
                 -- Port Side bridge 
-                {templateFile = "object/tangible/terminal/terminal_elevator_up.iff", x = 20.2, z = 448.607, y = 341.889, ox = 0, oy = -0.707107, oz = 0, ow = 0.707107, cellid = 55, containmentType = -1},              
-                {templateFile = "object/tangible/terminal/terminal_elevator_down.iff", x = 20.2, z = 453.609, y = 341.889, ox = 0, oy = -0.707107, oz = 0, ow = 0.707107, cellid = 55, containmentType = -1},
+                {templateFile = "object/tangible/terminal/terminal_elevator_up.iff", x = 20.2, z = 448.607, y = 341.889, ox = 0, oy = -0.707107, oz = 0, ow = 0.707107, cellid = 57, containmentType = -1},              
+                {templateFile = "object/tangible/terminal/terminal_elevator_down.iff", x = 20.2, z = 453.609, y = 341.889, ox = 0, oy = -0.707107, oz = 0, ow = 0.707107, cellid = 57, containmentType = -1},
               -- Starboard Side bridge 
                 {templateFile = "object/tangible/terminal/terminal_elevator_up.iff", x = -21.399, z = 448.607, y = 341.889, ox = 0, oy = 0.707107, oz = 0, ow = 0.707107, cellid = 56, containmentType = -1},              
                 {templateFile = "object/tangible/terminal/terminal_elevator_down.iff", x = -21.399, z = 453.609, y = 341.889, ox = 0, oy = 0.707107, oz = 0, ow = 0.707107, cellid = 56, containmentType = -1},
@@ -85,7 +85,8 @@ object_building_general_space_dungeon_star_destroyer = object_building_general_s
     spawningPoints = {
       { x = -7.75978, z = 175.522, y = -34.3437, ow = 0.897693, ox = 0, oz = 0, oy = -0.440621, cellid = 33 }
       }, -- { x, z, y, ow, ox, oy, oz, cellid }
-  templateType = CLONINGBUILDING 
+  templateType = CLONINGBUILDING,
+  facilityType = CLONER_STANDARD, 
  
 }
 

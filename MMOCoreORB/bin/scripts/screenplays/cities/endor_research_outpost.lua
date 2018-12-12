@@ -45,4 +45,5 @@ function EndorResearchOutpostScreenPlay:spawnMobiles()
 	self:setMoodString(pNpc, "calm")
 	pNpc = spawnMobile("endor", "r5",60,3249.85,24,-3464.83,180.771,0)
 	self:setMoodString(pNpc, "calm")
+	spawnMobile("endor", "blurrg_raptor", 600, -6608, 7, -4784, 180, 0)
 end

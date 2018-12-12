@@ -201,4 +201,5 @@ function NabooDeejaPeakScreenPlay:spawnMobiles()
 	spawnMobile("naboo", "dark_trooper",300,4709.0,330.0,-1387.9,65,0)
 	spawnMobile("naboo", "stormtrooper_sniper",300,4733.7,329.8,-1426.3,172,0)
 	spawnMobile("naboo", "stormtrooper_sniper",300,4742.9,329.8,-1424.7,-177,0)
+	spawnMobile("naboo", "peko_peko_albatross",600,-1552,394.8,-1992.7,0,0)
 end

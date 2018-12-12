@@ -2,7 +2,7 @@ vitiate = Creature:new {
 	objectName = "@theme_park_name:emperor_palpatine",
 	customName = "Vitiate",
 	socialGroup = "dark_jedi",
-	level = 100,
+	level = 300,
 	chanceHit = 1,
 	damageMin = 445,
 	damageMax = 700,
@@ -31,8 +31,8 @@ vitiate = Creature:new {
     {
       groups = {
         {group = "holocron_dark", chance = 1000000},
-        {group = "crystal_infinity_white", chance = 1000000},
-        {group = "named_crystals", chance = 1000000},
+        {group = "crystal_infinity_white", chance = 100000},
+        {group = "named_crystals", chance = 500000},
         {group = "massassi_sith_weapons", chance = 1000000},
         {group = "armor_attachments", chance = 2000000},
         {group = "clothing_attachments", chance = 2000000},
