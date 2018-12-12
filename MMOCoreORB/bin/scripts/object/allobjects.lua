@@ -964,3 +964,5 @@ includeFile("custom_content/tangible/wearables/cybernetic/s04/objects.lua")
 includeFile("custom_content/tangible/wearables/cybernetic/s05/objects.lua")
 includeFile("custom_content/tangible/wearables/hat/objects.lua")
 includeFile("custom_content/tangible/wearables/jacket/objects.lua")
+
+includeFile("static/structure/elysium/objects.lua")
