@@ -35,7 +35,7 @@ sith_ghost = Creature:new {
         {group = "crystals_premium", chance = 600000},
         {group = "crystal_kuns_blood", chance = 300000},
         {group = "color_crystals", chance = 1300000},
-        {group = "kaas_weapons", chance = 1300000},
+        {group = "kaas_weapons", chance = 500000},
         {group = "armor_attachments", chance = 1100000},
         {group = "clothing_attachments", chance = 1100000},
         {group = "krayt_pearls", chance = 300000},

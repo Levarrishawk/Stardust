@@ -42,7 +42,7 @@ black_sun_henchman = Creature:new {
       groups = {
         {group = "black_sun_weapons", chance = 10000000},
       },
-      lootChance = 2500000
+      lootChance = 1000000
     },
 		{
 			groups = {
