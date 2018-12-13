@@ -35,7 +35,7 @@ insane_vitiate_cultist = Creature:new {
         {group = "holocron_dark", chance = 600000},
         {group = "holocron_light", chance = 600000},
         {group = "power_crystals", chance = 600000},
-        {group = "kaas_weapons", chance = 1500000},
+        {group = "kaas_weapons", chance = 500000},
         {group = "color_crystals", chance = 1500000},
         {group = "melee_weapons", chance = 1500000},
         {group = "armor_attachments", chance = 1100000},
