@@ -2,16 +2,16 @@ tusken_executioner = Creature:new {
 	objectName = "@mob/creature_names:tusken_executioner",
 	socialGroup = "tusken_raider",
 	faction = "tusken_raider",
-	level = 331, -- Should drop Flawless Crystals
+	level = 200, 
 	chanceHit = 15.25,
 	damageMin = 660,
-	damageMax = 950,
+	damageMax = 800,
 	baseXp = 26654,
-	baseHAM = 321000,
-	baseHAMmax = 392000,
+	baseHAM = 21000,
+	baseHAMmax = 52000,
 	armor = 1,
 	-- {kinetic,energy,blast,heat,cold,electricity,acid,stun,ls}
-	resists = {65,25,25,75,75,70,55,70,-1},
+	resists = {25,25,25,25,25,25,25,25,-1},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -36,9 +36,8 @@ tusken_executioner = Creature:new {
 				{group = "clothing_attachments", chance = 1500000},  -- 90% * 15% = 13.5%
 				{group = "armor_attachments", chance = 1500000},  -- 90% * 15% = 13.5%
 				{group = "melee_weapons", chance = 2000000},
-				{group = "flare_s_swoop_crafted", chance = 1100000},   -- 11% * 90% = 9.9%
 			},
-			lootChance = 9000000,  -- 90% chance for this group
+			lootChance = 2500000,  -- 90% chance for this group
 		},
 		{
 			groups = {
@@ -49,28 +48,8 @@ tusken_executioner = Creature:new {
 				{group = "wearables_rare", chance = 1500000},
 				{group = "wearables_scarce", chance = 1000000},
 			},
-			lootChance = 7500000, -- 75% chance for this group
-		},
-		{
-			groups = {
-				{group = "rifles", chance = 2500000},
-				{group = "pistols", chance = 2500000},
-				{group = "carbines", chance = 2500000},
-				{group = "wearables_rare", chance = 1500000},
-				{group = "wearables_scarce", chance = 1000000},
-			},
-			lootChance = 1500000, -- 75% chance for this group
-		},
-		{
-			groups = {
-				{group = "power_crystals", chance = 2000000},
-				{group = "armor_attachments", chance = 2000000},      -- 50% * 20% = 10%
-				{group = "clothing_attachments", chance = 2000000},   -- 50% * 20% = 10%
-				{group = "wearables_rare", chance = 2000000},
-				{group = "wearables_scarce", chance = 1000000},
-			},
-			lootChance = 5000000,  -- 50% chance for this group
-		},
+			lootChance = 2500000, -- 75% chance for this group
+		},		
 	},
 	weapons = {"tusken_weapons"},
 	conversationTemplate = "",
