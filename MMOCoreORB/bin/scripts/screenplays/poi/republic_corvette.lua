@@ -20,6 +20,10 @@ function republic_corvette:spawnSceneObjects()
  spawnSceneObject("dungeon2", "object/tangible/terminal/terminal_elevator_up.iff", -18, -12, 120.67, 480000215, math.rad(180) )
  spawnSceneObject("dungeon2", "object/tangible/terminal/terminal_elevator_down.iff", -18, 0, 120.67, 480000215, math.rad(180) )
 
+ -- Star Destroyer Objects
+ spawnSceneObject("dungeon2", "object/static/vehicle/static_lambda_shuttle.iff", 21.5, 173.8, 44.5, 480000038, math.rad(-90) )
+ 
+  
 end
 
 function republic_corvette:spawnMobiles()
