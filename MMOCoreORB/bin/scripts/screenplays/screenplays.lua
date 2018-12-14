@@ -789,3 +789,8 @@ includeFile("heroics/jar_jar_binks.lua")
 -- Nal Hutta
 includeFile("cities/hutta_bilbousa_city.lua")
 includeFile("heroics/hutt_slave_auctioneer.lua")
+
+-- Dungeon2
+includeFile("poi/republic_corvette.lua")
+includeFile("heroics/imperial_isd_teleporter.lua")
+includeFile("heroics/rebel_vette_teleporter.lua")

@@ -117,6 +117,12 @@ function RecruiterConvoHandler:runScreenHandlers(pConvTemplate, pPlayer, pNpc, s
 
   elseif ( screenID == "imp_tp" ) then  
       createEvent(3000, "recruiterScreenplay", "handleImpTp", pPlayer, "")
+  
+  elseif ( screenID == "imp_tp2" ) then  
+      createEvent(3000, "recruiterScreenplay", "handleImpTp2", pPlayer, "") 
+  
+  elseif ( screenID == "reb_tp2" ) then  
+      createEvent(3000, "recruiterScreenplay", "handleRebelTp2", pPlayer, "")         
     
 
   end

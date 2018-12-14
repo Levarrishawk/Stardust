@@ -645,3 +645,17 @@ function recruiterScreenplay:handleImpTp(pPlayer)
   end)
   createEvent(1000, "recruiterScreenplay", "handleGoOvert", pPlayer, "")
 end
+
+function recruiterScreenplay:handleImpTp2(pPlayer)
+  ObjectManager.withCreatureAndPlayerObject(pPlayer, function(player, playerObject)
+    local player = LuaSceneObject(pPlayer)
+    player:switchZone("dungeon2", -0.0, 173.8, 53.7, 480000038)  --("jakku", 1.5, -20.8, 27.5, 610000111)
+  end)  
+end
+
+function recruiterScreenplay:handleRebelTp2(pPlayer)
+  ObjectManager.withCreatureAndPlayerObject(pPlayer, function(player, playerObject)
+    local player = LuaSceneObject(pPlayer)
+    player:switchZone("dungeon2", -41.2, 0, -0.2, 480000159)  --("jakku", 2.0, -20.8, 22.1, 610000100)
+  end)
+end
