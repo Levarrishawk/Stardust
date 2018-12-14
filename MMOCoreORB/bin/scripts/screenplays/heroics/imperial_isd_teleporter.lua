@@ -15,7 +15,7 @@ registerScreenPlay("imperial_isd_teleporter", true) --Initialize the screenplay 
 
 --Simply spawns the NPC
 function imperial_isd_teleporter:start()
-   spawnMobile("dungeon2", "imperial_isd_teleporter", 1, 6.3, 173.8, 45, -90, 480000038)  --disabled until jakku focus test is completed.
+   spawnMobile("dungeon2", "imperial_isd_teleporter", 1, 5.7, 173.8, 44.8, -90, 480000038)  --disabled until jakku focus test is completed.
 
 end
 
