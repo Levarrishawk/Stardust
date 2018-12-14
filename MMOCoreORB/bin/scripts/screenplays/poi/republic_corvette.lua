@@ -30,7 +30,7 @@ function republic_corvette:spawnMobiles()
 
 -- Mobiles
 
-	--spawnMobile("kaas", "rodian_thug", 200, 2866.6, 124, 3874.7, 121, 0)
+	spawnMobile("dungeon2", "imperial_isd_teleporter", 200, 9.5, 173.8, 38.6, -95, 480000038)
 	
 	
 
