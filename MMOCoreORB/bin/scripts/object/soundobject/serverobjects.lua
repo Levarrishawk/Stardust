@@ -115,4 +115,4 @@ includeFile("soundobject/soundobject_wind_power_generator.lua")
 -- New
 includeFile("soundobject/soundobject_isd_briefing.lua")
 includeFile("soundobject/soundobject_isd_hangar.lua")
-includeFile("soundobject/soundobject_isd_hangar1.lua")
+includeFile("soundobject/soundobject_isd_hangar2.lua")
