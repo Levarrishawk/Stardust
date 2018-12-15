@@ -2,16 +2,19 @@ local ObjectManager = require("managers.object.object_manager")
 
 republic_corvette = ScreenPlay:new {
 	numberOfActs = 1;	
+	screenplayName = "republic_corvette"
 }
 
 registerScreenPlay("republic_corvette", true)
 
 function republic_corvette:start()
+	if (isZoneEnabled("dungeon2")) then
 	 self:spawnMobiles()
 	 self:spawnSceneObjects()
 	 self:spawnActiveArea1()
-	 --self:spawnActiveArea2()
-	-- self:spawnActiveArea3()
+	 self:spawnActiveArea2()
+	 self:spawnActiveArea3()
+	 end
 end
 
 function republic_corvette:spawnSceneObjects()
@@ -270,7 +273,7 @@ function republic_corvette:notifySpawnArea1(pActiveArea1, pMovingObject, pPlayer
     return 0    
   end)
 end
---[[
+
 function republic_corvette:spawnActiveArea2()
   local pSpawnArea2 = spawnSceneObject("dungeon2", "object/active_area.iff", -3086, 173, -2738, 0, 480000013)
     
@@ -336,5 +339,5 @@ function republic_corvette:notifySpawnArea3(pActiveArea3, pMovingObject, pPlayer
     return 0    
   end)
 end
---]]
+
 
