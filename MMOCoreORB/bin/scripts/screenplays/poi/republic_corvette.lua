@@ -235,7 +235,126 @@ function republic_corvette:spawnMobiles()
   
   spawnMobile("dungeon2", "imperial_officer", 200, -6.8, 451.4, 331.1, -96, 480000055)
   spawnMobile("dungeon2", "imperial_officer", 200, -5.9, 451.4, 326.4, -141, 480000055)
- 
+  
+  spawnMobile("dungeon2", "imperial_first_lieutenant", 200, 87.2, 172.5, 302.4, -1, 480000004)
+  
+  pNpc = spawnMobile("dungeon2", "gunner", 60, 81.8, 172.3, 298.1, -128, 480000004)
+  self:setMoodString(pNpc, "npc_use_terminal_high")
+  
+  pNpc = spawnMobile("dungeon2", "gunner", 60, 92.7, 172.3, 298.1, 112, 480000004)
+  self:setMoodString(pNpc, "npc_use_terminal_high")
+  
+  pNpc = spawnMobile("dungeon2", "gunner", 60, 93.7, 172.3, 307.5, 90, 480000004)
+  self:setMoodString(pNpc, "npc_use_terminal_high")
+  
+  pNpc = spawnMobile("dungeon2", "gunner", 60, 92.9, 172.3, 316.9, 47, 480000004)
+  self:setMoodString(pNpc, "npc_use_terminal_high")
+  
+  pNpc = spawnMobile("dungeon2", "gunner", 60, 82.1, 172.3, 316.7, -54, 480000004)
+  self:setMoodString(pNpc, "npc_use_terminal_high")
+  
+  spawnMobile("dungeon2", "imperial_isd_teleporter", 200, 17.9, 172.3, 323.9, -90, 480000003)
+  
+  spawnMobile("dungeon2", "stormtrooper", 200, -44.7, 172.3, 233.9, 90, 480000003)
+  spawnMobile("dungeon2", "stormtrooper", 200, -44.7, 172.3, 241.1, 90, 480000003)
+  spawnMobile("dungeon2", "stormtrooper", 200, 44.7, 172.3, 233.9, -90, 480000003)
+  spawnMobile("dungeon2", "stormtrooper", 200, 44.7, 172.3, 241.1, -90, 480000003)
+  spawnMobile("dungeon2", "stormtrooper", 200, 44.7, 172.3, 304.0, -90, 480000003)
+  spawnMobile("dungeon2", "stormtrooper", 200, 44.7, 172.3, 311.1, -90, 480000003)
+  spawnMobile("dungeon2", "stormtrooper", 200, -44.7, 172.3, 318.2, 90, 480000003)
+  spawnMobile("dungeon2", "stormtrooper", 200, -44.7, 172.3, 325.2, 90, 480000003)
+  
+  -- end ISD
+  
+  -- start Corvette
+  spawnMobile("dungeon2", "rebel_trooper", 200, -12.9, 0.0, -0.9, 0, 480000160)
+  spawnMobile("dungeon2", "rebel_trooper", 200, -9.9, 0.0, -18.6, 0, 480000171)
+  spawnMobile("dungeon2", "rebel_major", 200, 2.1, 0.0, -39.6, -95, 480000182)
+  spawnMobile("dungeon2", "rebel_sergeant", 200, -2.0, 0.0, -41.4, 90, 480000182)
+  spawnMobile("dungeon2", "rebel_sergeant_major", 200, -2.1, 0.0, -39.1, 95, 480000182)
+  spawnMobile("dungeon2", "rebel_trooper", 200, 19.9, 0.0, -18.6, 0, 480000172)
+  spawnMobile("dungeon2", "rebel_trooper", 200, 31.9, 0.0, 1.2, 176, 480000169)
+  spawnMobile("dungeon2", "rebel_trooper", 200, 10.9, 0.0, 18.2, -88, 480000170)
+  spawnMobile("dungeon2", "rebel_trooper", 200, -0.9, 0.0, 32.0, 140, 480000161)
+  spawnMobile("dungeon2", "rebel_trooper", 200, -11.6, 0.0, 40.9, 90, 480000164)
+  spawnMobile("dungeon2", "r3", 200, 23.9, 0.0, 13.1, -90, 480000168)
+  spawnMobile("dungeon2", "rebel_crewman", 200, 2.0, 0.0, 56.7, 174, 480000165)
+  spawnMobile("dungeon2", "rebel_crewman", 200, 9.6, 0.0, 49.5, -4, 480000165)
+  
+  pNpc = spawnMobile("dungeon2", "rebel_crewman", 60, 1.7, 0.0, 49.4, 2, 480000165)
+  self:setMoodString(pNpc, "npc_sitting_chair")
+  
+  pNpc = spawnMobile("dungeon2", "rebel_crewman", 60, -6.6, 0.0, 46.7, -102, 480000165)
+  self:setMoodString(pNpc, "conversation")
+  
+  pNpc = spawnMobile("dungeon2", "rebel_crewman", 60, -9.6, 0.0, 46.2, 77, 480000165)
+  self:setMoodString(pNpc, "conversation")
+  
+  spawnMobile("dungeon2", "rebel_crewman", 200, -0.2, -12.0, 28.3, 0, 480000189)
+  
+  --mess
+  pNpc = spawnMobile("dungeon2", "rebel_staff_sergeant", 60, 6.6, -12.0, 0.1, 2, 480000191)
+  self:setMoodString(pNpc, "npc_accusing")
+  
+  pNpc = spawnMobile("dungeon2", "rebel_pilot", 60, 6.2, -12.0, 2.2, 162, 480000191)
+  self:setMoodString(pNpc, "npc_consoling")
+  
+  pNpc = spawnMobile("dungeon2", "rebel_crewman", 60, 4.3, -12.0, 8.3, 0, 480000191)
+  self:setMoodString(pNpc, "npc_sitting_chair")
+  
+  pNpc = spawnMobile("dungeon2", "rebel_pilot", 60, 6.4, -12.0, 11.8, 179, 480000191)
+  self:setMoodString(pNpc, "npc_consoling")
+  
+  pNpc = spawnMobile("dungeon2", "rebel_lance_corporal", 60, 11.9, -12.0, -0.9, 0, 480000191)
+  self:setMoodString(pNpc, "npc_consoling")
+  -- engine room
+  pNpc = spawnMobile("dungeon2", "rebel_sergeant", 60, -0.1, -14.0, -32.9, 1, 480000186)
+  self:setMoodString(pNpc, "npc_use_terminal_high")
+  
+  spawnMobile("dungeon2", "rebel_trooper", 200, 21.0, -12.0, -25.1, -116, 480000193)  
+  spawnMobile("dungeon2", "r4", 200, 25.1, -12.0, -19.2, 0, 480000192) 
+  spawnMobile("dungeon2", "rebel_trooper", 200, 26.3, -12.0, 28.1, -90, 480000192) 
+  
+  spawnMobile("dungeon2", "rebel_trooper", 200, 15.9, -12.0, 38.0, -148, 480000190)
+  
+  spawnMobile("dungeon2", "rebel_second_lieutenant", 200, 124.0, -12.0, 61.7, 172, 480000203)
+  spawnMobile("dungeon2", "rebel_gungan_captain", 200, 16.9, -12.0, 66.2, -98, 480000203)  
+  spawnMobile("dungeon2", "rebel_master_sergeant", 200, 19.0, -12.0, 70.5, -6, 480000203)   
+  
+  spawnMobile("dungeon2", "rebel_colonel", 200, -22.9, -12.0, 65.8, 92, 480000204) 
+  spawnMobile("dungeon2", "rebel_staff_corporal", 200, -21.1, -12.0, 67.6, 169, 480000204) 
+  
+  spawnMobile("dungeon2", "rebel_trooper", 200, -14.1, -12.0, 27.4, -92, 480000195)
+  spawnMobile("dungeon2", "rebel_trooper", 200, -2.2, -12.0, -16.0, -87, 480000194)
+  
+  spawnMobile("dungeon2", "rebel_sergeant_major", 200, -6.9, -6.7, -36.8, -54, 480000185)
+  spawnMobile("dungeon2", "r2", 200, -1.5, -6.7, -40.0, -5, 480000185)
+  
+  pNpc = spawnMobile("dungeon2", "rebel_sergeant", 60, -3.1, -12.0, 66.8, -179, 480000205)
+  self:setMoodString(pNpc, "npc_sitting_chair")
+  
+  pNpc = spawnMobile("dungeon2", "rebel_sergeant", 60, 3.3, -12.0, 75.3, -5, 480000205)
+  self:setMoodString(pNpc, "npc_use_terminal_high")
+  
+  pNpc = spawnMobile("dungeon2", "rebel_warrant_officer_i", 60, 3.2, -27.0, 75.9, 161, 480000218)
+  self:setMoodString(pNpc, "npc_sitting_chair")
+  
+  pNpc = spawnMobile("dungeon2", "rebel_warrant_officer_ii", 60, -4.5, -27.0, 78.5, -94, 480000218)
+  self:setMoodString(pNpc, "npc_sitting_chair")
+  
+  spawnMobile("dungeon2", "rebel_trooper", 200, -1.7, -24.0, 111.2, 87, 480000216)
+  
+  spawnMobile("dungeon2", "rebel_trooper", 200, 0.1, 0.0, 11.0, -2, 480000219)
+  
+  pNpc = spawnMobile("dungeon2", "rebel_warrant_officer_ii", 60, -6.1, -0.0, 149.1, -94, 480000224)
+  self:setMoodString(pNpc, "npc_sitting_chair")
+  
+  pNpc = spawnMobile("dungeon2", "rebel_warrant_officer_ii", 60, 6.1, -0.0, 149.1, 81, 480000224)
+  self:setMoodString(pNpc, "npc_sitting_chair")
+  
+  spawnMobile("dungeon2", "rebel_vette_teleporter", 60, -2.1, -0.0, 144.7, 1, 480000224)
+  
+   
 end
 
 
