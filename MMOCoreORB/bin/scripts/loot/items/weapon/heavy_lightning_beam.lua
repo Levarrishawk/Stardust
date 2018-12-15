@@ -4,8 +4,8 @@ heavy_lightning_beam = {
 	customObjectName = "",
 	directObjectTemplate = "object/weapon/ranged/heavy/heavy_lightning_beam.iff",
 	craftingValues = {
-		{"mindamage",831,1240,0},
-		{"maxdamage",1350,2575,0},
+		{"mindamage",110,801,0},
+		{"maxdamage",178,1000,0},
 		{"attackspeed",1,1,1},
 		{"woundchance",13,23,0},
 		{"hitpoints",1000,1000,0},

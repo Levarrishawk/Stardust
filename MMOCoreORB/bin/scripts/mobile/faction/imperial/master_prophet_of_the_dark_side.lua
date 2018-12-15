@@ -1,7 +1,6 @@
 master_prophet_of_the_dark_side = Creature:new {
 	objectName = "@mob/creature_names:master_prophet_of_the_dark_side",
-	randomNameType = NAME_GENERIC,
-	randomNameTag = true,
+	customName = "Secret Order of the Emperor Envoy",
 	socialGroup = "imperial",
 	faction = "imperial",
 	level = 168,
@@ -28,8 +27,8 @@ master_prophet_of_the_dark_side = Creature:new {
 	diet = HERBIVORE,
 
 	templates = {
-		"object/mobile/dressed_dark_jedi_human_male_01.iff",
-		"object/mobile/dressed_dark_jedi_human_female_01.iff"},
+    "object/mobile/loam_redge.iff"},
+  outfit = "prophet_outfit",
 	lootGroups = {
 		{
 			groups = {
