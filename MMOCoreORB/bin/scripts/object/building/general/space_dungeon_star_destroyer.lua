@@ -68,7 +68,7 @@ object_building_general_space_dungeon_star_destroyer = object_building_general_s
                 {templateFile = "object/tangible/terminal/terminal_elevator_down.iff", x = 20.0514, z = 170.585, y = 347.689, ox = 0, oy = 0, oz = 0, ow = -1, cellid = 40, containmentType = -1},
                 --]]
               -- Bridge Lift
-                {templateFile = "object/tangible/terminal/terminal_elevator_up.iff", x = 19.9312, z = 140.585, y = 430.471, ox = 0, oy = 0, oz = 0, ow = 1, cellid = 48, containmentType = -1},              
+                {templateFile = "object/tangible/terminal/terminal_elevator_up.iff", x = 19.9312, z = 170.585, y = 430.471, ox = 0, oy = 0, oz = 0, ow = 1, cellid = 48, containmentType = -1},              
                 {templateFile = "object/tangible/terminal/terminal_elevator_down.iff", x = 19.9312, z = 453.359, y = 430.471, ox = 0, oy = 0, oz = 0, ow = 1, cellid = 48, containmentType = -1},
                 -- Port Side bridge 
                 {templateFile = "object/tangible/terminal/terminal_elevator_up.iff", x = 20.2, z = 448.607, y = 341.889, ox = 0, oy = -0.707107, oz = 0, ow = 0.707107, cellid = 55, containmentType = -1},              
