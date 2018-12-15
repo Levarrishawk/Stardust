@@ -10,8 +10,8 @@ function republic_corvette:start()
 	 self:spawnMobiles()
 	 self:spawnSceneObjects()
 	 self:spawnActiveArea1()
-	 self:spawnActiveArea2()
-	 self:spawnActiveArea3()
+	 --self:spawnActiveArea2()
+	-- self:spawnActiveArea3()
 end
 
 function republic_corvette:spawnSceneObjects()
@@ -235,8 +235,9 @@ function republic_corvette:spawnMobiles()
   
   spawnMobile("dungeon2", "imperial_officer", 200, -6.8, 451.4, 331.1, -96, 480000055)
   spawnMobile("dungeon2", "imperial_officer", 200, -5.9, 451.4, 326.4, -141, 480000055)
-  
+ 
 end
+
 
 function republic_corvette:spawnActiveArea1()
   local pSpawnArea1 = spawnSceneObject("dungeon2", "object/active_area.iff", -2999, 173, -2946, 0, 480000038)
@@ -245,8 +246,7 @@ function republic_corvette:spawnActiveArea1()
     local activeArea1 = LuaActiveArea(pSpawnArea1)
           activeArea1:setCellObjectID(480000038)
           activeArea1:setRadius(512)
-          createObserver(ENTEREDAREA, "republic_corvette", "notifySpawnArea1", pSpawnArea1)
-          --createObserver(EXITEDAREA, "ChandrilTechScreenPlay", "notifySpawnAreaLeave", pSpawnArea1)
+          createObserver(ENTEREDAREA, "republic_corvette", "notifySpawnArea1", pSpawnArea1)         
       end
 end
 
@@ -270,7 +270,7 @@ function republic_corvette:notifySpawnArea1(pActiveArea1, pMovingObject, pPlayer
     return 0    
   end)
 end
-
+--[[
 function republic_corvette:spawnActiveArea2()
   local pSpawnArea2 = spawnSceneObject("dungeon2", "object/active_area.iff", -3086, 173, -2738, 0, 480000013)
     
@@ -336,5 +336,5 @@ function republic_corvette:notifySpawnArea3(pActiveArea3, pMovingObject, pPlayer
     return 0    
   end)
 end
-
+--]]
 
