@@ -11,9 +11,6 @@ function republic_corvette:start()
 	if (isZoneEnabled("dungeon2")) then
 	 self:spawnMobiles()
 	 self:spawnSceneObjects()
-	 self:spawnActiveArea1()
-	 self:spawnActiveArea2()
-	 self:spawnActiveArea3()
 	 end
 end
 
@@ -241,7 +238,7 @@ function republic_corvette:spawnMobiles()
  
 end
 
-
+--[[
 function republic_corvette:spawnActiveArea1()
   local pSpawnArea1 = spawnSceneObject("dungeon2", "object/active_area.iff", -2999, 173, -2946, 0, 480000038)
     
@@ -339,5 +336,5 @@ function republic_corvette:notifySpawnArea3(pActiveArea3, pMovingObject, pPlayer
     return 0    
   end)
 end
-
+--]]
 
