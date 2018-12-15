@@ -90,7 +90,7 @@ function republic_corvette:spawnActiveArea3()
     local activeArea3 = LuaActiveArea(pSpawnArea3)
           activeArea3:setCellObjectID(480000055)
           activeArea3:setRadius(512)
-          createObserver(ENTEREDAREA, "republic_corvette", "notifySpawnArea3", pSpawnArea3)
+          createObserver(ENTEREDAREA, "isd_active_areas", "notifySpawnArea3", pSpawnArea3)
           --createObserver(EXITEDAREA, "ChandrilTechScreenPlay", "notifySpawnAreaLeave", pSpawnArea1)
       end
 end
