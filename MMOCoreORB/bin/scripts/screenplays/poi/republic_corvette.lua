@@ -34,7 +34,7 @@ function republic_corvette:spawnMobiles()
 	spawnMobile("dungeon2", "imperial_isd_teleporter", 200, 9.5, 173.8, 38.6, -95, 480000038)
 	--hallway11
 	spawnMobile("dungeon2", "stormtrooper", 200, -6.0, 175.3, -22, -90, 480000034)
-	spawnMobile("dungeon2", "protocol_droid_3p0_silver", 200, 0.0, 175.3, -12.9, 180, 480000032)
+	spawnMobile("dungeon2", "imperial_private", 200, 0.0, 175.3, -12.9, 180, 480000032)
 	-- Tractorbeam
 	spawnMobile("dungeon2", "imperial_sergeant", 200, 0.0, 177.5, -60.1, 174, 480000033)
 	spawnMobile("dungeon2", "imperial_private", 200, 7.2, 175.3, -48.3, 13, 480000033)
@@ -172,5 +172,61 @@ function republic_corvette:spawnMobiles()
   spawnMobile("dungeon2", "stormtrooper", 60, 23.4, 170.6, 389.6, -90, 480000007)
   spawnMobile("dungeon2", "stormtrooper", 60, 16.5, 170.6, 389.8, 90, 480000007)
   spawnMobile("dungeon2", "stormtrooper", 60, 18.5, 170.6, 423.2, 179, 480000007)
+  
+  --command deck
+  spawnMobile("dungeon2", "stormtrooper", 60, 22.6, 453.6, 411.7, -85, 480000051)
+  spawnMobile("dungeon2", "stormtrooper", 60, -1.9, 453.6, 412.2, 90, 480000051)
+  spawnMobile("dungeon2", "stormtrooper", 60, 0.2, 453.6, 400.6, -2, 480000051)
+  
+  pNpc = spawnMobile("dungeon2", "imperial_officer", 60, -10.6, 453.6, 394.6, 175, 480000051)
+  self:setMoodString(pNpc, "npc_use_terminal_high")
+  pNpc = spawnMobile("dungeon2", "imperial_officer", 60, 11.8, 453.6, 394.6, 175, 480000051)
+  self:setMoodString(pNpc, "npc_use_terminal_high")
+  
+  spawnMobile("dungeon2", "stormtrooper", 60, -1.7, 453.6, 369.3, 89, 480000053)
+  
+  pNpc = spawnMobile("dungeon2", "imperial_private", 60, 8.4, 453.6, 375.1, -176, 480000053)
+  self:setMoodString(pNpc, "npc_sitting_chair")
+  pNpc = spawnMobile("dungeon2", "imperial_private", 60, 8.4, 453.6, 369.6, 0, 480000053)
+  self:setMoodString(pNpc, "npc_sitting_chair")
+  pNpc = spawnMobile("dungeon2", "imperial_private", 60, 8.4, 453.6, 367.6, -176, 480000053)
+  self:setMoodString(pNpc, "npc_sitting_chair")
+  pNpc = spawnMobile("dungeon2", "imperial_private", 60, 8.4, 453.6, 362.6, 0, 480000053)
+  self:setMoodString(pNpc, "npc_sitting_chair")
+  
+  pNpc = spawnMobile("dungeon2", "imperial_officer", 60, -3.1, 453.6, 354.5, 175, 480000054)
+  self:setMoodString(pNpc, "npc_use_terminal_high")
+  
+  spawnMobile("dungeon2", "comm_operator", 200, -17.1, 453.7, 372.1, 94, 480000054)
+  spawnMobile("dungeon2", "comm_operator", 200, -14.2, 453.7, 372.1, -94, 480000054)
+  
+  pNpc = spawnMobile("dungeon2", "comm_operator", 60, -21.1, 453.6, 357.6, -95, 480000054)
+  self:setMoodString(pNpc, "npc_sitting_chair")
+  pNpc = spawnMobile("dungeon2", "comm_operator", 60, -12.0, 453.6, 360.6, 95, 480000054)
+  self:setMoodString(pNpc, "npc_sitting_chair")
+  pNpc = spawnMobile("dungeon2", "comm_operator", 60, -12.0, 453.6, 354.9, 95, 480000054)
+  self:setMoodString(pNpc, "npc_sitting_chair")
+  
+  pNpc = spawnMobile("dungeon2", "comm_operator", 60, -11.4, 453.6, 346.6, 175, 480000054)
+  self:setMoodString(pNpc, "npc_use_terminal_high")
+  
+  spawnMobile("dungeon2", "imperial_major", 200, 9.4, 453.6, 355.6, 1, 480000055)
+  spawnMobile("dungeon2", "imperial_first_lieutenant", 200, -0.1, 453.6, 339.2, 176, 480000055)
+  spawnMobile("dungeon2", "stormtrooper", 200, -9.8, 453.6, 343.1, 175, 480000055)
+  spawnMobile("dungeon2", "stormtrooper", 200, 9.6, 453.6, 343.1, 175, 480000055)
+  
+  spawnMobile("dungeon2", "imperial_officer", 200, 3.5, 451.4, 329.5, -7, 480000055)
+  spawnMobile("dungeon2", "imperial_corporal", 200, 3.5, 451.4, 328.4, -178, 480000055)
+  spawnMobile("dungeon2", "imperial_sergeant", 200, 3.5, 451.4, 325.8, -7, 480000055)
+  
+  spawnMobile("dungeon2", "imperial_private", 200, 5.8, 451.4, 326.3, 125, 480000055)
+  spawnMobile("dungeon2", "imperial_officer", 200, 6.5, 451.4, 328.3, 103, 480000055)
+  
+  spawnMobile("dungeon2", "imperial_officer", 200, -3.5, 451.4, 329.5, -7, 480000055)
+  spawnMobile("dungeon2", "imperial_corporal", 200, -3.5, 451.4, 328.4, -178, 480000055)
+  spawnMobile("dungeon2", "imperial_sergeant", 200, -3.5, 451.4, 325.8, -7, 480000055)
+  
+  spawnMobile("dungeon2", "imperial_officer", 200, -6.8, 451.4, 331.1, -96, 480000055)
+  spawnMobile("dungeon2", "imperial_officer", 200, -5.9, 451.4, 326.4, -141, 480000055)
   
 end
