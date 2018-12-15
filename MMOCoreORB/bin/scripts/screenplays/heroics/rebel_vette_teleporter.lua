@@ -68,7 +68,7 @@ function rebel_vette_teleporter_convo_handler:runScreenHandlers(pConversationTem
 
   if ( screenID == "mayor2" ) then
    
-     player:switchZone("chandrila", 164, 6, -2937, 0) -- x, z, y, cell
+     player:switchZone("chandrila", 178, 6, -2961, 0) -- x, z, y, cell
 
   end
   
