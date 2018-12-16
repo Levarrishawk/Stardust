@@ -6,7 +6,7 @@ rifle_westar_m5 = {
   directObjectTemplate = "object/weapon/ranged/rifle/rifle_westar_m5.iff",
   craftingValues = {
     {"mindamage",80,200,0},
-    {"maxdamage",115,575,0},
+    {"maxdamage",115,400,0},
     {"attackspeed",4,4,1},
     {"woundchance",15,29,0},
     {"hitpoints",750,1500,0},
