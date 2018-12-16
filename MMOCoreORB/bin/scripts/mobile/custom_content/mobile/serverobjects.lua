@@ -1852,3 +1852,4 @@ includeFile("custom_content/mobile/zolo_sartain.lua")
 includeFile("custom_content/mobile/zozpheratu_static.lua")
 
 includeFile("custom_content/mobile/respec_npc.lua")
+includeFile("custom_content/mobile/ahsoka_tano.lua")
