@@ -80,4 +80,4 @@ includeFile("tangible/wearables/armor/rebel_snow/serverobjects.lua")
 includeFile("tangible/wearables/armor/rebel_spec_force/serverobjects.lua")
 includeFile("tangible/wearables/armor/scout_trooper/serverobjects.lua")
 includeFile("tangible/wearables/armor/snowtrooper/serverobjects.lua")
-
+includeFile("tangible/wearables/armor/veers/serverobjects.lua")

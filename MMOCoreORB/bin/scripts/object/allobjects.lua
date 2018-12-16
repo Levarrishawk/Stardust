@@ -768,6 +768,8 @@ includeFile("tangible/wearables/armor/stormtrooper/objects.lua")
 includeFile("tangible/wearables/armor/tantel/objects.lua")
 includeFile("tangible/wearables/armor/ubese/objects.lua")
 includeFile("tangible/wearables/armor/zam/objects.lua")
+includeFile("tangible/wearables/armor/veers/objects.lua")
+
 --
 includeFile("tangible/wearables/armor/objects.lua")
 includeFile("tangible/wearables/backpack/objects.lua")
