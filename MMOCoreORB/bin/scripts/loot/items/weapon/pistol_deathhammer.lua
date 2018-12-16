@@ -5,7 +5,7 @@ pistol_deathhammer = {
 	directObjectTemplate = "object/weapon/ranged/pistol/pistol_deathhammer.iff",
 	craftingValues = {
 		{"mindamage",45,216,0},
-		{"maxdamage",248,425,0},
+		{"maxdamage",248,330,0},
     {"attackspeed",2,2,1},
 		{"woundchance",10,20,0},
 		{"hitpoints",750,1500,0},

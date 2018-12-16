@@ -7,7 +7,7 @@ som_lance_obsidian = {
 	directObjectTemplate = "object/weapon/melee/polearm/som_lance_obsidian.iff",
 	craftingValues = {
 		{"mindamage",398,475,0},
-		{"maxdamage",450,550,0},
+		{"maxdamage",450,475,0},
     {"attackspeed",4,4,1},
 		{"woundchance",23,43,0},
 		{"hitpoints",750,1500,0},

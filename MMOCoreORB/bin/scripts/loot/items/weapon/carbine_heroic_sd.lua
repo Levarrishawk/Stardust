@@ -5,7 +5,7 @@ carbine_heroic_sd = {
 	directObjectTemplate = "object/weapon/ranged/carbine/carbine_heroic_sd.iff",
 	craftingValues = {
 		{"mindamage",156,375,0},
-		{"maxdamage",290,425,0},
+		{"maxdamage",290,390,0},
     {"attackspeed",3,3,1},
 		{"woundchance",8,16,0},
 		{"roundsused",30,65,0},

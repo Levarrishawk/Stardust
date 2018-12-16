@@ -7,7 +7,7 @@ sword_rebel = {
 	directObjectTemplate = "object/weapon/melee/sword/sword_rebel.iff",
 	craftingValues = {
 		{"mindamage",225,335,0},
-		{"maxdamage",246,400,0},
+		{"maxdamage",246,390,0},
     {"attackspeed",2,2,1},
 		{"woundchance",1,3,0},
 		{"hitpoints",750,1500,0},

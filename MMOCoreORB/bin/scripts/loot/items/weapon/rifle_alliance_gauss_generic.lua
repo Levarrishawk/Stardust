@@ -7,7 +7,7 @@ rifle_alliance_gauss_generic = {
   directObjectTemplate = "object/weapon/ranged/rifle/rifle_alliance_gauss_generic.iff",
   craftingValues = {
     {"mindamage",80,200,0},
-    {"maxdamage",115,575,0},
+    {"maxdamage",115,400,0},
     {"attackspeed",4,4,1},
     {"woundchance",15,29,0},
     {"hitpoints",750,1500,0},

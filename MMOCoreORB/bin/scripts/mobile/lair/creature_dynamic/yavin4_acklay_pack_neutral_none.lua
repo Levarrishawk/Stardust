@@ -1,6 +1,6 @@
 yavin4_acklay_pack_neutral_none = Lair:new {
   mobiles = {{"acklay",1}},
-  spawnLimit = 5,
+  spawnLimit = 1,
   buildingsVeryEasy = {},
   buildingsEasy = {},
   buildingsMedium = {},

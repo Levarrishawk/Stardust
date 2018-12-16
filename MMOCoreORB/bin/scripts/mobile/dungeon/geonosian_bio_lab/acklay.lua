@@ -42,56 +42,10 @@ acklay = Creature:new {
 		{
 	        groups =
 			{
-				{group = "armor_attachments", chance = 3500000},
+				{group = "clothing_attachments", chance = 3500000},
 				{group = "acklay", chance = 6500000}
 			},
 			lootChance = 4500000,
-		},
-		{
-	        groups =
-			{
-				{group = "armor_attachments", chance = 3500000},
-				{group = "acklay", chance = 6500000}
-			},
-			lootChance = 4500000,
-		},
-		{
-	        groups =
-			{
-				{group = "geonosian_hard", chance = 7500000},
-				{group = "acklay", chance = 2500000}
-			},
-			lootChance = 3500000,
-		},
-		{ 	
-			groups ={
-					{group = "acklay", chance = 10000000},				
-				},
-				lootChance = 4500000,
-		},
-		{
-	        groups =
-			{
-				{group = "clothing_attachments", chance = 500000},
-				{group = "acklay", chance = 9500000}
-			},
-			lootChance = 3500000,
-		},
-		{
-			groups =
-			{
-
-				{group = "geonosian_common", chance = 10000000},
-			},
-			lootChance = 7500000,
-		},
-		{
-			groups =
-			{
-
-				{group = "geonosian_common", chance = 10000000},
-			},
-			lootChance = 5500000,
 		},
 	},
 	weapons = {},

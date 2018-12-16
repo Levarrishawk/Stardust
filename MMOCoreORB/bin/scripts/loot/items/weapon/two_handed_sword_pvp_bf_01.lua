@@ -7,7 +7,7 @@ two_handed_sword_pvp_bf_01 = {
 	directObjectTemplate = "object/weapon/melee/2h_sword/2h_sword_pvp_bf_01.iff",
 	craftingValues = {
 		{"mindamage",53,235,0},
-		{"maxdamage",98,436,0},
+		{"maxdamage",98,405,0},
     {"attackspeed",3,3,1},
 		{"woundchance",11,20,0},
 		{"hitpoints",750,1500,0},

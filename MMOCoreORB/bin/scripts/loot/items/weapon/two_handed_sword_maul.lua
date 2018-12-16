@@ -7,7 +7,7 @@ two_handed_sword_maul = {
 	directObjectTemplate = "object/weapon/melee/2h_sword/2h_sword_maul.iff",
 	craftingValues = {
 		{"mindamage",50,92,0},
-		{"maxdamage",228,416,0},
+		{"maxdamage",228,405,0},
     {"attackspeed",3,3,1},
 		{"woundchance",11,20,0},
 		{"hitpoints",750,1500,0},
