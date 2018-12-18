@@ -20,21 +20,19 @@ obi_wan_ghost = Creature:new {
 	milk = 0,
 	tamingChance = 0,
 	ferocity = 0,
+	scale = 1.1,
 	pvpBitmask = NONE,
-	creatureBitmask = PACK + STALKER,
-	optionsBitmask = AIENABLED, CONVERSABLE, INTERESTING, INVULNERABLE,
-	diet = HERBIVORE,
+  creatureBitmask = PACK,
+  optionsBitmask = AIENABLED + CONVERSABLE + INTERESTING,
+  diet = HERBIVORE,
 
 	templates = {"object/mobile/som/obi_wan_ghost.iff"},
-	lootGroups = {
-		{
-			groups = {},
-			lootChance = 2100000
-		}
-	},
-	weapons = {"pirate_weapons_light"},
+	lootGroups = {},
+	weapons = {},
 	conversationTemplate = "obi_wan_elysium",
-	attacks = merge(marksmannovice,brawlernovice)
+	attacks = {
+  }
+	
 }
 
 CreatureTemplates:addCreatureTemplate(obi_wan_ghost, "obi_wan_ghost")
