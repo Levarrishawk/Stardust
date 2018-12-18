@@ -85,6 +85,8 @@ object_tangible_wearables_armor_veers_armor_veers_helmet = object_tangible_weara
 	vulnerability = STUN,
 
   specialResists = KINETIC,
+  
+  maxCondition = 30000,
 
 	-- These are default Blue Frog stats
   healthEncumbrance = 0,

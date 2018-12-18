@@ -92,6 +92,8 @@ object_tangible_wearables_armor_veers_armor_veers_chest_plate = object_tangible_
 	vulnerability = STUN,
 
   specialResists = KINETIC,
+  
+  maxCondition = 30000,
 
 	-- These are default Blue Frog stats
   healthEncumbrance = 0,
