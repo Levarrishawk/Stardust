@@ -26,6 +26,11 @@ public:
 		if (!creature->isPlayerCreature())
 			return GENERALERROR;
 
+		if (creature->getZone()->getZoneName()== "elysium") {
+				creature->sendSystemMessage("An unknown force prevents any hostilities in this area."); // You can only unpack vehicles while Outside and not in Combat.
+			 	return GENERALERROR;
+			}
+
 		ManagedReference<SceneObject*> targetObject = server->getZoneServer()->getObject(target);
 
 		if (targetObject == NULL || !targetObject->isPlayerCreature() || targetObject == creature)
