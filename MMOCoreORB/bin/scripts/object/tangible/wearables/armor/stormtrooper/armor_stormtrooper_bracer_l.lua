@@ -90,7 +90,9 @@ object_tangible_wearables_armor_stormtrooper_armor_stormtrooper_bracer_l = objec
 				"object/mobile/vendor/zabrak_male.iff" },
 	
 	-- Damage types in WeaponObject
-	vulnerability = NONE,
+	vulnerability = LIGHTSABER,
+
+  specialResists = KINETIC,
 
 	-- These are default Blue Frog stats
 	healthEncumbrance = 0,
