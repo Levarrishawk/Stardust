@@ -51,7 +51,9 @@ object_tangible_wearables_armor_ithorian_defender_ith_armor_s01_gloves = object_
 				"object/mobile/vendor/ithorian_male.iff" },
 
 	-- Damage types in WeaponObject
-	vulnerability = NONE,
+	vulnerability = LIGHTSABER,
+
+  specialResists = KINETIC,
 
 	-- These are default Blue Frog stats
   healthEncumbrance = 0,
