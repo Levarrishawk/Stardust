@@ -41,37 +41,8 @@
 --this exception also makes it possible to release a modified version 
 
 
-object_draft_schematic_chemistry_component_liquid_delivery_suspension = object_draft_schematic_chemistry_component_shared_liquid_delivery_suspension:new {
+object_tangible_furniture_modern_flr_elysium = object_tangible_furniture_modern_shared_flr_elysium:new {
 
-	templateType = DRAFTSCHEMATIC,
-
-	customObjectName = "Liquid Suspension",
-
-	craftingToolTab = 64, -- (See DraftSchematicObjectTemplate.h)
-	complexity = 1,
-	size = 2,
-	factoryCrateSize = 1000,
-
-	xpType = "medical",
-	xp = 250,
-
-	assemblySkill = "medicine_assembly",
-	experimentingSkill = "medicine_experimentation",
-	customizationSkill = "medicine_customization",
-
-	customizationOptions = {},
-	customizationStringNames = {},
-	customizationDefaults = {},
-
-	ingredientTemplateNames = {"craft_chemical_ingredients_n", "craft_chemical_ingredients_n"},
-	ingredientTitleNames = {"purified_organic_suspension", "suspension_base"},
-	ingredientSlotType = {0, 0},
-	resourceTypes = {"organic", "water"},
-	resourceQuantities = {6, 6},
-	contribution = {100, 100},
-
-	targetTemplate = "object/tangible/component/chemistry/liquid_delivery_suspension.iff",
-
-	additionalTemplates = {}
 }
-ObjectTemplates:addTemplate(object_draft_schematic_chemistry_component_liquid_delivery_suspension, "object/draft_schematic/chemistry/component/liquid_delivery_suspension.iff")
+
+ObjectTemplates:addTemplate(object_tangible_furniture_modern_flr_elysium, "object/tangible/furniture/modern/flr_elysium.iff")

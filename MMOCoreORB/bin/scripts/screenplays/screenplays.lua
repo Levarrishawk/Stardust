@@ -795,3 +795,5 @@ includeFile("poi/republic_corvette.lua")
 includeFile("poi/isd_active_areas.lua")
 includeFile("heroics/imperial_isd_teleporter.lua")
 includeFile("heroics/rebel_vette_teleporter.lua")
+includeFile("heroics/obi_wan_elysium.lua")
+

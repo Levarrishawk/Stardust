@@ -29,7 +29,7 @@ void VehicleControlDeviceImplementation::generateObject(CreatureObject* player) 
 		player->sendSystemMessage("@pet/pet_menu:cant_call_vehicle"); // You can only unpack vehicles while Outside and not in Combat.
 		return;
 	}
-	if (player->getParent() != NULL || player->isInCombat() || player->getZone()->getZoneName() == "jakku") {
+	if (player->getParent() != NULL || player->isInCombat() || player->getZone()->getZoneName() == "jakku" || player->getZone()->getZoneName()== "elysium") {
 		player->sendSystemMessage("You can not unpack vehicles in this area."); // You can only unpack vehicles while Outside and not in Combat.
 	 	return;
 	}
