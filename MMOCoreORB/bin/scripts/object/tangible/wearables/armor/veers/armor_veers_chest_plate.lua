@@ -43,6 +43,7 @@
 
 object_tangible_wearables_armor_veers_armor_veers_chest_plate = object_tangible_wearables_armor_veers_shared_armor_veers_chest_plate:new {
 	templateType = ARMOROBJECT,
+	customName = "Imperial Officer Armor Chest Plate",
 
 	playerRaces = { "object/creature/player/bothan_male.iff",
 				"object/creature/player/bothan_female.iff",
