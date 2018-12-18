@@ -810,3 +810,21 @@ dungeon2 = {
       --{"moraband_dreshdae", 1091,-5328,0,90,149}, 
   },
 }
+elysium = {
+  weatherEnabled = 0,
+  gcwEnabled = 0,
+  
+  planetTravelPoints = {
+    --{name = "Archaeological Outpost", x = -1696, z = 91, y = -624, interplanetaryTravelAllowed = 1, incomingTravelAllowed = 1},
+    },
+    
+    badgeAreas = {   
+      --{"moraband_valley", -1626,-669,0,20,148}, 
+      --{"moraband_dreshdae", 1091,-5328,0,90,149}, 
+  },
+}
+
+
+
+
+
