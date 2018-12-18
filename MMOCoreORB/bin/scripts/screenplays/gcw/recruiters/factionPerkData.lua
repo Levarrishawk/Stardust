@@ -142,8 +142,8 @@ imperialRewardData = {
 		imp_shield_gen = { type=factionRewardType.armor, display="@craft_weapon_ingredients_n:shield_generator_personal_imperial_test_schematic", item="object/tangible/loot/quest/shield_generator_personal_imperial_test_schematic.iff", cost=20000},
 		lw_mil_pack = { type=factionRewardType.armor, display="@wearables_name:backpack_s03_quest", item="object/tangible/loot/quest/schematic_backpack_s03_quest.iff", cost=7500},
 		ff_weapon_stock = { type=factionRewardType.armor, display="@craft_weapon_ingredients_n:stock_unit_advanced_quest", item="object/tangible/component/weapon/stock_advanced_quest.iff", cost=2000},
-		armor_veers_chest_plate = { type=factionRewardType.armor, display="@wearables_name:armor_veers_chest_plate", item="object/tangible/wearables/armor/veers/armor_veers_chest_plate.iff", cost=8000},
-		armor_veers_helmet = { type=factionRewardType.armor, display="@wearables_name:armor_veers_helmet", item="object/tangible/wearables/armor/veers/armor_veers_helmet.iff", cost=8000},
+		armor_veers_chest_plate = { type=factionRewardType.armor, display="Imperial Officer Armor Chest Plate", item="object/tangible/wearables/armor/veers/armor_veers_chest_plate.iff", cost=8000},
+		armor_veers_helmet = { type=factionRewardType.armor, display="Imperial Officer Armor Helmet", item="object/tangible/wearables/armor/veers/armor_veers_helmet.iff", cost=8000},
 	},
 
 	uniformList = {
