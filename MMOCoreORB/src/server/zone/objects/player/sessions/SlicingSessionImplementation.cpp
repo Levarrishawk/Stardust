@@ -522,8 +522,8 @@ void SlicingSessionImplementation::handleWeaponSlice() {
 		max += 5;
 	case 3:
 	case 2:
-		min += 10;
-		max += 25;
+		min += 5;
+		max += 10;
 		break;
 	default:
 		return;
