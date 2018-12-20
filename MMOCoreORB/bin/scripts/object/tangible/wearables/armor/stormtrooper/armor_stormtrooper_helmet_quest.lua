@@ -70,15 +70,15 @@ object_tangible_wearables_armor_stormtrooper_armor_stormtrooper_helmet_quest = o
 	
 	maxCondition = 30000,
 	
-	kinetic = 70,
-	energy = 70,
-	electricity = 70,
-	stun = 70,
-	blast = 70,
-	heat = 70,
-	cold = 70,
-	acid = 70,
-	lightSaber = 0
+	kinetic = 60,
+  energy = 60,
+  electricity = 60,
+  stun = 60,
+  blast = 60,
+  heat = 60,
+  cold = 60,
+  acid = 60,
+  lightSaber = 0
 }
 
 ObjectTemplates:addTemplate(object_tangible_wearables_armor_stormtrooper_armor_stormtrooper_helmet_quest, "object/tangible/wearables/armor/stormtrooper/armor_stormtrooper_helmet_quest.iff")
