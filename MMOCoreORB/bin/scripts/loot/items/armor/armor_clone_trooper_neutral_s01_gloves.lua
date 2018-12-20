@@ -5,7 +5,7 @@ armor_clone_trooper_neutral_s01_gloves = {
 	directObjectTemplate = "object/tangible/wearables/armor/clone_trooper/armor_clone_trooper_neutral_s01_gloves.iff",
 	craftingValues = {
 		{"armor_rating",1,1,0},
-    {"armor_effectiveness",65,85,10},
+    {"armor_effectiveness",60,70,10},
     {"armor_integrity",30000, 55000,0},
     {"armor_health_encumbrance",0,0,0},
     {"armor_action_encumbrance",0,0,0},
