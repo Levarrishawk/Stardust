@@ -5,7 +5,7 @@ armor_rebel_assault_bracer_l = {
 	directObjectTemplate = "object/tangible/wearables/armor/rebel_assault/armor_rebel_assault_bracer_l.iff",
 	craftingValues = {
 		{"armor_rating",1,1,0},
-    {"armor_effectiveness",65,85,10},
+    {"armor_effectiveness",60,70,10},
     {"armor_integrity",30000, 55000,0},
     {"armor_health_encumbrance",0,0,0},
     {"armor_action_encumbrance",0,0,0},
