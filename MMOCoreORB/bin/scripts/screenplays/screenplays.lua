@@ -798,7 +798,7 @@ includeFile("heroics/rebel_vette_teleporter.lua")
 includeFile("heroics/obi_wan_elysium.lua")
 
 includeFile("events/buffTerminalMenuComponent2.lua")
-
+includeFile("events/elysiumTerminalMenuComponent_01.lua")
 
 
 
