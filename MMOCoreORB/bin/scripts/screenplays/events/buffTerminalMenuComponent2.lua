@@ -54,7 +54,7 @@ function buffTerminalMenuComponent2:handleLightChoice(pPlayer, pSui, eventIndex,
   local cancelPressed = (eventIndex == 1)
   local args = {...}
   
-  local councilType = self.COUNCIL_LIGHT
+  local councilType = 1
   
   if (cancelPressed) then   
     return 
@@ -72,7 +72,7 @@ function buffTerminalMenuComponent2:handleDarkChoice(pPlayer, pSui, eventIndex, 
   local cancelPressed = (eventIndex == 1)
   local args = {...}
   
-  local councilType = self.COUNCIL_DARK
+  local councilType = 2
   
   if (cancelPressed) then   
     return 
