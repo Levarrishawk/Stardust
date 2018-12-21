@@ -49,7 +49,11 @@ function elysiumTerminalMenuComponent_01:handleTeleport(pPlayer, pSui, eventInde
     return 
   elseif (eventIndex == 0) then -- Teleport
       createEvent(1000, "recruiterScreenplay", "handleGoOnLeave", pPlayer, "")
-      CreatureObject(pPlayer):switchZone("elysium", 2606, 0, 2343, 0) -- x, z, y, cell
+        ObjectManager.withCreatureAndPlayerObject(pPlayer, function(player, playerObject)
+        
+        local player = LuaSceneObject(pPlayer)
+        player:switchZone("elysium", 2606, 0, 2343, 0)   
+       end)
      
   end
 end
