@@ -46,4 +46,4 @@ object_tangible_terminal_terminal_elysium_crystal_01 = object_tangible_terminal_
 	objectMenuComponent = "elysiumTerminalMenuComponent_01",
 }
 
-ObjectTemplates:addTemplate(object_tangible_terminal_elysium_crystal_01, "object/tangible/terminal/terminal_elysium_crystal_01.iff")
+ObjectTemplates:addTemplate(object_tangible_terminal_terminal_elysium_crystal_01, "object/tangible/terminal/terminal_elysium_crystal_01.iff")
