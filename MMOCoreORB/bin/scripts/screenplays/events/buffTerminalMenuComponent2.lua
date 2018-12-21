@@ -59,7 +59,7 @@ function buffTerminalMenuComponent2:handleLightChoice(pPlayer, pSui, eventIndex,
   if (cancelPressed) then   
     return 
   elseif (eventIndex == 0) then -- Buff the player
-    createEvent(1000, "jediTrials", "completeKnightForTesting", pPlayer, councilType)     
+    createEvent(1000, "JediTrials", "completeKnightForTesting", pPlayer, councilType)     
      
   end
 end
@@ -77,7 +77,7 @@ function buffTerminalMenuComponent2:handleDarkChoice(pPlayer, pSui, eventIndex, 
   if (cancelPressed) then   
     return 
   elseif (eventIndex == 0) then -- Buff the player
-    createEvent(1000, "jediTrials", "completeKnightForTesting", pPlayer, councilType)     
+    createEvent(1000, "JediTrials", "completeKnightForTesting", pPlayer, councilType)     
      
   end
 end
