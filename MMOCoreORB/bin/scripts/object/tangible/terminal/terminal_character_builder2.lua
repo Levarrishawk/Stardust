@@ -1,4 +1,5 @@
---Copyright (C) 2007 <SWGEmu>
+--Copyright (C) 2010 <SWGEmu>
+
 
 --This File is part of Core3.
 
@@ -38,17 +39,24 @@
 --it is their choice whether to do so. The GNU Lesser General Public License
 --gives permission to release a modified version without this exception;
 --this exception also makes it possible to release a modified version
---which carries forward this exception.
---true = 1, false = 0
+--
+--NOTES ABOUT CHARACTER BUILDER TERMINAL ITEM LIST FORMAT
+---------------------------------------------------------
+--The item list is an infinitely deep node tree system.
+--To create a sub menu, use the following format:
+--"Name of the sub menu", {Menu items contained in brackets}
+--To create an item that is selectable, use the following format (within brackets of a submenu):
+--"Name of the item", "Path to the server or client template."
+--Be sure to pay attention to commas.
 
-ForceArmor2Command = {
-    name = "forcearmor2",
-    forceCost = 10,
-    duration = 900,
-    --animationCRC = hashCode()
-    clientEffect = "clienteffect/pl_force_armor_self.cef",
-    buffClass = SINGLE_USE_BUFF
+object_tangible_terminal_terminal_character_builder2 = object_tangible_terminal_shared_terminal_character_builder2:new {
+		
+	objectMenuComponent = "buffTerminalMenuComponent2",
+
+	customName = "FRS-Selection Terminal",
+
+	
 }
 
-AddCommand(ForceArmor2Command)
 
+ObjectTemplates:addTemplate(object_tangible_terminal_terminal_character_builder2, "object/tangible/terminal/terminal_character_builder2.iff")

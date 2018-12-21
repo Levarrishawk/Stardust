@@ -501,10 +501,10 @@ function JediTrials:completeKnightForTesting(pPlayer, councilType)
 	local enclaveLoc
 
 	if (isZoneEnabled("yavin4")) then
-		if (councilType == self.COUNCIL_LIGHT) then
-			enclaveLoc = { -5575, 0, 4905 }
+		if (councilType == self.COUNCIL_LIGHT or councilType == 1) then
+			enclaveLoc = { -186, 43.2, 2450 }
 		else
-			enclaveLoc = { 5079, 0, 305 }
+			enclaveLoc = { -186, 43.2, 2450 }
 		end
 
 		SceneObject(pPlayer):switchZone("yavin4", enclaveLoc[1], enclaveLoc[2], enclaveLoc[3], 0)

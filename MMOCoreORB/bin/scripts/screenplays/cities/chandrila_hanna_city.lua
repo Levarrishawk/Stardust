@@ -76,7 +76,10 @@ function HannaCityScreenPlay:spawnSceneObjects()
   spawnSceneObject("chandrila", "object/static/structure/general/streetlamp_small_blue_style_01_on.iff", 12.2, 0.6, 50.2, 35791476, math.rad(0) )
   spawnSceneObject("chandrila", "object/static/structure/general/streetlamp_small_blue_style_01_on.iff", -0.2, 0.6, 48.1, 35791476, math.rad(0) )
   spawnSceneObject("chandrila", "object/static/structure/general/streetlamp_small_blue_style_01_on.iff", -13.5, 0.6, 50.9, 35791476, math.rad(0) )
-
+  
+  spawnSceneObject("chandrila", "object/tangible/terminal/terminal_event_buffs.iff", -5.8, 0.3, 4.4, 35791495, math.rad(-45) )
+  
+  
   spawnSceneObject("chandrila", "object/building/corellia/garage_corellia.iff", 220, 6, -2758, 0, math.rad(0) ) 
 
 	--Hotel
@@ -663,6 +666,52 @@ function HannaCityScreenPlay:spawnMobiles()
   
   spawnMobile("chandrila", "jabba_rancor", 60, -26.8, -0.9, 24.2, -160, 35791453)
   --
+  
+  -- Profession Trainers
+  spawnMobile("chandrila", "trainer_armorsmith",60,3.6,1.1,-9.8,-91,35791542)
+  spawnMobile("chandrila", "trainer_weaponsmith",60,-3.4,1.1,-13.3,55,35791542)
+  
+  spawnMobile("chandrila", "trainer_chef",60,7.5,1.1,-9.9,91,35791541)
+  spawnMobile("chandrila", "trainer_tailor",60,3.6,1.1,-9.8,-91,35791542)
+  
+  spawnMobile("chandrila", "trainer_artisan",60,12.2,1.1,4.6,-177,35791539)
+  spawnMobile("chandrila", "trainer_architect",60,9.5,1.1,0.2,75,35791539)
+  
+  spawnMobile("chandrila", "trainer_politician",60,-14.0,1.1,-11.1,90,35791543)
+  
+  spawnMobile("chandrila", "trainer_droidengineer",60,-12.5,1.1,4.7,177,35791540)
+  
+  spawnMobile("chandrila", "trainer_bioengineer",60,-3.4,1.1,-13.5,36,35791522)
+  spawnMobile("chandrila", "trainer_creaturehandler",60,4.0,1.1,-11.6,-88,35791522)
+  
+  spawnMobile("chandrila", "trainer_scout",60,-8.5,1.1,-11.6,-94,35791523)
+  spawnMobile("chandrila", "trainer_ranger",60,-14.1,1.1,-11.4,86,35791523)
+  
+  spawnMobile("chandrila", "trainer_shipwright",60,-11.6,1.1,5.1,177,35791520)
+  
+  spawnMobile("chandrila", "trainer_marksman",60,-0.4,1.1,-14.4,-7,35791512)
+  spawnMobile("chandrila", "trainer_pistol",60,4.2,1.1,-13.7,-50,35791512)
+  spawnMobile("chandrila", "trainer_carbine",60,3.3,1.1,-9.0,-90,35791512)
+  spawnMobile("chandrila", "trainer_rifleman",60,-3.8,1.1,-13.2,90,35791512)
+  
+  spawnMobile("chandrila", "trainer_brawler",60,-8.8,1.1,-13.3,-50,35791513)
+  spawnMobile("chandrila", "trainer_unarmed",60,-7.0,1.1,-11.3,-95,35791513)
+  spawnMobile("chandrila", "trainer_1hsword",60,-14.6,1.1,-12.4,60,35791513)
+  spawnMobile("chandrila", "trainer_2hsword",60,-14.6,1.1,-9.4,60,35791513)
+  spawnMobile("chandrila", "trainer_polearm",60,-13.4,1.1,-13.8,31,35791513)
+  
+  spawnMobile("chandrila", "trainer_smuggler",60,-12.0,1.1,5.2,177,35791510)
+  spawnMobile("chandrila", "trainer_bountyhunter",60,10.8,1.1,-11.7,0,35791511)
+  spawnMobile("chandrila", "trainer_commando",60,12.5,1.1,3.7,-171,35791509)
+  
+  spawnMobile("chandrila", "trainer_medic",60,-17.9,0.3,11.0,171,35791495)
+  spawnMobile("chandrila", "trainer_combatmedic",60,-8.9,0.3,-1.3,-157,35791495)
+  spawnMobile("chandrila", "trainer_doctor",60,-26.0,0.3,-10.6,42,35791495)
+  
+  spawnMobile("chandrila", "trainer_imagedesigner",60,0.3,0.6,-5.5,-70,35791665)
+  spawnMobile("chandrila", "trainer_musician",60,23.0,-0.9,18.1,-92,35791446)
+  spawnMobile("chandrila", "trainer_dancer",60,6.0,-0.9,-4.7,-11,35791444)
+  
   
 	
 

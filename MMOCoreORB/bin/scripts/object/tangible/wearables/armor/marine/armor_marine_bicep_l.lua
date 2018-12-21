@@ -104,14 +104,14 @@ object_tangible_wearables_armor_marine_armor_marine_bicep_l = object_tangible_we
 	
 	maxCondition = 30000,
 	
-    	kinetic = 70,
-	energy = 70,
-	electricity = 70,
-	stun = 70,
-	blast = 70,
-	heat = 70,
-	cold = 70,
-	acid = 70,
+  kinetic = 60,
+	energy = 60,
+	electricity = 60,
+	stun = 60,
+	blast = 60,
+	heat = 60,
+	cold = 60,
+	acid = 60,
 	lightSaber = 0
 }
 
