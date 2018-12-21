@@ -48,12 +48,7 @@ function elysiumTerminalMenuComponent_01:handleTeleport(pPlayer, pSui, eventInde
     CreatureObject(pPlayer):sendSystemMessage("The crystal stops humming as you pull your hand away.")   
     return 
   elseif (eventIndex == 0) then -- Teleport
-      createEvent(1000, "recruiterScreenplay", "handleGoOnLeave", pPlayer, "")
-        ObjectManager.withCreatureAndPlayerObject(pPlayer, function(player, playerObject)
-        
-        local player = LuaSceneObject(pPlayer)
-        player:switchZone("elysium", 2606, 0, 2343, 0)   
-       end)
+      createEvent(1000, "recruiterScreenplay", "handleElysiumTp", pPlayer, "")
      
   end
 end
