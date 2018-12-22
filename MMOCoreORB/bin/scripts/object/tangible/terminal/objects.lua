@@ -3306,4 +3306,20 @@ object_tangible_terminal_shared_terminal_character_builder2 = SharedTangibleObje
 }
 
 ObjectTemplates:addClientTemplate(object_tangible_terminal_shared_terminal_character_builder2, "object/tangible/terminal/shared_terminal_character_builder2.iff")
+--
+object_tangible_terminal_shared_terminal_elysium_crystal_01 = SharedTangibleObjectTemplate:new {
+  clientTemplateFileName = "object/tangible/terminal/shared_terminal_elysium_crystal_01.iff"
+  
+}
+
+ObjectTemplates:addClientTemplate(object_tangible_terminal_shared_terminal_elysium_crystal_01, "object/tangible/terminal/shared_terminal_elysium_crystal_01.iff")
+
+object_tangible_terminal_shared_terminal_elysium_crystal_02 = SharedTangibleObjectTemplate:new {
+  clientTemplateFileName = "object/tangible/terminal/shared_terminal_elysium_crystal_02.iff"
+  
+}
+
+ObjectTemplates:addClientTemplate(object_tangible_terminal_shared_terminal_elysium_crystal_02, "object/tangible/terminal/shared_terminal_elysium_crystal_02.iff")
+
+
 

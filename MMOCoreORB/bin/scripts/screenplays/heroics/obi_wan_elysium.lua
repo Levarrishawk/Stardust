@@ -15,7 +15,7 @@ registerScreenPlay("obi_wan_elysium", true) --Initialize the screenplay IAW the 
 
 --Simply spawns the NPC
 function obi_wan_elysium:start()
-   local pNpc = spawnMobile("elysium", "obi_wan_ghost", 1, 2606.0, 0, 2500, -147, 180)
+   local pNpc = spawnMobile("elysium", "obi_wan_ghost", 1, 2606.1, 0, 2495, 150, 0)
    self:setMoodString(pNpc, "neutral")
 end
 

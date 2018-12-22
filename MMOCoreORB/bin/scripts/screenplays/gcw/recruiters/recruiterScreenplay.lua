@@ -659,3 +659,11 @@ function recruiterScreenplay:handleRebelTp2(pPlayer)
     player:switchZone("dungeon2", -41.2, 0, -0.2, 480000159)  --("jakku", 2.0, -20.8, 22.1, 610000100)
   end)
 end
+
+function recruiterScreenplay:handleElysiumTp(pPlayer)
+  ObjectManager.withCreatureAndPlayerObject(pPlayer, function(player, playerObject)
+    local player = LuaSceneObject(pPlayer)
+    player:switchZone("elysium", 2606, 0, 2343, 0)  --("jakku", 1.5, -20.8, 27.5, 610000111)
+  end)
+  createEvent(1000, "recruiterScreenplay", "handleGoOnLeave", pPlayer, "")
+end

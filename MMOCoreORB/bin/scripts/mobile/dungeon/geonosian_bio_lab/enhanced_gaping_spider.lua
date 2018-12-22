@@ -4,13 +4,13 @@ enhanced_gaping_spider = Creature:new {
 	socialGroup = "geonosian_creature",
 	pvpFaction = "",
 	faction = "",
-	level = 300,
-	chanceHit = 75.5,
-	damageMin = 2115,
-	damageMax = 2540,
-	baseXp = 10267,
-	baseHAM = 250000,
-	baseHAMmax = 329000,
+	level = 108,
+  chanceHit = 2.5,
+  damageMin = 715,
+  damageMax = 1140,
+  baseXp = 10267,
+  baseHAM = 32000,
+baseHAMmax = 39000,
 	armor = 1,
 	-- {kinetic,energy,blast,heat,cold,electricity,acid,stun,ls}
 	resists = {50,35,25,95,45,35,25,45,5},
@@ -29,7 +29,7 @@ enhanced_gaping_spider = Creature:new {
 	diet = CARNIVORE,
 
 	templates = {"object/mobile/gaping_spider.iff"},
-	scale = 3.0,
+	scale = 2.5,
 	lootGroups = {
 		{
 			groups =
