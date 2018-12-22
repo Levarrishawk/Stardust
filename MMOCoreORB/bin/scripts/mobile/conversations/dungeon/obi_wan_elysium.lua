@@ -55,7 +55,7 @@ opt1a = ConvoScreen:new {
   customDialogText = "No one ever truly dies my young friend.  We all become one with the force in one way or another at the end of life.",
   stopConversation = "false",
   options = {
-    {"That is not possible.","opt1b"},
+    {"That is not possible. Not according to everything that I know about the force.","opt1b"},
   }
 }
 obi_wan_elysium:addScreen(opt1a);
@@ -63,7 +63,7 @@ obi_wan_elysium:addScreen(opt1a);
 opt1b = ConvoScreen:new {
   id = "opt1b",
   leftDialog = "",
-  customDialogText = "Impossible, and yet here I am.  There are many mysteries of the force that I never thought possible when I was alive as you are.",
+  customDialogText = "Impossible according to what you know, and yet here I am.  There are many mysteries of the force that I never thought possible when I was alive as you are.",
   stopConversation = "false",
   options = {
     {"What can you tell me about this place?","opt2"},  -- Continue here.
@@ -92,7 +92,7 @@ opt2a = ConvoScreen:new {
    customDialogText = "I see.  I know of both of the enclaves on that world.  It doesn't matter to me which one you came from, not here anyway.  You must feel different in this place, don't you?",
   stopConversation = "false",
   options = {
-     {"Yes, I feel.. balance.","opt2b"},   
+     {"Yes, I feel.. balance.  There is absolutely no conflict in the force here.","opt2b"},   
   }
 }
 obi_wan_elysium:addScreen(opt2a);
@@ -100,7 +100,7 @@ obi_wan_elysium:addScreen(opt2a);
 opt2b = ConvoScreen:new {
   id = "opt2b",
   leftDialog = "",
-   customDialogText = "Remeber that feeling.  Because unfortunately outside of this place the force is anything but in balance, but you already know this.  Always the constant struggle between the Light and the Dark, the Ashla and the Bogan,  The son and the daughter.",
+   customDialogText = "Remember that feeling.  Because unfortunately outside of this place the force is anything but in balance, but you already know this.  Always the constant struggle between the Light and the Dark, the Ashla and the Bogan,  The son and the daughter.",
   stopConversation = "false",
   options = {
      {"The son and the daughter?","opt2c"},   
@@ -111,7 +111,7 @@ obi_wan_elysium:addScreen(opt2b);
 opt2c = ConvoScreen:new {
   id = "opt2c",
   leftDialog = "",
-   customDialogText = "Hm? Oh.  Nothing.",
+   customDialogText = "Hm? Oh...  Nothing.   Just an Old man's rambling.  Pay it no heed.",
   stopConversation = "false",
   options = {
      {"How do I leave this place?","opt2d"},   
