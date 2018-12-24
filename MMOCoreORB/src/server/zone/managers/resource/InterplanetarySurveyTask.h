@@ -116,7 +116,7 @@ public:
 				Vector<String>* values = mapped.get(sType);
 				for(int j=0;j<values->size();j++) {
 					body << "\t\t\\#pcontrast1 " << values->get(j) << "\\#.\n";
-					body << attributeMap.get(values->get(j));
+					//body << attributeMap.get(values->get(j));
 
 					 // Add resources to survey droid email - Sidious 22 JUNE 2017
 					                    // Loop through the resource list so that we can get the values of the attributes and add them to the email
