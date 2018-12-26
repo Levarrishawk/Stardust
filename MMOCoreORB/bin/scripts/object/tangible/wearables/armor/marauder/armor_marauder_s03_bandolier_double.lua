@@ -43,6 +43,8 @@
 
 object_tangible_wearables_armor_marauder_armor_marauder_s03_bandolier_double = object_tangible_wearables_armor_marauder_shared_armor_marauder_s03_bandolier_double:new {
 	templateType = ARMOROBJECT,
+	
+	objectMenuComponent = "ArmorObjectMenuComponent", 
 
 	playerRaces = { "object/creature/player/bothan_male.iff",
         "object/creature/player/bothan_female.iff",

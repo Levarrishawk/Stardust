@@ -43,6 +43,8 @@
 
 object_tangible_wearables_armor_bone_armor_bone_s01_helmet = object_tangible_wearables_armor_bone_shared_armor_bone_s01_helmet:new {
   templateType = ARMOROBJECT,
+  
+  objectMenuComponent = "ArmorObjectMenuComponent", 
 
   playerRaces = { "object/creature/player/bothan_male.iff",
         "object/creature/player/bothan_female.iff",
@@ -75,7 +77,7 @@ object_tangible_wearables_armor_bone_armor_bone_s01_helmet = object_tangible_wea
         "object/mobile/vendor/twilek_female.iff",
         "object/mobile/vendor/twilek_male.iff",
         "object/mobile/vendor/zabrak_female.iff",
-        "object/mobile/vendor/zabrak_male.iff" },
+        "object/mobile/vendor/zabrak_male.iff"},
 
   -- kineticeffectiveness, energyeffectiveness, electricaleffectiveness, stuneffectiveness, blasteffectiveness, heateffectiveness, coldeffectiveness, acideffectiveness, restraineffectiveness
   vulnerability = ACID,

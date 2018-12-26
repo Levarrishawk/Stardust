@@ -14,8 +14,12 @@ function elysium_teleportation_network:start()
 end
 
 function elysium_teleportation_network:spawnSceneObjects()
-
-  spawnSceneObject("elysium", "object/tangible/terminal/terminal_elysium_crystal_01.iff", 2606.1, 0, 2500, 0, math.rad(0) )
+--Entry
+  spawnSceneObject("elysium", "object/tangible/terminal/terminal_elysium_crystal_01.iff", -11.5, -19.3, 38.3, 8525439, math.rad(0) )
+  spawnSceneObject("elysium", "object/tangible/terminal/terminal_elysium_crystal_01.iff", 0.0, -43.4, -27.6, 3435634, math.rad(0) )
+--Exit
+  spawnSceneObject("elysium", "object/tangible/terminal/terminal_elysium_crystal_02.iff", 2606.1, 0, 2500, 0, math.rad(0) )
+-- Pathways
 
 
 end
