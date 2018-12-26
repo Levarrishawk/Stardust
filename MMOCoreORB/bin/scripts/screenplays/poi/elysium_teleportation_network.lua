@@ -15,7 +15,7 @@ end
 
 function elysium_teleportation_network:spawnSceneObjects()
 
-  spawnSceneObject("elysium", "object/tangible/terminal/terminal_elysium_crystal_01.iff", 2606.1, 0, 2500, 0, math.rad(0) )
+  spawnSceneObject("elysium", "object/tangible/terminal/terminal_elysium_crystal_02.iff", 2606.1, 0, 2500, 0, math.rad(0) )
 
 
 end
