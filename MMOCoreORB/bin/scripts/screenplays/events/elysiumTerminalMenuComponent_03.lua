@@ -45,7 +45,7 @@ function elysiumTerminalMenuComponent_03:handleTeleport(pPlayer, pSui, eventInde
   local councilType = 1
   
   if (cancelPressed) then
-    CreatureObject(pPlayer):sendSystemMessage("The crystal stops humming as you pull your hand away.")   
+    CreatureObject(pPlayer):sendSystemMessage("The obelisk stops humming as you pull your hand away.")   
     return 
   elseif (eventIndex == 0) then -- Teleport
       createEvent(1000, "recruiterScreenplay", "handleAuriliaTp", pPlayer, "")
