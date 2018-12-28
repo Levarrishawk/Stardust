@@ -712,7 +712,9 @@ function HannaCityScreenPlay:spawnMobiles()
   spawnMobile("chandrila", "trainer_musician",60,23.0,-0.9,18.1,-92,35791446)
   spawnMobile("chandrila", "trainer_dancer",60,6.0,-0.9,-4.7,-11,35791444)
   
-  
+  spawnMobile("chandrila", "trainer_squadleader",60,0.0,1.1,-13.0,-2,35791532)
+	spawnMobile("chandrila", "trainer_merchant",60,-14.1,1.1,-8.7,85,35791533)
+	
 	
 
 end
