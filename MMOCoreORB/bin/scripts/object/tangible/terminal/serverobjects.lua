@@ -110,3 +110,4 @@ includeFile("tangible/terminal/test.lua")
 
 includeFile("tangible/terminal/terminal_elysium_crystal_01.lua")
 includeFile("tangible/terminal/terminal_elysium_crystal_02.lua")
+includeFile("tangible/terminal/terminal_elysium_obelisk.lua")
