@@ -20,7 +20,7 @@ function elysium_teleportation_network:spawnSceneObjects()
 --Exit
   spawnSceneObject("elysium", "object/tangible/terminal/terminal_elysium_crystal_02.iff", 2606.1, 0, 2500, 0, math.rad(0) )
 -- Pathways
-
+  spawnSceneObject("elysium", "object/tangible/terminal/terminal_elysium_obelisk.iff", 2606.1, 0, 2600, 0, math.rad(0) )
 
 end
 

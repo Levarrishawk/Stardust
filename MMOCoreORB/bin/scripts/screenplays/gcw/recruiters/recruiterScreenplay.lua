@@ -675,3 +675,11 @@ function recruiterScreenplay:handleYavinTp(pPlayer)
   end)
   createEvent(1000, "recruiterScreenplay", "handleGoOnLeave", pPlayer, "")
 end
+
+function recruiterScreenplay:handleAuriliaTp(pPlayer)
+  ObjectManager.withCreatureAndPlayerObject(pPlayer, function(player, playerObject)
+    local player = LuaSceneObject(pPlayer)
+    player:switchZone("dathomir", 5301, 78, -4151, 0)  --("jakku", 1.5, -20.8, 27.5, 610000111)
+  end)
+  createEvent(1000, "recruiterScreenplay", "handleGoOnLeave", pPlayer, "")
+end

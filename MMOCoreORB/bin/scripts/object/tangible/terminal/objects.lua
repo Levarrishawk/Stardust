@@ -3322,4 +3322,11 @@ object_tangible_terminal_shared_terminal_elysium_crystal_02 = SharedTangibleObje
 ObjectTemplates:addClientTemplate(object_tangible_terminal_shared_terminal_elysium_crystal_02, "object/tangible/terminal/shared_terminal_elysium_crystal_02.iff")
 
 
+object_tangible_terminal_shared_terminal_elysium_obelisk = SharedTangibleObjectTemplate:new {
+  clientTemplateFileName = "object/tangible/terminal/shared_terminal_elysium_obelisk.iff"
+  
+}
+
+ObjectTemplates:addClientTemplate(object_tangible_terminal_shared_terminal_elysium_obelisk, "object/tangible/terminal/shared_terminal_elysium_obelisk.iff")
+
 
