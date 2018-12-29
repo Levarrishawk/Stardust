@@ -59,7 +59,7 @@ sith_shadow_mercenary = Creature:new {
 				{group = "tailor_components", chance = 2000000},
 				{group = "loot_kit_parts", chance = 1500000},
 				{group = "printer_parts", chance = 1000000},
-				{group = "elite_weapons", chance = 500000},
+				{group = "elite_weapons", chance = 100000},
 				{group = "clothing_attachments", chance = 500000},
 				{group = "armor_attachments", chance = 500000},
 			},
