@@ -28,7 +28,7 @@ ysalamiri = Creature:new {
 	diet = CARNIVORE,
 
 	templates = {"object/mobile/voritor_lizard_hue.iff"},
-	controlDeviceTemplate = "object/intangible/pet/voritor_lizard_hue.iff",
+	controlDeviceTemplate = "object/intangible/pet/ysalamiri_hue.iff",
 	scale = 1.5,	
 	lootGroups = {},
 	weapons = {"creature_spit_small_toxicgreen"},
