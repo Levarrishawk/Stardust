@@ -27,7 +27,7 @@ ysalamiri = Creature:new {
 	optionsBitmask = AIENABLED,
 	diet = CARNIVORE,
 
-	templates = {"object/mobile/scyk.iff"},
+	templates = {"object/mobile/voritor_lizard_hue.iff"},
 	scale = 1.5,	
 	lootGroups = {},
 	weapons = {"creature_spit_small_toxicgreen"},
