@@ -1,6 +1,6 @@
 ysalamiri = Creature:new {
 	objectName = "@mob/creature_names:ysalamiri",
-	--customName = "a Ysalamiri",	
+	customName = "a Ysalamiri",	
 	socialGroup = "snake",
 	pvpFaction = "",
 	faction = "",
