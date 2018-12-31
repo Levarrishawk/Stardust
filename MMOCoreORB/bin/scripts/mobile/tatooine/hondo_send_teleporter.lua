@@ -26,7 +26,8 @@ hondo_send_teleporter = Creature:new {
 	optionsBitmask = AIENABLED + CONVERSABLE,
 	diet = HERBIVORE,
 
-	templates = {"object/mobile/dressed_tatooine_weequay_thug.iff"},
+	templates = {"object/mobile/weequay_male.iff"},
+	outfit = "hondo_outfit",
 	lootGroups = {
 		{
 			groups = {

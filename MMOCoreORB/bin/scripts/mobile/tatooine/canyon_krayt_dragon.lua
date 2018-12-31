@@ -2,10 +2,10 @@ canyon_krayt_dragon = Creature:new {
 	objectName = "@mob/creature_names:canyon_krayt_dragon",
 	socialGroup = "krayt",
 	faction = "",
-	level = 200,
+	level = 230,
 	chanceHit = 27.25,
 	damageMin = 520,
-	damageMax = 1200,
+	damageMax = 1500,
 	baseXp = 26356,
 	baseHAM = 101000,
 	baseHAMmax = 101000,
@@ -28,37 +28,17 @@ canyon_krayt_dragon = Creature:new {
 	templates = {"object/mobile/canyon_krayt_dragon.iff"},
 	scale = 1.25,
 	lootGroups = {
-		{
-	        groups = {
-				{group = "krayt_dragon_common", chance = 3000000},
-				{group = "krayt_tissue_uncommon", chance = 3500000},
-				{group = "weapons_all", chance = 3500000},
-			},
-			lootChance = 10000000
-		},
-		{
-	        groups = {
-				{group = "krayt_dragon_common", chance = 3500000},
-				{group = "krayt_tissue_uncommon", chance = 2500000},
-				{group = "weapons_all", chance = 2400000},
-				{group = "armor_attachments", chance = 1600000},   -- 45% * 16% = 7.2%
-			},
-			lootChance = 4500000   -- 45% chance for  this group
-		},
-		-- Pearl groups
-		{
-	        groups = {
-				{group = "krayt_pearls", chance = 10000000},
-			},
-			lootChance = 2500000   -- 25%
-		},
-		{
-	        groups = {
-				{group = "krayt_pearls", chance = 10000000},
-			},
-			lootChance = 1000000   -- 10%
-		}
-	},
+    {
+          groups = {
+        {group = "krayt_dragon_common", chance = 2500000},
+        {group = "krayt_tissue_uncommon", chance = 2000000},
+        {group = "krayt_pearls", chance = 1500000},
+        {group = "armor_all", chance = 2000000},
+        {group = "weapons_all", chance = 2000000},
+      },
+      lootChance = 7000000
+    }
+},
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
