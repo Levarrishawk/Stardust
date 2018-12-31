@@ -15,9 +15,54 @@ registerScreenPlay("hondo_send_teleporter", true) --Initialize the screenplay IA
 
 --Simply spawns the NPC
 function hondo_send_teleporter:start()
-  -- spawnMobile("naboo", "hondo_send_teleporter", 1, 0.2, -9.0, -19.7, 0, 1393884)  --disabled until jakku focus test is completed.
-   
-
+  if getFormattedTime():find("Jan") ~= nil then
+    writeStringSharedMemory("hondo_send_teleporter", "jan_spawn" .. tostring(os.date('%Y')))
+    spawnMobile("naboo", "hondo_send_teleporter", 1, 0.2, -9.0, -19.7, 0, 1393884) 
+  end
+  if getFormattedTime():find("Feb") ~= nil then
+    writeStringSharedMemory("hondo_send_teleporter", "feb_spawn" .. tostring(os.date('%Y')))
+    spawnMobile("naboo", "hondo_send_teleporter", 1, 0.2, -9.0, -19.7, 0, 1393884) 
+  end
+  if getFormattedTime():find("Mar") ~= nil then
+    writeStringSharedMemory("hondo_send_teleporter", "mar_spawn" .. tostring(os.date('%Y')))
+    spawnMobile("naboo", "hondo_send_teleporter", 1, 0.2, -9.0, -19.7, 0, 1393884) 
+  end
+  if getFormattedTime():find("Apr") ~= nil then
+    writeStringSharedMemory("hondo_send_teleporter", "apr_spawn" .. tostring(os.date('%Y')))
+    spawnMobile("naboo", "hondo_send_teleporter", 1, 0.2, -9.0, -19.7, 0, 1393884) 
+  end
+  if getFormattedTime():find("May") ~= nil then
+    writeStringSharedMemory("hondo_send_teleporter", "may_spawn" .. tostring(os.date('%Y')))
+    spawnMobile("naboo", "hondo_send_teleporter", 1, 0.2, -9.0, -19.7, 0, 1393884) 
+  end
+  if getFormattedTime():find("Jun") ~= nil then
+    writeStringSharedMemory("hondo_send_teleporter", "jun_spawn" .. tostring(os.date('%Y')))
+    spawnMobile("naboo", "hondo_send_teleporter", 1, 0.2, -9.0, -19.7, 0, 1393884) 
+  end
+  if getFormattedTime():find("Jul") ~= nil then
+    writeStringSharedMemory("hondo_send_teleporter", "jul_spawn" .. tostring(os.date('%Y')))
+    spawnMobile("naboo", "hondo_send_teleporter", 1, 0.2, -9.0, -19.7, 0, 1393884) 
+  end
+  if getFormattedTime():find("Aug") ~= nil then
+    writeStringSharedMemory("hondo_send_teleporter", "aug_spawn" .. tostring(os.date('%Y')))
+    spawnMobile("naboo", "hondo_send_teleporter", 1, 0.2, -9.0, -19.7, 0, 1393884) 
+  end
+  if getFormattedTime():find("Sep") ~= nil then
+    writeStringSharedMemory("hondo_send_teleporter", "sep_spawn" .. tostring(os.date('%Y')))
+    spawnMobile("naboo", "hondo_send_teleporter", 1, 0.2, -9.0, -19.7, 0, 1393884) 
+  end
+  if getFormattedTime():find("Oct") ~= nil then
+    writeStringSharedMemory("hondo_send_teleporter", "oct_spawn" .. tostring(os.date('%Y')))
+    spawnMobile("naboo", "hondo_send_teleporter", 1, 0.2, -9.0, -19.7, 0, 1393884) 
+  end
+  if getFormattedTime():find("Nov") ~= nil then
+    writeStringSharedMemory("hondo_send_teleporter", "nov_spawn" .. tostring(os.date('%Y')))
+    spawnMobile("naboo", "hondo_send_teleporter", 1, 0.2, -9.0, -19.7, 0, 1393884) 
+  end
+  if getFormattedTime():find("Dec") ~= nil then
+    writeStringSharedMemory("hondo_send_teleporter", "dec_spawn" .. tostring(os.date('%Y')))
+    spawnMobile("naboo", "hondo_send_teleporter", 1, 0.2, -9.0, -19.7, 0, 1393884) 
+  end  
 end
 
 --The actual conversation handler
