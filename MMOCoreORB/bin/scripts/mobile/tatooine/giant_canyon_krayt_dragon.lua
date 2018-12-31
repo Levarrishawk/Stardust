@@ -13,7 +13,7 @@ giant_canyon_krayt_dragon = Creature:new {
 	-- {kinetic,energy,blast,heat,cold,electricity,acid,stun,ls}
 	resists = {70,70,70,70,65,70,70,70,-1},
 	meatType = "meat_carnivore",
-	meatAmount = 1000,
+	meatAmount = 800,
 	hideType = "hide_bristley",
 	hideAmount = 870,
 	boneType = "bone_mammal",
