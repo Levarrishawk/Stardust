@@ -32,7 +32,7 @@ function exarKun:initialize()
 		for j = 1, #building.buildingIds, 1 do
 			local pExarKun = getSceneObject(building.buildingIds[j])
 			if pExarKun == nil or not SceneObject(pExarKun):isBuildingObject() then
-				printLuaError("exarKun:initialize tried using a corvette id that was nil or not a building: " .. building.buildingIds[j])
+				printLuaError("exarKun:initialize tried using a exarKun id that was nil or not a building: " .. building.buildingIds[j])
 			else
 				local exarKunID = SceneObject(pExarKun):getObjectID()
 				writeData("exarKunActive:" .. exarKunID, 0)
@@ -91,7 +91,7 @@ function exarKun:activate(pPlayer, faction, questType)
 
 	if (pExarKun == nil) then
 		CreatureObject(pPlayer):sendSystemMessage("You are unable to enter the instance at this time.")
-		printLuaError("exarKun:activate unable to find corvette object with id " .. exarKunID)
+		printLuaError("exarKun:activate unable to find exarKun object with id " .. exarKunID)
 		return false
 	end
 
@@ -350,7 +350,7 @@ function exarKun:transportPlayer(pPlayer)
 	local pExarKun = getSceneObject(exarKunID)
 
 	if (pExarKun == nil) then
-		printLuaError("exarKun:transportPlayer nil corvette object using corvette id " .. exarKunID)
+		printLuaError("exarKun:transportPlayer nil exarKun object using exarKun id " .. exarKunID)
 		return
 	end
 
