@@ -45,30 +45,12 @@ black_sun_guard_themepark = Creature:new {
 				{group = "wearables_uncommon", chance = 3300000},
 			},
 			lootChance = 7500000,
-		},
-		{
-			groups = {
-				{group = "jetpack_base", chance = 10000000},
-			},
-			lootChance = 1000000
-		},
+		},		
 		{
 			groups = {
 				{group = "bounty_hunter_armor", chance = 10000000},
 			},
-			lootChance = 1500000
-		},
-		{
-			groups = {
-				{group = "bounty_hunter_armor", chance = 10000000},
-			},
-			lootChance = 1500000
-		},
-		{
-			groups = {
-				{group = "bounty_hunter_armor", chance = 10000000},
-			},
-			lootChance = 1500000
+			lootChance = 500000
 		},
 		{
 			groups = {

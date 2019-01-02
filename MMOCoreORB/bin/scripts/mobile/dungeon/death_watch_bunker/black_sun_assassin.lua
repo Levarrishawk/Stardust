@@ -50,37 +50,37 @@ black_sun_assassin = Creature:new {
       groups = {
         {group = "black_sun_weapons", chance = 10000000},
       },
-      lootChance = 1000000
+      lootChance = 300000
     },
 		{
 			groups = {
 				{group = "jetpack_base", chance = 10000000},
 			},
-			lootChance = 1500000
+			lootChance = 500000
 		},
 		{
 			groups = {
 				{group = "bounty_hunter_armor", chance = 10000000},
 			},
-			lootChance = 2500000
+			lootChance = 500000
 		},
 		{
 			groups = {
 				{group = "bounty_hunter_armor", chance = 10000000},
 			},
-			lootChance = 2500000
+			lootChance = 500000
 		},
 		{
 			groups = {
-				{group = "bounty_hunter_armor", chance = 10000000},
+				{group = "blacksun_rare", chance = 10000000},
 			},
-			lootChance = 2500000
+			lootChance = 500000
 		},
 		{
 			groups = {
 				{group = "armor_attachments", chance = 10000000},
 			},
-			lootChance = 1000000
+			lootChance = 100000
 		},
 		{
 			groups = {

@@ -42,7 +42,7 @@ black_sun_henchman = Creature:new {
       groups = {
         {group = "black_sun_weapons", chance = 10000000},
       },
-      lootChance = 1000000
+      lootChance = 500000
     },
 		{
 			groups = {
@@ -62,19 +62,19 @@ black_sun_henchman = Creature:new {
 			groups = {
 				{group = "bounty_hunter_armor", chance = 10000000},
 			},
-			lootChance = 1500000
+			lootChance = 500000
 		},
 		{
 			groups = {
 				{group = "bounty_hunter_armor", chance = 10000000},
 			},
-			lootChance = 1500000
+			lootChance = 500000
 		},
 		{
 			groups = {
-				{group = "bounty_hunter_armor", chance = 10000000},
+				{group = "blacksun_rare", chance = 10000000},
 			},
-			lootChance = 1500000
+			lootChance = 500000
 		},
 	},
 	weapons = {"pirate_weapons_heavy"},
