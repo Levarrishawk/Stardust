@@ -48,27 +48,9 @@ black_sun_assassin_themepark = Creature:new {
 		},
 		{
 			groups = {
-				{group = "jetpack_base", chance = 10000000},
-			},
-			lootChance = 1500000
-		},
-		{
-			groups = {
 				{group = "bounty_hunter_armor", chance = 10000000},
 			},
-			lootChance = 2500000
-		},
-		{
-			groups = {
-				{group = "bounty_hunter_armor", chance = 10000000},
-			},
-			lootChance = 2500000
-		},
-		{
-			groups = {
-				{group = "bounty_hunter_armor", chance = 10000000},
-			},
-			lootChance = 2500000
+			lootChance = 500000
 		},
 		{
 			groups = {

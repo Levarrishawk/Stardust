@@ -48,27 +48,21 @@ black_sun_henchman_themepark = Creature:new {
 		},
 		{
 			groups = {
-				{group = "jetpack_base", chance = 10000000},
+				{group = "bounty_hunter_armor", chance = 10000000},
 			},
-			lootChance = 1000000
+			lootChance = 500000
 		},
 		{
 			groups = {
 				{group = "bounty_hunter_armor", chance = 10000000},
 			},
-			lootChance = 1500000
+			lootChance = 500000
 		},
 		{
 			groups = {
 				{group = "bounty_hunter_armor", chance = 10000000},
 			},
-			lootChance = 1500000
-		},
-		{
-			groups = {
-				{group = "bounty_hunter_armor", chance = 10000000},
-			},
-			lootChance = 1500000
+			lootChance = 500000
 		},
 	},
 	weapons = {"pirate_weapons_heavy"},
