@@ -261,143 +261,143 @@ function ChandrilTechScreenPlay:spawnMobiles()
   pNpc = spawnMobile("chandrila", "chandriltech_security_guard_noaggro",60,12.5,-12.0,34.0,137,35792128)
   self:setMoodString(pNpc, "neutral")
   
-  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",60,17.5,-12.0,60.0,174,35792130)
+  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",600,17.5,-12.0,60.0,174,35792130)
   self:setMoodString(pNpc, "neutral")
   
   --Second Room
-  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",60,35.5,-12.0,50.9,-11,35792131)
+  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",600,35.5,-12.0,50.9,-11,35792131)
   self:setMoodString(pNpc, "neutral")
-  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",60,51.5,-12.0,51.1,-6,35792131)
+  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",600,51.5,-12.0,51.1,-6,35792131)
   self:setMoodString(pNpc, "neutral")
-  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",60,51.5,-12.0,67.1,176,35792131)
+  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",600,51.5,-12.0,67.1,176,35792131)
   self:setMoodString(pNpc, "neutral")
-  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",60,35.6,-12.0,67.0,-179,35792131)
+  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",600,35.6,-12.0,67.0,-179,35792131)
   self:setMoodString(pNpc, "neutral")
   
-  pNpc = spawnMobile("chandrila", "geonosian_scientist",60,46.6,-12.0,54.6,-94,35792131)
+  pNpc = spawnMobile("chandrila", "geonosian_scientist",600,46.6,-12.0,54.6,-94,35792131)
   self:setMoodString(pNpc, "neutral")
-  pNpc = spawnMobile("chandrila", "geonosian_worker",60,56.7,-12.0,63.7,37,35792131)
+  pNpc = spawnMobile("chandrila", "geonosian_worker",600,56.7,-12.0,63.7,37,35792131)
   self:setMoodString(pNpc, "neutral")
-  pNpc = spawnMobile("chandrila", "geonosian_worker",60,40.7,-12.0,65.0,-5,35792131)
+  pNpc = spawnMobile("chandrila", "geonosian_worker",600,40.7,-12.0,65.0,-5,35792131)
   self:setMoodString(pNpc, "neutral")
-  pNpc = spawnMobile("chandrila", "geonosian_technical_assistant",60,33.3,-12.0,58.8,94,35792131)
+  pNpc = spawnMobile("chandrila", "geonosian_technical_assistant",600,33.3,-12.0,58.8,94,35792131)
   self:setMoodString(pNpc, "neutral")
   
   --Third Room
-  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",60,3.3,-12.0,52.5,1,35792132)
+  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",600,3.3,-12.0,52.5,1,35792132)
   self:setMoodString(pNpc, "neutral")
-  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",60,10.8,-12.0,66.9,-94,35792132)
+  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",600,10.8,-12.0,66.9,-94,35792132)
   self:setMoodString(pNpc, "neutral")
-  pNpc = spawnMobile("chandrila", "geonosian_worker",60,9.2,-12.0,53.1,130,35792132)
+  pNpc = spawnMobile("chandrila", "geonosian_worker",600,9.2,-12.0,53.1,130,35792132)
   self:setMoodString(pNpc, "neutral")
-  pNpc = spawnMobile("chandrila", "geonosian_worker",60,4.0,-12.0,62.5,171,35792132)
+  pNpc = spawnMobile("chandrila", "geonosian_worker",600,4.0,-12.0,62.5,171,35792132)
   self:setMoodString(pNpc, "neutral")
-  pNpc = spawnMobile("chandrila", "geonosian_worker",60,-1.8,-12.0,74.1,94,35792132)
+  pNpc = spawnMobile("chandrila", "geonosian_worker",600,-1.8,-12.0,74.1,94,35792132)
   self:setMoodString(pNpc, "neutral")
-  pNpc = spawnMobile("chandrila", "geonosian_worker",60,1.5,-12.0,77.3,138,35792132)
-  self:setMoodString(pNpc, "neutral")
-  
-  
-  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",60,3.5,-12.0,99.1,178,35792135)
+  pNpc = spawnMobile("chandrila", "geonosian_worker",600,1.5,-12.0,77.3,138,35792132)
   self:setMoodString(pNpc, "neutral")
   
-  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",60,34.6,-12.0,73.9,-43,35792139)
+  
+  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",600,3.5,-12.0,99.1,178,35792135)
   self:setMoodString(pNpc, "neutral")
   
-  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",60,32.3,-20.0,112.1,118,35792140)
+  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",600,34.6,-12.0,73.9,-43,35792139)
   self:setMoodString(pNpc, "neutral")
   
-  pNpc = spawnMobile("chandrila", "geonosian_worker",60,51.4,-20.0,106.2,-59,35792141)
+  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",600,32.3,-20.0,112.1,118,35792140)
   self:setMoodString(pNpc, "neutral")
   
-  pNpc = spawnMobile("chandrila", "chandriltech_contractor",60,51,-20.0,115.2,-136,35792141)
+  pNpc = spawnMobile("chandrila", "geonosian_worker",600,51.4,-20.0,106.2,-59,35792141)
+  self:setMoodString(pNpc, "neutral")
+  
+  pNpc = spawnMobile("chandrila", "chandriltech_contractor",600,51,-20.0,115.2,-136,35792141)
   self:setMoodString(pNpc, "npc_use_terminal_high")
   
   --fourth room
-  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",60,55.6,-20.0,134.9,-93,35792143)
+  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",600,55.6,-20.0,134.9,-93,35792143)
   self:setMoodString(pNpc, "neutral")
-  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",60,39.5,-20.0,151.0,84,35792143)
+  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",600,39.5,-20.0,151.0,84,35792143)
   self:setMoodString(pNpc, "neutral")
   
-  pNpc = spawnMobile("chandrila", "chandriltech_contractor",60,49,-20.0,133,-90,35792143)
+  pNpc = spawnMobile("chandrila", "chandriltech_contractor",600,49,-20.0,133,-90,35792143)
   self:setMoodString(pNpc, "npc_use_terminal_high")
   
-  pNpc = spawnMobile("chandrila", "chandriltech_contractor",60,47.6,-20.0,147,180,35792143)
+  pNpc = spawnMobile("chandrila", "chandriltech_contractor",600,47.6,-20.0,147,180,35792143)
   self:setMoodString(pNpc, "npc_use_terminal_high")
   
-  pNpc = spawnMobile("chandrila", "geonosian_worker",60,43.0,-20.0,154.9,-41,35792143)
+  pNpc = spawnMobile("chandrila", "geonosian_worker",600,43.0,-20.0,154.9,-41,35792143)
   self:setMoodString(pNpc, "neutral")
-  pNpc = spawnMobile("chandrila", "geonosian_scientist",60,45.3,-20.0,149.7,87,35792143)
-  self:setMoodString(pNpc, "neutral")
-  
-  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",60,83.6,-20.0,152.2,175,35792145)
-  self:setMoodString(pNpc, "neutral")
-  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",60,83.6,-20.0,109.8,-9,35792145)
+  pNpc = spawnMobile("chandrila", "geonosian_scientist",600,45.3,-20.0,149.7,87,35792143)
   self:setMoodString(pNpc, "neutral")
   
-  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",60,61,-20.0,131,90,35792150)
+  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",600,83.6,-20.0,152.2,175,35792145)
+  self:setMoodString(pNpc, "neutral")
+  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",600,83.6,-20.0,109.8,-9,35792145)
   self:setMoodString(pNpc, "neutral")
   
-  pNpc = spawnMobile("chandrila", "chandriltech_contractor",60,97.2,-20.0,130.5,-112,35792147)
+  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",600,61,-20.0,131,90,35792150)
+  self:setMoodString(pNpc, "neutral")
+  
+  pNpc = spawnMobile("chandrila", "chandriltech_contractor",600,97.2,-20.0,130.5,-112,35792147)
   self:setMoodString(pNpc, "npc_sitting_chair")
   
-  pNpc = spawnMobile("chandrila", "chandriltech_contractor",60,96.1,-20.0,129.6,-3,35792147)
+  pNpc = spawnMobile("chandrila", "chandriltech_contractor",600,96.1,-20.0,129.6,-3,35792147)
   self:setMoodString(pNpc, "npc_sitting_chair")
   
-  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",60,105.0,-20.0,125.0,-3,35792147)
+  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",600,105.0,-20.0,125.0,-3,35792147)
   self:setMoodString(pNpc, "neutral")
   
   -- Level 2
   
-  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",60,9.8,-20.0,66.1,180,35792151)
+  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",600,9.8,-20.0,66.1,180,35792151)
   self:setMoodString(pNpc, "neutral")
   
-  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",60,9.8,-20.0,51.8,0,35792151)
+  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",600,9.8,-20.0,51.8,0,35792151)
   self:setMoodString(pNpc, "neutral")
   
-  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",60,13.9,-20.0,59,-90,35792151)
+  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",600,13.9,-20.0,59,-90,35792151)
   self:setMoodString(pNpc, "neutral")
   
-  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",60,70.6,-20.0,56.4,-90,35792157)
+  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",600,70.6,-20.0,56.4,-90,35792157)
   self:setMoodString(pNpc, "neutral")
-  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",60,70.6,-20.0,61.4,-90,35792157)
+  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",600,70.6,-20.0,61.4,-90,35792157)
   self:setMoodString(pNpc, "neutral")
   
-  pNpc = spawnMobile("chandrila", "chandriltech_contractor",60,25.8,-20.0,59,-90,35792151)
+  pNpc = spawnMobile("chandrila", "chandriltech_contractor",600,25.8,-20.0,59,-90,35792151)
   self:setMoodString(pNpc, "npc_use_terminal_high")
   
-  pNpc = spawnMobile("chandrila", "chandriltech_contractor",60,35.5,-20.0,65,0,35792151)
+  pNpc = spawnMobile("chandrila", "chandriltech_contractor",600,35.5,-20.0,65,0,35792151)
   self:setMoodString(pNpc, "npc_use_terminal_high")
   
-  pNpc = spawnMobile("chandrila", "chandriltech_contractor",60,19.6,-20.0,38.6,180,35792151)
+  pNpc = spawnMobile("chandrila", "chandriltech_contractor",600,19.6,-20.0,38.6,180,35792151)
   self:setMoodString(pNpc, "npc_use_terminal_high")
   
-  pNpc = spawnMobile("chandrila", "chandriltech_contractor",60,19.6,-20.0,75,180,35792151)
+  pNpc = spawnMobile("chandrila", "chandriltech_contractor",600,19.6,-20.0,75,180,35792151)
   self:setMoodString(pNpc, "npc_use_terminal_high")
   
-  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",60,35.5,-20.0,53,0,35792151)
+  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",600,35.5,-20.0,53,0,35792151)
   self:setMoodString(pNpc, "neutral")
  
-  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",60,22.8,-20.0,99.8,0,35792153)
+  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",600,22.8,-20.0,99.8,0,35792153)
   self:setMoodString(pNpc, "neutral")
   
-  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",60,16.5,-20.0,99.8,0,35792153)
+  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",600,16.5,-20.0,99.8,0,35792153)
   self:setMoodString(pNpc, "neutral")
   
-  pNpc = spawnMobile("chandrila", "chandriltech_contractor",60,-5.1,-20.0,119,180,35792153)
+  pNpc = spawnMobile("chandrila", "chandriltech_contractor",600,-5.1,-20.0,119,180,35792153)
   self:setMoodString(pNpc, "conversation")
   
-  pNpc = spawnMobile("chandrila", "chandriltech_contractor",60,-5.1,-20.0,115,0,35792153)
+  pNpc = spawnMobile("chandrila", "chandriltech_contractor",600,-5.1,-20.0,115,0,35792153)
   self:setMoodString(pNpc, "conversation")
   
   -- Level 3
-  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",60,67.3,-50.0,58.8,-177,35792159)
+  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",600,67.3,-50.0,58.8,-177,35792159)
   self:setMoodString(pNpc, "neutral")
   
-  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",60,62.5,-50.0,56.4,177,35792159)
+  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",600,62.5,-50.0,56.4,177,35792159)
   self:setMoodString(pNpc, "neutral")
   
-  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",60,58.6,-50.0,58,177,35792159)
+  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",600,58.6,-50.0,58,177,35792159)
   self:setMoodString(pNpc, "neutral")
   
   pNpc = spawnMobile("chandrila", "technician",60,62.4,-50.0,44,0,35792159)
@@ -408,57 +408,57 @@ function ChandrilTechScreenPlay:spawnMobiles()
   pNpc = spawnMobile("chandrila", "technician",60,64,-50.0,24,-122,35792160)
   self:setMoodString(pNpc, "neutral")
   
-  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",60,62,-50.0,22,50,35792160)
+  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",600,62,-50.0,22,50,35792160)
   self:setMoodString(pNpc, "neutral")
   
   pNpc = spawnMobile("chandrila", "technician",60,63,-50.0,7,-172,35792161)
   self:setMoodString(pNpc, "neutral")
   
-  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",60,63,-50.0,2,0,35792161)
+  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",600,63,-50.0,2,0,35792161)
   self:setMoodString(pNpc, "neutral")
   
   pNpc = spawnMobile("chandrila", "chandriltech_contractor",60,44.2,-50.0,-6.3,113,35792162)
   self:setMoodString(pNpc, "npc_use_terminal_high")
   
-  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",60,34.5,-50.0,-2.9,90,35792162)
+  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",600,34.5,-50.0,-2.9,90,35792162)
   self:setMoodString(pNpc, "neutral")
   
-  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",60,48,-50.0,27.2,-90,35792163)
+  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",600,48,-50.0,27.2,-90,35792163)
   self:setMoodString(pNpc, "neutral")
-  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",60,48,-50.0,22.2,-90,35792163)
+  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",600,48,-50.0,22.2,-90,35792163)
   self:setMoodString(pNpc, "neutral")
-  pNpc = spawnMobile("chandrila", "stormtrooper",60,18,-50.0,25,90,35792163)
+  pNpc = spawnMobile("chandrila", "stormtrooper",600,18,-50.0,25,90,35792163)
   self:setMoodString(pNpc, "neutral")
   
-  pNpc = spawnMobile("chandrila", "imperial_major",60,27.4,-50.0,20.4,31,35792163)
+  pNpc = spawnMobile("chandrila", "imperial_major",600,27.4,-50.0,20.4,31,35792163)
   self:setMoodString(pNpc, "npc_accusing")
   pNpc = spawnMobile("chandrila", "chandriltech_contractor",60,29.1,-50.0,22.5,-146,35792163)
   self:setMoodString(pNpc, "npc_consoling")
-  pNpc = spawnMobile("chandrila", "imperial_lance_corporal",60,30,-50.0,27.8,0,35792163)
+  pNpc = spawnMobile("chandrila", "imperial_lance_corporal",600,30,-50.0,27.8,0,35792163)
   self:setMoodString(pNpc, "npc_use_terminal_high")
-  pNpc = spawnMobile("chandrila", "imperial_second_lieutenant",60,32.3,-50.0,30,-90,35792163)
+  pNpc = spawnMobile("chandrila", "imperial_second_lieutenant",600,32.3,-50.0,30,-90,35792163)
   self:setMoodString(pNpc, "npc_use_terminal_high")
-  pNpc = spawnMobile("chandrila", "imperial_sergeant",60,40.8,-50.0,22.1,180,35792163)
-  self:setMoodString(pNpc, "npc_use_terminal_high")
-  
-  pNpc = spawnMobile("chandrila", "stormtrooper",60,2.3,-50.0,70.4,90,35792165)
-  self:setMoodString(pNpc, "neutral")
-  
-  pNpc = spawnMobile("chandrila", "stormtrooper",60,2.3,-50.0,75.3,90,35792165)
-  self:setMoodString(pNpc, "neutral")
-  
-  pNpc = spawnMobile("chandrila", "imperial_sergeant",60,32.6,-50.0,73.2,190,35792165)
+  pNpc = spawnMobile("chandrila", "imperial_sergeant",600,40.8,-50.0,22.1,180,35792163)
   self:setMoodString(pNpc, "npc_use_terminal_high")
   
-  pNpc = spawnMobile("chandrila", "stormtrooper",60,28.2,-50.0,49.7,0,35792165)
+  pNpc = spawnMobile("chandrila", "stormtrooper",600,2.3,-50.0,70.4,90,35792165)
   self:setMoodString(pNpc, "neutral")
   
-  pNpc = spawnMobile("chandrila", "stormtrooper",60,22.8,-50.0,49.7,0,35792165)
+  pNpc = spawnMobile("chandrila", "stormtrooper",600,2.3,-50.0,75.3,90,35792165)
   self:setMoodString(pNpc, "neutral")
   
-  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",60,-21.5,-50.0,78.2,-90,35792167)
+  pNpc = spawnMobile("chandrila", "imperial_sergeant",600,32.6,-50.0,73.2,190,35792165)
+  self:setMoodString(pNpc, "npc_use_terminal_high")
+  
+  pNpc = spawnMobile("chandrila", "stormtrooper",600,28.2,-50.0,49.7,0,35792165)
   self:setMoodString(pNpc, "neutral")
-  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",60,-21.5,-50.0,67.6,-90,35792167)
+  
+  pNpc = spawnMobile("chandrila", "stormtrooper",600,22.8,-50.0,49.7,0,35792165)
+  self:setMoodString(pNpc, "neutral")
+  
+  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",600,-21.5,-50.0,78.2,-90,35792167)
+  self:setMoodString(pNpc, "neutral")
+  pNpc = spawnMobile("chandrila", "chandriltech_security_guard",600,-21.5,-50.0,67.6,-90,35792167)
   self:setMoodString(pNpc, "neutral")
   
   
@@ -698,11 +698,11 @@ function ChandrilTechScreenPlay:spawnMobiles()
 --  spawnMobile("chandrila", "dark_trooper_inactive",60,-116,-50,34,90,35792167)
   spawnMobile("chandrila", "dark_trooper_inactive",60,-116,-50,32,90,35792167)
   
-  spawnMobile("chandrila", "at_st",60,-130,-50,72,90,35792167)
-  spawnMobile("chandrila", "at_st",60,-130,-50,62,90,35792167)
-  spawnMobile("chandrila", "at_st",60,-130,-50,52,90,35792167)
-  spawnMobile("chandrila", "at_st",60,-130,-50,42,90,35792167)
-  spawnMobile("chandrila", "at_st",60,-130,-50,32,90,35792167)
+  spawnMobile("chandrila", "at_st",600,-130,-50,72,90,35792167)
+  spawnMobile("chandrila", "at_st",600,-130,-50,62,90,35792167)
+  spawnMobile("chandrila", "at_st",600,-130,-50,52,90,35792167)
+  spawnMobile("chandrila", "at_st",600,-130,-50,42,90,35792167)
+  spawnMobile("chandrila", "at_st",600,-130,-50,32,90,35792167)
 end
 
 
@@ -834,28 +834,28 @@ function ChandrilTechScreenPlay:notifySpawnArea4(pActiveArea4, pMovingObject, pP
       player:sendSystemMessage("ATTENTION: Protocol 77 Initiated.. Transmission Sent.. Initiating Data Wipe on Mainframes.")
       player:playMusicMessage("sound/amb_alarm_air_raid.snd")
            
-      local pMob1 = spawnMobile("chandrila", "jakku_black_trooper_1",60,-45.7,-50.0,116,-90,35792171)       
-      local pMob2 = spawnMobile("chandrila", "jakku_battle_droid",60,58.2,-20,27.4,0,35792156)
-      local pMob3 = spawnMobile("chandrila", "jakku_battle_droid",60,-27.1,-20,-0.6,-90,35792170)     
-      local pMob4 = spawnMobile("chandrila", "jakku_battle_droid",60,-55.1,-20,119,-90,35792171)
-      local pMob5 = spawnMobile("chandrila", "jakku_battle_droid",60,-55.1,-20,113,-90,35792171)
-      local pMob6 = spawnMobile("chandrila", "jakku_battle_droid",60,60,-20,59,90,35792157)
-      local pMob7 = spawnMobile("chandrila", "jakku_battle_droid",60,28,-20,61,135,35792151)
-      local pMob8 = spawnMobile("chandrila", "jakku_battle_droid",60,3.9,-20,66,-177,35792151)
-      local pMob9 = spawnMobile("chandrila", "jakku_battle_droid",60,3.3,-20,65,-90,35792151)
-      local pMob10 = spawnMobile("chandrila", "jakku_battle_droid",60,3.1,-20,52,-90,35792151)
-      local pMob11 = spawnMobile("chandrila", "jakku_battle_droid",60,19,-20,113,180,35792153)
-      local pMob12 = spawnMobile("chandrila", "jakku_battle_droid",60,-3.8,-12,63,58,35792132)
-      local pMob13 = spawnMobile("chandrila", "jakku_battle_droid",60,-10.4,-12,80.8,-141,35792132)
-      local pMob14 = spawnMobile("chandrila", "jakku_battle_droid",60,29.8,-12,63,90,35792131)
-      local pMob15 = spawnMobile("chandrila", "jakku_battle_droid",60,29.8,-12,56.3,90,35792131)
-      local pMob16 = spawnMobile("chandrila", "jakku_battle_droid",60,58.8,-12,58,-90,35792131)
-      local pMob17 = spawnMobile("chandrila", "jakku_battle_droid",60,10.2,-12,26.4,90,35792128)
-      local pMob18 = spawnMobile("chandrila", "jakku_battle_droid",60,19.6,-12,28.6,90,35792128)
-      local pMob19 = spawnMobile("chandrila", "jakku_battle_droid",60,58.9,-50,37.7,0,35792159)
-      local pMob20 = spawnMobile("chandrila", "jakku_battle_droid",60,66.3,-50,37.7,0,35792159)
-      local pMob21 = spawnMobile("chandrila", "jakku_battle_droid",60,58.9,-50,64.9,180,35792159)
-      local pMob21 = spawnMobile("chandrila", "jakku_battle_droid",60,66.3,-50,64.9,180,35792159)
+      local pMob1 = spawnMobile("chandrila", "jakku_black_trooper_1",600,-45.7,-50.0,116,-90,35792171)       
+      local pMob2 = spawnMobile("chandrila", "jakku_battle_droid",600,58.2,-20,27.4,0,35792156)
+      local pMob3 = spawnMobile("chandrila", "jakku_battle_droid",600,-27.1,-20,-0.6,-90,35792170)     
+      local pMob4 = spawnMobile("chandrila", "jakku_battle_droid",600,-55.1,-20,119,-90,35792171)
+      local pMob5 = spawnMobile("chandrila", "jakku_battle_droid",600,-55.1,-20,113,-90,35792171)
+      local pMob6 = spawnMobile("chandrila", "jakku_battle_droid",600,60,-20,59,90,35792157)
+      local pMob7 = spawnMobile("chandrila", "jakku_battle_droid",600,28,-20,61,135,35792151)
+      local pMob8 = spawnMobile("chandrila", "jakku_battle_droid",600,3.9,-20,66,-177,35792151)
+      local pMob9 = spawnMobile("chandrila", "jakku_battle_droid",600,3.3,-20,65,-90,35792151)
+      local pMob10 = spawnMobile("chandrila", "jakku_battle_droid",600,3.1,-20,52,-90,35792151)
+      local pMob11 = spawnMobile("chandrila", "jakku_battle_droid",600,19,-20,113,180,35792153)
+      local pMob12 = spawnMobile("chandrila", "jakku_battle_droid",600,-3.8,-12,63,58,35792132)
+      local pMob13 = spawnMobile("chandrila", "jakku_battle_droid",600,-10.4,-12,80.8,-141,35792132)
+      local pMob14 = spawnMobile("chandrila", "jakku_battle_droid",600,29.8,-12,63,90,35792131)
+      local pMob15 = spawnMobile("chandrila", "jakku_battle_droid",600,29.8,-12,56.3,90,35792131)
+      local pMob16 = spawnMobile("chandrila", "jakku_battle_droid",600,58.8,-12,58,-90,35792131)
+      local pMob17 = spawnMobile("chandrila", "jakku_battle_droid",600,10.2,-12,26.4,90,35792128)
+      local pMob18 = spawnMobile("chandrila", "jakku_battle_droid",600,19.6,-12,28.6,90,35792128)
+      local pMob19 = spawnMobile("chandrila", "jakku_battle_droid",600,58.9,-50,37.7,0,35792159)
+      local pMob20 = spawnMobile("chandrila", "jakku_battle_droid",600,66.3,-50,37.7,0,35792159)
+      local pMob21 = spawnMobile("chandrila", "jakku_battle_droid",600,58.9,-50,64.9,180,35792159)
+      local pMob21 = spawnMobile("chandrila", "jakku_battle_droid",600,66.3,-50,64.9,180,35792159)
       
       spatialChat(pMob1, "Protocol 77 has been initiated.  This unit has been directed to terminate all sentients!")
           
