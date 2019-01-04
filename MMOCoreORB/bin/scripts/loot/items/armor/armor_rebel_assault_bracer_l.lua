@@ -1,7 +1,7 @@
 armor_rebel_assault_bracer_l = {
 	minimumLevel = 0,
 	maximumLevel = -1,
-	customObjectName = "New Republic Trooper Armor Right Bracer",
+	customObjectName = "New Republic Trooper Armor Left Bracer",
 	directObjectTemplate = "object/tangible/wearables/armor/rebel_assault/armor_rebel_assault_bracer_l.iff",
 	craftingValues = {
 		{"armor_rating",1,1,0},
