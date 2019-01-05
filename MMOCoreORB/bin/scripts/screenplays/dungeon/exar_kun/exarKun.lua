@@ -169,7 +169,7 @@ function exarKun:closeAuthorizationSui(pPlayer, pageId)
 
 	deleteData(playerID .. "exarKunID")
 end
---[[
+
 function exarKun:lockRooms(pExarKun)
 	if (pExarKun == nil) then
 		return
@@ -394,7 +394,7 @@ function exarKun:onAssassinationTargetKilled(pTarget, pKiller)
 	return 1
 end
 
---]]
+
 
 
 function exarKun:transportPlayer(pPlayer)
