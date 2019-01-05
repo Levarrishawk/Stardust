@@ -13,7 +13,7 @@ exarKun = ScreenPlay:new {
 		exar_kun = 152, -- TODO  Add Badge and get proper badge id #	
 	},
 
-	lockedRooms = { "r3", "r5", "r7"},
+	--lockedRooms = { "r3", "r5", "r7"},
 
 }
 
@@ -178,7 +178,7 @@ function exarKun:closeAuthorizationSui(pPlayer, pageId)
 
 	deleteData(playerID .. "exarKunID")
 end
-
+--[[
 function exarKun:lockRooms(pExarKun)
 	if (pExarKun == nil) then
 		return
@@ -214,7 +214,7 @@ function exarKun:unlockRoom(pExarKun, roomName)
 	end
 end
 
---[[
+
 function exarKun:setupUnlockRoom1(pTarget)
   if (pTarget == nil) then
     return
