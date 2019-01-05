@@ -48,7 +48,8 @@ function exarKun:sendAuthorizationSui(pPlayer, pLeader)
 	
 
 	local sui = SuiMessageBox.new("exarKun", "authorizationSuiCallback")
-
+  
+  
 	sui.setTitle("Exar Kun Catcombs")
 	sui.setPrompt(CreatureObject(pLeader):getFirstName() .. " has granted you authorization to travel to the Exar Kun Catacombs.  Do you accept this travel offer?")
 	sui.setOkButtonText("Yes")
@@ -60,9 +61,16 @@ function exarKun:sendAuthorizationSui(pPlayer, pLeader)
 	
 end
 
-function exarKun:authorizationSuiCallback(pPlayer, pSui, eventIndex, args)
-
-	createEvent(1000, "exarKun", "transportPlayer", pPlayer, "")
+function exarKun:authorizationSuiCallback(pPlayer, pSui, eventIndex, args, ...)
+  local cancelPressed = (eventIndex == 1)
+  local args = {...}
+ 
+  if (cancelPressed) then
+    CreatureObject(pPlayer):sendSystemMessage("You decline to enter the instance.")   
+    return 
+  elseif (eventIndex == 0) then -- Teleport
+	 createEvent(1000, "exarKun", "transportPlayer", pPlayer, "")
+	end 
 end
 
 function exarKun:closeAuthorizationSui(pPlayer, pageId)
