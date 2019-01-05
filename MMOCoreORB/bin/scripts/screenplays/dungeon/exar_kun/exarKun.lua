@@ -9,7 +9,7 @@ registerScreenPlay("exarKun", true)
 
 function exarKun:start()
 	if (isZoneEnabled("yavin4")) then
-    self:spawnMobs()
+    --self:spawnMobs()
 	end
 end
 
