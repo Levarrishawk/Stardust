@@ -452,7 +452,7 @@ function exarKun:getBuildingFaction(pExarKun)
 end
 --]]
 
-function exarKun:onEnterCorvette(pExarKun, pPlayer)
+function exarKun:onEnterexarKun(pExarKun, pPlayer)
 	if not SceneObject(pPlayer):isPlayerCreature() then
 		return 0
 	end
@@ -475,7 +475,7 @@ function exarKun:onEnterCorvette(pExarKun, pPlayer)
 	return 0
 end
 
-function exarKun:onExitCorvette(pExarKun, pPlayer)
+function exarKun:onExitexarKun(pExarKun, pPlayer)
 	if not SceneObject(pPlayer):isPlayerCreature() then
 		return 0
 	end
