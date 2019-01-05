@@ -326,7 +326,7 @@ function exarKun:setupSceneObjects(pExarKun)
 		end
 	end
 end
---]]
+
 
 function exarKun:spawnNpcs(pExarKun)
 	if (pExarKun == nil) then
@@ -406,7 +406,7 @@ function exarKun:onAssassinationTargetKilled(pTarget, pKiller)
 	return 1
 end
 
-
+--]]
 
 
 function exarKun:transportPlayer(pPlayer)
@@ -445,9 +445,9 @@ function exarKun:startQuest(pExarKun, questType)
 	writeStringData("exarKunQuestType:" .. exarKunID, questType)
 	createEvent(5 * 60 * 1000, "exarKun", "handleexarKunTimer", pExarKun, "")
 
-	self:setupSceneObjects(pExarKun)
-	self:spawnNpcs(pExarKun)
-	self:lockRooms(pExarKun)
+	--self:setupSceneObjects(pExarKun)
+	--self:spawnNpcs(pExarKun)
+	--self:lockRooms(pExarKun)
 end
 
 --[[
