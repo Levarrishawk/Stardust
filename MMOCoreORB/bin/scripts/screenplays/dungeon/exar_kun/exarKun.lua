@@ -31,6 +31,8 @@ function exarKun:activate(pPlayer, faction, questType)
   writeData("exarKunStartTime:", os.time())
   writeData("exarKun:occupiedState", 1)  -- TO DO: Need to create the timer and conditions to reset the state of the instance.
   
+  createEvent(5 * 60 * 1000, "exarKun", "handleCorvetteTimer", "")
+  
 	if (CreatureObject(pPlayer):isGrouped()) then
 		local groupSize = CreatureObject(pPlayer):getGroupSize()
 
