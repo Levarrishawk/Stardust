@@ -53,7 +53,7 @@ shuttleportLandedTime = 120
 starportLandedTime = 120
 
 
-corellia = {
+corellia = {   -- 0
 	weatherEnabled = 1,
 	gcwEnabled = 1,
 
@@ -100,7 +100,7 @@ corellia = {
 	}
 }
 
-dantooine = {
+dantooine = { -- 1
 	weatherEnabled = 1,
 	gcwEnabled = 1,
 
@@ -140,7 +140,7 @@ dantooine = {
 	}
 }
 
-dathomir = {
+dathomir = { -- 2
 	weatherEnabled = 1,
 	gcwEnabled = 1,
 
@@ -201,7 +201,7 @@ dathomir = {
 	}
 }
 
-endor = {
+endor = { -- 3
 	weatherEnabled = 1,
 	gcwEnabled = 1,
 
@@ -243,7 +243,7 @@ endor = {
 	}
 }
 
-lok = {
+lok = { -- 4
 	weatherEnabled = 1,
 	gcwEnabled = 1,
 
@@ -282,7 +282,7 @@ lok = {
 	}
 }
 
-naboo = {
+naboo = { -- 5
 	weatherEnabled = 1,
 	gcwEnabled = 1,
 
@@ -342,7 +342,7 @@ naboo = {
 	}
 }
 
-rori = {
+rori = { -- 6
 	weatherEnabled = 1,
 	gcwEnabled = 1,
 
@@ -421,7 +421,7 @@ rori = {
 	}
 }
 
-talus = {
+talus = { -- 7
 	weatherEnabled = 1,
 	gcwEnabled = 1,
 
@@ -505,7 +505,7 @@ talus = {
 	}
 }
 
-tatooine = {
+tatooine = { -- 8
 	weatherEnabled = 1,
 	gcwEnabled = 1,
 
@@ -570,7 +570,7 @@ tatooine = {
 	}
 }
 
-yavin4 = {
+yavin4 = { -- 9
 	weatherEnabled = 1,
 	gcwEnabled = 1,
 
@@ -609,7 +609,7 @@ yavin4 = {
 	}
 }
 
-space_corellia = {
+space_corellia = { -- 10
 	weatherEnabled = 0,
 	gcwEnabled = 0,
 
@@ -621,7 +621,7 @@ space_corellia = {
 	}
 }
 
-space_dantooine = {
+space_dantooine = { -- 11
 	weatherEnabled = 0,
 	gcwEnabled = 0,
 
@@ -635,7 +635,7 @@ space_dantooine = {
 	}
 }
 
-space_dathomir = {
+space_dathomir = { -- 12
 	weatherEnabled = 0,
 	gcwEnabled = 0,
 
@@ -647,7 +647,7 @@ space_dathomir = {
 	}
 }
 
-space_endor = {
+space_endor = { -- 13
 	weatherEnabled = 0,
 	gcwEnabled = 0,
 
@@ -659,7 +659,7 @@ space_endor = {
 	}
 }
 
-space_lok = {
+space_lok = { -- 14
 	weatherEnabled = 0,
 	gcwEnabled = 0,
 
@@ -670,7 +670,7 @@ space_lok = {
 	}
 }
 
-space_naboo = {
+space_naboo = { -- 15
 	weatherEnabled = 0,
 	gcwEnabled = 0,
 
@@ -681,7 +681,7 @@ space_naboo = {
 	}
 }
 
-space_tatooine = {
+space_tatooine = { -- 16
 	weatherEnabled = 0,
 	gcwEnabled = 0,
 
@@ -690,7 +690,7 @@ space_tatooine = {
 	}
 }
 
-space_yavin4 = {
+space_yavin4 = { -- 17
 	weatherEnabled = 0,
 	gcwEnabled = 0,
 
@@ -702,17 +702,17 @@ space_yavin4 = {
 	}
 }
 
-tutorial = {
+tutorial = { -- 18
 	weatherEnabled = 0,
 	gcwEnabled = 0,
 }
 
-dungeon1 = {
+dungeon1 = { -- 19
 	weatherEnabled = 0,
 	gcwEnabled = 0,
 }
 
-jakku = {
+jakku = { -- 20
   weatherEnabled = 1,
   gcwEnabled = 0,
   
@@ -721,7 +721,7 @@ jakku = {
   },
 }
 
-chandrila = {
+chandrila = { -- 21
   weatherEnabled = 1,
   gcwEnabled = 1,
   
@@ -741,7 +741,7 @@ chandrila = {
   },
 }
 
-kaas = {
+kaas = { -- 22
   weatherEnabled = 1,
   gcwEnabled = 1,
   
@@ -755,7 +755,7 @@ kaas = {
       {"kaas_kaas_city", -6131,2715,0,300,145},       
   },
 }
-hutta = {
+hutta = { -- 23
   weatherEnabled = 1,
   gcwEnabled = 1,
   
@@ -767,7 +767,7 @@ hutta = {
       {"hutta_jiguuna",4716,1937,0,15,150},   
   },
 }
-coruscant = {
+coruscant = { -- 24
   weatherEnabled = 1,
   gcwEnabled = 1,
   
@@ -784,7 +784,7 @@ coruscant = {
       {"coruscant_imperial_palace", -120,3311,0,30,146},   
   },
 }
-moraband = {
+moraband = { -- 25
   weatherEnabled = 1,
   gcwEnabled = 1,
   
