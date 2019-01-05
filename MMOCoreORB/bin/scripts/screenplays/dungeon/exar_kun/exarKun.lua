@@ -13,6 +13,7 @@ function exarKun:start()
 	end
 end
 
+
 function exarKun:activate(pPlayer, faction, questType)
 	if (not isZoneEnabled("yavin4")) then
 		CreatureObject(pPlayer):sendSystemMessage("That area is currently unavailable. Please try again later.") 
@@ -27,6 +28,7 @@ function exarKun:activate(pPlayer, faction, questType)
 	
 	createEvent(1000, "exarKun", "transportPlayer", pPlayer, "")
   
+  writeData("exarKunStartTime:", os.time())
   writeData("exarKun:occupiedState", 1)  -- TO DO: Need to create the timer and conditions to reset the state of the instance.
   
 	if (CreatureObject(pPlayer):isGrouped()) then
@@ -48,11 +50,7 @@ end
 function exarKun:sendAuthorizationSui(pPlayer, pLeader)
 	if (pPlayer == nil) then
 		return
-	end
-
-	
-
-	
+	end	
 
 	local sui = SuiMessageBox.new("exarKun", "authorizationSuiCallback")
   
@@ -103,7 +101,56 @@ function exarKun:transportPlayer(pPlayer)
 	SceneObject(pPlayer):switchZone("yavin4", -11.8, 0.2, -121.8, 480000293)
 end
 
+function exarKun:handleTimer(pCell)
+  local startTime = readData("exarKunStartTime:")
+  local timeLeftSecs = 3600 - (os.time() - startTime)
+  local timeLeft = math.floor(timeLeftSecs / 60)
 
+  if (timeLeft > 10) then
+    self:broadcastToPlayers( "@dungeon/corvette:timer_" .. timeLeft)
+    createEvent(5 * 60 * 1000, "exarKun", "handleTimer", "")
+  elseif (timeLeft >= 3) then
+    self:broadcastToPlayers(pCell, "@dungeon/corvette:timer_" .. timeLeft)
+    createEvent(60 * 1000, "exarKun", "handleTimer", "")
+  elseif (timeLeft >= 2) then
+    self:broadcastToPlayers(pCell, "@dungeon/corvette:timer_" .. timeLeft)
+    createEvent(30 * 1000, "exarKun", "handleTimer", "")
+  elseif (timeLeftSecs >= 90) then
+    self:broadcastToPlayers(pCell, "@dungeon/corvette:timer_90s")
+    createEvent(30 * 1000, "exarKun", "handleTimer", "")
+  elseif (timeLeftSecs >= 60) then
+    self:broadcastToPlayers(pCell, "@dungeon/corvette:timer_1")
+    createEvent(30 * 1000, "exarKun", "handleTimer", "")
+  elseif (timeLeftSecs >= 30) then
+    self:broadcastToPlayers(pCell, "@dungeon/corvette:timer_30s")
+    createEvent(20 * 1000, "exarKun", "handleTimer", "")
+  elseif (timeLeftSecs >= 10) then
+    self:broadcastToPlayers(pCell, "@dungeon/corvette:timer_10s")
+    createEvent(10 * 1000, "exarKun", "handleTimer", "")
+  else
+    self:resetInstance()
+  end
+end
+
+function exarKun:broadcastToPlayers(message)
+  for i = 1, 66, 1 do
+    local pCell = BuildingObject(480000292)
+
+    if (pCell ~= nil) then
+      for j = 1, SceneObject(pCell):getContainerObjectsSize(), 1 do
+        local pObject = SceneObject(pCell):getContainerObject(j - 1)
+        if SceneObject(pObject):isPlayerCreature() then
+          CreatureObject(pObject):sendSystemMessage(message)
+        end
+      end
+    end
+  end
+end
+
+function exarKun:resetInstance()
+  
+  writeData("exarKun:occupiedState", 0)
+end
 
 
 
