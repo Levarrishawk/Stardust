@@ -278,7 +278,7 @@ function exarKun:setupUnlockRoom3(pTarget)
   createObserver(OBJECTDESTRUCTION, "exarKun", "unlockRoom", pTarget, pExarKun, roomName )
 end
 
---]]
+
 
 function exarKun:setupSceneObjects(pExarKun)
 	if (pExarKun == nil) then
@@ -323,6 +323,7 @@ function exarKun:setupSceneObjects(pExarKun)
 		end
 	end
 end
+--]]
 
 function exarKun:spawnNpcs(pExarKun)
 	if (pExarKun == nil) then
