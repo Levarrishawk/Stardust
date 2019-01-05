@@ -15,8 +15,8 @@ end
 
 function exarKunEntryWay:spawnSceneObjects()
 --Entry
-  spawnSceneObject("yavin4", "object/static/structure/content/exar_kun_temple_cave_entrance.iff", 5026, 73, 5562, 0, math.rad(0) )
-  
+  spawnSceneObject("yavin4", "object/static/structure/content/exar_kun_temple_cave_entrance.iff", 5026, 73, 5562, 0, math.rad(-90) )
+  spawnSceneObject("yavin4", "object/tangible/terminal/terminal_exar_kun_entrance.iff", 5025, 73, 5574, 0, math.rad(0) )
 
 end
 
