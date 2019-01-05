@@ -496,32 +496,32 @@ function exarKun:handleTooMany(pPlayer)
 	createEvent(2 * 1000, "exarKun", "ejectPlayer", pPlayer, "")
 end
 
-function exarKun:handleCorvetteTimer(pExarKun)
+function exarKun:handleexarKunTimer(pExarKun)
 	local startTime = readData("exarKunStartTime:" .. SceneObject(pExarKun):getObjectID())
 	local timeLeftSecs = 3600 - (os.time() - startTime)
 	local timeLeft = math.floor(timeLeftSecs / 60)
 
 	if (timeLeft > 10) then
 		self:broadcastToPlayers(pExarKun, "@dungeon/corvette:timer_" .. timeLeft)
-		createEvent(5 * 60 * 1000, "exarKun", "handleCorvetteTimer", pExarKun, "")
+		createEvent(5 * 60 * 1000, "exarKun", "handleexarKunTimer", pExarKun, "")
 	elseif (timeLeft >= 3) then
 		self:broadcastToPlayers(pExarKun, "@dungeon/corvette:timer_" .. timeLeft)
-		createEvent(60 * 1000, "exarKun", "handleCorvetteTimer", pExarKun, "")
+		createEvent(60 * 1000, "exarKun", "handleexarKunTimer", pExarKun, "")
 	elseif (timeLeft >= 2) then
 		self:broadcastToPlayers(pExarKun, "@dungeon/corvette:timer_" .. timeLeft)
-		createEvent(30 * 1000, "exarKun", "handleCorvetteTimer", pExarKun, "")
+		createEvent(30 * 1000, "exarKun", "handleexarKunTimer", pExarKun, "")
 	elseif (timeLeftSecs >= 90) then
 		self:broadcastToPlayers(pExarKun, "@dungeon/corvette:timer_90s")
-		createEvent(30 * 1000, "exarKun", "handleCorvetteTimer", pExarKun, "")
+		createEvent(30 * 1000, "exarKun", "handleexarKunTimer", pExarKun, "")
 	elseif (timeLeftSecs >= 60) then
 		self:broadcastToPlayers(pExarKun, "@dungeon/corvette:timer_1")
-		createEvent(30 * 1000, "exarKun", "handleCorvetteTimer", pExarKun, "")
+		createEvent(30 * 1000, "exarKun", "handleexarKunTimer", pExarKun, "")
 	elseif (timeLeftSecs >= 30) then
 		self:broadcastToPlayers(pExarKun, "@dungeon/corvette:timer_30s")
-		createEvent(20 * 1000, "exarKun", "handleCorvetteTimer", pExarKun, "")
+		createEvent(20 * 1000, "exarKun", "handleexarKunTimer", pExarKun, "")
 	elseif (timeLeftSecs >= 10) then
 		self:broadcastToPlayers(pExarKun, "@dungeon/corvette:timer_10s")
-		createEvent(10 * 1000, "exarKun", "handleCorvetteTimer", pExarKun, "")
+		createEvent(10 * 1000, "exarKun", "handleexarKunTimer", pExarKun, "")
 	else
 		self:handleQuestFailure(pExarKun)
 	end
@@ -702,9 +702,9 @@ function exarKun:ejectPlayer(pPlayer)
 			CreatureObject(pPlayer):sendSystemMessage("@dungeon/corvette:reward") -- You have done well. Return to the person who gave you this assignment and receive your reward.
 			deleteData(playerID .. ":exarKunMissionComplete")
 		else
-			removeQuestStatus(playerID .. ":exarKunCorvetteQuest")
-			removeQuestStatus(playerID .. ":exarKunCorvetteStep")
-			removeQuestStatus(playerID .. ":exarKunCorvetteQuestType")
+			removeQuestStatus(playerID .. ":exarKunQuest")
+			removeQuestStatus(playerID .. ":exarKunStep")
+			removeQuestStatus(playerID .. ":exarKunQuestType")
 		end
 	end
 
