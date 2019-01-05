@@ -45,7 +45,7 @@ function exarKun:sendAuthorizationSui(pPlayer, pLeader)
 
 	
 
-	writeData(SceneObject(pPlayer):getObjectID() .. "exarKunID", SceneObject(pExarKun):getObjectID())
+	
 
 	local sui = SuiMessageBox.new("exarKun", "authorizationSuiCallback")
 
