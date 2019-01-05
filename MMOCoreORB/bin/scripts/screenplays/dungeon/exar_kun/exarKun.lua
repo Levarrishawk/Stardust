@@ -714,7 +714,7 @@ function exarKun:ejectPlayer(pPlayer)
 		printLuaError("exarKun:ejectPlayer attempted to eject a player to a zone that was not enabled.")
 	end
 
-	self:doPlayerCleanup(pPlayer)
+	--self:doPlayerCleanup(pPlayer)
 end
 --[[
 function exarKun:doPlayerCleanup(pPlayer)
