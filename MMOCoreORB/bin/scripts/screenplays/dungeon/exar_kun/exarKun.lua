@@ -9,13 +9,13 @@ exarKun = ScreenPlay:new {
 		{ planet = "yavin4", x = 164, y = -2937 },		
 	},
 
---[[
+
 	missionBadges = {
 		exar_kun = 152, -- TODO  Add Badge and get proper badge id #	
 	},
 
 	lockedRooms = { "r3", "r5", "r7"},
---]]
+
 }
 
 registerScreenPlay("exarKun", true)
