@@ -39,7 +39,7 @@ end
 
 
 function exarKun:sendAuthorizationSui(pPlayer, pLeader)
-	if (pPlayer == nil or pExarKun == nil) then
+	if (pPlayer == nil) then
 		return
 	end
 
@@ -48,16 +48,16 @@ function exarKun:sendAuthorizationSui(pPlayer, pLeader)
 	writeData(SceneObject(pPlayer):getObjectID() .. "exarKunID", SceneObject(pExarKun):getObjectID())
 
 	local sui = SuiMessageBox.new("exarKun", "authorizationSuiCallback")
-	sui.setTargetNetworkId(SceneObject(pExarKun):getObjectID())
-	local exarKunName = ("Exar Kun Catacombs")
+
 	sui.setTitle("Exar Kun Catcombs")
-	sui.setPrompt(CreatureObject(pLeader):getFirstName() .. " has granted you authorization to travel to " .. exarKunName ..". Do you accept this travel offer?")
+	sui.setPrompt(CreatureObject(pLeader):getFirstName() .. " has granted you authorization to travel to the Exar Kun Catacombs.  Do you accept this travel offer?")
 	sui.setOkButtonText("Yes")
 	sui.setCancelButtonText("No")
 
 	local pageId = sui.sendTo(pPlayer)
 
 	createEvent(30 * 1000, "exarKun", "closeAuthorizationSui", pPlayer, pageId)
+	
 end
 
 function exarKun:authorizationSuiCallback(pPlayer, pSui, eventIndex, args)
