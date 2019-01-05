@@ -19,9 +19,16 @@ function exarKun:activate(pPlayer, faction, questType)
 		return false
 	end
 	
+	if (readData("exarKun:occupiedState") == 1) then
+	   CreatureObject(pPlayer):sendSystemMessage("That instance is currently occupied, please try a different instance.")
+	   return false
+	end   
+	
 	
 	createEvent(1000, "exarKun", "transportPlayer", pPlayer, "")
-
+  
+  writeData("exarKun:occupiedState", 1)  -- TO DO: Need to create the timer and conditions to reset the state of the instance.
+  
 	if (CreatureObject(pPlayer):isGrouped()) then
 		local groupSize = CreatureObject(pPlayer):getGroupSize()
 

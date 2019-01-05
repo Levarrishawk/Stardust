@@ -16,6 +16,11 @@ function exarKunEntryMenuComponent:handleObjectMenuSelect(pSceneObject, pPlayer,
 	if not CreatureObject(pPlayer):isInRangeWithObject(pSceneObject, 6) then
 		return 0
 	end
+	
+	if not (CreatureObject(pPlayer):isGrouped()) then
+	  CreatureObject(pPlayer):sendSystemMessage("You must be in a group to use this object.")  
+	  return 0
+	end
 
 	if selectedID == 20 then
 	  createEvent(1000, "exarKun", "activate", pPlayer, "")
