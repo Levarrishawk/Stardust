@@ -9,12 +9,13 @@ exarKun = ScreenPlay:new {
 		{ planet = "yavin4", x = 164, y = -2937 },		
 	},
 
+--[[
 	missionBadges = {
 		exar_kun = 152, -- TODO  Add Badge and get proper badge id #	
 	},
 
-	--lockedRooms = { "r3", "r5", "r7"},
-
+	lockedRooms = { "r3", "r5", "r7"},
+--]]
 }
 
 registerScreenPlay("exarKun", true)
@@ -51,11 +52,11 @@ function exarKun:activate(pPlayer, faction, questType)
 		CreatureObject(pPlayer):sendSystemMessage("That area is currently unavailable. Please try again later.") 
 		return false
 	end
-
+--[[
 	local ids = nil
 	for i = 1, #self.buildings, 1 do
 		if self.buildings[i].faction == faction then
-			ids = self.buildings[i].buildingIds
+			ids = self.buildings[i].buildingIds 
 		end
 	end
 
@@ -63,7 +64,7 @@ function exarKun:activate(pPlayer, faction, questType)
 		CreatureObject(pPlayer):sendSystemMessage("You are unable to enter the instance at this time.")
 		return false
 	end
-
+--]]
 	local active = 1
 	local exarKunID = 0
 	for i = 1, #ids, 1 do
@@ -116,6 +117,7 @@ function exarKun:activate(pPlayer, faction, questType)
 	return true
 end
 
+--[[
 function exarKun:getFactionCRC(faction)
 	if faction == "imperial" then
 		return FACTIONIMPERIAL
@@ -125,6 +127,7 @@ function exarKun:getFactionCRC(faction)
 		return FACTIONNEUTRAL
 	end
 end
+--]]
 
 function exarKun:sendAuthorizationSui(pPlayer, pLeader, pExarKun)
 	if (pPlayer == nil or pExarKun == nil) then
@@ -447,6 +450,7 @@ function exarKun:startQuest(pExarKun, questType)
 	self:lockRooms(pExarKun)
 end
 
+--[[
 function exarKun:getBuildingFaction(pExarKun)
 	local templatePath = SceneObject(pExarKun):getTemplateObjectPath()
 	if string.find(templatePath, "imperial") ~= nil then
@@ -457,6 +461,7 @@ function exarKun:getBuildingFaction(pExarKun)
 		return "neutral"
 	end
 end
+--]]
 
 function exarKun:onEnterCorvette(pExarKun, pPlayer)
 	if not SceneObject(pPlayer):isPlayerCreature() then
@@ -682,10 +687,10 @@ function exarKun:ejectPlayer(pPlayer)
 
 	local faction = self:getBuildingFaction(pExarKun)
 
+
 	for i = 1, #self.escapePoints, 1 do
-		if self.escapePoints[i].faction == faction then
 			point = self.escapePoints[i]
-		end
+	
 	end
 
 	if point == nil then
@@ -722,21 +727,22 @@ function exarKun:ejectPlayer(pPlayer)
 
 	self:doPlayerCleanup(pPlayer)
 end
-
+--[[
 function exarKun:doPlayerCleanup(pPlayer)
 	if (pPlayer == nil) then
 		return
 	end
 
 	local playerID = SceneObject(pPlayer):getObjectID()
- --[[
+ 
 	deleteData(playerID .. ":code:armorybackroom55")    -- Need to change all of these to the handlers for the cells that will be locked..
 	deleteData(playerID .. ":code:bridge66")
 	deleteData(playerID .. ":code:officerquarters63")
 	deleteData(playerID .. ":code:officerquarters64")
-	--]]
+	
 
 end
+--]]
 
 function exarKun:doexarKunCleanup(pExarKun)
 	if (pExarKun == nil) then
