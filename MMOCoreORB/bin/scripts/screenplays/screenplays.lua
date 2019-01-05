@@ -803,4 +803,9 @@ includeFile("events/elysiumTerminalMenuComponent_02.lua")
 includeFile("poi/elysium_teleportation_network.lua")
 includeFile("events/elysiumTerminalMenuComponent_03.lua")
 
+-- Exar Kun
+includeFile("dungeon/exar_kun/exarKun.lua")
+includeFile("dungeon/exar_kun/exarKunSpawnMaps.lua")
+includeFile("events/exarKunEntryMenuComponent.lua")
+includeFile("dungeon/exar_kun/exarKunEntryWay.lua")
 

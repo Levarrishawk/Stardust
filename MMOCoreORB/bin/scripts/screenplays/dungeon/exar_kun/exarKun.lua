@@ -214,6 +214,69 @@ function exarKun:unlockRoom(pExarKun, roomName)
 	end
 end
 
+function exarKun:setupUnlockRoom1(pTarget)
+  if (pTarget == nil) then
+    return
+  end
+
+  local pExarKun = self:getExarKunObject(pTarget)
+
+  if (pExarKun == nil) then
+    return
+  end
+
+  local exarKunID = SceneObject(pExarKun):getObjectID()
+  local roomName = "r3"
+
+  if (readData("exarKunActive:" .. exarKunID) ~= 1) then
+    return
+  end
+
+  createObserver(OBJECTDESTRUCTION, "exarKun", "unlockRoom", pTarget, pExarKun, roomName )
+end
+
+function exarKun:setupUnlockRoom2(pTarget)
+  if (pTarget == nil) then
+    return
+  end
+
+  local pExarKun = self:getExarKunObject(pTarget)
+
+  if (pExarKun == nil) then
+    return
+  end
+
+  local exarKunID = SceneObject(pExarKun):getObjectID()
+  local roomName = "r5"
+
+  if (readData("exarKunActive:" .. exarKunID) ~= 1) then
+    return
+  end
+
+  createObserver(OBJECTDESTRUCTION, "exarKun", "unlockRoom", pTarget, pExarKun, roomName )
+end
+
+function exarKun:setupUnlockRoom2(pTarget)
+  if (pTarget == nil) then
+    return
+  end
+
+  local pExarKun = self:getExarKunObject(pTarget)
+
+  if (pExarKun == nil) then
+    return
+  end
+
+  local exarKunID = SceneObject(pExarKun):getObjectID()
+  local roomName = "r7"
+
+  if (readData("exarKunActive:" .. exarKunID) ~= 1) then
+    return
+  end
+
+  createObserver(OBJECTDESTRUCTION, "exarKun", "unlockRoom", pTarget, pExarKun, roomName )
+end
+
 function exarKun:setupSceneObjects(pExarKun)
 	if (pExarKun == nil) then
 		return
@@ -314,6 +377,8 @@ function exarKun:setupAssassinationTarget(pTarget)
 
 	createObserver(OBJECTDESTRUCTION, "exarKun", "onAssassinationTargetKilled", pTarget)
 end
+
+
 
 function exarKun:onAssassinationTargetKilled(pTarget, pKiller)
 	if (pTarget == nil or pKiller == nil) then
