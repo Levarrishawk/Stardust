@@ -214,6 +214,7 @@ function exarKun:unlockRoom(pExarKun, roomName)
 	end
 end
 
+--[[
 function exarKun:setupUnlockRoom1(pTarget)
   if (pTarget == nil) then
     return
@@ -256,7 +257,7 @@ function exarKun:setupUnlockRoom2(pTarget)
   createObserver(OBJECTDESTRUCTION, "exarKun", "unlockRoom", pTarget, pExarKun, roomName )
 end
 
-function exarKun:setupUnlockRoom2(pTarget)
+function exarKun:setupUnlockRoom3(pTarget)
   if (pTarget == nil) then
     return
   end
@@ -276,6 +277,8 @@ function exarKun:setupUnlockRoom2(pTarget)
 
   createObserver(OBJECTDESTRUCTION, "exarKun", "unlockRoom", pTarget, pExarKun, roomName )
 end
+
+--]]
 
 function exarKun:setupSceneObjects(pExarKun)
 	if (pExarKun == nil) then
