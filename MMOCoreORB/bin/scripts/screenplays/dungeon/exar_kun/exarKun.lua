@@ -52,19 +52,17 @@ function exarKun:activate(pPlayer, faction, questType)
 		CreatureObject(pPlayer):sendSystemMessage("That area is currently unavailable. Please try again later.") 
 		return false
 	end
---[[
+
 	local ids = nil
-	for i = 1, #self.buildings, 1 do
-		if self.buildings[i].faction == faction then
-			ids = self.buildings[i].buildingIds 
-		end
+	for i = 1, #self.buildings, 1 do		
+			ids = self.buildings[i].buildingIds 		
 	end
 
 	if ids == nil then
 		CreatureObject(pPlayer):sendSystemMessage("You are unable to enter the instance at this time.")
 		return false
 	end
---]]
+
 	local active = 1
 	local exarKunID = 0
 	for i = 1, #ids, 1 do
@@ -117,17 +115,7 @@ function exarKun:activate(pPlayer, faction, questType)
 	return true
 end
 
---[[
-function exarKun:getFactionCRC(faction)
-	if faction == "imperial" then
-		return FACTIONIMPERIAL
-	elseif faction == "rebel" then
-		return FACTIONREBEL
-	else
-		return FACTIONNEUTRAL
-	end
-end
---]]
+
 
 function exarKun:sendAuthorizationSui(pPlayer, pLeader, pExarKun)
 	if (pPlayer == nil or pExarKun == nil) then
@@ -439,6 +427,7 @@ end
 function exarKun:startQuest(pExarKun, questType)
 	local dungeonID = self:getNewDungeonID()
 	local exarKunID = SceneObject(pExarKun):getObjectID()
+	local questType = "assassinate"
 	writeData("exarKunDungeonID:" .. exarKunID, dungeonID)
 	writeData("exarKunActive:" .. exarKunID, 1)
 	writeData("exarKunStartTime:" .. exarKunID, os.time())
