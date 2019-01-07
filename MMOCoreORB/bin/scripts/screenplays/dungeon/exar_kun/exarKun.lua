@@ -133,6 +133,7 @@ function exarKun:handleTimer(pPlayer)
     CreatureObject(pPlayer):sendSystemMessage("@dungeon/corvette:timer_" .. timeLeft)
     createEvent(10 * 1000, "exarKun", "handleTimer", pPlayer, "")
   else
+    self:ejectAllPlayers()
     self:resetInstance()
   end
 end
@@ -164,6 +165,30 @@ function exarKun:broadcastToPlayers(pExarKun, message)
         if SceneObject(pObject):isPlayerCreature() then
           CreatureObject(pObject):sendSystemMessage(message)
         end
+      end
+    end
+  end
+end
+
+function exarKun:ejectPlayer(pPlayer)
+  if pPlayer == nil then
+    return
+  end
+
+  SceneObject(pPlayer):switchZone("yavin4", 5024.1, 73.2, 5585.1, 0)
+end
+
+function exarKun:ejectAllPlayers(pPlayer)
+
+  createEvent(1000, "exarKun", "ejectPlayer", pPlayer, "")
+  
+  if (CreatureObject(pPlayer):isGrouped()) then
+    local groupSize = CreatureObject(pPlayer):getGroupSize()
+
+    for i = 0, groupSize - 1, 1 do
+      local pMember = CreatureObject(pPlayer):getGroupMember(i)
+      if pMember ~= nil and pMember ~= pPlayer and CreatureObject(pPlayer):isInRangeWithObject(pMember, 50) and not SceneObject(pMember):isAiAgent() then
+        self:ejectPlayer(pMember, pPlayer)
       end
     end
   end
