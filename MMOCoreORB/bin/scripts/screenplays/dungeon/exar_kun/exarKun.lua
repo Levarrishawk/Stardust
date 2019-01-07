@@ -106,7 +106,7 @@ function exarKun:transportPlayer(pPlayer)
 end
 
 function exarKun:handleTimer(pExarKun)
-  local pExarKun = self:getBuildingObject()
+  --local pExarKun = self:getBuildingObject()
   local startTime = readData("exarKunStartTime")
   local timeLeftSecs = 3600 - (os.time() - startTime)
   local timeLeft = math.floor(timeLeftSecs / 60)
