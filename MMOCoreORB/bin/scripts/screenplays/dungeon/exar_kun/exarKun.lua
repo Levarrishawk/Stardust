@@ -28,9 +28,7 @@ function exarKun:activate(pPlayer)
   
   local pExarKun = self:getBuildingObject()
   
-  local exarID = SceneObject(pExarKun):getObjectID()
-  
-  writeData("exarKunStartTime:" .. exarID, os.time()) 
+  writeData("exarKunStartTime", os.time()) 
   
   createEvent(1000, "exarKun", "transportPlayer", pPlayer, "")
   
@@ -109,7 +107,7 @@ end
 
 function exarKun:handleTimer(pExarKun)
   local pExarKun = self:getBuildingObject()
-  local startTime = readData("exarKunStartTime:" .. SceneObject(pExarKun):getObjectID())
+  local startTime = readData("exarKunStartTime")
   local timeLeftSecs = 3600 - (os.time() - startTime)
   local timeLeft = math.floor(timeLeftSecs / 60)
 
