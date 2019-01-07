@@ -13,20 +13,6 @@ function exarKun:start()
 	end
 end
 
-function exarKun:getBuildingObject()    
-  return getSceneObject(480000292)  -- Different parent for each instance script
-end
-
-function exarKun:getCell(cellName)
-  local pExarKun = self:getBuildingObject()
-
-  if (pExarKun == nil) then
-    printLuaError("Unable to get building object.")
-    return nil
-  end
-
-  return BuildingObject(pExarKun):getNamedCell(cellName)
-end
 
 function exarKun:activate(pPlayer, faction, questType)
 	if (not isZoneEnabled("yavin4")) then
@@ -42,12 +28,10 @@ function exarKun:activate(pPlayer, faction, questType)
 	
 	createEvent(1000, "exarKun", "transportPlayer", pPlayer, "")
   
-  local pExarKun = self:getBuildingObject()
-  
-  writeData("exarKunStartTime:" .. pExarKun, os.time()  )
+  writeData("exarKunStartTime:", os.time())
   writeData("exarKun:occupiedState", 1)  -- TO DO: Need to create the timer and conditions to reset the state of the instance.
   
-  
+  local pExarKun = self:getBuildingObject()
   
   createEvent(5 * 60 * 1000, "exarKun", "handleTimer", pExarKun, "")
   
@@ -122,7 +106,7 @@ function exarKun:transportPlayer(pPlayer)
 end
 
 function exarKun:handleTimer(pExarKun)
-  local startTime = readData("exarKunStartTime:" .. SceneObject(pExarKun):getObjectID())
+  local startTime = readData("exarKunStartTime:")
   local timeLeftSecs = 3600 - (os.time() - startTime)
   local timeLeft = math.floor(timeLeftSecs / 60)
 
@@ -152,9 +136,26 @@ function exarKun:handleTimer(pExarKun)
   end
 end
 
+function exarKun:getBuildingObject()
+  return getSceneObject(480000292)  -- Different parent for each instance script
+end
+
+function exarKun:getCell(cellName)
+  local pExarKun = self:getBuildingObject()
+  
+  if (pExarKun == nil) then
+    printLuaError("unable to get building object.")
+    return nil
+  end
+  
+  return BuildingObject(pExarKun):getNamedCell(cellName)  
+end
+
+
 function exarKun:broadcastToPlayers(pExarKun, message)
   for i = 1, 66, 1 do
-    local pCell = BuildingObject(pExarKun):getCell(i)
+  
+    local pCell = self:getCell()
 
     if (pCell ~= nil) then
       for j = 1, SceneObject(pCell):getContainerObjectsSize(), 1 do
