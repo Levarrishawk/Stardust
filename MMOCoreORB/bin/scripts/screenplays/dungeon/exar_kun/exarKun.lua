@@ -30,6 +30,7 @@ function exarKun:activate(pPlayer)
   
   writeData("exarKunStartTime", os.time()) 
   
+  CreatureObject(pPlayer):sendSystemMessage("Instance Started: You have 60 minutes remaining to complete the instance.") 
   createEvent(1000, "exarKun", "transportPlayer", pPlayer, "")
   
 	if (CreatureObject(pPlayer):isGrouped()) then
@@ -77,8 +78,7 @@ function exarKun:authorizationSuiCallback(pPlayer, pSui, eventIndex, args, ...)
   if (cancelPressed) then
     CreatureObject(pPlayer):sendSystemMessage("You decline to enter the instance.")   
     return 
-  elseif (eventIndex == 0) then -- Teleport
-   CreatureObject(pPlayer):sendSystemMessage("You have 60 minutes remaining to complete the instance.")  
+  elseif (eventIndex == 0) then -- Teleport 
 	 createEvent(1000, "exarKun", "transportPlayer", pPlayer, "")
 	end 
 end
