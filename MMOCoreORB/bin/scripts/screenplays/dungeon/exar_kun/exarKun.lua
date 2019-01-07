@@ -44,7 +44,7 @@ function exarKun:activate(pPlayer)
 	end
 	
 	writeData("exarKun:occupiedState", 1)  -- TO DO: Need to create the timer and conditions to reset the state of the instance.
-	createEvent(5 * 60 * 1000, "exarKun", "handleTimer", pExarKun, "")
+	createEvent(5 * 60 * 1000, "exarKun", "handleTimer", pPlayer, "")
 
 	return true
 end
@@ -113,25 +113,25 @@ function exarKun:handleTimer(pPlayer)
 
   if (timeLeft > 10) then   
     CreatureObject(pPlayer):sendSystemMessage("@dungeon/corvette:timer_" .. timeLeft)
-    createEvent(5 * 60 * 1000, "exarKun", "handleTimer", "")
+    createEvent(5 * 60 * 1000, "exarKun", "handleTimer", pPlayer, "")
   elseif (timeLeft >= 3) then
     CreatureObject(pPlayer):sendSystemMessage("@dungeon/corvette:timer_" .. timeLeft)
-    createEvent(60 * 1000, "exarKun", "handleTimer", "")
+    createEvent(60 * 1000, "exarKun", "handleTimer", pPlayer, "")
   elseif (timeLeft >= 2) then
     CreatureObject(pPlayer):sendSystemMessage("@dungeon/corvette:timer_" .. timeLeft)
-    createEvent(30 * 1000, "exarKun", "handleTimer", "")
+    createEvent(30 * 1000, "exarKun", "handleTimer", pPlayer, "")
   elseif (timeLeftSecs >= 90) then
     CreatureObject(pPlayer):sendSystemMessage("@dungeon/corvette:timer_" .. timeLeft)
-    createEvent(30 * 1000, "exarKun", "handleTimer", "")
+    createEvent(30 * 1000, "exarKun", "handleTimer", pPlayer, "")
   elseif (timeLeftSecs >= 60) then
     CreatureObject(pPlayer):sendSystemMessage("@dungeon/corvette:timer_" .. timeLeft)
-    createEvent(30 * 1000, "exarKun", "handleTimer", "")
+    createEvent(30 * 1000, "exarKun", "handleTimer", pPlayer, "")
   elseif (timeLeftSecs >= 30) then
     CreatureObject(pPlayer):sendSystemMessage("@dungeon/corvette:timer_" .. timeLeft)
-    createEvent(20 * 1000, "exarKun", "handleTimer", "")
+    createEvent(20 * 1000, "exarKun", "handleTimer", pPlayer, "")
   elseif (timeLeftSecs >= 10) then
     CreatureObject(pPlayer):sendSystemMessage("@dungeon/corvette:timer_" .. timeLeft)
-    createEvent(10 * 1000, "exarKun", "handleTimer", "")
+    createEvent(10 * 1000, "exarKun", "handleTimer", pPlayer, "")
   else
     self:resetInstance()
   end
