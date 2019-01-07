@@ -117,24 +117,31 @@ function exarKun:handleTimer(pExarKun)
 
   if (timeLeft > 10) then
     self:broadcastToPlayers( "@dungeon/corvette:timer_" .. timeLeft)
+    printLuaError("broadcast to players greater than 10")
     createEvent(5 * 60 * 1000, "exarKun", "handleTimer", pExarKun, "")
   elseif (timeLeft >= 3) then
     self:broadcastToPlayers(pExarKun, "@dungeon/corvette:timer_" .. timeLeft)
+    printLuaError("broadcast to players greater than 3")
     createEvent(60 * 1000, "exarKun", "handleTimer", pExarKun, "")
   elseif (timeLeft >= 2) then
     self:broadcastToPlayers(pExarKun, "@dungeon/corvette:timer_" .. timeLeft)
+    printLuaError("broadcast to players greater than 2")
     createEvent(30 * 1000, "exarKun", "handleTimer", pExarKun, "")
   elseif (timeLeftSecs >= 90) then
     self:broadcastToPlayers(pExarKun, "@dungeon/corvette:timer_90s")
+    printLuaError("broadcast to players 90 sec left")
     createEvent(30 * 1000, "exarKun", "handleTimer", pExarKun, "")
   elseif (timeLeftSecs >= 60) then
     self:broadcastToPlayers(pExarKun, "@dungeon/corvette:timer_1")
+    printLuaError("broadcast to players 60 sec left")
     createEvent(30 * 1000, "exarKun", "handleTimer", pExarKun, "")
   elseif (timeLeftSecs >= 30) then
     self:broadcastToPlayers(pExarKun, "@dungeon/corvette:timer_30s")
+    printLuaError("broadcast to players 30 sec left")
     createEvent(20 * 1000, "exarKun", "handleTimer", pExarKun, "")
   elseif (timeLeftSecs >= 10) then
     self:broadcastToPlayers(pExarKun, "@dungeon/corvette:timer_10s")
+    printLuaError("broadcast to players 10 sec left")
     createEvent(10 * 1000, "exarKun", "handleTimer", pExarKun, "")
   else
     self:resetInstance()
