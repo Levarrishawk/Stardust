@@ -14,7 +14,7 @@ function exarKun:start()
 end
 
 
-function exarKun:activate(pPlayer, faction, questType)
+function exarKun:activate(pPlayer)
 	if (not isZoneEnabled("yavin4")) then
 		CreatureObject(pPlayer):sendSystemMessage("That area is currently unavailable. Please try again later.") 
 		return false
@@ -24,13 +24,13 @@ function exarKun:activate(pPlayer, faction, questType)
 	   CreatureObject(pPlayer):sendSystemMessage("That instance is currently occupied, please try a different instance.")
 	   return false
 	end   
-	  
-  
-  writeData("exarKun:occupiedState", 1)  -- TO DO: Need to create the timer and conditions to reset the state of the instance.
+	   
   
   local pExarKun = self:getBuildingObject()
   
-  writeData("exarKunStartTime:" .. pExarKun) 
+  local exarID = SceneObject(pExarKun):getObjectID()
+  
+  writeData("exarKunStartTime:" .. exarID, os.time()) 
   
   createEvent(1000, "exarKun", "transportPlayer", pPlayer, "")
   
@@ -45,6 +45,7 @@ function exarKun:activate(pPlayer, faction, questType)
 		end
 	end
 	
+	writeData("exarKun:occupiedState", 1)  -- TO DO: Need to create the timer and conditions to reset the state of the instance.
 	createEvent(5 * 60 * 1000, "exarKun", "handleTimer", pExarKun, "")
 
 	return true
@@ -108,7 +109,7 @@ end
 
 function exarKun:handleTimer(pExarKun)
   local pExarKun = self:getBuildingObject()
-  local startTime = readData("exarKunStartTime:" .. pExarKun)
+  local startTime = readData("exarKunStartTime:" .. SceneObject(pExarKun):getObjectID())
   local timeLeftSecs = 3600 - (os.time() - startTime)
   local timeLeft = math.floor(timeLeftSecs / 60)
 
