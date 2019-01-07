@@ -33,11 +33,8 @@ function exarKun:activate(pPlayer, faction, questType)
   
   local pExarKun = self:getBuildingObject()
   
-  writeData("exarKunStartTime:" .. SceneObject(pExarKun):getObjectID(), os.time())
-  
-  
-  
-  
+  writeData("exarKunStartTime:" .. pExarKun)
+ 
   createEvent(5 * 60 * 1000, "exarKun", "handleTimer", pExarKun, "")
   
 	if (CreatureObject(pPlayer):isGrouped()) then
@@ -111,37 +108,31 @@ function exarKun:transportPlayer(pPlayer)
 end
 
 function exarKun:handleTimer(pExarKun)
-  local startTime = readData("exarKunStartTime:" .. SceneObject(pExarKun):getObjectID())
+  local pExarKun = self:getBuildingObject()
+  local startTime = readData("exarKunStartTime:" .. pExarKun)
   local timeLeftSecs = 3600 - (os.time() - startTime)
   local timeLeft = math.floor(timeLeftSecs / 60)
 
   if (timeLeft > 10) then
     self:broadcastToPlayers( "@dungeon/corvette:timer_" .. timeLeft)
-    printLuaError("broadcast to players greater than 10")
     createEvent(5 * 60 * 1000, "exarKun", "handleTimer", pExarKun, "")
   elseif (timeLeft >= 3) then
     self:broadcastToPlayers(pExarKun, "@dungeon/corvette:timer_" .. timeLeft)
-    printLuaError("broadcast to players greater than 3")
     createEvent(60 * 1000, "exarKun", "handleTimer", pExarKun, "")
   elseif (timeLeft >= 2) then
     self:broadcastToPlayers(pExarKun, "@dungeon/corvette:timer_" .. timeLeft)
-    printLuaError("broadcast to players greater than 2")
     createEvent(30 * 1000, "exarKun", "handleTimer", pExarKun, "")
   elseif (timeLeftSecs >= 90) then
     self:broadcastToPlayers(pExarKun, "@dungeon/corvette:timer_90s")
-    printLuaError("broadcast to players 90 sec left")
     createEvent(30 * 1000, "exarKun", "handleTimer", pExarKun, "")
   elseif (timeLeftSecs >= 60) then
     self:broadcastToPlayers(pExarKun, "@dungeon/corvette:timer_1")
-    printLuaError("broadcast to players 60 sec left")
     createEvent(30 * 1000, "exarKun", "handleTimer", pExarKun, "")
   elseif (timeLeftSecs >= 30) then
     self:broadcastToPlayers(pExarKun, "@dungeon/corvette:timer_30s")
-    printLuaError("broadcast to players 30 sec left")
     createEvent(20 * 1000, "exarKun", "handleTimer", pExarKun, "")
   elseif (timeLeftSecs >= 10) then
     self:broadcastToPlayers(pExarKun, "@dungeon/corvette:timer_10s")
-    printLuaError("broadcast to players 10 sec left")
     createEvent(10 * 1000, "exarKun", "handleTimer", pExarKun, "")
   else
     self:resetInstance()
