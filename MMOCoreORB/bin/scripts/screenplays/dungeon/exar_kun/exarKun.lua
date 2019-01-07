@@ -28,10 +28,12 @@ function exarKun:activate(pPlayer, faction, questType)
 	
 	createEvent(1000, "exarKun", "transportPlayer", pPlayer, "")
   
-  writeData("exarKunStartTime:", os.time())
+  
   writeData("exarKun:occupiedState", 1)  -- TO DO: Need to create the timer and conditions to reset the state of the instance.
+  writeData("exarKunStartTime:" .. self:getBuildingObject(), os.time())
   
   local pExarKun = self:getBuildingObject()
+  
   
   createEvent(5 * 60 * 1000, "exarKun", "handleTimer", pExarKun, "")
   
@@ -106,7 +108,7 @@ function exarKun:transportPlayer(pPlayer)
 end
 
 function exarKun:handleTimer(pExarKun)
-  local startTime = readData("exarKunStartTime:")
+  local startTime = readData("exarKunStartTime:" .. self:getBuildingObject())
   local timeLeftSecs = 3600 - (os.time() - startTime)
   local timeLeft = math.floor(timeLeftSecs / 60)
 
