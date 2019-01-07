@@ -78,6 +78,7 @@ function exarKun:authorizationSuiCallback(pPlayer, pSui, eventIndex, args, ...)
     CreatureObject(pPlayer):sendSystemMessage("You decline to enter the instance.")   
     return 
   elseif (eventIndex == 0) then -- Teleport
+   CreatureObject(pPlayer):sendSystemMessage("You have 60 minutes remaining to complete the instance.")  
 	 createEvent(1000, "exarKun", "transportPlayer", pPlayer, "")
 	end 
 end
@@ -105,33 +106,32 @@ function exarKun:transportPlayer(pPlayer)
 	SceneObject(pPlayer):switchZone("yavin4", -11.8, 0.2, -121.8, 480000293)
 end
 
-function exarKun:handleTimer(pExarKun)
-  --local pExarKun = self:getBuildingObject()
+function exarKun:handleTimer(pPlayer)  
   local startTime = readData("exarKunStartTime")
   local timeLeftSecs = 3600 - (os.time() - startTime)
   local timeLeft = math.floor(timeLeftSecs / 60)
 
-  if (timeLeft > 10) then
-    self:broadcastToPlayers( "@dungeon/corvette:timer_" .. timeLeft)
-    createEvent(5 * 60 * 1000, "exarKun", "handleTimer", pExarKun, "")
+  if (timeLeft > 10) then   
+    CreatureObject(pPlayer):sendSystemMessage("@dungeon/corvette:timer_" .. timeLeft)
+    createEvent(5 * 60 * 1000, "exarKun", "handleTimer", "")
   elseif (timeLeft >= 3) then
-    self:broadcastToPlayers(pExarKun, "@dungeon/corvette:timer_" .. timeLeft)
-    createEvent(60 * 1000, "exarKun", "handleTimer", pExarKun, "")
+    CreatureObject(pPlayer):sendSystemMessage("@dungeon/corvette:timer_" .. timeLeft)
+    createEvent(60 * 1000, "exarKun", "handleTimer", "")
   elseif (timeLeft >= 2) then
-    self:broadcastToPlayers(pExarKun, "@dungeon/corvette:timer_" .. timeLeft)
-    createEvent(30 * 1000, "exarKun", "handleTimer", pExarKun, "")
+    CreatureObject(pPlayer):sendSystemMessage("@dungeon/corvette:timer_" .. timeLeft)
+    createEvent(30 * 1000, "exarKun", "handleTimer", "")
   elseif (timeLeftSecs >= 90) then
-    self:broadcastToPlayers(pExarKun, "@dungeon/corvette:timer_90s")
-    createEvent(30 * 1000, "exarKun", "handleTimer", pExarKun, "")
+    CreatureObject(pPlayer):sendSystemMessage("@dungeon/corvette:timer_" .. timeLeft)
+    createEvent(30 * 1000, "exarKun", "handleTimer", "")
   elseif (timeLeftSecs >= 60) then
-    self:broadcastToPlayers(pExarKun, "@dungeon/corvette:timer_1")
-    createEvent(30 * 1000, "exarKun", "handleTimer", pExarKun, "")
+    CreatureObject(pPlayer):sendSystemMessage("@dungeon/corvette:timer_" .. timeLeft)
+    createEvent(30 * 1000, "exarKun", "handleTimer", "")
   elseif (timeLeftSecs >= 30) then
-    self:broadcastToPlayers(pExarKun, "@dungeon/corvette:timer_30s")
-    createEvent(20 * 1000, "exarKun", "handleTimer", pExarKun, "")
+    CreatureObject(pPlayer):sendSystemMessage("@dungeon/corvette:timer_" .. timeLeft)
+    createEvent(20 * 1000, "exarKun", "handleTimer", "")
   elseif (timeLeftSecs >= 10) then
-    self:broadcastToPlayers(pExarKun, "@dungeon/corvette:timer_10s")
-    createEvent(10 * 1000, "exarKun", "handleTimer", pExarKun, "")
+    CreatureObject(pPlayer):sendSystemMessage("@dungeon/corvette:timer_" .. timeLeft)
+    createEvent(10 * 1000, "exarKun", "handleTimer", "")
   else
     self:resetInstance()
   end
