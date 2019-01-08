@@ -215,9 +215,9 @@ function exarKun:resetInstanceA(pExarKun, pPlayer)
     return 0
   end
   writeData("exarKun:occupiedState", 0)
-  createEvent(1, "exarKun", "handleTimer", pPlayer, "")
+  
   CreatureObject(pPlayer):sendSystemMessage("One or more group members have left the dungeon.")
-  self:ejectAllGroupMembers(pPlayer)  
+  self:checkIfActiveForTimer(pPlayer)  
   return 0
 end
 
