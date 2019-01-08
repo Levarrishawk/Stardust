@@ -47,7 +47,7 @@ function exarKun:activate(pPlayer)
 	end
 	
 	writeData("exarKun:occupiedState", 1)  -- TO DO: Need to create the timer and conditions to reset the state of the instance.
-	createEvent(5 * 60 * 1000, "exarKun", "handleTimer", pPlayer, "")
+	createEvent(5 * 60 * 1000, "exarKun", "checkIfActiveForTimer", pPlayer, "")
 
 	return true
 end
