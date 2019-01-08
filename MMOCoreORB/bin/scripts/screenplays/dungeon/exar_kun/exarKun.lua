@@ -206,7 +206,7 @@ function exarKun:ejectPlayer(pPlayer)
   if pPlayer == nil then
     return
   end
-  CreatureObject(pPlayer):sendSystemMessage("You are now being removed from the instance.")
+  CreatureObject(pPlayer):sendSystemMessage("One or more group members have left the instance. You are now being removed from the instance.")
   SceneObject(pPlayer):switchZone("yavin4", 5024.1, 73.2, 5585.1, 0)
 end
 
@@ -215,6 +215,7 @@ function exarKun:resetInstanceA(pExarKun, pPlayer)
     return 0
   end
   writeData("exarKun:occupiedState", 0)
+  self:ejectAllGroupMembers(pPlayer)
   return 0
 end
 
