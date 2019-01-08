@@ -210,9 +210,12 @@ function exarKun:ejectPlayer(pPlayer)
   SceneObject(pPlayer):switchZone("yavin4", 5024.1, 73.2, 5585.1, 0)
 end
 
-function exarKun:resetInstanceA(pPlayer, pExarKun)
-  
+function exarKun:resetInstanceA(pExarKun, pPlayer)
+  if not SceneObject(pPlayer):isPlayerCreature() then
+    return 0
+  end
   writeData("exarKun:occupiedState", 0)
+  return 0
 end
 
 function exarKun:resetInstance()
