@@ -111,9 +111,11 @@ function exarKun:handleTimer(pPlayer)
   local timeLeftSecs = 3600 - (os.time() - startTime)
   local timeLeft = math.floor(timeLeftSecs / 60)
   
-  if (timeLeft > 10) then   
-    CreatureObject(pPlayer):sendSystemMessage("@dungeon/corvette:timer_" .. timeLeft)
+  if (timeLeft > 10) then
+     self:checkIfActive(pPlayer)   -- temp change to force countdown to end at 5 min in.
+ --[[   CreatureObject(pPlayer):sendSystemMessage("@dungeon/corvette:timer_" .. timeLeft)
     createEvent(5 * 60 * 1000, "exarKun", "handleTimer", pPlayer, "")
+    --]]
   elseif (timeLeft >= 3) then
     CreatureObject(pPlayer):sendSystemMessage("@dungeon/corvette:timer_" .. timeLeft)
     createEvent(60 * 1000, "exarKun", "handleTimer", pPlayer, "")
@@ -133,7 +135,7 @@ function exarKun:handleTimer(pPlayer)
     CreatureObject(pPlayer):sendSystemMessage("@dungeon/corvette:timer_" .. timeLeft)
     createEvent(10 * 1000, "exarKun", "handleTimer", pPlayer, "")
   else
-    self:checkIfActive()   
+    self:checkIfActive(pPlayer)   
   end
 end
 
@@ -154,9 +156,9 @@ end
 
 function exarKun:checkIfActive(pPlayer)
   if (readData("exarKun:occupiedState") == 1) then
-    CreatureObject(pPlayer):sendSystemMessage("Now clearing the instance.") 
-    self:ejectAllPlayers()
-    self:resetInstance()
+    
+    self:ejectAllPlayers(pPlayer)
+    self:resetInstance(pPlayer)
     return true
   end
 end
