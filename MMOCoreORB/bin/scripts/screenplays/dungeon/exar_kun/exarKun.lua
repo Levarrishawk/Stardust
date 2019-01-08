@@ -44,7 +44,7 @@ function exarKun:activate(pPlayer)
 		end
 	end
 	
-	writeData("exarKun:occupiedState", "1")  -- TO DO: Need to create the timer and conditions to reset the state of the instance.
+	writeData("exarKun:occupiedState", 1)  -- TO DO: Need to create the timer and conditions to reset the state of the instance.
 	createEvent(5 * 60 * 1000, "exarKun", "handleTimer", pPlayer, "")
 
 	return true
@@ -111,10 +111,7 @@ function exarKun:handleTimer(pPlayer)
   local timeLeftSecs = 3600 - (os.time() - startTime)
   local timeLeft = math.floor(timeLeftSecs / 60)
   
-  if (readData("exarKun:occupiedState" == "0")) then
-    CreatureObject(pPlayer):sendSystemMessage("Dungeon: Exar Kun Catacombs has been reset.")   
-    return 
-  elseif (timeLeft > 10) then   
+  if (timeLeft > 10) then   
     CreatureObject(pPlayer):sendSystemMessage("@dungeon/corvette:timer_" .. timeLeft)
     createEvent(5 * 60 * 1000, "exarKun", "handleTimer", pPlayer, "")
   elseif (timeLeft >= 3) then
@@ -136,8 +133,7 @@ function exarKun:handleTimer(pPlayer)
     CreatureObject(pPlayer):sendSystemMessage("@dungeon/corvette:timer_" .. timeLeft)
     createEvent(10 * 1000, "exarKun", "handleTimer", pPlayer, "")
   else
-    self:ejectAllPlayers()
-    self:resetInstance()
+    self:checkIfActive()   
   end
 end
 
@@ -156,24 +152,14 @@ function exarKun:getCell(cellName)
   return BuildingObject(pExarKun):getNamedCell(cellName)  
 end
 
-
-function exarKun:broadcastToPlayers(pExarKun, message)
-  for i = 1, 66, 1 do
-  
-    local pCell = self:getCell()
-
-    if (pCell ~= nil) then
-      for j = 1, SceneObject(pCell):getContainerObjectsSize(), 1 do
-        local pObject = SceneObject(pCell):getContainerObject(j - 1)
-        if SceneObject(pObject):isPlayerCreature() then
-          CreatureObject(pObject):sendSystemMessage(message)
-        end
-      end
-    end
+function exarKun:checkIfActive(pPlayer)
+  if (readData("exarKun:occupiedState") == 1) then
+    CreatureObject(pPlayer):sendSystemMessage("Now clearing the instance.") 
+    self:ejectAllPlayers()
+    self:resetInstance()
+    return true
   end
 end
-
-
 
 function exarKun:ejectAllPlayers(pPlayer)
 
@@ -198,9 +184,11 @@ function exarKun:ejectPlayer(pPlayer)
 
   SceneObject(pPlayer):switchZone("yavin4", 5024.1, 73.2, 5585.1, 0)
 end
+
+
 function exarKun:resetInstance()
   
-  writeData("exarKun:occupiedState", "0")
+  writeData("exarKun:occupiedState", 0)
 end
 
 
