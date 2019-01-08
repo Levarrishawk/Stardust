@@ -173,13 +173,7 @@ function exarKun:broadcastToPlayers(pExarKun, message)
   end
 end
 
-function exarKun:ejectPlayer(pPlayer)
-  if pPlayer == nil then
-    return
-  end
 
-  SceneObject(pPlayer):switchZone("yavin4", 5024.1, 73.2, 5585.1, 0)
-end
 
 function exarKun:ejectAllPlayers(pPlayer)
 
@@ -197,6 +191,13 @@ function exarKun:ejectAllPlayers(pPlayer)
   end
 end
 
+function exarKun:ejectPlayer(pPlayer)
+  if pPlayer == nil then
+    return
+  end
+
+  SceneObject(pPlayer):switchZone("yavin4", 5024.1, 73.2, 5585.1, 0)
+end
 function exarKun:resetInstance()
   
   writeData("exarKun:occupiedState", 0)
