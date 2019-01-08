@@ -33,7 +33,7 @@ function exarKun:activate(pPlayer)
   CreatureObject(pPlayer):sendSystemMessage("Instance Started: You have 60 minutes remaining to complete the instance.") 
   createEvent(1000, "exarKun", "transportPlayer", pPlayer, "")
   
-  createObserver(EXITEDBUILDING, "exarKun", "onExit", pExarKun)
+  createObserver(EXITEDBUILDING, "exarKun", "resetInstance", pExarKun, "")
   
 	if (CreatureObject(pPlayer):isGrouped()) then
 		local groupSize = CreatureObject(pPlayer):getGroupSize()
@@ -115,28 +115,37 @@ function exarKun:handleTimer(pPlayer)
   
   if (timeLeft > 10) then    
     CreatureObject(pPlayer):sendSystemMessage("@dungeon/corvette:timer_" .. timeLeft)
-    createEvent(5 * 60 * 1000, "exarKun", "handleTimer", pPlayer, "")   
+    createEvent(5 * 60 * 1000, "exarKun", "checkIfActiveForTimer", pPlayer, "")   
   elseif (timeLeft >= 3) then
     CreatureObject(pPlayer):sendSystemMessage("@dungeon/corvette:timer_" .. timeLeft)
-    createEvent(60 * 1000, "exarKun", "handleTimer", pPlayer, "")
+    createEvent(60 * 1000, "exarKun", "checkIfActiveForTimer", pPlayer, "")
   elseif (timeLeft >= 2) then
     CreatureObject(pPlayer):sendSystemMessage("@dungeon/corvette:timer_" .. timeLeft)
-    createEvent(30 * 1000, "exarKun", "handleTimer", pPlayer, "")
+    createEvent(30 * 1000, "exarKun", "checkIfActiveForTimer", pPlayer, "")
   elseif (timeLeftSecs >= 90) then
     CreatureObject(pPlayer):sendSystemMessage("@dungeon/corvette:timer_" .. timeLeft)
-    createEvent(30 * 1000, "exarKun", "handleTimer", pPlayer, "")
+    createEvent(30 * 1000, "exarKun", "checkIfActiveForTimer", pPlayer, "")
   elseif (timeLeftSecs >= 60) then
     CreatureObject(pPlayer):sendSystemMessage("@dungeon/corvette:timer_" .. timeLeft)
-    createEvent(30 * 1000, "exarKun", "handleTimer", pPlayer, "")
+    createEvent(30 * 1000, "exarKun", "checkIfActiveForTimer", pPlayer, "")
   elseif (timeLeftSecs >= 30) then
     CreatureObject(pPlayer):sendSystemMessage("@dungeon/corvette:timer_" .. timeLeft)
-    createEvent(20 * 1000, "exarKun", "handleTimer", pPlayer, "")
+    createEvent(20 * 1000, "exarKun", "checkIfActiveForTimer", pPlayer, "")
   elseif (timeLeftSecs >= 10) then
     CreatureObject(pPlayer):sendSystemMessage("@dungeon/corvette:timer_" .. timeLeft)
-    createEvent(10 * 1000, "exarKun", "handleTimer", pPlayer, "")
+    createEvent(10 * 1000, "exarKun", "checkIfActiveForTimer", pPlayer, "")
   else
     self:checkIfActive(pPlayer)   
   end
+end
+
+function exarKun:checkIfActiveForTimer(pPlayer)
+  if (readData("exarKun:occupiedState") == 1) then
+    createEvent(1, "exarKun", "handleTimer", pPlayer, "")
+  else
+    self:ejectAllGroupMembers(pPlayer)
+    self:resetInstance(pPlayer)
+  end      
 end
 
 function exarKun:getBuildingObject()
@@ -179,6 +188,20 @@ function exarKun:ejectAllPlayers(pPlayer)
   end
 end
 
+function exarKun:ejectAllGroupMembers(pPlayer)
+
+  if (CreatureObject(pPlayer):isGrouped()) then
+    local groupSize = CreatureObject(pPlayer):getGroupSize()
+
+    for i = 0, groupSize - 1, 1 do
+      local pMember = CreatureObject(pPlayer):getGroupMember(i)
+      if pMember ~= nil and pMember ~= pPlayer and not SceneObject(pMember):isAiAgent() then
+        self:ejectPlayer(pMember, pPlayer)
+      end
+    end
+  end
+end
+
 function exarKun:ejectPlayer(pPlayer)
   if pPlayer == nil then
     return
@@ -192,23 +215,4 @@ function exarKun:resetInstance()
   
   writeData("exarKun:occupiedState", 0)
 end
-
-function exarKun:onExit(pExarKun, pPlayer)  
-  if not SceneObject(pPlayer):isPlayerCreature() then
-    return 0
-  end
-  
-  if (CreatureObject(pPlayer):isGrouped()) then
-    local groupSize = CreatureObject(pPlayer):getGroupSize()
-
-    for i = 0, groupSize - 1, 1 do
-      local pMember = CreatureObject(pPlayer):getGroupMember(i)
-      if pMember ~= nil and pMember ~= pPlayer and not SceneObject(pMember):isAiAgent() then
-        self:ejectPlayer(pMember, pPlayer)
-      end
-    end
-  end
-  
-end
-
 
