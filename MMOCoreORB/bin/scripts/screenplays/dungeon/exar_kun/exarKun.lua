@@ -216,7 +216,8 @@ function exarKun:resetInstanceA(pExarKun, pPlayer)
   end
   writeData("exarKun:occupiedState", 0)
   createEvent(1, "exarKun", "handleTimer", pPlayer, "")
-  CreatureObject(pPlayer):sendSystemMessage("One or more group members have left the dungeon.")  
+  CreatureObject(pPlayer):sendSystemMessage("One or more group members have left the dungeon.")
+  self:ejectAllGroupMembers(pPlayer)  
   return 0
 end
 
