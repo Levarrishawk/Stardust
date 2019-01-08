@@ -190,7 +190,7 @@ function exarKun:ejectAllPlayers(pPlayer)
 
     for i = 0, groupSize - 1, 1 do
       local pMember = CreatureObject(pPlayer):getGroupMember(i)
-      if pMember ~= nil and pMember ~= pPlayer and CreatureObject(pPlayer):isInRangeWithObject(pMember, 50) and not SceneObject(pMember):isAiAgent() then
+      if pMember ~= nil and pMember ~= pPlayer and CreatureObject(pPlayer):isInRangeWithObject(pMember, 300) and not SceneObject(pMember):isAiAgent() then
         self:ejectPlayer(pMember, pPlayer)
       end
     end
