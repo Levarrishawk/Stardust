@@ -44,7 +44,7 @@ function exarKun:activate(pPlayer)
 		end
 	end
 	
-	writeData("exarKun:occupiedState", 1)  -- TO DO: Need to create the timer and conditions to reset the state of the instance.
+	writeData("exarKun:occupiedState", "1")  -- TO DO: Need to create the timer and conditions to reset the state of the instance.
 	createEvent(5 * 60 * 1000, "exarKun", "handleTimer", pPlayer, "")
 
 	return true
@@ -111,7 +111,7 @@ function exarKun:handleTimer(pPlayer)
   local timeLeftSecs = 3600 - (os.time() - startTime)
   local timeLeft = math.floor(timeLeftSecs / 60)
   
-  if (readData("exarKun:occupiedState" == 0)) then
+  if (readData("exarKun:occupiedState" == "0")) then
     CreatureObject(pPlayer):sendSystemMessage("Dungeon: Exar Kun Catacombs has been reset.")   
     return 
   elseif (timeLeft > 10) then   
@@ -200,7 +200,7 @@ function exarKun:ejectPlayer(pPlayer)
 end
 function exarKun:resetInstance()
   
-  writeData("exarKun:occupiedState", 0)
+  writeData("exarKun:occupiedState", "0")
 end
 
 
