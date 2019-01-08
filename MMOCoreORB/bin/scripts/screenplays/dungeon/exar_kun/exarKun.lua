@@ -110,8 +110,11 @@ function exarKun:handleTimer(pPlayer)
   local startTime = readData("exarKunStartTime")
   local timeLeftSecs = 3600 - (os.time() - startTime)
   local timeLeft = math.floor(timeLeftSecs / 60)
-
-  if (timeLeft > 10) then   
+  
+  if (readData("exarKun:occupiedState" == 0)) then
+    CreatureObject(pPlayer):sendSystemMessage("Dungeon: Exar Kun Catacombs has been reset.")   
+    return 
+  elseif (timeLeft > 10) then   
     CreatureObject(pPlayer):sendSystemMessage("@dungeon/corvette:timer_" .. timeLeft)
     createEvent(5 * 60 * 1000, "exarKun", "handleTimer", pPlayer, "")
   elseif (timeLeft >= 3) then
