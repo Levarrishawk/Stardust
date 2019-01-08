@@ -33,7 +33,7 @@ function exarKun:activate(pPlayer)
   CreatureObject(pPlayer):sendSystemMessage("Instance Started: You have 60 minutes remaining to complete the instance.") 
   createEvent(1000, "exarKun", "transportPlayer", pPlayer, "")
   
-  createObserver(EXITEDBUILDING, "exarKun", "resetInstance", pExarKun, "")
+  createObserver(EXITEDBUILDING, "exarKun", "resetInstanceA", pExarKun, "")
   
 	if (CreatureObject(pPlayer):isGrouped()) then
 		local groupSize = CreatureObject(pPlayer):getGroupSize()
@@ -210,6 +210,10 @@ function exarKun:ejectPlayer(pPlayer)
   SceneObject(pPlayer):switchZone("yavin4", 5024.1, 73.2, 5585.1, 0)
 end
 
+function exarKun:resetInstanceA(pPlayer, pExarKun)
+  
+  writeData("exarKun:occupiedState", 0)
+end
 
 function exarKun:resetInstance()
   
