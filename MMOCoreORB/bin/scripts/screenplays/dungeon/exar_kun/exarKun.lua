@@ -33,6 +33,8 @@ function exarKun:activate(pPlayer)
   CreatureObject(pPlayer):sendSystemMessage("Instance Started: You have 60 minutes remaining to complete the instance.") 
   createEvent(1000, "exarKun", "transportPlayer", pPlayer, "")
   
+  createObserver(EXITEDBUILDING, "exarKun", "onExit", pExarKun)
+  
 	if (CreatureObject(pPlayer):isGrouped()) then
 		local groupSize = CreatureObject(pPlayer):getGroupSize()
 
@@ -191,5 +193,17 @@ function exarKun:resetInstance()
   writeData("exarKun:occupiedState", 0)
 end
 
+function exarKun:onExitCorvette(pExarKun, pPlayer)  
+  
+  if (CreatureObject(pPlayer):isGrouped()) then
+    local groupSize = CreatureObject(pPlayer):getGroupSize()
 
+    for i = 0, groupSize - 1, 1 do
+      local pMember = CreatureObject(pPlayer):getGroupMember(i)
+      if pMember ~= nil and pMember ~= pPlayer and not SceneObject(pMember):isAiAgent() then
+        self:ejectPlayer(pMember, pPlayer)
+      end
+    end
+  end
+end
 
