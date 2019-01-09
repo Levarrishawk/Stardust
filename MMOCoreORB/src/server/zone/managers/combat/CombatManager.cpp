@@ -861,7 +861,7 @@ float CombatManager::getDefenderToughnessModifier(CreatureObject* defender, int 
 	}
 
 	int jediToughness = defender->getSkillMod("jedi_toughness");
-	if (damType != SharedWeaponObjectTemplate::LIGHTSABER && jediToughness > 0)
+	if (jediToughness > 0)   //jedi toughness will affect all damage types
 		damage *= 1.f - (jediToughness / 200.f);
 
 	return damage < 0 ? 0 : damage;
@@ -1471,7 +1471,10 @@ float CombatManager::calculateDamage(CreatureObject* attacker, WeaponObject* wea
 
 	// PvP Damage Reduction.
 	if (attacker->isPlayerCreature() && defender->isPlayerCreature()) {
-		damage *= 0.25;
+		if (weapon->getDamageType() == SharedWeaponObjectTemplate::LIGHTSABER)
+			damage *= 0.65;
+		else
+			damage *= 0.35;
 	}
 
 	if (damage < 1) damage = 1;
