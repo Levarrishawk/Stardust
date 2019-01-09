@@ -193,7 +193,7 @@ void PetMenuComponent::fillObjectMenuResponse(SceneObject* sceneObject, ObjectMe
 			menuResponse->addRadialMenuItem(166, 3, "@pet/pet_menu:awaken" );
 		}
 
-		if (controlDevice->isTrainedAsMount() && !pet->isDead() && !pet->isIncapacitated() && (player->getZone()->getZoneName() != "jakku"  || player->getZone()->getZoneName() != "elysium")) {
+		if (controlDevice->isTrainedAsMount() && !pet->isDead() && !pet->isIncapacitated() && player->getZone()->getZoneName() != "jakku") {
 			Reference<SceneObject*> rider = pet->getSlottedObject("rider");
 
 			if (rider == NULL) {
