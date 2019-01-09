@@ -861,7 +861,7 @@ float CombatManager::getDefenderToughnessModifier(CreatureObject* defender, int 
 	}
 
 	int jediToughness = defender->getSkillMod("jedi_toughness");
-	//if (damType != SharedWeaponObjectTemplate::LIGHTSABER && jediToughness > 0)   //jedi toughness will affect all damage types
+	if (jediToughness > 0)   //jedi toughness will affect all damage types
 		damage *= 1.f - (jediToughness / 200.f);
 
 	return damage < 0 ? 0 : damage;
