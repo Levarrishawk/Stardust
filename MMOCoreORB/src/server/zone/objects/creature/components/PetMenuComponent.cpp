@@ -8,6 +8,8 @@
 #include "server/zone/objects/group/GroupObject.h"
 #include "server/zone/managers/creature/PetManager.h"
 #include "server/zone/objects/intangible/tasks/PetControlDeviceStoreObjectTask.h"
+#include "server/zone/ZoneServer.h"
+#include "server/zone/Zone.h"
 
 void PetMenuComponent::fillObjectMenuResponse(SceneObject* sceneObject, ObjectMenuResponse* menuResponse, CreatureObject* player) const {
 	if (!sceneObject->isPet())
