@@ -8,6 +8,8 @@
 #include "server/zone/objects/group/GroupObject.h"
 #include "server/zone/managers/creature/PetManager.h"
 #include "server/zone/objects/intangible/tasks/PetControlDeviceStoreObjectTask.h"
+#include "server/zone/ZoneServer.h"
+#include "server/zone/Zone.h"
 
 void PetMenuComponent::fillObjectMenuResponse(SceneObject* sceneObject, ObjectMenuResponse* menuResponse, CreatureObject* player) const {
 	if (!sceneObject->isPet())
@@ -191,7 +193,7 @@ void PetMenuComponent::fillObjectMenuResponse(SceneObject* sceneObject, ObjectMe
 			menuResponse->addRadialMenuItem(166, 3, "@pet/pet_menu:awaken" );
 		}
 
-		if (controlDevice->isTrainedAsMount() && !pet->isDead() && !pet->isIncapacitated()) {
+		if (controlDevice->isTrainedAsMount() && !pet->isDead() && !pet->isIncapacitated() && player->getZone()->getZoneName() != "jakku") {
 			Reference<SceneObject*> rider = pet->getSlottedObject("rider");
 
 			if (rider == NULL) {
