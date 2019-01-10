@@ -6,8 +6,8 @@ polearm_lance_staff_magna_guard = {
 	customObjectName = "",
 	directObjectTemplate = "object/weapon/melee/polearm/lance_staff_magna_guard.iff",
 	craftingValues = {
-		{"mindamage",398,475,0},
-		{"maxdamage",450,475,0},
+		{"mindamage",300,350,0},
+    {"maxdamage",375,425,0},
     {"attackspeed",4,4,1},
 		{"woundchance",23,43,0},
 		{"hitpoints",750,1500,0},
