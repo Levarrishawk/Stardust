@@ -10,6 +10,7 @@ registerScreenPlay("exarKun", true)
 function exarKun:start()
 	if (isZoneEnabled("yavin4")) then
     --self:spawnMobs()
+    writeData("exarKun:trashSpawnState", 0)
 	end
 end
 
@@ -46,9 +47,7 @@ function exarKun:activate(pPlayer)
 		end
 	end
 	
-	if (readData("exarKun:trashSpawnState" == 1)) then
-	   return  
-	else
+	if (readData("exarKun:trashSpawnState" == 0)) then	    
 	    self:spawnTrashMobs()
       writeData("exarKun:trashSpawnState", 1) 
 	end
