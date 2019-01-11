@@ -2,13 +2,13 @@ exar_kun_cultist = Creature:new {
 	customName = "an Exar Kun Cultist",
 	randomNameTag = true,
 	socialGroup = "kun",
-	level = 330,
+	level = 250,
 	chanceHit = 0.8,
-	damageMin = 1545,
-	damageMax = 2100,
+	damageMin = 1000,
+	damageMax = 1400,
 	baseXp = 8408,
-	baseHAM = 640200,
-	baseHAMmax = 940000,
+	baseHAM = 40200,
+	baseHAMmax = 140000,
 	armor = 0,
 	resists = {45,45,45,70,70,70,70,70,10},
 	meatType = "",
@@ -27,37 +27,21 @@ exar_kun_cultist = Creature:new {
 
 	templates = {"object/mobile/exar_kun_cultist.iff"},
 	lootGroups = {
-		{
-			groups = { -- DarkJedi LootGroup
-				{group = "holocron_dark", chance = 4000000},
-				{group = "dark_jedi_common", chance = 6000000},
-			},
-			lootChance = 10000000,
-		},
+		
 		{
 			groups = {
 				{group = "power_crystals", chance = 1500000},
 				{group = "color_crystals", chance = 2500000},
 				{group = "clothing_attachments", chance = 1500000},
-				{group = "melee_weapons", chance = 2500000},
+				{group = "armor_attachmments", chance = 2500000},
 				{group = "dark_jedi_common", chance = 2000000},
 			},
-			lootChance = 8000000,
-		},		
-		{ -- Veteran Rewards
-			groups =
-			{
-				{group = "veteran_rewards_90_days", chance = 6000000},
-				{group = "veteran_rewards_180_days", chance = 3000000},
-				{group = "veteran_rewards_360_days", chance = 100000},
-				{group = "veteran_rewards_450_days", chance = 900000},
-			},
-			lootChance = 3000000,
-		},
+			lootChance = 4000000,
+		},			
 	},
-	weapons = {"dark_jedi_weapons_gen4"},
+	weapons = {"mixed_force_weapons"},
 	conversationTemplate = "",
-	attacks = merge(lightsabermaster,forcepowermaster)
+	attacks = merge(fencermid,swordsmanmid,tkamid,pikemanmaster,brawlermaster)
 }
 
 CreatureTemplates:addCreatureTemplate(exar_kun_cultist, "exar_kun_cultist")

@@ -148,6 +148,33 @@ function exarKun:checkIfActiveForTimer(pPlayer)
   end      
 end
 
+function exarKun:spawnTrashMobs()  -- Each instance script needs assigned cells.
+  -- Trash pack 1: Hallway 1
+   local mob1 = spawnMobile("yavin4", "exar_kun_cultist", 3600, 43.3, 0, -48.1, 116, 480000295)
+   local mob2 = spawnMobile("yavin4", "exar_kun_cultist", 3600, 51.5, 0, -53.8, -37, 480000295)
+   local mob3 = spawnMobile("yavin4", "exar_kun_cultist", 3600, 50.7, 0, -46.1, -140, 480000295)
+  -- Trash pack 2: Hallway 1
+   local mob4 = spawnMobile("yavin4", "exar_kun_cultist", 3600, 59.1, 0, -20.4, -174, 480000295)
+   local mob5 = spawnMobile("yavin4", "exar_kun_cultist", 3600, 56.7, 0, -20.2, -171, 480000295)
+   local mob6 = spawnMobile("yavin4", "exar_kun_cultist", 3600, 52.2, 0, -21.0, 176, 480000295)
+  -- Trash pack 3: hallway 1
+   local mob7 = spawnMobile("yavin4", "exar_kun_cultist", 3600, 38.6, -0.1, -1.4, 101, 480000295)
+   local mob8 = spawnMobile("yavin4", "exar_kun_cultist", 3600, 41.1, -0.2, 1.9, 117, 480000295)
+   local mob9 = spawnMobile("yavin4", "exar_kun_cultist", 3600, 44.6, -0.4, 4.5, 150, 480000295)
+   -- Trash pack 4: hallway 2
+   local mob10 = spawnMobile("yavin4", "exar_kun_cultist", 3600, -38.1, 0, 11.1, -172, 480000297)
+   local mob11 = spawnMobile("yavin4", "exar_kun_cultist", 3600, -31.9, 0, 11.8, -174, 480000297)
+   local mob12 = spawnMobile("yavin4", "exar_kun_cultist", 3600, -34.7, 0, 12.5, -179, 480000297)
+   -- Trash pack 5: hallway 2
+   local mob13 = spawnMobile("yavin4", "exar_kun_cultist", 3600, -22.4, -0.2, 40.9, 144, 480000297)
+   local mob14 = spawnMobile("yavin4", "exar_kun_cultist", 3600, -16.3, 0, 39.7, -125, 480000297)
+   local mob15 = spawnMobile("yavin4", "exar_kun_cultist", 3600, -15.5, 0, 35.3, -51, 480000297)
+   -- Trash pack 6: hallway 2 cell 2
+   local mob16 = spawnMobile("yavin4", "exar_kun_cultist", 3600, 7.7, 0.3, 50, 141, 480000298)
+   local mob17 = spawnMobile("yavin4", "exar_kun_cultist", 3600, 23.3, 0.3, 49.7, -113, 480000298)
+   local mob18 = spawnMobile("yavin4", "exar_kun_cultist", 3600, 16.7, 0.3, 39.9, -4, 480000298)
+end
+
 function exarKun:getBuildingObject()
   return getSceneObject(480000292)  -- Different parent for each instance script
 end
