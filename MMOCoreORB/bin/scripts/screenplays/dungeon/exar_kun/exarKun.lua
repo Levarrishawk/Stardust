@@ -146,6 +146,7 @@ function exarKun:checkIfActiveForTimer(pPlayer)
   else
     self:ejectAllGroupMembers(pPlayer)
     self:resetInstance(pPlayer)
+    self:resetTrashMobs()
   end      
 end
 
@@ -174,6 +175,99 @@ function exarKun:spawnTrashMobs()  -- Each instance script needs assigned cells.
    local mob16 = spawnMobile("yavin4", "exar_kun_cultist", 3600, 7.7, 0.3, 50, 141, 480000298)
    local mob17 = spawnMobile("yavin4", "exar_kun_cultist", 3600, 23.3, 0.3, 49.7, -113, 480000298)
    local mob18 = spawnMobile("yavin4", "exar_kun_cultist", 3600, 16.7, 0.3, 39.9, -4, 480000298)
+end
+
+function exarKun:resetTrashMobs(mob1, mob2, mob3, mob4, mob5, mob6, mob7, mob8, mob9, mob10, mob11, mob12, mob13, mob14, mob15, mob16, mob17, mob18)
+  if (mob1 == nil) then
+    return
+  else
+    SceneObject(mob1):destroyObjectFromWorld()
+  end
+  if (mob2 == nil) then
+    return
+  else    
+    SceneObject(mob2):destroyObjectFromWorld()
+  end
+  if (mob3 == nil) then
+    return
+  else    
+    SceneObject(mob3):destroyObjectFromWorld()
+  end
+  if (mob4 == nil) then
+    return
+  else   
+    SceneObject(mob4):destroyObjectFromWorld()
+  end
+  if (mob5 == nil) then
+    return
+  else   
+    SceneObject(mob5):destroyObjectFromWorld()
+  end
+  if (mob6 == nil) then
+    return
+  else   
+    SceneObject(mob6):destroyObjectFromWorld()
+  end
+  if (mob7 == nil) then
+    return
+  else   
+    SceneObject(mob7):destroyObjectFromWorld()
+  end
+  if (mob8 == nil) then
+    return
+  else   
+    SceneObject(mob8):destroyObjectFromWorld()
+  end
+  if (mob9 == nil) then
+    return
+  else   
+    SceneObject(mob9):destroyObjectFromWorld()
+  end
+  if (mob10 == nil) then
+    return
+  else   
+    SceneObject(mob10):destroyObjectFromWorld()
+  end
+  if (mob11 == nil) then
+    return
+  else   
+    SceneObject(mob11):destroyObjectFromWorld()
+  end
+  if (mob12 == nil) then
+    return
+  else   
+    SceneObject(mob12):destroyObjectFromWorld()
+  end
+  if (mob13 == nil) then
+    return
+  else   
+    SceneObject(mob13):destroyObjectFromWorld()
+  end
+  if (mob14 == nil) then
+    return
+  else   
+    SceneObject(mob14):destroyObjectFromWorld()
+  end
+  if (mob15 == nil) then
+    return
+  else   
+    SceneObject(mob15):destroyObjectFromWorld()
+  end
+  if (mob16 == nil) then
+    return
+  else   
+    SceneObject(mob16):destroyObjectFromWorld()
+  end
+  if (mob17 == nil) then
+    return
+  else   
+    SceneObject(mob17):destroyObjectFromWorld()
+  end
+  if (mob18 == nil) then
+    return
+  else   
+    SceneObject(mob18):destroyObjectFromWorld()
+  end
 end
 
 function exarKun:getBuildingObject()
@@ -237,6 +331,8 @@ function exarKun:ejectPlayer(pPlayer)
   CreatureObject(pPlayer):sendSystemMessage("You are now being removed from the instance.")
   SceneObject(pPlayer):switchZone("yavin4", 5024.1, 73.2, 5585.1, 0)
 end
+
+
 
 function exarKun:resetInstanceA(pExarKun, pPlayer)
   if not SceneObject(pPlayer):isPlayerCreature() then
