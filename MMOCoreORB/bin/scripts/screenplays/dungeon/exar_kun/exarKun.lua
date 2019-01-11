@@ -32,7 +32,7 @@ function exarKun:activate(pPlayer)
   
   CreatureObject(pPlayer):sendSystemMessage("Instance Started: You have 60 minutes remaining to complete the instance.") 
   createEvent(1000, "exarKun", "transportPlayer", pPlayer, "")
-  
+     
   createObserver(EXITEDBUILDING, "exarKun", "resetInstanceA", pExarKun, "")
   
 	if (CreatureObject(pPlayer):isGrouped()) then
@@ -46,6 +46,7 @@ function exarKun:activate(pPlayer)
 		end
 	end
 	
+	self:spawnTrashMobs()
 	writeData("exarKun:occupiedState", 1)  -- TO DO: Need to create the timer and conditions to reset the state of the instance.
 	createEvent(5 * 60 * 1000, "exarKun", "checkIfActiveForTimer", pPlayer, "")
 
