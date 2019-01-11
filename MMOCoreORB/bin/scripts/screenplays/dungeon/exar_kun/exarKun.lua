@@ -355,8 +355,8 @@ function exarKun:resetInstanceA(pExarKun, pPlayer)
   return 0
 end
 
-function exarKun:resetInstance()
-  self:resetTrashMobs()
+function exarKun:resetInstance(mob1, mob2, mob3, mob4, mob5, mob6, mob7, mob8, mob9, mob10, mob11, mob12, mob13, mob14, mob15, mob16, mob17, mob18)
+  self:resetTrashMobs(mob1, mob2, mob3, mob4, mob5, mob6, mob7, mob8, mob9, mob10, mob11, mob12, mob13, mob14, mob15, mob16, mob17, mob18)
   writeData("exarKun:occupiedState", 0)
 end
 
