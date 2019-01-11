@@ -4,8 +4,8 @@ carbine_bothan_bola = {
 	customObjectName = "",
 	directObjectTemplate = "object/weapon/ranged/carbine/carbine_bothan_bola.iff",
 	craftingValues = {
-		{"mindamage",156,375,0},
-		{"maxdamage",290,390,0},
+		{"mindamage",156,290,0},
+    {"maxdamage",290,350,0},
     {"attackspeed",3,3,1},
 		{"woundchance",8,16,0},
 		{"roundsused",30,65,0},

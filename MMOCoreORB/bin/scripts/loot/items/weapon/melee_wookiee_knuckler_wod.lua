@@ -7,7 +7,7 @@ melee_wookiee_knuckler_wod = {
 	directObjectTemplate = "object/weapon/melee/special/wookiee_knuckler_wod.iff",
 	craftingValues = {
 		{"mindamage",37,160,0},
-		{"maxdamage",200,300,0},
+		{"maxdamage",200,260,0},
 		{"attackspeed",1,1,1},
 		{"woundchance",14,26,0},
 		{"hitpoints",750,1500,0},
