@@ -47,10 +47,7 @@ function exarKun:activate(pPlayer)
 		end
 	end
 	
-	if (readData("exarKun:trashSpawnState" == 0)) then	    
-	    self:spawnTrashMobs()
-      writeData("exarKun:trashSpawnState", 1) 
-	end
+	createEvent(100, "exarKun", "spawnCheck", pPlayer, "")
 	
 	writeData("exarKun:occupiedState", 1)  -- TO DO: Need to create the timer and conditions to reset the state of the instance.
 	createEvent(5 * 60 * 1000, "exarKun", "checkIfActiveForTimer", pPlayer, "")
@@ -152,6 +149,15 @@ function exarKun:checkIfActiveForTimer(pPlayer)
     self:ejectAllGroupMembers(pPlayer)
     self:resetInstance(pPlayer)    
   end      
+end
+
+function exarKun:spawnCheck()
+  if (readData("exarKun:trashSpawnState") == 1) then
+    return
+  else
+    self:spawnTrashMobs()
+    writeData("exarKun:trashSpawnState", 1)       
+  end 
 end
 
 function exarKun:spawnTrashMobs()  -- Each instance script needs assigned cells.
