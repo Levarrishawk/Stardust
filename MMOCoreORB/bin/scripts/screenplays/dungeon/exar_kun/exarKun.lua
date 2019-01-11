@@ -146,7 +146,7 @@ function exarKun:checkIfActiveForTimer(pPlayer)
   if (readData("exarKun:occupiedState") == 1) then
     createEvent(1, "exarKun", "handleTimer", pPlayer, "")
   else
-    self:ejectAllGroupMembers(pPlayer)
+    --self:ejectAllGroupMembers(pPlayer)
     self:resetInstance(pPlayer)    
   end      
 end
@@ -351,7 +351,8 @@ function exarKun:resetInstanceA(pExarKun, pPlayer)
   writeData("exarKun:occupiedState", 0)
   
   CreatureObject(pPlayer):sendSystemMessage("One or more group members have left the dungeon.")
-  self:checkIfActiveForTimer(pPlayer)  
+  self:resetInstance(pPlayer)
+  self:ejectAllGroupMembers(pPlayer)  
   return 0
 end
 
