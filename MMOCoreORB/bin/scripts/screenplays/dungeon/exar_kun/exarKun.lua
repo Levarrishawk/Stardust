@@ -145,8 +145,7 @@ function exarKun:checkIfActiveForTimer(pPlayer)
     createEvent(1, "exarKun", "handleTimer", pPlayer, "")
   else
     self:ejectAllGroupMembers(pPlayer)
-    self:resetInstance(pPlayer)
-    self:resetTrashMobs()
+    self:resetInstance(pPlayer)    
   end      
 end
 
@@ -346,7 +345,7 @@ function exarKun:resetInstanceA(pExarKun, pPlayer)
 end
 
 function exarKun:resetInstance()
-  
+  self:resetTrashMobs()
   writeData("exarKun:occupiedState", 0)
 end
 
