@@ -46,7 +46,13 @@ function exarKun:activate(pPlayer)
 		end
 	end
 	
-	self:spawnTrashMobs()
+	if (readData("exarKun:trashSpawnState" == 1)) then
+	   return  
+	else
+	    self:spawnTrashMobs()
+      writeData("exarKun:trashSpawnState", 1) 
+	end
+	
 	writeData("exarKun:occupiedState", 1)  -- TO DO: Need to create the timer and conditions to reset the state of the instance.
 	createEvent(5 * 60 * 1000, "exarKun", "checkIfActiveForTimer", pPlayer, "")
 
@@ -286,7 +292,7 @@ end
 
 function exarKun:checkIfActive(pPlayer)
   if (readData("exarKun:occupiedState") == 1) then
-    
+    writeData("exarKun:trashSpawnState", 0)
     self:ejectAllPlayers(pPlayer)
     self:resetInstance(pPlayer)
     return true
