@@ -12,6 +12,7 @@ function exarKun:start()
     self:spawnBossRoomOneActiveArea()
     writeData("exarKun:trashSpawnState", 0)
     writeData("exarKun:bossOneSpawnState", 0)
+    writeData("exarKun:bossOneTrashState", 0) 
 	end
 end
 
@@ -209,19 +210,25 @@ function exarKun:spawnBossRoomOneActiveArea()
     local activeArea = LuaActiveArea(pActiveArea1)
           activeArea:setCellObjectID(480000294)
           activeArea:setRadius(15)
-          createObserver(ENTEREDAREA, "exarKun", "spawnBossRoomOneTrash", pActiveArea1)         
+          createObserver(ENTEREDAREA, "exarKun", "spawnBossRoomOneTrash", pActiveArea1)
+                  
       end
 end
 
 function exarKun:spawnBossRoomOneTrash()
-  local add1 = spawnMobile("yavin4", "exar_kun_cultist", 0, 5.3, -0.1, -46.5, -147, 480000294)
-  local add2 = spawnMobile("yavin4", "exar_kun_cultist", 0, -28.4, -0.1, -46.4, 130, 480000294)
-  local add3 = spawnMobile("yavin4", "exar_kun_cultist", 0, -32.2, -0.1, -51.9, 109, 480000294)
-  local add4 = spawnMobile("yavin4", "exar_kun_cultist", 0, 9.2, -0.1, -51.8, -121, 480000294)
-  local add5 = spawnMobile("yavin4", "exar_kun_cultist", 0, 9.1, -0.1, -77.7, -55, 480000294)
-  local add6 = spawnMobile("yavin4", "exar_kun_cultist", 0, 5.3, -0.1, -82.3, -37, 480000294)
-  local add7 = spawnMobile("yavin4", "exar_kun_cultist", 0, -28.4, -0.1, -82.7, 40, 480000294)
-  local add8 = spawnMobile("yavin4", "exar_kun_cultist", 0, -32.3, -0.1, -77.2, 59, 480000294)  
+  if (readData("exarKun:bossOneTrashState") == 1) then
+    return
+  else
+    local add1 = spawnMobile("yavin4", "exar_kun_cultist", 0, 5.3, -0.1, -46.5, -147, 480000294)
+    local add2 = spawnMobile("yavin4", "exar_kun_cultist", 0, -28.4, -0.1, -46.4, 130, 480000294)
+    local add3 = spawnMobile("yavin4", "exar_kun_cultist", 0, -32.2, -0.1, -51.9, 109, 480000294)
+    local add4 = spawnMobile("yavin4", "exar_kun_cultist", 0, 9.2, -0.1, -51.8, -121, 480000294)
+    local add5 = spawnMobile("yavin4", "exar_kun_cultist", 0, 9.1, -0.1, -77.7, -55, 480000294)
+    local add6 = spawnMobile("yavin4", "exar_kun_cultist", 0, 5.3, -0.1, -82.3, -37, 480000294)
+    local add7 = spawnMobile("yavin4", "exar_kun_cultist", 0, -28.4, -0.1, -82.7, 40, 480000294)
+    local add8 = spawnMobile("yavin4", "exar_kun_cultist", 0, -32.3, -0.1, -77.2, 59, 480000294)    
+  end 
+  writeData("exarKun:bossOneTrashState", 1) 
 end
 
 function exarKun:resetTrashMobs(mob1, mob2, mob3, mob4, mob5, mob6, mob7, mob8, mob9, mob10, mob11, mob12, mob13, mob14, mob15, mob16, mob17, mob18)
