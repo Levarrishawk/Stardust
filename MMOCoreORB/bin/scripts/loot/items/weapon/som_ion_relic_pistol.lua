@@ -5,7 +5,7 @@ som_ion_relic_pistol = {
 	directObjectTemplate = "object/weapon/ranged/pistol/som_ion_relic_pistol.iff",
 	craftingValues = {
 		{"mindamage",45,216,0},
-		{"maxdamage",248,330,0},
+    {"maxdamage",248,270,0},
     {"attackspeed",2,2,1},
 		{"woundchance",10,20,0},
 		{"hitpoints",750,1500,0},

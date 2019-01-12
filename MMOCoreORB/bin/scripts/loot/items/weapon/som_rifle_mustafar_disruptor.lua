@@ -6,8 +6,8 @@ som_rifle_mustafar_disruptor = {
   customObjectName = "",
   directObjectTemplate = "object/weapon/ranged/rifle/som_rifle_mustafar_disruptor.iff",
   craftingValues = {
-    {"mindamage",80,200,0},
-    {"maxdamage",115,400,0},
+    {"mindamage",40,90,0},
+    {"maxdamage",160,340,0},
     {"attackspeed",4,4,1},
     {"woundchance",15,29,0},
     {"hitpoints",750,1500,0},
