@@ -50,6 +50,7 @@ function exarKun:activate(pPlayer)
 	end
 	
 	createEvent(100, "exarKun", "spawnCheck", pPlayer, "")
+	createEvent(100, "exarKun", "spawnBossOneCheck", pPlayer, "")
 	
 	writeData("exarKun:occupiedState", 1)  -- TO DO: Need to create the timer and conditions to reset the state of the instance.
 	createEvent(1000, "exarKun", "checkIfActiveForTimer", pPlayer, "")
@@ -210,9 +211,29 @@ function exarKun:spawnBossRoomOneActiveArea()
     local activeArea = LuaActiveArea(pActiveArea1)
           activeArea:setCellObjectID(480000294)
           activeArea:setRadius(15)
-          createObserver(ENTEREDAREA, "exarKun", "spawnBossRoomOneTrash", pActiveArea1)
+          createObserver(ENTEREDAREA, "exarKun", "notifyBossRoomOneActiveArea", pActiveArea1)
                   
       end
+end
+
+function exarKun:notifyBossRoomOneActiveArea(pActiveArea1, pMovingObject, pPlayer)
+  
+  if (not SceneObject(pMovingObject):isCreatureObject()) then
+    return 0
+  end
+  
+  return ObjectManager.withCreatureObject(pMovingObject, function(player)
+    if (player:isAiAgent()) then
+      return 0
+    end
+    
+    if ((player:isImperial() or player:isRebel()or player:isNeutral())) then
+
+      self:spawnBossRoomOneTrash()
+      
+      end
+    return 0    
+  end)
 end
 
 function exarKun:spawnBossRoomOneTrash()
