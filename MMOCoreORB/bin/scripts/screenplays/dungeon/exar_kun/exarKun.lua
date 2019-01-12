@@ -253,9 +253,9 @@ function exarKun:spawnBossRoomOneTrash()
   writeData("exarKun:bossOneTrashState", 1) 
 end
 
-function exarKun:bossOneKilled(boss1)
+function exarKun:bossOneKilled(boss1)  
   self:spawnBossRoomTwo()
-  return
+  return 0
 end
 
 function exarKun:spawnBossRoomTwo()
