@@ -202,7 +202,8 @@ function exarKun:spawnBossOneCheck()
 end
 
 function exarKun:spawnBossRoomOne()
-  local boss1 = spawnMobile("yavin4", "exar_kun_open_hand", 0, -12.2, -0.1, -47.9, 171, 480000294) 
+  local boss1 = spawnMobile("yavin4", "exar_kun_open_hand", 0, -12.2, -0.1, -47.9, 171, 480000294)
+    createObserver(OBJECTDESTRUCTION, "exarKun", "bossOneKilled", boss1) 
 end
 
 function exarKun:spawnBossRoomOneActiveArea()
@@ -250,6 +251,19 @@ function exarKun:spawnBossRoomOneTrash()
     local add8 = spawnMobile("yavin4", "exar_kun_cultist", 0, -32.3, -0.1, -77.2, 59, 480000294)    
   end 
   writeData("exarKun:bossOneTrashState", 1) 
+end
+
+function exarKun:bossOneKilled(boss1)
+  self:spawnBossRoomTwo()
+end
+
+function exarKun:spawnBossRoomTwo()
+  local boss2 = spawnMobile("yavin4", "exar_kun_minder", 0, -1.9, 0.1, -2.7, 85, 480000296)
+   -- createObserver(OBJECTDESTRUCTION, "exarKun", "bossTwoKilled", boss2) 
+end
+
+function exarKun:bossTwoKilled(boss2)
+  self:spawnBossRoomThree()
 end
 
 function exarKun:resetTrashMobs(mob1, mob2, mob3, mob4, mob5, mob6, mob7, mob8, mob9, mob10, mob11, mob12, mob13, mob14, mob15, mob16, mob17, mob18)
