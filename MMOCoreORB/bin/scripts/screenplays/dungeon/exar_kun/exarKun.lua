@@ -255,6 +255,7 @@ end
 
 function exarKun:bossOneKilled(boss1)
   self:spawnBossRoomTwo()
+  return
 end
 
 function exarKun:spawnBossRoomTwo()
