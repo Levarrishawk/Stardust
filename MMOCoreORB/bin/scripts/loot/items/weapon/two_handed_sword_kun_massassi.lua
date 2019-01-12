@@ -7,7 +7,7 @@ two_handed_sword_kun_massassi = {
 	directObjectTemplate = "object/weapon/melee/2h_sword/2h_sword_kun_massassi.iff",
 	craftingValues = {
 		{"mindamage",53,235,0},
-		{"maxdamage",98,405,0},
+    {"maxdamage",98,350,0},
     {"attackspeed",3,3,1},
 		{"woundchance",11,20,0},
 		{"hitpoints",750,1500,0},
