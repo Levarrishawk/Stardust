@@ -1,3 +1,4 @@
+-- Exar Kun Instanced Dungeon: by Levarris for use with Stardust.
 local ObjectManager = require("managers.object.object_manager")
 
 exarKun = ScreenPlay:new {
@@ -71,8 +72,7 @@ function exarKun:sendAuthorizationSui(pPlayer, pLeader)
 	end	
 
 	local sui = SuiMessageBox.new("exarKun", "authorizationSuiCallback")
-  
-  
+    
 	sui.setTitle("Exar Kun Catcombs")
 	sui.setPrompt(CreatureObject(pLeader):getFirstName() .. " has granted you authorization to travel to the Exar Kun Catacombs.  Do you accept this travel offer?")
 	sui.setOkButtonText("Yes")
@@ -83,6 +83,7 @@ function exarKun:sendAuthorizationSui(pPlayer, pLeader)
 	createEvent(30 * 1000, "exarKun", "closeAuthorizationSui", pPlayer, pageId)
 	
 end
+
 
 function exarKun:authorizationSuiCallback(pPlayer, pSui, eventIndex, args, ...)
   local cancelPressed = (eventIndex == 1)
@@ -95,6 +96,7 @@ function exarKun:authorizationSuiCallback(pPlayer, pSui, eventIndex, args, ...)
 	 createEvent(1000, "exarKun", "transportPlayer", pPlayer, "")
 	end 
 end
+
 
 function exarKun:closeAuthorizationSui(pPlayer, pageId)
 	
@@ -118,6 +120,8 @@ function exarKun:transportPlayer(pPlayer)
 
 	SceneObject(pPlayer):switchZone("yavin4", -11.8, 0.2, -121.8, 480000293)
 end
+
+
 
 function exarKun:handleTimer(pPlayer)  
   local startTime = readData("exarKunStartTime")
@@ -211,7 +215,7 @@ function exarKun:spawnBossRoomOne()
     createObserver(OBJECTDESTRUCTION, "exarKun", "bossOneKilled", boss1) 
 end
 
-function exarKun:spawnBossRoomOneActiveArea()
+function exarKun:spawnBossRoomOneActiveArea()  -- Active areas use world coords.   Set to actual world coord in each instance manually.
   local pActiveArea1 = spawnSceneObject("yavin4", "object/active_area.iff", -4423.0, 880, 7410.5, 0, 0, 0, 0, 0)
   if (pActiveArea1 ~= nil) then
     local activeArea = LuaActiveArea(pActiveArea1)
