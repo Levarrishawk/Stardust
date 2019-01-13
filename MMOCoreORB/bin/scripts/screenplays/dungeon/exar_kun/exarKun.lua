@@ -293,8 +293,9 @@ function exarKun:spawnBossRoomFive()
     createObserver(OBJECTDESTRUCTION, "exarKun", "bossFiveKilled", boss5) 
 end
 
-function exarKun:bossFiveKilled(boss5)  -- TODO Use this function to reset the instance on success.   Delay by 30 seconds to allow looting time.
-  --self:spawnBossRoomFive()
+function exarKun:bossFiveKilled(boss5, pPlayer)  -- TODO Use this function to reset the instance on success.   Delay by 30 seconds to allow looting time.
+    CreatureObject(pPlayer):sendSystemMessage("You and your group have defeated Exar Kun!  You will be removed from the instance in 60 seconds.")  
+    createEvent(60000, "exarKun", "ejectAllPlayers", pPlayer, "")
   return 0
 end
 
