@@ -487,6 +487,29 @@ function exarKun:resetInstance(pPlayer)
   writeData("exarKun:occupiedState", 0)
 end
 
+function exarKun:awardBadge(pPlayer)
+  
+  if (pPlayer ~= nil and not PlayerObject(pPlayer):hasBadge(152)) then
+        PlayerObject(pPlayer):awardBadge(152)
+  end          
+end
+
+function exarKun:awardBadgeToAll(pPlayer)
+
+  createEvent(1000, "exarKun", "awardBadge", pPlayer, "")
+  
+  if (CreatureObject(pPlayer):isGrouped()) then
+    local groupSize = CreatureObject(pPlayer):getGroupSize()
+
+    for i = 0, groupSize - 1, 1 do
+      local pMember = CreatureObject(pPlayer):getGroupMember(i)
+      if pMember ~= nil and pMember ~= pPlayer and CreatureObject(pPlayer):isInRangeWithObject(pMember, 300) and not SceneObject(pMember):isAiAgent() then
+        self:awardBadge(pMember, pPlayer)
+      end
+    end
+  end
+end
+
 function exarKun:handleVictory(pPlayer)
   self:resetInstance(pPlayer)
   self:ejectAllPlayers(pPlayer)
