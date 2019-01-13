@@ -260,11 +260,42 @@ end
 
 function exarKun:spawnBossRoomTwo()
   local boss2 = spawnMobile("yavin4", "exar_kun_minder", 0, -1.9, 0.1, -2.7, 85, 480000296)
-   -- createObserver(OBJECTDESTRUCTION, "exarKun", "bossTwoKilled", boss2) 
+    createObserver(OBJECTDESTRUCTION, "exarKun", "bossTwoKilled", boss2) 
 end
 
 function exarKun:bossTwoKilled(boss2)
   self:spawnBossRoomThree()
+  return 0
+end
+
+function exarKun:spawnBossRoomThree()  -- Adds for this phase:   exar_kun_warrior (A Caretaker Protector) , exar_kun_warrior_f (The Executioner)
+  local boss3 = spawnMobile("yavin4", "exar_kun_caretaker", 0, 18.1, 0.1, -2.0, -90, 480000296)
+    createObserver(OBJECTDESTRUCTION, "exarKun", "bossThreeKilled", boss3) 
+end
+
+function exarKun:bossThreeKilled(boss3)
+  self:spawnBossRoomFour()
+  return 0
+end
+
+function exarKun:spawnBossRoomFour()
+  local boss4 = spawnMobile("yavin4", "exar_kun_fist_of_hate", 0, 15.6, 0.0, 92.8, 178, 480000299)
+    createObserver(OBJECTDESTRUCTION, "exarKun", "bossFourKilled", boss4) 
+end
+
+function exarKun:bossFourKilled(boss4)
+  self:spawnBossRoomFive()
+  return 0
+end
+
+function exarKun:spawnBossRoomFive()
+  local boss5 = spawnMobile("yavin4", "exar_kun", 0, 15.8, 4.7, 106.9, 179, 480000299)
+    createObserver(OBJECTDESTRUCTION, "exarKun", "bossFiveKilled", boss5) 
+end
+
+function exarKun:bossFiveKilled(boss5)  -- TODO Use this function to reset the instance on success.   Delay by 30 seconds to allow looting time.
+  --self:spawnBossRoomFive()
+  return 0
 end
 
 function exarKun:resetTrashMobs(mob1, mob2, mob3, mob4, mob5, mob6, mob7, mob8, mob9, mob10, mob11, mob12, mob13, mob14, mob15, mob16, mob17, mob18)

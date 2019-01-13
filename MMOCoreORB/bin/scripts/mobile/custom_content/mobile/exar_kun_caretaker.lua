@@ -1,5 +1,5 @@
 exar_kun_caretaker = Creature:new {
-	customName = "The Caretaker of Lost Souls",
+	customName = "The Caretaker of the Lost",
 	randomNameTag = true,
 	socialGroup = "kun",
 	faction = "kun",
@@ -21,10 +21,10 @@ exar_kun_caretaker = Creature:new {
 	milk = 0,
 	tamingChance = 0,
 	ferocity = 0,
-	pvpBitmask = NONE,
-	creatureBitmask = NONE,
-	optionsBitmask = AIENABLED,
-	diet = HERBIVORE,
+	pvpBitmask = ATTACKABLE + ENEMY,
+  creatureBitmask = HERD,
+  optionsBitmask = AIENABLED,
+  diet = HERBIVORE,
 
 	templates = {"object/mobile/exar_kun_caretaker.iff"},
 	lootGroups = {},
