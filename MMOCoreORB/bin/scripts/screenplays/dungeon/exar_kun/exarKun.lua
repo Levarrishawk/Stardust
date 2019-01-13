@@ -511,6 +511,7 @@ function exarKun:awardBadgeToAll(pPlayer)
 end
 
 function exarKun:handleVictory(pPlayer)
+  self:awardBadgeToAll(pPlayer)
   self:resetInstance(pPlayer)
   self:ejectAllPlayers(pPlayer)
    writeData("exarKun:bossOneDead", 0)
