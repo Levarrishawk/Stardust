@@ -309,6 +309,7 @@ end
 function exarKun:bossFiveKilled(boss5, pPlayer)  -- TODO Use this function to reset the instance on success.   Delay by 30 seconds to allow looting time.
     writeData("exarKun:bossFiveDead", 1) 
     CreatureObject(pPlayer):sendSystemMessage("You and your group have defeated Exar Kun!  You will be removed from the instance in 60 seconds.")  
+    createEvent(1000, "exarKun", "awardBadgeToAll", pPlayer, "")
     createEvent(60000, "exarKun", "handleVictory", pPlayer, "")
   return 0
 end
@@ -488,9 +489,10 @@ function exarKun:resetInstance(pPlayer)
 end
 
 function exarKun:awardBadge(pPlayer)
+  local pGhost = CreatureObject(pPlayer):getPlayerObject()
   
-  if (pPlayer ~= nil and not PlayerObject(pPlayer):hasBadge(152)) then
-        PlayerObject(pPlayer):awardBadge(152)
+  if (pGhost ~= nil and not PlayerObject(pGhost):hasBadge(152)) then
+        PlayerObject(pGhost):awardBadge(152)
   end          
 end
 
@@ -510,8 +512,7 @@ function exarKun:awardBadgeToAll(pPlayer)
   end
 end
 
-function exarKun:handleVictory(pPlayer)
-  self:awardBadgeToAll(pPlayer)
+function exarKun:handleVictory(pPlayer) 
   self:resetInstance(pPlayer)
   self:ejectAllPlayers(pPlayer)
    writeData("exarKun:bossOneDead", 0)
