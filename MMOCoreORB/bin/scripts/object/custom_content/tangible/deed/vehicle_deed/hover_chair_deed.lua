@@ -1,5 +1,5 @@
 object_tangible_deed_vehicle_deed_hover_chair_deed = object_tangible_deed_vehicle_deed_shared_hover_chair_deed:new {
-
+  customName = "Hover Chair Deed",
 	templateType = VEHICLEDEED,
 
 	controlDeviceObjectTemplate = "object/intangible/vehicle/hover_chair_pcd.iff",
