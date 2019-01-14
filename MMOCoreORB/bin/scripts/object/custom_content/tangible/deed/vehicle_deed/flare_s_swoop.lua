@@ -1,6 +1,6 @@
 
 object_tangible_deed_vehicle_deed_flare_s_swoop = object_tangible_deed_vehicle_deed_shared_flare_s_swoop:new {
-
+  customName = "Flare S Swoop Deed",
 	templateType = VEHICLEDEED,
 
 	controlDeviceObjectTemplate = "object/intangible/vehicle/flare_s_swoop_pcd.iff",
