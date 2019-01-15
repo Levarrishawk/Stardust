@@ -1,3 +1,4 @@
+-- Exar Kun Instanced Dungeon: by Levarris for use with Stardust.
 local ObjectManager = require("managers.object.object_manager")
 
 exarKun = ScreenPlay:new {
@@ -12,7 +13,12 @@ function exarKun:start()
     self:spawnBossRoomOneActiveArea()
     writeData("exarKun:trashSpawnState", 0)
     writeData("exarKun:bossOneSpawnState", 0)
-    writeData("exarKun:bossOneTrashState", 0) 
+    writeData("exarKun:bossOneTrashState", 0)
+    writeData("exarKun:bossOneDead", 0)
+    writeData("exarKun:bossTwoDead", 0) 
+    writeData("exarKun:bossThreeDead", 0) 
+    writeData("exarKun:bossFourDead", 0) 
+    writeData("exarKun:bossFiveDead", 0)   
 	end
 end
 
@@ -66,8 +72,7 @@ function exarKun:sendAuthorizationSui(pPlayer, pLeader)
 	end	
 
 	local sui = SuiMessageBox.new("exarKun", "authorizationSuiCallback")
-  
-  
+    
 	sui.setTitle("Exar Kun Catcombs")
 	sui.setPrompt(CreatureObject(pLeader):getFirstName() .. " has granted you authorization to travel to the Exar Kun Catacombs.  Do you accept this travel offer?")
 	sui.setOkButtonText("Yes")
@@ -78,6 +83,7 @@ function exarKun:sendAuthorizationSui(pPlayer, pLeader)
 	createEvent(30 * 1000, "exarKun", "closeAuthorizationSui", pPlayer, pageId)
 	
 end
+
 
 function exarKun:authorizationSuiCallback(pPlayer, pSui, eventIndex, args, ...)
   local cancelPressed = (eventIndex == 1)
@@ -90,6 +96,7 @@ function exarKun:authorizationSuiCallback(pPlayer, pSui, eventIndex, args, ...)
 	 createEvent(1000, "exarKun", "transportPlayer", pPlayer, "")
 	end 
 end
+
 
 function exarKun:closeAuthorizationSui(pPlayer, pageId)
 	
@@ -113,6 +120,8 @@ function exarKun:transportPlayer(pPlayer)
 
 	SceneObject(pPlayer):switchZone("yavin4", -11.8, 0.2, -121.8, 480000293)
 end
+
+
 
 function exarKun:handleTimer(pPlayer)  
   local startTime = readData("exarKunStartTime")
@@ -167,29 +176,29 @@ end
 
 function exarKun:spawnTrashMobs()  -- Each instance script needs assigned cells.
   -- Trash pack 1: Hallway 1
-   local mob1 = spawnMobile("yavin4", "exar_kun_cultist", 3600, 43.3, 0, -48.1, 116, 480000295)
-   local mob2 = spawnMobile("yavin4", "exar_kun_cultist", 3600, 51.5, 0, -53.8, -37, 480000295)
-   local mob3 = spawnMobile("yavin4", "exar_kun_cultist", 3600, 50.7, 0, -46.1, -140, 480000295)
+   local mob1 = spawnMobile("yavin4", "exar_kun_cultist", 0, 43.3, 0, -48.1, 116, 480000295)
+   local mob2 = spawnMobile("yavin4", "exar_kun_cultist", 0, 51.5, 0, -53.8, -37, 480000295)
+   local mob3 = spawnMobile("yavin4", "exar_kun_cultist", 0, 50.7, 0, -46.1, -140, 480000295)
   -- Trash pack 2: Hallway 1
-   local mob4 = spawnMobile("yavin4", "exar_kun_cultist", 3600, 59.1, 0, -20.4, -174, 480000295)
-   local mob5 = spawnMobile("yavin4", "exar_kun_cultist", 3600, 56.7, 0, -20.2, -171, 480000295)
-   local mob6 = spawnMobile("yavin4", "exar_kun_cultist", 3600, 52.2, 0, -21.0, 176, 480000295)
+   local mob4 = spawnMobile("yavin4", "exar_kun_cultist", 0, 59.1, 0, -20.4, -174, 480000295)
+   local mob5 = spawnMobile("yavin4", "exar_kun_cultist", 0, 56.7, 0, -20.2, -171, 480000295)
+   local mob6 = spawnMobile("yavin4", "exar_kun_cultist", 0, 52.2, 0, -21.0, 176, 480000295)
   -- Trash pack 3: hallway 1
-   local mob7 = spawnMobile("yavin4", "exar_kun_cultist", 3600, 38.6, -0.1, -1.4, 101, 480000295)
-   local mob8 = spawnMobile("yavin4", "exar_kun_cultist", 3600, 41.1, -0.2, 1.9, 117, 480000295)
-   local mob9 = spawnMobile("yavin4", "exar_kun_cultist", 3600, 44.6, -0.4, 4.5, 150, 480000295)
+   local mob7 = spawnMobile("yavin4", "exar_kun_cultist", 0, 38.6, -0.1, -1.4, 101, 480000295)
+   local mob8 = spawnMobile("yavin4", "exar_kun_cultist", 0, 41.1, -0.2, 1.9, 117, 480000295)
+   local mob9 = spawnMobile("yavin4", "exar_kun_cultist", 0, 44.6, -0.4, 4.5, 150, 480000295)
    -- Trash pack 4: hallway 2
-   local mob10 = spawnMobile("yavin4", "exar_kun_cultist", 3600, -38.1, 0, 11.1, -172, 480000297)
-   local mob11 = spawnMobile("yavin4", "exar_kun_cultist", 3600, -31.9, 0, 11.8, -174, 480000297)
-   local mob12 = spawnMobile("yavin4", "exar_kun_cultist", 3600, -34.7, 0, 12.5, -179, 480000297)
+   local mob10 = spawnMobile("yavin4", "exar_kun_cultist", 0, -38.1, 0, 11.1, -172, 480000297)
+   local mob11 = spawnMobile("yavin4", "exar_kun_cultist", 0, -31.9, 0, 11.8, -174, 480000297)
+   local mob12 = spawnMobile("yavin4", "exar_kun_cultist", 0, -34.7, 0, 12.5, -179, 480000297)
    -- Trash pack 5: hallway 2
-   local mob13 = spawnMobile("yavin4", "exar_kun_cultist", 3600, -22.4, -0.2, 40.9, 144, 480000297)
-   local mob14 = spawnMobile("yavin4", "exar_kun_cultist", 3600, -16.3, 0, 39.7, -125, 480000297)
-   local mob15 = spawnMobile("yavin4", "exar_kun_cultist", 3600, -15.5, 0, 35.3, -51, 480000297)
+   local mob13 = spawnMobile("yavin4", "exar_kun_cultist", 0, -22.4, -0.2, 40.9, 144, 480000297)
+   local mob14 = spawnMobile("yavin4", "exar_kun_cultist", 0, -16.3, 0, 39.7, -125, 480000297)
+   local mob15 = spawnMobile("yavin4", "exar_kun_cultist", 0, -15.5, 0, 35.3, -51, 480000297)
    -- Trash pack 6: hallway 2 cell 2
-   local mob16 = spawnMobile("yavin4", "exar_kun_cultist", 3600, 7.7, 0.3, 50, 141, 480000298)
-   local mob17 = spawnMobile("yavin4", "exar_kun_cultist", 3600, 23.3, 0.3, 49.7, -113, 480000298)
-   local mob18 = spawnMobile("yavin4", "exar_kun_cultist", 3600, 16.7, 0.3, 39.9, -4, 480000298)
+   local mob16 = spawnMobile("yavin4", "exar_kun_cultist", 0, 7.7, 0.3, 50, 141, 480000298)
+   local mob17 = spawnMobile("yavin4", "exar_kun_cultist", 0, 23.3, 0.3, 49.7, -113, 480000298)
+   local mob18 = spawnMobile("yavin4", "exar_kun_cultist", 0, 16.7, 0.3, 39.9, -4, 480000298)
 end
 
 function exarKun:spawnBossOneCheck()
@@ -206,7 +215,7 @@ function exarKun:spawnBossRoomOne()
     createObserver(OBJECTDESTRUCTION, "exarKun", "bossOneKilled", boss1) 
 end
 
-function exarKun:spawnBossRoomOneActiveArea()
+function exarKun:spawnBossRoomOneActiveArea()  -- Active areas use world coords.   Set to actual world coord in each instance manually.
   local pActiveArea1 = spawnSceneObject("yavin4", "object/active_area.iff", -4423.0, 880, 7410.5, 0, 0, 0, 0, 0)
   if (pActiveArea1 ~= nil) then
     local activeArea = LuaActiveArea(pActiveArea1)
@@ -253,18 +262,56 @@ function exarKun:spawnBossRoomOneTrash()
   writeData("exarKun:bossOneTrashState", 1) 
 end
 
-function exarKun:bossOneKilled(boss1)  
+function exarKun:bossOneKilled(boss1) 
+  writeData("exarKun:bossOneDead", 1) 
   self:spawnBossRoomTwo()
   return 0
 end
 
 function exarKun:spawnBossRoomTwo()
   local boss2 = spawnMobile("yavin4", "exar_kun_minder", 0, -1.9, 0.1, -2.7, 85, 480000296)
-   -- createObserver(OBJECTDESTRUCTION, "exarKun", "bossTwoKilled", boss2) 
+    createObserver(OBJECTDESTRUCTION, "exarKun", "bossTwoKilled", boss2) 
 end
 
 function exarKun:bossTwoKilled(boss2)
+  writeData("exarKun:bossTwoDead", 1) 
   self:spawnBossRoomThree()
+  return 0
+end
+
+function exarKun:spawnBossRoomThree()  -- Adds for this phase:   exar_kun_warrior (A Caretaker Protector) , exar_kun_warrior_f (The Executioner)
+  local boss3 = spawnMobile("yavin4", "exar_kun_caretaker", 0, 18.1, 0.1, -2.0, -90, 480000296)
+    createObserver(OBJECTDESTRUCTION, "exarKun", "bossThreeKilled", boss3) 
+end
+
+function exarKun:bossThreeKilled(boss3)
+  writeData("exarKun:bossThreeDead", 1) 
+  self:spawnBossRoomFour()
+  return 0
+end
+
+function exarKun:spawnBossRoomFour()
+  local boss4 = spawnMobile("yavin4", "exar_kun_fist_of_hate", 0, 15.6, 0.0, 92.8, 178, 480000299)
+    createObserver(OBJECTDESTRUCTION, "exarKun", "bossFourKilled", boss4) 
+end
+
+function exarKun:bossFourKilled(boss4)
+  writeData("exarKun:bossFourDead", 1) 
+  self:spawnBossRoomFive()
+  return 0
+end
+
+function exarKun:spawnBossRoomFive()
+  local boss5 = spawnMobile("yavin4", "exar_kun", 0, 15.8, 4.7, 106.9, 179, 480000299)
+    createObserver(OBJECTDESTRUCTION, "exarKun", "bossFiveKilled", boss5) 
+end
+
+function exarKun:bossFiveKilled(boss5, pPlayer)  -- TODO Use this function to reset the instance on success.   Delay by 30 seconds to allow looting time.
+    writeData("exarKun:bossFiveDead", 1) 
+    CreatureObject(pPlayer):sendSystemMessage("You and your group have defeated Exar Kun!  You will be removed from the instance in 60 seconds.")  
+    createEvent(1000, "exarKun", "awardBadgeToAll", pPlayer, "")
+    createEvent(60000, "exarKun", "handleVictory", pPlayer, "")
+  return 0
 end
 
 function exarKun:resetTrashMobs(mob1, mob2, mob3, mob4, mob5, mob6, mob7, mob8, mob9, mob10, mob11, mob12, mob13, mob14, mob15, mob16, mob17, mob18)
@@ -436,8 +483,44 @@ function exarKun:resetInstanceA(pExarKun, pPlayer)
   return 0
 end
 
-function exarKun:resetInstance()
-  
+function exarKun:resetInstance(pPlayer)
+  CreatureObject(pPlayer):sendSystemMessage("The instance has been reset.")
   writeData("exarKun:occupiedState", 0)
 end
 
+function exarKun:awardBadge(pPlayer)
+  local pGhost = CreatureObject(pPlayer):getPlayerObject()
+  
+  if (pGhost ~= nil and not PlayerObject(pGhost):hasBadge(152)) then
+        PlayerObject(pGhost):awardBadge(152)
+  end          
+end
+
+function exarKun:awardBadgeToAll(pPlayer)
+
+  createEvent(1000, "exarKun", "awardBadge", pPlayer, "")
+  
+  if (CreatureObject(pPlayer):isGrouped()) then
+    local groupSize = CreatureObject(pPlayer):getGroupSize()
+
+    for i = 0, groupSize - 1, 1 do
+      local pMember = CreatureObject(pPlayer):getGroupMember(i)
+      if pMember ~= nil and pMember ~= pPlayer and CreatureObject(pPlayer):isInRangeWithObject(pMember, 300) and not SceneObject(pMember):isAiAgent() then
+        self:awardBadge(pMember, pPlayer)
+      end
+    end
+  end
+end
+
+function exarKun:handleVictory(pPlayer) 
+  self:resetInstance(pPlayer)
+  self:ejectAllPlayers(pPlayer)
+   writeData("exarKun:bossOneDead", 0)
+   writeData("exarKun:bossTwoDead", 0) 
+   writeData("exarKun:bossThreeDead", 0) 
+   writeData("exarKun:bossFourDead", 0) 
+   writeData("exarKun:bossFiveDead", 0)  
+   writeData("exarKun:trashSpawnState", 0)
+   writeData("exarKun:bossOneSpawnState", 0)
+   writeData("exarKun:bossOneTrashState", 0) 
+end

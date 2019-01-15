@@ -1,17 +1,17 @@
 exar_kun = Creature:new {
-	customName = "exar_kun",
+	customName = "Exar Kun",
 	randomNameTag = true,
-	socialGroup = "townsperson",
-	faction = "townsperson",
+	socialGroup = "kun",
+	faction = "kun",
 	level = 131,
 	chanceHit = 4.75,
 	damageMin = 770,
 	damageMax = 1250,
 	baseXp = 12424,
-	baseHAM = 50000,
-	baseHAMmax = 61000,
+	baseHAM = 610000,
+	baseHAMmax = 610000,
 	armor = 1,
-	resists = {15,200,15,200,200,200,200,200,-1},
+	resists = {55,55,15,25,15,25,15,25,15},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -21,6 +21,7 @@ exar_kun = Creature:new {
 	milk = 0,
 	tamingChance = 0,
 	ferocity = 0,
+	scale = 1.3,
 	pvpBitmask = ATTACKABLE + ENEMY,
 	creatureBitmask = HERD,
 	optionsBitmask = AIENABLED,
@@ -30,7 +31,7 @@ exar_kun = Creature:new {
 	lootGroups = {},
 	weapons = {"dark_jedi_weapons_gen4"},
 	conversationTemplate = "",
-	attacks = merge(fencermid,forcepowermaster,tkamid,lightsabermaster,brawlermaster,forcewielder)
+	attacks = merge(lightsabermaster,forcewielder)
 }
 
 CreatureTemplates:addCreatureTemplate(exar_kun, "exar_kun")

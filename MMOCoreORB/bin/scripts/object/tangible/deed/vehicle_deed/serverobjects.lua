@@ -57,7 +57,7 @@ includeFile("tangible/deed/vehicle_deed/vehicular_prototype_bike_deed.lua")
 includeFile("tangible/deed/vehicle_deed/vehicular_prototype_deed.lua")
 
 --***MTG Stuff
-
+--[[
 includeFile("tangible/deed/vehicle_deed/a1_deluxe_floater_deed.lua")
 includeFile("tangible/deed/vehicle_deed/hover_chair_deed.lua")
 includeFile("tangible/deed/vehicle_deed/light_bending_barc_deed.lua")
@@ -110,3 +110,4 @@ includeFile("tangible/deed/vehicle_deed/landspeeder_xp38_deed.lua")
 includeFile("tangible/deed/vehicle_deed/mustafar_panning_droid.lua")
 includeFile("tangible/deed/vehicle_deed/speeder_stap_deed.lua")
 includeFile("tangible/deed/vehicle_deed/temp_walker1_deed.lua")
+--]]
