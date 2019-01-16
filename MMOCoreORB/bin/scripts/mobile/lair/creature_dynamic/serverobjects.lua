@@ -438,3 +438,5 @@ includeFile("lair/creature_dynamic/moraband_shyrack_pack.lua")
 includeFile("lair/creature_dynamic/hutta_dragonsnake_pack.lua")
 includeFile("lair/creature_dynamic/hutta_chemilizard_pack.lua")
 includeFile("lair/creature_dynamic/hutta_xuuva_pack.lua")
+
+includeFile("lair/creature_dynamic/florrum_skalder_pack.lua")
