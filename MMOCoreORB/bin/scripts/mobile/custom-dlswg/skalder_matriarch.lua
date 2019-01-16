@@ -1,4 +1,4 @@
-snorbal_matriarch = Creature:new {
+skalder_matriarch = Creature:new {
 	objectName = "@mob/creature_names:snorbal_matriarch",
 	customName = "a Skalder Matriarch",
 	socialGroup = "snorbal",
@@ -38,4 +38,4 @@ snorbal_matriarch = Creature:new {
 	}
 }
 
-CreatureTemplates:addCreatureTemplate(snorbal_matriarch, "snorbal_matriarch")
+CreatureTemplates:addCreatureTemplate(skalder_matriarch, "skalder_matriarch")
