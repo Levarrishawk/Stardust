@@ -7,8 +7,14 @@ registerScreenPlay("TalusImperialOutpostScreenPlay", true)
 
 function TalusImperialOutpostScreenPlay:start()
 	if (isZoneEnabled("talus")) then
+		self:spawnSceneObjects()
 		self:spawnMobiles()
 	end
+end
+
+function TalusImperialOutpostScreenPlay:spawnSceneObjects()
+
+  spawnSceneObject("talus", "object/tangible/terminal/terminal_event_buffs.iff", 5.3, 0.1, -5.5, 1392912, math.rad(-36) )
 end
 
 function TalusImperialOutpostScreenPlay:spawnMobiles()
