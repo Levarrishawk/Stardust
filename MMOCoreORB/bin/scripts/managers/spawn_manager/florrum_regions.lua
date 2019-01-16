@@ -14,5 +14,5 @@ require("scripts.managers.spawn_manager.regions")
 
 florrum_regions = {  
   {"hondo_camp", 3246, -754, {1, 200}, NOBUILDZONEAREA + NOSPAWNAREA},
-  {"world_spawner", 0, 0, {1, -1}, SPAWNAREA + WORLDSPAWNAREA, {"florum_world", "global"}, 2048}
+  {"world_spawner", 0, 0, {1, -1}, SPAWNAREA + WORLDSPAWNAREA, {"florrum_world", "global"}, 2048}
 }
