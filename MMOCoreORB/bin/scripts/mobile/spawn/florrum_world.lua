@@ -2,7 +2,7 @@ florrum_world = {
 
 	lairSpawns = {
 		{
-			lairTemplateName = "moraband_terentatek_pack",
+			lairTemplateName = "florrum_skalder_pack",
 			spawnLimit = -1,
 			minDifficulty = 3,
 			maxDifficulty = 7,
