@@ -114,7 +114,7 @@ function hondo_send_teleporter_convo_handler:runScreenHandlers(pConversationTemp
 
   if ( screenID == "mayor2" ) then
    
-     player:switchZone("09", 3246, 51, -758, 0) -- x, z, y, cell
+     player:switchZone("florrum", 3246, 51, -758, 0) -- x, z, y, cell
 
   end
   
