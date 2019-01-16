@@ -3208,7 +3208,7 @@ object_soundobject_shared_soundobject_isd_hangar2 = SharedStaticObjectTemplate:n
 
 ObjectTemplates:addClientTemplate(object_soundobject_shared_soundobject_isd_hangar2, "object/soundobject/shared_soundobject_isd_hangar2.iff")
 --
-object_soundobject_shared_soundobject_music_hondo2 = SharedStaticObjectTemplate:new {
+object_soundobject_shared_soundobject_music_hondo = SharedStaticObjectTemplate:new {
   clientTemplateFileName = "object/soundobject/shared_soundobject_music_hondo.iff"
   
 }
