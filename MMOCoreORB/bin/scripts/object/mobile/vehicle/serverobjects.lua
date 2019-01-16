@@ -58,6 +58,8 @@ includeFile("mobile/vehicle/speederbike_swoop.lua")
 includeFile("mobile/vehicle/vehicle_base.lua")
 
 --***MTG Stuff
+
+--[[
 includeFile("mobile/vehicle/a1_deluxe_floater.lua")
 includeFile("mobile/vehicle/air2_swoop_speeder.lua")
 includeFile("mobile/vehicle/barc_speeder.lua")
@@ -115,3 +117,5 @@ includeFile("mobile/vehicle/walker_at_st.lua")
 includeFile("mobile/vehicle/walker_at_xt.lua")
 includeFile("mobile/vehicle/walker_at_xt_player.lua")
 includeFile("mobile/vehicle/xj6_air_speeder.lua")
+
+--]]

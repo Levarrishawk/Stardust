@@ -46,7 +46,7 @@ insane_vitiate_cultist = Creature:new {
     }
   },
   weapons = {"mixed_force_weapons"},
-  attacks = merge(lightsabermaster,forcewielder)
+  attacks = merge(brawlermaster,forcewielder)
 }
 
 CreatureTemplates:addCreatureTemplate(insane_vitiate_cultist, "insane_vitiate_cultist")
