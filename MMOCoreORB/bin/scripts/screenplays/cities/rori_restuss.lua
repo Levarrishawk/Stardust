@@ -17,6 +17,8 @@ function RoriRestussScreenPlay:spawnSceneObjects()
 
 	--outside starport
 	spawnSceneObject("rori", "object/tangible/crafting/station/public_space_station.iff", 5376.78, 80, 5666.8, 0, math.rad(179) )
+	
+	spawnSceneObject("rori", "object/tangible/terminal/terminal_event_buffs.iff", -10.8, 0.3, 0.0, 4635732, math.rad(-90) )
 end
 
 function RoriRestussScreenPlay:spawnMobiles()
