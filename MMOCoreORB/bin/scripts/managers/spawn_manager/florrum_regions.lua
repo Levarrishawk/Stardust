@@ -12,10 +12,7 @@
 
 require("scripts.managers.spawn_manager.regions")
 
-florrum_regions = {
-  {"dreshdae_valley", 1060, -5332, {1, 400}, NOSPAWNAREA + NOBUILDZONEAREA},
-  {"valley_of_the_dark_lords", -1346, -830, {1, 1000}, NOBUILDZONEAREA},
-  {"shyrack_cave", 457, -235, {1, 250}, NOBUILDZONEAREA},
-  {"archaeological_outpost", -1712, -679, {1, 200}, NOBUILDZONEAREA + NOSPAWNAREA},
-  {"world_spawner", 0, 0, {1, -1}, SPAWNAREA + WORLDSPAWNAREA, {"moraband_world", "global_hard"}, 2048}
+florrum_regions = {  
+  {"hondo_camp", 3246, -754, {1, 200}, NOBUILDZONEAREA + NOSPAWNAREA},
+  {"world_spawner", 0, 0, {1, -1}, SPAWNAREA + WORLDSPAWNAREA, {"florum_world", "global"}, 2048}
 }
