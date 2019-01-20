@@ -46,4 +46,4 @@ object_tangible_terminal_terminal_axkva_min_entrance = object_tangible_terminal_
 	objectMenuComponent = "axkvaMinEntryMenuComponent",
 }
 
-ObjectTemplates:addTemplate(object_tangible_terminal_terminal_axkva_min_entrancee, "object/tangible/terminal/terminal_axkva_min_entrance.iff")
+ObjectTemplates:addTemplate(object_tangible_terminal_terminal_axkva_min_entrance, "object/tangible/terminal/terminal_axkva_min_entrance.iff")
