@@ -3336,4 +3336,12 @@ object_tangible_terminal_shared_terminal_exar_kun_entrance = SharedTangibleObjec
 
 ObjectTemplates:addClientTemplate(object_tangible_terminal_shared_terminal_exar_kun_entrance, "object/tangible/terminal/shared_terminal_exar_kun_entrance.iff")
 
+object_tangible_terminal_shared_terminal_axkva_min_entrance = SharedTangibleObjectTemplate:new {
+  clientTemplateFileName = "object/tangible/terminal/shared_terminal_axkva_min_entrance.iff"
+  
+}
+
+ObjectTemplates:addClientTemplate(object_tangible_terminal_shared_terminal_axkva_min_entrance, "object/tangible/terminal/shared_terminal_axkva_min_entrance.iff")
+
+
 

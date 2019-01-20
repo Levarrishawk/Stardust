@@ -118,7 +118,7 @@ function axkvaMin:transportPlayer(pPlayer)
 		return
 	end
 
-	SceneObject(pPlayer):switchZone("yavin4", -11.8, 0.2, -121.8, 480000293)
+	SceneObject(pPlayer):switchZone("dathomir", 30.4, 0.1, 0.3, 480000332)
 end
 
 
@@ -167,7 +167,7 @@ function axkvaMin:spawnCheck()
   if (readData("axkvaMin:trashSpawnState") == 1) then
     return
   else
-    self:spawnTrashMobs()
+   -- self:spawnTrashMobs()   -- Axkva min has no trash.
     writeData("axkvaMin:trashSpawnState", 1)       
   end 
 end
@@ -190,22 +190,22 @@ function axkvaMin:spawnBossOneCheck()
 end
 
 function axkvaMin:spawnBossRoomOne()
-  local boss1 = spawnMobile("yavin4", "exar_kun_open_hand", 0, -12.2, -0.1, -47.9, 171, 480000294)
+  local boss1 = spawnMobile("dathomir", "nandina", 0, -78, 17.8, 29.8, 127, 480000333)
     createObserver(OBJECTDESTRUCTION, "axkvaMin", "bossOneKilled", boss1) 
 end
 
 function axkvaMin:spawnBossRoomOneActiveArea()  -- Active areas use world coords.   Set to actual world coord in each instance manually.
-  local pActiveArea1 = spawnSceneObject("yavin4", "object/active_area.iff", -4423.0, 880, 7410.5, 0, 0, 0, 0, 0)
+  local pActiveArea1 = spawnSceneObject("dathomir", "object/active_area.iff", 7333.7, 506, 4373.9, 0, 0, 0, 0, 0)
   if (pActiveArea1 ~= nil) then
     local activeArea = LuaActiveArea(pActiveArea1)
-          activeArea:setCellObjectID(480000294)
-          activeArea:setRadius(15)
+          activeArea:setCellObjectID(480000333)
+          activeArea:setRadius(5)
           createObserver(ENTEREDAREA, "axkvaMin", "notifyBossRoomOneActiveArea", pActiveArea1)
                   
       end
 end
 
-function axkvaMin:notifyBossRoomOneActiveArea(pActiveArea1, pMovingObject, pPlayer)
+function axkvaMin:notifyBossRoomOneActiveArea(pActiveArea1, pMovingObject, pPlayer, boss1)
   
   if (not SceneObject(pMovingObject):isCreatureObject()) then
     return 0
@@ -225,20 +225,13 @@ function axkvaMin:notifyBossRoomOneActiveArea(pActiveArea1, pMovingObject, pPlay
   end)
 end
 
-function axkvaMin:spawnBossRoomOneTrash()
+function axkvaMin:spawnBossRoomOneTrash(boss1)
   if (readData("axkvaMin:bossOneTrashState") == 1) then
     return
   else
-  --[[
-    local add1 = spawnMobile("yavin4", "exar_kun_cultist", 0, 5.3, -0.1, -46.5, -147, 480000294)
-    local add2 = spawnMobile("yavin4", "exar_kun_cultist", 0, -28.4, -0.1, -46.4, 130, 480000294)
-    local add3 = spawnMobile("yavin4", "exar_kun_cultist", 0, -32.2, -0.1, -51.9, 109, 480000294)
-    local add4 = spawnMobile("yavin4", "exar_kun_cultist", 0, 9.2, -0.1, -51.8, -121, 480000294)
-    local add5 = spawnMobile("yavin4", "exar_kun_cultist", 0, 9.1, -0.1, -77.7, -55, 480000294)
-    local add6 = spawnMobile("yavin4", "exar_kun_cultist", 0, 5.3, -0.1, -82.3, -37, 480000294)
-    local add7 = spawnMobile("yavin4", "exar_kun_cultist", 0, -28.4, -0.1, -82.7, 40, 480000294)
-    local add8 = spawnMobile("yavin4", "exar_kun_cultist", 0, -32.3, -0.1, -77.2, 59, 480000294) 
-    --]]   
+    spatialChat(boss1, "Say hello to my little friend!")
+    local add1 = spawnMobile("dathomir", "wod_mutant_rancor_boss", 0, -84.9, 17.9, 16, 65, 480000333)
+       
   end 
   writeData("axkvaMin:bossOneTrashState", 1) 
 end
@@ -250,7 +243,7 @@ function axkvaMin:bossOneKilled(boss1)
 end
 
 function axkvaMin:spawnBossRoomTwo()
-  local boss2 = spawnMobile("yavin4", "exar_kun_minder", 0, -1.9, 0.1, -2.7, 85, 480000296)
+  local boss2 = spawnMobile("dathomir", "lelli_hi", 0, -74.4, 16.5, 31.4, 154, 480000333)
     createObserver(OBJECTDESTRUCTION, "axkvaMin", "bossTwoKilled", boss2) 
 end
 
@@ -261,7 +254,7 @@ function axkvaMin:bossTwoKilled(boss2)
 end
 
 function axkvaMin:spawnBossRoomThree()  -- Adds for this phase:   exar_kun_warrior (A Caretaker Protector) , exar_kun_warrior_f (The Executioner)
-  local boss3 = spawnMobile("yavin4", "exar_kun_caretaker", 0, 18.1, 0.1, -2.0, -90, 480000296)
+  local boss3 = spawnMobile("dathomir", "kimaru", 0, -79.3, 16.8, 14.2, 45, 480000333)
     createObserver(OBJECTDESTRUCTION, "axkvaMin", "bossThreeKilled", boss3) 
 end
 
@@ -272,7 +265,7 @@ function axkvaMin:bossThreeKilled(boss3)
 end
 
 function axkvaMin:spawnBossRoomFour()
-  local boss4 = spawnMobile("yavin4", "exar_kun_fist_of_hate", 0, 15.6, 0.0, 92.8, 178, 480000299)
+  local boss4 = spawnMobile("dathomir", "suin_chalo", 0, -82.5, 17.8, 17.8, 55, 480000333)
     createObserver(OBJECTDESTRUCTION, "axkvaMin", "bossFourKilled", boss4) 
 end
 
@@ -283,113 +276,21 @@ function axkvaMin:bossFourKilled(boss4)
 end
 
 function axkvaMin:spawnBossRoomFive()
-  local boss5 = spawnMobile("yavin4", "exar_kun", 0, 15.8, 4.7, 106.9, 179, 480000299)
+  local boss5 = spawnMobile("dathomir", "axkva_min", 0, -79, 17.8, 23.8, 99, 480000333)
     createObserver(OBJECTDESTRUCTION, "axkvaMin", "bossFiveKilled", boss5) 
 end
 
 function axkvaMin:bossFiveKilled(boss5, pPlayer)  -- TODO Use this function to reset the instance on success.   Delay by 30 seconds to allow looting time.
     writeData("axkvaMin:bossFiveDead", 1) 
-    CreatureObject(pPlayer):sendSystemMessage("You and your group have defeated Exar Kun!  You will be removed from the instance in 60 seconds.")  
+    CreatureObject(pPlayer):sendSystemMessage("You and your group have defeated Axkva Min!  You will be removed from the instance in 60 seconds.")  
     createEvent(1000, "axkvaMin", "awardBadgeToAll", pPlayer, "")
     createEvent(60000, "axkvaMin", "handleVictory", pPlayer, "")
   return 0
 end
 
-function axkvaMin:resetTrashMobs(mob1, mob2, mob3, mob4, mob5, mob6, mob7, mob8, mob9, mob10, mob11, mob12, mob13, mob14, mob15, mob16, mob17, mob18)
-  if (mob1 == nil) then
-    return
-  else
-    SceneObject(mob1):destroyObjectFromWorld()
-  end
-  if (mob2 == nil) then
-    return
-  else    
-    SceneObject(mob2):destroyObjectFromWorld()
-  end
-  if (mob3 == nil) then
-    return
-  else    
-    SceneObject(mob3):destroyObjectFromWorld()
-  end
-  if (mob4 == nil) then
-    return
-  else   
-    SceneObject(mob4):destroyObjectFromWorld()
-  end
-  if (mob5 == nil) then
-    return
-  else   
-    SceneObject(mob5):destroyObjectFromWorld()
-  end
-  if (mob6 == nil) then
-    return
-  else   
-    SceneObject(mob6):destroyObjectFromWorld()
-  end
-  if (mob7 == nil) then
-    return
-  else   
-    SceneObject(mob7):destroyObjectFromWorld()
-  end
-  if (mob8 == nil) then
-    return
-  else   
-    SceneObject(mob8):destroyObjectFromWorld()
-  end
-  if (mob9 == nil) then
-    return
-  else   
-    SceneObject(mob9):destroyObjectFromWorld()
-  end
-  if (mob10 == nil) then
-    return
-  else   
-    SceneObject(mob10):destroyObjectFromWorld()
-  end
-  if (mob11 == nil) then
-    return
-  else   
-    SceneObject(mob11):destroyObjectFromWorld()
-  end
-  if (mob12 == nil) then
-    return
-  else   
-    SceneObject(mob12):destroyObjectFromWorld()
-  end
-  if (mob13 == nil) then
-    return
-  else   
-    SceneObject(mob13):destroyObjectFromWorld()
-  end
-  if (mob14 == nil) then
-    return
-  else   
-    SceneObject(mob14):destroyObjectFromWorld()
-  end
-  if (mob15 == nil) then
-    return
-  else   
-    SceneObject(mob15):destroyObjectFromWorld()
-  end
-  if (mob16 == nil) then
-    return
-  else   
-    SceneObject(mob16):destroyObjectFromWorld()
-  end
-  if (mob17 == nil) then
-    return
-  else   
-    SceneObject(mob17):destroyObjectFromWorld()
-  end
-  if (mob18 == nil) then
-    return
-  else   
-    SceneObject(mob18):destroyObjectFromWorld()
-  end
-end
 
 function axkvaMin:getBuildingObject()
-  return getSceneObject(480000292)  -- Different parent for each instance script
+  return getSceneObject(480000331)  -- Different parent for each instance script
 end
 
 function axkvaMin:getCell(cellName)
@@ -447,7 +348,7 @@ function axkvaMin:ejectPlayer(pPlayer)
     return
   end
   CreatureObject(pPlayer):sendSystemMessage("You are now being removed from the instance.")
-  SceneObject(pPlayer):switchZone("yavin4", 5024.1, 73.2, 5585.1, 0)
+  SceneObject(pPlayer):switchZone("dathomir", -4029, 132, -19, 0)
 end
 
 
@@ -472,8 +373,8 @@ end
 function axkvaMin:awardBadge(pPlayer)
   local pGhost = CreatureObject(pPlayer):getPlayerObject()
   
-  if (pGhost ~= nil and not PlayerObject(pGhost):hasBadge(152)) then
-        PlayerObject(pGhost):awardBadge(152)
+  if (pGhost ~= nil and not PlayerObject(pGhost):hasBadge(154)) then
+        PlayerObject(pGhost):awardBadge(154)
   end          
 end
 

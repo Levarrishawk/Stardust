@@ -1,26 +1,26 @@
-exarKunEntryWay = ScreenPlay:new {
+axkvaMinEntryWay = ScreenPlay:new {
   numberOfActs = 1,
 
-  screenplayName = "exarKunEntryWay"
+  screenplayName = "axkvaMinEntryWay"
 }
 
-registerScreenPlay("exarKunEntryWay", true)
+registerScreenPlay("axkvaMinEntryWay", true)
 
-function exarKunEntryWay:start()
-  if (isZoneEnabled("yavin4")) then
+function axkvaMinEntryWay:start()
+  if (isZoneEnabled("dathomir")) then
     self:spawnMobiles()
     self:spawnSceneObjects()
   end
 end
 
-function exarKunEntryWay:spawnSceneObjects()
+function axkvaMinEntryWay:spawnSceneObjects()
 --Entry
-  spawnSceneObject("yavin4", "object/static/structure/content/exar_kun_temple_cave_entrance.iff", 5026, 73, 5562, 0, math.rad(-90) )
-  spawnSceneObject("yavin4", "object/tangible/terminal/terminal_exar_kun_entrance.iff", 5025, 73, 5574, 0, math.rad(0) )
+  
+  spawnSceneObject("dathomir", "object/tangible/terminal/terminal_axkva_min_entrance.iff", -90.5, -101, -102.2, 4115629, math.rad(0) )
 
 end
 
-function exarKunEntryWay:spawnMobiles()
+function axkvaMinEntryWay:spawnMobiles()
 
   --[[
   local pNpc = spawnMobile("kaas", "chandriltech_security_guard",60,-79.6,15.6,4679.7,-13,0)
