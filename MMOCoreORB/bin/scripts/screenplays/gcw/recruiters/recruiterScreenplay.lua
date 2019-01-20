@@ -2,7 +2,7 @@ local ObjectManager = require("managers.object.object_manager")
 includeFile("gcw/recruiters/factionPerkData.lua")
 
 recruiterScreenplay = Object:new {
-  minimumFactionStanding = 200,
+  minimumFactionStanding = -5000,
 
   factionHashCode = { rebel = 370444368, imperial = 3679112276 },
 
