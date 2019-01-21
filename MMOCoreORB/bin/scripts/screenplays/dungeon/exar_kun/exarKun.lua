@@ -235,6 +235,12 @@ function exarKun:boss1_damage(boss1, pPlayer)
         writeData("exarKun:bossOneFightState", 1)        
       end 
       
+      if (((bossAction <= (bossMaxAction *0.3)))) then
+           CreatureObject(boss1):setHAM(3, bossMaxAction)
+           CreatureObject(boss1):playEffect("clienteffect/pl_force_channel_self.cef", "")
+           spatialChat(boss1, "My strength is renewed.  Thank you master!")   
+      end 
+      
       if (((bossHealth <= (bossMaxHealth *0.75))) and readData("exarKun:bossOneFightState") == 1) then
       spatialChat(boss1, "We have barely begun to probe the depths of the knowledge in this place.")
         writeData("exarKun:bossOneFightState", 2)        
@@ -348,6 +354,12 @@ function exarKun:boss2_damage(boss2, pPlayer)
         writeData("exarKun:bossTwoFightState", 1)        
       end 
       
+      if (((bossAction <= (bossMaxAction *0.3)))) then
+           CreatureObject(boss2):setHAM(3, bossMaxAction)
+           CreatureObject(boss2):playEffect("clienteffect/pl_force_channel_self.cef", "")
+           spatialChat(boss2, "My strength is renewed.  Thank you master!")   
+      end 
+      
       if (((bossHealth <= (bossMaxHealth *0.75))) and readData("exarKun:bossTwoFightState") == 1) then
       spatialChat(boss2, "You are all weak, and as the master says... The weak deserve their fate!")
         writeData("exarKun:bossTwoFightState", 2)        
@@ -410,6 +422,12 @@ function exarKun:boss3_damage(boss3, pPlayer)
         firstAdd:engageCombat(pPlayer)
         end)
         spatialChat(pAdd1, "Death!")         
+      end 
+      
+      if (((bossAction <= (bossMaxAction *0.3)))) then
+           CreatureObject(boss3):setHAM(3, bossMaxAction)
+           CreatureObject(boss3):playEffect("clienteffect/pl_force_channel_self.cef", "")
+           spatialChat(boss3, "My strength is renewed.  Thank you master!")   
       end 
       
       if (((bossHealth <= (bossMaxHealth *0.75))) and readData("exarKun:bossThreeFightState") == 1) then
@@ -496,6 +514,12 @@ function exarKun:boss4_damage(boss4, pPlayer)
         firstAdd:engageCombat(pPlayer)
         end)
         spatialChat(pAdd1, "No escape!")         
+      end 
+      
+      if (((bossAction <= (bossMaxAction *0.3)))) then
+           CreatureObject(boss4):setHAM(3, bossMaxAction)
+           CreatureObject(boss4):playEffect("clienteffect/pl_force_channel_self.cef", "")
+           spatialChat(boss4, "My strength is renewed.  Thank you master!")   
       end 
       
       if (((bossHealth <= (bossMaxHealth *0.75))) and readData("exarKun:bossFourFightState") == 1) then
