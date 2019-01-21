@@ -8,9 +8,9 @@ massassi_sith_weapons = {
 		{itemTemplate = "rifle_massassi_ink", weight = 1500000},
 		{itemTemplate = "carbine_kun_massassi", weight = 1500000},
 		{itemTemplate = "two_handed_sword_kun_massassi", weight = 1500000},
-		{itemTemplate = "polarm_lance_massassi", weight = 1500000},
+		{itemTemplate = "polearm_lance_massassi", weight = 1500000},
 		{itemTemplate = "sword_massassi", weight = 1500000},
-		{itemTemplate = "melee_massassi_knuckler", weight = 1500000},
+		{itemTemplate = "melee_pvp_bf_knuckler", weight = 1500000},
 		{itemTemplate = "two_handed_sword_sith", weight = 1000000}		
 	}
 }

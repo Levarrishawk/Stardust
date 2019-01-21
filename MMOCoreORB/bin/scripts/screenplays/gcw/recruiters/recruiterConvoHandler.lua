@@ -147,8 +147,8 @@ function RecruiterConvoHandler:getInitialScreen(pPlayer, pNpc, pConvTemplate)
 
   if (faction == recruiterScreenplay:getRecruiterEnemyFactionHashCode(pNpc)) then
     return convoTemplate:getScreen("greet_enemy")
-  elseif factionStanding < -200 and PlayerObject(pGhost):getFactionStanding(recruiterScreenplay:getRecruiterEnemyFaction(pNpc)) > 0 then
-    return convoTemplate:getScreen("greet_hated")
+  --[[elseif factionStanding < -200 and PlayerObject(pGhost):getFactionStanding(recruiterScreenplay:getRecruiterEnemyFaction(pNpc)) > 0 then
+    return convoTemplate:getScreen("greet_hated")--]]
   elseif (CreatureObject(pPlayer):isChangingFactionStatus()) then
     return convoTemplate:getScreen("greet_changing_status")
   elseif (faction == recruiterScreenplay:getRecruiterFactionHashCode(pNpc)) then

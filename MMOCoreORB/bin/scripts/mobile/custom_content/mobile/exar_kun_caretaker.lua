@@ -3,15 +3,15 @@ exar_kun_caretaker = Creature:new {
 	randomNameTag = true,
 	socialGroup = "kun",
 	faction = "kun",
-	level = 4,
+	level = 140,
 	chanceHit = 0.24,
 	damageMin = 1540,
 	damageMax = 1845,
-	baseXp = 62,
+	baseXp = 6200,
 	baseHAM = 225000,
 	baseHAMmax = 225000,
-	armor = 0,
-	resists = {0,0,0,0,0,0,0,-1,-1},
+	armor = 3,
+	resists = {25,100,100,100,25,100,25,25,100},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -26,12 +26,11 @@ exar_kun_caretaker = Creature:new {
   optionsBitmask = AIENABLED,
   diet = HERBIVORE,
 
-	templates = {"object/mobile/exar_kun_caretaker.iff"},
-	lootGroups = {},
-	weapons = {},
-	conversationTemplate = "",
-	attacks = {
-	}
+	templates = {"object/mobile/exar_kun_caretaker.iff"},	
+  lootGroups = {},
+  weapons = {"mixed_force_weapons"},
+  conversationTemplate = "",
+  attacks = merge(fencermid,swordsmanmid,tkamid,pikemanmaster,brawlermaster,forcewielder)
 }
 
 CreatureTemplates:addCreatureTemplate(exar_kun_caretaker, "exar_kun_caretaker")
