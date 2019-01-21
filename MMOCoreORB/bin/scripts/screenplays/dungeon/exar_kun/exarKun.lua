@@ -245,13 +245,29 @@ function exarKun:boss1_damage(boss1, pPlayer)
       if (((bossHealth <= (bossMaxHealth *0.75))) and readData("exarKun:bossOneFightState") == 1) then
       spatialChat(boss1, "We have barely begun to probe the depths of the knowledge in this place.")
       CreatureObject(boss1):playEffect("clienteffect/combat_pt_electricalfield.cef", "")
-        writeData("exarKun:bossOneFightState", 2)        
+        writeData("exarKun:bossOneFightState", 2)               
       end
       
       if (((bossHealth <= (bossMaxHealth *0.50))) and readData("exarKun:bossOneFightState") == 2) then
       spatialChat(boss1, "Before the master, I was a simple scientist.  Do you not appreciate the gifts he bestows?")
         CreatureObject(boss1):playEffect("clienteffect/pl_force_resist_states_self.cef", "")
-        writeData("exarKun:bossOneFightState", 3)        
+        writeData("exarKun:bossOneFightState", 3)
+        local add1a = spawnMobile("yavin4", "exar_kun_cultist", 0, 5.3, -0.1, -46.5, -147, 480000294)
+          spatialChat(add1a, "My life for the master!")
+        local add2a = spawnMobile("yavin4", "exar_kun_cultist", 0, -28.4, -0.1, -46.4, 130, 480000294)
+          spatialChat(add2a, "My life for the master!")
+        local add3a = spawnMobile("yavin4", "exar_kun_cultist", 0, -32.2, -0.1, -51.9, 109, 480000294)
+          spatialChat(add3a, "My life for the master!")
+        local add4a = spawnMobile("yavin4", "exar_kun_cultist", 0, 9.2, -0.1, -51.8, -121, 480000294)
+          spatialChat(add4a, "My life for the master!")
+        local add5a = spawnMobile("yavin4", "exar_kun_cultist", 0, 9.1, -0.1, -77.7, -55, 480000294)
+          spatialChat(add5a, "My life for the master!")
+        local add6a = spawnMobile("yavin4", "exar_kun_cultist", 0, 5.3, -0.1, -82.3, -37, 480000294)
+          spatialChat(add6a, "My life for the master!")
+        local add7a = spawnMobile("yavin4", "exar_kun_cultist", 0, -28.4, -0.1, -82.7, 40, 480000294)
+          spatialChat(add7a, "My life for the master!")
+        local add8a = spawnMobile("yavin4", "exar_kun_cultist", 0, -32.3, -0.1, -77.2, 59, 480000294)
+          spatialChat(add8a, "My life for the master!")          
       end  
       
       if (((bossHealth <= (bossMaxHealth *0.25))) and readData("exarKun:bossOneFightState") == 3) then
