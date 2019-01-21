@@ -232,7 +232,7 @@ function exarKun:boss1_damage(boss1, pPlayer)
   
       if (((bossHealth <= (bossMaxHealth *0.99))) and readData("exarKun:bossOneFightState") == 0) then
       spatialChat(boss1, "You come seeking the wisdom of the master?  Very well. There is much to learn.  I will show you!")
-      CreatureObject(boss1):playEffect("clienteffect/pl_storm_lord_special.cef", "")
+      CreatureObject(boss1):playEffect("clienteffect/space_command/shp_shocked_01.cef", "")
         writeData("exarKun:bossOneFightState", 1)        
       end 
       
@@ -602,6 +602,8 @@ function exarKun:boss5_damage(boss5, pPlayer)
       
       if (((bossHealth <= (bossMaxHealth *0.75))) and readData("exarKun:bossFiveFightState") == 1) then
       spatialChat(boss5, "Time to make this more interesting...")
+        CreatureObject(boss5):playEffect("clienteffect/pl_storm_lord_special.cef", "")
+        CreatureObject(boss5):playEffect("clienteffect/mustafar/som_dark_jedi_laugh.cef", "")
         writeData("exarKun:bossFiveFightState", 2)
         local pAdd1 = spawnMobile("yavin4", "exar_kun_cultist", 0, 15.5, -0.0, 59, 0, 480000299)
         ObjectManager.withCreatureObject(pAdd1, function(firstAdd)
@@ -611,6 +613,8 @@ function exarKun:boss5_damage(boss5, pPlayer)
       end
       
       if (((bossHealth <= (bossMaxHealth *0.50))) and readData("exarKun:bossFiveFightState") == 2) then
+        CreatureObject(boss5):playEffect("clienteffect/pl_storm_lord_special.cef", "")
+        CreatureObject(boss5):playEffect("clienteffect/mustafar/som_dark_jedi_laugh.cef", "")
         writeData("exarKun:bossFiveFightState", 3)
         local pAdd2 = spawnMobile("yavin4", "exar_kun_cultist", 0, 15.5, -0.0, 59, 0, 480000299)
         ObjectManager.withCreatureObject(pAdd2, function(firstAdd)
@@ -620,7 +624,9 @@ function exarKun:boss5_damage(boss5, pPlayer)
       end  
       
       if (((bossHealth <= (bossMaxHealth *0.25))) and readData("exarKun:bossFiveFightState") == 3) then
-      spatialChat(boss5, "How you must hate me.  I can feel your anger.")
+        CreatureObject(boss5):playEffect("clienteffect/pl_storm_lord_special.cef", "")
+        CreatureObject(boss5):playEffect("clienteffect/mustafar/som_dark_jedi_laugh.cef", "")
+        spatialChat(boss5, "How you must hate me.  I can feel your anger.")
         writeData("exarKun:bossFiveFightState", 4)
         local pAdd2 = spawnMobile("yavin4", "exar_kun_cultist", 0, 15.5, -0.0, 59, 0, 480000299)
         ObjectManager.withCreatureObject(pAdd2, function(firstAdd)
