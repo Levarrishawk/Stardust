@@ -5,11 +5,11 @@ exar_kun_warrior_f = Creature:new {
 	faction = "kun",
 	level = 4,
 	chanceHit = 0.24,
-	damageMin = 750,
-	damageMax = 1750,
+	damageMin = 1500,
+	damageMax = 2500,
 	baseXp = 62,
-	baseHAM = 75000,
-	baseHAMmax = 75000,
+	baseHAM = 5000,
+	baseHAMmax = 5000,
 	armor = 0,
 	resists = {0,0,0,0,0,0,0,-1,-1},
 	meatType = "",
@@ -30,8 +30,7 @@ exar_kun_warrior_f = Creature:new {
 	lootGroups = {},
 	weapons = {},
 	conversationTemplate = "",
-	attacks = {
-	}
+	attacks = merge(pikemanmaster,brawlermaster)
 }
 
 CreatureTemplates:addCreatureTemplate(exar_kun_warrior_f, "exar_kun_warrior_f")

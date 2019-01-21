@@ -326,6 +326,53 @@ end
 function exarKun:spawnBossRoomTwo()
   local boss2 = spawnMobile("yavin4", "exar_kun_minder", 0, -1.9, 0.1, -2.7, 85, 480000296)
     createObserver(OBJECTDESTRUCTION, "exarKun", "bossTwoKilled", boss2) 
+    createObserver(DAMAGERECEIVED,"exarKun","boss2_damage", boss2)
+    writeData("exarKun:bossTwoFightState", 0) 
+end
+
+function exarKun:boss2_damage(boss2, pPlayer)
+ 
+    local player = LuaCreatureObject(pPlayer)
+    local boss = LuaCreatureObject(boss2)
+    if ( boss ~= nil ) then
+      local bossHealth = boss:getHAM(0)
+      local bossAction = boss:getHAM(3)
+      local bossMind = boss:getHAM(6)
+      local bossMaxHealth = boss:getMaxHAM(0)
+      local bossMaxAction = boss:getMaxHAM(3)
+      local bossMaxMind = boss:getMaxHAM(6)
+   
+  
+      if (((bossHealth <= (bossMaxHealth *0.99))) and readData("exarKun:bossTwoFightState") == 0) then
+      spatialChat(boss2, "I will test the mettle of your will against the metal of my blade, for the glory of the master!")
+        writeData("exarKun:bossTwoFightState", 1)        
+      end 
+      
+      if (((bossHealth <= (bossMaxHealth *0.75))) and readData("exarKun:bossTwoFightState") == 1) then
+      spatialChat(boss2, "You are all weak, and as the master says... The weak deserve their fate!")
+        writeData("exarKun:bossTwoFightState", 2)        
+      end
+      
+      if (((bossHealth <= (bossMaxHealth *0.50))) and readData("exarKun:bossTwoFightState") == 2) then
+      spatialChat(boss2, "Why do you persist?  You can't possibly believe you will win?")
+        writeData("exarKun:bossTwoFightState", 3)        
+      end  
+      
+      if (((bossHealth <= (bossMaxHealth *0.25))) and readData("exarKun:bossTwoFightState") == 3) then
+      spatialChat(boss2, "This is impossible, I serve the master in all things.")
+        writeData("exarKun:bossTwoFightState", 4)        
+      end
+      
+      if (((bossHealth <= (bossMaxHealth *0.1))) and readData("exarKun:bossTwoFightState") == 4) then
+      spatialChat(boss2, "Perhaps you were not as weak as I thought. I deserve to die for failing the master.")
+        writeData("exarKun:bossTwoFightState", 5)        
+      end  
+      
+      if (((bossHealth <= (bossMaxHealth *0.1))) and readData("exarKun:bossTwoFightState") == 5) then      
+        writeData("exarKun:bossTwoFightState", 6)        
+      end
+    end
+    return 0
 end
 
 function exarKun:bossTwoKilled(boss2)
@@ -336,7 +383,70 @@ end
 
 function exarKun:spawnBossRoomThree()  -- Adds for this phase:   exar_kun_warrior (A Caretaker Protector) , exar_kun_warrior_f (The Executioner)
   local boss3 = spawnMobile("yavin4", "exar_kun_caretaker", 0, 18.1, 0.1, -2.0, -90, 480000296)
+    spatialChat(boss3, "The secrets of the master's sanctum are not for you.  This is as far as you come.")
     createObserver(OBJECTDESTRUCTION, "exarKun", "bossThreeKilled", boss3) 
+    createObserver(DAMAGERECEIVED,"exarKun","boss3_damage", boss3)
+    writeData("exarKun:bossThreeFightState", 0)
+end
+
+function exarKun:boss3_damage(boss3, pPlayer)
+ 
+    local player = LuaCreatureObject(pPlayer)
+    local boss = LuaCreatureObject(boss3)
+    if ( boss ~= nil ) then
+      local bossHealth = boss:getHAM(0)
+      local bossAction = boss:getHAM(3)
+      local bossMind = boss:getHAM(6)
+      local bossMaxHealth = boss:getMaxHAM(0)
+      local bossMaxAction = boss:getMaxHAM(3)
+      local bossMaxMind = boss:getMaxHAM(6)
+   
+  
+      if (((bossHealth <= (bossMaxHealth *0.99))) and readData("exarKun:bossThreeFightState") == 0) then
+      spatialChat(boss3, "Execute them!")
+        writeData("exarKun:bossOneFightState", 1)
+        local pAdd1 = spawnMobile("yavin4", "exar_kun_warrior_f", 0, -1.7, 0.1, 10.1, 128, 480000296)
+        ObjectManager.withCreatureObject(pAdd1, function(firstAdd)
+        firstAdd:engageCombat(pPlayer)
+        end)
+        spatialChat(pAdd1, "Death!")         
+      end 
+      
+      if (((bossHealth <= (bossMaxHealth *0.75))) and readData("exarKun:bossThreeFightState") == 1) then
+      spatialChat(boss3, "You are unworthy of the gifts of the master.")
+        writeData("exarKun:bossThreeFightState", 2)
+        local pAdd2 = spawnMobile("yavin4", "exar_kun_warrior", 0, -2.0, 0.1, -16.0, 43, 480000296)
+        ObjectManager.withCreatureObject(pAdd2, function(secondAdd)
+        secondAdd:engageCombat(pPlayer)
+        end)
+        spatialChat(pAdd2, "Unworthy!")         
+      end
+      
+      if (((bossHealth <= (bossMaxHealth *0.50))) and readData("exarKun:bossThreeFightState") == 2) then
+      spatialChat(boss3, "Execute them!")
+        writeData("exarKun:bossThreeFightState", 3)
+        local pAdd3 = spawnMobile("yavin4", "exar_kun_warrior_f", 0, -1.7, 0.1, 10.1, 128, 480000296)
+        ObjectManager.withCreatureObject(pAdd1, function(thirdAdd)
+        thirdAdd:engageCombat(pPlayer)
+        end)
+        spatialChat(pAdd3, "Death!")         
+      end  
+      
+      if (((bossHealth <= (bossMaxHealth *0.25))) and readData("exarKun:bossThreeFightState") == 3) then
+      spatialChat(boss3, "I will not fail the Master. His power is undeniable!")
+        writeData("exarKun:bossThreeFightState", 4)        
+      end
+      
+      if (((bossHealth <= (bossMaxHealth *0.1))) and readData("exarKun:bossThreeFightState") == 4) then
+      spatialChat(boss3, "Master, I could not stop them...")
+        writeData("exarKun:bossThreeFightState", 5)        
+      end  
+      
+      if (((bossHealth <= (bossMaxHealth *0.1))) and readData("exarKun:bossThreeFightState") == 5) then      
+        writeData("exarKun:bossThreeFightState", 6)        
+      end
+    end
+    return 0
 end
 
 function exarKun:bossThreeKilled(boss3)
@@ -347,7 +457,82 @@ end
 
 function exarKun:spawnBossRoomFour()
   local boss4 = spawnMobile("yavin4", "exar_kun_fist_of_hate", 0, 15.6, 0.0, 92.8, 178, 480000299)
+    
+    spawnMobile("yavin4", "insane_vitiate_cultist", 0, 33.2, -0.1, 71.4, -90, 480000299)
+    spawnMobile("yavin4", "insane_vitiate_cultist", 0, 33.2, -0.1, 75.4, -90, 480000299)
+    spawnMobile("yavin4", "insane_vitiate_cultist", 0, 33.2, -0.1, 79.4, -90, 480000299)
+    spawnMobile("yavin4", "insane_vitiate_cultist", 0, 33.2, -0.1, 83.4, -90, 480000299)
+    spawnMobile("yavin4", "insane_vitiate_cultist", 0, 33.2, -0.1, 87.4, -90, 480000299)
+    
+    spawnMobile("yavin4", "insane_vitiate_cultist", 0, -3.0, -0.1, 71.4, 90, 480000299)
+    spawnMobile("yavin4", "insane_vitiate_cultist", 0, -3.0, -0.1, 75.4, 90, 480000299)
+    spawnMobile("yavin4", "insane_vitiate_cultist", 0, -3.0, -0.1, 79.4, 90, 480000299)
+    spawnMobile("yavin4", "insane_vitiate_cultist", 0, -3.0, -0.1, 83.4, 90, 480000299)
+    spawnMobile("yavin4", "insane_vitiate_cultist", 0, -3.0, -0.1, 87.4, 90, 480000299)
+    
     createObserver(OBJECTDESTRUCTION, "exarKun", "bossFourKilled", boss4) 
+    createObserver(DAMAGERECEIVED,"exarKun","boss4_damage", boss4)
+    writeData("exarKun:bossFourFightState", 0)
+end
+
+function exarKun:boss4_damage(boss4, pPlayer)
+ 
+    local player = LuaCreatureObject(pPlayer)
+    local boss = LuaCreatureObject(boss4)
+    if ( boss ~= nil ) then
+      local bossHealth = boss:getHAM(0)
+      local bossAction = boss:getHAM(3)
+      local bossMind = boss:getHAM(6)
+      local bossMaxHealth = boss:getMaxHAM(0)
+      local bossMaxAction = boss:getMaxHAM(3)
+      local bossMaxMind = boss:getMaxHAM(6)
+   
+  
+      if (((bossHealth <= (bossMaxHealth *0.995))) and readData("exarKun:bossFourFightState") == 0) then
+      spatialChat(boss4, "You stand before the Master, defiantly.  Pity for you to come so far only to die.")
+        writeData("exarKun:bossFourFightState", 1)
+        local pAdd1 = spawnMobile("yavin4", "exar_kun_cultist", 0, 15.5, -0.0, 59, 0, 480000299)
+        ObjectManager.withCreatureObject(pAdd1, function(firstAdd)
+        firstAdd:engageCombat(pPlayer)
+        end)
+        spatialChat(pAdd1, "No escape!")         
+      end 
+      
+      if (((bossHealth <= (bossMaxHealth *0.75))) and readData("exarKun:bossFourFightState") == 1) then
+      spatialChat(boss4, "There is no way out for you but to embrace death.")
+        writeData("exarKun:bossFourFightState", 2)
+        local pAdd2 = spawnMobile("yavin4", "exar_kun_cultist", 0, 15.5, -0.0, 59, 0, 480000299)
+        ObjectManager.withCreatureObject(pAdd2, function(secondAdd)
+        secondAdd:engageCombat(pPlayer)
+        end)
+        spatialChat(pAdd2, "No escape!")         
+      end
+      
+      if (((bossHealth <= (bossMaxHealth *0.50))) and readData("exarKun:bossFourFightState") == 2) then
+      spatialChat(boss4, "It will be over soon, give in to the inevitable!")
+        writeData("exarKun:bossFourFightState", 3)
+        local pAdd3 = spawnMobile("yavin4", "exar_kun_cultist", 0, 15.5, -0.0, 59, 0, 480000299)
+        ObjectManager.withCreatureObject(pAdd1, function(thirdAdd)
+        thirdAdd:engageCombat(pPlayer)
+        end)
+        spatialChat(pAdd3, "No Escape!")         
+      end  
+      
+      if (((bossHealth <= (bossMaxHealth *0.25))) and readData("exarKun:bossFourFightState") == 3) then
+      spatialChat(boss4, "Don't you see? He can not be destroyed.  He will purge you from this life like insects!")
+        writeData("exarKun:bossFourFightState", 4)        
+      end
+      
+      if (((bossHealth <= (bossMaxHealth *0.1))) and readData("exarKun:bossFourFightState") == 4) then
+      spatialChat(boss4, "Exar Kun...  lives....")
+        writeData("exarKun:bossFourFightState", 5)        
+      end  
+      
+      if (((bossHealth <= (bossMaxHealth *0.1))) and readData("exarKun:bossFourFightState") == 5) then      
+        writeData("exarKun:bossFourFightState", 6)        
+      end
+    end
+    return 0
 end
 
 function exarKun:bossFourKilled(boss4)
@@ -358,7 +543,69 @@ end
 
 function exarKun:spawnBossRoomFive()
   local boss5 = spawnMobile("yavin4", "exar_kun", 0, 15.8, 4.7, 106.9, 179, 480000299)
+    spatialChat(boss5, "You tread into the abyss, unknowingly you have stepped into my domain.   I was the greatest Dark Lord of the Sith.  I am Exar Kun.")
     createObserver(OBJECTDESTRUCTION, "exarKun", "bossFiveKilled", boss5) 
+    createObserver(DAMAGERECEIVED,"exarKun","boss5_damage", boss5)
+    writeData("exarKun:bossFiveFightState", 0)
+end
+
+function exarKun:boss5_damage(boss5, pPlayer)
+ 
+    local player = LuaCreatureObject(pPlayer)
+    local boss = LuaCreatureObject(boss5)
+    if ( boss ~= nil ) then
+      local bossHealth = boss:getHAM(0)
+      local bossAction = boss:getHAM(3)
+      local bossMind = boss:getHAM(6)
+      local bossMaxHealth = boss:getMaxHAM(0)
+      local bossMaxAction = boss:getMaxHAM(3)
+      local bossMaxMind = boss:getMaxHAM(6)
+   
+  
+      if (((bossHealth <= (bossMaxHealth *0.99))) and readData("exarKun:bossFiveFightState") == 0) then
+      spatialChat(boss5, "If you kneel before me now, I will end your life painlessly.  Refuse and there will be no end to your torment.")
+        writeData("exarKun:bossFiveFightState", 1)        
+      end 
+      
+      if (((bossHealth <= (bossMaxHealth *0.75))) and readData("exarKun:bossFiveFightState") == 1) then
+      spatialChat(boss5, "Time to make this more interesting...")
+        writeData("exarKun:bossFiveFightState", 2)
+        local pAdd1 = spawnMobile("yavin4", "exar_kun_cultist", 0, 15.5, -0.0, 59, 0, 480000299)
+        ObjectManager.withCreatureObject(pAdd1, function(firstAdd)
+        firstAdd:engageCombat(pPlayer)
+        end)
+        spatialChat(pAdd1, "My life for the Master!")        
+      end
+      
+      if (((bossHealth <= (bossMaxHealth *0.50))) and readData("exarKun:bossFiveFightState") == 2) then
+        writeData("exarKun:bossFiveFightState", 3)
+        local pAdd2 = spawnMobile("yavin4", "exar_kun_cultist", 0, 15.5, -0.0, 59, 0, 480000299)
+        ObjectManager.withCreatureObject(pAdd2, function(firstAdd)
+        firstAdd:engageCombat(pPlayer)
+        end)
+        spatialChat(pAdd2, "You will die for the master's glory!")        
+      end  
+      
+      if (((bossHealth <= (bossMaxHealth *0.25))) and readData("exarKun:bossFiveFightState") == 3) then
+      spatialChat(boss5, "How you must hate me.  I can feel your anger.")
+        writeData("exarKun:bossFiveFightState", 4)
+        local pAdd2 = spawnMobile("yavin4", "exar_kun_cultist", 0, 15.5, -0.0, 59, 0, 480000299)
+        ObjectManager.withCreatureObject(pAdd2, function(firstAdd)
+        firstAdd:engageCombat(pPlayer)
+        end)
+        spatialChat(pAdd2, "You will die for the master's glory!")         
+      end
+      
+      if (((bossHealth <= (bossMaxHealth *0.1))) and readData("exarKun:bossFiveFightState") == 4) then
+      spatialChat(boss5, "My spirit will live forever!  Forever!")
+        writeData("exarKun:bossFiveFightState", 5)        
+      end  
+      
+      if (((bossHealth <= (bossMaxHealth *0.1))) and readData("exarKun:bossFiveFightState") == 5) then      
+        writeData("exarKun:bossFiveFightState", 6)        
+      end
+    end
+    return 0
 end
 
 function exarKun:bossFiveKilled(boss5, pPlayer)  -- TODO Use this function to reset the instance on success.   Delay by 30 seconds to allow looting time.
