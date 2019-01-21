@@ -469,3 +469,5 @@ includeFile("groups/weapon/dungeon/kaas_weapons.lua")
 includeFile("groups/weapon/dungeon/chandriltech_weapons.lua")
 includeFile("groups/weapon/dungeon/black_sun_weapons.lua")
 includeFile("groups/weapon/dungeon/elite_weapons.lua")
+-- EK / AM
+includeFile("groups/dungeon/exar_kun/nge_jedi_cloaks.lua")

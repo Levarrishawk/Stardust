@@ -1562,3 +1562,7 @@ includeFile("items/weapon/sword_rebel.lua")
 includeFile("items/weapon/sword_rsf.lua")
 includeFile("items/weapon/sword_wookiee.lua")
 
+includeFile("items/wearables/robe/robe_s32.lua")
+includeFile("items/wearables/robe/robe_s33.lua")
+includeFile("items/wearables/robe/robe_s32_h1.lua")
+includeFile("items/wearables/robe/robe_s33_h1.lua")

@@ -3,14 +3,14 @@ exar_kun = Creature:new {
 	randomNameTag = true,
 	socialGroup = "kun",
 	faction = "kun",
-	level = 131,
+	level = 200,
 	chanceHit = 4.75,
 	damageMin = 770,
 	damageMax = 1250,
 	baseXp = 12424,
 	baseHAM = 610000,
 	baseHAMmax = 610000,
-	armor = 1,
+	armor = 2,
 	resists = {55,55,15,25,15,25,15,25,15},
 	meatType = "",
 	meatAmount = 0,
@@ -28,7 +28,58 @@ exar_kun = Creature:new {
 	diet = HERBIVORE,
 
 	templates = {"object/mobile/exar_kun.iff"},
-	lootGroups = {},
+	lootGroups = {
+    {
+      groups = {
+        {group = "crystal_kuns_blood", chance = 2000000},
+        {group = "nge_jedi_cloaks", chance = 2000000},
+        {group = "massassi_sith_weapons", chance = 2000000},
+        {group = "clothing_attachments", chance = 2000000},
+        {group = "armor_attachments", chance = 2000000},
+      },
+      lootChance = 10000000,
+    },
+    {
+      groups = {
+        {group = "crystal_kuns_blood", chance = 2000000},
+        {group = "nge_jedi_cloaks", chance = 2000000},
+        {group = "massassi_sith_weapons", chance = 2000000},
+        {group = "clothing_attachments", chance = 2000000},
+        {group = "armor_attachments", chance = 2000000},
+      },
+      lootChance = 10000000,
+    },
+    {
+      groups = {
+        {group = "crystal_kuns_blood", chance = 2000000},
+        {group = "nge_jedi_cloaks", chance = 2000000},
+        {group = "massassi_sith_weapons", chance = 2000000},
+        {group = "clothing_attachments", chance = 2000000},
+        {group = "armor_attachments", chance = 2000000},
+      },
+      lootChance = 10000000,
+    },
+    {
+      groups = {
+        {group = "crystal_kuns_blood", chance = 2000000},
+        {group = "nge_jedi_cloaks", chance = 2000000},
+        {group = "massassi_sith_weapons", chance = 2000000},
+        {group = "clothing_attachments", chance = 2000000},
+        {group = "armor_attachments", chance = 2000000},
+      },
+      lootChance = 10000000,
+    },
+    {
+      groups = {
+        {group = "crystal_kuns_blood", chance = 2000000},
+        {group = "nge_jedi_cloaks", chance = 2000000},
+        {group = "massassi_sith_weapons", chance = 2000000},
+        {group = "clothing_attachments", chance = 2000000},
+        {group = "armor_attachments", chance = 2000000},
+      },
+      lootChance = 10000000,
+    },       
+  },
 	weapons = {"dark_jedi_weapons_gen4"},
 	conversationTemplate = "",
 	attacks = merge(lightsabermaster,forcewielder)

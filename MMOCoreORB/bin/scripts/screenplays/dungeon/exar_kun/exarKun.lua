@@ -381,6 +381,7 @@ function exarKun:boss2_damage(boss2, pPlayer)
   
       if (((bossHealth <= (bossMaxHealth *0.99))) and readData("exarKun:bossTwoFightState") == 0) then
       spatialChat(boss2, "I will test the mettle of your will against the metal of my blade, for the glory of the master!")
+        CreatureObject(boss2):playEffect("clienteffect/space_command/shp_shocked_01.cef", "")
         writeData("exarKun:bossTwoFightState", 1)        
       end 
       
@@ -392,17 +393,33 @@ function exarKun:boss2_damage(boss2, pPlayer)
       
       if (((bossHealth <= (bossMaxHealth *0.75))) and readData("exarKun:bossTwoFightState") == 1) then
       spatialChat(boss2, "You are all weak, and as the master says... The weak deserve their fate!")
-        writeData("exarKun:bossTwoFightState", 2)        
+        writeData("exarKun:bossTwoFightState", 2)
+        local add1 = spawnMobile("yavin4", "exar_kun_cultist", 0, 8.3, 0.1, -13.2, 0, 480000296)
+          spatialChat(add1, "The weak deserve their fate!")
+          CreatureObject(add1):playEffect("clienteffect/pl_force_regain_consciousness_self.cef", "")
+        local add2 = spawnMobile("yavin4", "exar_kun_cultist", 0, 8.3, 0.1, 8.2, 180, 480000296)
+          spatialChat(add2, "The weak deserve their fate!")
+          CreatureObject(add2):playEffect("clienteffect/pl_force_regain_consciousness_self.cef", "")        
       end
       
       if (((bossHealth <= (bossMaxHealth *0.50))) and readData("exarKun:bossTwoFightState") == 2) then
       spatialChat(boss2, "Why do you persist?  You can't possibly believe you will win?")
+        CreatureObject(boss2):playEffect("clienteffect/pl_storm_lord_special.cef", "")
+        CreatureObject(boss2):playEffect("clienteffect/combat_pt_electricalfield.cef", "")
         writeData("exarKun:bossTwoFightState", 3)        
       end  
       
       if (((bossHealth <= (bossMaxHealth *0.25))) and readData("exarKun:bossTwoFightState") == 3) then
       spatialChat(boss2, "This is impossible, I serve the master in all things.")
-        writeData("exarKun:bossTwoFightState", 4)        
+        CreatureObject(boss2):playEffect("clienteffect/pl_storm_lord_special.cef", "")
+        CreatureObject(boss2):playEffect("clienteffect/combat_pt_electricalfield.cef", "")
+        writeData("exarKun:bossTwoFightState", 4)
+        local add3 = spawnMobile("yavin4", "exar_kun_cultist", 0, 8.3, 0.1, -13.2, 0, 480000296)
+          spatialChat(add3, "The weak deserve their fate!")
+          CreatureObject(add3):playEffect("clienteffect/pl_force_regain_consciousness_self.cef", "")
+        local add4 = spawnMobile("yavin4", "exar_kun_cultist", 0, 8.3, 0.1, 8.2, 180, 480000296)
+          spatialChat(add4, "The weak deserve their fate!")
+          CreatureObject(add4):playEffect("clienteffect/pl_force_regain_consciousness_self.cef", "")         
       end
       
       if (((bossHealth <= (bossMaxHealth *0.1))) and readData("exarKun:bossTwoFightState") == 4) then
@@ -425,6 +442,7 @@ end
 
 function exarKun:spawnBossRoomThree()  -- Adds for this phase:   exar_kun_warrior (A Caretaker Protector) , exar_kun_warrior_f (The Executioner)
   local boss3 = spawnMobile("yavin4", "exar_kun_caretaker", 0, 18.1, 0.1, -2.0, -90, 480000296)
+    CreatureObject(boss3):playEffect("clienteffect/pl_force_regain_consciousness_self.cef", "")
     spatialChat(boss3, "The secrets of the master's sanctum are not for you.  This is as far as you come.")
     createObserver(OBJECTDESTRUCTION, "exarKun", "bossThreeKilled", boss3) 
     createObserver(DAMAGERECEIVED,"exarKun","boss3_damage", boss3)
@@ -451,6 +469,7 @@ function exarKun:boss3_damage(boss3, pPlayer)
         ObjectManager.withCreatureObject(pAdd1, function(firstAdd)
         firstAdd:engageCombat(pPlayer)
         end)
+        CreatureObject(pAdd1):playEffect("clienteffect/pl_force_regain_consciousness_self.cef", "")
         spatialChat(pAdd1, "Death!")         
       end 
       
@@ -467,6 +486,7 @@ function exarKun:boss3_damage(boss3, pPlayer)
         ObjectManager.withCreatureObject(pAdd2, function(secondAdd)
         secondAdd:engageCombat(pPlayer)
         end)
+        CreatureObject(pAdd2):playEffect("clienteffect/pl_force_regain_consciousness_self.cef", "")
         spatialChat(pAdd2, "Unworthy!")         
       end
       
@@ -477,12 +497,15 @@ function exarKun:boss3_damage(boss3, pPlayer)
         ObjectManager.withCreatureObject(pAdd3, function(thirdAdd)
         thirdAdd:engageCombat(pPlayer)
         end)
+        CreatureObject(pAdd3):playEffect("clienteffect/pl_force_regain_consciousness_self.cef", "")
         spatialChat(pAdd3, "Death!")         
       end  
       
       if (((bossHealth <= (bossMaxHealth *0.25))) and readData("exarKun:bossThreeFightState") == 3) then
       spatialChat(boss3, "I will not fail the Master. His power is undeniable!")
-        writeData("exarKun:bossThreeFightState", 4)        
+        writeData("exarKun:bossThreeFightState", 4)
+        CreatureObject(boss3):playEffect("clienteffect/pl_storm_lord_special.cef", "")
+        CreatureObject(boss3):playEffect("clienteffect/combat_pt_electricalfield.cef", "")        
       end
       
       if (((bossHealth <= (bossMaxHealth *0.1))) and readData("exarKun:bossThreeFightState") == 4) then
@@ -539,6 +562,8 @@ function exarKun:boss4_damage(boss4, pPlayer)
       if (((bossHealth <= (bossMaxHealth *0.995))) and readData("exarKun:bossFourFightState") == 0) then
       spatialChat(boss4, "You stand before the Master, defiantly.  Pity for you to come so far only to die.")
         writeData("exarKun:bossFourFightState", 1)
+        CreatureObject(boss4):playEffect("clienteffect/pl_storm_lord_special.cef", "")
+        CreatureObject(boss4):playEffect("clienteffect/combat_pt_electricalfield.cef", "")
         local pAdd1 = spawnMobile("yavin4", "exar_kun_cultist", 0, 15.5, -0.0, 59, 0, 480000299)
         ObjectManager.withCreatureObject(pAdd1, function(firstAdd)
         firstAdd:engageCombat(pPlayer)
@@ -574,6 +599,8 @@ function exarKun:boss4_damage(boss4, pPlayer)
       
       if (((bossHealth <= (bossMaxHealth *0.25))) and readData("exarKun:bossFourFightState") == 3) then
       spatialChat(boss4, "Don't you see? He can not be destroyed.  He will purge you from this life like insects!")
+        CreatureObject(boss4):playEffect("clienteffect/pl_storm_lord_special.cef", "")
+        CreatureObject(boss4):playEffect("clienteffect/combat_pt_electricalfield.cef", "")
         writeData("exarKun:bossFourFightState", 4)        
       end
       
@@ -597,6 +624,7 @@ end
 
 function exarKun:spawnBossRoomFive()
   local boss5 = spawnMobile("yavin4", "exar_kun", 0, 15.8, 4.7, 106.9, 179, 480000299)
+    CreatureObject(boss5):playEffect("clienteffect/pl_force_regain_consciousness_self.cef", "")
     spatialChat(boss5, "You tread into the abyss, unknowingly you have stepped into my domain.   I was the greatest Dark Lord of the Sith.  I am Exar Kun.")
     createObserver(OBJECTDESTRUCTION, "exarKun", "bossFiveKilled", boss5) 
     createObserver(DAMAGERECEIVED,"exarKun","boss5_damage", boss5)
@@ -632,13 +660,15 @@ function exarKun:boss5_damage(boss5, pPlayer)
       if (((bossHealth <= (bossMaxHealth *0.75))) and readData("exarKun:bossFiveFightState") == 1) then
       spatialChat(boss5, "Time to make this more interesting...")
         CreatureObject(boss5):playEffect("clienteffect/pl_storm_lord_special.cef", "")
+        CreatureObject(boss5):playEffect("clienteffect/combat_pt_electricalfield.cef", "")
         CreatureObject(boss5):playEffect("clienteffect/mustafar/som_dark_jedi_laugh.cef", "")
         writeData("exarKun:bossFiveFightState", 2)
         local pAdd1 = spawnMobile("yavin4", "exar_kun_cultist", 0, 15.5, -0.0, 59, 0, 480000299)
         ObjectManager.withCreatureObject(pAdd1, function(firstAdd)
         firstAdd:engageCombat(pPlayer)
         end)
-        spatialChat(pAdd1, "My life for the Master!")        
+        spatialChat(pAdd1, "My life for the Master!")
+        CreatureObject(pAdd1):playEffect("clienteffect/pl_force_regain_consciousness_self.cef", "")        
       end
       
       if (((bossHealth <= (bossMaxHealth *0.50))) and readData("exarKun:bossFiveFightState") == 2) then
@@ -646,10 +676,11 @@ function exarKun:boss5_damage(boss5, pPlayer)
         CreatureObject(boss5):playEffect("clienteffect/mustafar/som_dark_jedi_laugh.cef", "")
         writeData("exarKun:bossFiveFightState", 3)
         local pAdd2 = spawnMobile("yavin4", "exar_kun_cultist", 0, 15.5, -0.0, 59, 0, 480000299)
-        ObjectManager.withCreatureObject(pAdd2, function(firstAdd)
-        firstAdd:engageCombat(pPlayer)
+        ObjectManager.withCreatureObject(pAdd2, function(secondAdd)
+        secondAdd:engageCombat(pPlayer)
         end)
-        spatialChat(pAdd2, "You will die for the master's glory!")        
+        spatialChat(pAdd2, "You will die for the master's glory!")
+        CreatureObject(pAdd2):playEffect("clienteffect/pl_force_regain_consciousness_self.cef", "")        
       end  
       
       if (((bossHealth <= (bossMaxHealth *0.25))) and readData("exarKun:bossFiveFightState") == 3) then
@@ -657,15 +688,19 @@ function exarKun:boss5_damage(boss5, pPlayer)
         CreatureObject(boss5):playEffect("clienteffect/mustafar/som_dark_jedi_laugh.cef", "")
         spatialChat(boss5, "How you must hate me.  I can feel your anger.")
         writeData("exarKun:bossFiveFightState", 4)
-        local pAdd2 = spawnMobile("yavin4", "exar_kun_cultist", 0, 15.5, -0.0, 59, 0, 480000299)
-        ObjectManager.withCreatureObject(pAdd2, function(firstAdd)
-        firstAdd:engageCombat(pPlayer)
+        local pAdd3 = spawnMobile("yavin4", "exar_kun_cultist", 0, 15.5, -0.0, 59, 0, 480000299)
+        ObjectManager.withCreatureObject(pAdd3, function(thirdAdd)
+        thirdAdd:engageCombat(pPlayer)
         end)
-        spatialChat(pAdd2, "You will die for the master's glory!")         
+        spatialChat(pAdd3, "You will die for the master's glory!") 
+        CreatureObject(pAdd3):playEffect("clienteffect/pl_force_regain_consciousness_self.cef", "")        
       end
       
       if (((bossHealth <= (bossMaxHealth *0.1))) and readData("exarKun:bossFiveFightState") == 4) then
       spatialChat(boss5, "My spirit will live forever!  Forever!")
+        CreatureObject(boss5):playEffect("clienteffect/pl_storm_lord_special.cef", "")
+        CreatureObject(boss5):playEffect("clienteffect/combat_pt_electricalfield.cef", "")
+        CreatureObject(boss5):playEffect("clienteffect/mustafar/som_dark_jedi_laugh.cef", "")
         writeData("exarKun:bossFiveFightState", 5)        
       end  
       
