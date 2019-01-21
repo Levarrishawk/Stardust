@@ -232,6 +232,7 @@ function exarKun:boss1_damage(boss1, pPlayer)
   
       if (((bossHealth <= (bossMaxHealth *0.99))) and readData("exarKun:bossOneFightState") == 0) then
       spatialChat(boss1, "You come seeking the wisdom of the master?  Very well. There is much to learn.  I will show you!")
+      CreatureObject(boss1):playEffect("clienteffect/pl_storm_lord_special.cef", "")
         writeData("exarKun:bossOneFightState", 1)        
       end 
       
@@ -588,6 +589,8 @@ function exarKun:boss5_damage(boss5, pPlayer)
   
       if (((bossHealth <= (bossMaxHealth *0.99))) and readData("exarKun:bossFiveFightState") == 0) then
       spatialChat(boss5, "If you kneel before me now, I will end your life painlessly.  Refuse and there will be no end to your torment.")
+      CreatureObject(boss5):playEffect("clienteffect/pl_storm_lord_special.cef", "")
+      CreatureObject(boss5):playEffect("clienteffect/mustafar/som_dark_jedi_laugh.cef", "")
         writeData("exarKun:bossFiveFightState", 1)        
       end 
       
