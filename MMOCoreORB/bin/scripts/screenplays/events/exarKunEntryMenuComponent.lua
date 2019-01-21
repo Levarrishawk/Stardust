@@ -4,7 +4,10 @@ exarKunEntryMenuComponent = {  }
 
 function exarKunEntryMenuComponent:fillObjectMenuResponse(pSceneObject, pMenuResponse, pPlayer)
 	local response = LuaObjectMenuResponse(pMenuResponse)
-	response:addRadialMenuItem(20, 3, "Enter the Catacombs")	
+	response:addRadialMenuItem(20, 3, "Enter Instance 1")
+	response:addRadialMenuItem(21, 3, "Enter Instance 2")
+	response:addRadialMenuItem(23, 3, "Enter Instance 3")
+	response:addRadialMenuItem(24, 3, "Enter Instance 4")	
 	
 end
 
@@ -23,9 +26,14 @@ function exarKunEntryMenuComponent:handleObjectMenuSelect(pSceneObject, pPlayer,
 	end
 
 	if selectedID == 20 then
-	  createEvent(1000, "exarKun", "activate", pPlayer, "")
-	  		 	
-    
+	  createEvent(1000, "exarKun", "activate", pPlayer, "")  		   
+	elseif selectedID == 21 then
+    createEvent(1000, "exarKun2", "activate", pPlayer, "")
+  elseif selectedID == 22 then
+    createEvent(1000, "exarKun3", "activate", pPlayer, "")  
+	elseif selectedID == 23 then
+    createEvent(1000, "exarKun4", "activate", pPlayer, "")
+	
 	end
 
 	return 0
