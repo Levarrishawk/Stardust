@@ -404,7 +404,7 @@ function exarKun:boss3_damage(boss3, pPlayer)
   
       if (((bossHealth <= (bossMaxHealth *0.99))) and readData("exarKun:bossThreeFightState") == 0) then
       spatialChat(boss3, "Execute them!")
-        writeData("exarKun:bossOneFightState", 1)
+        writeData("exarKun:bossThreeFightState", 1)
         local pAdd1 = spawnMobile("yavin4", "exar_kun_warrior_f", 0, -1.7, 0.1, 10.1, 128, 480000296)
         ObjectManager.withCreatureObject(pAdd1, function(firstAdd)
         firstAdd:engageCombat(pPlayer)
