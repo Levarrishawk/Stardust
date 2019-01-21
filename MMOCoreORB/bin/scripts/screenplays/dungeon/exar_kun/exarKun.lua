@@ -426,7 +426,7 @@ function exarKun:boss3_damage(boss3, pPlayer)
       spatialChat(boss3, "Execute them!")
         writeData("exarKun:bossThreeFightState", 3)
         local pAdd3 = spawnMobile("yavin4", "exar_kun_warrior_f", 0, -1.7, 0.1, 10.1, 128, 480000296)
-        ObjectManager.withCreatureObject(pAdd1, function(thirdAdd)
+        ObjectManager.withCreatureObject(pAdd3, function(thirdAdd)
         thirdAdd:engageCombat(pPlayer)
         end)
         spatialChat(pAdd3, "Death!")         
@@ -515,7 +515,7 @@ function exarKun:boss4_damage(boss4, pPlayer)
         ObjectManager.withCreatureObject(pAdd1, function(thirdAdd)
         thirdAdd:engageCombat(pPlayer)
         end)
-        spatialChat(pAdd3, "No Escape!")         
+        spatialChat(pAdd3, "There is no Escape!")         
       end  
       
       if (((bossHealth <= (bossMaxHealth *0.25))) and readData("exarKun:bossFourFightState") == 3) then
@@ -524,7 +524,7 @@ function exarKun:boss4_damage(boss4, pPlayer)
       end
       
       if (((bossHealth <= (bossMaxHealth *0.1))) and readData("exarKun:bossFourFightState") == 4) then
-      spatialChat(boss4, "Exar Kun...  lives....")
+      spatialChat(boss4, "Exar Kun...  lives....  he will destroy you all!")
         writeData("exarKun:bossFourFightState", 5)        
       end  
       
@@ -565,6 +565,12 @@ function exarKun:boss5_damage(boss5, pPlayer)
       if (((bossHealth <= (bossMaxHealth *0.99))) and readData("exarKun:bossFiveFightState") == 0) then
       spatialChat(boss5, "If you kneel before me now, I will end your life painlessly.  Refuse and there will be no end to your torment.")
         writeData("exarKun:bossFiveFightState", 1)        
+      end 
+      
+      if (((bossAction <= (bossMaxAction *0.3)))) then
+           CreatureObject(boss5):setHAM(3, bossMaxAction)
+           CreatureObject(boss5):playEffect("clienteffect/pl_force_meditate_self.cef", "")
+           spatialChat(boss5, "Behold my endless power!")   
       end 
       
       if (((bossHealth <= (bossMaxHealth *0.75))) and readData("exarKun:bossFiveFightState") == 1) then
