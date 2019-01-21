@@ -250,16 +250,20 @@ function exarKun:boss1_damage(boss1, pPlayer)
       
       if (((bossHealth <= (bossMaxHealth *0.50))) and readData("exarKun:bossOneFightState") == 2) then
       spatialChat(boss1, "Before the master, I was a simple scientist.  Do you not appreciate the gifts he bestows?")
+        CreatureObject(boss1):playEffect("clienteffect/pl_force_resist_states_self.cef", "")
         writeData("exarKun:bossOneFightState", 3)        
       end  
       
       if (((bossHealth <= (bossMaxHealth *0.25))) and readData("exarKun:bossOneFightState") == 3) then
       spatialChat(boss1, "You do not understand, all this can be yours too if you just devote yourselves to him!")
+      CreatureObject(boss1):playEffect("clienteffect/pl_force_resist_bleeding_self.cef", "")
         writeData("exarKun:bossOneFightState", 4)        
       end
       
       if (((bossHealth <= (bossMaxHealth *0.1))) and readData("exarKun:bossOneFightState") == 4) then
       spatialChat(boss1, "You had the chance to learn, now your only choice is death at the hand of the master.")
+      CreatureObject(boss1):playEffect("clienteffect/pl_storm_lord_special.cef", "")
+      CreatureObject(boss1):playEffect("clienteffect/combat_pt_electricalfield.cef", "")
         writeData("exarKun:bossOneFightState", 5)        
       end  
       
