@@ -713,9 +713,9 @@ end
 
 function exarKun:bossFiveKilled(boss5, pPlayer)  -- TODO Use this function to reset the instance on success.   Delay by 30 seconds to allow looting time.
     writeData("exarKun:bossFiveDead", 1) 
-    CreatureObject(pPlayer):sendSystemMessage("You and your group have defeated Exar Kun!  You will be removed from the instance in 60 seconds.")  
+    CreatureObject(pPlayer):sendSystemMessage("You and your group have defeated Exar Kun!  You will be removed from the instance in 120 seconds.")  
     createEvent(1000, "exarKun", "awardBadgeToAll", pPlayer, "")
-    createEvent(60000, "exarKun", "handleVictory", pPlayer, "")
+    createEvent(120000, "exarKun", "handleVictory", pPlayer, "")
   return 0
 end
 
