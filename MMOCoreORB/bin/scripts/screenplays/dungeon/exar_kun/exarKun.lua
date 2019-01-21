@@ -212,7 +212,53 @@ end
 
 function exarKun:spawnBossRoomOne()
   local boss1 = spawnMobile("yavin4", "exar_kun_open_hand", 0, -12.2, -0.1, -47.9, 171, 480000294)
-    createObserver(OBJECTDESTRUCTION, "exarKun", "bossOneKilled", boss1) 
+    createObserver(OBJECTDESTRUCTION, "exarKun", "bossOneKilled", boss1)
+    createObserver(DAMAGERECEIVED,"exarKun","boss1_damage", boss1)
+    writeData("exarKun:bossOneFightState", 0) 
+end
+
+function exarKun:boss1_damage(boss1, pPlayer)
+ 
+    local player = LuaCreatureObject(pPlayer)
+    local boss = LuaCreatureObject(boss1)
+    if ( boss ~= nil ) then
+      local bossHealth = boss:getHAM(0)
+      local bossAction = boss:getHAM(3)
+      local bossMind = boss:getHAM(6)
+      local bossMaxHealth = boss:getMaxHAM(0)
+      local bossMaxAction = boss:getMaxHAM(3)
+      local bossMaxMind = boss:getMaxHAM(6)
+   
+  
+      if (((bossHealth <= (bossMaxHealth *0.99))) and readData("exarKun:bossOneFightState") == 0) then
+      spatialChat(boss1, "You come seeking the wisdom of the master?  Very well. There is much to learn.  I will show you!")
+        writeData("exarKun:bossOneFightState", 1)        
+      end 
+      
+      if (((bossHealth <= (bossMaxHealth *0.75))) and readData("exarKun:bossOneFightState") == 1) then
+      spatialChat(boss1, "We have barely begun to probe the depths of the knowledge in this place.")
+        writeData("exarKun:bossOneFightState", 2)        
+      end
+      
+      if (((bossHealth <= (bossMaxHealth *0.50))) and readData("exarKun:bossOneFightState") == 2) then
+      spatialChat(boss1, "Before the master, I was a simple scientist.  Do you not appreciate the gifts he bestows?")
+        writeData("exarKun:bossOneFightState", 3)        
+      end  
+      
+      if (((bossHealth <= (bossMaxHealth *0.25))) and readData("exarKun:bossOneFightState") == 3) then
+      spatialChat(boss1, "You do not understand, all this can be yours too if you just devote yourselves to him!")
+        writeData("exarKun:bossOneFightState", 4)        
+      end
+      
+      if (((bossHealth <= (bossMaxHealth *0.1))) and readData("exarKun:bossOneFightState") == 4) then
+      spatialChat(boss1, "You had the chance to learn, now your only choice is death at the hand of the master.")
+        writeData("exarKun:bossOneFightState", 5)        
+      end  
+      
+      if (((bossHealth <= (bossMaxHealth *0.1))) and readData("exarKun:bossOneFightState") == 5) then      
+        writeData("exarKun:bossOneFightState", 6)        
+      end
+    end
 end
 
 function exarKun:spawnBossRoomOneActiveArea()  -- Active areas use world coords.   Set to actual world coord in each instance manually.
@@ -251,13 +297,21 @@ function exarKun:spawnBossRoomOneTrash()
     return
   else
     local add1 = spawnMobile("yavin4", "exar_kun_cultist", 0, 5.3, -0.1, -46.5, -147, 480000294)
+      spatialChat(add1, "My life for the master!")
     local add2 = spawnMobile("yavin4", "exar_kun_cultist", 0, -28.4, -0.1, -46.4, 130, 480000294)
+      spatialChat(add2, "My life for the master!")
     local add3 = spawnMobile("yavin4", "exar_kun_cultist", 0, -32.2, -0.1, -51.9, 109, 480000294)
+      spatialChat(add3, "My life for the master!")
     local add4 = spawnMobile("yavin4", "exar_kun_cultist", 0, 9.2, -0.1, -51.8, -121, 480000294)
+      spatialChat(add4, "My life for the master!")
     local add5 = spawnMobile("yavin4", "exar_kun_cultist", 0, 9.1, -0.1, -77.7, -55, 480000294)
+      spatialChat(add5, "My life for the master!")
     local add6 = spawnMobile("yavin4", "exar_kun_cultist", 0, 5.3, -0.1, -82.3, -37, 480000294)
+      spatialChat(add6, "My life for the master!")
     local add7 = spawnMobile("yavin4", "exar_kun_cultist", 0, -28.4, -0.1, -82.7, 40, 480000294)
-    local add8 = spawnMobile("yavin4", "exar_kun_cultist", 0, -32.3, -0.1, -77.2, 59, 480000294)    
+      spatialChat(add7, "My life for the master!")
+    local add8 = spawnMobile("yavin4", "exar_kun_cultist", 0, -32.3, -0.1, -77.2, 59, 480000294)
+      spatialChat(add8, "My life for the master!")    
   end 
   writeData("exarKun:bossOneTrashState", 1) 
 end
