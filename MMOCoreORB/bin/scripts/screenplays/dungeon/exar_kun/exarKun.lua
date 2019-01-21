@@ -259,6 +259,7 @@ function exarKun:boss1_damage(boss1, pPlayer)
         writeData("exarKun:bossOneFightState", 6)        
       end
     end
+    return 0
 end
 
 function exarKun:spawnBossRoomOneActiveArea()  -- Active areas use world coords.   Set to actual world coord in each instance manually.
