@@ -244,7 +244,7 @@ function exarKun:boss1_damage(boss1, pPlayer)
       
       if (((bossHealth <= (bossMaxHealth *0.75))) and readData("exarKun:bossOneFightState") == 1) then
       spatialChat(boss1, "We have barely begun to probe the depths of the knowledge in this place.")
-      CreatureObject(boss1):playEffect("clienteffect/shp_hyperspace_in_3d.cef", "")
+      CreatureObject(boss1):playEffect("clienteffect/combat_pt_electricalfield.cef", "")
         writeData("exarKun:bossOneFightState", 2)        
       end
       
