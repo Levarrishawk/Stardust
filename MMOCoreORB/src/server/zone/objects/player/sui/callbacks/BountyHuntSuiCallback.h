@@ -5,6 +5,7 @@
 
 #include "server/zone/objects/player/sui/SuiCallback.h"
 #include "server/zone/managers/visibility/VisibilityManager.h"
+#include "server/zone/managers/mission/MissionManager.h"
 //#include "server/zone/objects/player/sui/callbacks/BountyHuntSuiCallback.h" // Why would this include itself?
 #include "server/zone/objects/player/sui/inputbox/SuiInputBox.h"
 
@@ -50,7 +51,7 @@ public:
 						creature->subtractBankCredits(creature->getBankCredits());
 					}
 
-					VisibilityManager::instance()->addPlayerToBountyList(player, value);
+					MissionManager::instance()->addPlayerToBountyList(player, value);
 
 					creature->sendSystemMessage("Bounty has been successfully placed!");
 			}
