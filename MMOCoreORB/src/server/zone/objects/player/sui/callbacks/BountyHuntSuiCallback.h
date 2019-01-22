@@ -51,7 +51,7 @@ public:
 						creature->subtractBankCredits(creature->getBankCredits());
 					}
 
-					MissionManager::instance()->addPlayerToBountyList(player, value);
+					MissionManager->addPlayerToBountyList(player, value);
 
 					creature->sendSystemMessage("Bounty has been successfully placed!");
 			}
