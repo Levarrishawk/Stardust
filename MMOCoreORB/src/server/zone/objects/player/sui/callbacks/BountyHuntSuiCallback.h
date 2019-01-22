@@ -37,7 +37,7 @@ public:
 				input->setPromptTitle("Bounty Hunter Request");
 				input->setPromptText("Please specify an amount to place.  It must be greater than 100,000 credits.  There is no limit.");
 				input->setUsingObject(player);
-				input->setCallback(new BountyHuntSuiCallback(creature->getZoneServer() ) );
+				input->setCallback(new BountyHuntSuiCallback(server, player) );
 
 				creature->getPlayerObject()->addSuiBox(input);
 				creature->sendMessage(input->generateMessage());
