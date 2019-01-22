@@ -6,7 +6,7 @@
 #include "server/zone/objects/player/sui/SuiCallback.h"
 #include "server/zone/managers/visibility/VisibilityManager.h"
 #include "server/zone/managers/mission/MissionManager.h"
-//#include "server/zone/objects/player/sui/callbacks/BountyHuntSuiCallback.h" // Why would this include itself?
+#include "server/zone/objects/player/sui/callbacks/BountyHuntSuiCallback.h" // Why would this include itself?
 #include "server/zone/objects/player/sui/inputbox/SuiInputBox.h"
 
 class BountyHuntSuiCallback : public SuiCallback {
@@ -37,7 +37,7 @@ public:
 				input->setPromptTitle("Bounty Hunter Request");
 				input->setPromptText("Please specify an amount to place.  It must be greater than 100,000 credits.  There is no limit.");
 				input->setUsingObject(player);
-				input->setCallback(new BountyHuntSuiCallback(creature->getZoneServer()));
+				input->setCallback(new BountyHuntSuiCallback(creature->getZoneServer() ) );
 
 				creature->getPlayerObject()->addSuiBox(input);
 				creature->sendMessage(input->generateMessage());
@@ -51,7 +51,8 @@ public:
 						creature->subtractBankCredits(creature->getBankCredits());
 					}
 
-					MissionManager->addPlayerToBountyList(player, value);
+					MissionManager* missionManager = creature->getZoneServer()->getMissionManager();
+					missionManager->addPlayerToBountyList(player, value);
 
 					creature->sendSystemMessage("Bounty has been successfully placed!");
 			}
