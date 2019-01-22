@@ -102,6 +102,8 @@
 #include "server/zone/objects/player/badges/Badge.h"
 #include "server/zone/objects/building/TutorialBuildingObject.h"
 #include "server/zone/managers/frs/FrsManager.h"
+// Extended Player BH System
+#include "server/zone/objects/player/sui/callbacks/BountyHuntSuiCallback.h"
 
 PlayerManagerImplementation::PlayerManagerImplementation(ZoneServer* zoneServer, ZoneProcessServer* impl) :
 										Logger("PlayerManager") {
@@ -825,7 +827,18 @@ void PlayerManagerImplementation::killPlayer(TangibleObject* attacker, CreatureO
 	}
 
 	ThreatMap* threatMap = player->getThreatMap();
+// BEGIN EXTENDED BOUNTY SYSTEM
+	if(attacker->isPlayerCreature()){
+		ManagedReference<SuiInputBox*> input = new SuiInputBox(player, SuiWindowType::STRUCTURE_VENDOR_WITHDRAW);
+		input->setPromptTitle("Bounty Hunter Request");
+		input->setPromptText("Please specify an amount to place.  It must be greater than 100,000 credits.  There is no limit.");
+		input->setUsingObject(attacker);
+		input->setCallback(new BountyHuntSuiCallback(player->getZoneServer()));
 
+		player->getPlayerObject()->addSuiBox(input);
+		player->sendMessage(input->generateMessage());
+	}
+// END EXTENDED BOUNTY SYSTEM
 	if (attacker->getFaction() != 0) {
 			if (attacker->isPlayerCreature() || attacker->isPet()) {
 				CreatureObject* attackerCreature = attacker->asCreatureObject();
