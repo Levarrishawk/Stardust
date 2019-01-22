@@ -831,7 +831,7 @@ void PlayerManagerImplementation::killPlayer(TangibleObject* attacker, CreatureO
 	if(attacker->isPlayerCreature()){
 		ManagedReference<SuiInputBox*> input = new SuiInputBox(player, SuiWindowType::STRUCTURE_VENDOR_WITHDRAW);
 		input->setPromptTitle("Bounty Hunter Request");
-		input->setPromptText("Please specify an amount to place.  It must be greater than 100,000 credits.  There is no limit.");
+		input->setPromptText("Place a bounty on your killer. Bounties must be between 100,000 and 1,000,000 credits.");
 		input->setUsingObject(attacker);
 		input->setCallback(new BountyHuntSuiCallback(player->getZoneServer()));
 
