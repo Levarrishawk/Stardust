@@ -97,10 +97,10 @@ hondo_return_teleporter:addScreen(mayor4d);
 deny1 = ConvoScreen:new {
   id = "deny1",
   leftDialog = "",
-  customDialogText = "Look around?  What for?  There's nothing here... oh well.  Don't let Hondo say he did not tell you so.  Word of advise though.  Don't get killed.  There are no Cloning Facilities here.  I'd hate for something tragic to happen to my new friend!  Why not let Hondo take you to Corellia instead where it's safe?",
+  customDialogText = "Look around?  What for?  There's nothing here... oh well.  Don't let Hondo say he did not tell you so!",
   stopConversation = "false",
   options = {
-     {"I think not.","deny"},
+     {"I think I will have a look around anyway.","deny"},
     -- {"I think I am going to go look around this planet for a while.","deny"}
   }
 }
