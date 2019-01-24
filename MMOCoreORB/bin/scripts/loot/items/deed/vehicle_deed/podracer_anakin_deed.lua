@@ -4,7 +4,7 @@ podracer_anakin_deed = {
 	minimumLevel = 0,
 	maximumLevel = -1,
 	
-	customObjectName = "",
+	customObjectName = "Anakin's Radon-Ulzer Podracer",
 	directObjectTemplate = "object/tangible/deed/vehicle_deed/podracer_anakin_deed.iff",
 	craftingValues = {  
     {"hitpoints",5000,5000,0},
