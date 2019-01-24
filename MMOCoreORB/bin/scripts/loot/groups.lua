@@ -477,3 +477,4 @@ includeFile("groups/dungeon/exar_kun/exar_kun_furniture.lua")
 
 -- Race Tracks
 includeFile("groups/race_tracks/mos_espa.lua")
+includeFile("groups/race_tracks/coruscant_lower.lua")

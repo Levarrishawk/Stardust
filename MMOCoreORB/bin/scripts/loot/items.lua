@@ -1576,5 +1576,6 @@ includeFile("items/furniture/frn_all_heroic_exar_brazier_01.lua")
 -- Racetracks
 
 includeFile("items/deed/vehicle_deed/podracer_anakin_deed.lua")
+inclufeFile("item/deed/vehicle_deed/flare_s_swoop_deed.lua")
 
 
