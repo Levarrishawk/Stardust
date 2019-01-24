@@ -1562,7 +1562,15 @@ includeFile("items/weapon/sword_rebel.lua")
 includeFile("items/weapon/sword_rsf.lua")
 includeFile("items/weapon/sword_wookiee.lua")
 
+
+-- Exar Kun Loot
 includeFile("items/wearables/robe/robe_s32.lua")
 includeFile("items/wearables/robe/robe_s33.lua")
 includeFile("items/wearables/robe/robe_s32_h1.lua")
 includeFile("items/wearables/robe/robe_s33_h1.lua")
+includeFile("items/painting/painting_loot_heroic_exar_kun.lua")
+includeFile("items/painting/painting_heroic_exar_kun_ultra_rare.lua")
+includeFile("items/furniture/frn_all_heroic_exar_coffee_table.lua")
+includeFile("items/furniture/frn_all_heroic_exar_brazier_01.lua")
+
+

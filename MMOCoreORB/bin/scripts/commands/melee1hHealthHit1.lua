@@ -66,7 +66,7 @@ Melee1hHealthHit1Command = {
 		HEALTH,
 		true,
 		0,
-		50,
+		5,
 		1, 
 		10
 	  )
@@ -74,7 +74,7 @@ Melee1hHealthHit1Command = {
 	
 	weaponType = ONEHANDMELEEWEAPON,
 
-	range = -1
+	range = 8
 }
 
 AddCommand(Melee1hHealthHit1Command)

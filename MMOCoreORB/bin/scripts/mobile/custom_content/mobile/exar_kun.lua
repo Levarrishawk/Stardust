@@ -118,6 +118,24 @@ exar_kun = Creature:new {
         {group = "armor_attachments", chance = 2000000},
       },
       lootChance = 10000000,
+    },  
+    {
+      groups = {
+        {group = "nge_jedi_cloaks", chance = 5000000},        
+      },
+      lootChance = 5000000,
+    }, 
+    {
+      groups = {
+        {group = "exar_kun_furniture", chance = 10000000},       
+      },
+      lootChance = 5000000,
+    }, 
+    {
+      groups = {
+        {group = "jedi_house_deeds", chance = 5000000},       
+      },
+      lootChance = 1000000,
     },       
   },
 	weapons = {"dark_jedi_weapons_gen4"},
