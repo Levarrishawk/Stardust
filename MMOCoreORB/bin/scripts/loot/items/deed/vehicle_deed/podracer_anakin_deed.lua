@@ -3,9 +3,11 @@
 podracer_anakin_deed = {
 	minimumLevel = 0,
 	maximumLevel = -1,
+	
 	customObjectName = "",
 	directObjectTemplate = "object/tangible/deed/vehicle_deed/podracer_anakin_deed.iff",
-	craftingValues = {
+	craftingValues = {  
+    {"hitpoints",5000,5000,0},
 	},
 	customizationStringNames = {},
 	customizationValues = {}
