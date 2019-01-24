@@ -7,6 +7,7 @@ coruscant_racetrack_screenplay = RaceTrack:new {
 		debugMode = 0, -- 0 = off, 1 = print debug messages
 		planetName = "coruscant", -- The planet the Track is on
 		badgeToAward=BDG_RACING_CORUSCANT,  -- Badge to be awarded for best daily time
+		lootGroup="coruscant_lower",   -- Loot Group for Speeder Reward
 		trackName="CORURACE",  -- Internal trackname , should be unique to the track
 		className="coruscant_racetrack_screenplay", -- Class name of this class
 		trackCheckpoint="@theme_park/racing/racing:coruscant_waypoint_name_checkpoint", --Waypoint names

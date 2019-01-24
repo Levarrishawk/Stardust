@@ -473,3 +473,14 @@ includeFile("groups/weapon/dungeon/elite_weapons.lua")
 includeFile("groups/dungeon/exar_kun/nge_jedi_cloaks.lua")
 includeFile("groups/dungeon/exar_kun/jedi_house_deeds.lua")
 includeFile("groups/dungeon/exar_kun/exar_kun_furniture.lua")
+
+
+-- Race Tracks
+includeFile("groups/race_tracks/mos_espa.lua")
+includeFile("groups/race_tracks/coruscant_lower.lua")
+includeFile("groups/race_tracks/bilbousa.lua")
+includeFile("groups/race_tracks/agrilatswamp.lua")
+includeFile("groups/race_tracks/keren_track.lua")
+includeFile("groups/race_tracks/narmle_track.lua")
+includeFile("groups/race_tracks/nashal_track.lua")
+includeFile("groups/race_tracks/lok_track.lua")

@@ -1573,4 +1573,13 @@ includeFile("items/painting/painting_heroic_exar_kun_ultra_rare.lua")
 includeFile("items/furniture/frn_all_heroic_exar_coffee_table.lua")
 includeFile("items/furniture/frn_all_heroic_exar_brazier_01.lua")
 
+-- Racetracks
 
+includeFile("items/deed/vehicle_deed/podracer_anakin_deed.lua")
+includeFile("item/deed/vehicle_deed/flare_s_swoop_deed.lua")
+includeFile("item/deed/vehicle_deed/landspeeder_desert_skiff_deed.lua")
+includeFile("item/deed/vehicle_deed/swamp_speeder_deed.lua")
+includeFile("item/deed/vehicle_deed/speeder_ric_920_deed.lua")
+includeFile("item/deed/vehicle_deed/hover_chair_deed.lua")
+includeFile("item/deed/vehicle_deed/hoverlifter_speeder_deed.lua")
+includeFile("item/deed/vehicle_deed/speeder_stap_deed.lua")
