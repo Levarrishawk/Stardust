@@ -1573,4 +1573,8 @@ includeFile("items/painting/painting_heroic_exar_kun_ultra_rare.lua")
 includeFile("items/furniture/frn_all_heroic_exar_coffee_table.lua")
 includeFile("items/furniture/frn_all_heroic_exar_brazier_01.lua")
 
+-- Racetracks
+
+includeFile("items/deed/vehicle_deed/podracer_anakin_deed.lua")
+
 
