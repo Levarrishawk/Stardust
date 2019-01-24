@@ -7,6 +7,7 @@ bilbousa_circuit_screenplay = RaceTrack:new {
 		debugMode = 0, -- 0 = off, 1 = print debug messages
 		planetName = "hutta", -- The planet the Track is on
 		badgeToAward=BDG_RACING_HUTTA,  -- Badge to be awarded for best daily time
+		lootGroup="mos_espa",   -- Loot Group for Speeder Reward
 		trackName="HUTTARACE",  -- Internal trackname , should be unique to the track
 		className="bilbousa_circuit_screenplay", -- Class name of this class
 		trackCheckpoint="@theme_park/racing/racing:coruscant_waypoint_name_checkpoint", --Waypoint names

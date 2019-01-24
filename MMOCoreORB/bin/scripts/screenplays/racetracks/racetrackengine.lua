@@ -139,7 +139,7 @@ function RaceTrack:checkServerRecordTime(pPlayer)
 			CreatureObject(pPlayer):sendSystemMessage("@theme_park/racing/racing:beat_the_record")
 			PlayerObject(pGhost):awardBadge(self.trackConfig.badgeToAward) 
 			-- Add Loot here.   
-	--[[		local pInventory = CreatureObject(pPlayer):getSlottedObject("inventory")
+			local pInventory = CreatureObject(pPlayer):getSlottedObject("inventory")
           local lootGroup = self.trackConfig.lootGroup
       if pInventory == nil then
         return
@@ -147,7 +147,7 @@ function RaceTrack:checkServerRecordTime(pPlayer)
     
       createLoot(pInventory, lootGroup, 0, true)
       CreatureObject(pPlayer):sendSystemMessage("You have received an award for holding the track record!")
-      --]]
+      
 		else
 			if resPos==1 then
 				CreatureObject(pPlayer):sendSystemMessage("@theme_park/racing/racing:beat_the_record")
