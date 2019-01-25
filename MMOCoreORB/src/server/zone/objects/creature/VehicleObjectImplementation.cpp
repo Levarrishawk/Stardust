@@ -178,10 +178,12 @@ void VehicleObjectImplementation::repairVehicle(CreatureObject* player) {
 			return;
 		}
 
+		/*
 		if (isDisabled()) {
 			player->sendSystemMessage("@pet/pet_menu:cannot_repair_disabled"); //You may not repair a disabled vehicle.
 			return;
 		}
+		*/
 
 		if (!checkInRangeGarage()) {
 			player->sendSystemMessage("@pet/pet_menu:repair_unrecognized_garages"); //Your vehicle does not recognize any local garages. Try again in a garage repair zone.
