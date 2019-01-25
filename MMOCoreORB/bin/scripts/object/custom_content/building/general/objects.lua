@@ -366,3 +366,46 @@ object_building_general_shared_wod_kwi_temple = SharedBuildingObjectTemplate:new
 }
 ObjectTemplates:addClientTemplate(object_building_general_shared_wod_kwi_temple, "object/building/general/shared_wod_kwi_temple.iff")
 --**********************************************************************************************************************************
+
+-- Decorative Misc Buildings:  Courtesy of EiF / Sunrunner2
+
+object_building_general_shared_coru_corner_01 = SharedBuildingObjectTemplate:new {
+  clientTemplateFileName = "object/building/general/shared_coru_corner_01.iff"
+}
+ObjectTemplates:addClientTemplate(object_building_general_shared_coru_corner_01, "object/building/general/shared_coru_corner_01.iff")
+--**********************************************************************************************************************************
+object_building_general_shared_coru_corner_02 = SharedBuildingObjectTemplate:new {
+  clientTemplateFileName = "object/building/general/shared_coru_corner_02.iff"
+}
+ObjectTemplates:addClientTemplate(object_building_general_shared_coru_corner_02, "object/building/general/shared_coru_corner_02.iff")
+--**********************************************************************************************************************************
+object_building_general_shared_coru_corner_03 = SharedBuildingObjectTemplate:new {
+  clientTemplateFileName = "object/building/general/shared_coru_corner_03.iff"
+}
+ObjectTemplates:addClientTemplate(object_building_general_shared_coru_corner_03, "object/building/general/shared_coru_corner_03.iff")
+--**********************************************************************************************************************************
+object_building_general_shared_coru_corner_04 = SharedBuildingObjectTemplate:new {
+  clientTemplateFileName = "object/building/general/shared_coru_corner_04.iff"
+}
+ObjectTemplates:addClientTemplate(object_building_general_shared_coru_corner_04, "object/building/general/shared_coru_corner_04.iff")
+--**********************************************************************************************************************************
+object_building_general_shared_coru_senate_office_starport = SharedBuildingObjectTemplate:new {
+  clientTemplateFileName = "object/building/general/shared_coru_senate_office_starport.iff"
+}
+ObjectTemplates:addClientTemplate(object_building_general_shared_coru_senate_office_starport, "object/building/general/shared_coru_senate_office_starport.iff")
+--**********************************************************************************************************************************
+object_building_general_shared_coru_senate_office_starport_01 = SharedBuildingObjectTemplate:new {
+  clientTemplateFileName = "object/building/general/shared_coru_senate_office_starport_01.iff"
+}
+ObjectTemplates:addClientTemplate(object_building_general_shared_coru_senate_office_starport_01, "object/building/general/shared_coru_senate_office_starport_01.iff")
+--**********************************************************************************************************************************
+object_building_general_shared_coru_senate_office_starport_02 = SharedBuildingObjectTemplate:new {
+  clientTemplateFileName = "object/building/general/shared_coru_senate_office_starport_02.iff"
+}
+ObjectTemplates:addClientTemplate(object_building_general_shared_coru_senate_office_starport_02, "object/building/general/shared_coru_senate_office_starport_02.iff")
+--**********************************************************************************************************************************
+
+
+
+
+
