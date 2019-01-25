@@ -73,3 +73,13 @@ includeFile("custom_content/building/general/tatooine_laserflit_bunker.lua")
 includeFile("custom_content/building/general/tatooine_slicer_institure.lua")
 includeFile("custom_content/building/general/tatooine_vaigon_shinn_bunker.lua")
 includeFile("custom_content/building/general/wod_kwi_temple.lua")
+
+-- Decorative Misc Buildings:  Courtesy of EiF / Sunrunner2
+
+includeFile("custom_content/building/general/coru_corner_01.lua")
+includeFile("custom_content/building/general/coru_corner_02.lua")
+includeFile("custom_content/building/general/coru_corner_03.lua")
+includeFile("custom_content/building/general/coru_corner_04.lua")
+includeFile("custom_content/building/general/coru_senate_office_starport.lua")
+includeFile("custom_content/building/general/coru_senate_office_starport_01.lua")
+includeFile("custom_content/building/general/coru_senate_office_starport_02.lua")
