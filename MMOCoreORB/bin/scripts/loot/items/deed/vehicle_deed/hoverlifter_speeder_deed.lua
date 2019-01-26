@@ -4,8 +4,8 @@ hoverlifter_speeder_deed = {
 	minimumLevel = 0,
 	maximumLevel = -1,
 	
-	customObjectName = "Hover Chair",
-	directObjectTemplate = "object/tangible/deed/vehicle_deed/hoverlifter_speeder_deed.iff",
+	customObjectName = "Hoverlifter Speeder Deed",
+	directObjectTemplate = "object/tangible/deed/vehicle_deed/hoverlifter_speeder.iff",
 	craftingValues = {  
     {"hitpoints",5000,5000,0},
 	},
