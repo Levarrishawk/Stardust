@@ -46,7 +46,7 @@ ForceLightningSingle1Command = {
 
 	minDamage = 950,
 	maxDamage = 1250,
-	speed = 4.0,
+	speed = 2.0,
 	forceCost = 75,
 	visMod = 25,
 	

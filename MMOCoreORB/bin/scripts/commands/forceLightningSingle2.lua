@@ -45,8 +45,8 @@ ForceLightningSingle2Command = {
 	name = "forcelightningsingle2",
   
   minDamage = 1100,
-  maxDamage = 1250,
-  speed = 3.5,
+  maxDamage = 1750,
+  speed = 1.5,
   forceCost = 80,
   actionCostMultiplier = 1,
   forceCostMultiplier = 1,

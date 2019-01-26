@@ -45,8 +45,8 @@ MindBlast1Command = {
 	name = "mindblast1",
 
 	minDamage = 750,
-	maxDamage = 1000,
-	speed = 4.0,
+	maxDamage = 1400,
+	speed = 2.0,
 	forceCost = 68,
 	visMod = 25,
 	accuracySkillMod = "mindblast_accuracy";
@@ -91,7 +91,7 @@ MindBlast1Command = {
 	poolsToDamage = HEALTH_ATTRIBUTE,
 
 	forceAttack = true,
-	damageType = LIGHTSABER_DAMAGE,
+	damageType = STUN_DAMAGE,
 
 	range = 32
 }
