@@ -45,8 +45,8 @@ ForceThrow2Command = {
 	name = "forcethrow2",
 
 	minDamage = 750,
-	maxDamage = 1000,
-	speed = 3.0,
+	maxDamage = 1800,
+	speed = 1.5,
 	forceCost = 45,
 	visMod = 25,
 	accuracySkillMod = "forcethrow_accuracy",

@@ -45,7 +45,7 @@ ForceKnockdown2Command = {
 	name = "forceknockdown2",
 
     damageMultiplier = 0,
-	speed = 3.0,
+	speed = 2.0,
 	forceCost = 35,
 	visMod = 25,
 	accuracySkillMod = "forceknockdown_accuracy",

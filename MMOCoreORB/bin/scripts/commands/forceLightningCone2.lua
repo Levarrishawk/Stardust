@@ -45,13 +45,13 @@ ForceLightningCone2Command = {
 	name = "forcelightningcone2",
 
   minDamage = 900,
-  maxDamage = 1100,
-  speed = 3.5,
+  maxDamage = 1400,
+  speed = 2.5,
   forceCost = 100,
   forceCostMultiplier = 1,
   actionCostMultiplier = 1,
 	accuracySkillMod = "forcelightning_accuracy",
-	coneAngle = 90,
+	coneAngle = 180,
 	coneAction = true,
 	visMod = 25,
 
