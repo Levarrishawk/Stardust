@@ -837,6 +837,18 @@ florrum = {
   },
 }
 
-
+mustafar = {
+  weatherEnabled = 0,
+  gcwEnabled = 0,
+  
+  planetTravelPoints = {
+    --{name = "Archaeological Outpost", x = -1696, z = 91, y = -624, interplanetaryTravelAllowed = 1, incomingTravelAllowed = 1},
+    },
+    
+    badgeAreas = {   
+      --{"hondo_camp", 3245,-756,0,20,153}, 
+       
+  },
+}
 
 
