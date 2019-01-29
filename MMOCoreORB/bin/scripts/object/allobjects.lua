@@ -1032,7 +1032,7 @@ includeFile("custom_content/tangible/loot/quest/hero_of_tatooine/objects.lua")
 includeFile("custom_content/tangible/loot/quest/nova_orion/objects.lua")
 includeFile("custom_content/tangible/loot/quest/npe/objects.lua")
 includeFile("custom_content/tangible/loot/simple_kit/objects.lua")
-includeFile("custom_content/tangible/loot/quest/undead.lua")
+includeFile("custom_content/tangible/loot/undead/objects.lua")
 
 
 includeFile("custom_content/tangible/npe/objects.lua")
