@@ -974,7 +974,7 @@ includeFile("static/structure/elysium/objects.lua")
 includeFile("custom_content/tangible/collection/reward/objects.lua")
 includeFile("custom_content/tangible/collection/objects.lua")
 
---[[
+
 includeFile("custom_content/tangible/dungeon/objects.lua")
 includeFile("custom_content/tangible/dungeon/mustafar/objects.lua")
 includeFile("custom_content/tangible/dungeon/avatar_platform/objects.lua")
@@ -1013,4 +1013,3 @@ includeFile("custom_content/tangible/quest/township/objects.lua")
 includeFile("custom_content/tangible/quest/wave_event/objects.lua")
 includeFile("custom_content/tangible/quest/wod/objects.lua")
 
---]]
