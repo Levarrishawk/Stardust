@@ -18,24 +18,24 @@ end
 
   
 function mustafar_boundaries:spawnActiveAreaSe1()
-  local pSpawnArea = spawnSceneObject("mustafar", "object/active_area.iff", 587, 170, -196, 0, 0, 0, 0, 0)
+  local pAreaSe1 = spawnSceneObject("mustafar", "object/active_area.iff", 587, 170, -196, 0, 0, 0, 0, 0)
     
-  if (pSpawnArea ~= nil) then
-    local activeArea = LuaActiveArea(pSpawnArea)
+  if (pAreaSe1 ~= nil) then
+    local activeArea = LuaActiveArea(pAreaSe1)
           activeArea:setCellObjectID(0)
           activeArea:setRadius(256)
-          createObserver(ENTEREDAREA, "mustafar_boundaries", "notifySpawnAreaSe", pSpawnArea)          
+          createObserver(ENTEREDAREA, "mustafar_boundaries", "notifySpawnAreaSe", pAreaSe1)          
       end
 end
 
 function mustafar_boundaries:spawnActiveAreaSe2()
-  local pSpawnArea = spawnSceneObject("mustafar", "object/active_area.iff", 448, 226, -404, 0, 0, 0, 0, 0)
+  local pAreaSe2 = spawnSceneObject("mustafar", "object/active_area.iff", 448, 226, -404, 0, 0, 0, 0, 0)
     
-  if (pSpawnArea ~= nil) then
-    local activeArea = LuaActiveArea(pSpawnArea)
+  if (pAreaSe2 ~= nil) then
+    local activeArea = LuaActiveArea(pAreaSe2)
           activeArea:setCellObjectID(0)
           activeArea:setRadius(256)
-          createObserver(ENTEREDAREA, "mustafar_boundaries", "notifySpawnAreaSe", pSpawnArea)          
+          createObserver(ENTEREDAREA, "mustafar_boundaries", "notifySpawnAreaSe", pAreaSe2)          
       end
 end
  
