@@ -819,3 +819,6 @@ includeFile("dungeon/axkva_min/axkvaMinEntryWay.lua")
 includeFile("events/axkvaMinEntryMenuComponent.lua")
 --]]
 
+-- Mustafar
+includeFile("mustafar/boundaries/mustafar_boundaries.lua")
+
