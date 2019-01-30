@@ -9,8 +9,10 @@ mustafar_boundaries = ScreenPlay:new {
 registerScreenPlay("mustafar_boundaries", true)
   
 function mustafar_boundaries:start()
+  if (isZoneEnabled("mustafar")) then
       self:spawnActiveAreaSe1()
-      
+      self:spawnActiveAreaSe2()
+   end   
 end
 
 
