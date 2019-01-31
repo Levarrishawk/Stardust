@@ -1386,6 +1386,62 @@ function mustafar_boundaries:spawnActiveAreaEa24()
           createObserver(ENTEREDAREA, "mustafar_boundaries", "notifySpawnAreaSe", pAreaEa24)          
       end
 end
+-- Mountains
+
+function mustafar_boundaries:spawnActiveAreaTul1()
+  local pAreaTul1 = spawnSceneObject("mustafar", "object/active_area.iff", -1939, 128, 2241, 0, 0, 0, 0, 0)
+    
+  if (pAreaTul1 ~= nil) then
+    local activeArea = LuaActiveArea(pAreaTul1)
+          activeArea:setCellObjectID(0)
+          activeArea:setRadius(75)
+          createObserver(ENTEREDAREA, "mustafar_boundaries", "notifySpawnAreaTul", pAreaTul1)          
+      end
+end
+
+function mustafar_boundaries:spawnActiveAreaTul2()
+  local pAreaTul2 = spawnSceneObject("mustafar", "object/active_area.iff", -2121, 265, 1911, 0, 0, 0, 0, 0)
+    
+  if (pAreaTul2 ~= nil) then
+    local activeArea = LuaActiveArea(pAreaTul2)
+          activeArea:setCellObjectID(0)
+          activeArea:setRadius(65)
+          createObserver(ENTEREDAREA, "mustafar_boundaries", "notifySpawnAreaTul", pAreaTul2)          
+      end
+end
+
+function mustafar_boundaries:spawnActiveAreaTul3()
+  local pAreaTul3 = spawnSceneObject("mustafar", "object/active_area.iff", -2066, 264, 1681, 0, 0, 0, 0, 0)
+    
+  if (pAreaTul3 ~= nil) then
+    local activeArea = LuaActiveArea(pAreaTul3)
+          activeArea:setCellObjectID(0)
+          activeArea:setRadius(65)
+          createObserver(ENTEREDAREA, "mustafar_boundaries", "notifySpawnAreaTul", pAreaTul3)          
+      end
+end
+
+function mustafar_boundaries:spawnActiveAreaTul4()
+  local pAreaTul4 = spawnSceneObject("mustafar", "object/active_area.iff", -1796, 245, 1569, 0, 0, 0, 0, 0)
+    
+  if (pAreaTul4 ~= nil) then
+    local activeArea = LuaActiveArea(pAreaTul4)
+          activeArea:setCellObjectID(0)
+          activeArea:setRadius(55)
+          createObserver(ENTEREDAREA, "mustafar_boundaries", "notifySpawnAreaTul", pAreaTul4)          
+      end
+end
+
+function mustafar_boundaries:spawnActiveAreaTul5()
+  local pAreaTul5 = spawnSceneObject("mustafar", "object/active_area.iff", -1493, 261, 1711, 0, 0, 0, 0, 0)
+    
+  if (pAreaTul5 ~= nil) then
+    local activeArea = LuaActiveArea(pAreaTul5)
+          activeArea:setCellObjectID(0)
+          activeArea:setRadius(50)
+          createObserver(ENTEREDAREA, "mustafar_boundaries", "notifySpawnAreaTul", pAreaTul5)          
+      end
+end
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 --  ---------------------- EXFIL Points ------------------------------------------------------------------------------------------------
@@ -2235,7 +2291,7 @@ function mustafar_boundaries:notifySpawnAreaEa8(pActiveArea, pMovingObject)
   end)
 end
 
-function mustafar_boundaries:notifySpawnAreaEa9(pActiveArea, pMovingObject)
+function mustafar_boundaries:notifySpawnAreaTul(pActiveArea, pMovingObject)
   
   if (not SceneObject(pMovingObject):isCreatureObject()) then
     return 0
@@ -2248,7 +2304,7 @@ function mustafar_boundaries:notifySpawnAreaEa9(pActiveArea, pMovingObject)
     
     if not (player:isAiAgent()) then
       player:sendSystemMessage("An invisible force prevents you from travelling further in that direction.")
-      player:teleport(402, 194, 566, 0)
+      player:teleport(-1817, 119, 1999, 0)
       end
     return 0    
   end)
