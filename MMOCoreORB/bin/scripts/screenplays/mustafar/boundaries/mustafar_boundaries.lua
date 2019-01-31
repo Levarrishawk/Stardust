@@ -383,7 +383,369 @@ end
 
 -- west
 
+function mustafar_boundaries:spawnActiveAreaWe1()
+  local pAreaWe1 = spawnSceneObject("mustafar", "object/active_area.iff", -6636, 751, -428, 0, 0, 0, 0, 0)
+    
+  if (pAreaWe1 ~= nil) then
+    local activeArea = LuaActiveArea(pAreaWe1)
+          activeArea:setCellObjectID(0)
+          activeArea:setRadius(256)
+          createObserver(ENTEREDAREA, "mustafar_boundaries", "notifySpawnAreaWe1", pAreaWe1)          
+      end
+end
 
+function mustafar_boundaries:spawnActiveAreaWe2()
+  local pAreaWe2 = spawnSceneObject("mustafar", "object/active_area.iff", -6607, 290, -179, 0, 0, 0, 0, 0)
+    
+  if (pAreaWe2 ~= nil) then
+    local activeArea = LuaActiveArea(pAreaWe2)
+          activeArea:setCellObjectID(0)
+          activeArea:setRadius(256)
+          createObserver(ENTEREDAREA, "mustafar_boundaries", "notifySpawnAreaWe1", pAreaWe2)          
+      end
+end
+
+function mustafar_boundaries:spawnActiveAreaWe3()
+  local pAreaWe3 = spawnSceneObject("mustafar", "object/active_area.iff", -6580, 268, 71, 0, 0, 0, 0, 0)
+    
+  if (pAreaWe3 ~= nil) then
+    local activeArea = LuaActiveArea(pAreaWe3)
+          activeArea:setCellObjectID(0)
+          activeArea:setRadius(256)
+          createObserver(ENTEREDAREA, "mustafar_boundaries", "notifySpawnAreaWe1", pAreaWe3)          
+      end
+end
+
+function mustafar_boundaries:spawnActiveAreaWe4()
+  local pAreaWe4 = spawnSceneObject("mustafar", "object/active_area.iff", -6573, 290, 325, 0, 0, 0, 0, 0)
+    
+  if (pAreaWe4 ~= nil) then
+    local activeArea = LuaActiveArea(pAreaWe4)
+          activeArea:setCellObjectID(0)
+          activeArea:setRadius(256)
+          createObserver(ENTEREDAREA, "mustafar_boundaries", "notifySpawnAreaWe2", pAreaWe4)          
+      end
+end
+
+function mustafar_boundaries:spawnActiveAreaWe5()
+  local pAreaWe5 = spawnSceneObject("mustafar", "object/active_area.iff", -6560, 440, 578, 0, 0, 0, 0, 0)
+    
+  if (pAreaWe5 ~= nil) then
+    local activeArea = LuaActiveArea(pAreaWe5)
+          activeArea:setCellObjectID(0)
+          activeArea:setRadius(256)
+          createObserver(ENTEREDAREA, "mustafar_boundaries", "notifySpawnAreaWe3", pAreaWe5)          
+      end
+end
+
+function mustafar_boundaries:spawnActiveAreaWe6()
+  local pAreaWe6 = spawnSceneObject("mustafar", "object/active_area.iff", -6555, 869, 832, 0, 0, 0, 0, 0)
+    
+  if (pAreaWe6 ~= nil) then
+    local activeArea = LuaActiveArea(pAreaWe6)
+          activeArea:setCellObjectID(0)
+          activeArea:setRadius(256)
+          createObserver(ENTEREDAREA, "mustafar_boundaries", "notifySpawnAreaWe3", pAreaWe6)          
+      end
+end
+
+function mustafar_boundaries:spawnActiveAreaWe7()
+  local pAreaWe7 = spawnSceneObject("mustafar", "object/active_area.iff", -6557, 685, 1084, 0, 0, 0, 0, 0)
+    
+  if (pAreaWe7 ~= nil) then
+    local activeArea = LuaActiveArea(pAreaWe7)
+          activeArea:setCellObjectID(0)
+          activeArea:setRadius(256)
+          createObserver(ENTEREDAREA, "mustafar_boundaries", "notifySpawnAreaWe3", pAreaWe7)          
+      end
+end
+
+function mustafar_boundaries:spawnActiveAreaWe8()
+  local pAreaWe8 = spawnSceneObject("mustafar", "object/active_area.iff", -6543, 1045, 1337, 0, 0, 0, 0, 0)
+    
+  if (pAreaWe8 ~= nil) then
+    local activeArea = LuaActiveArea(pAreaWe8)
+          activeArea:setCellObjectID(0)
+          activeArea:setRadius(256)
+          createObserver(ENTEREDAREA, "mustafar_boundaries", "notifySpawnAreaWe4", pAreaWe8)          
+      end
+end
+
+function mustafar_boundaries:spawnActiveAreaWe9()
+  local pAreaWe9 = spawnSceneObject("mustafar", "object/active_area.iff", -6530, 642, 1591, 0, 0, 0, 0, 0)
+    
+  if (pAreaWe9 ~= nil) then
+    local activeArea = LuaActiveArea(pAreaWe9)
+          activeArea:setCellObjectID(0)
+          activeArea:setRadius(256)
+          createObserver(ENTEREDAREA, "mustafar_boundaries", "notifySpawnAreaWe4", pAreaWe9)          
+      end
+end
+
+function mustafar_boundaries:spawnActiveAreaWe10()
+  local pAreaWe10 = spawnSceneObject("mustafar", "object/active_area.iff", -6523, 613, 1847, 0, 0, 0, 0, 0)
+    
+  if (pAreaWe10 ~= nil) then
+    local activeArea = LuaActiveArea(pAreaWe10)
+          activeArea:setCellObjectID(0)
+          activeArea:setRadius(256)
+          createObserver(ENTEREDAREA, "mustafar_boundaries", "notifySpawnAreaWe4", pAreaWe10)          
+      end
+end
+
+function mustafar_boundaries:spawnActiveAreaWe11()
+  local pAreaWe11 = spawnSceneObject("mustafar", "object/active_area.iff", -6513, 539, 2099, 0, 0, 0, 0, 0)
+    
+  if (pAreaWe11 ~= nil) then
+    local activeArea = LuaActiveArea(pAreaWe11)
+          activeArea:setCellObjectID(0)
+          activeArea:setRadius(256)
+          createObserver(ENTEREDAREA, "mustafar_boundaries", "notifySpawnAreaWe5", pAreaWe11)          
+      end
+end
+
+function mustafar_boundaries:spawnActiveAreaWe12()
+  local pAreaWe12 = spawnSceneObject("mustafar", "object/active_area.iff", -6507, 592, 2354, 0, 0, 0, 0, 0)
+    
+  if (pAreaWe12 ~= nil) then
+    local activeArea = LuaActiveArea(pAreaWe12)
+          activeArea:setCellObjectID(0)
+          activeArea:setRadius(256)
+          createObserver(ENTEREDAREA, "mustafar_boundaries", "notifySpawnAreaWe5", pAreaWe12)          
+      end
+end
+
+function mustafar_boundaries:spawnActiveAreaWe13()
+  local pAreaWe13 = spawnSceneObject("mustafar", "object/active_area.iff", -6495, 562, 2606, 0, 0, 0, 0, 0)
+    
+  if (pAreaWe13 ~= nil) then
+    local activeArea = LuaActiveArea(pAreaWe13)
+          activeArea:setCellObjectID(0)
+          activeArea:setRadius(256)
+          createObserver(ENTEREDAREA, "mustafar_boundaries", "notifySpawnAreaWe5", pAreaWe13)          
+      end
+end
+
+function mustafar_boundaries:spawnActiveAreaWe14()
+  local pAreaWe14 = spawnSceneObject("mustafar", "object/active_area.iff", -6473, 235, 2849, 0, 0, 0, 0, 0)
+    
+  if (pAreaWe14 ~= nil) then
+    local activeArea = LuaActiveArea(pAreaWe14)
+          activeArea:setCellObjectID(0)
+          activeArea:setRadius(256)
+          createObserver(ENTEREDAREA, "mustafar_boundaries", "notifySpawnAreaWe6", pAreaWe14)          
+      end
+end
+
+function mustafar_boundaries:spawnActiveAreaWe15()
+  local pAreaWe15 = spawnSceneObject("mustafar", "object/active_area.iff", -6570, 268, 3082, 0, 0, 0, 0, 0)
+    
+  if (pAreaWe15 ~= nil) then
+    local activeArea = LuaActiveArea(pAreaWe15)
+          activeArea:setCellObjectID(0)
+          activeArea:setRadius(256)
+          createObserver(ENTEREDAREA, "mustafar_boundaries", "notifySpawnAreaWe6", pAreaWe15)          
+      end
+end
+
+function mustafar_boundaries:spawnActiveAreaWe16()
+  local pAreaWe16 = spawnSceneObject("mustafar", "object/active_area.iff", -6562, 539, 3336, 0, 0, 0, 0, 0)
+    
+  if (pAreaWe16 ~= nil) then
+    local activeArea = LuaActiveArea(pAreaWe16)
+          activeArea:setCellObjectID(0)
+          activeArea:setRadius(256)
+          createObserver(ENTEREDAREA, "mustafar_boundaries", "notifySpawnAreaWe7", pAreaWe16)          
+      end
+end
+
+function mustafar_boundaries:spawnActiveAreaWe17()
+  local pAreaWe17 = spawnSceneObject("mustafar", "object/active_area.iff", -6606, 558, 3585, 0, 0, 0, 0, 0)
+    
+  if (pAreaWe17 ~= nil) then
+    local activeArea = LuaActiveArea(pAreaWe17)
+          activeArea:setCellObjectID(0)
+          activeArea:setRadius(256)
+          createObserver(ENTEREDAREA, "mustafar_boundaries", "notifySpawnAreaWe7", pAreaWe17)          
+      end
+end
+
+function mustafar_boundaries:spawnActiveAreaWe18()
+  local pAreaWe18 = spawnSceneObject("mustafar", "object/active_area.iff", -6588, 657, 3836, 0, 0, 0, 0, 0)
+    
+  if (pAreaWe18 ~= nil) then
+    local activeArea = LuaActiveArea(pAreaWe18)
+          activeArea:setCellObjectID(0)
+          activeArea:setRadius(256)
+          createObserver(ENTEREDAREA, "mustafar_boundaries", "notifySpawnAreaWe7", pAreaWe18)          
+      end
+end
+
+function mustafar_boundaries:spawnActiveAreaWe19()
+  local pAreaWe19 = spawnSceneObject("mustafar", "object/active_area.iff", -6674, 450, 4064, 0, 0, 0, 0, 0)
+    
+  if (pAreaWe19 ~= nil) then
+    local activeArea = LuaActiveArea(pAreaWe19)
+          activeArea:setCellObjectID(0)
+          activeArea:setRadius(256)
+          createObserver(ENTEREDAREA, "mustafar_boundaries", "notifySpawnAreaWe8", pAreaWe19)          
+      end
+end
+
+function mustafar_boundaries:spawnActiveAreaWe20()
+  local pAreaWe20 = spawnSceneObject("mustafar", "object/active_area.iff", -6700, 273, 4316, 0, 0, 0, 0, 0)
+    
+  if (pAreaWe20 ~= nil) then
+    local activeArea = LuaActiveArea(pAreaWe20)
+          activeArea:setCellObjectID(0)
+          activeArea:setRadius(256)
+          createObserver(ENTEREDAREA, "mustafar_boundaries", "notifySpawnAreaWe8", pAreaWe20)          
+      end
+end
+
+function mustafar_boundaries:spawnActiveAreaWe21()
+  local pAreaWe21 = spawnSceneObject("mustafar", "object/active_area.iff", -6693, 637, 4570, 0, 0, 0, 0, 0)
+    
+  if (pAreaWe21 ~= nil) then
+    local activeArea = LuaActiveArea(pAreaWe21)
+          activeArea:setCellObjectID(0)
+          activeArea:setRadius(256)
+          createObserver(ENTEREDAREA, "mustafar_boundaries", "notifySpawnAreaWe8", pAreaWe21)          
+      end
+end
+
+function mustafar_boundaries:spawnActiveAreaWe22()
+  local pAreaWe22 = spawnSceneObject("mustafar", "object/active_area.iff", -6648, 514, 4818, 0, 0, 0, 0, 0)
+    
+  if (pAreaWe22 ~= nil) then
+    local activeArea = LuaActiveArea(pAreaWe22)
+          activeArea:setCellObjectID(0)
+          activeArea:setRadius(256)
+          createObserver(ENTEREDAREA, "mustafar_boundaries", "notifySpawnAreaWe9", pAreaWe22)          
+      end
+end
+
+function mustafar_boundaries:spawnActiveAreaWe23()
+  local pAreaWe23 = spawnSceneObject("mustafar", "object/active_area.iff", -6623, 405, 5070, 0, 0, 0, 0, 0)
+    
+  if (pAreaWe23 ~= nil) then
+    local activeArea = LuaActiveArea(pAreaWe23)
+          activeArea:setCellObjectID(0)
+          activeArea:setRadius(256)
+          createObserver(ENTEREDAREA, "mustafar_boundaries", "notifySpawnAreaWe9", pAreaWe23)          
+      end
+end
+
+function mustafar_boundaries:spawnActiveAreaWe24()
+  local pAreaWe24 = spawnSceneObject("mustafar", "object/active_area.iff", -6587, 280, 5321, 0, 0, 0, 0, 0)
+    
+  if (pAreaWe24 ~= nil) then
+    local activeArea = LuaActiveArea(pAreaWe24)
+          activeArea:setCellObjectID(0)
+          activeArea:setRadius(300)
+          createObserver(ENTEREDAREA, "mustafar_boundaries", "notifySpawnAreaWe9", pAreaWe24)          
+      end
+end
+
+function mustafar_boundaries:spawnActiveAreaWe25()
+  local pAreaWe25 = spawnSceneObject("mustafar", "object/active_area.iff", -6487, 234, 5576, 0, 0, 0, 0, 0)
+    
+  if (pAreaWe25 ~= nil) then
+    local activeArea = LuaActiveArea(pAreaWe25)
+          activeArea:setCellObjectID(0)
+          activeArea:setRadius(256)
+          createObserver(ENTEREDAREA, "mustafar_boundaries", "notifySpawnAreaWe10", pAreaWe25)          
+      end
+end
+
+function mustafar_boundaries:spawnActiveAreaWe26()
+  local pAreaWe26 = spawnSceneObject("mustafar", "object/active_area.iff", -6394, 221, 5810, 0, 0, 0, 0, 0)
+    
+  if (pAreaWe26 ~= nil) then
+    local activeArea = LuaActiveArea(pAreaWe26)
+          activeArea:setCellObjectID(0)
+          activeArea:setRadius(256)
+          createObserver(ENTEREDAREA, "mustafar_boundaries", "notifySpawnAreaWe10", pAreaWe26)          
+      end
+end
+
+function mustafar_boundaries:spawnActiveAreaWe27()
+  local pAreaWe27 = spawnSceneObject("mustafar", "object/active_area.iff", -6367, 378, 6058, 0, 0, 0, 0, 0)
+    
+  if (pAreaWe27 ~= nil) then
+    local activeArea = LuaActiveArea(pAreaWe27)
+          activeArea:setCellObjectID(0)
+          activeArea:setRadius(256)
+          createObserver(ENTEREDAREA, "mustafar_boundaries", "notifySpawnAreaWe11", pAreaWe27)          
+      end
+end
+
+function mustafar_boundaries:spawnActiveAreaWe28()
+  local pAreaWe28 = spawnSceneObject("mustafar", "object/active_area.iff", -6225, 696, 6264, 0, 0, 0, 0, 0)
+    
+  if (pAreaWe28 ~= nil) then
+    local activeArea = LuaActiveArea(pAreaWe28)
+          activeArea:setCellObjectID(0)
+          activeArea:setRadius(256)
+          createObserver(ENTEREDAREA, "mustafar_boundaries", "notifySpawnAreaWe11", pAreaWe28)          
+      end
+end
+
+function mustafar_boundaries:spawnActiveAreaWe29()
+  local pAreaWe29 = spawnSceneObject("mustafar", "object/active_area.iff", -6014, 416, 6405, 0, 0, 0, 0, 0)
+    
+  if (pAreaWe29 ~= nil) then
+    local activeArea = LuaActiveArea(pAreaWe29)
+          activeArea:setCellObjectID(0)
+          activeArea:setRadius(256)
+          createObserver(ENTEREDAREA, "mustafar_boundaries", "notifySpawnAreaWe11", pAreaWe29)          
+      end
+end
+
+function mustafar_boundaries:spawnActiveAreaWe30()
+  local pAreaWe30 = spawnSceneObject("mustafar", "object/active_area.iff", -5764, 321, 6376, 0, 0, 0, 0, 0)
+    
+  if (pAreaWe30 ~= nil) then
+    local activeArea = LuaActiveArea(pAreaWe30)
+          activeArea:setCellObjectID(0)
+          activeArea:setRadius(100)
+          createObserver(ENTEREDAREA, "mustafar_boundaries", "notifySpawnAreaWe11", pAreaWe30)          
+      end
+end
+
+function mustafar_boundaries:spawnActiveAreaWe31()
+  local pAreaWe31 = spawnSceneObject("mustafar", "object/active_area.iff", -5788, 185, 6507, 0, 0, 0, 0, 0)
+    
+  if (pAreaWe31 ~= nil) then
+    local activeArea = LuaActiveArea(pAreaWe31)
+          activeArea:setCellObjectID(0)
+          activeArea:setRadius(256)
+          createObserver(ENTEREDAREA, "mustafar_boundaries", "notifySpawnAreaWe11", pAreaWe31)          
+      end
+end
+
+function mustafar_boundaries:spawnActiveAreaWe32()
+  local pAreaWe32 = spawnSceneObject("mustafar", "object/active_area.iff", -5541, 347, 6570, 0, 0, 0, 0, 0)
+    
+  if (pAreaWe32 ~= nil) then
+    local activeArea = LuaActiveArea(pAreaWe32)
+          activeArea:setCellObjectID(0)
+          activeArea:setRadius(256)
+          createObserver(ENTEREDAREA, "mustafar_boundaries", "notifySpawnAreaWe11", pAreaWe32)          
+      end
+end
+-- north
+
+function mustafar_boundaries:spawnActiveAreaNo1()
+  local pAreaNo1 = spawnSceneObject("mustafar", "object/active_area.iff", -5541, 347, 6570, 0, 0, 0, 0, 0)
+    
+  if (pAreaNo1 ~= nil) then
+    local activeArea = LuaActiveArea(pAreaNo1)
+          activeArea:setCellObjectID(0)
+          activeArea:setRadius(256)
+          createObserver(ENTEREDAREA, "mustafar_boundaries", "notifySpawnAreaNo1", pAreaNo1)          
+      end
+end
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 --  ---------------------- EXFIL Points ------------------------------------------------------------------------------------------------
@@ -653,3 +1015,233 @@ function mustafar_boundaries:notifySpawnAreaSo13(pActiveArea, pMovingObject)
     return 0    
   end)
 end
+
+function mustafar_boundaries:notifySpawnAreaWe1(pActiveArea, pMovingObject)
+  
+  if (not SceneObject(pMovingObject):isCreatureObject()) then
+    return 0
+  end
+  
+  return ObjectManager.withCreatureObject(pMovingObject, function(player)
+    if (player:isAiAgent()) then
+      return 0
+    end    
+    
+    if not (player:isAiAgent()) then
+      player:sendSystemMessage("An invisible force prevents you from travelling further in that direction.")
+      player:teleport(-6241, 85, -146, 0)
+      end
+    return 0    
+  end)
+end
+
+function mustafar_boundaries:notifySpawnAreaWe2(pActiveArea, pMovingObject)
+  
+  if (not SceneObject(pMovingObject):isCreatureObject()) then
+    return 0
+  end
+  
+  return ObjectManager.withCreatureObject(pMovingObject, function(player)
+    if (player:isAiAgent()) then
+      return 0
+    end    
+    
+    if not (player:isAiAgent()) then
+      player:sendSystemMessage("An invisible force prevents you from travelling further in that direction.")
+      player:teleport(-6183, 109, 286, 0)
+      end
+    return 0    
+  end)
+end
+
+function mustafar_boundaries:notifySpawnAreaWe3(pActiveArea, pMovingObject)
+  
+  if (not SceneObject(pMovingObject):isCreatureObject()) then
+    return 0
+  end
+  
+  return ObjectManager.withCreatureObject(pMovingObject, function(player)
+    if (player:isAiAgent()) then
+      return 0
+    end    
+    
+    if not (player:isAiAgent()) then
+      player:sendSystemMessage("An invisible force prevents you from travelling further in that direction.")
+      player:teleport(-6040, 242, 851, 0)
+      end
+    return 0    
+  end)
+end
+
+function mustafar_boundaries:notifySpawnAreaWe4(pActiveArea, pMovingObject)
+  
+  if (not SceneObject(pMovingObject):isCreatureObject()) then
+    return 0
+  end
+  
+  return ObjectManager.withCreatureObject(pMovingObject, function(player)
+    if (player:isAiAgent()) then
+      return 0
+    end    
+    
+    if not (player:isAiAgent()) then
+      player:sendSystemMessage("An invisible force prevents you from travelling further in that direction.")
+      player:teleport(-6004, 195, 1575, 0)
+      end
+    return 0    
+  end)
+end
+
+function mustafar_boundaries:notifySpawnAreaWe5(pActiveArea, pMovingObject)
+  
+  if (not SceneObject(pMovingObject):isCreatureObject()) then
+    return 0
+  end
+  
+  return ObjectManager.withCreatureObject(pMovingObject, function(player)
+    if (player:isAiAgent()) then
+      return 0
+    end    
+    
+    if not (player:isAiAgent()) then
+      player:sendSystemMessage("An invisible force prevents you from travelling further in that direction.")
+      player:teleport(-5971, 80, 2451, 0)
+      end
+    return 0    
+  end)
+end
+
+function mustafar_boundaries:notifySpawnAreaWe6(pActiveArea, pMovingObject)
+  
+  if (not SceneObject(pMovingObject):isCreatureObject()) then
+    return 0
+  end
+  
+  return ObjectManager.withCreatureObject(pMovingObject, function(player)
+    if (player:isAiAgent()) then
+      return 0
+    end    
+    
+    if not (player:isAiAgent()) then
+      player:sendSystemMessage("An invisible force prevents you from travelling further in that direction.")
+      player:teleport(-6164, 3, 2879, 0)
+      end
+    return 0    
+  end)
+end
+
+function mustafar_boundaries:notifySpawnAreaWe7(pActiveArea, pMovingObject)
+  
+  if (not SceneObject(pMovingObject):isCreatureObject()) then
+    return 0
+  end
+  
+  return ObjectManager.withCreatureObject(pMovingObject, function(player)
+    if (player:isAiAgent()) then
+      return 0
+    end    
+    
+    if not (player:isAiAgent()) then
+      player:sendSystemMessage("An invisible force prevents you from travelling further in that direction.")
+      player:teleport(-6214, 80, 3592, 0)
+      end
+    return 0    
+  end)
+end
+
+function mustafar_boundaries:notifySpawnAreaWe8(pActiveArea, pMovingObject)
+  
+  if (not SceneObject(pMovingObject):isCreatureObject()) then
+    return 0
+  end
+  
+  return ObjectManager.withCreatureObject(pMovingObject, function(player)
+    if (player:isAiAgent()) then
+      return 0
+    end    
+    
+    if not (player:isAiAgent()) then
+      player:sendSystemMessage("An invisible force prevents you from travelling further in that direction.")
+      player:teleport(-6317, 43, 4261, 0)
+      end
+    return 0    
+  end)
+end
+
+function mustafar_boundaries:notifySpawnAreaWe9(pActiveArea, pMovingObject)
+  
+  if (not SceneObject(pMovingObject):isCreatureObject()) then
+    return 0
+  end
+  
+  return ObjectManager.withCreatureObject(pMovingObject, function(player)
+    if (player:isAiAgent()) then
+      return 0
+    end    
+    
+    if not (player:isAiAgent()) then
+      player:sendSystemMessage("An invisible force prevents you from travelling further in that direction.")
+      player:teleport(-6221, 152, 5007, 0)
+      end
+    return 0    
+  end)
+end
+
+function mustafar_boundaries:notifySpawnAreaWe10(pActiveArea, pMovingObject)
+  
+  if (not SceneObject(pMovingObject):isCreatureObject()) then
+    return 0
+  end
+  
+  return ObjectManager.withCreatureObject(pMovingObject, function(player)
+    if (player:isAiAgent()) then
+      return 0
+    end    
+    
+    if not (player:isAiAgent()) then
+      player:sendSystemMessage("An invisible force prevents you from travelling further in that direction.")
+      player:teleport(-6003, 96, 5586, 0)
+      end
+    return 0    
+  end)
+end
+
+function mustafar_boundaries:notifySpawnAreaWe11(pActiveArea, pMovingObject)
+  
+  if (not SceneObject(pMovingObject):isCreatureObject()) then
+    return 0
+  end
+  
+  return ObjectManager.withCreatureObject(pMovingObject, function(player)
+    if (player:isAiAgent()) then
+      return 0
+    end    
+    
+    if not (player:isAiAgent()) then
+      player:sendSystemMessage("An invisible force prevents you from travelling further in that direction.")
+      player:teleport(-6071, 113, 5983, 0)
+      end
+    return 0    
+  end)
+end
+-- North exfil points
+
+function mustafar_boundaries:notifySpawnAreaNo1(pActiveArea, pMovingObject)
+  
+  if (not SceneObject(pMovingObject):isCreatureObject()) then
+    return 0
+  end
+  
+  return ObjectManager.withCreatureObject(pMovingObject, function(player)
+    if (player:isAiAgent()) then
+      return 0
+    end    
+    
+    if not (player:isAiAgent()) then
+      player:sendSystemMessage("An invisible force prevents you from travelling further in that direction.")
+      player:teleport(-5245, 135, 6192, 0)
+      end
+    return 0    
+  end)
+end
+
