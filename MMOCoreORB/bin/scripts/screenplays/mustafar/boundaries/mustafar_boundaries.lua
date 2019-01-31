@@ -1386,7 +1386,9 @@ function mustafar_boundaries:spawnActiveAreaEa24()
           createObserver(ENTEREDAREA, "mustafar_boundaries", "notifySpawnAreaSe", pAreaEa24)          
       end
 end
+---------------------------------------------------------------------------------------------------------------------------
 -- Mountains
+---------------------------------------------------------------------------------------------------------------------------
 
 function mustafar_boundaries:spawnActiveAreaTul1()
   local pAreaTul1 = spawnSceneObject("mustafar", "object/active_area.iff", -1939, 128, 2241, 0, 0, 0, 0, 0)
