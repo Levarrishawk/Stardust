@@ -117,6 +117,12 @@ function mustafar_boundaries:start()
       self:spawnActiveAreaTul4()
       self:spawnActiveAreaTul5()
       
+      self:spawnActiveAreaMin1()
+      self:spawnActiveAreaMin2()
+      self:spawnActiveAreaMin3()
+      self:spawnActiveAreaMin4()
+      self:spawnActiveAreaMin5()
+      self:spawnActiveAreaMin6()
    end   
 end
 
