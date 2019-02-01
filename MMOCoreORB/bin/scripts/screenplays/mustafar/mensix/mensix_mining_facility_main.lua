@@ -1,3 +1,5 @@
+local ObjectManager = require("managers.object.object_manager")
+
 mensix_mining_facility_main = ScreenPlay:new {
 	numberOfActs = 1,
 
@@ -27,7 +29,7 @@ function mensix_mining_facility_main:spawnMobiles()
 	local pTraveler_m = spawnMobile("mustafar", "traveler_m",0,-55.1,31.5,-120.3,-33,12112248)
 	self:setMoodString(pTraveler_m, "npc_consoling")
 	
-  local pTraveler_f = spawnMobile("mustafar", "traveler_m",0,-56.7,31.5,-118.9,-90,12112248)
+  local pTraveler_f = spawnMobile("mustafar", "traveler_f",0,-56.7,31.5,-118.9,-90,12112248)
   self:setMoodString(pTraveler_f, "angry")
 	
   createEvent(1, "mensix_mining_facility_main", "touristConvoStart", pTraveler_f, "")
