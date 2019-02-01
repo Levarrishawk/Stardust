@@ -74,7 +74,7 @@ function mensix_mining_facility_main:checkConvoActive(pPlayer, pTraveler_f, pTra
   if not(readData("mensix_mining_facility_main:travelerConvoState") == 0) then
     createEvent(1, "mensix_mining_facility_main", "touristConvo", pPlayer, "")
   else   
-    createEvent(600000, "mensix_mining_facility_main", "checkConvoActive", pTraveler_f, "")  
+    createEvent(600000, "mensix_mining_facility_main", "touristConvo", pTraveler_f, "")  
   end      
 end
 
