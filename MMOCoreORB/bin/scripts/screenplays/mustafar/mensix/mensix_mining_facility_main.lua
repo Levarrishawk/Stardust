@@ -12,6 +12,8 @@ function mensix_mining_facility_main:start()
 	if (isZoneEnabled("mustafar")) then
 		self:spawnMobiles()
 		self:spawnSceneObjects()
+		
+		writeData("mensix_mining_facility_main:travelerConvoInProgress", 0) 
 	end
 end
 
@@ -34,7 +36,8 @@ function mensix_mining_facility_main:spawnMobiles()
   local pTraveler_f = spawnMobile("mustafar", "traveler_f",0,-56.7,31.5,-118.9,-90,12112248)
     self:setMoodString(pTraveler_f, "angry")
     
-	writeData("mensix_mining_facility_main:travelerConvoState", 0) 
+	writeData("mensix_mining_facility_main:travelerConvoState", 0)
+	writeData("mensix_mining_facility_main:travelerConvoInProgress", 1) 
   createEvent(1, "mensix_mining_facility_main", "touristConvo", pTraveler_f, "")
 end
 
@@ -64,14 +67,15 @@ function mensix_mining_facility_main:touristConvo(pTraveler_m, pTraveler_f, pPla
         createEvent(12000, "mensix_mining_facility_main", "checkConvoActive", pTraveler_m, "")  
   elseif (readData("mensix_mining_facility_main:travelerConvoState") == 5) then
       spatialChat(pTraveler_m, "Yes, dear. Whatever you say.")     
-        writeData("mensix_mining_facility_main:travelerConvoState", 0)   
+        writeData("mensix_mining_facility_main:travelerConvoState", 0) 
+        writeData("mensix_mining_facility_main:travelerConvoInProgress", 0)   
         createEvent(1, "mensix_mining_facility_main", "checkConvoActive", pTraveler_f, "")  
   end 
   
 end
 
 function mensix_mining_facility_main:checkConvoActive(pPlayer, pTraveler_f, pTraveler_m)
-  if not(readData("mensix_mining_facility_main:travelerConvoState") == 0) then
+  if (readData("mensix_mining_facility_main:travelerConvoInProgress", 1) ) then
     createEvent(1, "mensix_mining_facility_main", "touristConvo", pPlayer, "")
   else   
     createEvent(600000, "mensix_mining_facility_main", "touristConvo", pTraveler_f, "")  
