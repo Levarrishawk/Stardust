@@ -110,6 +110,13 @@ function mustafar_boundaries:start()
       self:spawnActiveAreaEa23()
       self:spawnActiveAreaEa24()
       
+      --Mountains
+      self:spawnActiveAreaTul1()
+      self:spawnActiveAreaTul2()
+      self:spawnActiveAreaTul3()
+      self:spawnActiveAreaTul4()
+      self:spawnActiveAreaTul5()
+      
    end   
 end
 
@@ -1445,6 +1452,72 @@ function mustafar_boundaries:spawnActiveAreaTul5()
       end
 end
 
+function mustafar_boundaries:spawnActiveAreaMin1()
+  local pAreaMin1 = spawnSceneObject("mustafar", "object/active_area.iff", -1985, 307, 1088, 0, 0, 0, 0, 0)
+    
+  if (pAreaMin1 ~= nil) then
+    local activeArea = LuaActiveArea(pAreaMin1)
+          activeArea:setCellObjectID(0)
+          activeArea:setRadius(50)
+          createObserver(ENTEREDAREA, "mustafar_boundaries", "notifySpawnAreaMin", pAreaMin1)          
+      end
+end
+
+function mustafar_boundaries:spawnActiveAreaMin2()
+  local pAreaMin2 = spawnSceneObject("mustafar", "object/active_area.iff", -2119, 306, 1229, 0, 0, 0, 0, 0)
+    
+  if (pAreaMin2 ~= nil) then
+    local activeArea = LuaActiveArea(pAreaMin2)
+          activeArea:setCellObjectID(0)
+          activeArea:setRadius(50)
+          createObserver(ENTEREDAREA, "mustafar_boundaries", "notifySpawnAreaMin", pAreaMin2)          
+      end
+end
+
+function mustafar_boundaries:spawnActiveAreaMin3()
+  local pAreaMin3 = spawnSceneObject("mustafar", "object/active_area.iff", -2302, 304, 1331, 0, 0, 0, 0, 0)
+    
+  if (pAreaMin3 ~= nil) then
+    local activeArea = LuaActiveArea(pAreaMin3)
+          activeArea:setCellObjectID(0)
+          activeArea:setRadius(50)
+          createObserver(ENTEREDAREA, "mustafar_boundaries", "notifySpawnAreaMin", pAreaMin3)          
+      end
+end
+
+function mustafar_boundaries:spawnActiveAreaMin4()
+  local pAreaMin4 = spawnSceneObject("mustafar", "object/active_area.iff", -2507, 315, 1202, 0, 0, 0, 0, 0)
+    
+  if (pAreaMin4 ~= nil) then
+    local activeArea = LuaActiveArea(pAreaMin4)
+          activeArea:setCellObjectID(0)
+          activeArea:setRadius(90)
+          createObserver(ENTEREDAREA, "mustafar_boundaries", "notifySpawnAreaMin", pAreaMin4)          
+      end
+end
+
+function mustafar_boundaries:spawnActiveAreaMin5()
+  local pAreaMin5 = spawnSceneObject("mustafar", "object/active_area.iff", -2627, 309, 1008, 0, 0, 0, 0, 0)
+    
+  if (pAreaMin5 ~= nil) then
+    local activeArea = LuaActiveArea(pAreaMin5)
+          activeArea:setCellObjectID(0)
+          activeArea:setRadius(50)
+          createObserver(ENTEREDAREA, "mustafar_boundaries", "notifySpawnAreaMin", pAreaMin5)          
+      end
+end
+
+function mustafar_boundaries:spawnActiveAreaMin6()
+  local pAreaMin6 = spawnSceneObject("mustafar", "object/active_area.iff", -2734, 217, 835, 0, 0, 0, 0, 0)
+    
+  if (pAreaMin6 ~= nil) then
+    local activeArea = LuaActiveArea(pAreaMin6)
+          activeArea:setCellObjectID(0)
+          activeArea:setRadius(50)
+          createObserver(ENTEREDAREA, "mustafar_boundaries", "notifySpawnAreaMin", pAreaMin6)          
+      end
+end
+
 ----------------------------------------------------------------------------------------------------------------------------------------
 --  ---------------------- EXFIL Points ------------------------------------------------------------------------------------------------
 --
@@ -2305,8 +2378,27 @@ function mustafar_boundaries:notifySpawnAreaTul(pActiveArea, pMovingObject)
     end    
     
     if not (player:isAiAgent()) then
-      player:sendSystemMessage("An invisible force prevents you from travelling further in that direction.")
+      player:sendSystemMessage("An invisible force prevents you from scaling this mountain.")
       player:teleport(-1817, 119, 1999, 0)
+      end
+    return 0    
+  end)
+end
+
+function mustafar_boundaries:notifySpawnAreaMin(pActiveArea, pMovingObject)
+  
+  if (not SceneObject(pMovingObject):isCreatureObject()) then
+    return 0
+  end
+  
+  return ObjectManager.withCreatureObject(pMovingObject, function(player)
+    if (player:isAiAgent()) then
+      return 0
+    end    
+    
+    if not (player:isAiAgent()) then
+      player:sendSystemMessage("An invisible force prevents you from scaling this mountain.")
+      player:teleport(-2448, 122, 874, 0)
       end
     return 0    
   end)
