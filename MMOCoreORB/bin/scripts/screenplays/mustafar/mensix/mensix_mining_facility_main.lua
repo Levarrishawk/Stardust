@@ -39,7 +39,7 @@ function mensix_mining_facility_main:touristConvoStart(pTraveler_m, pTraveler_f)
   local husband = LuaCreatureObject(pTraveler_m)
   local wife = LuaCreatureObject(pTraveler_f)
   
-  SpatialChat(wife, "@must_mining_traveler:cant_believe")
+  SpatialChat(pTraveler_f, "@must_mining_traveler:cant_believe")
   createEvent(10000, "mensix_mining_facility_main", "touristConvo1", pTraveler_m, "")
 end
 
@@ -47,7 +47,7 @@ function mensix_mining_facility_main:touristConvo1(pTraveler_m, pTraveler_f)
   local husband = LuaCreatureObject(pTraveler_m)
   local wife = LuaCreatureObject(pTraveler_f)
   
-  SpatialChat(husband, "@must_mining_traveler:do_not_start")
+  SpatialChat(pTraveler_m, "@must_mining_traveler:do_not_start")
   createEvent(10000, "mensix_mining_facility_main", "touristConvo2", pTraveler_f, "")
 end
 
@@ -55,7 +55,7 @@ function mensix_mining_facility_main:touristConvo2(pTraveler_m, pTraveler_f)
   local husband = LuaCreatureObject(pTraveler_m)
   local wife = LuaCreatureObject(pTraveler_f)
   
-  SpatialChat(wife, "@must_mining_traveler:want_to_leave")
+  SpatialChat(pTraveler_f, "@must_mining_traveler:want_to_leave")
   createEvent(10000, "mensix_mining_facility_main", "touristConvo3", pTraveler_m, "")
 end
 
@@ -63,7 +63,7 @@ function mensix_mining_facility_main:touristConvo3(pTraveler_m, pTraveler_f)
   local husband = LuaCreatureObject(pTraveler_m)
   local wife = LuaCreatureObject(pTraveler_f)
   
-  SpatialChat(husband, "@must_mining_traveler:of_course_dear")
+  SpatialChat(pTraveler_m, "@must_mining_traveler:of_course_dear")
   createEvent(10000, "mensix_mining_facility_main", "touristConvo4", pTraveler_f, "")
 end
 
@@ -71,14 +71,14 @@ function mensix_mining_facility_main:touristConvo4(pTraveler_m, pTraveler_f)
   local husband = LuaCreatureObject(pTraveler_m)
   local wife = LuaCreatureObject(pTraveler_f)
   
-  SpatialChat(wife, "@must_mining_traveler:we_better")
+  SpatialChat(pTraveler_m, "@must_mining_traveler:we_better")
   createEvent(12000, "mensix_mining_facility_main", "touristConvo5", pTraveler_m, "")
 end
 
 function mensix_mining_facility_main:touristConvo5(pTraveler_m, pTraveler_f)
   local husband = LuaCreatureObject(pTraveler_m)
-  local wife = LuaCreatureObject(pTraveler_f)
+  local wife = LuaCreatureObject(pTraveler_m)
   
-  SpatialChat(husband, "@must_mining_traveler:yes_dear")
+  SpatialChat(pTraveler_m, "@must_mining_traveler:yes_dear")
   createEvent(600000, "mensix_mining_facility_main", "touristConvoStart", pTraveler_f, "")
 end
