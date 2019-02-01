@@ -20,6 +20,7 @@ traveler_f = Creature:new {
 	milk = 0,
 	tamingChance = 0,
 	ferocity = 0,
+	scale = 1.15,
 	pvpBitmask = NONE,
 	creatureBitmask = PACK + STALKER,
 	optionsBitmask = AIENABLED,
