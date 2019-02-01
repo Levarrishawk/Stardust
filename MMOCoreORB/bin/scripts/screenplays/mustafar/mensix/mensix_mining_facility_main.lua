@@ -65,16 +65,16 @@ function mensix_mining_facility_main:touristConvo(pTraveler_m, pTraveler_f, pPla
   elseif (readData("mensix_mining_facility_main:travelerConvoState") == 5) then
       spatialChat(pTraveler_m, "Yes, dear. Whatever you say.")     
         writeData("mensix_mining_facility_main:travelerConvoState", 0)   
-        createEvent(600000, "mensix_mining_facility_main", "touristConvo", pTraveler_f, "")  
+        createEvent(1, "mensix_mining_facility_main", "checkConvoActive", pTraveler_f, "")  
   end 
   
 end
 
-function mensix_mining_facility_main:checkConvoActive(pPlayer)
+function mensix_mining_facility_main:checkConvoActive(pPlayer, pTraveler_f, pTraveler_m)
   if not(readData("mensix_mining_facility_main:travelerConvoState") == 0) then
     createEvent(1, "mensix_mining_facility_main", "touristConvo", pPlayer, "")
   else   
-    return    
+    createEvent(600000, "mensix_mining_facility_main", "checkConvoActive", pTraveler_f, "")  
   end      
 end
 
