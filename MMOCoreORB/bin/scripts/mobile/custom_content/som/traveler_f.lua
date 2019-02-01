@@ -1,5 +1,5 @@
 traveler_f = Creature:new {
-	customName = "traveler_f",
+	customName = "an Unhappy Tourist",
 	socialGroup = "townsperson",
 	faction = "",
 	level = 70,
@@ -20,7 +20,7 @@ traveler_f = Creature:new {
 	milk = 0,
 	tamingChance = 0,
 	ferocity = 0,
-	pvpBitmask = ATTACKABLE,
+	pvpBitmask = NONE,
 	creatureBitmask = PACK + STALKER,
 	optionsBitmask = AIENABLED,
 	diet = HERBIVORE,
