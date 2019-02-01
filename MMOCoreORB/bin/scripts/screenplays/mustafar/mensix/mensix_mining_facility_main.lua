@@ -38,7 +38,7 @@ function mensix_mining_facility_main:spawnMobiles()
   createEvent(1, "mensix_mining_facility_main", "touristConvo", pTraveler_f, "")
 end
 
-function mensix_mining_facility_main:touristConvo(pTraveler_m, pTraveler_f)
+function mensix_mining_facility_main:touristConvo(pTraveler_m, pTraveler_f, pPlayer)
   local husband = LuaCreatureObject(pTraveler_m)
   local wife = LuaCreatureObject(pTraveler_f)
   
