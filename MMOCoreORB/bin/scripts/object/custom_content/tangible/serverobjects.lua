@@ -48,3 +48,14 @@ includeFile("custom_content/tangible/deed/serverobjects.lua")
 includeFile("custom_content/tangible/furniture/serverobjects.lua")
 includeFile("custom_content/tangible/painting/serverobjects.lua")
 includeFile("custom_content/tangible/wearables/serverobjects.lua")
+--
+
+includeFile("custom_content/tangible/collection/serverobjects.lua")
+includeFile("custom_content/tangible/dungeon/serverobjects.lua")
+includeFile("custom_content/tangible/hologram/serverobjects.lua")
+includeFile("custom_content/tangible/item/serverobjects.lua")
+includeFile("custom_content/tangible/loot/serverobjects.lua")
+includeFile("custom_content/tangible/quest/serverobjects.lua")
+includeFile("custom_content/tangible/npe/serverobjects.lua")
+
+

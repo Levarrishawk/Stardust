@@ -837,6 +837,18 @@ florrum = {
   },
 }
 
-
+mustafar = {
+  weatherEnabled = 0,
+  gcwEnabled = 0,
+  
+  planetTravelPoints = {
+    {name = "Mensix Mining Facility", x = -2471, z = 230, y = 1620, interplanetaryTravelAllowed = 1, incomingTravelAllowed = 1},
+    },
+    
+    badgeAreas = {   
+      --{"hondo_camp", 3245,-756,0,20,153}, 
+       
+  },
+}
 
 
