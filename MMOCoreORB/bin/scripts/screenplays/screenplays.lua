@@ -822,5 +822,5 @@ includeFile("events/axkvaMinEntryMenuComponent.lua")
 -- Mustafar
 
 includeFile("mustafar/boundaries/mustafar_boundaries.lua")
---includeFile("mustafar/mensix/mensix_mining_facility_main.lua")
+includeFile("mustafar/mensix/mensix_mining_facility_main.lua")
 
