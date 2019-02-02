@@ -11,7 +11,7 @@ registerScreenPlay("mensix_mining_facility_main", true)
 function mensix_mining_facility_main:start()
 	if (isZoneEnabled("mustafar")) then
 		writeData("mensix_mining_facility_main:travelerConvoInProgress", 0) 
-		
+		writeData("mensix_mining_facility_main:travelerConvoState", 0)   
 		
 		self:spawnMobiles()
 		self:spawnSceneObjects()
