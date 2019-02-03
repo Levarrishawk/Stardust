@@ -161,6 +161,7 @@ end
 
 
 function mensix_mining_facility_main:resetConvo(pPlayer, pTraveler_f, pTraveler_m)
-    writeData("mensix_mining_facility_main:travelerConvoInProgress", 0)        
+    writeData("mensix_mining_facility_main:travelerConvoInProgress", 0)    
+    self:startTravelerConvo()
 end
 
