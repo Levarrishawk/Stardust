@@ -177,7 +177,7 @@ function mensix_mining_facility_main:minerConvo_miner1_1(pMiner1, pPlayer)
   local pMiner1 = getSceneObject(readData("mensix_mining_facility_main:pMiner1_objectID"))
   
   if (readData("mensix_mining_facility_main:minerConvoState") == 2) then
-      spatialChat(pMiner3, "So you want to see what humans are like, eh? Well just you watch this...it is uncanny.") --@must_joker:alright_humans
+      spatialChat(pMiner1, "So you want to see what humans are like, eh? Well just you watch this...it is uncanny.") --@must_joker:alright_humans
         writeData("mensix_mining_facility_main:minerConvoState", 3)   
         createEvent(4 * 1000, "mensix_mining_facility_main", "minerConvo_miner1_2", pMiner1, "")   
   end
