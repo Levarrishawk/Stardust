@@ -182,10 +182,170 @@ function mensix_mining_facility_main:startMinerConvo(pActiveArea1, pMovingObject
 
    if not(readData("mensix_mining_facility_main:minerConvoInProgress") == 1) then       
           writeData("mensix_mining_facility_main:minerConvoInProgress", 1)
-       --   createEvent(90 * 1000, "mensix_mining_facility_main", "touristConvoF1", pTraveler_f, "")
-       --   createEvent(100 * 1000, "mensix_mining_facility_main", "touristConvoM1", pTraveler_m, "")
+          createEvent(90 * 1000, "mensix_mining_facility_main", "minerConvo_miner3_1", pMiner3, "")          
+          createEvent(94 * 1000, "mensix_mining_facility_main", "minerConvo_miner1_1", pMiner1, "")
+          createEvent(141 * 1000, "mensix_mining_facility_main", "minerConvo_miner2_1", pMiner2, "")
    else
       return 0
    end              
 end
+
+function mensix_mining_facility_main:minerConvo_miner3_1(pminer3, pPlayer)
+  
+  local pMiner3 = getSceneObject(readData("mensix_mining_facility_main:pMiner3_objectID"))
+  
+  if (readData("mensix_mining_facility_main:minerConvoState") == 1) then
+      spatialChat(pMiner3, "@must_joker:do_humans") 
+        writeData("mensix_mining_facility_main:minerConvoState", 2)   
+        createEvent(11 * 1000, "mensix_mining_facility_main", "minerConvo_miner3_2", pMiner3, "")   
+  end
+end
+
+function mensix_mining_facility_main:minerConvo_miner1_1(pminer1, pPlayer)
+  
+  local pMiner1 = getSceneObject(readData("mensix_mining_facility_main:pMiner1_objectID"))
+  
+  if (readData("mensix_mining_facility_main:minerConvoState") == 2) then
+      spatialChat(pMiner3, "@must_joker:alright_humans") 
+        writeData("mensix_mining_facility_main:minerConvoState", 3)   
+        createEvent(4 * 1000, "mensix_mining_facility_main", "minerConvo_miner1_2", pMiner1, "")   
+  end
+end
+
+function mensix_mining_facility_main:minerConvo_miner1_2(pminer1, pPlayer)
+  
+  local pMiner1 = getSceneObject(readData("mensix_mining_facility_main:pMiner1_objectID"))
+  
+  if (readData("mensix_mining_facility_main:minerConvoState") == 3) then
+      spatialChat(pMiner1, "@must_joker:alright_humans") 
+        writeData("mensix_mining_facility_main:minerConvoState", 4)   
+        createEvent(48 * 1000, "mensix_mining_facility_main", "minerConvo_miner1_3", pMiner1, "")   -- 43
+  end
+end
+
+function mensix_mining_facility_main:minerConvo_miner3_2(pminer3, pPlayer)
+  
+  local pMiner3 = getSceneObject(readData("mensix_mining_facility_main:pMiner3_objectID"))
+  
+  if (readData("mensix_mining_facility_main:minerConvoState") == 4) then
+      spatialChat(pMiner3, "@must_joker:i_love_that") 
+        writeData("mensix_mining_facility_main:minerConvoState", 5)   
+        createEvent(126 * 1000, "mensix_mining_facility_main", "minerConvo_miner3_3", pMiner3, "")   --
+  end
+end
+
+function mensix_mining_facility_main:minerConvo_miner2_1(pminer2, pPlayer)
+  
+  local pMiner2 = getSceneObject(readData("mensix_mining_facility_main:pMiner2_objectID"))
+  
+  if (readData("mensix_mining_facility_main:minerConvoState") == 5) then
+      spatialChat(pMiner2, "@must_joker:do_wookiee") 
+        writeData("mensix_mining_facility_main:minerConvoState", 6)   
+        createEvent(76 * 1000, "mensix_mining_facility_main", "minerConvo_miner2_2", pMiner2, "")   --76
+  end
+end
+
+function mensix_mining_facility_main:minerConvo_miner1_3(pminer1, pPlayer)
+  
+  local pMiner1 = getSceneObject(readData("mensix_mining_facility_main:pMiner1_objectID"))
+  
+  if (readData("mensix_mining_facility_main:minerConvoState") == 6) then
+      spatialChat(pMiner1, "@must_joker:wookiee_smell") 
+        writeData("mensix_mining_facility_main:minerConvoState", 7)   
+        createEvent(45 * 1000, "mensix_mining_facility_main", "minerConvo_miner1_3", pMiner1, "")   -- 43
+  end
+end
+
+function mensix_mining_facility_main:minerConvo_miner1_4(pminer1, pPlayer)
+  
+  local pMiner1 = getSceneObject(readData("mensix_mining_facility_main:pMiner1_objectID"))
+  
+  if (readData("mensix_mining_facility_main:minerConvoState") == 7) then
+      spatialChat(pMiner1, "@must_joker:offworlders") 
+        writeData("mensix_mining_facility_main:minerConvoState", 8)   
+        createEvent(31 * 1000, "mensix_mining_facility_main", "minerConvo_miner1_5", pMiner1, "")   -- 43
+  end
+end
+
+function mensix_mining_facility_main:minerConvo_miner2_2(pminer2, pPlayer)
+  
+  local pMiner2 = getSceneObject(readData("mensix_mining_facility_main:pMiner2_objectID"))
+  
+  if (readData("mensix_mining_facility_main:minerConvoState") == 8) then
+      spatialChat(pMiner2, "@must_joker:do_rodian") 
+        writeData("mensix_mining_facility_main:minerConvoState", 9)   
+       
+  end
+end
+
+function mensix_mining_facility_main:minerConvo_miner1_5(pminer1, pPlayer)
+  
+  local pMiner1 = getSceneObject(readData("mensix_mining_facility_main:pMiner1_objectID"))
+  
+  if (readData("mensix_mining_facility_main:minerConvoState") == 9) then
+      spatialChat(pMiner1, "@must_joker:okay_rodian") 
+        writeData("mensix_mining_facility_main:minerConvoState", 10)   
+        createEvent(5 * 1000, "mensix_mining_facility_main", "minerConvo_miner1_6", pMiner1, "")   -- 43
+  end
+end
+
+function mensix_mining_facility_main:minerConvo_miner1_6(pminer1, pPlayer)
+  
+  local pMiner1 = getSceneObject(readData("mensix_mining_facility_main:pMiner1_objectID"))
+  
+  if (readData("mensix_mining_facility_main:minerConvoState") == 10) then
+      spatialChat(pMiner1, "@must_joker:i_am_rodian") 
+        writeData("mensix_mining_facility_main:minerConvoState", 11)   
+        createEvent(2 * 1000, "mensix_mining_facility_main", "minerConvo_miner1_7", pMiner1, "")   -- 43
+  end
+end
+
+function mensix_mining_facility_main:minerConvo_miner3_3(pminer3, pPlayer)
+  
+  local pMiner3 = getSceneObject(readData("mensix_mining_facility_main:pMiner3_objectID"))
+  
+  if (readData("mensix_mining_facility_main:minerConvoState") == 11) then
+      spatialChat(pMiner3, "@must_joker:i_dont_get_it") 
+        writeData("mensix_mining_facility_main:minerConvoState", 12)   
+        createEvent(9 * 1000, "mensix_mining_facility_main", "minerConvo_miner3_4", pMiner3, "")   --
+  end
+end
+
+function mensix_mining_facility_main:minerConvo_miner1_7(pminer1, pPlayer)
+  
+  local pMiner1 = getSceneObject(readData("mensix_mining_facility_main:pMiner1_objectID"))
+  
+  if (readData("mensix_mining_facility_main:minerConvoState") == 12) then
+      spatialChat(pMiner1, "@must_joker:rodian_yellow") 
+        writeData("mensix_mining_facility_main:minerConvoState", 13)   
+       
+  end
+end
+
+function mensix_mining_facility_main:minerConvo_miner3_4(pminer3, pPlayer)
+  
+  local pMiner3 = getSceneObject(readData("mensix_mining_facility_main:pMiner3_objectID"))
+  
+  if (readData("mensix_mining_facility_main:minerConvoState") == 13) then
+      spatialChat(pMiner3, "@must_joker:i_dont_get_it") 
+        writeData("mensix_mining_facility_main:minerConvoState", 0)   
+        createEvent(300 * 1000, "mensix_mining_facility_main", "startMinerConvo", pMiner3, "")   
+  end
+end
+--------------------------------------------------------------
+--Miner convo loop
+--
+-- do_humans  -- miner3  -- 0
+-- alright_humans  -- miner1 -- 4
+-- i_am_human -- miner1 -- 4
+-- i_love_that -- miner3 -- 3
+-- do_wookiee -- miner2 -- 40
+-- wookiee_smell -- miner1 -- 5
+-- offworlders -- miner1 -- 45
+-- do_rodian -- miner2 -- 26
+-- okay_rodian -- miner1 -- 5
+-- i_am_rodian -- miner1 -- 2
+-- i_dont_get_it -- miner3 -- 3
+-- rodian_yellow -- miner1 -- 5
+-- no_i_get_it -- miner3 - 4   -- 2min 30sec loop
 
