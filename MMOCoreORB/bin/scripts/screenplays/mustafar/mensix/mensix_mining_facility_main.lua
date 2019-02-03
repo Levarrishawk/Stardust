@@ -196,10 +196,15 @@ end
 
 function mensix_mining_facility_main:minerConvo_miner3_2(pMiner3, pPlayer)
   
+  local pMiner1 = getSceneObject(readData("mensix_mining_facility_main:pMiner1_objectID"))
+  local pMiner2 = getSceneObject(readData("mensix_mining_facility_main:pMiner2_objectID"))
   local pMiner3 = getSceneObject(readData("mensix_mining_facility_main:pMiner3_objectID"))
   
   if (readData("mensix_mining_facility_main:minerConvoState") == 4) then
       spatialChat(pMiner3, "It is funny because it is true.") --@must_joker:i_love_that
+      CreatureObject(pMiner1):doAnimation("emt_rofl")
+      CreatureObject(pMiner2):doAnimation("emt_rofl")
+      CreatureObject(pMiner3):doAnimation("emt_rofl")
         writeData("mensix_mining_facility_main:minerConvoState", 5)   
         createEvent(2 * 64 * 1000, "mensix_mining_facility_main", "minerConvo_miner3_3", pMiner3, "")   --
   end
@@ -219,9 +224,14 @@ end
 function mensix_mining_facility_main:minerConvo_miner1_3(pMiner1, pPlayer)
   
   local pMiner1 = getSceneObject(readData("mensix_mining_facility_main:pMiner1_objectID"))
+  local pMiner2 = getSceneObject(readData("mensix_mining_facility_main:pMiner2_objectID"))
+  local pMiner3 = getSceneObject(readData("mensix_mining_facility_main:pMiner3_objectID"))
   
   if (readData("mensix_mining_facility_main:minerConvoState") == 6) then
       spatialChat(pMiner1, "No way! Those walking furballs smell something fierce.") -- @must_joker:wookiee_smell
+      CreatureObject(pMiner1):doAnimation("emt_rofl")
+      CreatureObject(pMiner2):doAnimation("emt_rofl")
+      CreatureObject(pMiner3):doAnimation("emt_rofl")
         writeData("mensix_mining_facility_main:minerConvoState", 7)   
         createEvent(45 * 1000, "mensix_mining_facility_main", "minerConvo_miner1_4", pMiner1, "")   -- 43
   end
@@ -267,7 +277,7 @@ function mensix_mining_facility_main:minerConvo_miner1_6(pMiner1, pPlayer)
   if (readData("mensix_mining_facility_main:minerConvoState") == 10) then
       spatialChat(pMiner1, "Hey everyone, I am Rodian.  Look at me with my skinny green legs and my flappy little lips. I am a scary bounty hunter...OoooOOooO. ") --@must_joker:i_am_rodian
         writeData("mensix_mining_facility_main:minerConvoState", 11)   
-        createEvent(2 * 1000, "mensix_mining_facility_main", "minerConvo_miner1_7", pMiner1, "")   -- 43
+        createEvent(3 * 1000, "mensix_mining_facility_main", "minerConvo_miner1_7", pMiner1, "")   -- 43
   end
 end
 
@@ -299,24 +309,10 @@ function mensix_mining_facility_main:minerConvo_miner3_4(pMiner3, pPlayer)
   
   if (readData("mensix_mining_facility_main:minerConvoState") == 13) then
       spatialChat(pMiner3, "Oh...yeah...that was a good one...") --@must_joker:no_i_get_it
-        writeData("mensix_mining_facility_main:minerConvoState", 0)   
-        createEvent(300 * 1000, "mensix_mining_facility_main", "startMinerConvo", pMiner3, "")   
+        writeData("mensix_mining_facility_main:minerConvoState", 0) 
+        writeData("mensix_mining_facility_main:minerConvoInProgress", 0)   
+        createEvent(3 * 100 * 1000, "mensix_mining_facility_main", "startMinerConvo", pMiner3, "")   
   end
 end
---------------------------------------------------------------
---Miner convo loop
---
--- do_humans  -- miner3  -- 0
--- alright_humans  -- miner1 -- 4
--- i_am_human -- miner1 -- 4
--- i_love_that -- miner3 -- 3
--- do_wookiee -- miner2 -- 40
--- wookiee_smell -- miner1 -- 5
--- offworlders -- miner1 -- 45
--- do_rodian -- miner2 -- 26
--- okay_rodian -- miner1 -- 5
--- i_am_rodian -- miner1 -- 2
--- i_dont_get_it -- miner3 -- 3
--- rodian_yellow -- miner1 -- 5
--- no_i_get_it -- miner3 - 4   -- 2min 30sec loop
+
 
