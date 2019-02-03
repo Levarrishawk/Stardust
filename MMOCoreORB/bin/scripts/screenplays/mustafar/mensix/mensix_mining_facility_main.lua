@@ -69,14 +69,16 @@ function mensix_mining_facility_main:mensix_mining_facility_main(pActiveArea1, p
       return 0
     end
     
-      if ((player:isImperial() or player:isRebel()or player:isNeutral())) then
+      
 
-        if not(readData("mensix_mining_facility_main:travelerConvoInProgress") == 1) then  
+        if (readData("mensix_mining_facility_main:travelerConvoInProgress") == 0) then  
            writeData("mensix_mining_facility_main:travelerConvoInProgress", 1)
            createEvent(10 * 1000, "mensix_mining_facility_main", "touristConvoF1", pTraveler_f, "")
            createEvent(20 * 1000, "mensix_mining_facility_main", "touristConvoM1", pTraveler_m, "")
+        else
+          return   
         end
-      end
+      
     return 0    
   end)
 end
