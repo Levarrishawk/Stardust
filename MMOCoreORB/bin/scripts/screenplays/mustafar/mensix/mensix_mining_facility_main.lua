@@ -50,6 +50,8 @@ function mensix_mining_facility_main:spawnMobiles()
      writeData("mensix_mining_facility_main:pMiner1_objectID", SceneObject(pMiner1):getObjectID() )
      writeData("mensix_mining_facility_main:pMiner2_objectID", SceneObject(pMiner2):getObjectID() )
      writeData("mensix_mining_facility_main:pMiner3_objectID", SceneObject(pMiner3):getObjectID() )
+     
+     spawnMobile("mustafar", "junk_dealer_mustafar",0,-90,22.7,-47.8,23,12112245)
 end
 
 
