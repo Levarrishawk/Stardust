@@ -53,7 +53,7 @@ function mensix_mining_facility_main:spawnTravelerConvoActiveArea()  -- Active a
       end
 end
 
-function mensix_mining_facility_main:notifyBossRoomOneActiveArea(pActiveArea1, pMovingObject, pPlayer, pTraveler_m, pTraveler_f)
+function mensix_mining_facility_main:notifyTravelerConvoActiveArea(pActiveArea1, pMovingObject, pPlayer, pTraveler_m, pTraveler_f)
   
   if (not SceneObject(pMovingObject):isCreatureObject()) then
     return 0
