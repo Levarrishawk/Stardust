@@ -43,9 +43,9 @@ function mensix_mining_facility_main:spawnMobiles()
      writeData("mensix_mining_facility_main:traveler_m_objectID", SceneObject(pTraveler_m):getObjectID() )
      writeData("mensix_mining_facility_main:traveler_f_objectID", SceneObject(pTraveler_f):getObjectID() )    
      
-     local pMiner1 = spawnMobile("mustafar", "mustafar_miner_02",0,-2384.0,210.2,1809.9,-35,0)
-     local pMiner2 = spawnMobile("mustafar", "mustafar_miner_01",0,-2384.3,210.2,1813.2,165,0)
-     local pMiner3 = spawnMobile("mustafar", "mustafar_miner_01",0,-2387.6,210.2,1812.2,123,0)
+     local pMiner1 = spawnMobile("mustafar", "mustafarian_miner_02",0,-2384.0,210.2,1809.9,-35,0)
+     local pMiner2 = spawnMobile("mustafar", "mustafarian_miner_01",0,-2384.3,210.2,1813.2,165,0)
+     local pMiner3 = spawnMobile("mustafar", "mustafarian_miner_01",0,-2387.6,210.2,1812.2,123,0)
      
      writeData("mensix_mining_facility_main:pMiner1_objectID", SceneObject(pMiner1):getObjectID() )
      writeData("mensix_mining_facility_main:pMiner2_objectID", SceneObject(pMiner2):getObjectID() )
