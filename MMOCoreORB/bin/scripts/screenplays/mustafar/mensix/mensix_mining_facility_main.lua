@@ -15,7 +15,7 @@ function mensix_mining_facility_main:start()
 		
 		self:spawnMobiles()
 		self:spawnSceneObjects()
-		self:spawnTravelerConvoActiveArea()
+		--self:spawnTravelerConvoActiveArea()
 		
 	end
 end
@@ -35,7 +35,10 @@ function mensix_mining_facility_main:spawnMobiles()
     local pTraveler_m = spawnMobile("mustafar", "traveler_m",0,-55.1,31.5,-120.3,-33,12112248)
       self:setMoodString(pTraveler_m, "npc_consoling")    
     local pTraveler_f = spawnMobile("mustafar", "traveler_f",0,-56.7,31.5,-118.9,-90,12112248)
-      self:setMoodString(pTraveler_f, "angry")      
+      self:setMoodString(pTraveler_f, "angry")  
+      
+    createEvent(10 * 1000, "mensix_mining_facility_main", "touristConvoF1", pTraveler_f, "")
+    createEvent(20 * 1000, "mensix_mining_facility_main", "touristConvoM1", pTraveler_m, "")      
   
 end
 
@@ -79,7 +82,8 @@ function mensix_mining_facility_main:touristConvoF1(pTraveler_f, pPlayer)
 
   if (readData("mensix_mining_facility_main:travelerConvoState") == 0) then
       spatialChat(pTraveler_f, "I cannot believe you took me to this flaming hunk of rock! What were you thinking? This world is a nightmare.")     
-        writeData("mensix_mining_facility_main:travelerConvoState", 1)   
+        writeData("mensix_mining_facility_main:travelerConvoState", 1)
+        writeData("mensix_mining_facility_main:travelerConvoInProgress", 1)   
         createEvent(20 * 1000, "mensix_mining_facility_main", "touristConvoF2", pTraveler_f, "")  
   end
 end
