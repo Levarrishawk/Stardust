@@ -53,8 +53,28 @@ function mensix_mining_facility_main:spawnMobiles()
      
      spawnMobile("mustafar", "junk_dealer_mustafar",0,-90,22.7,-47.8,23,12112245)
      
+     
+     -- Background NPCs
      local pMiner_b1 = spawnMobile("mustafar", "mustafarian_miner_01",0,-82.4,23.2,-35.5,-3,12112245)
-      self:setMoodString(pTraveler_m, "npc_use_terminal_high")  
+     self:setMoodString(pMiner_b1, "npc_use_terminal_high")  
+     local pMiner_b2 = spawnMobile("mustafar", "mustafarian_miner_01",0,-154.4,19.1,-66.4,-158,12112243)
+     self:setMoodString(pMiner_b2, "npc_use_terminal_high") 
+     local pMiner_b3 = spawnMobile("mustafar", "mustafarian_miner_01",0,-78.8,14.9,1.7,88,12112236)
+     self:setMoodString(pMiner_b3, "npc_use_terminal_high")
+     local pMiner_b4 = spawnMobile("mustafar", "mustafarian_miner_01",0,-88.3,10.8,49.4,28,12112226)
+     self:setMoodString(pMiner_b4, "entertained")
+     local pMiner_b5 = spawnMobile("mustafar", "mustafarian_miner_01",0,-86.8,10.8,41.9,113,12112226)
+     self:setMoodString(pMiner_b5, "entertained")
+     local pMiner_b6 = spawnMobile("mustafar", "mustafarian_miner_01",0,-80.6,10.8,42.2,179,12112226)
+     self:setMoodString(pMiner_b6, "npc_accusing")
+     local pMiner_b7 = spawnMobile("mustafar", "mustafarian_miner_01",0,-81.1,10.8,39.7,1,12112226)
+     self:setMoodString(pMiner_b7, "npc_accusing")
+     
+     -- Quest Givers
+     spawnMobile("mustafar", "pei_yi",0,-77.1,10.8,67.5,-138,12112226)
+     spawnMobile("mustafar", "diskret_stahn",0,-75.4,10.8,66.3,-112,12112226)
+     
+   
 end
 
 
