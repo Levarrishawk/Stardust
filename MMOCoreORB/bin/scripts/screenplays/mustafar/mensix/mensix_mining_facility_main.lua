@@ -160,7 +160,7 @@ function mensix_mining_facility_main:startMinerConvo(pActiveArea1, pMovingObject
    end              
 end
 
-function mensix_mining_facility_main:minerConvo_miner3_1(pminer3, pPlayer)
+function mensix_mining_facility_main:minerConvo_miner3_1(pMiner3, pPlayer)
   
   local pMiner3 = getSceneObject(readData("mensix_mining_facility_main:pMiner3_objectID"))
   
@@ -171,7 +171,7 @@ function mensix_mining_facility_main:minerConvo_miner3_1(pminer3, pPlayer)
   end
 end
 
-function mensix_mining_facility_main:minerConvo_miner1_1(pminer1, pPlayer)
+function mensix_mining_facility_main:minerConvo_miner1_1(pMiner1, pPlayer)
   
   local pMiner1 = getSceneObject(readData("mensix_mining_facility_main:pMiner1_objectID"))
   
@@ -182,7 +182,7 @@ function mensix_mining_facility_main:minerConvo_miner1_1(pminer1, pPlayer)
   end
 end
 
-function mensix_mining_facility_main:minerConvo_miner1_2(pminer1, pPlayer)
+function mensix_mining_facility_main:minerConvo_miner1_2(pMiner1, pPlayer)
   
   local pMiner1 = getSceneObject(readData("mensix_mining_facility_main:pMiner1_objectID"))
   
@@ -193,7 +193,7 @@ function mensix_mining_facility_main:minerConvo_miner1_2(pminer1, pPlayer)
   end
 end
 
-function mensix_mining_facility_main:minerConvo_miner3_2(pminer3, pPlayer)
+function mensix_mining_facility_main:minerConvo_miner3_2(pMiner3, pPlayer)
   
   local pMiner3 = getSceneObject(readData("mensix_mining_facility_main:pMiner3_objectID"))
   
@@ -204,7 +204,7 @@ function mensix_mining_facility_main:minerConvo_miner3_2(pminer3, pPlayer)
   end
 end
 
-function mensix_mining_facility_main:minerConvo_miner2_1(pminer2, pPlayer)
+function mensix_mining_facility_main:minerConvo_miner2_1(pMiner2, pPlayer)
   
   local pMiner2 = getSceneObject(readData("mensix_mining_facility_main:pMiner2_objectID"))
   
@@ -215,7 +215,7 @@ function mensix_mining_facility_main:minerConvo_miner2_1(pminer2, pPlayer)
   end
 end
 
-function mensix_mining_facility_main:minerConvo_miner1_3(pminer1, pPlayer)
+function mensix_mining_facility_main:minerConvo_miner1_3(pMiner1, pPlayer)
   
   local pMiner1 = getSceneObject(readData("mensix_mining_facility_main:pMiner1_objectID"))
   
@@ -226,7 +226,7 @@ function mensix_mining_facility_main:minerConvo_miner1_3(pminer1, pPlayer)
   end
 end
 
-function mensix_mining_facility_main:minerConvo_miner1_4(pminer1, pPlayer)
+function mensix_mining_facility_main:minerConvo_miner1_4(pMiner1, pPlayer)
   
   local pMiner1 = getSceneObject(readData("mensix_mining_facility_main:pMiner1_objectID"))
   
@@ -237,7 +237,7 @@ function mensix_mining_facility_main:minerConvo_miner1_4(pminer1, pPlayer)
   end
 end
 
-function mensix_mining_facility_main:minerConvo_miner2_2(pminer2, pPlayer)
+function mensix_mining_facility_main:minerConvo_miner2_2(pMiner2, pPlayer)
   
   local pMiner2 = getSceneObject(readData("mensix_mining_facility_main:pMiner2_objectID"))
   
@@ -248,7 +248,7 @@ function mensix_mining_facility_main:minerConvo_miner2_2(pminer2, pPlayer)
   end
 end
 
-function mensix_mining_facility_main:minerConvo_miner1_5(pminer1, pPlayer)
+function mensix_mining_facility_main:minerConvo_miner1_5(pMiner1, pPlayer)
   
   local pMiner1 = getSceneObject(readData("mensix_mining_facility_main:pMiner1_objectID"))
   
@@ -259,7 +259,7 @@ function mensix_mining_facility_main:minerConvo_miner1_5(pminer1, pPlayer)
   end
 end
 
-function mensix_mining_facility_main:minerConvo_miner1_6(pminer1, pPlayer)
+function mensix_mining_facility_main:minerConvo_miner1_6(pMiner1, pPlayer)
   
   local pMiner1 = getSceneObject(readData("mensix_mining_facility_main:pMiner1_objectID"))
   
@@ -270,7 +270,7 @@ function mensix_mining_facility_main:minerConvo_miner1_6(pminer1, pPlayer)
   end
 end
 
-function mensix_mining_facility_main:minerConvo_miner3_3(pminer3, pPlayer)
+function mensix_mining_facility_main:minerConvo_miner3_3(pMiner3, pPlayer)
   
   local pMiner3 = getSceneObject(readData("mensix_mining_facility_main:pMiner3_objectID"))
   
@@ -281,7 +281,7 @@ function mensix_mining_facility_main:minerConvo_miner3_3(pminer3, pPlayer)
   end
 end
 
-function mensix_mining_facility_main:minerConvo_miner1_7(pminer1, pPlayer)
+function mensix_mining_facility_main:minerConvo_miner1_7(pMiner1, pPlayer)
   
   local pMiner1 = getSceneObject(readData("mensix_mining_facility_main:pMiner1_objectID"))
   
@@ -292,7 +292,7 @@ function mensix_mining_facility_main:minerConvo_miner1_7(pminer1, pPlayer)
   end
 end
 
-function mensix_mining_facility_main:minerConvo_miner3_4(pminer3, pPlayer)
+function mensix_mining_facility_main:minerConvo_miner3_4(pMiner3, pPlayer)
   
   local pMiner3 = getSceneObject(readData("mensix_mining_facility_main:pMiner3_objectID"))
   
