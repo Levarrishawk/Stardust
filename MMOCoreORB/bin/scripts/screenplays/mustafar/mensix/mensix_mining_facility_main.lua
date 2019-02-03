@@ -18,7 +18,7 @@ function mensix_mining_facility_main:start()
     
 		self:spawnMobiles()
 		self:spawnSceneObjects()
-		self:spawnMinerConvoActiveArea()
+		self:startMinerConvo()
 		self:startTravelerConvo()
 	end
 end
@@ -142,37 +142,7 @@ function mensix_mining_facility_main:resetTravelerConvo(pPlayer, pTraveler_f, pT
     self:startTravelerConvo()
 end
 
-
-function mensix_mining_facility_main:spawnMinerConvoActiveArea()  -- Active areas use world coords.   Set to actual world coord in each instance manually.
-  local pActiveArea1 = spawnSceneObject("mustafar", "object/active_area.iff", -2384, 210, 1811, 0, 0)
-  if (pActiveArea1 ~= nil) then
-    local activeArea = LuaActiveArea(pActiveArea1)
-          activeArea:setCellObjectID(0)
-          activeArea:setRadius(20)
-          createObserver(ENTEREDAREA, "mensix_mining_facility_main", "notifyMinerConvoActiveArea", pActiveArea1)
-                  
-      end
-end
-
-function mensix_mining_facility_main:notifyMinerConvoActiveArea(pActiveArea1, pMovingObject, pPlayer, pTraveler_m, pTraveler_f)
-  
-  if (not SceneObject(pMovingObject):isCreatureObject()) then
-    return 0
-  end
-  
-  return ObjectManager.withCreatureObject(pMovingObject, function(player)
-    if (player:isAiAgent()) then
-      return 0
-    end
-    
-    if ((player:isImperial() or player:isRebel()or player:isNeutral())) then
-
-      self:startMinerConvo()
-      
-      end
-    return 0    
-  end)
-end
+-- Miner Jokes
 
 function mensix_mining_facility_main:startMinerConvo(pActiveArea1, pMovingObject, pPlayer, pMiner1, pMiner2, pMiner3)
   
