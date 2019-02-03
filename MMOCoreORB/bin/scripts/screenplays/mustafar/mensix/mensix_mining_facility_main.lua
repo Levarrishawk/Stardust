@@ -76,7 +76,7 @@ function mensix_mining_facility_main:mensix_mining_facility_main(pActiveArea1, p
            createEvent(10 * 1000, "mensix_mining_facility_main", "touristConvoF1", pTraveler_f, "")
            createEvent(20 * 1000, "mensix_mining_facility_main", "touristConvoM1", pTraveler_m, "")
         else
-          return   
+          return 0  
         end
       
     return 0    
