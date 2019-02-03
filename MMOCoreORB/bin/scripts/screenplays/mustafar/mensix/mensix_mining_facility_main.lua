@@ -52,54 +52,8 @@ function mensix_mining_facility_main:spawnTravelerConvoActiveArea()  -- Active a
                   
       end
 end
---[[
-function mensix_mining_facility_main:notifyTravelerConvoActiveArea(pActiveArea1, pMovingObject, pPlayer, pTraveler_m, pTraveler_f)
-  
-  if (not SceneObject(pMovingObject):isCreatureObject()) then
-    return 0
-  end
-  
-  return ObjectManager.withCreatureObject(pMovingObject, function(player)
-    if (player:isAiAgent()) then
-      return 0
-    end
-    
-    if ((player:isImperial() or player:isRebel()or player:isNeutral())) then
-    
-        local pTraveler_f = getSceneObject(readData("mensix_mining_facility_main:traveler_f_objectID"))
-        local pTraveler_m = getSceneObject(readData("mensix_mining_facility_main:traveler_m_objectID"))
 
-        if not(readData("mensix_mining_facility_main:travelerConvoInProgress") == 1) then       
-          writeData("mensix_mining_facility_main:travelerConvoInProgress", 1)
-         createEvent(10 * 1000, "mensix_mining_facility_main", "touristConvoF1", pTraveler_f, "")
-         createEvent(20 * 1000, "mensix_mining_facility_main", "touristConvoM1", pTraveler_m, "")
-       else
-        return 0
-       end        
-      end
-    return 0    
-  end)
-end
---]]
-
-function mensix_mining_facility_main:notifyTravelerConvoActiveArea(pActiveArea, pMovingObject)
-   
-    if (not SceneObject(pMovingObject):isPlayerCreature()) then
-        return 0
-    end
-   
-    local pTraveler_f = getSceneObject(readData("mensix_mining_facility_main:traveler_f_objectID"))
-    local pTraveler_m = getSceneObject(readData("mensix_mining_facility_main:traveler_m_objectID"))
-   
-    if (not readData("mensix_mining_facility_main:travelerConvoInProgress") == 1) then       
-        writeData("mensix_mining_facility_main:travelerConvoInProgress", 1)
-        createEvent(10 * 1000, "mensix_mining_facility_main", "touristConvoF1", pTraveler_f, "")
-        createEvent(20 * 1000, "mensix_mining_facility_main", "touristConvoM1", pTraveler_m, "")
-    end
-    return 0   
-end
-
-function mensix_mining_facility_main:notifyBossRoomOneActiveArea(pActiveArea1, pMovingObject, pPlayer, boss1)
+function mensix_mining_facility_main:notifyBossRoomOneActiveArea(pActiveArea1, pMovingObject, pPlayer, pTraveler_m, pTraveler_f)
   
   if (not SceneObject(pMovingObject):isCreatureObject()) then
     return 0
@@ -112,12 +66,30 @@ function mensix_mining_facility_main:notifyBossRoomOneActiveArea(pActiveArea1, p
     
     if ((player:isImperial() or player:isRebel()or player:isNeutral())) then
 
-      self:spawnBossRoomOneTrash()
+      self:startTravelerConvo()
       
       end
     return 0    
   end)
 end
+
+function mensix_mining_facility_main:startTravelerConvo(pActiveArea1, pMovingObject, pPlayer, pTraveler_m, pTraveler_f)
+  
+   local pTraveler_f = getSceneObject(readData("mensix_mining_facility_main:traveler_f_objectID"))
+   local pTraveler_m = getSceneObject(readData("mensix_mining_facility_main:traveler_m_objectID"))
+
+   if not(readData("mensix_mining_facility_main:travelerConvoInProgress") == 1) then       
+          writeData("mensix_mining_facility_main:travelerConvoInProgress", 1)
+          createEvent(10 * 1000, "mensix_mining_facility_main", "touristConvoF1", pTraveler_f, "")
+          createEvent(20 * 1000, "mensix_mining_facility_main", "touristConvoM1", pTraveler_m, "")
+   else
+      return 0
+   end              
+end
+
+
+
+
 
 
 function mensix_mining_facility_main:touristConvoF1(pTraveler_f, pPlayer)
