@@ -43,7 +43,7 @@ function mensix_mining_facility_main:spawnMobiles()
 end
 
 function mensix_mining_facility_main:spawnTravelerConvoActiveArea()  -- Active areas use world coords.   Set to actual world coord in each instance manually.
-  local pActiveArea1 = spawnSceneObject("mustafar", "object/active_area.iff", -2475, 230, 1648, 0, 0, 0, 0, 0)
+  local pActiveArea1 = spawnSceneObject("mustafar", "object/active_area.iff", -2475, 230, 1648, 0, 12112248)
   if (pActiveArea1 ~= nil) then
     local activeArea = LuaActiveArea(pActiveArea1)
           activeArea:setCellObjectID(12112248)
