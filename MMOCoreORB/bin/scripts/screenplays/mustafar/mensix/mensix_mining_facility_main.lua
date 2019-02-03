@@ -201,7 +201,7 @@ function mensix_mining_facility_main:minerConvo_miner3_2(pMiner3, pPlayer)
   if (readData("mensix_mining_facility_main:minerConvoState") == 4) then
       spatialChat(pMiner3, "It is funny because it is true.") --@must_joker:i_love_that
         writeData("mensix_mining_facility_main:minerConvoState", 5)   
-        createEvent(126 * 1000, "mensix_mining_facility_main", "minerConvo_miner3_3", pMiner3, "")   --
+        createEvent(2 * 63 * 1000, "mensix_mining_facility_main", "minerConvo_miner3_3", pMiner3, "")   --
   end
 end
 
