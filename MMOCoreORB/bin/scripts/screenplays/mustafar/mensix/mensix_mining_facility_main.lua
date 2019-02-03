@@ -68,13 +68,17 @@ function mensix_mining_facility_main:notifyTravelerConvoActiveArea(pActiveArea1,
          writeData("mensix_mining_facility_main:travelerConvoInProgress", 1)
          createEvent(10 * 1000, "mensix_mining_facility_main", "touristConvoF1", pTraveler_f, "")
          createEvent(20 * 1000, "mensix_mining_facility_main", "touristConvoM1", pTraveler_m, "")
-    else
-       return 0        
-    end        
+        else
+          return      
+      end
+    return 0    
+  
 end
 
 function mensix_mining_facility_main:touristConvoF1(pTraveler_f, pPlayer)
-
+  
+  local pTraveler_f = getSceneObject(readData("mensix_mining_facility_main:traveler_f_objectID"))
+  
   if (readData("mensix_mining_facility_main:travelerConvoState") == 0) then
       spatialChat(pTraveler_f, "I cannot believe you took me to this flaming hunk of rock! What were you thinking? This world is a nightmare.")     
         writeData("mensix_mining_facility_main:travelerConvoState", 1)   
@@ -83,7 +87,9 @@ function mensix_mining_facility_main:touristConvoF1(pTraveler_f, pPlayer)
 end
 
 function mensix_mining_facility_main:touristConvoM1(pTraveler_m, pPlayer)
-
+  
+  local pTraveler_m = getSceneObject(readData("mensix_mining_facility_main:traveler_m_objectID"))
+  
   if (readData("mensix_mining_facility_main:travelerConvoState") == 1) then
       spatialChat(pTraveler_m, "Please, Clarrisa, don't start. I thought this would be a nice change of pace for us. You said you wanted to go some place full of adventure and mystery. With all of the discoveries here on Mustafar I thought you would love it.")     
         writeData("mensix_mining_facility_main:travelerConvoState", 2)   
@@ -92,7 +98,9 @@ function mensix_mining_facility_main:touristConvoM1(pTraveler_m, pPlayer)
 end
 
 function mensix_mining_facility_main:touristConvoF2(pTraveler_f, pPlayer)
-
+  
+  local pTraveler_f = getSceneObject(readData("mensix_mining_facility_main:traveler_f_objectID"))
+  
   if (readData("mensix_mining_facility_main:travelerConvoState") == 2) then
       spatialChat(pTraveler_f, "Adventure! When I said that, I meant we should go someplace nice like Naboo. You drag me half way across the galaxy to show me a burning rock! We are going to have a serious talk about your concept of adventure when we get home. Are you listening to me?")     
         writeData("mensix_mining_facility_main:travelerConvoState", 3)    
@@ -101,7 +109,9 @@ function mensix_mining_facility_main:touristConvoF2(pTraveler_f, pPlayer)
 end
 
 function mensix_mining_facility_main:touristConvoM2(pTraveler_m, pPlayer)
-
+  
+  local pTraveler_m = getSceneObject(readData("mensix_mining_facility_main:traveler_m_objectID"))
+  
   if (readData("mensix_mining_facility_main:travelerConvoState") == 3) then
       spatialChat(pTraveler_m, "Of course dear. I was just trying to be exciting and unexpected for you. We could have explored some of those ruins and maybe make a discovery of our own.")     
         writeData("mensix_mining_facility_main:travelerConvoState", 4)  
@@ -110,7 +120,9 @@ function mensix_mining_facility_main:touristConvoM2(pTraveler_m, pPlayer)
 end
 
 function mensix_mining_facility_main:touristConvoF3(pTraveler_f, pPlayer)
-
+  
+  local pTraveler_f = getSceneObject(readData("mensix_mining_facility_main:traveler_f_objectID"))
+  
   if (readData("mensix_mining_facility_main:travelerConvoState") == 4) then
       spatialChat(pTraveler_f, "Next time you want to be exciting...don't. I will not have any such foolishness like you digging around in the dirt like some grubby archeologist. What would people back home say? Now we are just going to wait until the next shuttle and never speak of this again. Is that understood?")     
         writeData("mensix_mining_facility_main:travelerConvoState", 5)           
@@ -118,7 +130,9 @@ function mensix_mining_facility_main:touristConvoF3(pTraveler_f, pPlayer)
 end
 
 function mensix_mining_facility_main:touristConvoM3(pTraveler_m, pPlayer)
-
+  
+  local pTraveler_m = getSceneObject(readData("mensix_mining_facility_main:traveler_m_objectID"))
+  
   if (readData("mensix_mining_facility_main:travelerConvoState") == 5) then
       spatialChat(pTraveler_m, "Yes, dear. Whatever you say.") 
         writeData("mensix_mining_facility_main:travelerConvoState", 0)   
