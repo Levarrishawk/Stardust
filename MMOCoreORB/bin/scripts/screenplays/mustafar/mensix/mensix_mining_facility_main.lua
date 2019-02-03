@@ -52,6 +52,9 @@ function mensix_mining_facility_main:spawnMobiles()
      writeData("mensix_mining_facility_main:pMiner3_objectID", SceneObject(pMiner3):getObjectID() )
      
      spawnMobile("mustafar", "junk_dealer_mustafar",0,-90,22.7,-47.8,23,12112245)
+     
+     local pMiner_b1 = spawnMobile("mustafar", "mustafarian_miner_01",0,-82.4,23.2,-35.5,-3,12112245)
+      self:setMoodString(pTraveler_m, "npc_use_terminal_high")  
 end
 
 
