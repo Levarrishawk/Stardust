@@ -152,6 +152,7 @@ function mensix_mining_facility_main:startMinerConvo(pActiveArea1, pMovingObject
 
    if not(readData("mensix_mining_facility_main:minerConvoInProgress") == 1) then       
           writeData("mensix_mining_facility_main:minerConvoInProgress", 1)
+          writeData("mensix_mining_facility_main:minerConvoState", 1)
           createEvent(90 * 1000, "mensix_mining_facility_main", "minerConvo_miner3_1", pMiner3, "")          
           createEvent(94 * 1000, "mensix_mining_facility_main", "minerConvo_miner1_1", pMiner1, "")
           createEvent(141 * 1000, "mensix_mining_facility_main", "minerConvo_miner2_1", pMiner2, "")
