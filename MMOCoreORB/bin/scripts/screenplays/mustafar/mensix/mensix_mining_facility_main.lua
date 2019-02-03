@@ -15,8 +15,8 @@ function mensix_mining_facility_main:start()
 		
 		self:spawnMobiles()
 		self:spawnSceneObjects()
-		self:spawnTravelerConvoActiveArea()
-		
+		--self:spawnTravelerConvoActiveArea()
+		self:startTravelerConvo()
 	end
 end
 
@@ -73,6 +73,7 @@ function mensix_mining_facility_main:notifyTravelerConvoActiveArea(pActiveArea1,
   end)
 end
 
+
 function mensix_mining_facility_main:startTravelerConvo(pActiveArea1, pMovingObject, pPlayer, pTraveler_m, pTraveler_f)
   
    local pTraveler_f = getSceneObject(readData("mensix_mining_facility_main:traveler_f_objectID"))
@@ -80,8 +81,8 @@ function mensix_mining_facility_main:startTravelerConvo(pActiveArea1, pMovingObj
 
    if not(readData("mensix_mining_facility_main:travelerConvoInProgress") == 1) then       
           writeData("mensix_mining_facility_main:travelerConvoInProgress", 1)
-          createEvent(10 * 1000, "mensix_mining_facility_main", "touristConvoF1", pTraveler_f, "")
-          createEvent(20 * 1000, "mensix_mining_facility_main", "touristConvoM1", pTraveler_m, "")
+          createEvent(90 * 1000, "mensix_mining_facility_main", "touristConvoF1", pTraveler_f, "")
+          createEvent(100 * 1000, "mensix_mining_facility_main", "touristConvoM1", pTraveler_m, "")
    else
       return 0
    end              
