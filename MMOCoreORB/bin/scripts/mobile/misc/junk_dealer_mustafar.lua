@@ -27,7 +27,7 @@ junk_dealer_mustafar = Creature:new {
 	optionsBitmask = INVULNERABLE + CONVERSABLE,
 	diet = HERBIVORE,
 
-	ttemplates = {"object/mobile/som/mustafarian_m_01.iff"},
+	templates = {"object/mobile/som/mustafarian_m_01.iff"},
 	lootGroups = {},
 	weapons = {},
 	conversationTemplate = "junkDealerGenericConvoTemplate",
