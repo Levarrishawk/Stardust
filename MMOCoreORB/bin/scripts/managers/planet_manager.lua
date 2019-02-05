@@ -851,4 +851,19 @@ mustafar = {
   },
 }
 
+lothal = {
+  weatherEnabled = 0,
+  gcwEnabled = 0,
+  
+  planetTravelPoints = {
+    {name = "Lothal Capital City South", x = -1336, z = 28, y = 3370, interplanetaryTravelAllowed = 1, incomingTravelAllowed = 1},
+    {name = "Lothal Capital City North", x = -1336, z = 28, y = 2906, interplanetaryTravelAllowed = 1, incomingTravelAllowed = 1},
+    },
+    
+    badgeAreas = {   
+      --{"hondo_camp", 3245,-756,0,20,153}, 
+       
+  },
+}
+
 
