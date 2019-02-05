@@ -17,7 +17,9 @@ function lothal_easthills_bunker:spawnSceneObjects()
 --Entry
   
   spawnSceneObject("lothal", "object/static/structure/military/military_wall_med_rebl_16_style_01.iff", -0.1, -31.0, -26.4, 58000686, math.rad(0) )
-
+  spawnSceneObject("lothal", "object/static/structure/military/military_wall_med_rebl_16_style_01.iff", -16.1, -31.0, -26.0, 58000687, math.rad(0) )
+  spawnSceneObject("lothal", "object/static/structure/military/military_wall_med_rebl_16_style_01.iff", -4.9, -55.0, 20.9, 58000700, math.rad(90) )
+  
 end
 
 function lothal_easthills_bunker:spawnMobiles()
