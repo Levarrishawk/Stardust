@@ -3,7 +3,7 @@ includeFile("custom_content/tangible/loot/creature_loot/collections/fried_icecre
 includeFile("custom_content/tangible/loot/creature_loot/collections/space/serverobjects.lua")
 -- Server Objects
 
-includeFile("custom_content/tangible/loot/creature_loot/collections/base_collection.lua")
+--includeFile("custom_content/tangible/loot/creature_loot/collections/base_collection.lua")
 
 includeFile("custom_content/tangible/loot/creature_loot/collections/aurebesh_tile_aurek.lua")
 includeFile("custom_content/tangible/loot/creature_loot/collections/aurebesh_tile_besh.lua")
