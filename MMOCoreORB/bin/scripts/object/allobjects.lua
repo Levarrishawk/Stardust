@@ -1010,7 +1010,7 @@ includeFile("custom_content/tangible/loot/beast/objects.lua")
 includeFile("custom_content/tangible/loot/creature_loot/objects.lua")
 
 includeFile("custom_content/tangible/loot/creature_loot/collections/objects.lua")
---[[
+
 includeFile("custom_content/tangible/loot/creature_loot/collections/fried_icecream_components/corellia/objects.lua")
 includeFile("custom_content/tangible/loot/creature_loot/collections/fried_icecream_components/dantooine/objects.lua")
 includeFile("custom_content/tangible/loot/creature_loot/collections/fried_icecream_components/dathomir/objects.lua")
@@ -1019,7 +1019,7 @@ includeFile("custom_content/tangible/loot/creature_loot/collections/fried_icecre
 includeFile("custom_content/tangible/loot/creature_loot/collections/fried_icecream_components/tatooine/objects.lua")
 includeFile("custom_content/tangible/loot/creature_loot/collections/fried_icecream_components/yavin/objects.lua")
 includeFile("custom_content/tangible/loot/creature_loot/collections/space/objects.lua")
---]]
+
 includeFile("custom_content/tangible/loot/creature_loot/generic/objects.lua")
 includeFile("custom_content/tangible/loot/creature_loot/kashyyyk_loot/objects.lua")
 includeFile("custom_content/tangible/loot/generic/objects.lua")
