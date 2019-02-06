@@ -1072,3 +1072,4 @@ includeFile("custom_content/tangible/tcg/series8/objects.lua")
 includeFile("custom_content/tangible/smuggler/objects.lua")
 includeFile("custom_content/tangible/smuggler/contraband/objects.lua")
 
+includeFile("custom_content/tangible/door/objects.lua")
