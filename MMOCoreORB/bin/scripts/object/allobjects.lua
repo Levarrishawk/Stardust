@@ -1055,3 +1055,20 @@ includeFile("custom_content/tangible/quest/township/objects.lua")
 includeFile("custom_content/tangible/quest/wave_event/objects.lua")
 includeFile("custom_content/tangible/quest/wod/objects.lua")
 
+includeFile("custom_content/tangible/veteran_reward/objects.lua")
+includeFile("custom_content/tangible/veteran_reward/one_year_anniversary/objects.lua")
+
+includeFile("custom_content/tangible/tcg/objects.lua")
+includeFile("custom_content/tangible/tcg/series1/objects.lua")
+includeFile("custom_content/tangible/tcg/series3/objects.lua")
+includeFile("custom_content/tangible/tcg/series4/objects.lua")
+includeFile("custom_content/tangible/tcg/series5/objects.lua")
+includeFile("custom_content/tangible/tcg/series5/hangar_ships/objects.lua")
+includeFile("custom_content/tangible/tcg/series6/objects.lua")
+includeFile("custom_content/tangible/tcg/series7/objects.lua")
+includeFile("custom_content/tangible/tcg/series7/garage_display_vehicles/objects.lua")
+includeFile("custom_content/tangible/tcg/series8/objects.lua")
+
+includeFile("custom_content/tangible/smuggler/objects.lua")
+includeFile("custom_content/tangible/smuggler/contraband/objects.lua")
+
