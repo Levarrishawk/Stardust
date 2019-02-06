@@ -1006,8 +1006,9 @@ includeFile("custom_content/tangible/item/treasure_map/objects.lua")
 
 includeFile("custom_content/tangible/loot/objects.lua")
 includeFile("custom_content/tangible/loot/beast/objects.lua")
---[[
+
 includeFile("custom_content/tangible/loot/creature_loot/objects.lua")
+--[[
 includeFile("custom_content/tangible/loot/creature_loot/collections/objects.lua")
 includeFile("custom_content/tangible/loot/creature_loot/collections/fried_icecream_components/corellia/objects.lua")
 includeFile("custom_content/tangible/loot/creature_loot/collections/fried_icecream_components/dantooine/objects.lua")
