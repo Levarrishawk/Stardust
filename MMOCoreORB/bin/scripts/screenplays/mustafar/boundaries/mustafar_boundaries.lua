@@ -1,3 +1,11 @@
+--[[
+
+Boundaries for mustafar_mustafar_main terrain Layer by Levarris
+
+Purpose:  Keeps players from exiting the boundaries of the world map and entering the surrounding instance areas. 
+
+--]]
+
 local ObjectManager = require("managers.object.object_manager")
 
 mustafar_boundaries = ScreenPlay:new {
