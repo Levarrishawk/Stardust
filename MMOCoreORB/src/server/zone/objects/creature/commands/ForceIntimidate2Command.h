@@ -43,7 +43,17 @@ public:
 
 		CreatureObject *tarCreo = targetObject->asCreatureObject();
 
+		ManagedReference<SceneObject*> object = server->getZoneServer()->getObject(target);
+		CreatureObject* targetCreature = dynamic_cast<CreatureObject*>(object.get());
+
+		Locker clocker(targetCreature, creature);
+
+		ManagedReference<PlayerObject*> player = creature->getPlayerObject();
+		PlayerObject* targetPlayerObject = targetCreature->getPlayerObject();
+
 		int res = doCombatAction(creature, target);
+
+
 
 		if(res == SUCCESS) {
 			CreatureAttackData data = CreatureAttackData("", this, target);
