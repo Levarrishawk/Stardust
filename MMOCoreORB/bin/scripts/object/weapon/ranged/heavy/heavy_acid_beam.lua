@@ -130,8 +130,8 @@ object_weapon_ranged_heavy_heavy_acid_beam = object_weapon_ranged_heavy_shared_h
   experimentalWeights = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
   experimentalGroupTitles = {"null", "null", "expDamage", "expDamage", "expDamage", "expDamage", "expEffeciency", "exp_durability", "null", "null", "null", "expRange", "expEffeciency", "null", "null", "null"},
   experimentalSubGroupTitles = {"null", "null", "mindamage", "maxdamage", "attackspeed", "woundchance", "roundsused", "hitpoints", "zerorangemod", "maxrangemod", "midrange", "midrangemod", "charges", "attackhealthcost", "attackactioncost", "attackmindcost"},
-  experimentalMin = {0, 0, 115, 718, 1.0, 19, 30, 750, 0, -125, 16, 20, 25, 0, 300, 0},
-  experimentalMax = {0, 0, 120, 800, 1.0, 35, 65, 1500, 10, -95, 16, 30, 50, 0, 300, 0},
+  experimentalMin = {0, 0, 115, 1718, 1.0, 19, 30, 750, 0, -125, 16, 20, 25, 0, 300, 0},
+  experimentalMax = {0, 0, 1200, 2800, 1.0, 35, 65, 1500, 10, -95, 16, 30, 50, 0, 300, 0},
   experimentalPrecision = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
   experimentalCombineType = {0, 0, 1, 1, 1, 1, 1, 4, 1, 1, 1, 1, 1, 1, 1, 1},
 }

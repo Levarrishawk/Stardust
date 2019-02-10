@@ -129,7 +129,7 @@ object_weapon_ranged_heavy_heavy_lightning_beam = object_weapon_ranged_heavy_sha
   experimentalGroupTitles = {"null", "null", "expDamage", "expDamage", "expDamage", "expDamage", "expEffeciency", "exp_durability", "null", "null", "null", "expRange", "expEffeciency", "null", "null", "null"},
   experimentalSubGroupTitles = {"null", "null", "mindamage", "maxdamage", "attackspeed", "woundchance", "roundsused", "hitpoints", "zerorangemod", "maxrangemod", "midrange", "midrangemod", "charges", "attackhealthcost", "attackactioncost", "attackmindcost"},
   experimentalMin = {0, 0, 110, 801, 1.0, 13, 30, 750, -45, -125, 32, 0, 25, 0, 300, 0},
-  experimentalMax = {0, 0, 178, 1000, 1.0, 23, 65, 1500, -35, -95, 32, 40, 50, 0, 300, 0},
+  experimentalMax = {0, 0, 1780, 3000, 1.0, 23, 65, 1500, -35, -95, 32, 40, 50, 0, 300, 0},
   experimentalPrecision = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
   experimentalCombineType = {0, 0, 1, 1, 1, 1, 1, 4, 1, 1, 1, 1, 1, 1, 1, 1},
 }
