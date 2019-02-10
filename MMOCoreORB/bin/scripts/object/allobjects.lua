@@ -1079,7 +1079,7 @@ includeFile("tangible/smuggler/contraband/objects.lua")
 includeFile("tangible/smuggler/objects.lua")
 
 includeFile("custom_content/tangible/holiday/empire_day/objects.lua")
-includeFile("custom_content/tangible/holiday/empire_day/components/objects.lua")
+includeFile("custom_content/tangible/holiday/empire_day/component/objects.lua")
 includeFile("custom_content/tangible/holiday/life_day/objects.lua")
 includeFile("custom_content/tangible/holiday/life_day/rewards_09/objects.lua")
 includeFile("custom_content/tangible/holiday/love_day/objects.lua")
