@@ -3,6 +3,8 @@ object_tangible_loot_creature_loot_collections_shared_base_collection = SharedTa
 	clientTemplateFileName = "object/tangible/loot/creature_loot/collections/shared_base_collection.iff"
 }
 ObjectTemplates:addClientTemplate(object_tangible_loot_creature_loot_collections_shared_base_collection, "object/tangible/loot/creature_loot/collections/shared_base_collection.iff")
+
+
 --**********************************************************************************************************************************
 object_tangible_loot_creature_loot_collections_shared_aurebesh_tile_aurek = SharedTangibleObjectTemplate:new {
 	clientTemplateFileName = "object/tangible/loot/creature_loot/collections/shared_aurebesh_tile_aurek.iff"

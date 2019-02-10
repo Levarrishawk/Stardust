@@ -1790,12 +1790,14 @@ object_tangible_quest_shared_menagerie_terminal_56 = SharedTangibleObjectTemplat
 ObjectTemplates:addClientTemplate(object_tangible_quest_shared_menagerie_terminal_56, "object/tangible/quest/shared_menagerie_terminal_56.iff")
 ------------------------------------------------------------------------------------------------------------------------------------
 
-
+--[[
 object_tangible_quest_shared_menagerie_terminal_test = SharedTangibleObjectTemplate:new {
 	clientTemplateFileName = "object/tangible/quest/shared_menagerie_terminal_test.iff"
 }
 
 ObjectTemplates:addClientTemplate(object_tangible_quest_shared_menagerie_terminal_test, "object/tangible/quest/shared_menagerie_terminal_test.iff")
+--]]
+
 ------------------------------------------------------------------------------------------------------------------------------------
 
 

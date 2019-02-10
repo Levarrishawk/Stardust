@@ -1006,9 +1006,11 @@ includeFile("custom_content/tangible/item/treasure_map/objects.lua")
 
 includeFile("custom_content/tangible/loot/objects.lua")
 includeFile("custom_content/tangible/loot/beast/objects.lua")
+
 includeFile("custom_content/tangible/loot/creature_loot/objects.lua")
+
 includeFile("custom_content/tangible/loot/creature_loot/collections/objects.lua")
-includeFile("custom_content/tangible/loot/creature_loot/collections/fried_icecream_components/objects.lua")
+
 includeFile("custom_content/tangible/loot/creature_loot/collections/fried_icecream_components/corellia/objects.lua")
 includeFile("custom_content/tangible/loot/creature_loot/collections/fried_icecream_components/dantooine/objects.lua")
 includeFile("custom_content/tangible/loot/creature_loot/collections/fried_icecream_components/dathomir/objects.lua")
@@ -1017,6 +1019,7 @@ includeFile("custom_content/tangible/loot/creature_loot/collections/fried_icecre
 includeFile("custom_content/tangible/loot/creature_loot/collections/fried_icecream_components/tatooine/objects.lua")
 includeFile("custom_content/tangible/loot/creature_loot/collections/fried_icecream_components/yavin/objects.lua")
 includeFile("custom_content/tangible/loot/creature_loot/collections/space/objects.lua")
+
 includeFile("custom_content/tangible/loot/creature_loot/generic/objects.lua")
 includeFile("custom_content/tangible/loot/creature_loot/kashyyyk_loot/objects.lua")
 includeFile("custom_content/tangible/loot/generic/objects.lua")
@@ -1053,3 +1056,32 @@ includeFile("custom_content/tangible/quest/township/objects.lua")
 includeFile("custom_content/tangible/quest/wave_event/objects.lua")
 includeFile("custom_content/tangible/quest/wod/objects.lua")
 
+includeFile("custom_content/tangible/veteran_reward/objects.lua")
+includeFile("custom_content/tangible/veteran_reward/one_year_anniversary/objects.lua")
+
+includeFile("custom_content/tangible/tcg/objects.lua")
+includeFile("custom_content/tangible/tcg/series1/objects.lua")
+includeFile("custom_content/tangible/tcg/series3/objects.lua")
+includeFile("custom_content/tangible/tcg/series4/objects.lua")
+includeFile("custom_content/tangible/tcg/series5/objects.lua")
+includeFile("custom_content/tangible/tcg/series5/hangar_ships/objects.lua")
+includeFile("custom_content/tangible/tcg/series6/objects.lua")
+includeFile("custom_content/tangible/tcg/series7/objects.lua")
+includeFile("custom_content/tangible/tcg/series7/garage_display_vehicles/objects.lua")
+includeFile("custom_content/tangible/tcg/series8/objects.lua")
+
+includeFile("custom_content/tangible/smuggler/objects.lua")
+includeFile("custom_content/tangible/smuggler/contraband/objects.lua")
+
+includeFile("custom_content/tangible/door/objects.lua")
+includeFile("tangible/loot/creature_loot/collections/objects.lua")
+includeFile("tangible/smuggler/contraband/objects.lua")
+includeFile("tangible/smuggler/objects.lua")
+
+includeFile("custom_content/tangible/holiday/empire_day/objects.lua")
+includeFile("custom_content/tangible/holiday/empire_day/component/objects.lua")
+includeFile("custom_content/tangible/holiday/life_day/objects.lua")
+includeFile("custom_content/tangible/holiday/life_day/rewards_09/objects.lua")
+includeFile("custom_content/tangible/holiday/love_day/objects.lua")
+includeFile("custom_content/tangible/holiday/love_day/rewards_10/objects.lua")
+includeFile("custom_content/tangible/holiday/love_day/rewards_11/objects.lua")
