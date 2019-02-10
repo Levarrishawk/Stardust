@@ -804,8 +804,8 @@ void PlayerManagerImplementation::killPlayer(TangibleObject* attacker, CreatureO
 	if (player->isRidingMount()) {
 		player->updateCooldownTimer("mount_dismount", 0);
 		player->executeObjectControllerAction(STRING_HASHCODE("dismount"));
-		playerCreature->setSpeedMultiplierMod(1.f);
-		playerCreature->setAccelerationMultiplierMod(1.f);
+		player->setSpeedMultiplierMod(1.f);
+		player->setAccelerationMultiplierMod(1.f);
 	}
 
 	player->clearDots();
