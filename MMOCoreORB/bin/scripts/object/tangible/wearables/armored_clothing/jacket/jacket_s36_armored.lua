@@ -80,4 +80,4 @@ object_tangible_wearables_armored_clothing_jacket_jacket_s36_armored = object_ta
   experimentalCombineType = {0, 0, 4, 1, 1, 1, 1, 1, 1, 4, 4, 4, 1},
 }
 
-ObjectTemplates:addTemplate(object_tangible_wearables_armored_clothing_jacket_jacket_s26_armored, "object/tangible/wearables/armored_clothing/jacket/jacket_s36_armored.iff")
+ObjectTemplates:addTemplate(object_tangible_wearables_armored_clothing_jacket_jacket_s36_armored, "object/tangible/wearables/armored_clothing/jacket/jacket_s36_armored.iff")
