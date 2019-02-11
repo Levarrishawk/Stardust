@@ -2025,4 +2025,7 @@ schematics = {
   --]]
   
   
+  -- BEGIN Armored Clothing
+  {path="object/draft_schematic/armored_clothing/jacket_s21_armored.iff"},
+  
 }
