@@ -1,4 +1,4 @@
-object_tangible_wearables_armored_clothing_jacket_jacket_s21_armored = object_tangible_wearables_armored_clothing_jacket_shared_jacket_s21_armored:new {
+object_tangible_wearables_armored_clothing_jacket_jacket_s25_armored = object_tangible_wearables_armored_clothing_jacket_shared_jacket_s25_armored:new {
 	templateType = ARMOROBJECT,
 	
 	playerRaces = { "object/creature/player/bothan_male.iff",
@@ -44,7 +44,7 @@ object_tangible_wearables_armored_clothing_jacket_jacket_s21_armored = object_ta
 				"object/mobile/vendor/zabrak_female.iff",
 				"object/mobile/vendor/zabrak_male.iff" },
 
-	vulnerability = BLAST,
+	vulnerability = LIGHTSABER,  -- Rebel Marine
 
   specialResists = ENERGY,
 
@@ -80,4 +80,4 @@ object_tangible_wearables_armored_clothing_jacket_jacket_s21_armored = object_ta
   experimentalCombineType = {0, 0, 4, 1, 1, 1, 1, 1, 1, 4, 4, 4, 1},
 }
 
-ObjectTemplates:addTemplate(object_tangible_wearables_armored_clothing_jacket_jacket_s21_armored, "object/tangible/wearables/armored_clothing/jacket/jacket_s21_armored.iff")
+ObjectTemplates:addTemplate(object_tangible_wearables_armored_clothing_jacket_jacket_s25_armored, "object/tangible/wearables/armored_clothing/jacket/jacket_s25_armored.iff")
