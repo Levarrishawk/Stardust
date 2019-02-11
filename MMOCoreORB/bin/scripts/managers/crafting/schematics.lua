@@ -2026,6 +2026,13 @@ schematics = {
   
   
   -- BEGIN Armored Clothing
+  {path="object/draft_schematic/armored_clothing/jacket_s08_armored.iff"},
+  {path="object/draft_schematic/armored_clothing/jacket_s12_armored.iff"},
+  {path="object/draft_schematic/armored_clothing/jacket_s13_armored.iff"},
+  {path="object/draft_schematic/armored_clothing/jacket_s16_armored.iff"},
   {path="object/draft_schematic/armored_clothing/jacket_s21_armored.iff"},
+  {path="object/draft_schematic/armored_clothing/jacket_s24_armored.iff"},
+  {path="object/draft_schematic/armored_clothing/jacket_s25_armored.iff"},
+  {path="object/draft_schematic/armored_clothing/jacket_s36_armored.iff"},
   
 }
