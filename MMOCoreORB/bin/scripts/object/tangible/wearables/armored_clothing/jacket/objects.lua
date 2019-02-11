@@ -138,7 +138,8 @@ ObjectTemplates:addClientTemplate(object_tangible_wearables_jacket_shared_jacket
 
 -------------------------------------------------------
 object_tangible_wearables_armored_clothing_jacket_shared_jacket_s21_armored = SharedTangibleObjectTemplate:new {
-	clientTemplateFileName = "object/tangible/wearables/armored_clothing/jacket/shared_jacket_s21_armored.iff"
+	clientTemplateFileName = "object/tangible/wearables/armored_clothing/jacket/shared_jacket_s21_armored.iff",
+	gameObjectType = 261,
 	
 }
 
