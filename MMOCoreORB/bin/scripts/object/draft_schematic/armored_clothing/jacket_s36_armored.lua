@@ -5,7 +5,7 @@ object_draft_schematic_armored_clothing_jacket_s36_armored = object_draft_schema
 
    templateType = DRAFTSCHEMATIC,
 
-   customObjectName = "[Armored] Pilot's Jacket",
+   customObjectName = "[Armored] Pilot\'s Jacket",
 
    craftingToolTab = 2, -- (See DraftSchematicObjectTemplate.h)
    complexity = 1, 
