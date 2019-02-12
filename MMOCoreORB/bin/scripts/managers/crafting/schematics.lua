@@ -2035,4 +2035,13 @@ schematics = {
   {path="object/draft_schematic/armored_clothing/jacket_s25_armored.iff"},
   {path="object/draft_schematic/armored_clothing/jacket_s36_armored.iff"},
   
+  {path="object/draft_schematic/armored_clothing/pants_s01_armored.iff"},
+  {path="object/draft_schematic/armored_clothing/pants_s04_armored.iff"},
+  {path="object/draft_schematic/armored_clothing/pants_s05_armored.iff"},
+  {path="object/draft_schematic/armored_clothing/pants_s06_armored.iff"},
+  {path="object/draft_schematic/armored_clothing/pants_s09_armored.iff"},
+  {path="object/draft_schematic/armored_clothing/pants_s21_armored.iff"},
+  {path="object/draft_schematic/armored_clothing/pants_s22_armored.iff"},
+  {path="object/draft_schematic/armored_clothing/pants_s28_armored.iff"},
+  
 }
