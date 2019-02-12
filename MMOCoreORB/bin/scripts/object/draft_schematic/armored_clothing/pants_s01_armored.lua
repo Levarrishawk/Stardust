@@ -52,7 +52,7 @@ object_draft_schematic_armored_clothing_pants_s01_armored = object_draft_schemat
    size = 4, 
 
    xpType = "crafting_clothing_armor", 
-   xp = 550, 
+   xp = 550,
 
    assemblySkill = "armor_assembly", 
    experimentingSkill = "armor_experimentation", 
