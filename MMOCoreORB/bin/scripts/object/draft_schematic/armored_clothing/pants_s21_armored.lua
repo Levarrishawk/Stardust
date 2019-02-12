@@ -66,7 +66,7 @@ object_draft_schematic_armored_clothing_pants_s21_armored = object_draft_schemat
    ingredientTitleNames = {"auxilary_coverage", "body", "liner", "hardware_and_attachments", "binding_and_reinforcement", "padding", "armor", "load_bearing_harness", "reinforcement"},
    ingredientSlotType = {0, 1, 0, 0, 0, 0, 1, 1, 1},
    resourceTypes = {"ore_intrusive", "object/tangible/wearables/pants/shared_pants_s21.iff", "fiberplast", "aluminum", "copper_beyrllius", "hide_wooly", "object/tangible/component/armor/shared_armor_segment_zam.iff", "object/tangible/component/clothing/shared_synthetic_cloth.iff", "object/tangible/component/clothing/shared_reinforced_fiber_panels.iff"},
-   resourceQuantities = {70, 1, 35, 40, 30, 30, 3, 1, 1},
+   resourceQuantities = {100, 1, 50, 60, 50, 40, 3, 1, 1},
    contribution = {100, 100, 100, 100, 100, 100, 100, 100, 100},
 
 
