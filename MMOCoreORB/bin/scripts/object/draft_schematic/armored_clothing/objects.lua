@@ -67,7 +67,7 @@ ObjectTemplates:addClientTemplate(object_draft_schematic_armored_clothing_shared
 --------------------------------------------------------------------------------------------------------------
 
 
---[[
+
 object_draft_schematic_armored_clothing_shared_pants_s04_armored = SharedDraftSchematicObjectTemplate:new {
   clientTemplateFileName = "object/draft_schematic/armored_clothing/shared_pants_s04_armored.iff"
   
@@ -127,7 +127,6 @@ ObjectTemplates:addClientTemplate(object_draft_schematic_armored_clothing_shared
 
 
 
---]]
 
 
 
