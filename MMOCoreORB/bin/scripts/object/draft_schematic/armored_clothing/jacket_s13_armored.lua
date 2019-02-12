@@ -25,8 +25,8 @@ object_draft_schematic_armored_clothing_jacket_s13_armored = object_draft_schema
    ingredientTemplateNames = {"craft_clothing_ingredients_n", "craft_clothing_ingredients_n", "craft_clothing_ingredients_n", "craft_clothing_ingredients_n", "craft_clothing_ingredients_n", "craft_clothing_ingredients_n", "craft_clothing_ingredients_n", "craft_clothing_ingredients_n", "craft_clothing_ingredients_n"},
    ingredientTitleNames = {"auxilary_coverage", "body", "liner", "hardware_and_attachments", "binding_and_reinforcement", "padding", "armor", "load_bearing_harness", "reinforcement"},
    ingredientSlotType = {0, 1, 0, 0, 0, 0, 1, 1, 1},
-   resourceTypes = {"ore_intrusive", "object/tangible/wearables/jacket/shared_jacket_s13.iff", "fiberplast", "aluminum", "copper_beyrllius", "hide_wooly", "object/tangible/wearables/armor/padded/shared_armor_padded_chest_plate.iff", "object/tangible/component/clothing/shared_synthetic_cloth.iff", "object/tangible/component/clothing/shared_reinforced_fiber_panels.iff"},
-   resourceQuantities = {100, 1, 50, 60, 50, 40, 1, 1, 1},
+   resourceTypes = {"ore_intrusive", "object/tangible/wearables/jacket/shared_jacket_s13.iff", "fiberplast", "aluminum", "copper_beyrllius", "hide_wooly", "object/tangible/component/armor/shared_armor_segment_padded.iff", "object/tangible/component/clothing/shared_synthetic_cloth.iff", "object/tangible/component/clothing/shared_reinforced_fiber_panels.iff"},
+   resourceQuantities = {100, 1, 50, 60, 50, 40, 3, 1, 1},
    contribution = {100, 100, 100, 100, 100, 100, 100, 100, 100},
 
 
