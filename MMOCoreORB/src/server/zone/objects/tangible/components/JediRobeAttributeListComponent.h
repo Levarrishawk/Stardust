@@ -33,6 +33,16 @@ public:
 			alm->insertAttribute("jedi_robe_regen", "+" + String::valueOf(mod));
 		}
 
+		if (skills->contains("lightsaber_toughness")) {
+			int mod = skills->get("lightsaber_toughness");
+			alm->insertAttribute("lightsaber_toughness", "+" + String::valueOf(mod));
+		}
+
+		if (skills->contains("forcelightning_accuracy")) {
+			int mod = skills->get("forcelightning_accuracy");
+			alm->insertAttribute("forcelightning_accuracy", "+" + String::valueOf(mod));
+		}
+
 		String rankRequired = robe->getSkillRequired();
 
 		if (!rankRequired.isEmpty() && rankRequired != "force_title_jedi_rank_02") {
