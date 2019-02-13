@@ -14,7 +14,7 @@ object_tangible_wearables_armored_clothing_hat_shared_hat_s04_armored = SharedTa
 
 ObjectTemplates:addClientTemplate(object_tangible_wearables_armored_clothing_hat_shared_hat_s04_armored, "object/tangible/wearables/armored_clothing/hat/shared_hat_s04_armored.iff")
 ----------------------------------------------------------------------------------------------------------------------
-
+--[[   -- Does not work (unknown reason)
 object_tangible_wearables_armored_clothing_hat_shared_hat_s10_armored = SharedTangibleObjectTemplate:new {
   clientTemplateFileName = "object/tangible/wearables/armored_clothing/hat/shared_hat_s10_armored.iff"
   
@@ -22,7 +22,7 @@ object_tangible_wearables_armored_clothing_hat_shared_hat_s10_armored = SharedTa
 
 ObjectTemplates:addClientTemplate(object_tangible_wearables_armored_clothing_hat_shared_hat_s10_armored, "object/tangible/wearables/armored_clothing/hat/shared_hat_s10_armored.iff")
 ----------------------------------------------------------------------------------------------------------------------
-
+--]]
 
 
 
