@@ -21,8 +21,9 @@ object_tangible_wearables_robe_robe_s33_h1 = object_tangible_wearables_robe_shar
       "object/creature/player/zabrak_female.iff"},
         
         skillMods = {
-            {"jedi_force_power_max", 250},
-            {"jedi_force_power_regen", 10}
+            {"jedi_force_power_max", 300},
+            {"jedi_force_power_regen", 20},
+            {"lightsaber_toughness", 20}
         },
 
         noTrade = 0,
