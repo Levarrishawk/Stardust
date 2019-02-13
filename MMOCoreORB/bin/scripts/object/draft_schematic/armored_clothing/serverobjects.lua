@@ -1,6 +1,16 @@
 
 
 --Children folder includes
+
+
+includeFile("draft_schematic/armored_clothing/boots_s04_armored.lua")
+includeFile("draft_schematic/armored_clothing/boots_s05_armored.lua")
+includeFile("draft_schematic/armored_clothing/boots_s12_armored.lua")
+includeFile("draft_schematic/armored_clothing/boots_s14_armored.lua")
+includeFile("draft_schematic/armored_clothing/boots_s15_armored.lua")
+includeFile("draft_schematic/armored_clothing/boots_s19_armored.lua")
+includeFile("draft_schematic/armored_clothing/boots_s21_armored.lua")
+
 includeFile("draft_schematic/armored_clothing/jacket_s08_armored.lua")
 includeFile("draft_schematic/armored_clothing/jacket_s12_armored.lua")
 includeFile("draft_schematic/armored_clothing/jacket_s13_armored.lua")
