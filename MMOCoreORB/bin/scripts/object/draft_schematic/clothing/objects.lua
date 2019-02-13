@@ -24869,3 +24869,9 @@ object_draft_schematic_clothing_shared_clothing_hat_covert = SharedDraftSchemati
 	clientTemplateFileName = "object/draft_schematic/clothing/shared_clothing_hat_covert.iff"
 }
 ObjectTemplates:addClientTemplate(object_draft_schematic_clothing_shared_clothing_hat_covert, "object/draft_schematic/clothing/shared_clothing_hat_covert.iff")
+
+object_draft_schematic_clothing_shared_clothing_hat_invis = SharedDraftSchematicObjectTemplate:new {
+  clientTemplateFileName = "object/draft_schematic/clothing/shared_clothing_hat_invis.iff"
+}
+ObjectTemplates:addClientTemplate(object_draft_schematic_clothing_shared_clothing_hat_invis, "object/draft_schematic/clothing/shared_clothing_hat_invis.iff")
+
