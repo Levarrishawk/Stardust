@@ -189,7 +189,7 @@ ObjectTemplates:addClientTemplate(object_draft_schematic_armored_clothing_shared
 --------------------------------------------------------------------------------------------------------------
 
 object_draft_schematic_armored_clothing_shared_hat_s10_armored = SharedDraftSchematicObjectTemplate:new {
-  clientTemplateFileName = "object/draft_schematic/armored_clothing/shared_hat_s19_armored.iff"
+  clientTemplateFileName = "object/draft_schematic/armored_clothing/shared_hat_s10_armored.iff"
   
 }
 
