@@ -1092,5 +1092,7 @@ includeFile("custom_content/tangible/holiday/love_day/rewards_11/objects.lua")
 includeFile("draft_schematic/armored_clothing/objects.lua")
 
 includeFile("tangible/wearables/armored_clothing/boots/objects.lua")
+includeFile("tangible/wearables/armored_clothing/hat/objects.lua")
 includeFile("tangible/wearables/armored_clothing/jacket/objects.lua")
 includeFile("tangible/wearables/armored_clothing/pants/objects.lua")
+includeFile("tangible/wearables/armored_clothing/skirt/objects.lua")

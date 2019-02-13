@@ -180,6 +180,78 @@ object_draft_schematic_armored_clothing_shared_boots_s21_armored = SharedDraftSc
 ObjectTemplates:addClientTemplate(object_draft_schematic_armored_clothing_shared_boots_s21_armored, "object/draft_schematic/armored_clothing/shared_boots_s21_armored.iff")
 --------------------------------------------------------------------------------------------------------------
 
+object_draft_schematic_armored_clothing_shared_hat_s04_armored = SharedDraftSchematicObjectTemplate:new {
+  clientTemplateFileName = "object/draft_schematic/armored_clothing/shared_hat_s04_armored.iff"
+  
+}
+
+ObjectTemplates:addClientTemplate(object_draft_schematic_armored_clothing_shared_hat_s04_armored, "object/draft_schematic/armored_clothing/shared_hat_s04_armored.iff")
+--------------------------------------------------------------------------------------------------------------
+
+object_draft_schematic_armored_clothing_shared_hat_s10_armored = SharedDraftSchematicObjectTemplate:new {
+  clientTemplateFileName = "object/draft_schematic/armored_clothing/shared_hat_s10_armored.iff"
+  
+}
+
+ObjectTemplates:addClientTemplate(object_draft_schematic_armored_clothing_shared_hat_s10_armored, "object/draft_schematic/armored_clothing/shared_hat_s10_armored.iff")
+--------------------------------------------------------------------------------------------------------------
+
+object_draft_schematic_armored_clothing_shared_hat_invis_armored = SharedDraftSchematicObjectTemplate:new {
+  clientTemplateFileName = "object/draft_schematic/armored_clothing/shared_hat_invis_armored.iff"
+  
+}
+
+ObjectTemplates:addClientTemplate(object_draft_schematic_armored_clothing_shared_hat_invis_armored, "object/draft_schematic/armored_clothing/shared_hat_invis_armored.iff")
+--------------------------------------------------------------------------------------------------------------
+
+object_draft_schematic_armored_clothing_shared_skirt_s04_armored = SharedDraftSchematicObjectTemplate:new {
+  clientTemplateFileName = "object/draft_schematic/armored_clothing/shared_skirt_s04_armored.iff"
+  
+}
+
+ObjectTemplates:addClientTemplate(object_draft_schematic_armored_clothing_shared_skirt_s04_armored, "object/draft_schematic/armored_clothing/shared_skirt_s04_armored.iff")
+--------------------------------------------------------------------------------------------------------------
+
+object_draft_schematic_armored_clothing_shared_skirt_s05_armored = SharedDraftSchematicObjectTemplate:new {
+  clientTemplateFileName = "object/draft_schematic/armored_clothing/shared_skirt_s05_armored.iff"
+  
+}
+
+ObjectTemplates:addClientTemplate(object_draft_schematic_armored_clothing_shared_skirt_s05_armored, "object/draft_schematic/armored_clothing/shared_skirt_s05_armored.iff")
+--------------------------------------------------------------------------------------------------------------
+
+object_draft_schematic_armored_clothing_shared_skirt_s06_armored = SharedDraftSchematicObjectTemplate:new {
+  clientTemplateFileName = "object/draft_schematic/armored_clothing/shared_skirt_s06_armored.iff"
+  
+}
+
+ObjectTemplates:addClientTemplate(object_draft_schematic_armored_clothing_shared_skirt_s06_armored, "object/draft_schematic/armored_clothing/shared_skirt_s06_armored.iff")
+--------------------------------------------------------------------------------------------------------------
+
+object_draft_schematic_armored_clothing_shared_skirt_s07_armored = SharedDraftSchematicObjectTemplate:new {
+  clientTemplateFileName = "object/draft_schematic/armored_clothing/shared_skirt_s07_armored.iff"
+  
+}
+
+ObjectTemplates:addClientTemplate(object_draft_schematic_armored_clothing_shared_skirt_s07_armored, "object/draft_schematic/armored_clothing/shared_skirt_s07_armored.iff")
+--------------------------------------------------------------------------------------------------------------
+
+object_draft_schematic_armored_clothing_shared_skirt_s13_armored = SharedDraftSchematicObjectTemplate:new {
+  clientTemplateFileName = "object/draft_schematic/armored_clothing/shared_skirt_s13_armored.iff"
+  
+}
+
+ObjectTemplates:addClientTemplate(object_draft_schematic_armored_clothing_shared_skirt_s13_armored, "object/draft_schematic/armored_clothing/shared_skirt_s13_armored.iff")
+--------------------------------------------------------------------------------------------------------------
+
+object_draft_schematic_armored_clothing_shared_skirt_s14_armored = SharedDraftSchematicObjectTemplate:new {
+  clientTemplateFileName = "object/draft_schematic/armored_clothing/shared_skirt_s14_armored.iff"
+  
+}
+
+ObjectTemplates:addClientTemplate(object_draft_schematic_armored_clothing_shared_skirt_s14_armored, "object/draft_schematic/armored_clothing/shared_skirt_s14_armored.iff")
+--------------------------------------------------------------------------------------------------------------
+
 
 
 

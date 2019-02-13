@@ -578,3 +578,4 @@ includeFile("draft_schematic/clothing/clothing_exar_cultist_hood_up.lua")
 
 includeFile("draft_schematic/clothing/clothing_ep3_chiss_poacher_backpack.lua")
 
+includeFile("draft_schematic/clothing/clothing_hat_invis.lua")
