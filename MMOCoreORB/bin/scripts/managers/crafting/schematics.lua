@@ -2038,6 +2038,8 @@ schematics = {
   {path="object/draft_schematic/armored_clothing/hat_s04_armored.iff"},
   {path="object/draft_schematic/armored_clothing/hat_s10_armored.iff"},
   
+  {path="object/draft_schematic/clothing/clothing_hat_invis.iff"},
+  
   {path="object/draft_schematic/armored_clothing/jacket_s08_armored.iff"},
   {path="object/draft_schematic/armored_clothing/jacket_s12_armored.iff"},
   {path="object/draft_schematic/armored_clothing/jacket_s13_armored.iff"},
