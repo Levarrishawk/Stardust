@@ -2034,6 +2034,10 @@ schematics = {
   {path="object/draft_schematic/armored_clothing/boots_s19_armored.iff"},
   {path="object/draft_schematic/armored_clothing/boots_s21_armored.iff"},
   
+  {path="object/draft_schematic/armored_clothing/hat_invis_armored.iff"},
+  {path="object/draft_schematic/armored_clothing/hat_s04_armored.iff"},
+  {path="object/draft_schematic/armored_clothing/hat_s10_armored.iff"},
+  
   {path="object/draft_schematic/armored_clothing/jacket_s08_armored.iff"},
   {path="object/draft_schematic/armored_clothing/jacket_s12_armored.iff"},
   {path="object/draft_schematic/armored_clothing/jacket_s13_armored.iff"},
@@ -2051,5 +2055,12 @@ schematics = {
   {path="object/draft_schematic/armored_clothing/pants_s21_armored.iff"},
   {path="object/draft_schematic/armored_clothing/pants_s22_armored.iff"},
   {path="object/draft_schematic/armored_clothing/pants_s28_armored.iff"},
+  
+  {path="object/draft_schematic/armored_clothing/skirt_s04_armored.iff"},
+  {path="object/draft_schematic/armored_clothing/skirt_s05_armored.iff"},
+  {path="object/draft_schematic/armored_clothing/skirt_s06_armored.iff"},
+  {path="object/draft_schematic/armored_clothing/skirt_s07_armored.iff"},
+  {path="object/draft_schematic/armored_clothing/skirt_s13_armored.iff"},
+  {path="object/draft_schematic/armored_clothing/skirt_s14_armored.iff"},
   
 }
