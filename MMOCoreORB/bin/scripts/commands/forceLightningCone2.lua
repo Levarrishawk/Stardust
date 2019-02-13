@@ -44,8 +44,8 @@
 ForceLightningCone2Command = {
 	name = "forcelightningcone2",
 
-  minDamage = 900,
-  maxDamage = 2000,
+  minDamage = 2000,
+  maxDamage = 3000,
   speed = 2.5,
   forceCost = 60,
   forceCostMultiplier = 1,
@@ -56,6 +56,15 @@ ForceLightningCone2Command = {
 	visMod = 25,
 
 	stateEffects = {
+	  StateEffect(
+    STUN_EFFECT,
+    {},
+    {},
+    { "jedi_state_defense" },
+    30,
+    0,
+    10
+    ), 
 	  StateEffect(
 		DIZZY_EFFECT,
 		{},
@@ -75,7 +84,7 @@ ForceLightningCone2Command = {
 	poolsToDamage = HEALTH_ATTRIBUTE,
 
 	forceAttack = true,
-	damageType = LIGHTSABER_DAMAGE,
+	damageType = ELECTRICITY_DAMAGE,
 
 	range = 32
 }
