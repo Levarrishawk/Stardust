@@ -317,7 +317,7 @@ ObjectTemplates:addClientTemplate(object_tangible_tcg_series7_shared_decal_imper
 object_tangible_tcg_series7_shared_decal_imperial_graffiti_01r2 = SharedTangibleObjectTemplate:new {
   clientTemplateFileName = "object/tangible/tcg/series7/shared_decal_imperial_graffiti_01r2.iff"
 }
-ObjectTemplates:addClientTemplate(object_tangible_tcg_series7_shared_decal_imperial_graffiti_01r2 "object/tangible/tcg/series7/shared_decal_imperial_graffiti_01r2.iff")
+ObjectTemplates:addClientTemplate(object_tangible_tcg_series7_shared_decal_imperial_graffiti_01r2, "object/tangible/tcg/series7/shared_decal_imperial_graffiti_01r2.iff")
 
 --********************************************
 
