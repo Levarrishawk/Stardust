@@ -252,7 +252,13 @@ object_draft_schematic_armored_clothing_shared_skirt_s14_armored = SharedDraftSc
 ObjectTemplates:addClientTemplate(object_draft_schematic_armored_clothing_shared_skirt_s14_armored, "object/draft_schematic/armored_clothing/shared_skirt_s14_armored.iff")
 --------------------------------------------------------------------------------------------------------------
 
+object_draft_schematic_armored_clothing_shared_robe_s27_armored = SharedDraftSchematicObjectTemplate:new {
+  clientTemplateFileName = "object/draft_schematic/armored_clothing/shared_robe_s27_armored.iff"
+  
+}
 
+ObjectTemplates:addClientTemplate(object_draft_schematic_armored_clothing_shared_robe_s27_armored, "object/draft_schematic/armored_clothing/shared_robe_s27_armored.iff")
+--------------------------------------------------------------------------------------------------------------
 
 
 

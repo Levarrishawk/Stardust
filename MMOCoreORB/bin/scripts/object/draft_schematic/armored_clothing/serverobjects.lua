@@ -33,6 +33,8 @@ includeFile("draft_schematic/armored_clothing/pants_s21_armored.lua")
 includeFile("draft_schematic/armored_clothing/pants_s22_armored.lua")
 includeFile("draft_schematic/armored_clothing/pants_s28_armored.lua")
 
+includeFile("draft_schematic/armored_clothing/robe_s27_armored.lua")
+
 includeFile("draft_schematic/armored_clothing/skirt_s04_armored.lua")
 includeFile("draft_schematic/armored_clothing/skirt_s05_armored.lua")
 includeFile("draft_schematic/armored_clothing/skirt_s06_armored.lua")
