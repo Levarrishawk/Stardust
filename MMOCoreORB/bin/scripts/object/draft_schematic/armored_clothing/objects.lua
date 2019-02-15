@@ -260,6 +260,85 @@ object_draft_schematic_armored_clothing_shared_robe_s27_armored = SharedDraftSch
 ObjectTemplates:addClientTemplate(object_draft_schematic_armored_clothing_shared_robe_s27_armored, "object/draft_schematic/armored_clothing/shared_robe_s27_armored.iff")
 --------------------------------------------------------------------------------------------------------------
 
+object_draft_schematic_armored_clothing_shared_ith_hat_s01_armored = SharedDraftSchematicObjectTemplate:new {
+  clientTemplateFileName = "object/draft_schematic/armored_clothing/shared_ith_hat_s01_armored.iff"
+  
+}
+
+ObjectTemplates:addClientTemplate(object_draft_schematic_armored_clothing_shared_ith_hat_s01_armored, "object/draft_schematic/armored_clothing/shared_ith_hat_s01_armored.iff")
+--------------------------------------------------------------------------------------------------------------
+
+object_draft_schematic_armored_clothing_shared_ith_hat_s03_armored = SharedDraftSchematicObjectTemplate:new {
+  clientTemplateFileName = "object/draft_schematic/armored_clothing/shared_ith_hat_s03_armored.iff"
+  
+}
+
+ObjectTemplates:addClientTemplate(object_draft_schematic_armored_clothing_shared_ith_hat_s03_armored, "object/draft_schematic/armored_clothing/shared_ith_hat_s03_armored.iff")
+--------------------------------------------------------------------------------------------------------------
+
+object_draft_schematic_armored_clothing_shared_ith_jacket_s01_armored = SharedDraftSchematicObjectTemplate:new {
+  clientTemplateFileName = "object/draft_schematic/armored_clothing/shared_ith_jacket_s01_armored.iff"
+  
+}
+
+ObjectTemplates:addClientTemplate(object_draft_schematic_armored_clothing_shared_ith_jacket_s01_armored, "object/draft_schematic/armored_clothing/shared_ith_jacket_s01_armored.iff")
+--------------------------------------------------------------------------------------------------------------
+
+object_draft_schematic_armored_clothing_shared_ith_jacket_s02_armored = SharedDraftSchematicObjectTemplate:new {
+  clientTemplateFileName = "object/draft_schematic/armored_clothing/shared_ith_jacket_s02_armored.iff"
+  
+}
+
+ObjectTemplates:addClientTemplate(object_draft_schematic_armored_clothing_shared_ith_jacket_s02_armored, "object/draft_schematic/armored_clothing/shared_ith_jacket_s02_armored.iff")
+--------------------------------------------------------------------------------------------------------------
+
+object_draft_schematic_armored_clothing_shared_ith_jacket_s05_armored = SharedDraftSchematicObjectTemplate:new {
+  clientTemplateFileName = "object/draft_schematic/armored_clothing/shared_ith_jacket_s05_armored.iff"
+  
+}
+
+ObjectTemplates:addClientTemplate(object_draft_schematic_armored_clothing_shared_ith_jacket_s05_armored, "object/draft_schematic/armored_clothing/shared_ith_jacket_s05_armored.iff")
+--------------------------------------------------------------------------------------------------------------
+
+object_draft_schematic_armored_clothing_shared_ith_jacket_s10_armored = SharedDraftSchematicObjectTemplate:new {
+  clientTemplateFileName = "object/draft_schematic/armored_clothing/shared_ith_jacket_s10_armored.iff"
+  
+}
+
+ObjectTemplates:addClientTemplate(object_draft_schematic_armored_clothing_shared_ith_jacket_s10_armored, "object/draft_schematic/armored_clothing/shared_ith_jacket_s10_armored.iff")
+--------------------------------------------------------------------------------------------------------------
+
+object_draft_schematic_armored_clothing_shared_ith_pants_s04_armored = SharedDraftSchematicObjectTemplate:new {
+  clientTemplateFileName = "object/draft_schematic/armored_clothing/shared_ith_pants_s04_armored.iff"
+  
+}
+
+ObjectTemplates:addClientTemplate(object_draft_schematic_armored_clothing_shared_ith_pants_s04_armored, "object/draft_schematic/armored_clothing/shared_ith_pants_s04_armored.iff")
+--------------------------------------------------------------------------------------------------------------
+
+object_draft_schematic_armored_clothing_shared_ith_pants_s05_armored = SharedDraftSchematicObjectTemplate:new {
+  clientTemplateFileName = "object/draft_schematic/armored_clothing/shared_ith_pants_s05_armored.iff"
+  
+}
+
+ObjectTemplates:addClientTemplate(object_draft_schematic_armored_clothing_shared_ith_pants_s05_armored, "object/draft_schematic/armored_clothing/shared_ith_pants_s05_armored.iff")
+--------------------------------------------------------------------------------------------------------------
+
+object_draft_schematic_armored_clothing_shared_ith_pants_s07_armored = SharedDraftSchematicObjectTemplate:new {
+  clientTemplateFileName = "object/draft_schematic/armored_clothing/shared_ith_pants_s07_armored.iff"
+  
+}
+
+ObjectTemplates:addClientTemplate(object_draft_schematic_armored_clothing_shared_ith_pants_s07_armored, "object/draft_schematic/armored_clothing/shared_ith_pants_s07_armored.iff")
+--------------------------------------------------------------------------------------------------------------
+
+object_draft_schematic_armored_clothing_shared_ith_pants_s12_armored = SharedDraftSchematicObjectTemplate:new {
+  clientTemplateFileName = "object/draft_schematic/armored_clothing/shared_ith_pants_s12_armored.iff"
+  
+}
+
+ObjectTemplates:addClientTemplate(object_draft_schematic_armored_clothing_shared_ith_pants_s12_armored, "object/draft_schematic/armored_clothing/shared_ith_pants_s12_armored.iff")
+--------------------------------------------------------------------------------------------------------------
 
 
 

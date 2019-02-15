@@ -1093,6 +1093,7 @@ includeFile("draft_schematic/armored_clothing/objects.lua")
 
 includeFile("tangible/wearables/armored_clothing/boots/objects.lua")
 includeFile("tangible/wearables/armored_clothing/hat/objects.lua")
+includeFile("tangible/wearables/armored_clothing/ithorian/objects.lua")
 includeFile("tangible/wearables/armored_clothing/jacket/objects.lua")
 includeFile("tangible/wearables/armored_clothing/pants/objects.lua")
 includeFile("tangible/wearables/armored_clothing/robe/objects.lua")
