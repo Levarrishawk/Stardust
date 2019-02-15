@@ -1,26 +1,12 @@
-object_tangible_wearables_armored_clothing_skirt_skirt_s04_armored = object_tangible_wearables_armored_clothing_skirt_shared_skirt_s04_armored:new {
+object_tangible_wearables_armored_clothing_ithorian_ith_hat_s03_armored = object_tangible_wearables_armored_clothing_ithorian_shared_ith_hat_s03_armored:new {
 	templateType = ARMOROBJECT,
 	
-	playerRaces = { "object/creature/player/bothan_female.iff",
-        "object/creature/player/human_female.iff",
-        "object/creature/player/moncal_female.iff",
-        "object/creature/player/rodian_female.iff",
-        "object/creature/player/sullustan_female.iff",
-        "object/creature/player/trandoshan_female.iff",
-        "object/creature/player/twilek_female.iff",
-        "object/creature/player/zabrak_female.iff",
-        "object/mobile/vendor/aqualish_female.iff",
-        "object/mobile/vendor/bith_female.iff",
-        "object/mobile/vendor/bothan_female.iff",
-        "object/mobile/vendor/human_female.iff",
-        "object/mobile/vendor/moncal_female.iff",
-        "object/mobile/vendor/rodian_female.iff",
-        "object/mobile/vendor/sullustan_female.iff",
-        "object/mobile/vendor/trandoshan_female.iff",
-        "object/mobile/vendor/twilek_female.iff",
-        "object/mobile/vendor/zabrak_female.iff" },
+	playerRaces = { "object/creature/player/ithorian_male.iff",
+        "object/creature/player/ithorian_female.iff",
+        "object/mobile/vendor/ithorian_female.iff",
+        "object/mobile/vendor/ithorian_male.iff" },
 
-	vulnerability = STUN, 
+	vulnerability = LIGHTSABER,  
 
 
   -- These are default Blue Frog stats
@@ -54,4 +40,4 @@ object_tangible_wearables_armored_clothing_skirt_skirt_s04_armored = object_tang
   experimentalCombineType = {0, 0, 4, 1, 1, 1, 1, 1, 1, 4, 4, 4, 1},
 }
 
-ObjectTemplates:addTemplate(object_tangible_wearables_armored_clothing_skirt_skirt_s04_armored, "object/tangible/wearables/armored_clothing/skirt/skirt_s04_armored.iff")
+ObjectTemplates:addTemplate(object_tangible_wearables_armored_clothing_ithorian_ith_hat_s03_armored, "object/tangible/wearables/armored_clothing/ithorian/ith_hat_s03_armored.iff")
