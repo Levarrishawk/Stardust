@@ -14,5 +14,5 @@ includeFile("tangible/wearables/armored_clothing/ithorian/ith_jacket_s10_armored
 includeFile("tangible/wearables/armored_clothing/ithorian/ith_pants_s04_armored.lua")
 includeFile("tangible/wearables/armored_clothing/ithorian/ith_pants_s05_armored.lua")
 includeFile("tangible/wearables/armored_clothing/ithorian/ith_pants_s07_armored.lua")
-includeFile("tangible/wearables/armored_clothing/ithorian/ith_pants_s10_armored.lua")
+includeFile("tangible/wearables/armored_clothing/ithorian/ith_pants_s12_armored.lua")
 
