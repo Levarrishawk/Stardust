@@ -313,48 +313,56 @@ object_tangible_tcg_series7_shared_decal_imperial_graffiti_01r19 = SharedTangibl
 ObjectTemplates:addClientTemplate(object_tangible_tcg_series7_shared_decal_imperial_graffiti_01r19, "object/tangible/tcg/series7/shared_decal_imperial_graffiti_01r19.iff")
 
 --********************************************
+
 object_tangible_tcg_series7_shared_decal_imperial_graffiti_01r2 = SharedTangibleObjectTemplate:new {
   clientTemplateFileName = "object/tangible/tcg/series7/shared_decal_imperial_graffiti_01r2.iff"
 }
 ObjectTemplates:addClientTemplate(object_tangible_tcg_series7_shared_decal_imperial_graffiti_01r2 "object/tangible/tcg/series7/shared_decal_imperial_graffiti_01r2.iff")
 
 --********************************************
+
 object_tangible_tcg_series7_shared_decal_imperial_graffiti_01r3 = SharedTangibleObjectTemplate:new {
   clientTemplateFileName = "object/tangible/tcg/series7/shared_decal_imperial_graffiti_01r3.iff"
 }
 ObjectTemplates:addClientTemplate(object_tangible_tcg_series7_shared_decal_imperial_graffiti_01r3, "object/tangible/tcg/series7/shared_decal_imperial_graffiti_01r3.iff")
 
 --********************************************
+
 object_tangible_tcg_series7_shared_decal_imperial_graffiti_01r4 = SharedTangibleObjectTemplate:new {
   clientTemplateFileName = "object/tangible/tcg/series7/shared_decal_imperial_graffiti_01r4.iff"
 }
 ObjectTemplates:addClientTemplate(object_tangible_tcg_series7_shared_decal_imperial_graffiti_01r4, "object/tangible/tcg/series7/shared_decal_imperial_graffiti_01r4.iff")
 
 --********************************************
+
 object_tangible_tcg_series7_shared_decal_imperial_graffiti_01r5 = SharedTangibleObjectTemplate:new {
   clientTemplateFileName = "object/tangible/tcg/series7/shared_decal_imperial_graffiti_01r5.iff"
 }
 ObjectTemplates:addClientTemplate(object_tangible_tcg_series7_shared_decal_imperial_graffiti_01r5, "object/tangible/tcg/series7/shared_decal_imperial_graffiti_01r5.iff")
 
 --********************************************
+
 object_tangible_tcg_series7_shared_decal_imperial_graffiti_01r6 = SharedTangibleObjectTemplate:new {
   clientTemplateFileName = "object/tangible/tcg/series7/shared_decal_imperial_graffiti_01r6.iff"
 }
 ObjectTemplates:addClientTemplate(object_tangible_tcg_series7_shared_decal_imperial_graffiti_01r6, "object/tangible/tcg/series7/shared_decal_imperial_graffiti_01r6.iff")
 
 --********************************************
+
 object_tangible_tcg_series7_shared_decal_imperial_graffiti_01r7 = SharedTangibleObjectTemplate:new {
   clientTemplateFileName = "object/tangible/tcg/series7/shared_decal_imperial_graffiti_01r7.iff"
 }
 ObjectTemplates:addClientTemplate(object_tangible_tcg_series7_shared_decal_imperial_graffiti_01r7, "object/tangible/tcg/series7/shared_decal_imperial_graffiti_01r7.iff")
 
 --********************************************
+
 object_tangible_tcg_series7_shared_decal_imperial_graffiti_01r8 = SharedTangibleObjectTemplate:new {
   clientTemplateFileName = "object/tangible/tcg/series7/shared_decal_imperial_graffiti_01r8.iff"
 }
 ObjectTemplates:addClientTemplate(object_tangible_tcg_series7_shared_decal_imperial_graffiti_01r8, "object/tangible/tcg/series7/shared_decal_imperial_graffiti_01r8.iff")
 
 --********************************************
+
 object_tangible_tcg_series7_shared_decal_imperial_graffiti_01r9 = SharedTangibleObjectTemplate:new {
   clientTemplateFileName = "object/tangible/tcg/series7/shared_decal_imperial_graffiti_01r9.iff"
 }
