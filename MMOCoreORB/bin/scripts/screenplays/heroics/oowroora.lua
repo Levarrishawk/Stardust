@@ -15,7 +15,7 @@ registerScreenPlay("oowroora", true) --Initialize the screenplay IAW the screenp
 
 --Simply spawns the NPC
 function oowroora:start()
-   local pNpc = spawnMobile("lothal", "oowroora", 1, 1313, 28, -3077, 90, 0)
+   local pNpc = spawnMobile("lothal", "oowroora", 1, -1213, 28, -3077, 90, 0)
    self:setMoodString(pNpc, "neutral")
 end
 
