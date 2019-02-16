@@ -135,7 +135,10 @@ function risArmorQuestConvoHandler:runScreenHandlers(pConvTemplate, pPlayer, pNp
 	elseif (screenID == "completed_all_quests") then
     CreatureObject(pPlayer):setScreenPlayState(64, "ris_armor_quest")
    -- self:removeQuestItem(pPlayer, risArmorQuest.questItems.quest6.template)
-    self:rewardSchematics(pPlayer)	
+    self:rewardSchematics(pPlayer)
+    self:teachSchematic(pPlayer, risArmorQuest.questSchematics.quest5)	
+    self:teachSchematic(pPlayer, risArmorQuest.questSchematics.quest3)
+    self:teachSchematic(pPlayer, risArmorQuest.questSchematics.quest1)
 	end
 	return pConvScreen
 end
