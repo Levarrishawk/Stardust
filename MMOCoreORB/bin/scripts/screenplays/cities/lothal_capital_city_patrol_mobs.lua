@@ -54,13 +54,7 @@ end
 
 function lothalCapitalCityPatrols:spawnMobiles()
 
-  for i,v in ipairs(self.jabba_band) do
-    local pMobile = spawnMobile("lothal", v[1], v[2], v[3], v[4], v[5], v[6], v[7])
-    if (pMobile ~= nil) then
-      CreatureObject(pMobile):setCustomObjectName(v[8])
-      CreatureObject(pMobile):setMoodString(v[9])
-    end
-  end
+ 
 
 
   for i,v in ipairs(self.bomar_monks) do
