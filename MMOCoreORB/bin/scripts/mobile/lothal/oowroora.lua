@@ -22,8 +22,8 @@ oowroora = Creature:new {
 	tamingChance = 0,
 	ferocity = 0,
 	pvpBitmask = NONE,
-	creatureBitmask = CONVERSABLE + INTERESTING,
-	optionsBitmask = AIENABLED,
+	creatureBitmask = HERD,
+	optionsBitmask = AIENABLED + CONVERSABLE + INTERESTING,
 	diet = HERBIVORE,
 
 	templates = {"object/mobile/ep3/ep3_mad_wookiee_03.iff"},
