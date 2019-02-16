@@ -59,7 +59,7 @@ function LohthalCityScreenPlay:spawnSceneObjects()
   spawnSceneObject("lothal", "object/tangible/terminal/terminal_event_buffs.iff", 10.8, 0.3, 0.0, 58000271, math.rad(90) )
   
   --cantina
-  spawnSceneObject("lothal", "object/tangible/tcg/series7/imperial_graffiti_s01r.iff", -1313.5, 28, -3045, 58000271, math.rad(90) )
+ 
 end
 
 function LohthalCityScreenPlay:spawnMobiles()
