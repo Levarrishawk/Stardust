@@ -826,4 +826,5 @@ includeFile("mustafar/mensix/mensix_mining_facility_main.lua")
 
 -- Lothal
 includeFile("poi/lothal_easthills_bunker.lua")
+includeFile("cities/lothal_capital_city.lua")
 
