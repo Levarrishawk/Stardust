@@ -15,7 +15,7 @@ registerScreenPlay("oowroora", true) --Initialize the screenplay IAW the screenp
 
 --Simply spawns the NPC
 function oowroora:start()
-   local pNpc = spawnMobile("lothal", "oowroora", 1, 1313, 28, -3077, 90, 0)
+   local pNpc = spawnMobile("lothal", "oowroora", 1, -1213, 28, -3077, 90, 0)
    self:setMoodString(pNpc, "neutral")
 end
 
@@ -63,7 +63,37 @@ function oowroora_convo_handler:runScreenHandlers(pConversationTemplate, pConver
   local screen = LuaConversationScreen(pConversationScreen)
   local screenID = screen:getScreenID() 
     
-
+    if ( screenID == "oowroora_start") then     
+      CreatureObject(pConversingPlayer):playMusicMessage("sound/voc_wookiee_soft_2sec.snd")
+    end
+    if ( screenID == "opt1") then     
+      CreatureObject(pConversingPlayer):playMusicMessage("sound/voc_wookiee_soft_4sec.snd")
+    end
+    if ( screenID == "opt1a") then     
+      CreatureObject(pConversingPlayer):playMusicMessage("sound/voc_wookiee_med_2sec.snd")
+    end
+    if ( screenID == "opt1b") then     
+      CreatureObject(pConversingPlayer):playMusicMessage("sound/voc_wookiee_loud_2sec.snd")
+    end
+    if ( screenID == "opt2") then     
+      CreatureObject(pConversingPlayer):playMusicMessage("sound/voc_wookiee_soft_6sec.snd")
+    end
+    if ( screenID == "opt2a") then      
+      CreatureObject(pConversingPlayer):playMusicMessage("sound/voc_wookiee_med_4sec.snd")
+    end
+    if ( screenID == "opt2b") then      
+      CreatureObject(pConversingPlayer):playMusicMessage("sound/voc_wookiee_med_6sec.snd")
+    end
+    if ( screenID == "opt2c") then     
+      CreatureObject(pConversingPlayer):playMusicMessage("sound/voc_wookiee_med_6sec.snd")
+    end
+    if ( screenID == "opt2d") then      
+      CreatureObject(pConversingPlayer):playMusicMessage("sound/voc_wookiee_loud_4sec.snd")
+    end
+    if ( screenID == "opt2e") then     
+      CreatureObject(pConversingPlayer):playMusicMessage("sound/voc_wookiee_loud_2sec.snd")
+    end
+    
     if ( screenID == "opt5a" ) then
         
       local pGhost = CreatureObject(pConversingPlayer):getPlayerObject()
