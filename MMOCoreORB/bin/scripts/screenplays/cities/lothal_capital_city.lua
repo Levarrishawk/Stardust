@@ -6,7 +6,7 @@ LohthalCityScreenPlay = ScreenPlay:new {
 
 registerScreenPlay("LohthalCityScreenPlay", true)
 
-function HannaCityScreenPlay:start()
+function LohthalCityScreenPlay:start()
 	if (isZoneEnabled("lothal")) then
 		self:spawnMobiles()
 		self:spawnSceneObjects()
