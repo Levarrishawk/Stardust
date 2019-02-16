@@ -173,7 +173,7 @@ function LohthalCityScreenPlay:spawnMobiles()
   self:setMoodString(pNpc, "conversation")
   pNpc = spawnMobile(self.planet, "mercenary",60,-4.61669,0.639424,67.8263,180.012,58000177) --1855675
   self:setMoodString(pNpc, "conversation")
-  pNpc = spawnMobile(self.planet, "bounty_hunter",300,8.65132,0.639421,75.5483,256.69,58000177) --1855672
+  pNpc = spawnMobile(self.planet, "bounty_hunter",300,8.65132,0.639421,75.5483,256.69,58000174) --1855672
   self:setMoodString(pNpc, "calm")
   pNpc = spawnMobile(self.planet, "businessman",60,37.163,0.639417,39.6061,0,58000180) --1855678
   self:setMoodString(pNpc, "conversation")
