@@ -63,45 +63,35 @@ function oowroora_convo_handler:runScreenHandlers(pConversationTemplate, pConver
   local screen = LuaConversationScreen(pConversationScreen)
   local screenID = screen:getScreenID() 
     
-    if ( screenID == "oowroora_start") then
-      local pGhost = CreatureObject(pConversingPlayer):getPlayerObject()
-      playerObject(pGhost):playMusicMessage("sound/voc_wookiee_soft_2sec.snd")
+    if ( screenID == "oowroora_start") then     
+      CreatureObject(pConversingPlayer):playMusicMessage("sound/voc_wookiee_soft_2sec.snd")
     end
-    if ( screenID == "opt1") then
-      local pGhost = CreatureObject(pConversingPlayer):getPlayerObject()
-      playerObject(pGhost):playMusicMessage("sound/voc_wookiee_soft_4sec.snd")
+    if ( screenID == "opt1") then     
+      CreatureObject(pConversingPlayer):playMusicMessage("sound/voc_wookiee_soft_4sec.snd")
     end
-    if ( screenID == "opt1a") then
-      local pGhost = CreatureObject(pConversingPlayer):getPlayerObject()
-      playerObject(pGhost):playMusicMessage("sound/voc_wookiee_med_2sec.snd")
+    if ( screenID == "opt1a") then     
+      CreatureObject(pConversingPlayer):playMusicMessage("sound/voc_wookiee_med_2sec.snd")
     end
-    if ( screenID == "opt1b") then
-      local pGhost = CreatureObject(pConversingPlayer):getPlayerObject()
-      playerObject(pGhost):playMusicMessage("sound/voc_wookiee_loud_2sec.snd")
+    if ( screenID == "opt1b") then     
+      CreatureObject(pConversingPlayer):playMusicMessage("sound/voc_wookiee_loud_2sec.snd")
     end
-    if ( screenID == "opt2") then
-      local pGhost = CreatureObject(pConversingPlayer):getPlayerObject()
-      playerObject(pGhost):playMusicMessage("sound/voc_wookiee_soft_6sec.snd")
+    if ( screenID == "opt2") then     
+      CreatureObject(pConversingPlayer):playMusicMessage("sound/voc_wookiee_soft_6sec.snd")
     end
-    if ( screenID == "opt2a") then
-      local pGhost = CreatureObject(pConversingPlayer):getPlayerObject()
-      playerObject(pGhost):playMusicMessage("sound/voc_wookiee_med_4sec.snd")
+    if ( screenID == "opt2a") then      
+      CreatureObject(pConversingPlayer):playMusicMessage("sound/voc_wookiee_med_4sec.snd")
     end
-    if ( screenID == "opt2b") then
-      local pGhost = CreatureObject(pConversingPlayer):getPlayerObject()
-      playerObject(pGhost):playMusicMessage("sound/voc_wookiee_med_6sec.snd")
+    if ( screenID == "opt2b") then      
+      CreatureObject(pConversingPlayer):playMusicMessage("sound/voc_wookiee_med_6sec.snd")
     end
-    if ( screenID == "opt2c") then
-      local pGhost = CreatureObject(pConversingPlayer):getPlayerObject()
-      playerObject(pGhost):playMusicMessage("sound/voc_wookiee_med_6sec.snd")
+    if ( screenID == "opt2c") then     
+      CreatureObject(pConversingPlayer):playMusicMessage("sound/voc_wookiee_med_6sec.snd")
     end
-    if ( screenID == "opt2d") then
-      local pGhost = CreatureObject(pConversingPlayer):getPlayerObject()
-      playerObject(pGhost):playMusicMessage("sound/voc_wookiee_loud_4sec.snd")
+    if ( screenID == "opt2d") then      
+      CreatureObject(pConversingPlayer):playMusicMessage("sound/voc_wookiee_loud_4sec.snd")
     end
-    if ( screenID == "opt2e") then
-      local pGhost = CreatureObject(pConversingPlayer):getPlayerObject()
-      playerObject(pGhost):playMusicMessage("sound/voc_wookiee_loud_2sec.snd")
+    if ( screenID == "opt2e") then     
+      CreatureObject(pConversingPlayer):playMusicMessage("sound/voc_wookiee_loud_2sec.snd")
     end
     
     if ( screenID == "opt5a" ) then
