@@ -1,7 +1,9 @@
 LohthalCityScreenPlay = ScreenPlay:new {
 	numberOfActs = 1,
 
-	screenplayName = "LohthalCityScreenPlay"
+	screenplayName = "LohthalCityScreenPlay",
+	
+	planet = "lothal",
 }
 
 registerScreenPlay("LohthalCityScreenPlay", true)
@@ -162,9 +164,52 @@ function LohthalCityScreenPlay:spawnMobiles()
   spawnMobile("lothal", "trainer_bountyhunter",60,10.8,1.1,-11.7,0,35791511)
   spawnMobile("lothal", "trainer_commando",60,12.5,1.1,3.7,-171,35791509)
   
+  -- Starport
+  pNpc = spawnMobile(self.planet, "info_broker",60,8.5,0.6,74.4,-77,58000174) --1855672
+  self:setMoodString(pNpc, "conversation")
+  pNpc = spawnMobile(self.planet, "noble",60,56.669,-0.521137,33.7689,180.017,58000180) --1855678
+  self:setMoodString(pNpc, "conversation")
+  pNpc = spawnMobile(self.planet, "contractor",300,37.163,0.639417,40.7061,180.01,58000180) --1855678
+  self:setMoodString(pNpc, "conversation")
+  pNpc = spawnMobile(self.planet, "mercenary",60,-4.61669,0.639424,67.8263,180.012,58000177) --1855675
+  self:setMoodString(pNpc, "conversation")
+  pNpc = spawnMobile(self.planet, "bounty_hunter",300,8.65132,0.639421,75.5483,256.69,58000177) --1855672
+  self:setMoodString(pNpc, "calm")
+  pNpc = spawnMobile(self.planet, "businessman",60,37.163,0.639417,39.6061,0,58000180) --1855678
+  self:setMoodString(pNpc, "conversation")
+  pNpc = spawnMobile(self.planet, "scientist",60,56.669,-0.521137,32.6689,360.011,58000180) --1855678
+  self:setMoodString(pNpc, "conversation")
+  pNpc = spawnMobile(self.planet, "shadowy_figure",60,-4.61669,0.639424,66.7263,0,58000177) --1855675
+  self:setMoodString(pNpc, "conversation")
+  pNpc = spawnMobile(self.planet, "farmer",60,-62.7673,2.63942,40.6604,360.011,58000185) --1855683
+  self:setMoodString(pNpc, "conversation")
+  pNpc = spawnMobile(self.planet, "mercenary",300,-62.7673,2.63942,41.7604,179.995,58000185) --1855683
+  self:setMoodString(pNpc, "conversation")
+  pNpc = spawnMobile(self.planet, "trainer_shipwright",60,-0.1,0.6,67.1,-179,58000177) --1855675
+  self:setMoodString(pNpc, "neutral")
   
-  
-
+  pNpc = spawnMobile(self.planet, "commoner",60,8.5,0.6,74.4,-77,58000285) --1855672
+  self:setMoodString(pNpc, "conversation")
+  pNpc = spawnMobile(self.planet, "noble",60,56.669,-0.521137,33.7689,180.017,58000291) --1855678
+  self:setMoodString(pNpc, "conversation")
+  pNpc = spawnMobile(self.planet, "contractor",300,37.163,0.639417,40.7061,180.01,58000291) --1855678
+  self:setMoodString(pNpc, "conversation")
+  pNpc = spawnMobile(self.planet, "mercenary",60,-4.61669,0.639424,67.8263,180.012,58000288) --1855675
+  self:setMoodString(pNpc, "conversation")
+  pNpc = spawnMobile(self.planet, "bounty_hunter",300,8.65132,0.639421,75.5483,256.69,58000285) --1855672
+  self:setMoodString(pNpc, "calm")
+  pNpc = spawnMobile(self.planet, "businessman",60,37.163,0.639417,39.6061,0,58000291) --1855678
+  self:setMoodString(pNpc, "conversation")
+  pNpc = spawnMobile(self.planet, "scientist",60,56.669,-0.521137,32.6689,360.011,58000291) --1855678
+  self:setMoodString(pNpc, "conversation")
+  pNpc = spawnMobile(self.planet, "pirate",60,-4.61669,0.639424,66.7263,0,58000288) --1855675
+  self:setMoodString(pNpc, "conversation")
+  pNpc = spawnMobile(self.planet, "farmer",60,-62.7673,2.63942,40.6604,360.011,58000296) --1855683
+  self:setMoodString(pNpc, "conversation")
+  pNpc = spawnMobile(self.planet, "mercenary",300,-62.7673,2.63942,41.7604,179.995,58000296) --1855683
+  self:setMoodString(pNpc, "conversation")
+  pNpc = spawnMobile(self.planet, "trainer_shipwright",60,-0.1,0.6,67.1,-179,58000288) --1855675
+  self:setMoodString(pNpc, "neutral")
 	
 	
 
