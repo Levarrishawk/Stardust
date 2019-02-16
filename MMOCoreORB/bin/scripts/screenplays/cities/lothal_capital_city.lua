@@ -58,6 +58,8 @@ function LohthalCityScreenPlay:spawnSceneObjects()
   spawnSceneObject("lothal", "object/tangible/terminal/terminal_event_buffs.iff", -10.6, 0.3, 0.0, 58000275, math.rad(-90) )
   spawnSceneObject("lothal", "object/tangible/terminal/terminal_event_buffs.iff", 10.8, 0.3, 0.0, 58000271, math.rad(90) )
   
+  --cantina
+  spawnSceneObject("lothal", "object/tangible/tcg/series7/imperial_graffiti_s01r.iff", -1313.5, 28, -3045, 58000271, math.rad(90) )
 end
 
 function LohthalCityScreenPlay:spawnMobiles()
@@ -211,6 +213,31 @@ function LohthalCityScreenPlay:spawnMobiles()
   pNpc = spawnMobile(self.planet, "trainer_shipwright",60,-0.1,0.6,67.1,-179,58000288) --1855675
   self:setMoodString(pNpc, "neutral")
 	
+	
+	pNpc = spawnMobile(self.planet, "patron",60,-1369.8,28,-3162.6,-78,0) --1855672
+  self:setMoodString(pNpc, "conversation")
+  pNpc = spawnMobile(self.planet, "patron",60,-1373.7,28,-3161.4,109,0) --1855672
+  self:setMoodString(pNpc, "conversation")
+  
+  spawnMobile(self.planet, "businessman",60,-1376.7,28,-3171.8,-15,0)
+  
+  pNpc = spawnMobile(self.planet, "patron",60,-1388.7,28,-3163.4,14,0) --1855672
+  self:setMoodString(pNpc, "conversation")
+  pNpc = spawnMobile(self.planet, "patron",60,-1387.6,28,-3160.6,-153,0) --1855672
+  self:setMoodString(pNpc, "conversation")
+  
+  spawnMobile(self.planet, "junk_dealer",60,-1467.1,28,-3177.3,-0,0)
+  
+  pNpc = spawnMobile(self.planet, "commoner",60,-1365,28,-3044,122,0) 
+  self:setMoodString(pNpc, "npc_accusing")
+  
+  pNpc = spawnMobile(self.planet, "commoner",60,-1363.4,28,-3046.9,-54,0) 
+  self:setMoodString(pNpc, "npc_consoling")
+  
+  pNpc = spawnMobile(self.planet, "entertainer",60,-45,0.1,-18.5,-47,58000211) 
+  self:setMoodString(pNpc, "npc_accusing")
+  pNpc = spawnMobile(self.planet, "commoner",60,-47.5,0.1,-16.5,124,58000211) 
+  self:setMoodString(pNpc, "npc_consoling")
 	
 
 end
