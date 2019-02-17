@@ -1,6 +1,6 @@
 commoner_child = Creature:new {
 	objectName = "@mob/creature_names:commoner",
-	customName = "a Refugee Child",
+	customName = "a Commoner Child",
 	socialGroup = "townsperson",
 	faction = "townsperson",
 	level = 4,
