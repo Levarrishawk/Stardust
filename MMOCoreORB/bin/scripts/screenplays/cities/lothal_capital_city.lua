@@ -262,4 +262,42 @@ function LohthalCityScreenPlay:spawnMobiles()
   pNpc = spawnMobile(self.planet, "entertainer",60,-1229.8,28,-3170.7,-147,0) 
   self:setMoodString(pNpc, "conversation")
   
+  pNpc = spawnMobile(self.planet, "teras_kasi_master",60,-1172.3,28,-3068.1,-35,0) 
+  self:setMoodString(pNpc, "conversation")
+  pNpc = spawnMobile(self.planet, "hunter",60,-1176.7,28,-3066.7,115,0) 
+  self:setMoodString(pNpc, "conversation")
+  pNpc = spawnMobile(self.planet, "medic",60,-1171.9,28,-3064.5,177,0) 
+  self:setMoodString(pNpc, "conversation")
+  
+  pNpc = spawnMobile(self.planet, "contractor",60,-1128.5,28,-3075.1,-3,0) 
+  self:setMoodString(pNpc, "neutral")
+  
+  pNpc = spawnMobile(self.planet, "noble",60,-1113.3,28.2,-3031.7,39,0) 
+  self:setMoodString(pNpc, "conversation")
+  pNpc = spawnMobile(self.planet, "agriculturalist",60,-1109.5,28.2,-3028.4,-127,0) 
+  self:setMoodString(pNpc, "conversation")
+  
+  pNpc = spawnMobile(self.planet, "imperial_moff",60,1.3,3.1,-9.8,-93,58000253) 
+  self:setMoodString(pNpc, "npc_accusing")  
+  pNpc = spawnMobile(self.planet, "senator",60,-1.3,3.1,-9.8,84,58000253) 
+  self:setMoodString(pNpc, "npc_accusing")
+  
+  pNpc = spawnMobile(self.planet, "farmer",60,-1.7,0.3,-1.6,170,58000253) 
+  self:setMoodString(pNpc, "npc_accusing")
+  pNpc = spawnMobile(self.planet, "rancher",60,-4.7,0.3,-3.4,136,58000253) 
+  self:setMoodString(pNpc, "angry")
+  pNpc = spawnMobile(self.planet, "farmer",60,-6.7,0.3,0.4,124,58000253) 
+  self:setMoodString(pNpc, "happy")
+  pNpc = spawnMobile(self.planet, "farmer",60,0.1,0.3,2.0,173,58000253) 
+  self:setMoodString(pNpc, "neutral")
+  pNpc = spawnMobile(self.planet, "scientist",60,1.9,0.3,-1.7,170,58000253) 
+  self:setMoodString(pNpc, "npc_consoling")
+  pNpc = spawnMobile(self.planet, "medic",60,4.9,0.3,-3.2,-144,58000253) 
+  self:setMoodString(pNpc, "npc_accusing")
+  pNpc = spawnMobile(self.planet, "commoner",60,6.6,0.3,0.5,-138,58000253) 
+  self:setMoodString(pNpc, "npc_accusing")
+  
+  spawnMobile(self.planet, "r5",60,25.5,1.3,-5.0,56,58000253) 
+  
+  
 end
