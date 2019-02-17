@@ -367,14 +367,54 @@ function LohthalCityScreenPlay:spawnMobiles()
   pNpc = spawnMobile(self.planet, "commoner_old",60,-1079.4,28,-3106.3,-138,0) 
   self:setMoodString(pNpc, "neutral")
   
-  pNpc = spawnMobile(self.planet, "commoner",60,-1317.6,28,-3054.0,-128,0) 
+  pNpc = spawnMobile(self.planet, "commoner",60,-1317.6,28,-3054.0,-63,0) 
   self:setMoodString(pNpc, "conversation")
-  pNpc = spawnMobile(self.planet, "commoner",60,-1319.2,28,-3053.4,43,0) 
+  pNpc = spawnMobile(self.planet, "commoner",60,-1319.2,28,-3053.4,111,0) 
   self:setMoodString(pNpc, "conversation")
   
   pNpc = spawnMobile(self.planet, "vendor",60,-1295.7,28,-3117.6,-167,0) 
   self:setMoodString(pNpc, "conversation")
-  Npc = spawnMobile(self.planet, "commoner_fat",60,-1296,28,-3120.3,7,0) 
+  pNpc = spawnMobile(self.planet, "commoner_fat",60,-1296,28,-3120.3,7,0) 
+  self:setMoodString(pNpc, "conversation")
+  
+  pNpc = spawnMobile(self.planet, "commoner_technician",60,-1177.8,28,-2913.8,41,0) 
+  self:setMoodString(pNpc, "npc_use_terminal_high")
+  
+  pNpc = spawnMobile(self.planet, "businessman",60,-1177.8,28,-2912.4,110,0) 
+  self:setMoodString(pNpc, "npc_accusing")
+  
+  pNpc = spawnMobile(self.planet, "rodian_thug",60,-1349.6,28,-2867.0,55,0) 
+  self:setMoodString(pNpc, "npc_use_terminal_high")
+  
+  pNpc = spawnMobile(self.planet, "commoner",60,16.7,0.3,-3.3,-13,58000271) 
+  self:setMoodString(pNpc, "npc_sitting_chair")  
+  pNpc = spawnMobile(self.planet, "medic",60,15.4,0.3,-1.9,147,58000271) 
+  self:setMoodString(pNpc, "npc_use_terminal_high")
+  
+  pNpc = spawnMobile(self.planet, "commoner",60,-1414.3,28,-2886.2,-179,0) 
+  self:setMoodString(pNpc, "conversation")
+  pNpc = spawnMobile(self.planet, "commoner",60,-1411.8,28,-2890.4,-28,0) 
+  self:setMoodString(pNpc, "conversation")
+  pNpc = spawnMobile(self.planet, "commoner",60,-1416.1,28,-2890,28,0) 
+  self:setMoodString(pNpc, "conversation")
+  
+  pNpc = spawnMobile(self.planet, "commoner",60,-1446.8,28,-2985,-90,0) 
+  self:setMoodString(pNpc, "conversation")
+  pNpc = spawnMobile(self.planet, "commoner",60,-1450.8,28,-2981.8,133,0) 
+  self:setMoodString(pNpc, "conversation")
+  pNpc = spawnMobile(self.planet, "commoner",60,-1451,28,-2989.5,51,0) 
+  self:setMoodString(pNpc, "conversation")
+  
+  pNpc = spawnMobile(self.planet, "commoner",60,-1514.5,28,-3106.5,131,0) 
+  self:setMoodString(pNpc, "conversation")
+  pNpc = spawnMobile(self.planet, "commoner",60,-1509.6,28,-3109.3,-58,0) 
+  self:setMoodString(pNpc, "conversation")
+  pNpc = spawnMobile(self.planet, "commoner",60,-1517.1,28,-3112.2,26,0) 
+  self:setMoodString(pNpc, "conversation")
+  
+  pNpc = spawnMobile(self.planet, "commoner",60,-1597.4,28,-3113.4,-157,0) 
+  self:setMoodString(pNpc, "conversation")
+  pNpc = spawnMobile(self.planet, "commoner",60,-1599.6,28,-3118.1,27,0) 
   self:setMoodString(pNpc, "conversation")
 end
 
