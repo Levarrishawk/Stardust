@@ -297,7 +297,17 @@ function LohthalCityScreenPlay:spawnMobiles()
   pNpc = spawnMobile(self.planet, "commoner",60,6.6,0.3,0.5,-138,58000253) 
   self:setMoodString(pNpc, "npc_accusing")
   
+  --Placeholder, will likely remove with creation of questline / theme park
+  spawnMobile(self.planet, "ryder_azadi",60,35.0,1.3,-2.5,-101,58000260) 
+  --Placeholder
+  
   spawnMobile(self.planet, "r5",60,25.5,1.3,-5.0,56,58000253) 
   
+  pNpc = spawnMobile(self.planet, "noble",60,-1248.3,28,-3115.0,-158,0) 
+  self:setMoodString(pNpc, "conversation")
+  pNpc = spawnMobile(self.planet, "commoner",60,-1249.5,28,-3119.6,20,0) 
+  self:setMoodString(pNpc, "conversation")
+  pNpc = spawnMobile(self.planet, "commoner",60,-1251.7,28,-3115.7,62,0) 
+  self:setMoodString(pNpc, "conversation")
   
 end
