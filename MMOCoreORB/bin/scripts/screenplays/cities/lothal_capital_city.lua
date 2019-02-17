@@ -12,6 +12,10 @@ function LohthalCityScreenPlay:start()
 	if (isZoneEnabled("lothal")) then
 		self:spawnMobiles()
 		self:spawnSceneObjects()
+		self:startTinkerConvo()
+		
+		writeData("LohthalCityScreenPlay:tinkerConvoInProgress", 0) 
+    writeData("LohthalCityScreenPlay:tinkerConvoState", 0) 
 	end
 end
 
@@ -59,10 +63,22 @@ function LohthalCityScreenPlay:spawnSceneObjects()
   spawnSceneObject("lothal", "object/tangible/terminal/terminal_event_buffs.iff", 10.8, 0.3, 0.0, 58000271, math.rad(90) )
   
   --cantina
+ spawnSceneObject("lothal", "object/soundobject/soundobject_music_cantina_general.iff", 10.65,-0.894992,1.91, 58000199, math.rad(0) )
  
+ spawnSceneObject("lothal", "object/tangible/veteran_reward/mace_windu_statue.iff", -0.2,1.3,11.4, 58000253, math.rad(0) )
 end
 
 function LohthalCityScreenPlay:spawnMobiles()
+
+  -- Tinker Convo
+  local pKid1 = spawnMobile("lothal", "commoner_child",0,-1186.9,28,-3173.7,78,0)  -- -55.1,31.5,-120.3,-33,12112248  Original NGE Position (changed to outdoors due to spatialChat not working in cell)
+      self:setMoodString(pKid1, "npc_use_terminal_high")    
+  local pKid2 = spawnMobile("lothal", "commoner_child",0,-1186.5,28,-3171.2,-174,0)  -- -56.7,31.5,-118.9,-90,12112248 Original NGE Position (changed to outdoors due to spatialChat not working in cell)
+      self:setMoodString(pKid2, "conversation")    
+      
+  writeData("LohthalCityScreenPlay:pKid1_objectID", SceneObject(pKid1):getObjectID() )
+  writeData("LohthalCityScreenPlay:pKid2_objectID", SceneObject(pKid2):getObjectID() ) 
+
 
 	--Outdoors
 	local pNpc = spawnMobile("lothal", "surgical_droid_21b",60,3.1,0.1,11.5,0,0)
@@ -214,16 +230,16 @@ function LohthalCityScreenPlay:spawnMobiles()
   self:setMoodString(pNpc, "neutral")
 	
 	
-	pNpc = spawnMobile(self.planet, "patron",60,-1369.8,28,-3162.6,-78,0) --1855672
+	pNpc = spawnMobile(self.planet, "patron",60,-1369.8,28,-3162.6,-78,0) 
   self:setMoodString(pNpc, "conversation")
-  pNpc = spawnMobile(self.planet, "patron",60,-1373.7,28,-3161.4,109,0) --1855672
+  pNpc = spawnMobile(self.planet, "patron",60,-1373.7,28,-3161.4,109,0) 
   self:setMoodString(pNpc, "conversation")
   
   spawnMobile(self.planet, "businessman",60,-1376.7,28,-3171.8,-15,0)
   
-  pNpc = spawnMobile(self.planet, "patron",60,-1388.7,28,-3163.4,14,0) --1855672
+  pNpc = spawnMobile(self.planet, "patron",60,-1388.7,28,-3163.4,14,0) 
   self:setMoodString(pNpc, "conversation")
-  pNpc = spawnMobile(self.planet, "patron",60,-1387.6,28,-3160.6,-153,0) --1855672
+  pNpc = spawnMobile(self.planet, "patron",60,-1387.6,28,-3160.6,-153,0) 
   self:setMoodString(pNpc, "conversation")
   
   spawnMobile(self.planet, "junk_dealer",60,-1467.1,28,-3177.3,-0,0)
@@ -238,6 +254,206 @@ function LohthalCityScreenPlay:spawnMobiles()
   self:setMoodString(pNpc, "npc_accusing")
   pNpc = spawnMobile(self.planet, "commoner",60,-47.5,0.1,-16.5,124,58000211) 
   self:setMoodString(pNpc, "npc_consoling")
-	
+  
+  pNpc = spawnMobile(self.planet, "vendor",60,-1215.7,28,-3089.5,90,0) 
+  self:setMoodString(pNpc, "conversation")
+	pNpc = spawnMobile(self.planet, "patron",60,-1213.1,28,-3089.8,-83,0) 
+  self:setMoodString(pNpc, "conversation")
+  
+  pNpc = spawnMobile(self.planet, "vendor",60,-1216.6,28,-3101.9,90,0) 
+  self:setMoodString(pNpc, "neutral")
+  pNpc = spawnMobile(self.planet, "patron",60,-1212.8,28,-3103.9,175,0) 
+  self:setMoodString(pNpc, "npc_use_terminal_high")
+  
+  pNpc = spawnMobile(self.planet, "vendor",60,-1162.6,28,-3111.1,-174,0) 
+  self:setMoodString(pNpc, "neutral")
+  
+  pNpc = spawnMobile(self.planet, "commoner",60,-1178.6,28,-3172.8,-94,0) 
+  self:setMoodString(pNpc, "npc_use_terminal_high")
+  
+  pNpc = spawnMobile(self.planet, "scientist",60,-1230.4,28,-3175.7,-52,0) 
+  self:setMoodString(pNpc, "conversation")
+  pNpc = spawnMobile(self.planet, "artisan",60,-1234.8,28,-3173.2,93,0) 
+  self:setMoodString(pNpc, "conversation")
+  pNpc = spawnMobile(self.planet, "entertainer",60,-1229.8,28,-3170.7,-147,0) 
+  self:setMoodString(pNpc, "conversation")
+  
+  pNpc = spawnMobile(self.planet, "teras_kasi_master",60,-1172.3,28,-3068.1,-35,0) 
+  self:setMoodString(pNpc, "conversation")
+  pNpc = spawnMobile(self.planet, "hunter",60,-1176.7,28,-3066.7,115,0) 
+  self:setMoodString(pNpc, "conversation")
+  pNpc = spawnMobile(self.planet, "medic",60,-1171.9,28,-3064.5,177,0) 
+  self:setMoodString(pNpc, "conversation")
+  
+  pNpc = spawnMobile(self.planet, "contractor",60,-1128.5,28,-3075.1,-3,0) 
+  self:setMoodString(pNpc, "neutral")
+  
+  pNpc = spawnMobile(self.planet, "noble",60,-1113.3,28.2,-3031.7,39,0) 
+  self:setMoodString(pNpc, "conversation")
+  pNpc = spawnMobile(self.planet, "agriculturalist",60,-1109.5,28.2,-3028.4,-127,0) 
+  self:setMoodString(pNpc, "conversation")
+  
+  pNpc = spawnMobile(self.planet, "imperial_moff",60,1.3,3.1,-9.8,-93,58000253) 
+  self:setMoodString(pNpc, "npc_accusing")  
+  pNpc = spawnMobile(self.planet, "senator",60,-1.3,3.1,-9.8,84,58000253) 
+  self:setMoodString(pNpc, "npc_accusing")
+  
+  pNpc = spawnMobile(self.planet, "farmer",60,-1.7,0.3,-1.6,170,58000253) 
+  self:setMoodString(pNpc, "npc_accusing")
+  pNpc = spawnMobile(self.planet, "rancher",60,-4.7,0.3,-3.4,136,58000253) 
+  self:setMoodString(pNpc, "angry")
+  pNpc = spawnMobile(self.planet, "farmer",60,-6.7,0.3,0.4,124,58000253) 
+  self:setMoodString(pNpc, "happy")
+  pNpc = spawnMobile(self.planet, "farmer",60,0.1,0.3,2.0,173,58000253) 
+  self:setMoodString(pNpc, "neutral")
+  pNpc = spawnMobile(self.planet, "scientist",60,1.9,0.3,-1.7,170,58000253) 
+  self:setMoodString(pNpc, "npc_consoling")
+  pNpc = spawnMobile(self.planet, "medic",60,4.9,0.3,-3.2,-144,58000253) 
+  self:setMoodString(pNpc, "npc_accusing")
+  pNpc = spawnMobile(self.planet, "commoner",60,6.6,0.3,0.5,-138,58000253) 
+  self:setMoodString(pNpc, "npc_accusing")
+  
+  --Placeholder, will likely remove with creation of questline / theme park
+  spawnMobile(self.planet, "ryder_azadi",60,35.0,1.3,-2.5,-101,58000260) 
+  --Placeholder
+  
+  spawnMobile(self.planet, "r5",60,25.5,1.3,-5.0,56,58000253) 
+  
+  pNpc = spawnMobile(self.planet, "noble",60,-1248.3,28,-3115.0,-158,0) 
+  self:setMoodString(pNpc, "conversation")
+  pNpc = spawnMobile(self.planet, "commoner",60,-1249.5,28,-3119.6,20,0) 
+  self:setMoodString(pNpc, "conversation")
+  pNpc = spawnMobile(self.planet, "commoner",60,-1251.7,28,-3115.7,62,0) 
+  self:setMoodString(pNpc, "conversation")
+  
+  pNpc = spawnMobile(self.planet, "informant_npc_lvl_2",60,-1217.0,28,-3037.3,90,0) 
+  self:setMoodString(pNpc, "conversation")
+  pNpc = spawnMobile(self.planet, "bounty_hunter",60,-1212.5,28,-3038.3,-79,0) 
+  self:setMoodString(pNpc, "npc_accusing")
+  
+  pNpc = spawnMobile(self.planet, "commoner_technician",60,-1213.7,28,-3062.8,167,0) 
+  self:setMoodString(pNpc, "npc_use_terminal_high")
+  pNpc = spawnMobile(self.planet, "vendor",60,-1210.6,28,-3066.7,91,0) 
+  self:setMoodString(pNpc, "conversation")
+  pNpc = spawnMobile(self.planet, "commoner",60,-1208.1,28,-3066.8,-103,0) 
+  self:setMoodString(pNpc, "conversation")
+  
+  pNpc = spawnMobile(self.planet, "commoner_technician",60,-1359.2,28,-3192.1,179,0) 
+  self:setMoodString(pNpc, "npc_use_terminal_high")
+  
+  pNpc = spawnMobile(self.planet, "vendor",60,-1362.3,28,-3223.7,123,0) 
+  self:setMoodString(pNpc, "conversation")
+  pNpc = spawnMobile(self.planet, "commoner",60,-1359.9,28,-3226.5,-35,0) 
+  self:setMoodString(pNpc, "conversation")
+  
+  pNpc = spawnMobile(self.planet, "commoner",60,-1300.1,28,-3269.6,-39,0) 
+  self:setMoodString(pNpc, "conversation")
+  pNpc = spawnMobile(self.planet, "artisan",60,-1302.4,28,-3266.9,129,0) 
+  self:setMoodString(pNpc, "conversation")
+  
+  pNpc = spawnMobile(self.planet, "commoner_old",60,-1314.2,28,-3207.8,-97,0) 
+  self:setMoodString(pNpc, "neutral")
+  
+  pNpc = spawnMobile(self.planet, "commoner",60,-1148.5,28.5,-3260.5,3,0) 
+  self:setMoodString(pNpc, "conversation")
+  pNpc = spawnMobile(self.planet, "commoner",60,-1148.5,28.5,-3255,162,0) 
+  self:setMoodString(pNpc, "conversation")
+  
+  pNpc = spawnMobile(self.planet, "businessman",60,-1106.3,28,-3227.0,44,0) 
+  self:setMoodString(pNpc, "conversation")
+  pNpc = spawnMobile(self.planet, "contractor",60,-1100.5,28,-3223.8,-117,0) 
+  self:setMoodString(pNpc, "conversation")
+  
+  pNpc = spawnMobile(self.planet, "commoner_old",60,-1079.4,28,-3106.3,-138,0) 
+  self:setMoodString(pNpc, "neutral")
+end
 
+
+function LohthalCityScreenPlay:startTinkerConvo(pActiveArea1, pMovingObject, pPlayer, pKid1, pKid2)
+  
+   local pKid2 = getSceneObject(readData("LohthalCityScreenPlay:pKid2_objectID"))
+   local pKid1 = getSceneObject(readData("LohthalCityScreenPlay:pKid1_objectID"))
+
+   if not(readData("LohthalCityScreenPlay:tinkerConvoInProgress") == 1) then       
+          writeData("LohthalCityScreenPlay:tinkerConvoInProgress", 1)
+          createEvent(90 * 1000, "LohthalCityScreenPlay", "touristConvoF1", pKid2, "")
+          createEvent(100 * 1000, "LohthalCityScreenPlay", "touristConvoM1", pKid1, "")
+   else
+      return 0
+   end              
+end
+
+
+
+
+
+
+function LohthalCityScreenPlay:touristConvoF1(pKid2, pPlayer)
+  
+  local pKid2 = getSceneObject(readData("LohthalCityScreenPlay:pKid2_objectID"))
+  
+  if (readData("LohthalCityScreenPlay:tinkerConvoState") == 0) then
+      spatialChat(pKid2, "You know that is never gonna work.  That old piece of junk'll never fly!")     
+        writeData("LohthalCityScreenPlay:tinkerConvoState", 1)   
+        createEvent(20 * 1000, "LohthalCityScreenPlay", "touristConvoF2", pKid2, "")  
+  end
+end
+
+function LohthalCityScreenPlay:touristConvoM1(pKid1, pPlayer)
+  
+  local pKid1 = getSceneObject(readData("LohthalCityScreenPlay:pKid1_objectID"))
+  
+  if (readData("LohthalCityScreenPlay:tinkerConvoState") == 1) then
+      spatialChat(pKid1, "It will too! And when I do I'm gonna fly anywhere I want to and you can't come!")     
+        writeData("LohthalCityScreenPlay:tinkerConvoState", 2)   
+        createEvent(20 * 1000, "LohthalCityScreenPlay", "touristConvoM2", pKid1, "")   
+  end
+end
+
+function LohthalCityScreenPlay:touristConvoF2(pKid2, pPlayer)
+  
+  local pKid2 = getSceneObject(readData("LohthalCityScreenPlay:pKid2_objectID"))
+  
+  if (readData("LohthalCityScreenPlay:tinkerConvoState") == 2) then
+      spatialChat(pKid2, "Nuh uh! You can't go unless you take me too!")     
+        writeData("LohthalCityScreenPlay:tinkerConvoState", 3)    
+        createEvent(20 * 1000, "LohthalCityScreenPlay", "touristConvoF3", pKid2, "")  
+  end
+end
+
+function LohthalCityScreenPlay:touristConvoM2(pKid1, pPlayer)
+  
+  local pKid1 = getSceneObject(readData("LohthalCityScreenPlay:pKid1_objectID"))
+  
+  if (readData("LohthalCityScreenPlay:tinkerConvoState") == 3) then
+      spatialChat(pKid1, "Can too, and I'm gonna fly all the way to Coruscant and see the Jedi Temple without you!")     
+        writeData("LohthalCityScreenPlay:tinkerConvoState", 4)  
+        createEvent(22 * 1000, "LohthalCityScreenPlay", "touristConvoM3", pKid1, "")   
+  end
+end
+
+function LohthalCityScreenPlay:touristConvoF3(pKid2, pPlayer)
+  
+  local pKid2 = getSceneObject(readData("LohthalCityScreenPlay:pKid2_objectID"))
+  
+  if (readData("LohthalCityScreenPlay:tinkerConvoState") == 4) then
+      spatialChat(pKid2, "Jedi Temple?  I thought our history teacher said they blew it up like a million years ago.")     
+        writeData("LohthalCityScreenPlay:tinkerConvoState", 5)           
+  end
+end
+
+function LohthalCityScreenPlay:touristConvoM3(pKid1, pPlayer)
+  
+  local pKid1 = getSceneObject(readData("LohthalCityScreenPlay:pKid1_objectID"))
+  
+  if (readData("LohthalCityScreenPlay:tinkerConvoState") == 5) then
+      spatialChat(pKid1, "I dunno. History class is boring.") 
+        writeData("LohthalCityScreenPlay:tinkerConvoState", 0)   
+        createEvent(6 * 100 * 1000, "LohthalCityScreenPlay", "resetTinkerConvo", pKid1, "")   
+  end
+end
+
+function LohthalCityScreenPlay:resetTinkerConvo(pPlayer, pKid1, pKid2)
+    writeData("LohthalCityScreenPlay:tinkerConvoInProgress", 0)    
+    self:startTinkerConvo()
 end
