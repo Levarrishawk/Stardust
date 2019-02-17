@@ -21,6 +21,7 @@ oowroora = Creature:new {
 	milk = 0,
 	tamingChance = 0,
 	ferocity = 0,
+	scale = 1.3,
 	pvpBitmask = NONE,
 	creatureBitmask = HERD,
 	optionsBitmask = AIENABLED + CONVERSABLE + INTERESTING,
