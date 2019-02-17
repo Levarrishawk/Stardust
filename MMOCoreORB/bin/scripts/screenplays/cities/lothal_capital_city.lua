@@ -12,6 +12,10 @@ function LohthalCityScreenPlay:start()
 	if (isZoneEnabled("lothal")) then
 		self:spawnMobiles()
 		self:spawnSceneObjects()
+		self:startTinkerConvo()
+		
+		writeData("LohthalCityScreenPlay:tinkerConvoInProgress", 0) 
+    writeData("LohthalCityScreenPlay:tinkerConvoState", 0) 
 	end
 end
 
@@ -65,6 +69,16 @@ function LohthalCityScreenPlay:spawnSceneObjects()
 end
 
 function LohthalCityScreenPlay:spawnMobiles()
+
+  -- Tinker Convo
+  local pKid1 = spawnMobile("lothal", "commoner_child",0,-1186.9,28,-3173.7,78,0)  -- -55.1,31.5,-120.3,-33,12112248  Original NGE Position (changed to outdoors due to spatialChat not working in cell)
+      self:setMoodString(pKid1, "npc_use_terminal_high")    
+  local pKid2 = spawnMobile("lothal", "commoner_child",0,-1186.5,28,-3171.2,-174,0)  -- -56.7,31.5,-118.9,-90,12112248 Original NGE Position (changed to outdoors due to spatialChat not working in cell)
+      self:setMoodString(pKid2, "conversation")    
+      
+  writeData("LohthalCityScreenPlay:pKid1_objectID", SceneObject(pKid1):getObjectID() )
+  writeData("LohthalCityScreenPlay:pKid2_objectID", SceneObject(pKid2):getObjectID() ) 
+
 
 	--Outdoors
 	local pNpc = spawnMobile("lothal", "surgical_droid_21b",60,3.1,0.1,11.5,0,0)
@@ -312,4 +326,106 @@ function LohthalCityScreenPlay:spawnMobiles()
   pNpc = spawnMobile(self.planet, "commoner",60,-1251.7,28,-3115.7,62,0) 
   self:setMoodString(pNpc, "conversation")
   
+  pNpc = spawnMobile(self.planet, "informant_npc_lvl_2",60,-1217.0,28,-3037.3,90,0) 
+  self:setMoodString(pNpc, "conversation")
+  pNpc = spawnMobile(self.planet, "bounty_hunter",60,-1212.5,28,-3038.3,-79,0) 
+  self:setMoodString(pNpc, "npc_accusing")
+  
+  pNpc = spawnMobile(self.planet, "commoner_technician",60,-1213.7,28,-3062.8,167,0) 
+  self:setMoodString(pNpc, "npc_use_terminal_high")
+  pNpc = spawnMobile(self.planet, "vendor",60,-1210.6,28,-3066.7,91,0) 
+  self:setMoodString(pNpc, "conversation")
+  pNpc = spawnMobile(self.planet, "commoner",60,-1208.1,28,-3066.8,-103,0) 
+  self:setMoodString(pNpc, "conversation")
+  
+end
+
+
+function LohthalCityScreenPlay:startTinkerConvo(pActiveArea1, pMovingObject, pPlayer, pKid1, pKid2)
+  
+   local pKid2 = getSceneObject(readData("LohthalCityScreenPlay:pKid2_objectID"))
+   local pKid1 = getSceneObject(readData("LohthalCityScreenPlay:pKid1_objectID"))
+
+   if not(readData("LohthalCityScreenPlay:tinkerConvoInProgress") == 1) then       
+          writeData("LohthalCityScreenPlay:tinkerConvoInProgress", 1)
+          createEvent(90 * 1000, "LohthalCityScreenPlay", "touristConvoF1", pKid2, "")
+          createEvent(100 * 1000, "LohthalCityScreenPlay", "touristConvoM1", pKid1, "")
+   else
+      return 0
+   end              
+end
+
+
+
+
+
+
+function LohthalCityScreenPlay:touristConvoF1(pKid2, pPlayer)
+  
+  local pKid2 = getSceneObject(readData("LohthalCityScreenPlay:pKid2_objectID"))
+  
+  if (readData("LohthalCityScreenPlay:tinkerConvoState") == 0) then
+      spatialChat(pKid2, "You know that is never gonna work.  That old piece of junk'll never fly!")     
+        writeData("LohthalCityScreenPlay:tinkerConvoState", 1)   
+        createEvent(20 * 1000, "LohthalCityScreenPlay", "touristConvoF2", pKid2, "")  
+  end
+end
+
+function LohthalCityScreenPlay:touristConvoM1(pKid1, pPlayer)
+  
+  local pKid1 = getSceneObject(readData("LohthalCityScreenPlay:pKid1_objectID"))
+  
+  if (readData("LohthalCityScreenPlay:tinkerConvoState") == 1) then
+      spatialChat(pKid1, "It will too! And when I do I'm gonna fly anywhere I want to and you can't come!")     
+        writeData("LohthalCityScreenPlay:tinkerConvoState", 2)   
+        createEvent(20 * 1000, "LohthalCityScreenPlay", "touristConvoM2", pKid1, "")   
+  end
+end
+
+function LohthalCityScreenPlay:touristConvoF2(pKid2, pPlayer)
+  
+  local pKid2 = getSceneObject(readData("mensix_mining_facility_main:pKid2_objectID"))
+  
+  if (readData("LohthalCityScreenPlay:tinkerConvoState") == 2) then
+      spatialChat(pKid2, "Nuh uh! You can't go unless you take me too!")     
+        writeData("LohthalCityScreenPlay:tinkerConvoState", 3)    
+        createEvent(20 * 1000, "LohthalCityScreenPlay", "touristConvoF3", pKid2, "")  
+  end
+end
+
+function LohthalCityScreenPlay:touristConvoM2(pKid1, pPlayer)
+  
+  local pKid1 = getSceneObject(readData("LohthalCityScreenPlay:pKid1_objectID"))
+  
+  if (readData("LohthalCityScreenPlay:tinkerConvoState") == 3) then
+      spatialChat(pKid1, "Can too, and I'm gonna fly all the way to Coruscant and see the Jedi Temple without you!")     
+        writeData("LohthalCityScreenPlay:tinkerConvoState", 4)  
+        createEvent(22 * 1000, "LohthalCityScreenPlay", "touristConvoM3", pKid1, "")   
+  end
+end
+
+function LohthalCityScreenPlay:touristConvoF3(pKid2, pPlayer)
+  
+  local pKid2 = getSceneObject(readData("LohthalCityScreenPlay:pKid2_objectID"))
+  
+  if (readData("LohthalCityScreenPlay:tinkerConvoState") == 4) then
+      spatialChat(pKid2, "Jedi Temple?  I thought our history teacher said they blew it up like a million years ago.")     
+        writeData("LohthalCityScreenPlay:tinkerConvoState", 5)           
+  end
+end
+
+function LohthalCityScreenPlay:touristConvoM3(pKid1, pPlayer)
+  
+  local pKid1 = getSceneObject(readData("LohthalCityScreenPlay:pKid1_objectID"))
+  
+  if (readData("LohthalCityScreenPlay:tinkerConvoState") == 5) then
+      spatialChat(pKid1, "I dunno. History class is boring.") 
+        writeData("LohthalCityScreenPlay:tinkerConvoState", 0)   
+        createEvent(6 * 100 * 1000, "LohthalCityScreenPlay", "resetTinkerConvo", pKid1, "")   
+  end
+end
+
+function LohthalCityScreenPlay:resetTinkerConvo(pPlayer, pKid1, pKid2)
+    writeData("LohthalCityScreenPlay:tinkerConvoInProgress", 0)    
+    self:startTinkerConvo()
 end
