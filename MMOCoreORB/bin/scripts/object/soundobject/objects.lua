@@ -3215,3 +3215,11 @@ object_soundobject_shared_soundobject_music_hondo = SharedStaticObjectTemplate:n
 
 ObjectTemplates:addClientTemplate(object_soundobject_shared_soundobject_music_hondo, "object/soundobject/shared_soundobject_music_hondo.iff")
 --
+object_soundobject_shared_soundobject_music_cantina_general = SharedStaticObjectTemplate:new {
+  clientTemplateFileName = "object/soundobject/shared_soundobject_music_cantina_general.iff"
+  
+}
+
+ObjectTemplates:addClientTemplate(object_soundobject_shared_soundobject_music_cantina_general, "object/soundobject/shared_soundobject_music_cantina_general.iff")
+--
+

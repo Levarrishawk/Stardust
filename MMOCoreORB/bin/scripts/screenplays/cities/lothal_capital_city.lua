@@ -59,7 +59,7 @@ function LohthalCityScreenPlay:spawnSceneObjects()
   spawnSceneObject("lothal", "object/tangible/terminal/terminal_event_buffs.iff", 10.8, 0.3, 0.0, 58000271, math.rad(90) )
   
   --cantina
- 
+ spawnSceneObject("lothal", "object/soundobject/soundobject_music_cantina_general.iff", 10.65,-0.894992,1.91, 58000199, math.rad(0) )
 end
 
 function LohthalCityScreenPlay:spawnMobiles()
