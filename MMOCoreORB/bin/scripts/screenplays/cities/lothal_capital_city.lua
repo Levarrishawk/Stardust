@@ -384,7 +384,7 @@ end
 
 function LohthalCityScreenPlay:touristConvoF2(pKid2, pPlayer)
   
-  local pKid2 = getSceneObject(readData("mensix_mining_facility_main:pKid2_objectID"))
+  local pKid2 = getSceneObject(readData("LohthalCityScreenPlay:pKid2_objectID"))
   
   if (readData("LohthalCityScreenPlay:tinkerConvoState") == 2) then
       spatialChat(pKid2, "Nuh uh! You can't go unless you take me too!")     
