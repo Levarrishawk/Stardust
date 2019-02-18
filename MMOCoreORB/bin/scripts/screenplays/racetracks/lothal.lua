@@ -4,7 +4,7 @@ RaceTrackManager = require("screenplays.racetracks.racetrackengine")
 
 lothal_racetrack_screenplay = RaceTrack:new {
 	trackConfig={
-		debugMode = 0, -- 0 = off, 1 = print debug messages
+		debugMode = 1, -- 0 = off, 1 = print debug messages
 		planetName = "lothal", -- The planet the Track is on
 		badgeToAward=BDG_RACING_LOTHAL,  -- Badge to be awarded for best daily time
 		lootGroup="lothal_track",   -- Loot Group for Speeder Reward
