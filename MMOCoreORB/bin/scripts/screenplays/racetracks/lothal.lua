@@ -18,6 +18,9 @@ lothal_racetrack_screenplay = RaceTrack:new {
 		waypointRadius=10, -- size of the waypoint observer
 		raceCoordinator = {x= -1137,y= -3145,z=28}, -- Location of the race coordinator. Note the Z coord is VERY important	
 		waypoints = { {x = 323, y = -3145}, -- The coords of the waypoints			
+			{x = -500, y = -3145},
+      {x = 323, y = -3145},
+      {x = -501, y = -3145},
 			{x = -1137, y = -3145}
 		}
 	}
