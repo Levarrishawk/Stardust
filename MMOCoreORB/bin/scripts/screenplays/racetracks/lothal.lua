@@ -16,8 +16,7 @@ lothal_racetrack_screenplay = RaceTrack:new {
 		expiryTime = (1*3600), --Amount of time in seconds that a player will be expired from the track (stops silly times over this limit)
 		resetTime = (22*3600)+(10*60), --Time of day in seconds that track resets High Scores
 		waypointRadius=10, -- size of the waypoint observer
-		raceCoordinator = {x= -1137,y= -3145,z=0}, -- Location of the race coordinator. Note the Z coord is VERY important
-	
+		raceCoordinator = {x= -1137,y= -3145,z=28}, -- Location of the race coordinator. Note the Z coord is VERY important	
 		waypoints = { {x = 323, y = -3145}, -- The coords of the waypoints			
 			{x = -1137, y = -3145}
 		}
