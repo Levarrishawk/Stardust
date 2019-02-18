@@ -161,6 +161,7 @@ void ResourceManagerImplementation::loadDefaultConfig() {
 	resourceSpawner->addZone("moraband");
 	resourceSpawner->addZone("hutta");
 	resourceSpawner->addZone("florrum");
+	resourceSpawner->addZone("lothal");
 
 	shiftInterval = 7200000;
 	resourceSpawner->setSpawningParameters(1, 86400, 90, 1000, 0);

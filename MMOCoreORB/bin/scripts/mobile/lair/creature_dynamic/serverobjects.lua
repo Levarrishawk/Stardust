@@ -440,3 +440,11 @@ includeFile("lair/creature_dynamic/hutta_chemilizard_pack.lua")
 includeFile("lair/creature_dynamic/hutta_xuuva_pack.lua")
 
 includeFile("lair/creature_dynamic/florrum_skalder_pack.lua")
+includeFile("lair/creature_dynamic/loth_cat_pack.lua")
+includeFile("lair/creature_dynamic/loth_bat_pack.lua")
+includeFile("lair/creature_dynamic/loth_rat_pack.lua")
+includeFile("lair/creature_dynamic/loth_wolf_pack.lua")
+includeFile("lair/creature_dynamic/loth_sabercat_pack.lua")
+
+
+

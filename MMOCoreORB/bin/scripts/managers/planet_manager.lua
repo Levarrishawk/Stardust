@@ -861,7 +861,7 @@ lothal = {
     },
     
     badgeAreas = {   
-      --{"hondo_camp", 3245,-756,0,20,153}, 
+      {"lothal_jedi_temple", 122,4158,0,50,156}, 
        
   },
 }

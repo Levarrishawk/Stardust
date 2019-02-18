@@ -36,7 +36,8 @@ crazed_geonosian_sentry = Creature:new {
 	        	groups =
 			{
 				{group = "geonosian_relic", chance = 500000},
-				{group = "geonosian_common", chance = 6500000},
+				{group = "geonosian_hard", chance = 1000000},
+				{group = "geonosian_common", chance = 5500000},
 				{group = "geo_weapons", chance = 1000000},
 			},
 			lootChance = 9500000,
