@@ -1,3 +1,7 @@
 includeFile("lothal/oowroora.lua")
 includeFile("lothal/ryder_azadi.lua")
 includeFile("lothal/loth_cat.lua")
+includeFile("lothal/loth_bat.lua")
+includeFile("lothal/loth_rat.lua")
+includeFile("lothal/loth_wolf.lua")
+includeFile("lothal/sabercat.lua")
