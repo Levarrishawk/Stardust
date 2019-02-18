@@ -20,7 +20,9 @@ object_tangible_wearables_armored_clothing_skirt_skirt_s07_armored = object_tang
         "object/mobile/vendor/twilek_female.iff",
         "object/mobile/vendor/zabrak_female.iff" },
 
-	vulnerability = KINETIC, 
+	vulnerability = HEAT, 
+	
+	specialResists = COLD,
 
 
   -- These are default Blue Frog stats
