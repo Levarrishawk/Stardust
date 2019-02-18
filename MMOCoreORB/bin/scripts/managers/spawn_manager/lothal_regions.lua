@@ -20,5 +20,5 @@ lothal_regions = {
   {"loth_wolf_cave", 6846, 620, {1, 500}, NOBUILDZONEAREA},
   {"first_settlement", -2715, 7287, {1, 450}, NOBUILDZONEAREA + NOSPAWNAREA},
   {"lothal_comm_tower", 384, -3143, {1, 150}, NOBUILDZONEAREA + NOSPAWNAREA},
-  {"world_spawner", 0, 0, {1, -1}, SPAWNAREA + WORLDSPAWNAREA, {"global"}, 2048}
+  {"world_spawner", 0, 0, {1, -1}, SPAWNAREA + WORLDSPAWNAREA, {"loth_cats"}, 2048}
 }
