@@ -66,6 +66,10 @@ function LohthalCityScreenPlay:spawnSceneObjects()
  spawnSceneObject("lothal", "object/soundobject/soundobject_music_cantina_general.iff", 10.65,-0.894992,1.91, 58000199, math.rad(0) )
  
  spawnSceneObject("lothal", "object/tangible/veteran_reward/mace_windu_statue.iff", -0.2,1.3,11.4, 58000253, math.rad(0) )
+ 
+ --terminals
+ spawnSceneObject("lothal", "object/tangible/terminal/terminal_mission.iff", -1313.6, 28, -3251.8, 0, math.rad(-90) )
+ spawnSceneObject("lothal", "object/tangible/terminal/terminal_mission.iff", -1314.5, 28, -3034.5, 0, math.rad(-90) )
 end
 
 function LohthalCityScreenPlay:spawnMobiles()
