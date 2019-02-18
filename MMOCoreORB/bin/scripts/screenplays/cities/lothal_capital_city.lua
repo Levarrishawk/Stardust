@@ -419,6 +419,25 @@ function LohthalCityScreenPlay:spawnMobiles()
   
   pNpc = spawnMobile(self.planet, "commoner",60,-1389.3,28,-3110.8,-5,0) 
   self:setMoodString(pNpc, "npc_use_terminal_high")
+  
+  pNpc = spawnMobile(self.planet, "vendor",60,-1288.8,28,-3167.0,2,0) 
+  self:setMoodString(pNpc, "conversation")
+  pNpc = spawnMobile(self.planet, "commoner",60,-1289.0,28,-3164.7,146,0) 
+  self:setMoodString(pNpc, "conversation")
+  pNpc = spawnMobile(self.planet, "commoner",60,-1286.9,28,-3164.7,-159,0) 
+  self:setMoodString(pNpc, "conversation")
+  
+  pNpc = spawnMobile(self.planet, "commoner",60,-1434.7,28,-3045.5,171,0) 
+  self:setMoodString(pNpc, "conversation")
+  pNpc = spawnMobile(self.planet, "commoner",60,-1430,28,-3049.5,-21,0) 
+  self:setMoodString(pNpc, "conversation")
+  pNpc = spawnMobile(self.planet, "commoner",60,-1436.5,28,-3049.8,146,0) 
+  self:setMoodString(pNpc, "conversation")
+  
+  pNpc = spawnMobile(self.planet, "commoner",60,-1476.1,28,-3302,-86,0) 
+  self:setMoodString(pNpc, "conversation")
+  pNpc = spawnMobile(self.planet, "commoner",60,-1479.8,28,-3302.7,88,0) 
+  self:setMoodString(pNpc, "conversation")
 end
 
 
