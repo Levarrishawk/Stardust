@@ -20,7 +20,7 @@ object_tangible_wearables_armored_clothing_skirt_skirt_s06_armored = object_tang
         "object/mobile/vendor/twilek_female.iff",
         "object/mobile/vendor/zabrak_female.iff" },
 
-	vulnerability = ELECTRICITY, 
+	vulnerability = ELECTRICITY + LIGHTSABER, 
 
 
   -- These are default Blue Frog stats

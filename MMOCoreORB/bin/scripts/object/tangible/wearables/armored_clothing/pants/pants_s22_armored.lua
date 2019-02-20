@@ -44,7 +44,7 @@ object_tangible_wearables_armored_clothing_pants_pants_s22_armored = object_tang
 				"object/mobile/vendor/zabrak_female.iff",
 				"object/mobile/vendor/zabrak_male.iff" },
 
-	vulnerability = LIGHTSABER,  -- Rebel Marine
+	vulnerability = LIGHTSABER + STUN,  -- Rebel Marine
 
   specialResists = ENERGY,
 

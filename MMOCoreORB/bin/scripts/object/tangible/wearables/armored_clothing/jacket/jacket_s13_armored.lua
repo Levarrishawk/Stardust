@@ -44,7 +44,7 @@ object_tangible_wearables_armored_clothing_jacket_jacket_s13_armored = object_ta
 				"object/mobile/vendor/zabrak_female.iff",
 				"object/mobile/vendor/zabrak_male.iff" },
 
-	vulnerability = HEAT,  -- Padded Chest
+	vulnerability = HEAT + LIGHTSABER,  -- Padded Chest
 
 
   -- These are default Blue Frog stats

@@ -676,6 +676,14 @@ function recruiterScreenplay:handleYavinTp(pPlayer)
   createEvent(1000, "recruiterScreenplay", "handleGoOnLeave", pPlayer, "")
 end
 
+function recruiterScreenplay:handleLothalTp(pPlayer)
+  ObjectManager.withCreatureAndPlayerObject(pPlayer, function(player, playerObject)
+    local player = LuaSceneObject(pPlayer)
+    player:switchZone("lothal", 96, 39, 4183, 0)  --("jakku", 1.5, -20.8, 27.5, 610000111)
+  end)
+  createEvent(1000, "recruiterScreenplay", "handleGoOnLeave", pPlayer, "")
+end
+
 function recruiterScreenplay:handleAuriliaTp(pPlayer)
   ObjectManager.withCreatureAndPlayerObject(pPlayer, function(player, playerObject)
     local player = LuaSceneObject(pPlayer)

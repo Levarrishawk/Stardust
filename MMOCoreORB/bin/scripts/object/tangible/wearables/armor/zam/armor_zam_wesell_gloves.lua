@@ -86,7 +86,7 @@ object_tangible_wearables_armor_zam_armor_zam_wesell_gloves = object_tangible_we
 				"object/mobile/vendor/zabrak_male.iff" },
 
 	-- Damage types in WeaponObject
-	vulnerability = ACID,
+	vulnerability = HEAT + LIGHTSABER,
 
   specialResists = COLD,
 

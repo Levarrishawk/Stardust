@@ -90,7 +90,7 @@ object_tangible_wearables_armor_assault_trooper_armor_assault_trooper_chest_plat
         "object/mobile/vendor/zabrak_male.iff" },
 	
 	-- The damage types in WeaponObject
-	vulnerability = LIGHTSABER,
+	vulnerability = LIGHTSABER + STUN,
 
 	-- These are default Blue Frog stats
 	healthEncumbrance = 1,

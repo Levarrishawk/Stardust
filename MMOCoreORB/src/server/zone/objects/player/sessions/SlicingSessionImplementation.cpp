@@ -636,7 +636,7 @@ void SlicingSessionImplementation::handleArmorSlice() {
 		return;
 	}
 
-	uint8 percent = System::random(max - min) + min;
+	uint8 percent = (System::random(max - min) + min) * 0.75;
 
 	switch (sliceType) {
 	case 0:
