@@ -84,7 +84,7 @@ public:
 
 											buff->setSpeedMultiplierMod(0.2f);
 											buff->setAccelerationMultiplierMod(0.2f);
-											targetCreature->setSnaredState(12);
+											targetCreature->setSnaredState(20);
 											targetCreature->playEffect("clienteffect/commando_position_secured.cef", "");
 											StringBuffer targetRootMessage;
 

@@ -81,8 +81,8 @@ public:
 												targetCreature->removeBuff(BuffCRC::JEDI_FORCE_RUN_3);
 											}
 
-											buff->setSpeedMultiplierMod(0.6f);
-											buff->setAccelerationMultiplierMod(0.6f);
+											buff->setSpeedMultiplierMod(0.45f);
+											buff->setAccelerationMultiplierMod(0.45f);
 											targetCreature->setSnaredState(12);
 											targetCreature->playEffect("clienteffect/commando_position_secured.cef", "");
 											StringBuffer targetRootMessage;
