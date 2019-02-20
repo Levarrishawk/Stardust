@@ -42,7 +42,7 @@
 
 
 object_tangible_wearables_armor_marauder_armor_marauder_s02_chest_plate_quest = object_tangible_wearables_armor_marauder_shared_armor_marauder_s02_chest_plate_quest:new {
-	templateType = ARMOROBJECT + COLD + LIGHTSABER,
+	templateType = ARMOROBJECT,
 	
 	objectMenuComponent = "ArmorObjectMenuComponent", 
 
@@ -90,7 +90,7 @@ object_tangible_wearables_armor_marauder_armor_marauder_s02_chest_plate_quest = 
         "object/mobile/vendor/zabrak_male.iff" },
 	
 	-- Damage types in WeaponObject
-	vulnerability = ACID,
+	vulnerability = ACID + COLD + LIGHTSABER,
 
 	-- These are default Blue Frog stats
 	healthEncumbrance = 1,
