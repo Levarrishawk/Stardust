@@ -469,7 +469,9 @@ public:
 
 		sendHealMessage(creature, targetCreature, healthHealed, actionHealed, mindHealed);
 
-		creature->inflictDamage(creature, CreatureAttribute::ACTION, mindCostNew, false);
+		mindCostNew = 650;
+
+		creature->inflictDamage(creature, CreatureAttribute::ACTION, 650, false);
 
 		Locker locker(stimPack);
 		stimPack->decreaseUseCount();
