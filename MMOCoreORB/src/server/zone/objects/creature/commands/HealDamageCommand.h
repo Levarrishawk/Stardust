@@ -471,7 +471,7 @@ public:
 
 		mindCostNew = 650;
 
-		creature->inflictDamage(creature, CreatureAttribute::ACTION, 650, false);
+		creature->inflictDamage(creature, CreatureAttribute::ACTION, 1000, false);
 
 		Locker locker(stimPack);
 		stimPack->decreaseUseCount();
