@@ -6,7 +6,7 @@ object_tangible_wearables_armored_clothing_ithorian_ith_pants_s12_armored = obje
         "object/mobile/vendor/ithorian_female.iff",
         "object/mobile/vendor/ithorian_male.iff" },
 
-	vulnerability = LIGHTSABER,  
+	vulnerability = LIGHTSABER + BLAST,  
 
 
   -- These are default Blue Frog stats

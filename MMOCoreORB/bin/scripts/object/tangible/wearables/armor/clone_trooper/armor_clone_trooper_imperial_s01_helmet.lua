@@ -92,7 +92,7 @@ playerRaces = { "object/creature/player/bothan_male.iff",
         "object/mobile/vendor/zabrak_male.iff" },
 	
 	-- The damage types in WeaponObject
-	vulnerability = LIGHTSABER,
+	vulnerability = LIGHTSABER + ACID,
 
 	-- These are default Blue Frog stats
 	healthEncumbrance = 1,

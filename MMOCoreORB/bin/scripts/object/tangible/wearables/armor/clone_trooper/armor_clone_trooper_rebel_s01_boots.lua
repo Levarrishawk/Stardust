@@ -92,7 +92,7 @@ object_tangible_wearables_armor_clone_trooper_armor_clone_trooper_rebel_s01_boot
         "object/mobile/vendor/zabrak_male.iff" },
 	
 	-- The damage types in WeaponObject
-	vulnerability = LIGHTSABER,
+	vulnerability = LIGHTSABER + ACID,
 
 	-- These are default Blue Frog stats
 	healthEncumbrance = 1,

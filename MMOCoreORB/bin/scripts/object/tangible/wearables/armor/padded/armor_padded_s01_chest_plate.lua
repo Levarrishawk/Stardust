@@ -90,7 +90,7 @@ object_tangible_wearables_armor_padded_armor_padded_s01_chest_plate = object_tan
 				"object/mobile/vendor/zabrak_male.iff" },
 
 	-- Damage types in WeaponObject
-	vulnerability = HEAT,
+	vulnerability = HEAT + LIGHTSABER,
 
   specialResists = COLD,
 

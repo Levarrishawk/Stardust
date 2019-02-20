@@ -52,7 +52,7 @@ object_tangible_wearables_armored_clothing_hat_hat_invis_armored = object_tangib
         "object/mobile/vendor/wookiee_female.iff",
         "object/mobile/vendor/wookiee_male.iff" },
 
-	vulnerability = LIGHTSABER, 
+	vulnerability = LIGHTSABER + STUN, 
 
 
   -- These are default Blue Frog stats

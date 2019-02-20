@@ -91,7 +91,7 @@ object_tangible_wearables_armor_assault_trooper_armor_assault_trooper_chest_plat
         "object/mobile/vendor/zabrak_male.iff" },
 
 	-- Damage types in WeaponObject
-	vulnerability = STUN,
+	vulnerability = STUN + LIGHTSABER,
 
 	specialResists = ELECTRICITY,
 

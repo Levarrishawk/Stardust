@@ -52,7 +52,7 @@ object_tangible_wearables_armor_kashyyykian_black_mtn_armor_kashyyykian_black_mt
 				"object/mobile/vendor/wookiee_male.iff" },
 
 	-- Damage types in WeaponObject
-	vulnerability = HEAT,
+	vulnerability = HEAT + LIGHTSABER,
   
   specialResists = COLD,
 

@@ -44,7 +44,7 @@ object_tangible_wearables_armored_clothing_pants_pants_s06_armored = object_tang
 				"object/mobile/vendor/zabrak_female.iff",
 				"object/mobile/vendor/zabrak_male.iff" },
 
-	vulnerability = STUN,  --ubese
+	vulnerability = STUN + LIGHTSABER,  --ubese
 
   specialResists = KINETIC,
 

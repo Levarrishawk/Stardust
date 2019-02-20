@@ -52,7 +52,7 @@ object_tangible_wearables_armor_ithorian_guardian_ith_armor_s02_boots = object_t
 				"object/mobile/vendor/ithorian_male.iff" },
 
 	-- Damage types in WeaponObject
-	vulnerability = KINETIC,
+	vulnerability = KINETIC + LIGHTSABER,
   
   specialResists = STUN,
 

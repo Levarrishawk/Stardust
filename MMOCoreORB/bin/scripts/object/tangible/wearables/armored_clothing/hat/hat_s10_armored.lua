@@ -44,7 +44,7 @@ object_tangible_wearables_armored_clothing_hat_hat_s10_armored = object_tangible
 				"object/mobile/vendor/zabrak_female.iff",
 				"object/mobile/vendor/zabrak_male.iff"},
 
-	vulnerability = COLD, 
+	vulnerability = COLD + LIGHTSABER, 
 
 
   -- These are default Blue Frog stats

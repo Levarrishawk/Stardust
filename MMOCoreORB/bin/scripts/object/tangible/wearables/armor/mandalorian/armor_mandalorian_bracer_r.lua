@@ -93,7 +93,7 @@ object_tangible_wearables_armor_mandalorian_armor_mandalorian_bracer_r = object_
 				"object/mobile/vendor/zabrak_male.iff" },
 	
 	-- Damage types in WeaponObject
-	vulnerability = ELECTRICITY,
+	vulnerability = ELECTRICITY + HEAT,
 
   specialResists = LIGHTSABER,
 

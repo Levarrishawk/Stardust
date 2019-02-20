@@ -44,7 +44,7 @@ object_tangible_wearables_armored_clothing_boots_boots_s19_armored = object_tang
 				"object/mobile/vendor/zabrak_female.iff",
 				"object/mobile/vendor/zabrak_male.iff" },
 
-	vulnerability = ACID, -- zam
+	vulnerability = ACID + LIGHTSABER, -- zam
 
   specialResists = COLD,
 
