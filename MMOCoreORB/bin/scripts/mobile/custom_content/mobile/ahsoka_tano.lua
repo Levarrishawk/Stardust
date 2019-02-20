@@ -1,5 +1,4 @@
 ahsoka_tano = Creature:new {
-	objectName = "@mob/creature_names:prophet_of_the_dark_side",
 	customName ="Ahsoka Tano",
 	socialGroup = "none",
 	faction = "rebel",
