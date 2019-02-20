@@ -1,3 +1,6 @@
+local ObjectManager = require("managers.object.object_manager")
+
+
 lothal_theme_park = ScreenPlay:new {
   numberOfActs = 1,
 

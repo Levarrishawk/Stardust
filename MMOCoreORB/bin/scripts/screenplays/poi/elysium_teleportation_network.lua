@@ -1,3 +1,6 @@
+local ObjectManager = require("managers.object.object_manager")
+
+
 elysium_teleportation_network = ScreenPlay:new {
   numberOfActs = 1,
 
