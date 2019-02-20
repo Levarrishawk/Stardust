@@ -58,7 +58,7 @@ function lothal_theme_park:notifySpawnArea1(pActiveArea1, pMovingObject, pPlayer
     end
     
     if ((player:isImperial() or player:isRebel()or player:isNeutral())) then   
-      player:playMusicMessage("sound/mus_theme_ahsoka.snd")
+      player:playMusicMessage("sound/mus_ahsoka.snd")
       
       end
     return 0    
