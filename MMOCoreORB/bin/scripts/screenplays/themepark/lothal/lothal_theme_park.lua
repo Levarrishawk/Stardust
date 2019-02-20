@@ -10,6 +10,7 @@ function lothal_theme_park:start()
   if (isZoneEnabled("lothal")) then
     self:spawnMobiles()
     self:spawnSceneObjects()
+    self:spawnActiveArea1()
   end
 end
 
@@ -29,4 +30,34 @@ function lothal_theme_park:spawnMobiles()
   
 
   
+end
+
+function lothal_theme_park:spawnActiveArea1()
+  local pSpawnArea1 = spawnSceneObject("lothal", "object/active_area.iff", 104, 39, 4183, 0, 0)
+    
+  if (pSpawnArea1 ~= nil) then
+    local activeArea1 = LuaActiveArea(pSpawnArea1)
+          activeArea1:setCellObjectID(0)
+          activeArea1:setRadius(32)
+          createObserver(ENTEREDAREA, "lothal_theme_park", "notifySpawnArea1", pSpawnArea1)          
+      end
+end
+
+function lothal_theme_park:notifySpawnArea1(pActiveArea1, pMovingObject, pPlayer)
+  
+  if (not SceneObject(pMovingObject):isCreatureObject()) then
+    return 0
+  end
+  
+  return ObjectManager.withCreatureObject(pMovingObject, function(player)
+    if (player:isAiAgent()) then
+      return 0
+    end
+    
+    if ((player:isImperial() or player:isRebel()or player:isNeutral())) then   
+      player:playMusicMessage("sound/mus_theme_ahsoka.snd")
+      
+      end
+    return 0    
+  end)
 end
