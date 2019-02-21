@@ -17,7 +17,7 @@ public:
 
 		singleUseEventTypes.add(ObserverEventType::FORCEBUFFHIT);
 
-		skillMods.put("force_feedback", 65);
+		skillMods.put("force_feedback", 30);
 
 	}
 

@@ -1182,8 +1182,8 @@ int CombatManager::getArmorReduction(TangibleObject* attacker, WeaponObject* wea
 			float splitDmg = feedbackDmg / 3;
 
 			attacker->inflictDamage(defender, CreatureAttribute::HEALTH, splitDmg, true, true, true);
-			attacker->inflictDamage(defender, CreatureAttribute::ACTION, splitDmg, true, true, true);
-			attacker->inflictDamage(defender, CreatureAttribute::MIND, splitDmg, true, true, true);
+			//attacker->inflictDamage(defender, CreatureAttribute::ACTION, splitDmg, true, true, true);
+			//attacker->inflictDamage(defender, CreatureAttribute::MIND, splitDmg, true, true, true);
 			broadcastCombatSpam(defender, attacker, NULL, feedbackDmg, "cbt_spam", "forcefeedback_hit", 1);
 			defender->playEffect("clienteffect/pl_force_feedback_block.cef", "");
 		}
@@ -1192,8 +1192,8 @@ int CombatManager::getArmorReduction(TangibleObject* attacker, WeaponObject* wea
 		if (defender->getSkillMod("force_absorb") > 0 && defender->isPlayerCreature()) {
 			ManagedReference<PlayerObject*> playerObject = defender->getPlayerObject();
 			if (playerObject != NULL) {
-				playerObject->setForcePower(playerObject->getForcePower() + (damage * 0.5));
-				sendMitigationCombatSpam(defender, NULL, (int)damage * 0.5, FORCEABSORB);
+				playerObject->setForcePower(playerObject->getForcePower() + (damage * 0.15));
+				sendMitigationCombatSpam(defender, NULL, (int)damage * 0.15, FORCEABSORB);
 				defender->playEffect("clienteffect/pl_force_absorb_hit.cef", "");
 			}
 		}
