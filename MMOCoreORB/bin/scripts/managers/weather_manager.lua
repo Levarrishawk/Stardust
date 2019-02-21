@@ -303,9 +303,6 @@ moraband = {
 
   weatherStability = 80, -- Range 0 - 100, Higher = Less weather changes, Overall better weather
 
-  hasDamagingSandstorms = 1,
-
-  sandstormDamage = 40, -- 40 = Annoying, 100 = deadly
 }
 
 
