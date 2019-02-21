@@ -44,7 +44,7 @@
 object_building_player_generic_medium_window_s02 = object_building_player_shared_generic_medium_window_s02:new {
 	lotSize = 2,
 	baseMaintenanceRate = 10,
-	allowedZones = {"dantooine", "lok", "tatooine", "naboo", "rori", "corellia", "talus", "chandrila", "kaas", "moraband", "hutta"},
+	allowedZones = {"dantooine", "lok", "tatooine", "naboo", "rori", "corellia", "talus", "chandrila", "kaas", "moraband", "hutta", "lothal"},
 	publicStructure = 0,
 	skillMods = {
 		{"private_medical_rating", 300},
