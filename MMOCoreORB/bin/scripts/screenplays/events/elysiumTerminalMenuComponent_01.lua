@@ -20,7 +20,7 @@ function elysiumTerminalMenuComponent_01:handleObjectMenuSelect(pSceneObject, pP
 	if selectedID == 20 then
 	  if (CreatureObject(pPlayer):hasSkill("force_title_jedi_rank_03")) then
       local sui = SuiMessageBox.new("elysiumTerminalMenuComponent_01", "handleTeleport")
-      sui.setPrompt("As you touch the Crystal it begins to hum and you feel a strange pulling sensation in the force. It is not so strong that you could not back away from it now, but the pull grows stronger as you hold your hand on it's surface.  (This will transport you to another location.  Do you wish to proceed?)")
+      sui.setPrompt("As you touch the Crystal it begins to hum and you feel a strange pulling sensation in the force. It is not so strong that you could not back away from it now, but the pull grows stronger as you hold your hand on it's surface.  (This will transport you to another location.  Do you wish to proceed?)   NOTE: YOU WILL MOST LIKELY GET STUCK ON THE OTHER SIDE OF THIS TELEPORT, A HARD LOG WILL FIX IT.")
       sui.setTitle("Strange Crystal")
       sui.setCancelButtonText("Cancel") -- Cancel  
       sui.setOkButtonText("OK") -- OK   

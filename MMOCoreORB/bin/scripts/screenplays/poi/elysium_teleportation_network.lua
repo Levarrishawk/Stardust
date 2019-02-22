@@ -29,6 +29,7 @@ function elysium_teleportation_network:spawnSceneObjects()
   spawnSceneObject("lothal", "object/tangible/terminal/terminal_elysium_crystal_01.iff", 103, 39, 4179, 0, math.rad(0) )
   spawnSceneObject("lothal", "object/static/structure/general/streetlamp_small_blue_style_01_on.iff", 103, 39, 4179, 0, math.rad(0) )
   spawnSceneObject("lothal", "object/static/particle/pt_flocking_glowzees.iff", 100, 39, 4182, 0, math.rad(0) )
+  spawnSceneObject("lothal", "object/tangible/terminal/terminal_event_buffs.iff", 29, 24, 3409, 0, math.rad(90) )
 --Exit
   spawnSceneObject("elysium", "object/tangible/terminal/terminal_elysium_crystal_02.iff", 2606.1, 0, 2500, 0, math.rad(0) )
   spawnSceneObject("elysium", "object/static/structure/general/streetlamp_small_blue_style_01_on.iff", 2606.1, 0, 2500, 0, math.rad(0) )
