@@ -695,7 +695,7 @@ end
 function recruiterScreenplay:handleChandrilaTp(pPlayer)
   ObjectManager.withCreatureAndPlayerObject(pPlayer, function(player, playerObject)
     local player = LuaSceneObject(pPlayer)
-    player:switchZone("dantooine", 4363, 97, -4299, 0)  --("jakku", 1.5, -20.8, 27.5, 610000111)
+    player:switchZone("chandrila", 4363, 97, -4299, 0)  --("jakku", 1.5, -20.8, 27.5, 610000111)
   end)
   createEvent(1000, "recruiterScreenplay", "handleGoOnLeave", pPlayer, "")
 end
