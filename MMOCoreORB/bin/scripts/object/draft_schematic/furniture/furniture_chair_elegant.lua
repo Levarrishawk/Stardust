@@ -59,9 +59,9 @@ object_draft_schematic_furniture_furniture_chair_elegant = object_draft_schemati
 	experimentingSkill = "structure_experimentation",
 	customizationSkill = "structure_customization",
 
-	customizationOptions = {},
-	customizationStringNames = {},
-	customizationDefaults = {},
+	customizationOptions = {1},
+	customizationStringNames = {"/private/index_color_0"},
+	customizationDefaults = {1},
 
 	ingredientTemplateNames = {"craft_furniture_ingredients_n", "craft_furniture_ingredients_n"},
 	ingredientTitleNames = {"frame", "upholstery"},
@@ -70,7 +70,7 @@ object_draft_schematic_furniture_furniture_chair_elegant = object_draft_schemati
 	resourceQuantities = {150, 8},
 	contribution = {100, 100},
 
-	targetTemplate = "object/tangible/furniture/elegant/chair_s01.iff",
+	targetTemplate = "object/tangible/furniture/elegant/chair_hue_s01.iff",
 
 	additionalTemplates = {}
 }
