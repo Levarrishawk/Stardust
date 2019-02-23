@@ -862,7 +862,7 @@ float CombatManager::getDefenderToughnessModifier(CreatureObject* defender, int 
 
 	int jediToughness = defender->getSkillMod("jedi_toughness");
 	if (jediToughness > 0)   //jedi toughness will affect all damage types
-		damage *= 1.f - (jediToughness / 200.f);
+		damage *= 1.f - (jediToughness / 100.f);
 
 	return damage < 0 ? 0 : damage;
 }
@@ -1181,7 +1181,7 @@ int CombatManager::getArmorReduction(TangibleObject* attacker, WeaponObject* wea
 			float feedbackDmg = rawDamage * (forceFeedback / 100.f);
 			float splitDmg = feedbackDmg / 3;
 
-			attacker->inflictDamage(defender, CreatureAttribute::HEALTH, splitDmg, true, true, true);
+			attacker->inflictDamage(defender, CreatureAttribute::HEALTH, feedbackDmg, true, true, true);
 			//attacker->inflictDamage(defender, CreatureAttribute::ACTION, splitDmg, true, true, true);
 			//attacker->inflictDamage(defender, CreatureAttribute::MIND, splitDmg, true, true, true);
 			broadcastCombatSpam(defender, attacker, NULL, feedbackDmg, "cbt_spam", "forcefeedback_hit", 1);

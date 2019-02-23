@@ -18,7 +18,7 @@ public:
 
 		singleUseEventTypes.add(ObserverEventType::FORCEBUFFHIT);
 
-		skillMods.put("force_shield", 25);
+		skillMods.put("force_shield", 55);
 
 	}
 
