@@ -60,7 +60,7 @@ object_draft_schematic_furniture_furniture_chair_loveseat_cheap = object_draft_s
 	customizationSkill = "structure_customization",
 
 	customizationOptions = {1},
-  customizationStringNames = {"/private/index_color_0"},
+  customizationStringNames = {"/private/index_color_1"},
   customizationDefaults = {1},
 
 	ingredientTemplateNames = {"craft_furniture_ingredients_n", "craft_furniture_ingredients_n"},
