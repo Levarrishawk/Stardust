@@ -57,18 +57,18 @@ MindShot1Command = {
 
 	combatSpam = "head",
 	    
-	dotEffects = {
-	  DotEffect( 
-		BLEEDING, 
+	ddotEffects = {
+    DotEffect( 
+    BLEEDING, 
     { "resistance_bleeding", "bleed_resist" },
-    HEALTH,
+    ACTION,
     true,
-    25,
-    75,
-    1, 
-    15
-	  )
-	},
+    0,
+    100,
+    100, 
+    60
+    )
+  },
 	
 	weaponType = RIFLEWEAPON,
 
