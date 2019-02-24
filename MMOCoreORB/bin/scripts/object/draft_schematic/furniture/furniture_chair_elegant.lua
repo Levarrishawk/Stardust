@@ -59,9 +59,9 @@ object_draft_schematic_furniture_furniture_chair_elegant = object_draft_schemati
 	experimentingSkill = "structure_experimentation",
 	customizationSkill = "structure_customization",
 
-	customizationOptions = {1},
-	customizationStringNames = {"/private/index_color_0"},
-	customizationDefaults = {1},
+	customizationOptions = {},
+	customizationStringNames = {},
+	customizationDefaults = {},
 
 	ingredientTemplateNames = {"craft_furniture_ingredients_n", "craft_furniture_ingredients_n"},
 	ingredientTitleNames = {"frame", "upholstery"},

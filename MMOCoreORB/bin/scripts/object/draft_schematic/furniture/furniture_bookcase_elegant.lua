@@ -70,7 +70,7 @@ object_draft_schematic_furniture_furniture_bookcase_elegant = object_draft_schem
 	resourceQuantities = {200, 150},
 	contribution = {100, 100},
 
-	targetTemplate = "object/tangible/furniture/elegant/bookcase_s01.iff",
+	targetTemplate = "object/tangible/furniture/elegant/bookcase_hue_s01.iff",
 
 	additionalTemplates = {}
 }

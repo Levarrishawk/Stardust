@@ -70,7 +70,7 @@ object_draft_schematic_furniture_furniture_chair_ottoman = object_draft_schemati
 	resourceQuantities = {150, 80},
 	contribution = {100, 100},
 
-	targetTemplate = "object/tangible/furniture/all/frn_all_couch_ottoman_s1.iff",
+	targetTemplate = "object/tangible/furniture/all/frn_all_couch_ottoman_hue_s1.iff",
 
 	additionalTemplates = {}
 }

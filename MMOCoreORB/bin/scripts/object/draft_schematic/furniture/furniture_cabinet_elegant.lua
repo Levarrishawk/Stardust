@@ -72,7 +72,7 @@ object_draft_schematic_furniture_furniture_cabinet_elegant = object_draft_schema
    contribution = {100, 100, 100},
 
 
-   targetTemplate = "object/tangible/furniture/elegant/cabinet_s01.iff",
+   targetTemplate = "object/tangible/furniture/elegant/cabinet_hue_s01.iff",
 
    additionalTemplates = {
              }
