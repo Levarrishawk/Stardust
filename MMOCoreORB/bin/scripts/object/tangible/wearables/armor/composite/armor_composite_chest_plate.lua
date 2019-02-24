@@ -91,7 +91,7 @@ object_tangible_wearables_armor_composite_armor_composite_chest_plate = object_t
 				"object/mobile/vendor/zabrak_male.iff" },
 
 	-- Damage types in WeaponObject
-	vulnerability = BLAST + STUN,
+	vulnerability = LIGHTSABER + STUN,
 
   specialResists = ENERGY,
 
