@@ -43,6 +43,36 @@ public:
 			alm->insertAttribute("forcelightning_accuracy", "+" + String::valueOf(mod));
 		}
 
+		if (skills->contains("force_power_light")) {
+			int mod = skills->get("force_power_light");
+			alm->insertAttribute("force_power_light", "+" + String::valueOf(mod));
+		}
+
+		if (skills->contains("force_power_dark")) {
+			int mod = skills->get("force_power_dark");
+			alm->insertAttribute("force_power_dark", "+" + String::valueOf(mod));
+		}
+
+		if (skills->contains("force_control_light")) {
+			int mod = skills->get("force_control_light");
+			alm->insertAttribute("force_control_light", "+" + String::valueOf(mod));
+		}
+
+		if (skills->contains("force_control_dark")) {
+			int mod = skills->get("force_control_dark");
+			alm->insertAttribute("force_control_dark", "+" + String::valueOf(mod));
+		}
+
+		if (skills->contains("force_manipulation_light")) {
+			int mod = skills->get("force_manipulation_light");
+			alm->insertAttribute("force_manipulation_light", "+" + String::valueOf(mod));
+		}
+
+		if (skills->contains("force_manipulation_dark")) {
+			int mod = skills->get("force_manipulation_dark");
+			alm->insertAttribute("force_manipulation_dark", "+" + String::valueOf(mod));
+		}
+
 		String rankRequired = robe->getSkillRequired();
 
 		if (!rankRequired.isEmpty() && rankRequired != "force_title_jedi_rank_02") {
