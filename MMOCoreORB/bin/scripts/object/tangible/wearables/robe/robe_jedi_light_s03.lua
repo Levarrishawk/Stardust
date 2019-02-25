@@ -64,8 +64,11 @@ object_tangible_wearables_robe_robe_jedi_light_s03 = object_tangible_wearables_r
 				"object/creature/player/zabrak_female.iff" },
 				
 				skillMods = {
-				    {"jedi_force_power_max", 300},
-            {"jedi_force_power_regen", 20}
+				    {"jedi_force_power_max", 350},
+            {"jedi_force_power_regen", 30},
+            {"force_power_light", 10},
+            {"force_control_light", 10},
+            {"force_manipulation_light", 10}
 				},
 
 				noTrade = 1,
