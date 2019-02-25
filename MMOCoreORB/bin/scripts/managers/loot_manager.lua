@@ -266,6 +266,7 @@ lootableClothingAttachmentStatMods = {
   "forcethrow_accuracy",
   "force_failure_reduction",
   "force_repair_bonus",
+  "lightsaber_toughness",
   "forceintimidate_accuracy",
   "forceknockdown_accuracy",
   "forcelightning_accuracy",
