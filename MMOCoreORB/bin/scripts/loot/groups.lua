@@ -485,3 +485,6 @@ includeFile("groups/race_tracks/narmle_track.lua")
 includeFile("groups/race_tracks/nashal_track.lua")
 includeFile("groups/race_tracks/lok_track.lua")
 includeFile("groups/race_tracks/lothal_track.lua")
+
+--BH Armor Schematics
+includeFile("groups/death_watch_bunker/death_watch_bh_armor_schematics.lua")
