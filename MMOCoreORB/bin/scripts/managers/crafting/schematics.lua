@@ -2078,4 +2078,22 @@ schematics = {
   {path="object/draft_schematic/armored_clothing/ith_pants_s07_armored.iff"},
   {path="object/draft_schematic/armored_clothing/ith_pants_s12_armored.iff"},
   
+  -- New Furniture Schematics
+  ------------------------------------------------------------------
+  -- Jedi Furniture
+  
+  {path="object/draft_schematic/furniture/furniture_chair_jedi_dark_s01.iff"},
+  {path="object/draft_schematic/furniture/furniture_chair_jedi_dark_s02.iff"},
+  {path="object/draft_schematic/furniture/furniture_chair_jedi_dark_throne.iff"},
+  {path="object/draft_schematic/furniture/furniture_chair_jedi_light_s01.iff"},
+  {path="object/draft_schematic/furniture/furniture_chair_jedi_light_s02.iff"},
+  {path="object/draft_schematic/furniture/furniture_chair_jedi_light_throne.iff"},
+  {path="object/draft_schematic/furniture/furniture_jedi_banner.iff"},
+  {path="object/draft_schematic/furniture/furniture_sith_banner.iff"}, 
+  {path="object/draft_schematic/furniture/furniture_table_jedi_light_s01.iff"},
+  {path="object/draft_schematic/furniture/furniture_table_jedi_light_s02.iff"},
+  {path="object/draft_schematic/furniture/furniture_table_jedi_dark_s01.iff"},
+  {path="object/draft_schematic/furniture/furniture_table_jedi_dark_s02.iff"},
+  
+  
 }

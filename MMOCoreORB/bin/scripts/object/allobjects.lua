@@ -1098,3 +1098,6 @@ includeFile("tangible/wearables/armored_clothing/jacket/objects.lua")
 includeFile("tangible/wearables/armored_clothing/pants/objects.lua")
 includeFile("tangible/wearables/armored_clothing/robe/objects.lua")
 includeFile("tangible/wearables/armored_clothing/skirt/objects.lua")
+
+-- More furniture
+includeFile("custom_content/draft_schematic/furniture/objects.lua")
