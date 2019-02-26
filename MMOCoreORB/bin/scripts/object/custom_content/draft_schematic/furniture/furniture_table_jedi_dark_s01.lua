@@ -26,7 +26,7 @@ object_draft_schematic_furniture_furniture_table_jedi_dark_s01 = object_draft_sc
   resourceQuantities = {150, 150},
   contribution = {100, 100},
 
-  targetTemplate = "object/tangible/furniture/jedi/frn_all_table_dark_s01_hue.iff",
+  targetTemplate = "object/tangible/furniture/jedi/frn_all_table_dark_01_hue.iff",
 
   additionalTemplates = {}
 }
