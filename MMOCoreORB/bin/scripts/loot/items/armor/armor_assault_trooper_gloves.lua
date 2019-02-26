@@ -5,7 +5,7 @@ armor_assault_trooper_gloves = {
 	directObjectTemplate = "object/tangible/wearables/armor/assault_trooper/armor_assault_trooper_gloves.iff",
 	craftingValues = {
 		{"armor_rating",1,1,0},
-    {"armor_effectiveness",60,70,10},
+     {"armor_effectiveness",40,50,10},
     {"armor_integrity",30000, 55000,0},
     {"armor_health_encumbrance",0,0,0},
     {"armor_action_encumbrance",0,0,0},
