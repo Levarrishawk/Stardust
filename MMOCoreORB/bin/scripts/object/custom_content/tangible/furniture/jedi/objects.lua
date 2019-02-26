@@ -13,6 +13,12 @@ object_tangible_furniture_jedi_shared_frn_all_banner_light_s01 = SharedTangibleO
 ObjectTemplates:addClientTemplate(object_tangible_furniture_jedi_shared_frn_all_banner_light_s01, "object/tangible/furniture/jedi/shared_frn_all_banner_light_s01.iff")
 ------------------------------------------------------------------------------------------------------------------------------------
 
+object_tangible_furniture_jedi_shared_frn_all_banner_light_s02 = SharedTangibleObjectTemplate:new {
+  clientTemplateFileName = "object/tangible/furniture/jedi/shared_frn_all_banner_light_s02.iff"
+}
+
+ObjectTemplates:addClientTemplate(object_tangible_furniture_jedi_shared_frn_all_banner_light_s02, "object/tangible/furniture/jedi/shared_frn_all_banner_light_s02.iff")
+------------------------------------------------------------------------------------------------------------------------------------
 
 object_tangible_furniture_jedi_shared_frn_all_dark_chair_s01_hue = SharedTangibleObjectTemplate:new {
 	clientTemplateFileName = "object/tangible/furniture/jedi/shared_frn_all_dark_chair_s01_hue.iff"
