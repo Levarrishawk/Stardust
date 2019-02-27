@@ -2094,5 +2094,8 @@ schematics = {
   {path="object/draft_schematic/clothing/clothing_armor_bounty_hunter_helmet.iff"},
   {path="object/draft_schematic/clothing/clothing_armor_bounty_hunter_leggings.iff"},
   
+  --Weapons
+  {path="object/draft_schematic/weapon/carbine_charric.iff"},
+  
   
 }
