@@ -442,8 +442,10 @@ function mission_giver_conv_handler:handleScreenReward(pConvTemplate, pPlayer, p
 	self.themePark:handleMissionReward(pPlayer)
 	if (self.themePark.genericGiver) then
 		self.themePark:resetCurrentMission(pPlayer)
+		CreatureObject(pPlayer):playMusicMessage("sound/ui_npe2_quest_completed_m.snd")
 	else
 		self.themePark:cleanUpMission(pPlayer)
+		CreatureObject(pPlayer):playMusicMessage("sound/ui_npe2_quest_completed_m.snd")
 		self.themePark:goToNextMission(pPlayer)
 	end
 

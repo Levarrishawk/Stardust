@@ -1563,8 +1563,10 @@ function ThemeParkLogic:updateWaypoint(pConversingPlayer, planetName, x, y, dire
 
 	if direction == "target" and self:isValidConvoString(stfFile, ":waypoint_description_" .. missionNumber) then
 		WaypointObject(pWaypoint):setQuestDetails(stfFile .. ":waypoint_description_" .. missionNumber)
+		CreatureObject(pConversingPlayer):playMusicMessage("sound/ui_npe2_quest_received_m.snd")
 	elseif direction == "return" and self:isValidConvoString(stfFile, ":return_waypoint_description_" .. missionNumber) then
 		WaypointObject(pWaypoint):setQuestDetails(stfFile .. ":return_waypoint_description_" .. missionNumber)
+		CreatureObject(pConversingPlayer):playMusicMessage("sound/ui_npe2_quest_step_completed_m.snd")
 	end
 end
 
