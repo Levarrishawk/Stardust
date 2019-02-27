@@ -1596,4 +1596,6 @@ includeFile("items/deed/vehicle_deed/hoverlifter_speeder_deed.lua")
 includeFile("items/deed/vehicle_deed/speeder_stap_deed.lua")
 includeFile("items/deed/vehicle_deed/barc_speeder_deed.lua")
 
+-- Weapons
+includeFile("items/loot_schematic/weapon_schematic/carbine_charric_schematic.lua")
 

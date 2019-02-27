@@ -45,6 +45,7 @@
 --Children folder includes
 
 -- Server Objects
+
 includeFile("tangible/loot/loot_schematic/agitator_motor_schematic.lua")
 includeFile("tangible/loot/loot_schematic/assorted_fruit_schematic.lua")
 includeFile("tangible/loot/loot_schematic/bacta_tank_schematic.lua")
@@ -128,3 +129,6 @@ includeFile("tangible/loot/loot_schematic/technical_console_s02_schematic.lua")
 includeFile("tangible/loot/loot_schematic/throwpillow_schematic.lua")
 includeFile("tangible/loot/loot_schematic/tumble_blender_schematic.lua")
 includeFile("tangible/loot/loot_schematic/utensils_schematic.lua")
+
+-- Weapon Schematics
+includeFile("tangible/loot/loot_schematic/weapon_schematic/carbine_charric_schematic.lua")
