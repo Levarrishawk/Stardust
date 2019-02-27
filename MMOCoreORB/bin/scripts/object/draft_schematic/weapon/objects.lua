@@ -4115,6 +4115,14 @@ object_draft_schematic_weapon_shared_rifle_tc22_blaster = SharedDraftSchematicOb
 
 ObjectTemplates:addClientTemplate(object_draft_schematic_weapon_shared_rifle_tc22_blaster, "object/draft_schematic/weapon/shared_rifle_tc22_blaster.iff")
 
+-------------------------------------
+object_draft_schematic_weapon_shared_sword_marauder = SharedDraftSchematicObjectTemplate:new {
+  clientTemplateFileName = "object/draft_schematic/weapon/shared_sword_marauder.iff"
+  
+}
+
+ObjectTemplates:addClientTemplate(object_draft_schematic_weapon_shared_sword_marauder, "object/draft_schematic/weapon/shared_sword_marauder.iff")
+
 
 
 

@@ -1101,3 +1101,4 @@ includeFile("tangible/wearables/armored_clothing/skirt/objects.lua")
 
 -- More furniture
 includeFile("custom_content/draft_schematic/furniture/objects.lua")
+includeFile("custom_content/draft_schematic/furniture/city/objects.lua")
