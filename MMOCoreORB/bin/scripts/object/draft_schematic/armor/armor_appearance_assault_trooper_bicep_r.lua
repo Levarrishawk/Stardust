@@ -2,7 +2,7 @@ object_draft_schematic_armor_armor_appearance_assault_trooper_bicep_r = object_d
 
    templateType = DRAFTSCHEMATIC,
 
-   customObjectName = "Assault Armor GCW Right Bicep",
+   customObjectName = "Imperial Assault Armor Right Bicep",
 
    craftingToolTab = 2, -- (See DraftSchematicObjectTemplate.h)
    complexity = 1,

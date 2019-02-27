@@ -2,7 +2,7 @@ object_draft_schematic_armor_armor_appearance_assault_trooper_bracer_r = object_
 
    templateType = DRAFTSCHEMATIC,
 
-   customObjectName = "Assault Armor GCW Right Bracer",
+   customObjectName = "Imperial Assault Armor Right Bracer",
 
    craftingToolTab = 2, -- (See DraftSchematicObjectTemplate.h)
    complexity = 1,

@@ -2,7 +2,7 @@ object_draft_schematic_armor_armor_appearance_assault_trooper_boots = object_dra
 
    templateType = DRAFTSCHEMATIC,
 
-   customObjectName = "Assault Armor GCW Boots",
+   customObjectName = "Imperial Assault Armor Boots",
 
    craftingToolTab = 2, -- (See DraftSchematicObjectTemplate.h)
    complexity = 1,

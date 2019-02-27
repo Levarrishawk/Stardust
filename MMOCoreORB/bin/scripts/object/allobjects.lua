@@ -614,6 +614,7 @@ includeFile("tangible/loot/dungeon/death_watch_bunker/objects.lua")
 includeFile("tangible/loot/dungeon/geonosian_mad_bunker/objects.lua")
 includeFile("tangible/loot/dungeon/objects.lua")
 includeFile("tangible/loot/loot_schematic/objects.lua")
+includeFile("tangible/loot/loot_schematic/weapon_schematic/objects.lua")
 includeFile("tangible/loot/misc/objects.lua")
 includeFile("tangible/loot/plant_grow/objects.lua")
 includeFile("tangible/loot/quest/force_sensitive/objects.lua")
@@ -1101,3 +1102,4 @@ includeFile("tangible/wearables/armored_clothing/skirt/objects.lua")
 
 -- More furniture
 includeFile("custom_content/draft_schematic/furniture/objects.lua")
+includeFile("custom_content/draft_schematic/furniture/city/objects.lua")

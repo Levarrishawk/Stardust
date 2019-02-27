@@ -252,6 +252,17 @@ includeFile("items/death_watch_bunker/pistol_de10_schematic.lua")
 includeFile("items/death_watch_bunker/protective_liquid_coating.lua")
 includeFile("items/death_watch_bunker/armor_segment_mandalorian_schematic.lua")
 
+-- BH Armor Schematic Loot
+includeFile("items/death_watch_bunker/bounty_hunter_armor_schematics/armor_bounty_hunter_bicep_l_schematic.lua")
+includeFile("items/death_watch_bunker/bounty_hunter_armor_schematics/armor_bounty_hunter_bicep_r_schematic.lua")
+includeFile("items/death_watch_bunker/bounty_hunter_armor_schematics/armor_bounty_hunter_boots_schematic.lua")
+includeFile("items/death_watch_bunker/bounty_hunter_armor_schematics/armor_bounty_hunter_bracer_l_schematic.lua")
+includeFile("items/death_watch_bunker/bounty_hunter_armor_schematics/armor_bounty_hunter_bracer_r_schematic.lua")
+includeFile("items/death_watch_bunker/bounty_hunter_armor_schematics/armor_bounty_hunter_chest_plate_schematic.lua")
+includeFile("items/death_watch_bunker/bounty_hunter_armor_schematics/armor_bounty_hunter_gloves_schematic.lua")
+includeFile("items/death_watch_bunker/bounty_hunter_armor_schematics/armor_bounty_hunter_helmet_schematic.lua")
+includeFile("items/death_watch_bunker/bounty_hunter_armor_schematics/armor_bounty_hunter_leggings_schematic.lua")
+
 --forage sub-folder
 includeFile("items/forage/foraged_alever_tweth_pek.lua")
 includeFile("items/forage/foraged_bait_chum.lua")
@@ -1584,3 +1595,7 @@ includeFile("items/deed/vehicle_deed/hover_chair_deed.lua")
 includeFile("items/deed/vehicle_deed/hoverlifter_speeder_deed.lua")
 includeFile("items/deed/vehicle_deed/speeder_stap_deed.lua")
 includeFile("items/deed/vehicle_deed/barc_speeder_deed.lua")
+
+-- Weapons
+includeFile("items/loot_schematic/weapon_schematic/carbine_charric_schematic.lua")
+
