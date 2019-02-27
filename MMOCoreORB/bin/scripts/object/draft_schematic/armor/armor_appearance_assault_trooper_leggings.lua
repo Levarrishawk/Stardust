@@ -2,7 +2,7 @@ object_draft_schematic_armor_armor_appearance_assault_trooper_leggings = object_
 
    templateType = DRAFTSCHEMATIC,
 
-   customObjectName = "Assault Armor GCW Pants",
+   customObjectName = "Imperial Assault Armor Leggings",
 
    craftingToolTab = 2, -- (See DraftSchematicObjectTemplate.h)
    complexity = 1,

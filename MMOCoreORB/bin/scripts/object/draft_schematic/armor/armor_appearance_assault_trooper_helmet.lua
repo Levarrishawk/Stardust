@@ -2,7 +2,7 @@ object_draft_schematic_armor_armor_appearance_assault_trooper_helmet = object_dr
 
    templateType = DRAFTSCHEMATIC,
 
-   customObjectName = "Assault Armor GCW Helmet",
+   customObjectName = "Imperial Assault Armor Helmet",
 
    craftingToolTab = 2, -- (See DraftSchematicObjectTemplate.h)
    complexity = 1,

@@ -2,7 +2,7 @@ object_draft_schematic_armor_armor_appearance_assault_trooper_gloves = object_dr
 
    templateType = DRAFTSCHEMATIC,
 
-   customObjectName = "Assault Armor GCW Gloves",
+   customObjectName = "Imperial Assault Armor Gloves",
 
    craftingToolTab = 2, -- (See DraftSchematicObjectTemplate.h)
    complexity = 1,

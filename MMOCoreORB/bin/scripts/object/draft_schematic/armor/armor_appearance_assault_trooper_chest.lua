@@ -2,7 +2,7 @@ object_draft_schematic_armor_armor_appearance_assault_trooper_chest = object_dra
 
    templateType = DRAFTSCHEMATIC,
 
-   customObjectName = "Assault Armor GCW Chest Plate",
+   customObjectName = "Imperial Assault Armor Chest Plate",
 
    craftingToolTab = 2, -- (See DraftSchematicObjectTemplate.h)
    complexity = 1,
