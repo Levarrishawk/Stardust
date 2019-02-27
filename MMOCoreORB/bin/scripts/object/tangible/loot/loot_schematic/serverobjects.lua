@@ -131,4 +131,4 @@ includeFile("tangible/loot/loot_schematic/tumble_blender_schematic.lua")
 includeFile("tangible/loot/loot_schematic/utensils_schematic.lua")
 
 -- Weapon Schematics
-includeFile("tangible/loot/loot_schematic/weapon_schematic/carbine_charric_schematic.lua")
+includeFile("tangible/loot/loot_schematic/weapon_schematic/serverobjects.lua")
