@@ -45,7 +45,7 @@ object_tangible_loot_loot_schematic_table_coffee_modern_schematic = object_tangi
   objectMenuComponent = "LootSchematicMenuComponent",
   attributeListComponent = "LootSchematicAttributeListComponent",
   requiredSkill = "crafting_architect_production_04",
-  targetDraftSchematic = "object/draft_schematic/furniture/table_coffee_modern_02_schematic.iff",
+  targetDraftSchematic = "object/draft_schematic/furniture/furniture_table_coffee_modern_02.iff",
   targetUseCount = 30,
 }
 
