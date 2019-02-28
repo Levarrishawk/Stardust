@@ -9,7 +9,8 @@ clone_war_weapons = {
 		{itemTemplate = "som_carbine_republic_sfor", weight = 1500000},
 		{itemTemplate = "pistol_kyd21_generic", weight = 1500000},
 		{itemTemplate = "polearm_lance_kashyyk", weight = 1500000},
-		{itemTemplate = "two_handed_sword_kashyyk", weight = 1500000},
+		{itemTemplate = "two_handed_sword_kashyyk", weight = 1000000},
+		{itemTemplate = "decorative_painting_trooper", weight = 500000},
 		{itemTemplate = "polearm_lance_staff_magna_guard", weight = 1500000},
 		{itemTemplate = "polearm_lance_kaminoan", weight = 1000000}		
 	}

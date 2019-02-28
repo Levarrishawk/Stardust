@@ -882,6 +882,7 @@ schematics = {
 	{path="object/draft_schematic/furniture/furniture_table_endtable_small_modern.iff"},
 	{path="object/draft_schematic/furniture/furniture_table_modern.iff"},
 	{path="object/draft_schematic/furniture/furniture_table_coffee_modern.iff"},
+	{path="object/draft_schematic/furniture/furniture_table_coffee_modern_02.iff"},
 	{path="object/draft_schematic/furniture/furniture_table_dining_modern.iff"},
 	{path="object/draft_schematic/furniture/furniture_table_coffee_elegant.iff"},
 	{path="object/draft_schematic/furniture/furniture_table_endtable_elegant.iff"},

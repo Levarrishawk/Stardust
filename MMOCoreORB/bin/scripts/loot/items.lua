@@ -459,7 +459,7 @@ includeFile("items/loot_schematic/tatooine_tapestry_schematic.lua")
 includeFile("items/loot_schematic/technical_console_schematic_1.lua")
 includeFile("items/loot_schematic/technical_console_schematic_2.lua")
 includeFile("items/loot_schematic/throw_pillow_schematic.lua")
---includeFile("items/loot_schematic/cortosis_grenade_loot_schematic.lua")
+includeFile("items/loot_schematic/table_coffee_modern_02_schematic.lua")
 
 
 
@@ -1598,4 +1598,66 @@ includeFile("items/deed/vehicle_deed/barc_speeder_deed.lua")
 
 -- Weapons
 includeFile("items/loot_schematic/weapon_schematic/carbine_charric_schematic.lua")
+
+-- TCG Series 1 Decor
+includeFile("items/furniture/decorative_bas_relief.lua")
+includeFile("items/furniture/decorative_chon_bust.lua")
+includeFile("items/furniture/decorative_computer_console_01.lua")
+includeFile("items/furniture/decorative_computer_console_02.lua")
+includeFile("items/furniture/decorative_display_case_01.lua")
+includeFile("items/furniture/decorative_display_case_02.lua")
+includeFile("items/furniture/decorative_dooku_bust.lua")
+includeFile("items/furniture/decorative_drink_dispenser.lua")
+includeFile("items/furniture/decorative_indoor_fountain_01.lua")
+includeFile("items/furniture/decorative_indoor_fountain_02.lua")
+includeFile("items/furniture/decorative_indoor_garden_01.lua")
+includeFile("items/furniture/decorative_indoor_garden_02.lua")
+includeFile("items/furniture/decorative_jedi_library_bookshelf.lua")
+includeFile("items/furniture/decorative_painting_alliance_propaganda.lua")
+includeFile("items/furniture/decorative_painting_darth_vader.lua")
+includeFile("items/furniture/decorative_painting_imperial_propaganda.lua")
+includeFile("items/furniture/decorative_painting_jedi_crest.lua")
+includeFile("items/furniture/decorative_painting_trooper.lua")
+
+-- TCG Series 3 Decor
+includeFile("items/furniture/decorative_empal_surecon_center_medical_table.lua")
+includeFile("items/furniture/decorative_hoth_travel_advertisement.lua")
+includeFile("items/furniture/decorative_mandalorian_skull_banner.lua") --
+includeFile("items/furniture/decorative_merr_sonn_jt12_jetpack_blueprints.lua") --
+includeFile("items/furniture/decorative_mustafar_travel_advertisement.lua")
+includeFile("items/furniture/decorative_swg_tcg_painting.lua") --
+includeFile("items/furniture/decorative_wompa_skin_rug.lua")
+
+-- TCG Series 4 Decor
+includeFile("items/furniture/decorative_droid_oil_bath.lua") --
+includeFile("items/furniture/decorative_kashyyyk_travel_advertisement.lua")
+includeFile("items/furniture/decorative_medical_table_01.lua")
+includeFile("items/furniture/decorative_tatooine_travel_advertisement.lua") --
+
+--TCG Series 5 Decor
+includeFile("items/furniture/decorative_jedi_forms_painting.lua") --
+includeFile("items/furniture/decorative_lcd_screen.lua") --
+includeFile("items/furniture/decorative_theater_poster.lua") --
+
+-- TCG Series 6 Decor
+includeFile("items/furniture/painting_nightsister.lua") --
+includeFile("items/furniture/painting_spined_rancor.lua") --
+includeFile("items/furniture/painting_travel_ad_coruscant.lua") --
+includeFile("items/furniture/painting_travel_ad_ord_mantell.lua") --
+includeFile("items/furniture/painting_winged_quenker.lua") --
+
+-- TCG Series 7 Decor
+includeFile("items/furniture/painting_commando.lua") --
+includeFile("items/furniture/painting_lando_poster.lua") --
+
+-- TCG Series 8 Decor
+includeFile("items/furniture/decorative_bespin_glass_sculpture.lua") --
+includeFile("items/furniture/decorative_bespin_lamp_on.lua") --
+includeFile("items/furniture/decorative_bespin_sconce_on.lua") --
+includeFile("items/furniture/decorative_bespin_shelves.lua") --
+includeFile("items/furniture/decorative_glowly_sculpture.lua") --
+includeFile("items/furniture/decorative_shield_generator_blueprint.lua") --
+includeFile("items/furniture/decorative_torture_table.lua") --
+includeFile("items/furniture/vader_pod.lua") --
+
 
