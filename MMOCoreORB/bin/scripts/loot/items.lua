@@ -1619,5 +1619,45 @@ includeFile("items/furniture/decorative_painting_imperial_propaganda.lua")
 includeFile("items/furniture/decorative_painting_jedi_crest.lua")
 includeFile("items/furniture/decorative_painting_trooper.lua")
 
+-- TCG Series 3 Decor
+includeFile("items/furniture/decorative_empal_surecon_center_medical_table.lua")
+includeFile("items/furniture/decorative_hoth_travel_advertisement.lua")
+includeFile("items/furniture/decorative_mandalorian_skull_banner.lua") --
+includeFile("items/furniture/decorative_merr_sonn_jt12_jetpack_blueprints.lua") --
+includeFile("items/furniture/decorative_mustafar_travel_advertisement.lua")
+includeFile("items/furniture/decorative_swg_tcg_painting.lua") --
+includeFile("items/furniture/decorative_wompa_skin_rug.lua")
+
+-- TCG Series 4 Decor
+includeFile("items/furniture/decorative_droid_oil_bath.lua") --
+includeFile("items/furniture/decorative_kashyyyk_travel_advertisement.lua")
+includeFile("items/furniture/decorative_medical_table_01.lua")
+includeFile("items/furniture/decorative_tatooine_travel_advertisement.lua") --
+
+--TCG Series 5 Decor
+includeFile("items/furniture/decorative_jedi_forms_painting.lua") --
+includeFile("items/furniture/decorative_lcd_screen.lua") --
+includeFile("items/furniture/decorative_theater_poster.lua") --
+
+-- TCG Series 6 Decor
+includeFile("items/furniture/painting_nightsister.lua") --
+includeFile("items/furniture/painting_spined_rancor.lua") --
+includeFile("items/furniture/painting_travel_ad_coruscant.lua") --
+includeFile("items/furniture/painting_travel_ad_ord_mantell.lua") --
+includeFile("items/furniture/painting_winged_quenker.lua") --
+
+-- TCG Series 7 Decor
+includeFile("items/furniture/painting_commando.lua") --
+includeFile("items/furniture/painting_lando_poster.lua") --
+
+-- TCG Series 8 Decor
+includeFile("items/furniture/decorative_bespin_glass_sculpture.lua") --
+includeFile("items/furniture/decorative_bespin_lamp_on.lua") --
+includeFile("items/furniture/decorative_bespin_sconce_on.lua") --
+includeFile("items/furniture/decorative_bespin_shelves.lua") --
+includeFile("items/furniture/decorative_glowly_sculpture.lua") --
+includeFile("items/furniture/decorative_shield_generator_blueprint.lua") --
+includeFile("items/furniture/decorative_torture_table.lua") --
+includeFile("items/furniture/vader_pod.lua") --
 
 

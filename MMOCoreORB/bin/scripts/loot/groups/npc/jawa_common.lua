@@ -5,7 +5,8 @@ jawa_common = {
 	lootItems = {
 		{itemTemplate = "jawa_beads", weight = 3000000},
 		{itemTemplate = "decorative_display_case_01", weight = 1000000},
-		{groupTemplate = "wearables_common", weight = 6000000}
+		{itemTemplate = "decorative_droid_oil_bath", weight = 1000000},
+		{groupTemplate = "wearables_common", weight = 5000000}
 	}
 }
 
