@@ -3,18 +3,13 @@ dark_jedi_common = {
 	minimumLevel = 0,
 	maximumLevel = 0,
 	lootItems = {
-		{groupTemplate = "wearables_rare", weight = 4500000},
-		{itemTemplate = "skill_buff_heavy_weapon_accuracy", weight = 500000},
-		{itemTemplate = "skill_buff_heavy_weapon_speed", weight = 500000},
-		{itemTemplate = "skill_buff_melee_accuracy", weight = 500000},
-		{itemTemplate = "skill_buff_melee_defense", weight = 500000},
-		{itemTemplate = "skill_buff_pistol_accuracy", weight = 500000},
-		{itemTemplate = "skill_buff_pistol_speed", weight = 500000},
-		{itemTemplate = "skill_buff_ranged_accuracy", weight = 500000},
-		{itemTemplate = "skill_buff_ranged_defense", weight = 500000},
-		{itemTemplate = "skill_buff_thrown_accuracy", weight = 500000},
-		{itemTemplate = "skill_buff_thrown_speed", weight = 500000},
-		{itemTemplate = "foraged_stimpack", weight = 500000}
+		
+		{itemTemplate = "decorative_bas_relief", weight = 2000000},
+		{itemTemplate = "decorative_dooku_bust", weight = 2000000},
+		{itemTemplate = "decorative_jedi_library_bookshelf", weight = 2000000},
+		{itemTemplate = "decorative_chon_bust", weight = 2000000},
+		{itemTemplate = "decorative_painting_jedi_crest", weight = 2000000}
+		
 	}
 }
 

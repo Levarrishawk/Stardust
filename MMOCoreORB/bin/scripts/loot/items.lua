@@ -1599,3 +1599,25 @@ includeFile("items/deed/vehicle_deed/barc_speeder_deed.lua")
 -- Weapons
 includeFile("items/loot_schematic/weapon_schematic/carbine_charric_schematic.lua")
 
+-- TCG Series 1 Decor
+includeFile("items/furniture/decorative_bas_relief.lua")
+includeFile("items/furniture/decorative_chon_bust.lua")
+includeFile("items/furniture/decorative_computer_console_01.lua")
+includeFile("items/furniture/decorative_computer_console_02.lua")
+includeFile("items/furniture/decorative_display_case_01.lua")
+includeFile("items/furniture/decorative_display_case_02.lua")
+includeFile("items/furniture/decorative_dooku_bust.lua")
+includeFile("items/furniture/decorative_drink_dispenser.lua")
+includeFile("items/furniture/decorative_indoor_fountain_01.lua")
+includeFile("items/furniture/decorative_indoor_fountain_02.lua")
+includeFile("items/furniture/decorative_indoor_garden_01.lua")
+includeFile("items/furniture/decorative_indoor_garden_02.lua")
+includeFile("items/furniture/decorative_jedi_library_bookshelf.lua")
+includeFile("items/furniture/decorative_painting_alliance_propaganda.lua")
+includeFile("items/furniture/decorative_painting_darth_vader.lua")
+includeFile("items/furniture/decorative_painting_imperial_propaganda.lua")
+includeFile("items/furniture/decorative_painting_jedi_crest.lua")
+includeFile("items/furniture/decorative_painting_trooper.lua")
+
+
+
