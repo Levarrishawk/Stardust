@@ -18,7 +18,8 @@ function axkvaMin:start()
     writeData("axkvaMin:bossTwoDead", 0) 
     writeData("axkvaMin:bossThreeDead", 0) 
     writeData("axkvaMin:bossFourDead", 0) 
-    writeData("axkvaMin:bossFiveDead", 0)   
+    writeData("axkvaMin:bossFiveDead", 0)  
+    writeData("axkvaMin:bossSixDead", 0) 
 	end
 end
 
@@ -232,7 +233,7 @@ function axkvaMin:spawnBossRoomOneTrash(boss1)
     return
   else
     spatialChat(boss1, "Say hello to my little friend!")
-    local add1 = spawnMobile("dathomir", "wod_mutant_rancor_boss", 0, -81.3, 17.9, 118.4, 65, 480000333)
+    local add1 = spawnMobile("dathomir", "wod_mutant_rancor_boss", 0, -81.3, 17.9, 18.4, 65, 480000333)
     
        
   end 
@@ -560,6 +561,7 @@ end
 
 function axkvaMin:spawnBossRoomFive()
   local boss5 = spawnMobile("dathomir", "axkva_min", 0, -79, 17.8, 23.8, 99, 480000333)
+    spatialChat(boss5, "Our destiny was denied for so long, by the Jedi, by the Sith.  Now it is our time.")
     createObserver(DAMAGERECEIVED,"axkvaMin","boss5_damage", boss5)
     createObserver(OBJECTDESTRUCTION, "axkvaMin", "bossFiveKilled", boss5) 
     writeData("axkvaMin:bossFiveFightState", 0) 
@@ -580,8 +582,7 @@ function axkvaMin:boss5_damage(boss5, pPlayer)
   
       if (((bossHealth <= (bossMaxHealth *0.995))) and readData("axkvaMin:bossFiveFightState") == 0) then
       spatialChat(boss5, "It seems that you have come all this way for nothing.  Death awaits you!")
-      CreatureObject(boss5):playEffect("clienteffect/pl_storm_lord_special.cef", "")
-      CreatureObject(boss5):playEffect("clienteffect/mustafar/som_dark_jedi_laugh.cef", "")
+      CreatureObject(boss5):playEffect("clienteffect/pl_storm_lord_special.cef", "")     
         writeData("axkvaMin:bossFiveFightState", 1)        
       end 
       
@@ -666,6 +667,7 @@ function axkvaMin:spawnBossRoomSix()
   local boss6 = spawnMobile("dathomir", "mother_talzin", 0, -74.3, 16.0, 22.5, 97, 480000333)
     spatialChat(boss6, "What... is this?  I.. am alive?  This is a surprise to be sure, but a welcome one.")
     CreatureObject(boss6):playEffect("clienteffect/pl_force_regain_consciousness_self.cef", "")
+    createObserver(DAMAGERECEIVED,"axkvaMin","boss6_damage", boss6)
     createObserver(OBJECTDESTRUCTION, "axkvaMin", "bossSixKilled", boss6) 
     writeData("axkvaMin:bossSixFightState", 0) 
 end
@@ -684,7 +686,7 @@ function axkvaMin:boss6_damage(boss6, pPlayer)
    
   
       if (((bossHealth <= (bossMaxHealth *0.99))) and readData("axkvaMin:bossSixFightState") == 0) then
-      spatialChat(boss6, "If you kneel before me now, I will end your life painlessly.  Refuse and there will be no end to your torment.")
+      spatialChat(boss6, "Pitiful brutes. You will understand true power.")
       CreatureObject(boss6):playEffect("clienteffect/pl_storm_lord_special.cef", "")
       CreatureObject(boss6):playEffect("clienteffect/mustafar/som_dark_jedi_laugh.cef", "")
         writeData("axkvaMin:bossSixFightState", 1)        
@@ -697,7 +699,7 @@ function axkvaMin:boss6_damage(boss6, pPlayer)
       end 
       
       if (((bossHealth <= (bossMaxHealth *0.75))) and readData("axkvaMin:bossSixFightState") == 1) then
-      spatialChat(boss6, "My children, rise again and fight for your mother!")
+      spatialChat(boss6, "My daughters, rise again and fight for your mother!")
         CreatureObject(boss6):playEffect("clienteffect/pl_storm_lord_special.cef", "")
         CreatureObject(boss6):playEffect("clienteffect/combat_pt_electricalfield.cef", "")
         CreatureObject(boss6):playEffect("clienteffect/mustafar/som_dark_jedi_laugh.cef", "")

@@ -1,5 +1,6 @@
 mother_talzin = Creature:new {
 	objectName = "@mob/creature_names:gethzerion",
+	customName = "Mother Talzin",
 	socialGroup = "nightsister",
 	faction = "nightsister",
 	level = 400,
@@ -10,7 +11,7 @@ mother_talzin = Creature:new {
 	baseHAM = 500000,
 	baseHAMmax = 500000,
 	armor = 3,
-	resists = {0,0,0,0,0,0,0,0,-1},
+	resists = {10,10,10,10,10,10,10,10,10},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -27,7 +28,7 @@ mother_talzin = Creature:new {
 
 	templates = {"object/mobile/gethzerion.iff"},
 	lootGroups = {},
-	weapons = {},
+	weapons = {"mixed_force_weapons"},
 	conversationTemplate = "",
 	attacks = merge(swordsmanmid,fencermid,tkamid,pikemanmid,brawlermaster,forcewielder)
 }
