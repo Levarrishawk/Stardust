@@ -8,9 +8,9 @@ lelli_hi = Creature:new {
 	damageMin = 500,
 	damageMax = 2950,
 	baseXp = 26654,
-	baseHAM = 91000,
-	baseHAMmax = 122000,
-	armor = 3,
+	baseHAM = 135000,
+	baseHAMmax = 137000,
+	armor = 1,
 	-- {kinetic,energy,blast,heat,cold,electricity,acid,stun,ls}
 	resists = {100,100,75,15,15,70,70,75,75},
 	meatType = "",

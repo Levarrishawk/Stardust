@@ -8,9 +8,9 @@ nandina = Creature:new {
 	damageMin = 1520,
 	damageMax = 1900,
 	baseXp = 7299,
-	baseHAM = 200000,
-	baseHAMmax = 200000,
-	armor = 3,
+	baseHAM = 112222,
+	baseHAMmax = 122000,
+	armor = 1,
 	-- {kinetic,energy,blast,heat,cold,electricity,acid,stun,ls}
 	resists = {30,80,30,50,50,50,50,75,100},
 	meatType = "",
