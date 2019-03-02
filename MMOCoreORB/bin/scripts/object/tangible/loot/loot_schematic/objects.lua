@@ -4894,6 +4894,67 @@ object_tangible_loot_loot_schematic_shared_charric_carbine_schematic = SharedTan
 }
 
 ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_charric_carbine_schematic, "object/tangible/loot/loot_schematic/shared_charric_carbine_schematic.iff")
+--
+
+object_tangible_loot_loot_schematic_shared_ns_hat_s01_schematic = SharedTangibleObjectTemplate:new {
+  clientTemplateFileName = "object/tangible/loot/loot_schematic/shared_ns_hat_s01_schematic.iff"
+}
+
+ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_ns_hat_s01_schematic, "object/tangible/loot/loot_schematic/shared_ns_hat_s01_schematic.iff")
+
+object_tangible_loot_loot_schematic_shared_ns_hat_s02_schematic = SharedTangibleObjectTemplate:new {
+  clientTemplateFileName = "object/tangible/loot/loot_schematic/shared_ns_hat_s02_schematic.iff"
+}
+
+ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_ns_hat_s02_schematic, "object/tangible/loot/loot_schematic/shared_ns_hat_s02_schematic.iff")
+
+
+object_tangible_loot_loot_schematic_shared_ns_hat_s03_schematic = SharedTangibleObjectTemplate:new {
+  clientTemplateFileName = "object/tangible/loot/loot_schematic/shared_ns_hat_s03_schematic.iff"
+}
+
+ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_ns_hat_s03_schematic, "object/tangible/loot/loot_schematic/shared_ns_hat_s03_schematic.iff")
+
+object_tangible_loot_loot_schematic_shared_ns_pants_s01_schematic = SharedTangibleObjectTemplate:new {
+  clientTemplateFileName = "object/tangible/loot/loot_schematic/shared_ns_pants_s01_schematic.iff"
+}
+
+ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_ns_pants_s01_schematic, "object/tangible/loot/loot_schematic/shared_ns_pants_s01_schematic.iff")
+
+object_tangible_loot_loot_schematic_shared_ns_pants_s02_schematic = SharedTangibleObjectTemplate:new {
+  clientTemplateFileName = "object/tangible/loot/loot_schematic/shared_ns_pants_s02_schematic.iff"
+}
+
+ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_ns_pants_s02_schematic, "object/tangible/loot/loot_schematic/shared_ns_pants_s02_schematic.iff")
+
+object_tangible_loot_loot_schematic_shared_ns_shirt_s01_schematic = SharedTangibleObjectTemplate:new {
+  clientTemplateFileName = "object/tangible/loot/loot_schematic/shared_ns_shirt_s01_schematic.iff"
+}
+
+ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_ns_shirt_s01_schematic, "object/tangible/loot/loot_schematic/shared_ns_shirt_s01_schematic.iff")
+
+object_tangible_loot_loot_schematic_shared_ns_shirt_s02_schematic = SharedTangibleObjectTemplate:new {
+  clientTemplateFileName = "object/tangible/loot/loot_schematic/shared_ns_shirt_s02_schematic.iff"
+}
+
+ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_ns_shirt_s02_schematic, "object/tangible/loot/loot_schematic/shared_ns_shirt_s02_schematic.iff")
+
+object_tangible_loot_loot_schematic_shared_ns_shirt_s03_schematic = SharedTangibleObjectTemplate:new {
+  clientTemplateFileName = "object/tangible/loot/loot_schematic/shared_ns_shirt_s03_schematic.iff"
+}
+
+ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_ns_shirt_s03_schematic, "object/tangible/loot/loot_schematic/shared_ns_shirt_s03_schematic.iff")
+
+object_tangible_loot_loot_schematic_shared_ns_boots_schematic = SharedTangibleObjectTemplate:new {
+  clientTemplateFileName = "object/tangible/loot/loot_schematic/shared_ns_boots_schematic.iff"
+}
+
+ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_ns_boots_schematic, "object/tangible/loot/loot_schematic/shared_ns_boots_schematic.iff")
+
+object_tangible_loot_loot_schematic_shared_ns_dress_schematic = SharedTangibleObjectTemplate:new {
+  clientTemplateFileName = "object/tangible/loot/loot_schematic/shared_ns_dress_schematic.iff"
+}
+ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_ns_dress_schematic, "object/tangible/loot/loot_schematic/shared_ns_dress_schematic.iff")
 
 
 
