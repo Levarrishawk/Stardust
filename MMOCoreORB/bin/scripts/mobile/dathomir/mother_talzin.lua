@@ -1,0 +1,35 @@
+mother_talzin = Creature:new {
+	objectName = "@mob/creature_names:gethzerion",
+	socialGroup = "nightsister",
+	faction = "nightsister",
+	level = 400,
+	chanceHit = 1,
+	damageMin = 2000,
+	damageMax = 2500,
+	baseXp = 94290,
+	baseHAM = 500000,
+	baseHAMmax = 500000,
+	armor = 3,
+	resists = {0,0,0,0,0,0,0,0,-1},
+	meatType = "",
+	meatAmount = 0,
+	hideType = "",
+	hideAmount = 0,
+	boneType = "",
+	boneAmount = 0,
+	milk = 2 * 0,
+	tamingChance = 0,
+	ferocity = 0,
+	pvpBitmask = AGGRESSIVE + ATTACKABLE + ENEMY,
+  creatureBitmask = PACK + KILLER,
+  optionsBitmask = AIENABLED,
+  diet = HERBIVORE,
+
+	templates = {"object/mobile/gethzerion.iff"},
+	lootGroups = {},
+	weapons = {},
+	conversationTemplate = "",
+	attacks = merge(swordsmanmid,fencermid,tkamid,pikemanmid,brawlermaster,forcewielder)
+}
+
+CreatureTemplates:addCreatureTemplate(mother_talzin, "mother_talzin")

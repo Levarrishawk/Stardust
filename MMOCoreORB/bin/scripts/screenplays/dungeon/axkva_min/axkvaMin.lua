@@ -192,6 +192,8 @@ end
 function axkvaMin:spawnBossRoomOne()
   local boss1 = spawnMobile("dathomir", "nandina", 0, -78, 17.8, 29.8, 127, 480000333)
     createObserver(OBJECTDESTRUCTION, "axkvaMin", "bossOneKilled", boss1) 
+    createObserver(DAMAGERECEIVED,"axkvaMin","boss1_damage", boss1)
+    writeData("axkvaMin:bossOneFightState", 0) 
 end
 
 function axkvaMin:spawnBossRoomOneActiveArea()  -- Active areas use world coords.   Set to actual world coord in each instance manually.
@@ -230,10 +232,68 @@ function axkvaMin:spawnBossRoomOneTrash(boss1)
     return
   else
     spatialChat(boss1, "Say hello to my little friend!")
-    local add1 = spawnMobile("dathomir", "wod_mutant_rancor_boss", 0, -84.9, 17.9, 16, 65, 480000333)
+    local add1 = spawnMobile("dathomir", "wod_mutant_rancor_boss", 0, -81.3, 17.9, 118.4, 65, 480000333)
+    
        
   end 
   writeData("axkvaMin:bossOneTrashState", 1) 
+end
+
+function axkvaMin:boss1_damage(boss1, pPlayer)
+ 
+    local player = LuaCreatureObject(pPlayer)
+    local boss = LuaCreatureObject(boss1)
+    if ( boss ~= nil ) then
+      local bossHealth = boss:getHAM(0)
+      local bossAction = boss:getHAM(3)
+      local bossMind = boss:getHAM(6)
+      local bossMaxHealth = boss:getMaxHAM(0)
+      local bossMaxAction = boss:getMaxHAM(3)
+      local bossMaxMind = boss:getMaxHAM(6)
+   
+  
+      if (((bossHealth <= (bossMaxHealth *0.99))) and readData("axkvaMin:bossOneFightState") == 0) then
+      spatialChat(boss1, "Why have you come here? Did our sisters send you? What did you think you would find here other than your own deaths!")
+      CreatureObject(boss1):playEffect("clienteffect/space_command/shp_shocked_01.cef", "")
+        writeData("axkvaMin:bossOneFightState", 1)        
+      end 
+      
+      if (((bossAction <= (bossMaxAction *0.3)))) then
+           CreatureObject(boss1):setHAM(3, bossMaxAction)
+           CreatureObject(boss1):playEffect("clienteffect/pl_force_channel_self.cef", "")
+           spatialChat(boss1, "I am renewed!")   
+      end 
+      
+      if (((bossHealth <= (bossMaxHealth *0.75))) and readData("axkvaMin:bossOneFightState") == 1) then
+      spatialChat(boss1, "Your essences will feed my lady's power, after my pet tears you apart of course.")
+      CreatureObject(boss1):playEffect("clienteffect/combat_pt_electricalfield.cef", "")
+        writeData("axkvaMin:bossOneFightState", 2)               
+      end
+      
+      if (((bossHealth <= (bossMaxHealth *0.50))) and readData("axkvaMin:bossOneFightState") == 2) then
+      spatialChat(boss1, "My sisters are weak.  They fear what we intended.  Without the mother our clan is nothing.")
+        CreatureObject(boss1):playEffect("clienteffect/pl_force_resist_states_self.cef", "")
+        writeData("axkvaMin:bossOneFightState", 3)                
+      end  
+      
+      if (((bossHealth <= (bossMaxHealth *0.25))) and readData("axkvaMin:bossOneFightState") == 3) then
+      spatialChat(boss1, "Yes, Strike me with all of your strength.")
+      CreatureObject(boss1):playEffect("clienteffect/pl_force_resist_bleeding_self.cef", "")
+        writeData("axkvaMin:bossOneFightState", 4)        
+      end
+      
+      if (((bossHealth <= (bossMaxHealth *0.1))) and readData("axkvaMin:bossOneFightState") == 4) then
+      spatialChat(boss1, "Mistress, take my essence...  Let the mother live... again.")
+      CreatureObject(boss1):playEffect("clienteffect/pl_storm_lord_special.cef", "")
+      CreatureObject(boss1):playEffect("clienteffect/combat_pt_electricalfield.cef", "")
+        writeData("axkvaMin:bossOneFightState", 5)        
+      end  
+      
+      if (((bossHealth <= (bossMaxHealth *0.1))) and readData("axkvaMin:bossOneFightState") == 5) then      
+        writeData("axkvaMin:bossOneFightState", 6)        
+      end
+    end
+    return 0
 end
 
 function axkvaMin:bossOneKilled(boss1) 
@@ -244,7 +304,67 @@ end
 
 function axkvaMin:spawnBossRoomTwo()
   local boss2 = spawnMobile("dathomir", "lelli_hi", 0, -74.4, 16.5, 31.4, 154, 480000333)
+    spatialChat(boss2, "You will not stop us from being back Mother!")
+    createObserver(DAMAGERECEIVED,"axkvaMin","boss2_damage", boss2)
     createObserver(OBJECTDESTRUCTION, "axkvaMin", "bossTwoKilled", boss2) 
+end
+
+function axkvaMin:boss2_damage(boss2, pPlayer)
+ 
+    local player = LuaCreatureObject(pPlayer)
+    local boss = LuaCreatureObject(boss2)
+    if ( boss ~= nil ) then
+      local bossHealth = boss:getHAM(0)
+      local bossAction = boss:getHAM(3)
+      local bossMind = boss:getHAM(6)
+      local bossMaxHealth = boss:getMaxHAM(0)
+      local bossMaxAction = boss:getMaxHAM(3)
+      local bossMaxMind = boss:getMaxHAM(6)
+   
+  
+      if (((bossHealth <= (bossMaxHealth *0.99))) and readData("axkvaMin:bossTwoFightState") == 0) then
+      spatialChat(boss2, "Insert witty dialogue here.")
+        CreatureObject(boss2):playEffect("clienteffect/space_command/shp_shocked_01.cef", "")
+        writeData("axkvaMin:bossTwoFightState", 1)        
+      end 
+      
+      if (((bossAction <= (bossMaxAction *0.3)))) then
+           CreatureObject(boss2):setHAM(3, bossMaxAction)
+           CreatureObject(boss2):playEffect("clienteffect/pl_force_channel_self.cef", "")
+           spatialChat(boss2, "My strength is renewed.  Thank you mother!")   
+      end 
+      
+      if (((bossHealth <= (bossMaxHealth *0.75))) and readData("axkvaMin:bossTwoFightState") == 1) then
+      spatialChat(boss2, "Insert witty dialogue here.")
+        writeData("axkvaMin:bossTwoFightState", 2)
+              
+      end
+      
+      if (((bossHealth <= (bossMaxHealth *0.50))) and readData("axkvaMin:bossTwoFightState") == 2) then
+      spatialChat(boss2, "Insert witty dialogue here.")
+        CreatureObject(boss2):playEffect("clienteffect/pl_storm_lord_special.cef", "")
+        CreatureObject(boss2):playEffect("clienteffect/combat_pt_electricalfield.cef", "")
+        writeData("axkvaMin:bossTwoFightState", 3)        
+      end  
+      
+      if (((bossHealth <= (bossMaxHealth *0.25))) and readData("axkvaMin:bossTwoFightState") == 3) then
+      spatialChat(boss2, "Insert witty dialogue here.")
+        CreatureObject(boss2):playEffect("clienteffect/pl_storm_lord_special.cef", "")
+        CreatureObject(boss2):playEffect("clienteffect/combat_pt_electricalfield.cef", "")
+        writeData("axkvaMin:bossTwoFightState", 4)
+                 
+      end
+      
+      if (((bossHealth <= (bossMaxHealth *0.1))) and readData("axkvaMin:bossTwoFightState") == 4) then
+      spatialChat(boss2, "Mother, take my life. Let it fuel your rebirth!")
+        writeData("axkvaMin:bossTwoFightState", 5)        
+      end  
+      
+      if (((bossHealth <= (bossMaxHealth *0.1))) and readData("axkvaMin:bossTwoFightState") == 5) then      
+        writeData("axkvaMin:bossTwoFightState", 6)        
+      end
+    end
+    return 0
 end
 
 function axkvaMin:bossTwoKilled(boss2)
@@ -255,6 +375,7 @@ end
 
 function axkvaMin:spawnBossRoomThree()  -- Adds for this phase:   exar_kun_warrior (A Caretaker Protector) , exar_kun_warrior_f (The Executioner)
   local boss3 = spawnMobile("dathomir", "kimaru", 0, -79.3, 16.8, 14.2, 45, 480000333)
+    
     createObserver(OBJECTDESTRUCTION, "axkvaMin", "bossThreeKilled", boss3) 
 end
 
@@ -282,12 +403,23 @@ end
 
 function axkvaMin:bossFiveKilled(boss5, pPlayer)  -- TODO Use this function to reset the instance on success.   Delay by 30 seconds to allow looting time.
     writeData("axkvaMin:bossFiveDead", 1) 
-    CreatureObject(pPlayer):sendSystemMessage("You and your group have defeated Axkva Min!  You will be removed from the instance in 60 seconds.")  
+    CreatureObject(pPlayer):sendSystemMessage("As the final blow kills Axkva Min a flash of light exits her body and enters the crystal.")  
+    createEvent(20, "axkvaMin", "spawnBossRoomSix", pPlayer, "")   
+  return 0
+end
+
+function axkvaMin:spawnBossRoomSix()
+  local boss6 = spawnMobile("dathomir", "mother_talzin", 0, -74.3, 16.0, 22.5, 97, 480000333)
+    createObserver(OBJECTDESTRUCTION, "axkvaMin", "bossSixKilled", boss6) 
+end
+
+function axkvaMin:bossSixKilled(boss6, pPlayer)  -- TODO Use this function to reset the instance on success.   Delay by 30 seconds to allow looting time.
+    writeData("axkvaMin:bossSixDead", 1) 
+    CreatureObject(pPlayer):sendSystemMessage("You and your group have defeated Mother Talzin! This instance will close in 60 seconds.")  
     createEvent(1000, "axkvaMin", "awardBadgeToAll", pPlayer, "")
     createEvent(60000, "axkvaMin", "handleVictory", pPlayer, "")
   return 0
 end
-
 
 function axkvaMin:getBuildingObject()
   return getSceneObject(480000331)  -- Different parent for each instance script
