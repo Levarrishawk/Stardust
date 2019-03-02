@@ -306,6 +306,7 @@ function axkvaMin:spawnBossRoomTwo()
   local boss2 = spawnMobile("dathomir", "lelli_hi", 0, -74.4, 16.5, 31.4, 154, 480000333)    
     createObserver(DAMAGERECEIVED,"axkvaMin","boss2_damage", boss2)
     createObserver(OBJECTDESTRUCTION, "axkvaMin", "bossTwoKilled", boss2) 
+    writeData("axkvaMin:bossTwoFightState", 0) 
 end
 
 function axkvaMin:boss2_damage(boss2, pPlayer)
@@ -394,6 +395,7 @@ function axkvaMin:spawnBossRoomThree()  -- Adds for this phase:   exar_kun_warri
   local boss3 = spawnMobile("dathomir", "kimaru", 0, -79.3, 16.8, 14.2, 45, 480000333)
     createObserver(DAMAGERECEIVED,"axkvaMin","boss3_damage", boss3)
     createObserver(OBJECTDESTRUCTION, "axkvaMin", "bossThreeKilled", boss3) 
+    writeData("axkvaMin:bossThreeFightState", 0) 
 end
 
 function axkvaMin:boss3_damage(boss3, pPlayer)
@@ -475,7 +477,79 @@ end
 
 function axkvaMin:spawnBossRoomFour()
   local boss4 = spawnMobile("dathomir", "suin_chalo", 0, -82.5, 17.8, 17.8, 55, 480000333)
+    createObserver(DAMAGERECEIVED,"axkvaMin","boss4_damage", boss4)
     createObserver(OBJECTDESTRUCTION, "axkvaMin", "bossFourKilled", boss4) 
+    writeData("axkvaMin:bossFourFightState", 0) 
+end
+
+function axkvaMin:boss4_damage(boss4, pPlayer)
+ 
+    local player = LuaCreatureObject(pPlayer)
+    local boss = LuaCreatureObject(boss4)
+    if ( boss ~= nil ) then
+      local bossHealth = boss:getHAM(0)
+      local bossAction = boss:getHAM(3)
+      local bossMind = boss:getHAM(6)
+      local bossMaxHealth = boss:getMaxHAM(0)
+      local bossMaxAction = boss:getMaxHAM(3)
+      local bossMaxMind = boss:getMaxHAM(6)
+   
+  
+      if (((bossHealth <= (bossMaxHealth *0.995))) and readData("axkvaMin:bossFourFightState") == 0) then
+      spatialChat(boss4, "You come this far and no further, the line must be drawn here.")
+        writeData("axkvaMin:bossFourFightState", 1)
+        CreatureObject(boss4):playEffect("clienteffect/pl_storm_lord_special.cef", "")
+        CreatureObject(boss4):playEffect("clienteffect/combat_pt_electricalfield.cef", "")
+        local pAdd1 = spawnMobile("dathomir", "nightsister_elder", 0, -42.2, 7.4, 11.3, -75, 480000333)
+        ObjectManager.withCreatureObject(pAdd1, function(firstAdd)
+        firstAdd:engageCombat(pPlayer)
+        end)
+        spatialChat(pAdd1, "Die!")         
+      end 
+      
+      if (((bossAction <= (bossMaxAction *0.3)))) then
+           CreatureObject(boss4):setHAM(3, bossMaxAction)
+           CreatureObject(boss4):playEffect("clienteffect/pl_force_channel_self.cef", "")
+           spatialChat(boss4, "My strength is renewed.  Thank you master!")   
+      end 
+      
+      if (((bossHealth <= (bossMaxHealth *0.75))) and readData("axkvaMin:bossFourFightState") == 1) then
+      spatialChat(boss4, "There is no way out for you but to embrace death.")
+        writeData("axkvaMin:bossFourFightState", 2)
+        local pAdd2 = spawnMobile("dathomir", "nightsister_elder", 0, -42.2, 7.4, 11.3, -75, 480000333)
+        ObjectManager.withCreatureObject(pAdd2, function(secondAdd)
+        secondAdd:engageCombat(pPlayer)
+        end)
+        spatialChat(pAdd2, "Die!")         
+      end
+      
+      if (((bossHealth <= (bossMaxHealth *0.50))) and readData("axkvaMin:bossFourFightState") == 2) then
+      spatialChat(boss4, "It will be over soon, give in to the inevitable!")
+        writeData("axkvaMin:bossFourFightState", 3)
+        local pAdd3 = spawnMobile("dathomir", "nightsister_elder", 0, -42.2, 7.4, 11.3, -75, 480000333)
+        ObjectManager.withCreatureObject(pAdd1, function(thirdAdd)
+        thirdAdd:engageCombat(pPlayer)
+        end)
+        spatialChat(pAdd3, "Die!")         
+      end  
+      
+      if (((bossHealth <= (bossMaxHealth *0.25))) and readData("axkvaMin:bossFourFightState") == 3) then
+      spatialChat(boss4, "Too long she has been denied, No more!  NO MORE!!!!")
+        CreatureObject(boss4):playEffect("clienteffect/pl_storm_lord_special.cef", "")
+        CreatureObject(boss4):playEffect("clienteffect/combat_pt_electricalfield.cef", "")
+        writeData("axkvaMin:bossFourFightState", 4)        
+      end
+      
+      if (((bossHealth <= (bossMaxHealth *0.1))) and readData("axkvaMin:bossFourFightState") == 4) then
+      spatialChat(boss4, "Axkva, it's up to you...")
+        writeData("axkvaMin:bossFourFightState", 5)        
+      end  
+      
+      if (((bossHealth <= (bossMaxHealth *0.1))) and readData("axkvaMin:bossFourFightState") == 5) then      
+        writeData("axkvaMin:bossFourFightState", 6)        
+      end
+    end
+    return 0
 end
 
 function axkvaMin:bossFourKilled(boss4)
@@ -486,7 +560,99 @@ end
 
 function axkvaMin:spawnBossRoomFive()
   local boss5 = spawnMobile("dathomir", "axkva_min", 0, -79, 17.8, 23.8, 99, 480000333)
+    createObserver(DAMAGERECEIVED,"axkvaMin","boss5_damage", boss5)
     createObserver(OBJECTDESTRUCTION, "axkvaMin", "bossFiveKilled", boss5) 
+    writeData("axkvaMin:bossFiveFightState", 0) 
+end
+
+function axkvaMin:boss5_damage(boss5, pPlayer)
+ 
+    local player = LuaCreatureObject(pPlayer)
+    local boss = LuaCreatureObject(boss5)
+    if ( boss ~= nil ) then
+      local bossHealth = boss:getHAM(0)
+      local bossAction = boss:getHAM(3)
+      local bossMind = boss:getHAM(6)
+      local bossMaxHealth = boss:getMaxHAM(0)
+      local bossMaxAction = boss:getMaxHAM(3)
+      local bossMaxMind = boss:getMaxHAM(6)
+   
+  
+      if (((bossHealth <= (bossMaxHealth *0.995))) and readData("axkvaMin:bossFiveFightState") == 0) then
+      spatialChat(boss5, "It seems that you have come all this way for nothing.  Death awaits you!")
+      CreatureObject(boss5):playEffect("clienteffect/pl_storm_lord_special.cef", "")
+      CreatureObject(boss5):playEffect("clienteffect/mustafar/som_dark_jedi_laugh.cef", "")
+        writeData("axkvaMin:bossFiveFightState", 1)        
+      end 
+      
+      if (((bossAction <= (bossMaxAction *0.3)))) then
+           CreatureObject(boss5):setHAM(3, bossMaxAction)
+           CreatureObject(boss5):playEffect("clienteffect/pl_force_meditate_self.cef", "")
+           spatialChat(boss5, "I am renewed!")   
+      end 
+      
+      if (((bossHealth <= (bossMaxHealth *0.75))) and readData("axkvaMin:bossFiveFightState") == 1) then
+      spatialChat(boss5, "Sisters, kill them! Kill them all!!!")
+        CreatureObject(boss5):playEffect("clienteffect/pl_storm_lord_special.cef", "")
+        CreatureObject(boss5):playEffect("clienteffect/combat_pt_electricalfield.cef", "")
+        
+        writeData("axkvaMin:bossFiveFightState", 2)                             
+        
+        local pCult1 = spawnMobile("dathomir", "nightsister_sentinel", 0, -43.7, 7.8, -6.6, -56, 480000333)
+          CreatureObject(pCult1):playEffect("clienteffect/pl_force_regain_consciousness_self.cef", "") 
+        local pCult2 = spawnMobile("dathomir", "nightsister_sentinel", 0, -41.3, 7.2, -3.1, -51, 480000333)
+          CreatureObject(pCult2):playEffect("clienteffect/pl_force_regain_consciousness_self.cef", "") 
+        local pCult3 = spawnMobile("dathomir", "nightsister_sentinel", 0, -39.5, 7.0, 0.5, -60, 480000333)
+          CreatureObject(pCult3):playEffect("clienteffect/pl_force_regain_consciousness_self.cef", "") 
+        local pCult4 = spawnMobile("dathomir", "nightsister_sentinel", 0, -37.4, 7.0, 4.5, -60, 480000333)
+          CreatureObject(pCult4):playEffect("clienteffect/pl_force_regain_consciousness_self.cef", "") 
+        local pCult5 = spawnMobile("dathomir", "nightsister_sentinel", 0, -36.4, 7.1, 8.6, -73, 480000333)
+          CreatureObject(pCult5):playEffect("clienteffect/pl_force_regain_consciousness_self.cef", "")       
+        local pCult6 = spawnMobile("dathomir", "nightsister_sentinel", 0, -36.2, 7.1, 11.3, -88, 480000333)
+          CreatureObject(pCult6):playEffect("clienteffect/pl_force_regain_consciousness_self.cef", "") 
+        local pCult7 = spawnMobile("dathomir", "nightsister_sentinel", 0, -36.8, 7.0, 15.1, -84, 480000333)
+          CreatureObject(pCult7):playEffect("clienteffect/pl_force_regain_consciousness_self.cef", "") 
+        local pCult8 = spawnMobile("dathomir", "nightsister_sentinel", 0, -37.3, 7.0, 19.0, -93, 480000333)
+          CreatureObject(pCult8):playEffect("clienteffect/pl_force_regain_consciousness_self.cef", "")      
+      end
+      
+      if (((bossHealth <= (bossMaxHealth *0.50))) and readData("axkvaMin:bossFiveFightState") == 2) then
+        CreatureObject(boss5):playEffect("clienteffect/pl_storm_lord_special.cef", "")
+        
+        writeData("axkvaMin:bossFiveFightState", 3)
+        local pAdd2 = spawnMobile("dathomir", "nightsister_elder", 0, -42.2, 7.4, 11.3, -75, 480000333)
+        ObjectManager.withCreatureObject(pAdd2, function(secondAdd)
+        secondAdd:engageCombat(pPlayer)
+        end)
+        spatialChat(pAdd2, "Your death will give life to the Mother!")
+        CreatureObject(pAdd2):playEffect("clienteffect/pl_force_regain_consciousness_self.cef", "")        
+      end  
+      
+      if (((bossHealth <= (bossMaxHealth *0.25))) and readData("axkvaMin:bossFiveFightState") == 3) then
+        CreatureObject(boss5):playEffect("clienteffect/pl_storm_lord_special.cef", "")
+        
+        spatialChat(boss5, "I have a surprise for you.")
+        writeData("axkvaMin:bossFiveFightState", 4)
+        local pAdd3 = spawnMobile("dathomir", "nightsister_elder", 0, -42.2, 7.4, 11.3, -75, 480000333)
+        ObjectManager.withCreatureObject(pAdd3, function(thirdAdd)
+        thirdAdd:engageCombat(pPlayer)
+        end)
+        spatialChat(pAdd3, "Mother, you are near now I feel it!") 
+        CreatureObject(pAdd3):playEffect("clienteffect/pl_force_regain_consciousness_self.cef", "")        
+      end
+      
+      if (((bossHealth <= (bossMaxHealth *0.1))) and readData("axkvaMin:bossFiveFightState") == 4) then
+      spatialChat(boss5, "You think this is over do you?  You think they were trying to free me?  No...  You'll see soon.  She is coming...")
+        CreatureObject(boss5):playEffect("clienteffect/pl_storm_lord_special.cef", "")
+        CreatureObject(boss5):playEffect("clienteffect/combat_pt_electricalfield.cef", "")       
+        writeData("axkvaMin:bossFiveFightState", 5)        
+      end  
+      
+      if (((bossHealth <= (bossMaxHealth *0.1))) and readData("axkvaMin:bossFiveFightState") == 5) then      
+        writeData("axkvaMin:bossFiveFightState", 6)        
+      end
+    end
+    return 0
 end
 
 function axkvaMin:bossFiveKilled(boss5, pPlayer)  -- TODO Use this function to reset the instance on success.   Delay by 30 seconds to allow looting time.
@@ -498,14 +664,97 @@ end
 
 function axkvaMin:spawnBossRoomSix()
   local boss6 = spawnMobile("dathomir", "mother_talzin", 0, -74.3, 16.0, 22.5, 97, 480000333)
+    spatialChat(boss6, "What... is this?  I.. am alive?  This is a surprise to be sure, but a welcome one.")
+    CreatureObject(boss6):playEffect("clienteffect/pl_force_regain_consciousness_self.cef", "")
     createObserver(OBJECTDESTRUCTION, "axkvaMin", "bossSixKilled", boss6) 
+    writeData("axkvaMin:bossSixFightState", 0) 
+end
+
+function axkvaMin:boss6_damage(boss6, pPlayer)
+ 
+    local player = LuaCreatureObject(pPlayer)
+    local boss = LuaCreatureObject(boss6)
+    if ( boss ~= nil ) then
+      local bossHealth = boss:getHAM(0)
+      local bossAction = boss:getHAM(3)
+      local bossMind = boss:getHAM(6)
+      local bossMaxHealth = boss:getMaxHAM(0)
+      local bossMaxAction = boss:getMaxHAM(3)
+      local bossMaxMind = boss:getMaxHAM(6)
+   
+  
+      if (((bossHealth <= (bossMaxHealth *0.99))) and readData("axkvaMin:bossSixFightState") == 0) then
+      spatialChat(boss6, "If you kneel before me now, I will end your life painlessly.  Refuse and there will be no end to your torment.")
+      CreatureObject(boss6):playEffect("clienteffect/pl_storm_lord_special.cef", "")
+      CreatureObject(boss6):playEffect("clienteffect/mustafar/som_dark_jedi_laugh.cef", "")
+        writeData("axkvaMin:bossSixFightState", 1)        
+      end 
+      
+      if (((bossAction <= (bossMaxAction *0.3)))) then
+           CreatureObject(boss6):setHAM(3, bossMaxAction)
+           CreatureObject(boss6):playEffect("clienteffect/pl_force_meditate_self.cef", "")
+           spatialChat(boss6, "Behold my endless power!")   
+      end 
+      
+      if (((bossHealth <= (bossMaxHealth *0.75))) and readData("axkvaMin:bossSixFightState") == 1) then
+      spatialChat(boss6, "My children, rise again and fight for your mother!")
+        CreatureObject(boss6):playEffect("clienteffect/pl_storm_lord_special.cef", "")
+        CreatureObject(boss6):playEffect("clienteffect/combat_pt_electricalfield.cef", "")
+        CreatureObject(boss6):playEffect("clienteffect/mustafar/som_dark_jedi_laugh.cef", "")
+        writeData("axkvaMin:bossSixFightState", 2)                             
+        
+        local pCult1 = spawnMobile("dathomir", "nandina", 0, -43.7, 7.8, -6.6, -56, 480000333)
+          CreatureObject(pCult1):playEffect("clienteffect/pl_force_regain_consciousness_self.cef", "")
+          spatialChat(pCult1, "Yes mother!") 
+        local pCult2 = spawnMobile("dathomir", "lelli_hi", 0, -41.3, 7.2, -3.1, -51, 480000333)
+          CreatureObject(pCult2):playEffect("clienteffect/pl_force_regain_consciousness_self.cef", "")
+          spatialChat(pCult1, "Yes mother!") 
+        local pCult3 = spawnMobile("dathomir", "kimaru", 0, -39.5, 7.0, 0.5, -60, 480000333)
+          CreatureObject(pCult3):playEffect("clienteffect/pl_force_regain_consciousness_self.cef", "")
+          spatialChat(pCult1, "Yes mother!") 
+        local pCult4 = spawnMobile("dathomir", "suin_chalo", 0, -37.4, 7.0, 4.5, -60, 480000333)
+          CreatureObject(pCult4):playEffect("clienteffect/pl_force_regain_consciousness_self.cef", "") 
+          spatialChat(pCult1, "Yes mother!")
+        local pCult5 = spawnMobile("dathomir", "axkva_min", 0, -36.4, 7.1, 8.6, -73, 480000333)
+          CreatureObject(pCult5):playEffect("clienteffect/pl_force_regain_consciousness_self.cef", "")
+          spatialChat(pCult1, "Yes mother!")
+        
+             
+      end
+      
+      if (((bossHealth <= (bossMaxHealth *0.50))) and readData("axkvaMin:bossSixFightState") == 2) then
+        CreatureObject(boss6):playEffect("clienteffect/pl_storm_lord_special.cef", "")
+        CreatureObject(boss6):playEffect("clienteffect/mustafar/som_dark_jedi_laugh.cef", "")
+        writeData("axkvaMin:bossSixFightState", 3)              
+      end  
+      
+      if (((bossHealth <= (bossMaxHealth *0.25))) and readData("axkvaMin:bossSixFightState") == 3) then
+        CreatureObject(boss6):playEffect("clienteffect/pl_storm_lord_special.cef", "")
+        CreatureObject(boss6):playEffect("clienteffect/mustafar/som_dark_jedi_laugh.cef", "")
+        spatialChat(boss6, "This is not possible. I am weakening!")
+        writeData("axkvaMin:bossSixFightState", 4)             
+      end
+      
+      if (((bossHealth <= (bossMaxHealth *0.1))) and readData("axkvaMin:bossSixFightState") == 4) then
+      spatialChat(boss6, "No, it can not end.  It can't!")
+        CreatureObject(boss6):playEffect("clienteffect/pl_storm_lord_special.cef", "")
+        CreatureObject(boss6):playEffect("clienteffect/combat_pt_electricalfield.cef", "")
+        CreatureObject(boss6):playEffect("clienteffect/mustafar/som_dark_jedi_laugh.cef", "")
+        writeData("axkvaMin:bossSixFightState", 5)        
+      end  
+      
+      if (((bossHealth <= (bossMaxHealth *0.1))) and readData("axkvaMin:bossSixFightState") == 5) then      
+        writeData("axkvaMin:bossSixFightState", 6)        
+      end
+    end
+    return 0
 end
 
 function axkvaMin:bossSixKilled(boss6, pPlayer)  -- TODO Use this function to reset the instance on success.   Delay by 30 seconds to allow looting time.
     writeData("axkvaMin:bossSixDead", 1) 
-    CreatureObject(pPlayer):sendSystemMessage("You and your group have defeated Mother Talzin! This instance will close in 60 seconds.")  
+    CreatureObject(pPlayer):sendSystemMessage("You and your group have defeated Mother Talzin! This instance will close in 120 seconds.")  
     createEvent(1000, "axkvaMin", "awardBadgeToAll", pPlayer, "")
-    createEvent(60000, "axkvaMin", "handleVictory", pPlayer, "")
+    createEvent(120000, "axkvaMin", "handleVictory", pPlayer, "")
   return 0
 end
 
