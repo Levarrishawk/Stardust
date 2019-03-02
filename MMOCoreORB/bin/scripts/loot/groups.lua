@@ -473,7 +473,7 @@ includeFile("groups/weapon/dungeon/elite_weapons.lua")
 includeFile("groups/dungeon/exar_kun/nge_jedi_cloaks.lua")
 includeFile("groups/dungeon/exar_kun/jedi_house_deeds.lua")
 includeFile("groups/dungeon/exar_kun/exar_kun_furniture.lua")
-
+includeFile("groups/dungeon/axkva_min/ns_clothing.lua")
 
 -- Race Tracks
 includeFile("groups/race_tracks/mos_espa.lua")

@@ -41,39 +41,13 @@
 --this exception also makes it possible to release a modified version
 
 
-object_draft_schematic_clothing_clothing_ns_hat_s01 = object_draft_schematic_clothing_shared_clothing_ns_hat_s01:new {
-
-   templateType = DRAFTSCHEMATIC,
-
-   customObjectName = "Nightsister Aerie Stalker Hood",
-
-   craftingToolTab = 8, -- (See DraftSchematicObjectTemplate.h)
-   complexity = 1,
-   size = 4,
-
-   xpType = "crafting_clothing_general",
-   xp = 160,
-
-   assemblySkill = "clothing_assembly",
-   experimentingSkill = "clothing_experimentation",
-   customizationSkill = "clothing_customization",
-
-   customizationOptions = {2, 1},
-   customizationStringNames = {"/private/index_color_1", "/private/index_color_2"},
-   customizationDefaults = {55, 41},
-
-   ingredientTemplateNames = {"craft_clothing_ingredients_n", "craft_clothing_ingredients_n", "craft_clothing_ingredients_n", "craft_clothing_ingredients_n", "craft_clothing_ingredients_n", "craft_clothing_ingredients_n"},
-   ingredientTitleNames = {"trim_and_binding", "trim", "rancor_hide", "hardware", "skirt", "bodice"},
-   ingredientSlotType = {0, 1, 1, 0, 1, 1},
-   resourceTypes = {"bone", "object/tangible/component/clothing/shared_trim.iff", "object/tangible/component/clothing/shared_synthetic_cloth.iff", "metal", "object/tangible/component/clothing/shared_synthetic_cloth.iff", "object/tangible/component/clothing/shared_synthetic_cloth.iff"},
-   resourceQuantities = {14, 2, 3, 8, 3, 1},
-   contribution = {100, 100, 100, 100, 100, 100},
-
-
-   targetTemplate = "object/tangible/wearables/hat/nightsister_hat_s01.iff",
-
-   additionalTemplates = {
-             }
-
+object_tangible_loot_loot_schematic_ns_shirt_s01_schematic = object_tangible_loot_loot_schematic_shared_ns_shirt_s01_schematic:new {
+	templateType = LOOTSCHEMATIC,
+	objectMenuComponent = "LootSchematicMenuComponent",
+	attributeListComponent = "LootSchematicAttributeListComponent",
+	requiredSkill = "crafting_tailor_master",
+	targetDraftSchematic = "object/draft_schematic/clothing/clothing_shirt_nightsister_s01.iff",
+	targetUseCount = 1,
 }
-ObjectTemplates:addTemplate(object_draft_schematic_clothing_clothing_ns_hat_s01, "object/draft_schematic/clothing/clothing_hat_nightsister_s01.iff")
+
+ObjectTemplates:addTemplate(object_tangible_loot_loot_schematic_ns_shirt_s01_schematic, "object/tangible/loot/loot_schematic/ns_shirt_s01_schematic.iff")

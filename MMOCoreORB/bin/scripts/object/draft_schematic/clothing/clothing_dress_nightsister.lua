@@ -41,21 +41,39 @@
 --this exception also makes it possible to release a modified version 
 
 
-object_tangible_wearables_hat_nightsister_hat_s03 = object_tangible_wearables_hat_shared_nightsister_hat_s03:new {
-	playerRaces = { "object/creature/player/human_female.iff",
-        "object/creature/player/zabrak_female.iff",
-        "object/mobile/vendor/human_female.iff",
-        "object/mobile/vendor/zabrak_female.iff" },
-        
-  numberExperimentalProperties = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
-  experimentalProperties = {"XX", "XX", "XX", "XX", "XX", "XX", "XX", "XX", "XX", "XX", "XX", "XX", "XX", "XX", "XX", "XX"},
-  experimentalWeights = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
-  experimentalGroupTitles = {"null", "null", "null", "null", "null", "null", "null", "null", "null", "null", "null", "null", "null", "null", "null", "null"},
-  experimentalSubGroupTitles = {"null", "null", "sockets", "hitpoints", "mod_idx_one", "mod_val_one", "mod_idx_two", "mod_val_two", "mod_idx_three", "mod_val_three", "mod_idx_four", "mod_val_four", "mod_idx_five", "mod_val_five", "mod_idx_six", "mod_val_six"},
-  experimentalMin = {0, 0, 0, 1000, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-  experimentalMax = {0, 0, 0, 1000, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-  experimentalPrecision = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-  experimentalCombineType = {0, 0, 4, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
-}
+object_draft_schematic_clothing_clothing_dress_nightsister = object_draft_schematic_clothing_shared_clothing_dress_nightsister:new {
 
-ObjectTemplates:addTemplate(object_tangible_wearables_hat_nightsister_hat_s03, "object/tangible/wearables/hat/nightsister_hat_s03.iff")
+   templateType = DRAFTSCHEMATIC,
+
+   customObjectName = "Nightsister Dress",
+
+   craftingToolTab = 8, -- (See DraftSchematicObjectTemplate.h)
+   complexity = 1, 
+   size = 3, 
+
+   xpType = "crafting_clothing_general", 
+   xp = 75, 
+
+   assemblySkill = "clothing_assembly", 
+   experimentingSkill = "clothing_experimentation", 
+   customizationSkill = "clothing_customization", 
+
+   customizationOptions = {2, 1},
+   customizationStringNames = {"/private/index_color_1", "/private/index_color_2"},
+   customizationDefaults = {125, 131},
+
+   ingredientTemplateNames = {"craft_clothing_ingredients_n", "craft_clothing_ingredients_n", "craft_clothing_ingredients_n", "craft_clothing_ingredients_n", "craft_clothing_ingredients_n"},
+   ingredientTitleNames = {"trim_and_binding", "extra_trim", "hardware", "skirt", "bodice"},
+   ingredientSlotType = {0, 1, 1, 1, 1},
+   resourceTypes = {"fiberplast", "object/tangible/component/clothing/shared_synthetic_cloth.iff", "object/tangible/component/clothing/shared_metal_fasteners.iff", "object/tangible/component/clothing/shared_synthetic_cloth.iff", "object/tangible/component/clothing/shared_synthetic_cloth.iff"},
+   resourceQuantities = {30, 1, 1, 1, 2},
+   contribution = {100, 100, 100, 100, 100},
+
+
+   targetTemplate = "object/tangible/wearables/dress/nightsister_dress.iff",
+
+   additionalTemplates = {
+             }
+
+}
+ObjectTemplates:addTemplate(object_draft_schematic_clothing_clothing_dress_nightsister, "object/draft_schematic/clothing/clothing_dress_nightsister.iff")

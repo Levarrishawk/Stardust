@@ -1816,16 +1816,27 @@ schematics = {
 	{path="object/draft_schematic/item/quest_item/fs_medic_puzzle_heal_pack.iff"},
 	{path="object/draft_schematic/structure/component/structure_ore_mining_unit_advanced.iff"},
 	{path="object/draft_schematic/structure/installation_mining_ore_advanced.iff"},
+	
 	{path="object/draft_schematic/clothing/clothing_hat_nightsister_s01.iff"},
 	{path="object/draft_schematic/clothing/clothing_hat_nightsister_s02.iff"},
 	{path="object/draft_schematic/clothing/clothing_hat_nightsister_s03.iff"},
+	
 	{path="object/draft_schematic/clothing/clothing_pants_nightsister_s01.iff"},
 	{path="object/draft_schematic/clothing/clothing_pants_nightsister_s02.iff"},
+	{path="object/draft_schematic/clothing/clothing_pants_nightsister_01.iff"},
+  {path="object/draft_schematic/clothing/clothing_pants_nightsister_02.iff"},
+	
 	{path="object/draft_schematic/clothing/clothing_shirt_nightsister_s01.iff"},
 	{path="object/draft_schematic/clothing/clothing_shirt_nightsister_s02.iff"},
 	{path="object/draft_schematic/clothing/clothing_shirt_nightsister_s03.iff"},
+	
+	{path="object/draft_schematic/clothing/clothing_shirt_nightsister_01.iff"},
+  {path="object/draft_schematic/clothing/clothing_shirt_nightsister_02.iff"},
+  {path="object/draft_schematic/clothing/clothing_shirt_nightsister_03.iff"},
+	
 	{path="object/draft_schematic/clothing/clothing_boots_nightsister.iff"},
 	{path="object/draft_schematic/clothing/clothing_dress_nightsister.iff"},
+	
 	{path="object/draft_schematic/item/clothing_sea_removal_tool.iff"},
 	{path="object/draft_schematic/vehicle/civilian/flare_s_swoop_crafted.iff"},
 	{path="object/draft_schematic/vehicle/civilian/barc_speeder.iff"},

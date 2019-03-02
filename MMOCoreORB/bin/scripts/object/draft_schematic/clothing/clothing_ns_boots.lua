@@ -63,7 +63,7 @@ object_draft_schematic_clothing_clothing_ns_boots = object_draft_schematic_cloth
    ingredientTemplateNames = {"craft_clothing_ingredients_n", "craft_clothing_ingredients_n", "craft_clothing_ingredients_n", "craft_clothing_ingredients_n", "craft_clothing_ingredients_n", "craft_clothing_ingredients_n"},
    ingredientTitleNames = {"trim_and_binding", "trim", "rancor_hide", "hardware", "skirt", "bodice"},
    ingredientSlotType = {0, 1, 1, 0, 1, 1},
-   resourceTypes = {"bone_mammal_dathomir", "object/tangible/component/clothing/shared_trim.iff", "object/tangible/component/armor/shared_armor_segment_enhancement_rancor.iff", "metal", "object/tangible/component/clothing/shared_synthetic_cloth.iff", "object/tangible/component/clothing/shared_synthetic_cloth.iff"},
+   resourceTypes = {"bone", "object/tangible/component/clothing/shared_trim.iff", "object/tangible/component/clothing/shared_synthetic_cloth.iff", "metal", "object/tangible/component/clothing/shared_synthetic_cloth.iff", "object/tangible/component/clothing/shared_synthetic_cloth.iff"},
    resourceQuantities = {14, 6, 1, 6, 2, 1},
    contribution = {100, 100, 100, 100, 100, 100},
 

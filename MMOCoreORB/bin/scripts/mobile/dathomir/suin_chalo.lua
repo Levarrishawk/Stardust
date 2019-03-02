@@ -8,8 +8,8 @@ suin_chalo = Creature:new {
 	damageMin = 500,
 	damageMax = 700,
 	baseXp = 14789,
-	baseHAM = 75000,
-	baseHAMmax = 90000,
+	baseHAM = 100000,
+	baseHAMmax = 110000,
 	armor = 1,
 	-- {kinetic,energy,blast,heat,cold,electricity,acid,stun,ls}
 	resists = {15,75,15,75,75,75,75,75,-1},

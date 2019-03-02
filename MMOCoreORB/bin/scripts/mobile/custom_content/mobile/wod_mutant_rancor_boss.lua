@@ -2,15 +2,15 @@ wod_mutant_rancor_boss = Creature:new {
 	customName = "Borvo",
 	socialGroup = "nightsister",
   faction = "nightsister",
-	level = 4,
+	level = 400,
 	chanceHit = 0.24,
 	damageMin = 1400,
-	damageMax = 1845,
-	baseXp = 62,
-	baseHAM = 110003,
-	baseHAMmax = 110008,
-	armor = 0,
-	resists = {0,0,0,0,0,0,0,-1,-1},
+	damageMax = 2250,
+	baseXp = 62000,
+	baseHAM = 200000,
+	baseHAMmax = 200000,
+	armor = 3,
+	resists = {100,30,30,50,50,50,50,75,35},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -20,17 +20,22 @@ wod_mutant_rancor_boss = Creature:new {
 	milk = 0,
 	tamingChance = 0,
 	ferocity = 0,
-	pvpBitmask = NONE,
-	creatureBitmask = NONE,
-	optionsBitmask = AIENABLED,
-	diet = HERBIVORE,
+	pvpBitmask = AGGRESSIVE + ATTACKABLE + ENEMY,
+  creatureBitmask = PACK + KILLER,
+  optionsBitmask = AIENABLED,
+  diet = HERBIVORE,
 
 	templates = {"object/mobile/wod_mutant_rancor_boss.iff"},
 	lootGroups = {},
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-	}
+    {"creatureareableeding",""},
+    {"creatureareacombo","stateAccuracyBonus=100"},
+    {"creatureareaknockdown","stateAccuracyBonus=100"},
+    {"strongpoison",""},
+    {"dizzyattack",""}
+  }
 }
 
 CreatureTemplates:addCreatureTemplate(wod_mutant_rancor_boss, "wod_mutant_rancor_boss")
