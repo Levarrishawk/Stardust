@@ -126,9 +126,9 @@ mother_talzin = Creature:new {
     }, 
     {
       groups = {
-        {group = "exar_kun_furniture", chance = 10000000},       
+        {group = "ns_clothing", chance = 10000000},       
       },
-      lootChance = 5000000,
+      lootChance = 2000000,
     }, 
     {
       groups = {
