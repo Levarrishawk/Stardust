@@ -688,7 +688,7 @@ function axkvaMin:boss6_damage(boss6, pPlayer)
       if (((bossHealth <= (bossMaxHealth *0.99))) and readData("axkvaMin:bossSixFightState") == 0) then
       spatialChat(boss6, "Pitiful brutes. You will understand true power.")
       CreatureObject(boss6):playEffect("clienteffect/pl_storm_lord_special.cef", "")
-      CreatureObject(boss6):playEffect("clienteffect/mustafar/som_dark_jedi_laugh.cef", "")
+      
         writeData("axkvaMin:bossSixFightState", 1)        
       end 
       
@@ -702,37 +702,37 @@ function axkvaMin:boss6_damage(boss6, pPlayer)
       spatialChat(boss6, "My daughters, rise again and fight for your mother!")
         CreatureObject(boss6):playEffect("clienteffect/pl_storm_lord_special.cef", "")
         CreatureObject(boss6):playEffect("clienteffect/combat_pt_electricalfield.cef", "")
-        CreatureObject(boss6):playEffect("clienteffect/mustafar/som_dark_jedi_laugh.cef", "")
+        
         writeData("axkvaMin:bossSixFightState", 2)                             
         
-        local pCult1 = spawnMobile("dathomir", "nandina", 0, -43.7, 7.8, -6.6, -56, 480000333)
+        local pCult1 = spawnMobile("dathomir", "nandina", 0, -53.9, 9.8, 13.0, -51, 480000333)
           CreatureObject(pCult1):playEffect("clienteffect/pl_force_regain_consciousness_self.cef", "")
           spatialChat(pCult1, "Yes mother!") 
-        local pCult2 = spawnMobile("dathomir", "lelli_hi", 0, -41.3, 7.2, -3.1, -51, 480000333)
+        local pCult2 = spawnMobile("dathomir", "lelli_hi", 0, -63.4, 11.8, 8.3, 67, 480000333)
           CreatureObject(pCult2):playEffect("clienteffect/pl_force_regain_consciousness_self.cef", "")
-          spatialChat(pCult1, "Yes mother!") 
-        local pCult3 = spawnMobile("dathomir", "kimaru", 0, -39.5, 7.0, 0.5, -60, 480000333)
+          spatialChat(pCult2, "Yes mother!") 
+        local pCult3 = spawnMobile("dathomir", "kimaru", 0, -53.8, 11.5, 23.7, -116, 480000333)
           CreatureObject(pCult3):playEffect("clienteffect/pl_force_regain_consciousness_self.cef", "")
-          spatialChat(pCult1, "Yes mother!") 
-        local pCult4 = spawnMobile("dathomir", "suin_chalo", 0, -37.4, 7.0, 4.5, -60, 480000333)
+          spatialChat(pCult3, "Yes mother!") 
+        local pCult4 = spawnMobile("dathomir", "suin_chalo", 0, -49.6 9.3, 18.0, -60, 480000333)
           CreatureObject(pCult4):playEffect("clienteffect/pl_force_regain_consciousness_self.cef", "") 
-          spatialChat(pCult1, "Yes mother!")
-        local pCult5 = spawnMobile("dathomir", "axkva_min", 0, -36.4, 7.1, 8.6, -73, 480000333)
+          spatialChat(pCult4, "Yes mother!")
+        local pCult5 = spawnMobile("dathomir", "axkva_min", 0, -70.8, 14.4, 17.6, 69, 480000333)
           CreatureObject(pCult5):playEffect("clienteffect/pl_force_regain_consciousness_self.cef", "")
-          spatialChat(pCult1, "Yes mother!")
+          spatialChat(pCult5, "Yes mother!")
         
              
       end
       
       if (((bossHealth <= (bossMaxHealth *0.50))) and readData("axkvaMin:bossSixFightState") == 2) then
         CreatureObject(boss6):playEffect("clienteffect/pl_storm_lord_special.cef", "")
-        CreatureObject(boss6):playEffect("clienteffect/mustafar/som_dark_jedi_laugh.cef", "")
+        
         writeData("axkvaMin:bossSixFightState", 3)              
       end  
       
       if (((bossHealth <= (bossMaxHealth *0.25))) and readData("axkvaMin:bossSixFightState") == 3) then
         CreatureObject(boss6):playEffect("clienteffect/pl_storm_lord_special.cef", "")
-        CreatureObject(boss6):playEffect("clienteffect/mustafar/som_dark_jedi_laugh.cef", "")
+        
         spatialChat(boss6, "This is not possible. I am weakening!")
         writeData("axkvaMin:bossSixFightState", 4)             
       end
@@ -741,7 +741,7 @@ function axkvaMin:boss6_damage(boss6, pPlayer)
       spatialChat(boss6, "No, it can not end.  It can't!")
         CreatureObject(boss6):playEffect("clienteffect/pl_storm_lord_special.cef", "")
         CreatureObject(boss6):playEffect("clienteffect/combat_pt_electricalfield.cef", "")
-        CreatureObject(boss6):playEffect("clienteffect/mustafar/som_dark_jedi_laugh.cef", "")
+        
         writeData("axkvaMin:bossSixFightState", 5)        
       end  
       
