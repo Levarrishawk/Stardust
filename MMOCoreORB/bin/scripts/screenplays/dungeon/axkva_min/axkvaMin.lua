@@ -252,7 +252,19 @@ function axkvaMin:boss1_damage(boss1, pPlayer)
       local bossMaxHealth = boss:getMaxHAM(0)
       local bossMaxAction = boss:getMaxHAM(3)
       local bossMaxMind = boss:getMaxHAM(6)
+      
+      local x1 = -79.5
+      local y1 = 23.4
+      local x2 = boss:getPositionX()
+      local y2 = boss:getPositionY()
+       
+      local distance = ((x2 - x1)*(x2 - x1)) + ((y2 - y1)*(y2 - y1))
+      local maxDistance = 32
    
+     if distance > (maxDistance * maxDistance) then
+      spatialChat(boss1, "Cowards, you face me before the crystal or not at all!")
+      forcePeace(boss1)
+     end 
   
       if (((bossHealth <= (bossMaxHealth *0.995))) and readData("axkvaMin:bossOneFightState") == 0) then
       spatialChat(boss1, "Why have you come here? Did our sisters send you? What did you think you would find here other than your own deaths!")
@@ -323,6 +335,19 @@ function axkvaMin:boss2_damage(boss2, pPlayer)
       local bossMaxHealth = boss:getMaxHAM(0)
       local bossMaxAction = boss:getMaxHAM(3)
       local bossMaxMind = boss:getMaxHAM(6)
+      
+      local x1 = -79.5
+      local y1 = 23.4
+      local x2 = boss:getPositionX()
+      local y2 = boss:getPositionY()
+       
+      local distance = ((x2 - x1)*(x2 - x1)) + ((y2 - y1)*(y2 - y1))
+      local maxDistance = 32
+   
+     if distance > (maxDistance * maxDistance) then
+      spatialChat(boss2, "Cowards, you face me before the crystal or not at all!")
+      forcePeace(boss2)
+     end 
    
   
       if (((bossHealth <= (bossMaxHealth *0.99))) and readData("axkvaMin:bossTwoFightState") == 0) then
@@ -429,6 +454,19 @@ function axkvaMin:boss3_damage(boss3, pPlayer)
       local bossMaxHealth = boss:getMaxHAM(0)
       local bossMaxAction = boss:getMaxHAM(3)
       local bossMaxMind = boss:getMaxHAM(6)
+      
+      local x1 = -79.5
+      local y1 = 23.4
+      local x2 = boss:getPositionX()
+      local y2 = boss:getPositionY()
+       
+      local distance = ((x2 - x1)*(x2 - x1)) + ((y2 - y1)*(y2 - y1))
+      local maxDistance = 32
+   
+     if distance > (maxDistance * maxDistance) then
+      spatialChat(boss3, "Cowards, you face me before the crystal or not at all!")
+      forcePeace(boss3)
+     end 
    
   
       if (((bossHealth <= (bossMaxHealth *0.99))) and readData("axkvaMin:bossThreeFightState") == 0) then
@@ -530,6 +568,19 @@ function axkvaMin:boss4_damage(boss4, pPlayer)
       local bossMaxHealth = boss:getMaxHAM(0)
       local bossMaxAction = boss:getMaxHAM(3)
       local bossMaxMind = boss:getMaxHAM(6)
+      
+      local x1 = -79.5
+      local y1 = 23.4
+      local x2 = boss:getPositionX()
+      local y2 = boss:getPositionY()
+       
+      local distance = ((x2 - x1)*(x2 - x1)) + ((y2 - y1)*(y2 - y1))
+      local maxDistance = 32
+   
+     if distance > (maxDistance * maxDistance) then
+      spatialChat(boss4, "Cowards, you face me before the crystal or not at all!")
+      forcePeace(boss4)
+     end 
    
   
       if (((bossHealth <= (bossMaxHealth *0.995))) and readData("axkvaMin:bossFourFightState") == 0) then
@@ -630,6 +681,19 @@ function axkvaMin:boss5_damage(boss5, pPlayer)
       local bossMaxHealth = boss:getMaxHAM(0)
       local bossMaxAction = boss:getMaxHAM(3)
       local bossMaxMind = boss:getMaxHAM(6)
+      
+      local x1 = -79.5
+      local y1 = 23.4
+      local x2 = boss:getPositionX()
+      local y2 = boss:getPositionY()
+       
+      local distance = ((x2 - x1)*(x2 - x1)) + ((y2 - y1)*(y2 - y1))
+      local maxDistance = 32
+   
+     if distance > (maxDistance * maxDistance) then
+      spatialChat(boss5, "Cowards, you face me before the crystal or not at all!")
+      forcePeace(boss5)
+     end 
    
   
       if (((bossHealth <= (bossMaxHealth *0.995))) and readData("axkvaMin:bossFiveFightState") == 0) then
@@ -767,6 +831,19 @@ function axkvaMin:boss6_damage(boss6, pPlayer)
       local bossMaxHealth = boss:getMaxHAM(0)
       local bossMaxAction = boss:getMaxHAM(3)
       local bossMaxMind = boss:getMaxHAM(6)
+      
+      local x1 = -79.5
+      local y1 = 23.4
+      local x2 = boss:getPositionX()
+      local y2 = boss:getPositionY()
+       
+      local distance = ((x2 - x1)*(x2 - x1)) + ((y2 - y1)*(y2 - y1))
+      local maxDistance = 32
+   
+     if distance > (maxDistance * maxDistance) then
+      spatialChat(boss6, "Cowards, you face me before the crystal or not at all!")
+      forcePeace(boss6)
+     end 
    
   
       if (((bossHealth <= (bossMaxHealth *0.99))) and readData("axkvaMin:bossSixFightState") == 0) then
