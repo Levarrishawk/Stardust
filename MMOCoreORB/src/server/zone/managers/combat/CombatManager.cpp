@@ -862,7 +862,7 @@ float CombatManager::getDefenderToughnessModifier(CreatureObject* defender, int 
 
 	int jediToughness = defender->getSkillMod("jedi_toughness");
 	if (jediToughness > 0)   //jedi toughness will affect all damage types
-		damage *= 1.f - (jediToughness / 150.f);
+		damage *= 1.f - (jediToughness / 100.f);
 
 	return damage < 0 ? 0 : damage;
 }

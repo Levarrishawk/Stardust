@@ -56,17 +56,6 @@ SaberSlash1Command = {
 	  DotEffect(
 		BLEEDING,
 		{ "resistance_bleeding", "bleed_resist" },
-		HEALTH,
-		true,
-		0,
-    40,
-    1, 
-    15
-	  ),
-
-	  	DotEffect(
-		BLEEDING,
-		{ "resistance_bleeding", "bleed_resist" },
 		ACTION,
 		true,
 		0,
