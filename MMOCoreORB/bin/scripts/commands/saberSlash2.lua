@@ -54,18 +54,7 @@ SaberSlash2Command = {
 	visMod = 25,
 
 	dotEffects = {
-    DotEffect(
-    BLEEDING,
-    { "resistance_bleeding", "bleed_resist" },
-    HEALTH,
-    true,
-    0,
-    40,
-    1, 
-    15
-    ),
-
-      DotEffect(
+    DotEffect(  
     BLEEDING,
     { "resistance_bleeding", "bleed_resist" },
     ACTION,

@@ -20,6 +20,10 @@ function elysium_teleportation_network:spawnSceneObjects()
 --Entry
   spawnSceneObject("yavin4", "object/tangible/terminal/terminal_elysium_crystal_01.iff", -11.5, -19.3, 38.3, 8525439, math.rad(0) )
   spawnSceneObject("yavin4", "object/static/structure/general/streetlamp_small_blue_style_01_on.iff", -11.5, -19.3, 38.3, 8525439, math.rad(0) )
+  spawnSceneObject("yavin4", "object/tangible/furniture/jedi/frn_all_banner_light_s02.iff", -6.75628, -14.65, 41.2188, 8525439, math.rad(-11) ) 
+  spawnSceneObject("yavin4", "object/tangible/furniture/jedi/frn_all_banner_light_s02.iff", 6.73885, -14.65, 41.2275, 8525439, math.rad(10) ) 
+  
+  
   
   spawnSceneObject("yavin4", "object/tangible/terminal/terminal_elysium_crystal_01.iff", 0.0, -43.4, -27.6, 3435634, math.rad(0) )
   spawnSceneObject("yavin4", "object/static/structure/general/streetlamp_small_blue_style_01_on.iff", 0.0, -43.4, -27.6, 3435634, math.rad(0) )
