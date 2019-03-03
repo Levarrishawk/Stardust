@@ -23,7 +23,8 @@ object_tangible_wearables_robe_robe_s32 = object_tangible_wearables_robe_shared_
 				skillMods = {
 				    {"jedi_force_power_max", 300},
 				    {"jedi_force_power_regen", 20},
-				    {"forcelightning_accuracy", 10}
+				    {"forcelightning_accuracy", 15},
+				    {"lightsaber_toughness", 10}
 				},
 
 				noTrade = 0,

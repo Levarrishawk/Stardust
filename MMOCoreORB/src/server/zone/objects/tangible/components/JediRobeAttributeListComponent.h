@@ -43,6 +43,11 @@ public:
 			alm->insertAttribute("forcelightning_accuracy", "+" + String::valueOf(mod));
 		}
 
+		if (skills->contains("forceintimidate_accuracy")) {
+			int mod = skills->get("forceintimidate_accuracy");
+			alm->insertAttribute("forceintimidate_accuracy", "+" + String::valueOf(mod));
+		}
+
 		if (skills->contains("force_power_light")) {
 			int mod = skills->get("force_power_light");
 			alm->insertAttribute("force_power_light", "+" + String::valueOf(mod));

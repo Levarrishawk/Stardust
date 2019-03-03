@@ -23,7 +23,8 @@ object_tangible_wearables_robe_robe_s33_h1 = object_tangible_wearables_robe_shar
         skillMods = {
             {"jedi_force_power_max", 300},
             {"jedi_force_power_regen", 20},
-            {"lightsaber_toughness", 20}
+            {"lightsaber_toughness", 10},
+            {"forceintimidate_accuracy", 15}
         },
 
         noTrade = 0,
