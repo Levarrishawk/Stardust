@@ -3,7 +3,7 @@ kell_dragon = Creature:new {
 	customName = "a Kell Dragon",
 	socialGroup = "krayt",
 	faction = "",
-	level = 275,
+	level = 375,
 	chanceHit = 27.25,
 	damageMin = 520,
 	damageMax = 1250,
@@ -31,22 +31,12 @@ kell_dragon = Creature:new {
 	lootGroups = {
 		{
 	        groups = {
-				{group = "krayt_tissue_rare", chance = 3300000},
-        {group = "krayt_dragon_common", chance = 3300000},
-        {group = "krayt_pearls", chance = 3400000}			
+				{group = "krayt_tissue_rare", chance = 2000000},
+        {group = "krayt_dragon_common", chance = 7000000},
+        {group = "krayt_pearls", chance = 1000000}			
 			},
 			lootChance = 10000000
 		},
-		{
-	        groups = {
-				{group = "composite_armor", chance = 2000000},
-				{group = "ubese_armor", chance = 2000000},
-				{group = "melee_two_handed", chance = 2000000},
-				{group = "rifles", chance = 2000000},
-				{group = "wearables_scarce", chance = 2000000},				
-			},
-			lootChance = 25000000
-		}
 	},
 	weapons = {},
 	conversationTemplate = "",
