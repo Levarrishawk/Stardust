@@ -1660,4 +1660,6 @@ includeFile("items/furniture/decorative_shield_generator_blueprint.lua") --
 includeFile("items/furniture/decorative_torture_table.lua") --
 includeFile("items/furniture/vader_pod.lua") --
 
+-- Buff Droid
+includeFile("items/buff_droid.lua") --
 

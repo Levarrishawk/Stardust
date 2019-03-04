@@ -488,3 +488,6 @@ includeFile("groups/race_tracks/lothal_track.lua")
 
 --BH Armor Schematics
 includeFile("groups/death_watch_bunker/death_watch_bh_armor_schematics.lua")
+
+-- Buff Droid (Axkva Min Exclusive)
+includeFile("groups/buff_droid.lua")
