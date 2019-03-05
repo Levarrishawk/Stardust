@@ -31,7 +31,17 @@ mother_talzin = Creature:new {
     {
       groups = {
         {group = "crystal_mauls_vengeance", chance = 2000000},
-        {group = "nge_jedi_cloaks", chance = 2000000},
+        {group = "nightsister_common", chance = 2000000},
+        {group = "nightsister_common", chance = 2000000},
+        {group = "clothing_attachments", chance = 2000000},
+        {group = "armor_attachments", chance = 2000000},
+      },
+      lootChance = 10000000,
+    },
+    {
+      groups = {
+        {group = "crystal_mauls_vengeance", chance = 2000000},
+        {group = "nightsister_common", chance = 2000000},
         {group = "nightsister_common", chance = 2000000},
         {group = "clothing_attachments", chance = 2000000},
         {group = "armor_attachments", chance = 2000000},
@@ -51,7 +61,7 @@ mother_talzin = Creature:new {
     {
       groups = {
         {group = "crystal_mauls_vengeance", chance = 2000000},
-        {group = "nge_jedi_cloaks", chance = 2000000},
+        {group = "nightsister_common", chance = 2000000},
         {group = "nightsister_common", chance = 2000000},
         {group = "clothing_attachments", chance = 2000000},
         {group = "armor_attachments", chance = 2000000},
@@ -61,17 +71,7 @@ mother_talzin = Creature:new {
     {
       groups = {
         {group = "crystal_mauls_vengeance", chance = 2000000},
-        {group = "nge_jedi_cloaks", chance = 2000000},
         {group = "nightsister_common", chance = 2000000},
-        {group = "clothing_attachments", chance = 2000000},
-        {group = "armor_attachments", chance = 2000000},
-      },
-      lootChance = 10000000,
-    },
-    {
-      groups = {
-        {group = "crystal_mauls_vengeance", chance = 2000000},
-        {group = "nge_jedi_cloaks", chance = 2000000},
         {group = "nightsister_common", chance = 2000000},
         {group = "clothing_attachments", chance = 2000000},
         {group = "armor_attachments", chance = 2000000},
@@ -120,10 +120,16 @@ mother_talzin = Creature:new {
     },  
     {
       groups = {
-        {group = "nge_jedi_cloaks", chance = 5000000},        
+        {group = "buff_droid", chance = 5000000},        
       },
-      lootChance = 5000000,
-    }, 
+      lootChance = 100000,
+    },
+    {
+      groups = {
+        {group = "nightsister_bicep_r_s01", chance = 10000000},       
+      },
+      lootChance = 200000,
+    },  
     {
       groups = {
         {group = "ns_clothing", chance = 10000000},       
