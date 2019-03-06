@@ -1,4 +1,4 @@
-force_crystal_infinity_white = {
+force_crystal_ahsokas_purity= {
 	minimumLevel = 0,
 	maximumLevel = -1,
 	customObjectName = "Ahsoka's Purity",
@@ -20,4 +20,4 @@ force_crystal_infinity_white = {
 	customizationValues = {}
 }
 
-addLootItemTemplate("force_crystal_infinity_white", force_crystal_infinity_white)
+addLootItemTemplate("force_crystal_ahsokas_purity", force_crystal_ahsokas_purity)

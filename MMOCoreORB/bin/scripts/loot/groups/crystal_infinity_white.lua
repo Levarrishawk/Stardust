@@ -1,10 +1,10 @@
-crystal_infinity_white = {
+crystal_ahsokas_purity = {
 	description = "",
 	minimumLevel = 0,
 	maximumLevel = 0,
 	lootItems = {
-		{itemTemplate = "force_crystal_infinity_white", weight = 10000000}
+		{itemTemplate = "force_crystal_ahsokas_purity", weight = 10000000}
 	}
 }
 
-addLootGroupTemplate("crystal_infinity_white", crystal_infinity_white)
+addLootGroupTemplate("crystal_ahsokas_purity", crystal_ahsokas_purity)
