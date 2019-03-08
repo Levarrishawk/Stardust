@@ -1,7 +1,7 @@
 sabine_wren = Creature:new {	
 	customName = "Sabine Wren",
 	socialGroup = "townsperson",
-	faction = "townsperson",
+	faction = "rebel",
 	level = 4,
 	chanceHit = 0.24,
 	damageMin = 40,
@@ -21,9 +21,9 @@ sabine_wren = Creature:new {
 	tamingChance = 0,
 	ferocity = 0,
 	pvpBitmask = NONE,
-	creatureBitmask = HERD,
-	optionsBitmask = AIENABLED,
-	diet = HERBIVORE,
+  creatureBitmask = PACK,
+  optionsBitmask = INVULNERABLE + CONVERSABLE + INTERESTING,
+  diet = HERBIVORE,
 
 	templates = {		        
 					"object/mobile/dressed_sabine_wren.iff",				
@@ -31,6 +31,7 @@ sabine_wren = Creature:new {
 				
 	lootGroups = {},
 	weapons = {},
+	outfit = "sabine_wren_outfit",
 	conversationTemplate = "",
 	attacks = {
 	}
