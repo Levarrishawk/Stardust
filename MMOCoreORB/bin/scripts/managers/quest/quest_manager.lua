@@ -17,6 +17,7 @@ function QuestManager.activateQuest(pCreatureObject, quest)
 
 	if (QuestManager.shouldSendSystemMessage(pCreatureObject, quest)) then
 		CreatureObject(pCreatureObject):sendSystemMessage("@quest/quests:quest_journal_updated")
+		CreatureObject(pCreatureObject):playMusicMessage("sound/ui_npe2_quest_step_completed_m.snd")
 	end
 
 	PlayerObject(pGhost):setActiveQuestsBit(quest, QUEST_ACTIVE)
@@ -53,6 +54,7 @@ function QuestManager.completeQuest(pCreatureObject, quest)
 		end
 
 		CreatureObject(pCreatureObject):sendSystemMessage("@quest/quests:task_complete")
+		reatureObject(pCreatureObject):playMusicMessage("sound/ui_npe2_quest_completed_m.snd")
 	end
 
 	PlayerObject(pGhost):clearActiveQuestsBit(quest)
@@ -350,5 +352,125 @@ QuestManager.quests.FS_DEFEND_WAIT_02 				= 184
 QuestManager.quests.FS_CRAFTING4_QUEST_FINISH 		= 185
 QuestManager.quests.FS_CRAFT_PUZZLE_QUEST_04 		= 186
 QuestManager.quests.FS_CS_QUEST_DONE_NOTIFYONLY 	= 187
+QuestManager.quests.SOM_BERKENS_FLOW_MARKERS    = 188
+QuestManager.quests.SOM_BERKENS_FLOW_MARKERS_01   = 189
+QuestManager.quests.SOM_BERKENS_FLOW_MARKERS_02   = 190
+QuestManager.quests.SOM_BERKENS_FLOW_MARKERS_03   = 191
+QuestManager.quests.SOM_BERKENS_FLOW_MARKERS_04   = 192
+QuestManager.quests.SOM_BERKENS_FLOW_MARKERS_05   = 193
+QuestManager.quests.SOM_BERKENS_FLOW      = 194
+QuestManager.quests.SOM_MINING_FIELD_MARKERS    = 195
+QuestManager.quests.SOM_MINING_FIELD_MARKERS_01   = 196
+QuestManager.quests.SOM_MINING_FIELD_MARKERS_02   = 197
+QuestManager.quests.SOM_MINING_FIELD_MARKERS_03   = 198
+QuestManager.quests.SOM_MINING_FIELD_MARKERS_04   = 199
+QuestManager.quests.SOM_MINING_FIELD_MARKERS_05   = 200
+QuestManager.quests.SOM_MINING_FIELD      = 201
+QuestManager.quests.SOM_CRYSTAL_FLATS_MARKERS   = 202
+QuestManager.quests.SOM_CRYSTAL_FLATS_MARKERS_01  = 203
+QuestManager.quests.SOM_CRYSTAL_FLATS_MARKERS_02  = 204
+QuestManager.quests.SOM_CRYSTAL_FLATS_MARKERS_03  = 205
+QuestManager.quests.SOM_CRYSTAL_FLATS_MARKERS_04  = 206
+QuestManager.quests.SOM_CRYSTAL_FLATS_MARKERS_05  = 207
+QuestManager.quests.SOM_CRYSTAL_FLATS     = 208
+QuestManager.quests.SOM_SMOKING_FOREST_MARKERS    = 209
+QuestManager.quests.SOM_SMOKING_FOREST_MARKERS_01 = 210
+QuestManager.quests.SOM_SMOKING_FOREST_MARKERS_02 = 211
+QuestManager.quests.SOM_SMOKING_FOREST_MARKERS_03 = 212
+QuestManager.quests.SOM_SMOKING_FOREST_MARKERS_04 = 213
+QuestManager.quests.SOM_SMOKING_FOREST_MARKERS_05 = 214
+QuestManager.quests.SOM_SMOKING_FOREST      = 215
+QuestManager.quests.SOM_CENTRAL_VOLCANO_MARKERS   = 216
+QuestManager.quests.SOM_CENTRAL_VOLCANO_MARKERS_01  = 217
+QuestManager.quests.SOM_CENTRAL_VOLCANO_MARKERS_02  = 218
+QuestManager.quests.SOM_CENTRAL_VOLCANO_MARKERS_03  = 219
+QuestManager.quests.SOM_CENTRAL_VOLCANO     = 220
+QuestManager.quests.SOM_BURNING_PLAINS_MARKERS    = 221
+QuestManager.quests.SOM_BURNING_PLAINS_MARKERS_01 = 222
+QuestManager.quests.SOM_BURNING_PLAINS_MARKERS_02 = 223
+QuestManager.quests.SOM_BURNING_PLAINS_MARKERS_03 = 224
+QuestManager.quests.SOM_BURNING_PLAINS_MARKERS_04 = 225
+QuestManager.quests.SOM_BURNING_PLAINS_MARKERS_05 = 226
+QuestManager.quests.SOM_BURNING_PLAINS      = 227
+QuestManager.quests.SOM_NESTING_GROUNDS_MARKERS   = 228
+QuestManager.quests.SOM_NESTING_GROUNDS_MARKERS_01  = 229
+QuestManager.quests.SOM_NESTING_GROUNDS_MARKERS_01  = 230
+QuestManager.quests.SOM_NESTING_GROUNDS_MARKERS_01  = 231
+QuestManager.quests.SOM_NESTING_GROUNDS     = 232
+QuestManager.quests.BUILD_SPEEDER     = 233
+QuestManager.quests.BUILD_SPEEDER_01      = 234
+QuestManager.quests.BUILD_SPEEDER_02      = 235
+QuestManager.quests.BUILD_SPEEDER_03      = 236
+QuestManager.quests.BUILD_SPEEDER_04      = 237
+QuestManager.quests.BUILD_SPEEDER_COMPLETE    = 238
+QuestManager.quests.BIBS_OFFER        = 239
+QuestManager.quests.COL_TAT_VISTAS      = 240
+QuestManager.quests.COL_TAT_VISTAS_01     = 241
+QuestManager.quests.COL_TAT_VISTAS_02     = 242
+QuestManager.quests.COL_TAT_VISTAS_03     = 243
+QuestManager.quests.COL_TAT_VISTAS_04     = 244
+QuestManager.quests.COL_TAT_VISTAS_05     = 245
+QuestManager.quests.COL_TAT_VISTAS_06     = 246
+QuestManager.quests.COL_TAT_VISTAS_07     = 247
+QuestManager.quests.COL_TAT_VISTAS_08     = 248
+QuestManager.quests.COL_TAT_VISTAS_09     = 249
+QuestManager.quests.COL_TAT_VISTAS_10     = 250
+QuestManager.quests.ME_TUSKEN_RAIDERS     = 251
+QuestManager.quests.ME_TUSKEN_RAIDERS_01    = 252
+QuestManager.quests.ME_TUSKEN_RAIDERS_02    = 253
+QuestManager.quests.ME_TUSKEN_RAIDERS_03    = 254
+QuestManager.quests.ME_TUSKEN_RAIDERS_04    = 255
+QuestManager.quests.ME_TUSKEN_RAIDERS_05    = 256
+QuestManager.quests.ME_TUSKEN_RAIDERS_06    = 257
+QuestManager.quests.ME_TUSKEN_RAIDERS_07    = 258
+QuestManager.quests.ME_TUSKEN_RAIDERS_08    = 259
+QuestManager.quests.ME_TUSKEN_RAIDERS_09    = 260
+QuestManager.quests.ME_TUSKEN_RAIDERS_10    = 261
+QuestManager.quests.ME_TUSKEN_RAIDERS_11    = 262
+QuestManager.quests.BIBS_OFFER_01     = 263
+QuestManager.quests.BIBS_OFFER_02     = 264
+QuestManager.quests.BIBS_OFFER_03     = 265
+QuestManager.quests.BIBS_OFFER_04     = 266
+QuestManager.quests.BIBS_OFFER_SILENT     = 267
+QuestManager.quests.ANIMAL_CONTROL_OFFICER    = 268
+QuestManager.quests.ANIMAL_CONTROL_OFFICER_01   = 269
+QuestManager.quests.ANIMAL_CONTROL_OFFICER_02   = 270
+QuestManager.quests.ANIMAL_CONTROL_OFFICER_03   = 271
+QuestManager.quests.ANIMAL_CONTROL_OFFICER_04   = 272
+QuestManager.quests.ANIMAL_CONTROL_OFFICER_05   = 273
+QuestManager.quests.ANIMAL_CONTROL_OFFICER_06   = 274
+QuestManager.quests.ANIMAL_CONTROL_OFFICER_07   = 275
+QuestManager.quests.ANIMAL_CONTROL_OFFICER_08   = 276
+QuestManager.quests.HOODLUMS_EVERYWHERE     = 277
+QuestManager.quests.HOODLUMS_EVERYWHERE_01    = 278
+QuestManager.quests.HOODLUMS_EVERYWHERE_02    = 279
+QuestManager.quests.HOODLUMS_EVERYWHERE_03    = 280
+QuestManager.quests.HOODLUMS_EVERYWHERE_04    = 281
+QuestManager.quests.HOODLUMS_EVERYWHERE_05    = 282
+QuestManager.quests.HOODLUMS_EVERYWHERE_06    = 283
+QuestManager.quests.HOODLUMS_EVERYWHERE_07    = 284
+QuestManager.quests.HOODLUMS_EVERYWHERE_08    = 285
+QuestManager.quests.HOODLUMS_EVERYWHERE_09    = 286
+QuestManager.quests.HOODLUMS_EVERYWHERE_10    = 287
+QuestManager.quests.HOODLUMS_EVERYWHERE_11    = 288
+QuestManager.quests.HOODLUMS_EVERYWHERE_12    = 289
+QuestManager.quests.HOODLUMS_EVERYWHERE_13    = 290
+QuestManager.quests.HOODLUMS_EVERYWHERE_14    = 291
+QuestManager.quests.IMPRISONED_GEONOSIAN_PT1    = 292
+QuestManager.quests.IMPRISONED_GEONOSIAN_PT1_01   = 293
+QuestManager.quests.IMPRISONED_GEONOSIAN_PT1_02   = 294 
+QuestManager.quests.IMPRISONED_GEONOSIAN_PT1_03   = 295
+QuestManager.quests.IMPRISONED_GEONOSIAN_PT2    = 296
+QuestManager.quests.IMPRISONED_GEONOSIAN_PT2_01   = 297
+QuestManager.quests.IMPRISONED_GEONOSIAN_PT2_02   = 298
+QuestManager.quests.IMPRISONED_GEONOSIAN_PT2_03   = 299
+QuestManager.quests.IMPRISONED_GEONOSIAN_PT3    = 300
+QuestManager.quests.IMPRISONED_GEONOSIAN_PT3_01   = 301
+QuestManager.quests.IMPRISONED_GEONOSIAN_PT3_02   = 302
+QuestManager.quests.MYYYDRIL_NECROSIS       = 303
+QuestManager.quests.MYYYDRIL_NECROSIS_01      = 304
+QuestManager.quests.MYYYDRIL_NECROSIS_02      = 305
+QuestManager.quests.MYYYDRIL_NECROSIS_03      = 306
+
 
 return QuestManager
