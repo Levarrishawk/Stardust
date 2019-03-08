@@ -26,8 +26,8 @@ sabine_wren = Creature:new {
 	diet = HERBIVORE,
 
 	templates = {	
-	        "object/mobile/dressed_commoner_naboo_human_female_01.iff",
-					--"object/mobile/dressed_commoner_naboo_human_female_02.iff",
+	        --"object/mobile/dressed_commoner_naboo_human_female_01.iff",
+					"object/mobile/dressed_commoner_naboo_human_female_02.iff",
 					--"object/mobile/dressed_commoner_naboo_human_female_03.iff",
 					--"object/mobile/dressed_commoner_naboo_human_female_04.iff",
 					--"object/mobile/dressed_commoner_naboo_human_female_05.iff",
