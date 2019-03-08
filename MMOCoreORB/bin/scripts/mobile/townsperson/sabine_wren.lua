@@ -28,8 +28,8 @@ sabine_wren = Creature:new {
 	templates = {	
 	        --"object/mobile/dressed_commoner_naboo_human_female_01.iff",
 					--"object/mobile/dressed_commoner_naboo_human_female_02.iff",
-					"object/mobile/dressed_commoner_naboo_human_female_03.iff",
-					--"object/mobile/dressed_commoner_naboo_human_female_04.iff",
+					--"object/mobile/dressed_commoner_naboo_human_female_03.iff",
+					"object/mobile/dressed_commoner_naboo_human_female_04.iff",
 					--"object/mobile/dressed_commoner_naboo_human_female_05.iff",
 					--"object/mobile/dressed_commoner_naboo_human_female_06.iff",
 					--"object/mobile/dressed_commoner_naboo_human_female_07.iff",
