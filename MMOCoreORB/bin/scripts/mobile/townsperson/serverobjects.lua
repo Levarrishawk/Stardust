@@ -52,4 +52,5 @@ includeFile("townsperson/elan_sleazebaggano.lua")
 includeFile("townsperson/hermione_bagwa.lua")
 includeFile("townsperson/chandriltech_contractor.lua")
 includeFile("townsperson/sabine_wren.lua")
+includeFile("townsperson/hera_syndulla.lua")
 

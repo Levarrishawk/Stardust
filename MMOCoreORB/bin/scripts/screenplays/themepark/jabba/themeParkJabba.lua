@@ -69,71 +69,6 @@ reelo_missions =
     }
   }
 
---[[ree_yees_missions =
-  {
-    {
-      missionType = "assassinate",
-      primarySpawns =
-      {
-        { npcTemplate = "valarian_thug", planetName = "tatooine", npcName = "Raf Daris" }
-      },
-      secondarySpawns =
-      {
-        { npcTemplate = "valarian_thug", planetName = "tatooine", npcName = "Valarian's Thug" },
-        { npcTemplate = "valarian_thug", planetName = "tatooine", npcName = "Valarian's Thug" },
-        { npcTemplate = "valarian_thug", planetName = "tatooine", npcName = "Valarian's Thug" },
-      },
-      itemSpawns = {},
-      rewards =
-      {
-        { rewardType = "credits", amount = 250 }
-      }
-    },
-    {
-      missionType = "confiscate",
-      primarySpawns =
-      {
-        { npcTemplate = "theme_park_jawa", planetName = "tatooine", npcName = "Jawa" }
-      },
-      secondarySpawns =
-      {
-        { npcTemplate = "jawa_henchman", planetName = "tatooine", npcName = "a Jawa" },
-        { npcTemplate = "jawa_henchman", planetName = "tatooine", npcName = "a Jawa" },
-        { npcTemplate = "jawa_henchman", planetName = "tatooine", npcName = "a Jawa" },
-      },
-      itemSpawns =
-      {
-        { itemTemplate = "object/tangible/component/item/quest_item/directional_sensor.iff", itemName = "Transponder" }
-      },
-      rewards =
-      {
-        { rewardType = "credits", amount = 350 }
-      }
-    },
-    {
-      missionType = "deliver",
-      primarySpawns =
-      {
-        { npcTemplate = "sirad_far", planetName = "tatooine", npcName = "Sirad Far" }
-      },
-      secondarySpawns =
-      {
-        { npcTemplate = "valarian_thug", planetName = "tatooine", npcName = "Sirad's Thug" },
-        { npcTemplate = "valarian_thug", planetName = "tatooine", npcName = "Sirad's Thug" },
-        { npcTemplate = "valarian_thug", planetName = "tatooine", npcName = "Sirad's Thug" },
-      },
-      itemSpawns =
-      {
-        { itemTemplate = "object/tangible/component/item/quest_item/directional_sensor.iff", itemName = "Transponder" }
-      },
-      rewards =
-      {
-        { rewardType = "loot", lootGroup = "jabba_theme_park_ree_yees" },
-        { rewardType = "permission", permissionGroup = "jabba_palace1" },
-        { rewardType = "faction", faction = "jabba", amount = 50 }
-      }
-    }
-  } --]]
 
 ephant_mon_missions =
   {
@@ -259,137 +194,7 @@ porcellus_missions =
     }
   }
 
---[[barada_missions =
-  {
-    {
-      missionType = "confiscate",
-      primarySpawns =
-      {
-        { npcTemplate = "theme_park_jabba_valarian_thug", planetName = "tatooine", npcName = "Valarian Thug" }
-      },
-      secondarySpawns =
-      {
-        { npcTemplate = "theme_park_jabba_weak_mercenary", planetName = "tatooine", npcName = "Weak Mercenary" },
 
-      },
-      itemSpawns = {
-        { itemTemplate = "object/tangible/loot/misc/key_electronic_s01.iff", itemName = "Code Cylinder" }
-      },
-      rewards =
-      {
-        { rewardType = "credits", amount = 850 }
-      }
-    },
-    {
-      missionType = "deliver",
-      primarySpawns =
-      {
-        { npcTemplate = "tiem_rutnar", planetName = "tatooine", npcName = "Tiem Rutnar" }
-      },
-      secondarySpawns = {},
-      itemSpawns =
-      {
-        { itemTemplate = "object/tangible/loot/misc/key_electronic_s01.iff", itemName = "Code Cylinder" }
-      },
-      rewards =
-      {
-        { rewardType = "credits", amount = 950 }
-      }
-    },
-    {
-      missionType = "destroy",
-      buildingSpawn = buildingBarada,
-      primarySpawns =
-      {
-        { npcTemplate = "valarian_thug", planetName = "tatooine", npcName = "Valarian Thug" }
-      },
-      secondarySpawns =
-      {
-        { npcTemplate = "valarian_thug", planetName = "tatooine", npcName = "Valarian Thug" },
-        { npcTemplate = "valarian_thug", planetName = "tatooine", npcName = "Valarian Thug" },
-        { npcTemplate = "valarian_thug", planetName = "tatooine", npcName = "Valarian Thug" },
-
-      },
-      itemSpawns = {},
-      rewards =
-      {
-        { rewardType = "loot", lootGroup = "jabba_theme_park_barada"},
-        { rewardType = "permission", permissionGroup = "jabba_palace4" },
-        { rewardType = "faction", faction = "jabba", amount = 125 }
-      }
-    }
-  }
-
-bib_missions =
-  {
-    {
-      missionType = "escort",
-      primarySpawns =
-      {
-        { npcTemplate = "romo_vax", planetName = "tatooine", npcName = "Romo Vax" }
-      },
-      secondarySpawns = {},
-      itemSpawns = {},
-      rewards =
-      {
-        { rewardType = "credits", amount = 1050 }
-      }
-    },
-    {
-      missionType = "assassinate",
-      primarySpawns =
-      {
-        { npcTemplate = "theme_park_jabba_sennex_slaver", planetName = "tatooine", npcName = "Hizram Riean" }
-      },
-      secondarySpawns =
-      {
-        { npcTemplate = "thug", planetName = "tatooine", npcName = "A Thug" },
-        { npcTemplate = "thug", planetName = "tatooine", npcName = "A Thug" },
-      },
-      itemSpawns = {},
-      rewards =
-      {
-        { rewardType = "credits", amount = 1150 }
-      }
-    },
-    {
-      missionType = "retrieve",
-      primarySpawns =
-      {
-        { npcTemplate = "naeton_baykurr", planetName = "tatooine", npcName = "Naeton Baykurr" }
-      },
-      secondarySpawns = {},
-      itemSpawns =
-      {
-        { itemTemplate = "object/tangible/loot/misc/briefcase_s01.iff", itemName = "Locked Briefcase" }
-      },
-      rewards =
-      {
-        { rewardType = "credits", amount = 1250 }
-      }
-    },
-    {
-      missionType = "assassinate",
-      primarySpawns =
-      {
-        { npcTemplate = "slaver", planetName = "tatooine", npcName = "Slaver Leader" }
-      },
-      secondarySpawns =
-      {
-        { npcTemplate = "slaver", planetName = "tatooine", npcName = "Slaver" },
-        { npcTemplate = "slaver", planetName = "tatooine", npcName = "Slaver" },
-        { npcTemplate = "slaver", planetName = "tatooine", npcName = "Slaver" },
-
-      },
-      itemSpawns = {},
-      rewards =
-      {
-        { rewardType = "loot", lootGroup = "jabba_theme_park_bib"},
-        { rewardType = "faction", faction = "jabba", amount = 150 }
-      }
-    }
-  }
---]]
 g5po_missions =
   {
     {
@@ -549,13 +354,6 @@ npcMapJabba =
       stfFile = "@theme_park_jabba/reelo_baruk",
       missions = reelo_missions
     },
-  --[[  {
-      spawnData = { planetName = "tatooine", npcTemplate = "ree_yees", x = 5.97, z = 0.299998, y = 116.1, direction = 248.813, cellID = 1177466, position = STAND },
-      worldPosition = { x = -5892.3, y = -6230.8 },
-      npcNumber = 2,
-      stfFile = "@theme_park_jabba/ree_yees",
-      missions = ree_yees_missions
-    },--]]
     {
       spawnData = { planetName = "chandrila", npcTemplate = "ephant_mon", x = -27.3, z = -0.5, y = 8.9, direction = 0, cellID = 35791454, position = STAND },
       worldPosition = { x = 364, y = -2800},
@@ -570,20 +368,6 @@ npcMapJabba =
       stfFile = "@theme_park_jabba/porcellus",
       missions = porcellus_missions
     },
-  --[[  {
-      spawnData = { planetName = "tatooine", npcTemplate = "barada", x = 30.57, z = 0.199999, y = -1.05, direction = 164.173, cellID = 1177499, position = STAND },
-      worldPosition = { x = -5965.8, y = -6325.1 },
-      npcNumber = 16,
-      stfFile = "@theme_park_jabba/barada",
-      missions = barada_missions
-    },
-    {
-      spawnData = { planetName = "tatooine", npcTemplate = "bib_fortuna", x = -12.09, z = 2, y = 49.41, direction = 176.373, cellID = 1177487, position = STAND },
-      worldPosition = { x = -5954.9, y = -6260.0 },
-      npcNumber = 32,
-      stfFile = "@theme_park_jabba/bib_fortuna",
-      missions = bib_missions
-    },--]]
     {
       spawnData = { planetName = "chandrila", npcTemplate = "g_5po", x = 7.8, z = -0.9, y = -10.9, direction = 0, cellID = 35791444, position = STAND },
       worldPosition = { x = 399, y = -2821 },

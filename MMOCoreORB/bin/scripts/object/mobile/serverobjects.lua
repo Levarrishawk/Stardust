@@ -2666,3 +2666,6 @@ includeFile("mobile/atxt.lua")
 includeFile("mobile/bm_mobile.lua")
 includeFile("mobile/dressed_jedi_female_togruta_01.lua")
 includeFile("mobile/dressed_sabine_wren.lua")
+includeFile("mobile/dressed_hera_syndulla.lua")
+
+
