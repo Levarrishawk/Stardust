@@ -47,9 +47,10 @@ object_building_player_jedi_house = object_building_player_shared_jedi_house:new
 	allowedZones = {"dantooine", "lok", "tatooine", "naboo", "rori", "corellia", "talus", "chandrila", "kaas", "moraband", "hutta", "lothal"},
 	publicStructure = 0,
 	skillMods = {
-		{"private_medical_rating", 300},
-		{"private_buff_mind", 300},
-		{"private_med_battle_fatigue", 15}
+		{"private_medical_rating", 100},
+    {"private_med_wound_health", 100},
+    {"private_med_wound_action", 100},
+    {"private_safe_logout", 1}
 	},
 	childObjects = {
         {templateFile = "object/tangible/terminal/terminal_player_structure.iff", x = -4.98199, z = 1.0082, y = 2.42309, ow = -0.707107, ox = 0, oz = 0, oy = 0.707107, cellid = 1, containmentType = -1},

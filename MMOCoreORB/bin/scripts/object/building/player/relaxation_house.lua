@@ -47,9 +47,10 @@ object_building_player_relaxation_house = object_building_player_shared_relaxati
 	allowedZones = {"dantooine", "lok", "tatooine", "naboo", "rori", "corellia", "talus", "chandrila", "kaas", "moraband", "hutta"},
 	publicStructure = 0,
 	skillMods = {
-		{"private_medical_rating", 300},
-		{"private_buff_mind", 300},
-		{"private_med_battle_fatigue", 15}
+		{"private_medical_rating", 100},
+    {"private_med_wound_health", 100},
+    {"private_med_wound_action", 100},
+    {"private_safe_logout", 1}
 	},
 	childObjects = {
       {templateFile = "object/tangible/terminal/terminal_player_structure.iff", x = 3.91035, z = 1.22656, y = 9.05219, ow = -5.96046e-08, ox = 0, oz = 0, oy = -1, cellid = 1, containmentType = -1},
