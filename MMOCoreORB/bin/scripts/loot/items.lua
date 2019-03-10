@@ -1206,7 +1206,7 @@ includeFile("items/force_crystal_windus_guile.lua")
 includeFile("items/force_crystal_henriettes_might.lua")
 includeFile("items/force_crystal_wickeds_burn.lua")
 includeFile("items/force_crystal_dilly_dillys_damnation.lua")
-includeFile("items/force_crystal_infinity_white.lua")
+includeFile("items/force_crystal_ahsokas_purity.lua")
 includeFile("items/force_crystal_black.lua")
 includeFile("items/force_crystal_orange.lua")
 

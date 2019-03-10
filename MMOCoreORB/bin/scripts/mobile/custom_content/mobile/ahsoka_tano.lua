@@ -31,7 +31,7 @@ ahsoka_tano = Creature:new {
 	lootGroups = {},
   weapons = {},
   --outfit = "prophet_outfit",
-  conversationTemplate = "",
+  conversationTemplate = "theme_park_lothal_mission_giver_convotemplate",
   attacks = {
   }
 }

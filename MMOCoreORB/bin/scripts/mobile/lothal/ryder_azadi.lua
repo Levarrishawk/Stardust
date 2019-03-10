@@ -29,7 +29,7 @@ ryder_azadi = Creature:new {
 	templates = {"object/mobile/dressed_fs_village_oldman.iff"},
 	lootGroups = {},
 	weapons = {},
-	conversationTemplate = "",
+	conversationTemplate = "theme_park_lothal_mission_giver_convotemplate",
 	attacks = brawlermid
 }
 

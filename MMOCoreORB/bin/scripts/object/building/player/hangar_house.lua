@@ -42,22 +42,23 @@
 
 
 object_building_player_hangar_house = object_building_player_shared_hangar_house:new {
-	lotSize = 2,
-	baseMaintenanceRate = 10,
-	allowedZones = {"dantooine", "lok", "tatooine", "naboo", "rori", "corellia", "talus", "chandrila", "kaas", "moraband", "hutta"},
-	publicStructure = 0,
-	skillMods = {
-		{"private_medical_rating", 300},
-		{"private_buff_mind", 300},
-		{"private_med_battle_fatigue", 15}
-	},
-	childObjects = {
+  lotSize = 2,
+  baseMaintenanceRate = 10,
+  allowedZones = {"dantooine", "lok", "tatooine", "naboo", "rori", "corellia", "talus", "chandrila", "kaas", "moraband", "hutta"},
+  publicStructure = 0,
+  skillMods = {
+    {"private_medical_rating", 100},
+    {"private_med_wound_health", 100},
+    {"private_med_wound_action", 100},
+    {"private_safe_logout", 1}
+  },
+  childObjects = {
         {templateFile = "object/tangible/terminal/terminal_player_structure.iff", x = -8.90404, z = 0.749969, y = -12.3664, ow = 0.707107, ox = 0, oz = 0, oy = 0.707107, cellid = 1, containmentType = -1}
         
-	},
-	constructionMarker = "object/building/player/construction/construction_player_house_corellia_large_style_01.iff",
-	length = 5,
-	width = 7
+  },
+  constructionMarker = "object/building/player/construction/construction_player_house_corellia_large_style_01.iff",
+  length = 5,
+  width = 7
 }
 
 ObjectTemplates:addTemplate(object_building_player_hangar_house, "object/building/player/hangar_house.iff")

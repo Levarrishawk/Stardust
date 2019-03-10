@@ -47,9 +47,10 @@ object_building_player_generic_large_window_s01 = object_building_player_shared_
 	allowedZones = {"dantooine", "lok", "tatooine", "naboo", "rori", "corellia", "talus", "chandrila", "kaas", "moraband", "hutta"},
 	publicStructure = 0,
 	skillMods = {
-		{"private_medical_rating", 300},
-		{"private_buff_mind", 300},
-		{"private_med_battle_fatigue", 15}
+		{"private_medical_rating", 100},
+    {"private_med_wound_health", 100},
+    {"private_med_wound_action", 100},
+    {"private_safe_logout", 1}
 	},
 	childObjects = {
       {templateFile = "object/tangible/terminal/terminal_player_structure.iff", x = -10.5, z = 1.235, y = 4.94141, ow = 0.707106, ox = 0, oz = 0, oy = -0.707107, cellid = 1, containmentType = -1}

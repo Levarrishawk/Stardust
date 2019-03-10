@@ -318,7 +318,7 @@ function LohthalCityScreenPlay:spawnMobiles()
   self:setMoodString(pNpc, "npc_accusing")
   
   --Placeholder, will likely remove with creation of questline / theme park
-  spawnMobile(self.planet, "ryder_azadi",60,35.0,1.3,-2.5,-101,58000260) 
+  
   --Placeholder
   
   spawnMobile(self.planet, "r5",60,25.5,1.3,-5.0,56,58000253) 

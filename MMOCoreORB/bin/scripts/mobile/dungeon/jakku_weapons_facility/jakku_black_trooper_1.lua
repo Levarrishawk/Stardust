@@ -35,8 +35,7 @@ jakku_black_trooper_1 = Creature:new {
         {group = "power_crystals", chance = 1000000},
         {group = "holocron_dark", chance = 1000000},
         {group = "holocron_light", chance = 1000000},
-        {group = "weapons_all", chance = 1000000},
-        {group = "crystal_infinity_white", chance = 100000},
+        {group = "weapons_all", chance = 1000000},       
         {group = "clothing_attachments", chance = 1000000},
         {group = "armor_attachments", chance = 1000000},        
         {group = "jakku_weapons", chance = 2000000}

@@ -47,9 +47,10 @@ object_building_player_vipbunker_house = object_building_player_shared_vipbunker
 	allowedZones = {"dantooine", "lok", "tatooine", "naboo", "rori", "corellia", "talus", "chandrila", "kaas", "moraband", "hutta"},
 	publicStructure = 0,
 	skillMods = {
-		{"private_medical_rating", 300},
-		{"private_buff_mind", 300},
-		{"private_med_battle_fatigue", 15}
+		{"private_medical_rating", 100},
+    {"private_med_wound_health", 100},
+    {"private_med_wound_action", 100},
+    {"private_safe_logout", 1}
 	},
 	childObjects = {
 	   {templateFile = "object/tangible/terminal/terminal_player_structure.iff", x = -2.87107, z = 0.469495, y = 3.79867, ow = 1, ox = 0, oz = 0, oy = -4.37114, cellid = 1, containmentType = -1}

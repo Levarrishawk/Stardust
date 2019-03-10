@@ -46,10 +46,11 @@ object_building_player_yoda_house = object_building_player_shared_yoda_house:new
 	baseMaintenanceRate = 10,
 	allowedZones = {"dantooine", "lok", "tatooine", "naboo", "rori", "corellia", "talus", "chandrila", "kaas", "moraband", "hutta"},
 	publicStructure = 0,
-	skillMods = {
-		{"private_medical_rating", 300},
-		{"private_buff_mind", 300},
-		{"private_med_battle_fatigue", 15}
+	skillMods = {		
+		{"private_medical_rating", 100},
+    {"private_med_wound_health", 100},
+    {"private_med_wound_action", 100},
+    {"private_safe_logout", 1}
 	},
 	childObjects = {
 

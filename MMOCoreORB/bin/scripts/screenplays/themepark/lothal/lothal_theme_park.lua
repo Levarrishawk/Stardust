@@ -27,8 +27,8 @@ end
 function lothal_theme_park:spawnMobiles()
 
 
-  local pNpc = spawnMobile("lothal", "ahsoka_tano",60,104,39.5,4183.6,-89,0)
-  self:setMoodString(pNpc, "neutral")
+  --local pNpc = spawnMobile("lothal", "ahsoka_tano",60,104,39.5,4183.6,-89,0)
+  --self:setMoodString(pNpc, "neutral")
   
   
 
