@@ -288,6 +288,7 @@ ThemeParkLothal = ThemeParkLogic:new {
   className = "ThemeParkLothal",
   screenPlayState = "lothal_theme_park",
   distance = 850,
+  genericGiver = false,
   missionDescriptionStf = "@theme_park_lothal/quest_details:lothal_",
   missionCompletionMessageStf = "@theme_park/messages:static_completion_message",
   planetName = "lothal"
