@@ -32,7 +32,7 @@ sabine_wren = Creature:new {
 	lootGroups = {},
 	weapons = {},
 	outfit = "sabine_wren_outfit",
-	conversationTemplate = "",
+	conversationTemplate = "theme_park_lothal_mission_giver_convotemplate",
 	attacks = {
 	}
 }

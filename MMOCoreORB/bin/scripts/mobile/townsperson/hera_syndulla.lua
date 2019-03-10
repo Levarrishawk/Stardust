@@ -31,7 +31,7 @@ hera_syndulla = Creature:new {
 				
 	lootGroups = {},
 	weapons = {},	
-	conversationTemplate = "",
+	conversationTemplate = "theme_park_lothal_mission_giver_convotemplate",
 	attacks = {
 	}
 }
