@@ -54,7 +54,7 @@ function QuestManager.completeQuest(pCreatureObject, quest)
 		end
 
 		CreatureObject(pCreatureObject):sendSystemMessage("@quest/quests:task_complete")
-		reatureObject(pCreatureObject):playMusicMessage("sound/ui_npe2_quest_completed_m.snd")
+		CreatureObject(pCreatureObject):playMusicMessage("sound/ui_npe2_quest_completed_m.snd")
 	end
 
 	PlayerObject(pGhost):clearActiveQuestsBit(quest)
