@@ -51,9 +51,11 @@ lotSize = 5,
 	publicStructure = 0,
 	skillMods = {
 		{"private_medical_rating", 100},
-		{"private_buff_mind", 100},
-		{"private_med_battle_fatigue", 5},
-		{"private_safe_logout", 1}	
+    {"private_med_wound_health", 100},
+    {"private_med_wound_action", 100},
+    {"private_buff_mind", 100},
+    {"private_med_battle_fatigue", 5},
+    {"private_safe_logout", 1}
 	},
 	childObjects = {
 			{templateFile = "object/tangible/terminal/terminal_elevator_up.iff", x = 0, z = -33, y = -1.29, ow = 0, ox = 0, oy = 0, oz = 0, cellid = 10, containmentType = -1}, --Floor 3

@@ -50,6 +50,8 @@ object_building_player_rebel_house = object_building_player_shared_rebel_house:n
 		{"private_medical_rating", 100},
     {"private_med_wound_health", 100},
     {"private_med_wound_action", 100},
+    {"private_buff_mind", 100},
+    {"private_med_battle_fatigue", 5},
     {"private_safe_logout", 1}
 	},
 	childObjects = {
