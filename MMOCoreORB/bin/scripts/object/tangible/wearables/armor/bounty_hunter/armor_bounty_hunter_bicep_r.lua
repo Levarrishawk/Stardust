@@ -114,13 +114,26 @@ object_tangible_wearables_armor_bounty_hunter_armor_bounty_hunter_bicep_r = obje
   acid = 70,
   lightSaber = 0,
 
+  --[[
+armor_special_type
+1 = kinetic
+2 = energy
+4 = blast
+8 = stun
+16 = lightsaber
+32 = heat
+64 = cold
+128 = acid
+256 = electrical
+--]]
+
   numberExperimentalProperties = {1, 1, 1, 1, 2, 2, 2, 2, 2, 1, 1, 2, 1},
   experimentalProperties = {"XX", "XX", "XX", "XX", "OQ", "SR", "OQ", "UT", "MA", "OQ", "MA", "OQ", "XX", "XX", "XX", "XX", "OQ", "SR", "XX"},
   experimentalWeights = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
   experimentalGroupTitles = {"null", "null", "null", "exp_durability", "exp_quality", "exp_resistance", "null", "null", "null", "null", "null", "exp_resistance", "null"},
   experimentalSubGroupTitles = {"null", "null", "sockets", "hit_points", "armor_effectiveness", "armor_integrity", "armor_health_encumbrance", "armor_action_encumbrance", "armor_mind_encumbrance", "armor_rating", "armor_special_type", "armor_special_effectiveness", "armor_special_integrity"},
-  experimentalMin = {0, 0, 0, 1000, 1, 30000, 0, 0, 0, 1, 0, 0, 0},
-  experimentalMax = {0, 0, 0, 1000, 30, 50000, 0, 0, 0, 1, 0, 0, 0},
+  experimentalMin = {0, 0, 0, 1000, 1, 30000, 0, 0, 0, 1, 16, 0, 0},
+  experimentalMax = {0, 0, 0, 1000, 30, 50000, 0, 0, 0, 1, 16, 0, 0},
   experimentalPrecision = {0, 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 0},
   experimentalCombineType = {0, 0, 4, 1, 1, 1, 1, 1, 1, 4, 4, 4, 1},
 }
