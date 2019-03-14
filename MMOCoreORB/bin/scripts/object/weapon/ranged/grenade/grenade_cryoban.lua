@@ -126,8 +126,8 @@ object_weapon_ranged_grenade_grenade_cryoban = object_weapon_ranged_grenade_shar
 	experimentalWeights = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
 	experimentalGroupTitles = {"null", "null", "expDamage", "expDamage", "expDamage", "expDamage", "null", "expRange", "expRange", "expRange", "expRange", "null", "expEffeciency", "expEffeciency", "expEffeciency"},
 	experimentalSubGroupTitles = {"null", "null", "mindamage", "maxdamage", "attackspeed", "woundchance", "hitpoints", "zerorangemod", "maxrangemod", "midrangemod", "midrange", "maxrange", "attackhealthcost", "attackactioncost", "attackmindcost"},
-	experimentalMin = {0, 0, 190, 920, 3, 7, 1000, -14, -45, 0, 10, 64, 0, 300, 0},
-	experimentalMax = {0, 0, 1270, 2250, 3, 13, 1000, 16, -15, 30, 30, 64, 0, 300, 0},
+	experimentalMin = {0, 0, 380, 1840, 3, 7, 1000, -14, -45, 0, 10, 64, 0, 300, 0},
+	experimentalMax = {0, 0, 2535, 4600, 3, 13, 1000, 16, -15, 30, 30, 64, 0, 300, 0},
 	experimentalPrecision = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
 	experimentalCombineType = {0, 0, 1, 1, 1, 1, 4, 1, 1, 1, 1, 1, 1, 1, 1},
 }
