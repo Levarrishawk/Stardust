@@ -823,6 +823,7 @@ includeFile("events/axkvaMinEntryMenuComponent.lua")
 
 includeFile("mustafar/boundaries/mustafar_boundaries.lua")
 includeFile("mustafar/mensix/mensix_mining_facility_main.lua")
+includeFile("mustafar/quest/map_exploration.lua")
 
 -- Lothal
 includeFile("poi/lothal_easthills_bunker.lua")
