@@ -146,5 +146,6 @@ includeFile("custom_content/som/xandank_patriarch.lua")
 --Root Folder
 includeFile("custom_content/som/mustafarian_miner_01.lua")
 includeFile("custom_content/som/mustafarian_miner_02.lua")
+includeFile("custom_content/som/surveyor_jo.lua")
 
 
