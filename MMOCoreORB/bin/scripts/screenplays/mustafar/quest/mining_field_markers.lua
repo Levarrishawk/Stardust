@@ -296,13 +296,13 @@ function miningFieldMarkersScreenPlay:spawnObjects()
 
 
 
-	pTulrusOne = spawnSceneObject("mustafar", "object/tangible/quest/som_tulrus_marker_01.iff", 3685, 5, -4703, 0, 0 )
+	pTulrusOne = spawnSceneObject("mustafar", "object/tangible/quest/som_tulrus_marker_01.iff", -1660.25, 74.0196, 2445.78, 0, 0 ) -- tulrus grounds entrance
 	createObserver(OBJECTRADIALUSED, "miningFieldMarkersScreenPlay", "tulrusOneUsed", pTulrusOne, pPlayer)		
 	
-	pTulrusTwo = spawnSceneObject("mustafar", "object/tangible/quest/som_tulrus_marker_02.iff", 3685, 5, -4683, 0, 0 )
+	pTulrusTwo = spawnSceneObject("mustafar", "object/tangible/quest/som_tulrus_marker_02.iff", -1797.86, 83.2939, 3038.4, 0, 0 ) -- tulrus grounds center
 	createObserver(OBJECTRADIALUSED, "miningFieldMarkersScreenPlay", "tulrusTwoUsed", pTulrusTwo, pPlayer)		
 
-	pTulrusThree = spawnSceneObject("mustafar", "object/tangible/quest/som_tulrus_marker_03.iff", 3685, 5, -4663, 0, 0 )
+	pTulrusThree = spawnSceneObject("mustafar", "object/tangible/quest/som_tulrus_marker_03.iff", -1971, 85.2697, 4073.65, 0, 0 ) -- sher kar cave
 	createObserver(OBJECTRADIALUSED, "miningFieldMarkersScreenPlay", "tulrusThreeUsed", pTulrusThree, pPlayer)
 	
 end
