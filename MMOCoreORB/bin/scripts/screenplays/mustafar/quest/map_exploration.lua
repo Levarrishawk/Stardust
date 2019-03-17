@@ -60,9 +60,7 @@ function exploreMustafarScreenPlay:start()
 end
 
 function exploreMustafarScreenPlay:spawnObjects()
-
-	--local pMap = spawnSceneObject("tatooine", "object/tangible/item/som/mustafar_damaged_map.iff", 1, 3522, 4.5, -4809, 0, 0, 0, 1, 0 )
-	spawnSceneObject("mustafar", "object/tangible/item/som/mustafar_damaged_map.iff", 3522, 4.5, -4809, 0, 0, 0, 1, 0 )
+	local pMap = spawnSceneObject("mustafar", "object/tangible/item/som/mustafar_damaged_map.iff", -48.9, 31, -113, 12112248, math.rad(0) )
 end
 
 

@@ -47,7 +47,7 @@ PolearmArea1Command = {
 	damageMultiplier = 1.25,
   speedMultiplier = 1.25,
   healthCostMultiplier = 0,
-  actionCostMultiplier = 2.25,
+  actionCostMultiplier = 3,
   mindCostMultiplier = 0,
   accuracyBonus = 10,
 

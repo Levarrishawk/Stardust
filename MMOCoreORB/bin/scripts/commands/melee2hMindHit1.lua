@@ -46,7 +46,7 @@ Melee2hMindHit1Command = {
 	damageMultiplier = 1.0,
   speedMultiplier = 1.25,
   healthCostMultiplier = 0,
-  actionCostMultiplier = 2.0,
+  actionCostMultiplier = 2.5,
   mindCostMultiplier = 0,
         accuracyBonus = 10,
 

@@ -47,7 +47,7 @@ PolearmHit1Command = {
 	damageMultiplier = 1.25,
   speedMultiplier = 1,
   healthCostMultiplier = 0,
-  actionCostMultiplier = 2,
+  actionCostMultiplier = 1.5,
   mindCostMultiplier = 0,
   
   poolsToDamage = HEALTH_ATTRIBUTE,

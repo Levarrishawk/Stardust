@@ -49,7 +49,7 @@ Melee2hLunge2Command = {
   accuracyBonus = 10,
     visMod = 25,
   healthCostMultiplier = 0,
-  actionCostMultiplier = 1,
+  actionCostMultiplier = 2.25,
   mindCostMultiplier = 0,
   
   poolsToDamage = HEALTH_ATTRIBUTE,

@@ -187,122 +187,122 @@ end
 
 function miningFieldMarkersScreenPlay:spawnMobiles()
 
-	spawnMobile("mustafar", "miner_hens", 1, 3640, 5, -4693, 0, 0 )
+	spawnMobile("mustafar", "surveyor_jo", 1, 145.6, 18.6, -58.0, -50, 12112243 )
 
 end
 
 function miningFieldMarkersScreenPlay:spawnObjects()
 
-	pBerkenOne = spawnSceneObject("mustafar", "object/tangible/quest/som_berken_marker_01.iff", 3650, 5, -4693, 0, 0 )
+	pBerkenOne = spawnSceneObject("mustafar", "object/tangible/quest/som_berken_marker_01.iff", -507.47, 58, 3681.4, 0, 0 )  -- Berkens Flow Marker
 	createObserver(OBJECTRADIALUSED, "miningFieldMarkersScreenPlay", "berkenOneUsed", pBerkenOne, pPlayer)
 
-	pBerkenTwo = spawnSceneObject("mustafar", "object/tangible/quest/som_berken_marker_02.iff", 3650, 5, -4673, 0, 0 )
+	pBerkenTwo = spawnSceneObject("mustafar", "object/tangible/quest/som_berken_marker_02.iff", -574.82, 61.786, 2491.94, 0, 0 )  -- Tulrus Isle Bridge Marker
 	createObserver(OBJECTRADIALUSED, "miningFieldMarkersScreenPlay", "berkenTwoUsed", pBerkenTwo, pPlayer)
 	
-	pBerkenThree = spawnSceneObject("mustafar", "object/tangible/quest/som_berken_marker_03.iff", 3650, 5, -4653, 0, 0 )
+	pBerkenThree = spawnSceneObject("mustafar", "object/tangible/quest/som_berken_marker_03.iff", 392.49, 45.1373, 2220.11, 0, 0 )  -- Droid Factory Marker
 	createObserver(OBJECTRADIALUSED, "miningFieldMarkersScreenPlay", "berkenThreeUsed", pBerkenThree, pPlayer)
 	
-	pBerkenFour = spawnSceneObject("mustafar", "object/tangible/quest/som_berken_marker_04.iff", 3650, 5, -4633, 0, 0 )
+	pBerkenFour = spawnSceneObject("mustafar", "object/tangible/quest/som_berken_marker_04.iff", 79.3501, 128.963, 3971.21, 0, 0 )  --  Jedi Ruins Marker
 	createObserver(OBJECTRADIALUSED, "miningFieldMarkersScreenPlay", "berkenFourUsed", pBerkenFour, pPlayer)
 	
-	pBerkenFive = spawnSceneObject("mustafar", "object/tangible/quest/som_berken_marker_05.iff", 3650, 5, -4613, 0, 0 )
+	pBerkenFive = spawnSceneObject("mustafar", "object/tangible/quest/som_berken_marker_05.iff", -610.59, 87.1491, 6031.32, 0, 0 ) -- Old Rep Facility Marker
 	createObserver(OBJECTRADIALUSED, "miningFieldMarkersScreenPlay", "berkenFiveUsed", pBerkenFive, pPlayer)
 	
 	
 	
-	pBurningOne = spawnSceneObject("mustafar", "object/tangible/quest/som_burning_marker_01.iff", 3622, 5, -4699, 0, 0 )
+	pBurningOne = spawnSceneObject("mustafar", "object/tangible/quest/som_burning_marker_01.iff", -2155.66, 62.7735, 5511.92, 0, 0 ) -- Berken's Flow Bridge Marker
 	createObserver(OBJECTRADIALUSED, "miningFieldMarkersScreenPlay", "burningOneUsed", pBurningOne, pPlayer)	
 	
-	pBurningTwo = spawnSceneObject("mustafar", "object/tangible/quest/som_burning_marker_02.iff", 3622, 5, -4679, 0, 0 )
+	pBurningTwo = spawnSceneObject("mustafar", "object/tangible/quest/som_burning_marker_02.iff", -2776.59, 23.5186, 4593.53, 0, 0 ) -- Central Volcano bridge marker
 	createObserver(OBJECTRADIALUSED, "miningFieldMarkersScreenPlay", "burningOneUsed", pBurningTwo, pPlayer)
 		
-	pBurningThree = spawnSceneObject("mustafar", "object/tangible/quest/som_burning_marker_03.iff", 3622, 5, -4659, 0, 0 )
+	pBurningThree = spawnSceneObject("mustafar", "object/tangible/quest/som_burning_marker_03.iff", -2805.63, 122.179, 5131.71, 0, 0 ) -- Central Burning Plains Marker
 	createObserver(OBJECTRADIALUSED, "miningFieldMarkersScreenPlay", "burningOneUsed", pBurningThree, pPlayer)	
 		
-	pBurningFour = spawnSceneObject("mustafar", "object/tangible/quest/som_burning_marker_04.iff", 3622, 5, -4639, 0, 0 )
+	pBurningFour = spawnSceneObject("mustafar", "object/tangible/quest/som_burning_marker_04.iff", -2789.93, 21.4531, 5921.04, 0, 0 )  -- Temple ruins marker
 	createObserver(OBJECTRADIALUSED, "miningFieldMarkersScreenPlay", "burningOneUsed", pBurningFour, pPlayer)	
 		
-	pBurningFive = spawnSceneObject("mustafar", "object/tangible/quest/som_burning_marker_05.iff", 3622, 5, -4619, 0, 0 )
+	pBurningFive = spawnSceneObject("mustafar", "object/tangible/quest/som_burning_marker_05.iff", -4490.58, 15.909, 5905.25, 0, 0 ) -- Northern burning plains marker
 	createObserver(OBJECTRADIALUSED, "miningFieldMarkersScreenPlay", "burningOneUsed", pBurningFive, pPlayer)
 	
 	
 		
 		
 
-	pVolcanoOne = spawnSceneObject("mustafar", "object/tangible/quest/som_volcano_marker_01.iff", 3604, 5, -4698, 0, 0 )
+	pVolcanoOne = spawnSceneObject("mustafar", "object/tangible/quest/som_volcano_marker_01.iff", -2974.96, 118.937, 4176.87, 0, 0 ) -- main lava flow marker
 	createObserver(OBJECTRADIALUSED, "miningFieldMarkersScreenPlay", "volcanoOneUsed", pVolcanoOne, pPlayer)
 		
-	pVolcanoTwo = spawnSceneObject("mustafar", "object/tangible/quest/som_volcano_marker_02.iff", 3604, 5, -4678, 0, 0 )
+	pVolcanoTwo = spawnSceneObject("mustafar", "object/tangible/quest/som_volcano_marker_02.iff", -3703.1, 136.583, 3405.69, 0, 0 ) -- kubaza beetle cave marker
 	createObserver(OBJECTRADIALUSED, "miningFieldMarkersScreenPlay", "volcanoTwoUsed", pVolcanoTwo, pPlayer)
 		
-	pVolcanoThree = spawnSceneObject("mustafar", "object/tangible/quest/som_volcano_marker_03.iff", 3604, 5, -4658, 0, 0 )
+	pVolcanoThree = spawnSceneObject("mustafar", "object/tangible/quest/som_volcano_marker_03.iff", -2783.21, 144.265, 3154.02, 0, 0 ) -- crashed old rep ship marker
 	createObserver(OBJECTRADIALUSED, "miningFieldMarkersScreenPlay", "volcanoThreeUsed", pVolcanoThree, pPlayer)
 		
 		
 		
 	
-	pCrystalOne = spawnSceneObject("mustafar", "object/tangible/quest/som_crystal_marker_01.iff", 3589, 5, -4699, 0, 0 )
+	pCrystalOne = spawnSceneObject("mustafar", "object/tangible/quest/som_crystal_marker_01.iff", -4018.92, 75.1095, 2432.66, 0, 0 ) -- Crystal Flats Marker
 	createObserver(OBJECTRADIALUSED, "miningFieldMarkersScreenPlay", "crystalOneUsed", pCrystalOne, pPlayer)	
 	
-	pCrystalTwo = spawnSceneObject("mustafar", "object/tangible/quest/som_crystal_marker_02.iff", 3589, 5, -4679, 0, 0 )
+	pCrystalTwo = spawnSceneObject("mustafar", "object/tangible/quest/som_crystal_marker_02.iff", -5207.46, 5.71105, 2506.45, 0, 0 ) -- Crystal flats bridge marker
 	createObserver(OBJECTRADIALUSED, "miningFieldMarkersScreenPlay", "crystalTwoUsed", pCrystalTwo, pPlayer)
 		
-	pCrystalThree = spawnSceneObject("mustafar", "object/tangible/quest/som_crystal_marker_03.iff", 3589, 5, -4659, 0, 0 )
+	pCrystalThree = spawnSceneObject("mustafar", "object/tangible/quest/som_crystal_marker_03.iff", -4650.37, 186.342, 1692.05, 0, 0 ) -- crystal falls marker
 	createObserver(OBJECTRADIALUSED, "miningFieldMarkersScreenPlay", "crystalThreeUsed", pCrystalThree, pPlayer)
 		
-	pCrystalFour = spawnSceneObject("mustafar", "object/tangible/quest/som_crystal_marker_04.iff", 3589, 5, -4639, 0, 0 )
+	pCrystalFour = spawnSceneObject("mustafar", "object/tangible/quest/som_crystal_marker_04.iff", -5920.99, 86.3664, 102.05, 0, 0 ) -- salvage bandit camp marker
 	createObserver(OBJECTRADIALUSED, "miningFieldMarkersScreenPlay", "crystalFourUsed", pCrystalFour, pPlayer)
 		
-	pCrystalFive = spawnSceneObject("mustafar", "object/tangible/quest/som_crystal_marker_05.iff", 3589, 5, -4619, 0, 0 )
+	pCrystalFive = spawnSceneObject("mustafar", "object/tangible/quest/som_crystal_marker_05.iff", -4248.21, 73.8265, 177.7, 0, 0 ) -- crossroads marker
 	createObserver(OBJECTRADIALUSED, "miningFieldMarkersScreenPlay", "crystalFiveUsed", pCrystalFive, pPlayer)	
 	
 	
 	
 	
-	pMiningOne = spawnSceneObject("mustafar", "object/tangible/quest/som_mining_marker_01.iff", 3675, 5, -4693, 0, 0 )
+	pMiningOne = spawnSceneObject("mustafar", "object/tangible/quest/som_mining_marker_01.iff", -2949.52, 133.114, 1293.82, 0, 0 )  -- Mensix Mining Facility marker
 	createObserver(OBJECTRADIALUSED, "miningFieldMarkersScreenPlay", "miningOneUsed", pMiningOne, pPlayer)	
 	
-	pMiningTwo = spawnSceneObject("mustafar", "object/tangible/quest/som_mining_marker_02.iff", 3675, 5, -4673, 0, 0 )
+	pMiningTwo = spawnSceneObject("mustafar", "object/tangible/quest/som_mining_marker_02.iff", -2035.3, 151.1, 704.2, 0, 0 )  -- destroyed mining facility marker
 	createObserver(OBJECTRADIALUSED, "miningFieldMarkersScreenPlay", "miningTwoUsed", pMiningTwo, pPlayer)	
 	
-	pMiningThree = spawnSceneObject("mustafar", "object/tangible/quest/som_mining_marker_03.iff", 3675, 5, -4653, 0, 0 )
+	pMiningThree = spawnSceneObject("mustafar", "object/tangible/quest/som_mining_marker_03.iff", -2542.81, 147.81, 58.28, 0, 0 ) -- chugondar ruins
 	createObserver(OBJECTRADIALUSED, "miningFieldMarkersScreenPlay", "miningThreeUsed", pMiningThree, pPlayer)	
 	
-	pMiningFour = spawnSceneObject("mustafar", "object/tangible/quest/som_mining_marker_04.iff", 3675, 5, -4633, 0, 0 )
+	pMiningFour = spawnSceneObject("mustafar", "object/tangible/quest/som_mining_marker_04.iff", -734.32, 103.559, -193.217, 0, 0 ) -- southern lava falls
 	createObserver(OBJECTRADIALUSED, "miningFieldMarkersScreenPlay", "miningFourUsed", pMiningFour, pPlayer)	
 	
-	pMiningFive = spawnSceneObject("mustafar", "object/tangible/quest/som_mining_marker_05.iff", 3675, 5, -4613, 0, 0 )
+	pMiningFive = spawnSceneObject("mustafar", "object/tangible/quest/som_mining_marker_05.iff", 168.49, 127.989, -205.708, 0, 0 ) -- koseyet bridge
 	createObserver(OBJECTRADIALUSED, "miningFieldMarkersScreenPlay", "miningFiveUsed", pMiningFive, pPlayer)	
 	
 	
 	
 	
 	
-	pSmokingOne = spawnSceneObject("mustafar", "object/tangible/quest/som_smoking_marker_01.iff", 3665, 5, -4699, 0, 0 )
+	pSmokingOne = spawnSceneObject("mustafar", "object/tangible/quest/som_smoking_marker_01.iff", -4284.06, 80.8645, 3375.31, 0, 0 ) -- Southern Jedi Ruins
 	createObserver(OBJECTRADIALUSED, "miningFieldMarkersScreenPlay", "smokingOneUsed", pSmokingOne, pPlayer)		
 
-	pSmokingTwo = spawnSceneObject("mustafar", "object/tangible/quest/som_smoking_marker_02.iff", 3665, 5, -4679, 0, 0 )
+	pSmokingTwo = spawnSceneObject("mustafar", "object/tangible/quest/som_smoking_marker_02.iff", -5151.03, 180.804, 4243.6, 0, 0 ) -- field miner camp marker
 	createObserver(OBJECTRADIALUSED, "miningFieldMarkersScreenPlay", "smokingTwoUsed", pSmokingTwo, pPlayer)		
 
-	pSmokingThree = spawnSceneObject("mustafar", "object/tangible/quest/som_smoking_marker_03.iff", 3665, 5, -4659, 0, 0 )
+	pSmokingThree = spawnSceneObject("mustafar", "object/tangible/quest/som_smoking_marker_03.iff", -6225.11, 41.474, 4388.46, 0, 0 ) -- western smoking plains
 	createObserver(OBJECTRADIALUSED, "miningFieldMarkersScreenPlay", "smokingThreeUsed", pSmokingThree, pPlayer)		
 
-	pSmokingFour = spawnSceneObject("mustafar", "object/tangible/quest/som_smoking_marker_04.iff", 3665, 5, -4639, 0, 0 )
+	pSmokingFour = spawnSceneObject("mustafar", "object/tangible/quest/som_smoking_marker_04.iff", -4430.97, 44.4592, -4960.32, 0, 0 ) -- burning plains bridge
 	createObserver(OBJECTRADIALUSED, "miningFieldMarkersScreenPlay", "smokingFourUsed", pSmokingFour, pPlayer)		
 
-	pSmokingFive = spawnSceneObject("mustafar", "object/tangible/quest/som_smoking_marker_05.iff", 3665, 5, -4619, 0, 0 )
+	pSmokingFive = spawnSceneObject("mustafar", "object/tangible/quest/som_smoking_marker_05.iff", -5453.01, 137.572, 6194.37, 0, 0 ) -- north jedi ruin
 	createObserver(OBJECTRADIALUSED, "miningFieldMarkersScreenPlay", "smokingFiveUsed", pSmokingFive, pPlayer)		
 
 
 
 
-	pTulrusOne = spawnSceneObject("mustafar", "object/tangible/quest/som_tulrus_marker_01.iff", 3685, 5, -4703, 0, 0 )
+	pTulrusOne = spawnSceneObject("mustafar", "object/tangible/quest/som_tulrus_marker_01.iff", -1660.25, 74.0196, 2445.78, 0, 0 ) -- tulrus grounds entrance
 	createObserver(OBJECTRADIALUSED, "miningFieldMarkersScreenPlay", "tulrusOneUsed", pTulrusOne, pPlayer)		
 	
-	pTulrusTwo = spawnSceneObject("mustafar", "object/tangible/quest/som_tulrus_marker_02.iff", 3685, 5, -4683, 0, 0 )
+	pTulrusTwo = spawnSceneObject("mustafar", "object/tangible/quest/som_tulrus_marker_02.iff", -1797.86, 83.2939, 3038.4, 0, 0 ) -- tulrus grounds center
 	createObserver(OBJECTRADIALUSED, "miningFieldMarkersScreenPlay", "tulrusTwoUsed", pTulrusTwo, pPlayer)		
 
-	pTulrusThree = spawnSceneObject("mustafar", "object/tangible/quest/som_tulrus_marker_03.iff", 3685, 5, -4663, 0, 0 )
+	pTulrusThree = spawnSceneObject("mustafar", "object/tangible/quest/som_tulrus_marker_03.iff", -1971, 85.2697, 4073.65, 0, 0 ) -- sher kar cave
 	createObserver(OBJECTRADIALUSED, "miningFieldMarkersScreenPlay", "tulrusThreeUsed", pTulrusThree, pPlayer)
 	
 end

@@ -50,7 +50,7 @@ PolearmLunge2Command = {
 	 visMod = 25,
 	
 	healthCostMultiplier = 0,
-	actionCostMultiplier = 1.25,
+	actionCostMultiplier = 2.5,
 	mindCostMultiplier = 0,
 
 	animation = "lower_posture_polearm_2",

@@ -1351,7 +1351,7 @@ void PlayerManagerImplementation::disseminateExperience(TangibleObject* destruct
 					xpAmount *= gcwBonus;
 			}
 
-			awardExperience(owner, "creaturehandler", xpAmount);
+			awardExperience(owner, "creaturehandler", xpAmount * 6);
 
 		} else if (attacker->isPlayerCreature()) {
 			if (!(attacker->getZone() == zone && destructedObject->isInRangeZoneless(attacker, 80))){

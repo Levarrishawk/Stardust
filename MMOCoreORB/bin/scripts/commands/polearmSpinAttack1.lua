@@ -49,7 +49,7 @@ PolearmSpinAttack1Command = {
 	accuracyBonus = 10,
 	
 	healthCostMultiplier = 0,
-	actionCostMultiplier = 1.5,
+	actionCostMultiplier = 3,
 	mindCostMultiplier = 0,
 
 	areaAction = true,

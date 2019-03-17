@@ -49,7 +49,7 @@ UnarmedLunge1Command = {
 	accuracyBonus = 15,
 	
 	healthCostMultiplier = 0,
-	actionCostMultiplier = 1.0,
+	actionCostMultiplier = 2.5,
 	mindCostMultiplier = 0,
 
 	animation = "lower_posture_unarmed_1",
