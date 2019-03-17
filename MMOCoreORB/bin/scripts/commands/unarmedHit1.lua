@@ -49,7 +49,7 @@ UnarmedHit1Command = {
 	accuracyBonus = 15,
 	
 	healthCostMultiplier = 0,
-	actionCostMultiplier = 1.0,
+	actionCostMultiplier = 1.5,
 	mindCostMultiplier = 0,
 
 	animation = "combo_2d", 

@@ -47,7 +47,7 @@ UnarmedHit2Command = {
 	damageMultiplier = 2.5,
 	speedMultiplier = 1.5,
 	healthCostMultiplier = 0,
-	actionCostMultiplier = 1.25,
+	actionCostMultiplier = 1.75,
 	mindCostMultiplier = 0,
         accuracyBonus = 15,
 

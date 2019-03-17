@@ -50,7 +50,7 @@ UnarmedLunge2Command = {
 	 visMod = 25,
 	
 	healthCostMultiplier = 0,
-	actionCostMultiplier = 1.5,
+	actionCostMultiplier = 2.5,
 	mindCostMultiplier = 0,
 
 	animation = "knockdown_unarmed_1",

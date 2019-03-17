@@ -47,7 +47,7 @@ Melee1hBodyHit1Command = {
 	damageMultiplier = 1.75,
   speedMultiplier = 2,
   healthCostMultiplier = 0,
-  actionCostMultiplier = 1.75,
+  actionCostMultiplier = 1.5,
   mindCostMultiplier = 0,
     visMod = 25,
 
