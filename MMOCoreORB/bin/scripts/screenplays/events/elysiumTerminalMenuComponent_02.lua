@@ -86,8 +86,11 @@ function elysiumTerminalMenuComponent_02:handleTeleport(pPlayer, pSui, eventInde
     CreatureObject(pPlayer):sendSystemMessage("The crystal stops humming as you pull your hand away.")   
     return 
   elseif (eventIndex == 0) then -- Teleport
+    if CreatureObject(pPlayer):hasSkill("force_rank_light_novice") then
       createEvent(1000, "recruiterScreenplay", "handleYavinTp", pPlayer, "")
-     
+    else
+     createEvent(1000, "recruiterScreenplay", "handleYavinTpDark", pPlayer, "")
+    end 
   end
 end
 
