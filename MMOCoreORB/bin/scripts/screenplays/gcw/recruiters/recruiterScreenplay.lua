@@ -679,7 +679,7 @@ end
 function recruiterScreenplay:handleYavinTpDark(pPlayer)
   ObjectManager.withCreatureAndPlayerObject(pPlayer, function(player, playerObject)
     local player = LuaSceneObject(pPlayer)
-    player:switchZone("yavin4", 5084, 79, 310, 0)  --("jakku", 1.5, -20.8, 27.5, 610000111)
+    player:switchZone("yavin4", 5121, 81, 301, 0)  --("jakku", 1.5, -20.8, 27.5, 610000111)
   end)
   createEvent(1000, "recruiterScreenplay", "handleGoOnLeave", pPlayer, "")
 end
