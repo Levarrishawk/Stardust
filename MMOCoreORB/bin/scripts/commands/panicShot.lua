@@ -44,10 +44,10 @@
 PanicShotCommand = {
         name = "panicshot",
 
-	damageMultiplier = 2.0,
+	damageMultiplier = 1.0,
   speedMultiplier = 3.0,
   healthCostMultiplier = 0,
-  actionCostMultiplier = 2.25,
+  actionCostMultiplier = 4,
   mindCostMultiplier = 0,
   accuracyBonus = 50,
     visMod = 25,
@@ -55,7 +55,7 @@ PanicShotCommand = {
   stateEffects = {
     StateEffect( 
     NEXTATTACKDELAY_EFFECT, 
-    {}, 
+    { "nextAttackDelayRecovery" },  
     { "warcry_defense" }, 
     {}, 
     100, 
@@ -76,7 +76,7 @@ PanicShotCommand = {
 	
 	weaponType = PISTOLWEAPON,
 
-	range = -1
+	range = 32
 }
 
 AddCommand(PanicShotCommand)
