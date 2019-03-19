@@ -62,16 +62,7 @@ ForceLightningSingle2Command = {
     30,
     0,
     10
-    ),
-    StateEffect( 
-    KNOCKDOWN_EFFECT, 
-    { "knockdownRecovery", "lastKnockdown" }, 
-    { "force_defense" }, 
-    {}, 
-    25, 
-    0, 
-    0 
-    )
+    ),   
   },
 
 	animation = "force_lightning_1_particle_level_3",
