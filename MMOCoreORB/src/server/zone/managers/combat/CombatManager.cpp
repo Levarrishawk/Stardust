@@ -905,8 +905,8 @@ int CombatManager::calculateDamageRange(TangibleObject* attacker, CreatureObject
 
 	// restrict damage if a player is not certified (don't worry about mobs)
 	if (attacker->isPlayerCreature() && !weapon->isCertifiedFor(cast<CreatureObject*>(attacker))) {
-		minDamage = 5;
-		maxDamage = 10;
+		minDamage = 1;
+		maxDamage = 1;
 	}
 
 	//info("attacker base damage is " + String::valueOf(minDamage) + "-"+ String::valueOf(maxDamage), true);
@@ -1300,8 +1300,8 @@ float CombatManager::calculateDamage(CreatureObject* attacker, WeaponObject* wea
 		float minDamage = weapon->getMinDamage(), maxDamage = weapon->getMaxDamage();
 
 		if (attacker->isPlayerCreature() && !weapon->isCertifiedFor(attacker)) {
-			minDamage = 5.f;
-			maxDamage = 10.f;
+			minDamage = 1.f;
+			maxDamage = 1.f;
 		}
 
 		damage = minDamage;
@@ -1446,7 +1446,7 @@ float CombatManager::calculateDamage(CreatureObject* attacker, WeaponObject* wea
 		float minDamage = weapon->getMinDamage();
 
 		if (attacker->isPlayerCreature() && !weapon->isCertifiedFor(attacker))
-			minDamage = 5;
+			minDamage = 1;
 
 		damage = minDamage;
 	}
