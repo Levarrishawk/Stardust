@@ -1056,9 +1056,11 @@ int LuaCreatureObject::getGender(lua_State* L) {
 	return 1;
 }
 
-int LuaCreatureObject::isRidingMount(lua_state* L){
+int LuaCreatureObject::isRidingMount(lua_state* L) {
 
-	lua_pushnumber(L, realObject->isRidingMount());
+	bool retVal = realObject->isRidingMount();
+
+	lua_pushboolean(L, retVal);
 
 	return 1;
 }
