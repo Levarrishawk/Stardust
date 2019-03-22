@@ -117,8 +117,13 @@ function exarKun:transportPlayer(pPlayer)
 	if pPlayer == nil then
 		return
 	end
-
-	SceneObject(pPlayer):switchZone("yavin4", -11.8, 0.2, -121.8, 480000293)
+	
+  if (CreatureObject(pPlayer):isRidingMount()) then
+    CreatureObject(pPlayer):sendSystemMessage("You fail to enter the instance because you are riding a mount.")  
+    return 0
+  else
+     SceneObject(pPlayer):switchZone("yavin4", -11.8, 0.2, -121.8, 480000293)
+  end
 end
 
 

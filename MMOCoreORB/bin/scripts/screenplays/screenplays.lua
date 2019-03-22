@@ -833,3 +833,6 @@ includeFile("cities/lothal_capital_city_patrol_mobs.lua")
 includeFile("heroics/oowroora.lua")
 includeFile("themepark/lothal/lothal_theme_park.lua")
 includeFile("themepark/lothal/themeParkLothal.lua")
+
+-- Tansarii Point Station
+--includeFile("heroics/tansarii_exit_teleporter.lua")
