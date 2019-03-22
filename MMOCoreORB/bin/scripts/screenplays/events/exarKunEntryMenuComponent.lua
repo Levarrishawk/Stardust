@@ -20,6 +20,11 @@ function exarKunEntryMenuComponent:handleObjectMenuSelect(pSceneObject, pPlayer,
 		return 0
 	end
 	
+	if (CreatureObject(pPlayer):isRidingMount()) then
+    CreatureObject(pPlayer):sendSystemMessage("You can not use this object while riding a mount.")  
+    return 0
+  end
+	
 	if not (CreatureObject(pPlayer):isGrouped()) then
 	  CreatureObject(pPlayer):sendSystemMessage("You must be in a group to use this object.")  
 	  return 0
