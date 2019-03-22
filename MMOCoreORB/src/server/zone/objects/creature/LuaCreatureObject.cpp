@@ -137,6 +137,7 @@ Luna<LuaCreatureObject>::RegType LuaCreatureObject::Register[] = {
 		{ "getHealingThreatList", &LuaCreatureObject::getHealingThreatList },
 		{ "getSkillMod", &LuaCreatureObject::getSkillMod },
 		{ "getGender", &LuaCreatureObject::getGender },
+		{ "isRidingMount", &LuaCreatureObject::isRidingMount },
 		{ 0, 0 }
 };
 
@@ -1051,6 +1052,13 @@ int LuaCreatureObject::getSkillMod(lua_State* L) {
 int LuaCreatureObject::getGender(lua_State* L) {
 
 	lua_pushnumber(L, realObject->getGender());
+
+	return 1;
+}
+
+int LuaCreatureObject::isRidingMount(lua_state* L){
+
+	lua_pushnumber(L, realObject->isRidingMount());
 
 	return 1;
 }
