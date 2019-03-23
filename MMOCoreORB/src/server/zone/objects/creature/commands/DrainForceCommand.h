@@ -117,7 +117,7 @@ public:
 
 				VisibilityManager::instance()->increaseVisibility(creature, visMod);
 
-				creature->updateCooldownTimer(skillName, delay * 1000);
+				creature->updateCooldownTimer(skillName, cooldown * 1000);
 
 				return res;
 			}
