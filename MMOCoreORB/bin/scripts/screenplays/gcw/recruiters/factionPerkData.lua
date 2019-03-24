@@ -12,7 +12,7 @@ factionRewardType = {
 rebelRewardData = {
 	weaponsArmorList = {
 		"armor_marine_backpack", "armor_marine_helmet", "armor_marine_chest_plate", "armor_marine_leggings", "armor_marine_boots", "armor_marine_bicep_l",
-		"armor_marine_bicep_r", "carbine_laser", "pistol_scout_blaster", "lance_staff_metal", "rocket_launcher", "mine_drx", "mine_xg", "weaponsmith_belt_schematic", "high_velocity_blaster_barrel", "lightweight_vibro", "mod_rep_blaster", "spec_ops_pack", "ff_weapon_stock",
+		"armor_marine_bicep_r", "carbine_laser", "pistol_scout_blaster", "lance_staff_metal", "rocket_launcher", "imp_shield_gen", "mine_drx", "mine_xg", "weaponsmith_belt_schematic", "high_velocity_blaster_barrel", "lightweight_vibro", "mod_rep_blaster", "spec_ops_pack", "ff_weapon_stock",
 	},
 
 	weaponsArmor = {
@@ -25,6 +25,7 @@ rebelRewardData = {
 		armor_marine_leggings = { index=6, type=factionRewardType.armor, display="@wearables_name:armor_marine_leggings", item="object/tangible/wearables/armor/marine/armor_marine_leggings.iff",cost=3000},
 		carbine_laser = { index=7, type=factionRewardType.weapon, display="@weapon_name:carbine_laser", item="object/weapon/ranged/carbine/carbine_laser.iff", cost=1500},
 		pistol_scout_blaster = { index=8, type=factionRewardType.weapon, display="@weapon_name:pistol_scout_blaster", item="object/weapon/ranged/pistol/pistol_scout_blaster.iff", cost=1000},
+		imp_shield_gen = { type=factionRewardType.armor, display="@craft_weapon_ingredients_n:shield_generator_personal_imperial_test_schematic", item="object/tangible/loot/quest/shield_generator_personal_imperial_test_schematic.iff", cost=20000},
 		metal_staff = { index=9, type=factionRewardType.weapon, display="@weapon_name:sword_02", item="object/weapon/ranged/melee/sword/sword_02.iff", cost=1000},
 		rocket_launcher = { index=10, type=factionRewardType.weapon, display="@weapon_name:rocket_launcher", item="object/weapon/ranged/heavy/heavy_rocket_launcher.iff", cost=5000},
 		lance_staff_metal = { index=11, type=factionRewardType.weapon, display="@weapon_name:lance_staff_metal", item="object/weapon/melee/polearm/lance_staff_metal.iff", cost=1000},
