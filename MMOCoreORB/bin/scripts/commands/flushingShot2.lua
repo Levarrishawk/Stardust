@@ -45,13 +45,13 @@ FlushingShot2Command = {
         name = "flushingshot2",
 
 	damageMultiplier = 4.0,
-	speedMultiplier = 4.0,
+	speedMultiplier = 2.0,
 	healthCostMultiplier = 0,
-	actionCostMultiplier = 1,
+	actionCostMultiplier = 2,
 	mindCostMultiplier = 0,
 	accuracyBonus = 5,
 
-	coneAngle = 15,
+	coneAngle = 45,
 	coneAction = true,
 
 	stateEffects = {
@@ -75,7 +75,7 @@ FlushingShot2Command = {
 	  )
 	},
 
-	poolsToDamage = RANDOM_ATTRIBUTE,
+	poolsToDamage = HEALTH_ATTRIBUTE,
 
 	animation = "fire_3_special_single", 
 	animType = GENERATE_INTENSITY,

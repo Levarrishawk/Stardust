@@ -61,7 +61,7 @@ ForceIntimidate1Command = {
 		{ "force_defense" },
 		100,
 		0,
-		60
+		30
 	  )
 	},
 

@@ -44,10 +44,10 @@
 PolearmArea2Command = {
         name = "polearmarea2",
 
-	damageMultiplier = 1.5,
+	damageMultiplier = 1.75,
   speedMultiplier = 1,
   healthCostMultiplier = 0,
-  actionCostMultiplier = 3,
+  actionCostMultiplier = 2,
   mindCostMultiplier = 0,
   accuracyBonus = 30,
     visMod = 25,
