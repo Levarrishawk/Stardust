@@ -118,6 +118,7 @@ includeFile("dungeon/death_watch_bunker/conversations/deathWatchTechnicianConvoH
 includeFile("dungeon/death_watch_bunker/conversations/deathWatchWorkshopDroidConvoHandler.lua")
 includeFile("dungeon/geonosian_lab/geo_lab.lua")
 --[[
+  -- Removed old Warren Screenplays
 includeFile("dungeon/warren/warren.lua")
 includeFile("dungeon/warren/warrenComponents.lua")
 includeFile("dungeon/warren/convos/mirla_convo_handler.lua")
@@ -126,6 +127,9 @@ includeFile("dungeon/warren/convos/manx_try_convo_handler.lua")
 includeFile("dungeon/warren/convos/captain_heff_convo_handler.lua")
 includeFile("dungeon/warren/convos/warren_worker_convo_handler.lua")
 --]]
+
+includeFile("dungeon/warren/warren_abandoned.lua")
+
 includeFile("dungeon/corellian_corvette/conversations/corvetteTicketTakerConvoHandler.lua")
 includeFile("dungeon/corellian_corvette/conversations/corvetteTicketGiverConvoHandler.lua")
 includeFile("dungeon/corellian_corvette/conversations/corvetteRepairDroidConvoHandler.lua")
@@ -838,3 +842,6 @@ includeFile("themepark/lothal/themeParkLothal.lua")
 
 -- Tansarii Point Station
 --includeFile("heroics/tansarii_exit_teleporter.lua")
+
+-- Abandoned Warren
+includeFile("heroics/warren_information_officer.lua")

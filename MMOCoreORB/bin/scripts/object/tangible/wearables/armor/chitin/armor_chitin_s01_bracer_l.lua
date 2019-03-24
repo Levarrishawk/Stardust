@@ -90,7 +90,10 @@ object_tangible_wearables_armor_chitin_armor_chitin_s01_bracer_l = object_tangib
 				"object/mobile/vendor/zabrak_male.iff" },
 
 	-- Damagetypes in WeaponObject
-	vulnerability = COLD + KINETIC + LIGHTSABER,
+	 vulnerability = COLD + LIGHTSABER,
+  
+  specialResists = KINETIC,
+
 
 	-- These are default Blue Frog stats
   healthEncumbrance = 0,
