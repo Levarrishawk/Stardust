@@ -117,6 +117,7 @@ includeFile("dungeon/death_watch_bunker/conversations/deathWatchRescueScientistC
 includeFile("dungeon/death_watch_bunker/conversations/deathWatchTechnicianConvoHandler.lua")
 includeFile("dungeon/death_watch_bunker/conversations/deathWatchWorkshopDroidConvoHandler.lua")
 includeFile("dungeon/geonosian_lab/geo_lab.lua")
+--[[
 includeFile("dungeon/warren/warren.lua")
 includeFile("dungeon/warren/warrenComponents.lua")
 includeFile("dungeon/warren/convos/mirla_convo_handler.lua")
@@ -124,6 +125,7 @@ includeFile("dungeon/warren/convos/oevitt_piboi_convo_handler.lua")
 includeFile("dungeon/warren/convos/manx_try_convo_handler.lua")
 includeFile("dungeon/warren/convos/captain_heff_convo_handler.lua")
 includeFile("dungeon/warren/convos/warren_worker_convo_handler.lua")
+--]]
 includeFile("dungeon/corellian_corvette/conversations/corvetteTicketTakerConvoHandler.lua")
 includeFile("dungeon/corellian_corvette/conversations/corvetteTicketGiverConvoHandler.lua")
 includeFile("dungeon/corellian_corvette/conversations/corvetteRepairDroidConvoHandler.lua")
