@@ -18,19 +18,19 @@ end
 
 function warren_abandoned:spawnSceneObjects()
 
-  spawnSceneObject("dantooine", "object/static/structure/military/military_wall_weak_imperial_16_style_01.iff", -551.1, 1, -3834.3, 0, math.rad(155) )
+  spawnSceneObject("dantooine", "object/static/structure/military/military_wall_weak_imperial_16_style_01.iff", -551.1, 1, -3834.3, 0, math.rad(160) )
   
 
 end
 
 function warren_abandoned:spawnMobiles()
 
-  --[[
-  local pNpc = spawnMobile("kaas", "chandriltech_security_guard",60,-79.6,15.6,4679.7,-13,0)
+  
+  local pNpc = spawnMobile("dantooine", "at_xt",300,-581,1,-3803,-12,0)
   self:setMoodString(pNpc, "neutral")
-  pNpc = spawnMobile("kaas", "chandriltech_security_guard",60,-85.8,15.6,4679.7,-13,0)
+  pNpc = spawnMobile("dantooine", "at_xt",300,-550,1,-3791,-13,0)
   self:setMoodString(pNpc, "neutral")
   
---]]
+
   
 end
