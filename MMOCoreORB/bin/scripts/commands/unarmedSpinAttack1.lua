@@ -51,7 +51,7 @@ UnarmedSpinAttack1Command = {
 	accuracyBonus = 15,
 	
 	healthCostMultiplier = 0,
-	actionCostMultiplier = 3,
+	actionCostMultiplier = 1.5,
 	mindCostMultiplier = 0,
 
 	animation = "combo_3c", 

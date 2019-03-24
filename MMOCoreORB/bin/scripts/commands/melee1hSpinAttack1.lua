@@ -47,7 +47,7 @@ Melee1hSpinAttack1Command = {
 	damageMultiplier = 1.15,
   speedMultiplier = 2.5,
   healthCostMultiplier = 0,
-  actionCostMultiplier = 2.5,
+  actionCostMultiplier = 1.5,
   mindCostMultiplier = 0,
         accuracyBonus = 25,
         

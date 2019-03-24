@@ -46,10 +46,13 @@ FlushingShot1Command = {
 
 	damageMultiplier = 2,
 	healthCostMultiplier = 0,
-	actionCostMultiplier = 1,
+	actionCostMultiplier = 2,
 	mindCostMultiplier = 0,
 	accuracyBonus = 5,
 	visMod = 25,
+	
+	coneAngle = 45,
+  coneAction = true,
 
 	stateEffects = {
 	  StateEffect( 
