@@ -37,7 +37,7 @@ templates = {
     },   
 	lootGroups = {},
 	weapons = {},
-	conversationTemplate = "rebel_jakku_teleporter",
+	conversationTemplate = "warren_information_officer",
 	attacks = {}
 }
 
