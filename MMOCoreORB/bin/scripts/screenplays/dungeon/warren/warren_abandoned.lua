@@ -18,7 +18,7 @@ end
 
 function warren_abandoned:spawnSceneObjects()
 
-  spawnSceneObject("dantooine", "object/static/structure/military/military_wall_weak_imperial_16_style_01.iff.iff", -551.1, 1, -3834.3, 0, math.rad(155) )
+  spawnSceneObject("dantooine", "object/static/structure/military/military_wall_weak_imperial_16_style_01.iff", -551.1, 1, -3834.3, 0, math.rad(155) )
   
 
 end
