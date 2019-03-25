@@ -350,6 +350,9 @@ QuestManager.quests.FS_DEFEND_WAIT_02         = 184
 QuestManager.quests.FS_CRAFTING4_QUEST_FINISH     = 185
 QuestManager.quests.FS_CRAFT_PUZZLE_QUEST_04    = 186
 QuestManager.quests.FS_CS_QUEST_DONE_NOTIFYONLY   = 187
+-- End FS Quests
+
+-- Start Mustafar Quests
 QuestManager.quests.SOM_BERKENS_FLOW_MARKERS    = 188
 QuestManager.quests.SOM_BERKENS_FLOW_MARKERS_01   = 189
 QuestManager.quests.SOM_BERKENS_FLOW_MARKERS_02   = 190
