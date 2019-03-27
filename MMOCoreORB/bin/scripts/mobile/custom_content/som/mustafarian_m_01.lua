@@ -1,5 +1,5 @@
 mustafarian_m_01 = Creature:new {
-	customName = "aMustafarian Lava Miner",
+	customName = "a Mustafarian Lava Miner",
 	socialGroup = "townsperson",
 	faction = "",
 	level = 70,
