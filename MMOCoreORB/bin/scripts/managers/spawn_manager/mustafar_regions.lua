@@ -31,6 +31,10 @@ mustafar_regions = {
   {"mensix_southwest_2", -3439, 902, {1, 200}, NOBUILDZONEAREA + SPAWNAREA, {"mustafar_lava_fleas"}, 256},
   {"mensix_southwest_3", -3367, 510, {1, 200}, NOBUILDZONEAREA + SPAWNAREA, {"mustafar_lava_fleas"}, 256},
   {"mensix_southwest_4", -3266, 122, {1, 200}, NOBUILDZONEAREA + SPAWNAREA, {"mustafar_lava_fleas"}, 256},
+  {"mensix_southwest_5", -3642, -30, {1, 200}, NOBUILDZONEAREA + SPAWNAREA, {"mustafar_lava_fleas"}, 256},
+  {"mensix_southwest_6", -4063, 92, {1, 200}, NOBUILDZONEAREA + SPAWNAREA, {"mustafar_lava_fleas"}, 256},
+  
+  
   -- Old Mining Facility Region
   {"old_mining_facility_1", -2774, 279, {1, 200}, NOBUILDZONEAREA + SPAWNAREA, {"mustafar_lava_fleas"}, 256},
   {"old_mining_facility_2", -2746, 681, {1, 200}, NOBUILDZONEAREA + SPAWNAREA, {"mustafar_lava_fleas"}, 256},
