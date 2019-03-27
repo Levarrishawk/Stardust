@@ -1,6 +1,6 @@
 mustafar_lava_flea_pack = Lair:new {
-	mobiles = {{"lava_flea",1}},
-	spawnLimit = 5,
+	mobiles = {{"lava_flea",2},{"lava_flea",1}},
+	spawnLimit = 25,
 	buildingsVeryEasy = {},
   buildingsEasy = {},
   buildingsMedium = {},
