@@ -1,5 +1,5 @@
 mustafar_blistmok_pack = Lair:new {
-	mobiles = {{"blistmok",2}},
+	mobiles = {{"blistmok",2},{"blistmok",1}},
 	spawnLimit = 15,
 	buildingsVeryEasy = {},
   buildingsEasy = {},
