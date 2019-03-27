@@ -1,6 +1,6 @@
 lava_flea = Creature:new {
-	customName = "Lava Flea",
-	socialGroup = "townsperson",
+	customName = "a Lava Flea",
+	socialGroup = "",
 	faction = "",
 	level = 70,
 	chanceHit = 0.27,
