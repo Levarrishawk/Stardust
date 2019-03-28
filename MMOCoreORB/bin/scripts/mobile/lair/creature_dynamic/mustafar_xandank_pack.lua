@@ -1,6 +1,6 @@
 mustafar_xandank_pack = Lair:new {
-	mobiles = {{"xandank",1}},
-	spawnLimit = 5,
+	mobiles = {{"xandank",2},{"xandank",1}},
+	spawnLimit = 15,
 	buildingsVeryEasy = {},
   buildingsEasy = {},
   buildingsMedium = {},
