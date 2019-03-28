@@ -21,7 +21,7 @@ Mustafar Creature Spawn Groups
 - mustafar_tanrays
 - mustafar_xandanks
 - mustafar_jundaks
-
+- mustafar_kubaza_beetles
 
 --]]
 
@@ -33,8 +33,24 @@ mustafar_regions = {
   {"mensix_southwest_4", -3266, 122, {1, 200}, NOBUILDZONEAREA + SPAWNAREA, {"mustafar_lava_fleas"}, 256},
   {"mensix_southwest_5", -3642, -30, {1, 200}, NOBUILDZONEAREA + SPAWNAREA, {"mustafar_lava_fleas"}, 256},
   {"mensix_southwest_6", -4063, 92, {1, 200}, NOBUILDZONEAREA + SPAWNAREA, {"mustafar_blistmoks"}, 256},
-  
-  
+  {"mensix_southwest_7", -4171, 479, {1, 200}, NOBUILDZONEAREA + SPAWNAREA, {"mustafar_blistmoks"}, 256},
+  {"mensix_southwest_8", -4042, 866, {1, 200}, NOBUILDZONEAREA + SPAWNAREA, {"mustafar_blistmoks"}, 256},
+  {"mensix_southwest_9", -3952, 1264, {1, 200}, NOBUILDZONEAREA + SPAWNAREA, {"mustafar_blistmoks"}, 256},
+  {"mensix_southwest_10", -3672, 1570, {1, 200}, NOWORLDSPAWNAREA + SPAWNAREA, {"mustafar_blistmoks" , "mustafar_kubaza_beetles"}, 512},  
+  {"mensix_southwest_11", -3448, 1905, {1, 200}, NOWORLDSPAWNAREA + SPAWNAREA, {"mustafar_blistmoks" , "mustafar_kubaza_beetles"}, 512},  
+  {"mensix_west_1", -3600, 2274, {1, 400}, NOWORLDSPAWNAREA + SPAWNAREA, {"mustafar_blistmoks" , "mustafar_kubaza_beetles"}, 512}, 
+  {"mensix_west_2", -3600, 2274, {1, 300}, NOWORLDSPAWNAREA + SPAWNAREA, {"mustafar_kubaza_beetles"}, 512}, 
+  {"mensix_west_3", -2776, 2414, {1, 200}, NOWORLDSPAWNAREA + SPAWNAREA, {"mustafar_blistmoks" , "mustafar_kubaza_beetles"}, 512}, 
+  {"mensix_west_4", -3562, 2393, {1, 200}, NOWORLDSPAWNAREA + SPAWNAREA, {"mustafar_blistmoks" , "mustafar_kubaza_beetles"}, 512}, 
+  {"mensix_west_5", -3946, 2484, {1, 200}, NOWORLDSPAWNAREA + SPAWNAREA, {"mustafar_blistmoks" , "mustafar_kubaza_beetles"}, 512}, 
+  {"mensix_west_6", -4357, 2519, {1, 200}, NOWORLDSPAWNAREA + SPAWNAREA, {"mustafar_blistmoks" , "mustafar_kubaza_beetles"}, 512}, 
+  {"mensix_west_7", -4719, 2340, {1, 200}, NOBUILDZONEAREA + SPAWNAREA, {"mustafar_blistmoks" , "mustafar_kubaza_beetles"}, 512}, 
+  {"mensix_west_8", -5104, 2159, {1, 250}, NOBUILDZONEAREA + SPAWNAREA, {"mustafar_blistmoks"}, 512},
+  {"mensix_west_9", -5591, 2173, {1, 250}, NOBUILDZONEAREA + SPAWNAREA, {"mustafar_blistmoks"}, 512},
+  {"mensix_west_10", -5591, 2173, {1, 500}, NOBUILDZONEAREA + SPAWNAREA, {"mustafar_blistmoks"}, 512},
+  {"mensix_west_11", -5960, 871, {1, 300}, NOBUILDZONEAREA + SPAWNAREA, {"mustafar_blistmoks"}, 512},
+  {"mensix_west_12", -5933, 459, {1, 200}, NOBUILDZONEAREA + SPAWNAREA, {"mustafar_blistmoks"}, 512},
+  {"mensix_west_13", -5933, 459, {1, 750}, NOBUILDZONEAREA + SPAWNAREA, {"mustafar_blistmoks"}, 512},
   -- Old Mining Facility Region
   {"old_mining_facility_1", -2774, 279, {1, 200}, NOBUILDZONEAREA + SPAWNAREA, {"mustafar_lava_fleas"}, 256},
   {"old_mining_facility_2", -2746, 681, {1, 200}, NOBUILDZONEAREA + SPAWNAREA, {"mustafar_lava_fleas"}, 256},
@@ -48,7 +64,7 @@ mustafar_regions = {
   {"old_mining_facility_10", 88, -132, {1, 200}, NOBUILDZONEAREA + SPAWNAREA, {"mustafar_lava_fleas"}, 256},
   
   -- Areas Cleared of World Spawns
-  
+  {"sw_bandit_camp", -6170, 10, {1, 100}, NOSPAWNAREA + NOBUILDZONEAREA},
   -- World Spawns
   {"world_spawner", 0, 0, {1, -1}, SPAWNAREA + WORLDSPAWNAREA, {"mustafar_lava_fleas"}, 2048}
 }

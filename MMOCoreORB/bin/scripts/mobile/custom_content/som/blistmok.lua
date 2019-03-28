@@ -1,6 +1,6 @@
 blistmok = Creature:new {
 	customName = "Blistmok",
-	socialGroup = "townsperson",
+	socialGroup = "",
 	faction = "",
 	level = 70,
 	chanceHit = 0.27,
@@ -20,7 +20,7 @@ blistmok = Creature:new {
 	milk = 0,
 	tamingChance = 0,
 	ferocity = 0,
-	pvpBitmask = ATTACKABLE,
+	pvpBitmask = ATTACKABLE + ENEMY,
 	creatureBitmask = PACK + STALKER,
 	optionsBitmask = AIENABLED,
 	diet = HERBIVORE,

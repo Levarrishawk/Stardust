@@ -453,6 +453,6 @@ includeFile("lair/creature_dynamic/mustafar_blistmok_pack.lua")
 includeFile("lair/creature_dynamic/mustafar_tulrus_pack.lua")
 includeFile("lair/creature_dynamic/mustafar_tanray_pack.lua")
 includeFile("lair/creature_dynamic/mustafar_jundak_pack.lua")
-
+includeFile("lair/creature_dynamic/mustafar_kubaza_beetle_pack.lua")
 
 

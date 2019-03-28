@@ -1,6 +1,6 @@
-must_salvage_bandit_01 = Creature:new {
-	customName = "a Salvage Bandit thug",
-	socialGroup = "",
+boss_uruli = Creature:new {
+	customName = "Boss Uruli",
+	socialGroup = "townsperson",
 	faction = "",
 	level = 70,
 	chanceHit = 0.27,
@@ -25,7 +25,7 @@ must_salvage_bandit_01 = Creature:new {
 	optionsBitmask = AIENABLED,
 	diet = HERBIVORE,
 
-	templates = {"object/mobile/som/must_salvage_bandit_01.iff"},
+	templates = {"object/mobile/som/mustafarian_m_02.iff"},
 	lootGroups = {
 		{
 			groups = {},
@@ -37,4 +37,4 @@ must_salvage_bandit_01 = Creature:new {
 	attacks = merge(marksmannovice,brawlernovice)
 }
 
-CreatureTemplates:addCreatureTemplate(must_salvage_bandit_01, "must_salvage_bandit_01")
+CreatureTemplates:addCreatureTemplate(boss_uruli, "boss_uruli")

@@ -1,6 +1,6 @@
-must_salvage_bandit_01 = Creature:new {
-	customName = "a Salvage Bandit thug",
-	socialGroup = "",
+kubaza_soldier_beetle = Creature:new {
+	customName = "a Kubaza Soldier Beetle",
+	socialGroup = "townsperson",
 	faction = "",
 	level = 70,
 	chanceHit = 0.27,
@@ -20,12 +20,12 @@ must_salvage_bandit_01 = Creature:new {
 	milk = 0,
 	tamingChance = 0,
 	ferocity = 0,
-	pvpBitmask = ATTACKABLE + ENEMY,
+	pvpBitmask = ATTACKABLE,
 	creatureBitmask = PACK + STALKER,
 	optionsBitmask = AIENABLED,
 	diet = HERBIVORE,
 
-	templates = {"object/mobile/som/must_salvage_bandit_01.iff"},
+	templates = {"object/mobile/som/kubaza_beetle.iff"},
 	lootGroups = {
 		{
 			groups = {},
@@ -37,4 +37,4 @@ must_salvage_bandit_01 = Creature:new {
 	attacks = merge(marksmannovice,brawlernovice)
 }
 
-CreatureTemplates:addCreatureTemplate(must_salvage_bandit_01, "must_salvage_bandit_01")
+CreatureTemplates:addCreatureTemplate(kubaza_soldier_beetle, "kubaza_soldier_beetle")
