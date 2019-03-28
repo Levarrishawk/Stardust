@@ -109,6 +109,9 @@ mustafar_regions = {
   {"berkens_8a", -494, 3619, {1, 450}, NOWORLDSPAWNAREA + SPAWNAREA, {"mustafar_tanrays"}, 256},
   {"berkens_9", 495, 5732, {1, 200}, NOWORLDSPAWNAREA + SPAWNAREA, {"mustafar_xandanks"}, 256}, 
   {"berkens_9", 495, 5732, {1, 200}, NOWORLDSPAWNAREA + SPAWNAREA, {"mustafar_kubaza_beetles"}, 256},
+  {"berkens_10", 51, 5753, {1, 450}, NOWORLDSPAWNAREA + SPAWNAREA, {"mustafar_tanrays"}, 256},
+  {"berkens_10", 51, 5753, {1, 450}, NOWORLDSPAWNAREA + SPAWNAREA, {"mustafar_xandanks"}, 256},
+  {"berkens_10", 51, 5753, {1, 450}, NOWORLDSPAWNAREA + SPAWNAREA, {"mustafar_kubaza_beetles"}, 256},
   -- Areas Cleared of World Spawns
   {"sw_bandit_camp", -6170, 10, {1, 100}, NOSPAWNAREA + NOBUILDZONEAREA},
   {"mensix_mining_facility", -2601, 1635, {1, 200}, NOSPAWNAREA + NOBUILDZONEAREA},
