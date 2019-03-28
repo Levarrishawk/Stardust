@@ -115,7 +115,7 @@ mustafar_regions = {
   -- Areas Cleared of World Spawns
   {"sw_bandit_camp", -6170, 10, {1, 100}, NOSPAWNAREA + NOBUILDZONEAREA},
   {"mensix_mining_facility", -2601, 1635, {1, 200}, NOSPAWNAREA + NOBUILDZONEAREA},
-  {"storm_lord_ruins", 193, 4163, {1, 500}, NOSPAWNAREA + NOBUILDZONEAREA},
+  {"storm_lord_ruins", 193, 4163, {1, 500}, NOWORLDSPAWNAREA + NOBUILDZONEAREA, {"mustafar_storm_lord_minions"}, 256},
   -- World Spawns
   {"world_spawner", 0, 0, {1, -1}, SPAWNAREA + WORLDSPAWNAREA, {"mustafar_lava_fleas"}, 2048}
 }

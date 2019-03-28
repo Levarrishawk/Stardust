@@ -1,5 +1,5 @@
-storm_lord_guard = Creature:new {
-	customName = "a storm lord guard",
+storm_lord_zealot = Creature:new {
+	customName = "a storm lord zealot",
 	socialGroup = "townsperson",
 	faction = "",
 	level = 70,
@@ -25,7 +25,7 @@ storm_lord_guard = Creature:new {
 	optionsBitmask = AIENABLED,
 	diet = HERBIVORE,
 
-	templates = {"object/mobile/som/storm_lord_guard.iff"},
+	templates = {"object/mobile/som/storm_lord_touched.iff"},
 	lootGroups = {
 		{
 			groups = {},
@@ -37,4 +37,4 @@ storm_lord_guard = Creature:new {
 	attacks = merge(marksmannovice,brawlernovice)
 }
 
-CreatureTemplates:addCreatureTemplate(storm_lord_guard, "storm_lord_guard")
+CreatureTemplates:addCreatureTemplate(storm_lord_zealot, "storm_lord_zealot")

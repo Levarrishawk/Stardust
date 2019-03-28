@@ -1,6 +1,6 @@
-storm_lord_guard = Creature:new {
-	customName = "a storm lord guard",
-	socialGroup = "townsperson",
+trained_blistmok = Creature:new {
+	customName = "a trained blistmok",
+	socialGroup = "",
 	faction = "",
 	level = 70,
 	chanceHit = 0.27,
@@ -20,12 +20,12 @@ storm_lord_guard = Creature:new {
 	milk = 0,
 	tamingChance = 0,
 	ferocity = 0,
-	pvpBitmask = ATTACKABLE,
+	pvpBitmask = ATTACKABLE + ENEMY,
 	creatureBitmask = PACK + STALKER,
 	optionsBitmask = AIENABLED,
 	diet = HERBIVORE,
 
-	templates = {"object/mobile/som/storm_lord_guard.iff"},
+	templates = {"object/mobile/som/blistmok.iff"},
 	lootGroups = {
 		{
 			groups = {},
@@ -37,4 +37,4 @@ storm_lord_guard = Creature:new {
 	attacks = merge(marksmannovice,brawlernovice)
 }
 
-CreatureTemplates:addCreatureTemplate(storm_lord_guard, "storm_lord_guard")
+CreatureTemplates:addCreatureTemplate(trained_blistmok, "trained_blistmok")
