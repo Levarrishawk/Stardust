@@ -843,7 +843,7 @@ includeFile("themepark/lothal/lothal_theme_park.lua")
 includeFile("themepark/lothal/themeParkLothal.lua")
 
 -- Tansarii Point Station
---includeFile("heroics/tansarii_exit_teleporter.lua")
+includeFile("heroics/tansarii_exit_teleporter.lua")
 
 -- Abandoned Warren
 includeFile("heroics/warren_information_officer.lua")

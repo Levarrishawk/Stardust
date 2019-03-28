@@ -15,7 +15,7 @@ registerScreenPlay("tansarii_exit_teleporter", true) --Initialize the screenplay
 
 --Simply spawns the NPC
 function tansarii_exit_teleporter:start()
-   spawnMobile("dungeon2", "tansarii_exit_teleporter", 1, 79.3, 0.9, 51.0, -113, 480000354)  --disabled until jakku focus test is completed.
+  -- spawnMobile("dungeon2", "tansarii_exit_teleporter", 1, 79.3, 0.9, 51.0, -113, 480000354)  --disabled until jakku focus test is completed.
    
   
 end
@@ -69,7 +69,7 @@ function tansarii_exit_teleporter_convo_handler:runScreenHandlers(pConversationT
 
   if ( screenID == "mayor2" ) then
    
-     player:switchZone("coruscant", -96, 40, 3149, 0) -- x, z, y, cell
+     player:switchZone("mustafar", -2465.5, 230.1, 1626.6, 0) -- x, z, y, cell
 
   end
   
