@@ -1,5 +1,5 @@
 mustafar_tulrus_pack = Lair:new {
-	mobiles = {{"tulrus",1}},
+	mobiles = {{"tulrus",2},{"tulrus",1}},
 	spawnLimit = 25,
 	buildingsVeryEasy = {},
   buildingsEasy = {},

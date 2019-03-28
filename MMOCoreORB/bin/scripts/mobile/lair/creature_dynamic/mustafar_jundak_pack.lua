@@ -1,6 +1,6 @@
 mustafar_jundak_pack = Lair:new {
-	mobiles = {{"jundak",1}},
-	spawnLimit = 5,
+	mobiles = {{"jundak",2},{"jundak",1}},
+	spawnLimit = 15,
 	buildingsVeryEasy = {},
   buildingsEasy = {},
   buildingsMedium = {},
