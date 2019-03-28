@@ -1,5 +1,5 @@
-miner_hens = Creature:new {
-	customName = "Miner Renlo Hens",
+miner_foreman_on_strike = Creature:new {
+	customName = "a Miner Foreman on strike",
 	socialGroup = "townsperson",
 	faction = "",
 	level = 70,
@@ -20,16 +20,21 @@ miner_hens = Creature:new {
 	milk = 0,
 	tamingChance = 0,
 	ferocity = 0,
-	pvpBitmask = NONE,
+	pvpBitmask = ATTACKABLE,
 	creatureBitmask = PACK + STALKER,
-	optionsBitmask = AIENABLED + CONVERSABLE + INTERESTING,
+	optionsBitmask = AIENABLED,
 	diet = HERBIVORE,
 
-	templates = {"object/mobile/som/miner_hens.iff"},
-	lootGroups = {},
+	templates = {"object/mobile/som/mustafarian_m_02.iff"},
+	lootGroups = {
+		{
+			groups = {},
+			lootChance = 2100000
+		}
+	},
 	weapons = {"pirate_weapons_light"},
 	conversationTemplate = "",
 	attacks = merge(marksmannovice,brawlernovice)
 }
 
-CreatureTemplates:addCreatureTemplate(miner_hens, "miner_hens")
+CreatureTemplates:addCreatureTemplate(miner_foreman_on_strike, "miner_foreman_on_strike")

@@ -1,5 +1,5 @@
-miner_hens = Creature:new {
-	customName = "Miner Renlo Hens",
+foreman_nurfa = Creature:new {
+	customName = "Foreman Nurfa Laz'op",
 	socialGroup = "townsperson",
 	faction = "",
 	level = 70,
@@ -25,11 +25,16 @@ miner_hens = Creature:new {
 	optionsBitmask = AIENABLED + CONVERSABLE + INTERESTING,
 	diet = HERBIVORE,
 
-	templates = {"object/mobile/som/miner_hens.iff"},
-	lootGroups = {},
+	templates = {"object/mobile/som/mustafarian_02.iff"},
+	lootGroups = {
+		{
+			groups = {},
+			lootChance = 2100000
+		}
+	},
 	weapons = {"pirate_weapons_light"},
 	conversationTemplate = "",
 	attacks = merge(marksmannovice,brawlernovice)
 }
 
-CreatureTemplates:addCreatureTemplate(miner_hens, "miner_hens")
+CreatureTemplates:addCreatureTemplate(foreman_nurfa, "foreman_nurfa")
