@@ -1,5 +1,5 @@
 som_mustafarian_phantom_bandit = Creature:new {
-	customName = "som_mustafarian_phantom_bandit",
+	customName = "a Phantoms Bandit",
 	socialGroup = "townsperson",
 	faction = "",
 	level = 70,

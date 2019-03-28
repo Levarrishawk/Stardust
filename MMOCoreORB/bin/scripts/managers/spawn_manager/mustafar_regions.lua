@@ -72,14 +72,18 @@ mustafar_regions = {
   {"tulrus_isle_7", -1056, 2463, {1, 200}, NOWORLDSPAWNAREA + SPAWNAREA, {"mustafar_tulrus"}, 512},
   {"tulrus_isle_8", -1113, 2879, {1, 200}, NOWORLDSPAWNAREA + SPAWNAREA, {"mustafar_tulrus", "mustafar_jundaks"}, 512},
   -- Berkens Flow
-  {"berkens_1", -494, 3619, {1, 250}, NOWORLDSPAWNAREA + SPAWNAREA, {"mustafar_tulrus", "mustafar_kubaza_beetles", "mustafar_tanrays"}, 512},
+  {"berkens_1", -494, 3619, {1, 250}, NOWORLDSPAWNAREA + SPAWNAREA, {"mustafar_tulrus", "mustafar_kubaza_beetles"}, 512},
+  {"berkens_1a", -494, 3619, {1, 250}, NOWORLDSPAWNAREA + SPAWNAREA, {"mustafar_tanrays"}, 512},
   {"berkens_2", -453, 4064, {1, 200}, NOWORLDSPAWNAREA + SPAWNAREA, {"mustafar_tulrus", "mustafar_xandanks"}, 512},
-  {"berkens_3", -616, 4433, {1, 200}, NOWORLDSPAWNAREA + SPAWNAREA, {"mustafar_tulrus", "mustafar_xandanks", "mustafar_kubaza_beetles"}, 512},
-  {"berkens_4", -616, 4433, {1, 300}, NOBUILDZONEAREA + SPAWNAREA, {"mustafar_tulrus", "mustafar_xandanks", "mustafar_kubaza_beetles", "mustafar_tanrays"}, 512},
+  {"berkens_3", -616, 4433, {1, 200}, NOWORLDSPAWNAREA + SPAWNAREA, {"mustafar_tulrus", "mustafar_xandanks"}, 512},
+  {"berkens_3a", -616, 4433, {1, 200}, NOWORLDSPAWNAREA + SPAWNAREA, {"mustafar_kubaza_beetles"}, 512},
+  {"berkens_4", -616, 4433, {1, 300}, NOBUILDZONEAREA + SPAWNAREA, {"mustafar_tulrus", "mustafar_xandanks"}, 512},
+  {"berkens_4a", -616, 4433, {1, 300}, NOBUILDZONEAREA + SPAWNAREA, {"mustafar_kubaza_beetles", "mustafar_tanrays"}, 512},
   {"berkens_5", -474, 5120, {1, 200}, NOWORLDSPAWNAREA + SPAWNAREA, {"mustafar_tulrus", "mustafar_xandanks"}, 512},
   {"berkens_6", -106, 5143, {1, 200}, NOWORLDSPAWNAREA + SPAWNAREA, {"mustafar_tulrus", "mustafar_xandanks"}, 512},
   {"berkens_7", -106, 5143, {1, 450}, NOWORLDSPAWNAREA + SPAWNAREA, {"mustafar_kubaza_beetles", "mustafar_xandanks"}, 512},
-  {"berkens_8", -494, 3619, {1, 450}, NOWORLDSPAWNAREA + SPAWNAREA, {"mustafar_xandanks", "mustafar_kubaza_beetles", "mustafar_tanrays"}, 512},
+  {"berkens_8", -494, 3619, {1, 450}, NOWORLDSPAWNAREA + SPAWNAREA, {"mustafar_xandanks", "mustafar_kubaza_beetles"}, 512},
+  {"berkens_8a", -494, 3619, {1, 450}, NOWORLDSPAWNAREA + SPAWNAREA, {"mustafar_tanrays"}, 512},
   {"berkens_9", 495, 5732, {1, 200}, NOWORLDSPAWNAREA + SPAWNAREA, {"mustafar_kubaza_beetles", "mustafar_xandanks"}, 512},
   
   -- Areas Cleared of World Spawns
