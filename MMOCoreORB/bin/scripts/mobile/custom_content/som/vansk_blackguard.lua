@@ -1,5 +1,5 @@
 vansk_blackguard = Creature:new {
-	customName = "vansk_blackguard",
+	customName = "Vansk of the Blackguard",
 	socialGroup = "townsperson",
 	faction = "",
 	level = 70,
