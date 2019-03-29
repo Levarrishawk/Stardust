@@ -1,5 +1,5 @@
 coyn_commando = Creature:new {
-	customName = "Coyn Commando",
+	customName = "a Razor Runner commando",
 	socialGroup = "townsperson",
 	faction = "",
 	level = 70,

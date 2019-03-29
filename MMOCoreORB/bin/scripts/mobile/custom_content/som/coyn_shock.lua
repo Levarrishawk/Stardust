@@ -1,5 +1,5 @@
 coyn_shock = Creature:new {
-	customName = "Coyn Shock Trooper",
+	customName = "a Razor Runner shock trooper",
 	socialGroup = "townsperson",
 	faction = "",
 	level = 70,

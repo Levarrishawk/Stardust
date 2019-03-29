@@ -122,7 +122,7 @@ mustafar_regions = {
   {"mensix_mining_facility", -2601, 1635, {1, 200}, NOSPAWNAREA + NOBUILDZONEAREA},
   {"striking_miner_camp", -5335, 4429, {1, 200}, NOSPAWNAREA + NOBUILDZONEAREA},
   {"blackguard_jedi_ruins", -4373, 3255, {1, 200}, NOSPAWNAREA + NOBUILDZONEAREA},
-  
+  {"nw_jedi_ruins", -5424, 6028, {1, 200}, NOSPAWNAREA + NOBUILDZONEAREA},
   -- World Spawns
   {"world_spawner", 0, 0, {1, -1}, SPAWNAREA + WORLDSPAWNAREA, {"mustafar_lava_fleas"}, 2048}
 }

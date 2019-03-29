@@ -1,5 +1,5 @@
-coyn_captain = Creature:new {
-	customName = "Coyn Captain",
+  coyn_captain = Creature:new {
+	customName = "Captain Relgon Starkill",
 	socialGroup = "townsperson",
 	faction = "",
 	level = 70,
