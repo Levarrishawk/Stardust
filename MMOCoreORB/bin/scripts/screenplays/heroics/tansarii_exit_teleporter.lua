@@ -69,7 +69,7 @@ function tansarii_exit_teleporter_convo_handler:runScreenHandlers(pConversationT
 
   if ( screenID == "mayor2" ) then
    
-     player:switchZone("mustafar", -2333.6, 206.8, 1761.4, 0) -- x, z, y, cell
+     player:switchZone("mustafar", -2465.5, 230.1, 1626.6, 0) -- x, z, y, cell
 
   end
   
