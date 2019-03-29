@@ -1,6 +1,6 @@
 tansarii_exit_teleporter = Creature:new {
 	objectName = "@mob/creature_names:noble",
-	customName = "a Smuggler Shuttle Pilot",
+	customName = "a Stardust Event Coordinator",
 	--randomNameType = NAME_GENERIC,
 	--randomNameTag = true,
 	socialGroup = "townsperson",

@@ -1,5 +1,5 @@
 blackguard_elite = Creature:new {
-	customName = "Blackguard Elite",
+	customName = "a blackguard elite minion",
 	socialGroup = "townsperson",
 	faction = "",
 	level = 70,

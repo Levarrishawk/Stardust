@@ -1,5 +1,5 @@
 coyn_commander = Creature:new {
-	customName = "Coyn Commander",
+	customName = "Commander Hal Razor",
 	socialGroup = "townsperson",
 	faction = "",
 	level = 70,

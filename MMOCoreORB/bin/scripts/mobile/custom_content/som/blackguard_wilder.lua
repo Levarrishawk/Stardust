@@ -1,5 +1,5 @@
 blackguard_wilder = Creature:new {
-	customName = "Blackguard Wilder",
+	customName = "a blackguard wilder",
 	socialGroup = "townsperson",
 	faction = "",
 	level = 70,

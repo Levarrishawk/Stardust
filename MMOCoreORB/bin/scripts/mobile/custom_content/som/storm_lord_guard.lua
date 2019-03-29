@@ -1,5 +1,5 @@
 storm_lord_guard = Creature:new {
-	customName = "storm_lord_guard",
+	customName = "a storm lord guard",
 	socialGroup = "townsperson",
 	faction = "",
 	level = 70,

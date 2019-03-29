@@ -1,5 +1,5 @@
 sansii = Creature:new {
-	customName = "Sansii",
+	customName = "Sans'ii the Kursk",
 	socialGroup = "townsperson",
 	faction = "",
 	level = 70,
@@ -20,7 +20,7 @@ sansii = Creature:new {
 	milk = 0,
 	tamingChance = 0,
 	ferocity = 0,
-	pvpBitmask = ATTACKABLE,
+	pvpBitmask = ATTACKABLE + ENEMY,
 	creatureBitmask = PACK + STALKER,
 	optionsBitmask = AIENABLED,
 	diet = HERBIVORE,

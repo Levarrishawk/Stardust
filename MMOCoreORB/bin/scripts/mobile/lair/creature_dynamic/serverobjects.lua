@@ -438,7 +438,7 @@ includeFile("lair/creature_dynamic/moraband_shyrack_pack.lua")
 includeFile("lair/creature_dynamic/hutta_dragonsnake_pack.lua")
 includeFile("lair/creature_dynamic/hutta_chemilizard_pack.lua")
 includeFile("lair/creature_dynamic/hutta_xuuva_pack.lua")
-
+-- Lothal
 includeFile("lair/creature_dynamic/florrum_skalder_pack.lua")
 includeFile("lair/creature_dynamic/loth_cat_pack.lua")
 includeFile("lair/creature_dynamic/loth_bat_pack.lua")
@@ -446,5 +446,13 @@ includeFile("lair/creature_dynamic/loth_rat_pack.lua")
 includeFile("lair/creature_dynamic/loth_wolf_pack.lua")
 includeFile("lair/creature_dynamic/loth_sabercat_pack.lua")
 
-
+-- Mustafar
+includeFile("lair/creature_dynamic/mustafar_lava_flea_pack.lua")
+includeFile("lair/creature_dynamic/mustafar_xandank_pack.lua")
+includeFile("lair/creature_dynamic/mustafar_blistmok_pack.lua")
+includeFile("lair/creature_dynamic/mustafar_tulrus_pack.lua")
+includeFile("lair/creature_dynamic/mustafar_tanray_pack.lua")
+includeFile("lair/creature_dynamic/mustafar_jundak_pack.lua")
+includeFile("lair/creature_dynamic/mustafar_kubaza_beetle_pack.lua")
+includeFile("lair/creature_dynamic/mustafar_storm_lord_pack.lua")
 

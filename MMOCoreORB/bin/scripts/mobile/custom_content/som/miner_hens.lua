@@ -1,5 +1,5 @@
 miner_hens = Creature:new {
-	customName = "Renlo Hens",
+	customName = "Miner Renlo Hens",
 	socialGroup = "townsperson",
 	faction = "",
 	level = 70,
@@ -20,9 +20,9 @@ miner_hens = Creature:new {
 	milk = 0,
 	tamingChance = 0,
 	ferocity = 0,
-	pvpBitmask = ATTACKABLE,
+	pvpBitmask = NONE,
 	creatureBitmask = PACK + STALKER,
-	optionsBitmask = AIENABLED,
+	optionsBitmask = AIENABLED + CONVERSABLE + INTERESTING,
 	diet = HERBIVORE,
 
 	templates = {"object/mobile/som/miner_hens.iff"},

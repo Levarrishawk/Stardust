@@ -1,5 +1,5 @@
 tulrus = Creature:new {
-	customName = "tulrus",
+	customName = "a Tulrus",
 	socialGroup = "townsperson",
 	faction = "",
 	level = 70,
@@ -20,7 +20,7 @@ tulrus = Creature:new {
 	milk = 0,
 	tamingChance = 0,
 	ferocity = 0,
-	pvpBitmask = ATTACKABLE,
+	pvpBitmask = ATTACKABLE + ENEMY,
 	creatureBitmask = PACK + STALKER,
 	optionsBitmask = AIENABLED,
 	diet = HERBIVORE,

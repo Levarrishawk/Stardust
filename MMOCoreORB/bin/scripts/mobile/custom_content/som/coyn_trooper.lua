@@ -1,5 +1,5 @@
 coyn_trooper = Creature:new {
-	customName = "Coyn Trooper",
+	customName = "a Razor Runner trooper",
 	socialGroup = "townsperson",
 	faction = "",
 	level = 70,

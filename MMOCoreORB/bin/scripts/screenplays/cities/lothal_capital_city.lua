@@ -70,6 +70,31 @@ function LohthalCityScreenPlay:spawnSceneObjects()
  --terminals
  spawnSceneObject("lothal", "object/tangible/terminal/terminal_mission.iff", -1313.6, 28, -3251.8, 0, math.rad(-90) )
  spawnSceneObject("lothal", "object/tangible/terminal/terminal_mission.iff", -1314.5, 28, -3034.5, 0, math.rad(-90) )
+ 
+ -- Theater
+ spawnSceneObject("lothal", "object/static/structure/general/streetlamp_small_style_01_on.iff", 10.7, 2.1, 48.6, 58000311, math.rad(0) )
+ spawnSceneObject("lothal", "object/static/structure/general/streetlamp_small_style_01_on.iff", 6.1, 2.1, 48.6, 58000311, math.rad(0) )
+ spawnSceneObject("lothal", "object/static/structure/general/streetlamp_small_style_01_on.iff", 0.5, 2.1, 48.6, 58000311, math.rad(0) )
+ spawnSceneObject("lothal", "object/static/structure/general/streetlamp_small_style_01_on.iff", -5.0, 2.1, 48.6, 58000311, math.rad(0) )
+ spawnSceneObject("lothal", "object/static/structure/general/streetlamp_small_style_01_on.iff", -9.6, 2.1, 48.6, 58000311, math.rad(0) )
+ 
+ spawnSceneObject("lothal", "object/tangible/furniture/all/frn_all_lamp_free_s03_lit.iff", -26.2, 0.6, 43.8, 58000311, math.rad(0) )
+ spawnSceneObject("lothal", "object/tangible/furniture/all/frn_all_lamp_free_s03_lit.iff", -26.2, 1.3, 36.7, 58000311, math.rad(0) )
+ spawnSceneObject("lothal", "object/tangible/furniture/all/frn_all_lamp_free_s03_lit.iff", -26.2, 2.0, 29.2, 58000311, math.rad(0) )
+ 
+ spawnSceneObject("lothal", "object/tangible/furniture/all/frn_all_lamp_free_s03_lit.iff", -26.2, 2.6, 21.7, 58000311, math.rad(0) )
+ spawnSceneObject("lothal", "object/tangible/furniture/all/frn_all_lamp_free_s03_lit.iff", -26.2, 2.6, 14.9, 58000311, math.rad(0) )
+ spawnSceneObject("lothal", "object/tangible/furniture/all/frn_all_lamp_free_s03_lit.iff", -18.8, 2.6, 14.9, 58000311, math.rad(0) )
+ spawnSceneObject("lothal", "object/tangible/furniture/all/frn_all_lamp_free_s03_lit.iff", -10.0, 2.6, 14.9, 58000311, math.rad(0) )
+ spawnSceneObject("lothal", "object/tangible/furniture/all/frn_all_lamp_free_s03_lit.iff", 26.3, 2.6, 14.9, 58000311, math.rad(0) )
+ spawnSceneObject("lothal", "object/tangible/furniture/all/frn_all_lamp_free_s03_lit.iff", 19.4, 2.6, 14.9, 58000311, math.rad(0) )
+ spawnSceneObject("lothal", "object/tangible/furniture/all/frn_all_lamp_free_s03_lit.iff", 10.0, 2.6, 14.9, 58000311, math.rad(0) ) 
+ spawnSceneObject("lothal", "object/tangible/furniture/all/frn_all_lamp_free_s03_lit.iff", 26.3, 2.6, 21.7, 58000311, math.rad(0) )
+ 
+ spawnSceneObject("lothal", "object/tangible/furniture/all/frn_all_lamp_free_s03_lit.iff", 26.2, 0.6, 43.8, 58000311, math.rad(0) )
+ spawnSceneObject("lothal", "object/tangible/furniture/all/frn_all_lamp_free_s03_lit.iff", 26.2, 1.3, 36.7, 58000311, math.rad(0) )
+ spawnSceneObject("lothal", "object/tangible/furniture/all/frn_all_lamp_free_s03_lit.iff", 26.2, 2.0, 29.2, 58000311, math.rad(0) )
+ 
 end
 
 function LohthalCityScreenPlay:spawnMobiles()

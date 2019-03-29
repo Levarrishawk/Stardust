@@ -1,6 +1,6 @@
 storm_lord_minion = Creature:new {
-	customName = "storm_lord_minion",
-	socialGroup = "townsperson",
+	customName = "a storm lord minion",
+	socialGroup = "",
 	faction = "",
 	level = 70,
 	chanceHit = 0.27,
@@ -20,7 +20,7 @@ storm_lord_minion = Creature:new {
 	milk = 0,
 	tamingChance = 0,
 	ferocity = 0,
-	pvpBitmask = ATTACKABLE,
+	pvpBitmask = ATTACKABLE + ENEMY,
 	creatureBitmask = PACK + STALKER,
 	optionsBitmask = AIENABLED,
 	diet = HERBIVORE,

@@ -1,5 +1,5 @@
 treasure_hunter_guard = Creature:new {
-	customName = "treasure_hunter_guard",
+	customName = "a treasure hunter guard",
 	socialGroup = "townsperson",
 	faction = "",
 	level = 70,

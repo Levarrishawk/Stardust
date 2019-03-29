@@ -1,6 +1,6 @@
 must_salvage_bandit_01 = Creature:new {
-	customName = "Salvage Bandit",
-	socialGroup = "townsperson",
+	customName = "a Salvage Bandit thug",
+	socialGroup = "",
 	faction = "",
 	level = 70,
 	chanceHit = 0.27,
@@ -20,7 +20,7 @@ must_salvage_bandit_01 = Creature:new {
 	milk = 0,
 	tamingChance = 0,
 	ferocity = 0,
-	pvpBitmask = ATTACKABLE,
+	pvpBitmask = ATTACKABLE + ENEMY,
 	creatureBitmask = PACK + STALKER,
 	optionsBitmask = AIENABLED,
 	diet = HERBIVORE,

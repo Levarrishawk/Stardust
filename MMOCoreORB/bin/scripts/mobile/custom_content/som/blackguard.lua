@@ -1,5 +1,5 @@
 blackguard = Creature:new {
-	customName = "Blackguard",
+	customName = "a blackguard minion",
 	socialGroup = "townsperson",
 	faction = "",
 	level = 70,
