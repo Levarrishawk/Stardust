@@ -833,6 +833,8 @@ includeFile("mustafar/quest/map_exploration.lua")
 includeFile("mustafar/quest/mining_field_markers.lua")
 includeFile("mustafar/regions/mensix_facility_region.lua")
 includeFile("mustafar/regions/storm_lord_region.lua")
+includeFile("mustafar/regions/smoking_forest_region.lua")
+includeFile("mustafar/regions/north_west_region.lua")
 
 -- Lothal
 includeFile("poi/lothal_easthills_bunker.lua")
