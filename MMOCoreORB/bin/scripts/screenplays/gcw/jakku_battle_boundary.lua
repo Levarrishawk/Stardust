@@ -128,9 +128,11 @@ function pvp:notifySpawnAreaLeave(pActiveArea, pMovingObject)
  -- Could separate out by faction and deliver alternate exit points.  
     if (player:isInCombat()) then
       player:sendSystemMessage("You have deserted in the heat of battle. For this you will be sent to the Cratertown Arena.")
+      createEvent(1000, "recruiterScreenplay", "handleGoCovert", pPlayer, "")
       player:teleport(4444, 7, -5168, 0)
       else
         player:sendSystemMessage("You are now leaving the battle area!")
+        createEvent(1000, "recruiterScreenplay", "handleGoCovert", pPlayer, "")
         player:teleport(4331, 9.1, -5130, 0)
       end           
     return 0
