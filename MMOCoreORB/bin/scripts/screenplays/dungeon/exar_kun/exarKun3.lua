@@ -898,8 +898,13 @@ function exarKun3:ejectPlayer(pPlayer)
   if pPlayer == nil then
     return
   end
-  CreatureObject(pPlayer):sendSystemMessage("You are now being removed from the instance.")
-  SceneObject(pPlayer):switchZone("yavin4", 5024.1, 73.2, 5585.1, 0)
+  
+  if (SceneObject(pPlayer):getZoneName() == "yavin4") then
+    CreatureObject(pPlayer):sendSystemMessage("You are now being removed from the instance.")
+    SceneObject(pPlayer):switchZone("yavin4", 5024.1, 73.2, 5585.1, 0)
+  else
+    return
+  end
 end
 
 
