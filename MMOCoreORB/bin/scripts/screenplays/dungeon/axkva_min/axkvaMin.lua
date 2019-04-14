@@ -1011,8 +1011,13 @@ function axkvaMin:ejectPlayer(pPlayer)
   if pPlayer == nil then
     return
   end
-  CreatureObject(pPlayer):sendSystemMessage("You are now being removed from the instance.")
-  SceneObject(pPlayer):switchZone("dathomir", -4029, 132, -19, 0)
+  
+  if (SceneObject(pPlayer):getZoneName() == "dathomir") then
+    CreatureObject(pPlayer):sendSystemMessage("You are now being removed from the instance.")
+    SceneObject(pPlayer):switchZone("dathomir", -4029, 132, -19, 0)
+  else
+    return
+  end    
 end
 
 
