@@ -44,10 +44,10 @@
 BodyShot2Command = {
 	name = "bodyshot2",
 
-	damageMultiplier = 5,
+	damageMultiplier = 4.25,
   speedMultiplier = 1.5,
   healthCostMultiplier = 0,
-  actionCostMultiplier = 2,
+  actionCostMultiplier = 2.25,
   mindCostMultiplier = 0,
   accuracyBonus = 50,
     visMod = 25,
