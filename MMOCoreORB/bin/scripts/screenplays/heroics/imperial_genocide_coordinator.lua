@@ -84,6 +84,46 @@ function imperial_genocide_coordinator_convo_handler:runScreenHandlers(pConversa
    self:removeQuestItem1(pConversingPlayer, imperial_genocide_coordinator.questItems.quest2.template)
   end
   
+  if ( screenID == "item2" ) then
+    local pInventory = CreatureObject(pConversingPlayer):getSlottedObject("inventory")
+          local lootGroup = "veteran_rewards_1080_days"
+      if pInventory == nil then
+        return
+      end     
+   
+   self:removeQuestItem2(pConversingPlayer, imperial_genocide_coordinator.questItems.quest2.template)
+  end
+  
+  if ( screenID == "item3" ) then
+    local pInventory = CreatureObject(pConversingPlayer):getSlottedObject("inventory")
+          local lootGroup = "veteran_rewards_990_days"
+      if pInventory == nil then
+        return
+      end     
+   
+   self:removeQuestItem3(pConversingPlayer, imperial_genocide_coordinator.questItems.quest2.template)
+  end
+  
+  if ( screenID == "item4" ) then
+    local pInventory = CreatureObject(pConversingPlayer):getSlottedObject("inventory")
+          local lootGroup = "veteran_rewards_810_days"
+      if pInventory == nil then
+        return
+      end     
+   
+   self:removeQuestItem4(pConversingPlayer, imperial_genocide_coordinator.questItems.quest2.template)
+  end
+  
+  if ( screenID == "item5" ) then
+    local pInventory = CreatureObject(pConversingPlayer):getSlottedObject("inventory")
+          local lootGroup = "veteran_rewards_720_days"
+      if pInventory == nil then
+        return
+      end     
+   
+   self:removeQuestItem5(pConversingPlayer, imperial_genocide_coordinator.questItems.quest2.template)
+  end
+  
   
   --print("returning convosvreen")
   return pConversationScreen
@@ -95,20 +135,6 @@ function imperial_genocide_coordinator_convo_handler:hasQuestItem(pPlayer, templ
   return pInventory ~= nil and getContainerObjectByTemplate(pInventory, template, true) ~= nil
 end
 
-function imperial_genocide_coordinator_convo_handler:removeQuestItem(pPlayer, template)
-  local pInventory = SceneObject(pPlayer):getSlottedObject("inventory")
-
-  if (pInventory == nil) then
-    return
-  end
-
-  local pItem = getContainerObjectByTemplate(pInventory, template, true)
-
-  if (pItem ~= nil) then
-    SceneObject(pItem):destroyObjectFromWorld()
-    SceneObject(pItem):destroyObjectFromDatabase()
-  end
-end
 
 function imperial_genocide_coordinator_convo_handler:removeQuestItem1(pPlayer, template)
   local pInventory = SceneObject(pPlayer):getSlottedObject("inventory")
@@ -119,6 +145,86 @@ function imperial_genocide_coordinator_convo_handler:removeQuestItem1(pPlayer, t
 
   local pItem = getContainerObjectByTemplate(pInventory, template, true)
   local lootGroup = "lothal_track"
+  
+  if (pItem ~= nil) then
+    SceneObject(pItem):destroyObjectFromWorld()
+    SceneObject(pItem):destroyObjectFromDatabase()
+    createLoot(pInventory, lootGroup, 0, true)
+    CreatureObject(pPlayer):sendSystemMessage("Requisition Successful!")   
+  else
+     CreatureObject(pPlayer):sendSystemMessage("Requisition Failed: You need an Ewok Crossbow to exchange.")   
+  end
+end
+
+function imperial_genocide_coordinator_convo_handler:removeQuestItem2(pPlayer, template)
+  local pInventory = SceneObject(pPlayer):getSlottedObject("inventory")
+
+  if (pInventory == nil) then
+    return
+  end
+
+  local pItem = getContainerObjectByTemplate(pInventory, template, true)
+  local lootGroup = "veteran_rewards_1080_days"
+  
+  if (pItem ~= nil) then
+    SceneObject(pItem):destroyObjectFromWorld()
+    SceneObject(pItem):destroyObjectFromDatabase()
+    createLoot(pInventory, lootGroup, 0, true)
+    CreatureObject(pPlayer):sendSystemMessage("Requisition Successful!")   
+  else
+     CreatureObject(pPlayer):sendSystemMessage("Requisition Failed: You need an Ewok Crossbow to exchange.")   
+  end
+end
+
+function imperial_genocide_coordinator_convo_handler:removeQuestItem3(pPlayer, template)
+  local pInventory = SceneObject(pPlayer):getSlottedObject("inventory")
+
+  if (pInventory == nil) then
+    return
+  end
+
+  local pItem = getContainerObjectByTemplate(pInventory, template, true)
+  local lootGroup = "veteran_rewards_990_days"
+  
+  if (pItem ~= nil) then
+    SceneObject(pItem):destroyObjectFromWorld()
+    SceneObject(pItem):destroyObjectFromDatabase()
+    createLoot(pInventory, lootGroup, 0, true)
+    CreatureObject(pPlayer):sendSystemMessage("Requisition Successful!")   
+  else
+     CreatureObject(pPlayer):sendSystemMessage("Requisition Failed: You need an Ewok Crossbow to exchange.")   
+  end
+end
+
+function imperial_genocide_coordinator_convo_handler:removeQuestItem4(pPlayer, template)
+  local pInventory = SceneObject(pPlayer):getSlottedObject("inventory")
+
+  if (pInventory == nil) then
+    return
+  end
+
+  local pItem = getContainerObjectByTemplate(pInventory, template, true)
+  local lootGroup = "veteran_rewards_810_days"
+  
+  if (pItem ~= nil) then
+    SceneObject(pItem):destroyObjectFromWorld()
+    SceneObject(pItem):destroyObjectFromDatabase()
+    createLoot(pInventory, lootGroup, 0, true)
+    CreatureObject(pPlayer):sendSystemMessage("Requisition Successful!")   
+  else
+     CreatureObject(pPlayer):sendSystemMessage("Requisition Failed: You need an Ewok Crossbow to exchange.")   
+  end
+end
+
+function imperial_genocide_coordinator_convo_handler:removeQuestItem5(pPlayer, template)
+  local pInventory = SceneObject(pPlayer):getSlottedObject("inventory")
+
+  if (pInventory == nil) then
+    return
+  end
+
+  local pItem = getContainerObjectByTemplate(pInventory, template, true)
+  local lootGroup = "veteran_rewards_720_days"
   
   if (pItem ~= nil) then
     SceneObject(pItem):destroyObjectFromWorld()

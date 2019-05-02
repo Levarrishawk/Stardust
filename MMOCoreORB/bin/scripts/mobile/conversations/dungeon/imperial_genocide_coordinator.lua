@@ -65,10 +65,10 @@ opt2 = ConvoScreen:new {
   stopConversation = "false",
   options = {
      {"BARC Speeder","item1"},
-    -- {"Emperor's Desk","item2"},
-    -- {"Emperor's Chair","item3"},
-    -- {"Emperor's Desk Lamp","item4"},
-    -- {"Emperor's Desk Lamp","item5"},
+     {"Random Rare Painting","item2"}, --1080
+     {"Random Rare Large Rug","item3"}, --990
+     {"Random Rare Small Rug","item4"}, -- 810
+     {"Random Rare Furniture","item5"}, --720
   }
 }
 imperial_genocide_coordinator:addScreen(opt2);
