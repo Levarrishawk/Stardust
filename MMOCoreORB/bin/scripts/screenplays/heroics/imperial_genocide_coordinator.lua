@@ -81,7 +81,7 @@ function imperial_genocide_coordinator_convo_handler:runScreenHandlers(pConversa
         return
       end     
    createLoot(pInventory, lootGroup, 0, true)
-   self:removeQuestItem(pConversingPlayer, imperial_genocide_coordinator_convo_handler.questItems.quest2.template)
+   self:removeQuestItem(pConversingPlayer, imperial_genocide_coordinator.questItems.quest2.template)
   end
   
   
