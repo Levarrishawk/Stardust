@@ -52,7 +52,7 @@ object_draft_schematic_weapon_component_sword_core_advanced = object_draft_schem
    size = 1, 
 
    xpType = "crafting_weapons_general", 
-   xp = 25, 
+   xp = 4287, -- Boosted xp for WS grind expediency.
 
    assemblySkill = "weapon_assembly", 
    experimentingSkill = "weapon_experimentation", 

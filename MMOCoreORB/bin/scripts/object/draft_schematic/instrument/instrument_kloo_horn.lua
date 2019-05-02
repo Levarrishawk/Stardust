@@ -52,7 +52,7 @@ object_draft_schematic_instrument_instrument_kloo_horn = object_draft_schematic_
    size = 1, 
 
    xpType = "dance", 
-   xp = 500, 
+   xp = 6416, -- Boosted xp for Dancer craft grind expediency.
 
    assemblySkill = "instrument_assembly", 
    experimentingSkill = "general_experimentation", 
