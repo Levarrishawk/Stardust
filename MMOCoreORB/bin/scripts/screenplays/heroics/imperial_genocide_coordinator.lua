@@ -13,36 +13,7 @@ imperial_genocide_coordinator = ScreenPlay:new {
   questItems = {
       quest2 = { template = "object/weapon/ranged/rifle/rifle_ewok_crossbow.iff", displayName = "Ewok Crossbow" },      
     },
-  item1 = {
-    lootGroup = "lothal_track",
-  },
-  item2 = {
-    lootGroup = "",
-  },  
-  item3 = {
-    lootGroup = "",
-  },  
-  item4 = {
-    lootGroup = "",
-  },  
-  item5 = {
-    lootGroup = "",
-  },  
-  item6 = {
-    lootGroup = "",
-  },  
-  item7 = {
-    lootGroup = "",
-  },  
-  item8 = {
-    lootGroup = "",
-  },  
-  item9 = {
-    lootGroup = "",
-  },  
-  item10 = {
-    lootGroup = "",
-  },    
+ 
 }
 
 registerScreenPlay("imperial_genocide_coordinator", true) --Initialize the screenplay IAW the screenplay include
