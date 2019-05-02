@@ -52,7 +52,7 @@ object_draft_schematic_droid_component_stimpack_dispensor = object_draft_schemat
    size = 1, 
 
    xpType = "crafting_droid_general", 
-   xp = 165, 
+   xp = 5879, -- Boosted xp for DE grind expediency. 
 
    assemblySkill = "droid_assembly", 
    experimentingSkill = "droid_experimentation", 

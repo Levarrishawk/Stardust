@@ -52,7 +52,7 @@ object_draft_schematic_instrument_instrument_mandoviol = object_draft_schematic_
    size = 0, 
 
    xpType = "music", 
-   xp = 500, 
+   xp = 6416, -- Boosted xp for Musician Craft grind expediency. 
 
    assemblySkill = "instrument_assembly", 
    experimentingSkill = "general_experimentation", 

@@ -53,7 +53,7 @@ object_draft_schematic_chemistry_component_liquid_delivery_suspension_advanced =
 	factoryCrateSize = 1000,
 
 	xpType = "medical",
-	xp = 450,
+	xp = 2299, -- Boosted xp for CM/Doc Medical grind expediency. 
 
 	assemblySkill = "medicine_assembly",
 	experimentingSkill = "medicine_experimentation",
