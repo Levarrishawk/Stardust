@@ -8,9 +8,9 @@ donkuwah_common = {
 		{itemTemplate = "donkuwah_bone_armor_segment", weight = 3000000},
 		{itemTemplate = "donkuwah_poison", weight = 3500000},
 		{itemTemplate = "painting_lando_poster", weight = 500000},
-		{itemTemplate = "rifle_ewok_crossbow", weight = 10000},
+		{itemTemplate = "rifle_ewok_crossbow", weight = 2000000},
 		{itemTemplate = "knife_donkuwah", weight = 990000},
-		{groupTemplate = "wearables_common", weight = 2000000},
+		{groupTemplate = "wearables_common", weight = 10000},
 	}
 }
 

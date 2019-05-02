@@ -50,7 +50,7 @@ imperial_genocide_coordinator:addScreen(opt1);
 opt1a = ConvoScreen:new {
   id = "opt1a",
   leftDialog = "",
-  customDialogText = "Kill any Ewok or Dulok you find. Collect their teeth.  Bring the teeth to me in order to requisition certain items.",
+  customDialogText = "Kill any Ewok or Dulok you find. Collect their Crossbows.  Bring the Crossbows to me in order to requisition certain items.",
   stopConversation = "false",
   options = {
     {"What can I requisition?","opt2"},
