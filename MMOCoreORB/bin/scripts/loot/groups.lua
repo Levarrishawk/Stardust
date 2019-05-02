@@ -75,7 +75,7 @@ includeFile("groups/creature/rancor_common.lua")
 includeFile("groups/creature/sharnaff_common.lua")
 includeFile("groups/creature/voritor_lizard_common.lua")
 
-includeFile("groups/creature/ewok_tooth.lua")
+
 
 -- death_watch_bunker sub-folder
 includeFile("groups/death_watch_bunker/death_watch_bunker_art.lua")
@@ -498,4 +498,6 @@ includeFile("groups/buff_droid.lua")
 includeFile("groups/deeds/structure/mustafar_bunker.lua")
 
 -- Xeno
+
+includeFile("groups/creature/ewok_tooth.lua")
 includeFile("groups/furniture/xeno_desk.lua")
