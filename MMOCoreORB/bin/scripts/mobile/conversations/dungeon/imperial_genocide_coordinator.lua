@@ -107,7 +107,7 @@ item3 = ConvoScreen:new {
 imperial_genocide_coordinator:addScreen(item3);
 
 item4 = ConvoScreen:new {
-  id = "item1=4",
+  id = "item4",
   leftDialog = "",
    customDialogText = "Your item has been requisitioned.",
   stopConversation = "true",
@@ -118,7 +118,7 @@ item4 = ConvoScreen:new {
 imperial_genocide_coordinator:addScreen(item4);
 
 item5 = ConvoScreen:new {
-  id = "item1",
+  id = "item5",
   leftDialog = "",
    customDialogText = "Your item has been requisitioned.",
   stopConversation = "true",
@@ -128,71 +128,7 @@ item5 = ConvoScreen:new {
 }
 imperial_genocide_coordinator:addScreen(item5);
 
-item6 = ConvoScreen:new {
-  id = "item6",
-  leftDialog = "",
-   customDialogText = "Your item has been requisitioned.",
-  stopConversation = "true",
-  options = {
-    -- {"Is that why you are standing here staring the palace?","item1"},
-  }
-}
-imperial_genocide_coordinator:addScreen(item6);
 
-item6 = ConvoScreen:new {
-  id = "item6",
-  leftDialog = "",
-   customDialogText = "Your item has been requisitioned.",
-  stopConversation = "true",
-  options = {
-    -- {"Is that why you are standing here staring the palace?","item1"},
-  }
-}
-imperial_genocide_coordinator:addScreen(item6);
-
-item7 = ConvoScreen:new {
-  id = "item7",
-  leftDialog = "",
-   customDialogText = "Your item has been requisitioned.",
-  stopConversation = "true",
-  options = {
-    -- {"Is that why you are standing here staring the palace?","item1"},
-  }
-}
-imperial_genocide_coordinator:addScreen(item7);
-
-item8 = ConvoScreen:new {
-  id = "item8",
-  leftDialog = "",
-   customDialogText = "Your item has been requisitioned.",
-  stopConversation = "true",
-  options = {
-    -- {"Is that why you are standing here staring the palace?","item1"},
-  }
-}
-imperial_genocide_coordinator:addScreen(item8);
-
-item9 = ConvoScreen:new {
-  id = "item9",
-  leftDialog = "",
-   customDialogText = "Your item has been requisitioned.",
-  stopConversation = "true",
-  options = {
-    -- {"Is that why you are standing here staring the palace?","item1"},
-  }
-}
-imperial_genocide_coordinator:addScreen(item9);
-
-item10 = ConvoScreen:new {
-  id = "item10",
-  leftDialog = "",
-   customDialogText = "Your item has been requisitioned.",
-  stopConversation = "true",
-  options = {
-    -- {"Is that why you are standing here staring the palace?","item1"},
-  }
-}
-imperial_genocide_coordinator:addScreen(item10);
 
 
 addConversationTemplate("imperial_genocide_coordinator", imperial_genocide_coordinator);
