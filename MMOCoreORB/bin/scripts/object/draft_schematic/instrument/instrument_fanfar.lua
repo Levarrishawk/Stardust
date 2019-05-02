@@ -52,7 +52,7 @@ object_draft_schematic_instrument_instrument_fanfar = object_draft_schematic_ins
    size = 1, 
 
    xpType = "entertainer_healing", 
-   xp = 500, 
+   xp = 3066, -- Boosted xp for Ent Healing Grind expediency.
 
    assemblySkill = "instrument_assembly", 
    experimentingSkill = "general_experimentation", 
