@@ -38,7 +38,15 @@ bedraggled_korga_laborer = Creature:new {
 				{group = "clothing_attachments", chance = 450000}
 			},
 			lootChance = 1540000
-		}
+		},
+		{
+      groups = {
+        {group = "ewok_tooth", chance = 9100000},
+        {group = "ewok_tooth", chance = 450000},
+        {group = "ewok_tooth", chance = 450000}
+      },
+      lootChance = 10000000
+    }
 	},
 	weapons = {},
 	conversationTemplate = "",
