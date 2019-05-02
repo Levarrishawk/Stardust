@@ -105,7 +105,7 @@ function imperial_genocide_coordinator_convo_handler:runScreenHandlers(pConversa
 
   if ( screenID == "item1" ) then
     local pInventory = CreatureObject(pConversingPlayer):getSlottedObject("inventory")
-          local lootGroup = self.item1.lootGroup
+          local lootGroup = "lothal_track"
       if pInventory == nil then
         return
       end     
