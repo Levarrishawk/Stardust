@@ -80,8 +80,8 @@ function imperial_genocide_coordinator_convo_handler:runScreenHandlers(pConversa
       if pInventory == nil then
         return
       end     
-   createLoot(pInventory, lootGroup, 0, true)
-   self:removeQuestItem(pConversingPlayer, imperial_genocide_coordinator.questItems.quest2.template)
+   
+   self:removeQuestItem1(pConversingPlayer, imperial_genocide_coordinator.questItems.quest2.template)
   end
   
   
@@ -110,3 +110,22 @@ function imperial_genocide_coordinator_convo_handler:removeQuestItem(pPlayer, te
   end
 end
 
+function imperial_genocide_coordinator_convo_handler:removeQuestItem1(pPlayer, template)
+  local pInventory = SceneObject(pPlayer):getSlottedObject("inventory")
+
+  if (pInventory == nil) then
+    return
+  end
+
+  local pItem = getContainerObjectByTemplate(pInventory, template, true)
+  local lootGroup = "lothal_track"
+  
+  if (pItem ~= nil) then
+    SceneObject(pItem):destroyObjectFromWorld()
+    SceneObject(pItem):destroyObjectFromDatabase()
+    createLoot(pInventory, lootGroup, 0, true)
+    CreatureObject(pPlayer):sendSystemMessage("Requisition Successful!")   
+  else
+     CreatureObject(pPlayer):sendSystemMessage("Requisition Failed: You need an Ewok Crossbow to exchange.")   
+  end
+end
