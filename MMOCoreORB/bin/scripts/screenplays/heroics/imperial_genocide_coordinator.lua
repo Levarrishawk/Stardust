@@ -14,7 +14,7 @@ imperial_genocide_coordinator = ScreenPlay:new {
       quest2 = { template = "object/weapon/ranged/rifle/rifle_ewok_crossbow.iff", displayName = "Ewok Crossbow" },      
     },
   item1 = {
-    lootGroup = "xeno_desk",
+    lootGroup = "lothal_track",
   },
   item2 = {
     lootGroup = "",

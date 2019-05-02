@@ -64,7 +64,7 @@ opt2 = ConvoScreen:new {
    customDialogText = "Here is a list of the available items.",
   stopConversation = "false",
   options = {
-     {"Xeno Desk","item1"},
+     {"BARC Speeder","item1"},
      {"Xeno Desk Lamp","item2"},
      {"Xeno Throne","item3"},
      {"Xeno Couch","item4"},
