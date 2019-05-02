@@ -496,3 +496,6 @@ includeFile("groups/buff_droid.lua")
 
 -- Mustafarian Bunker
 includeFile("groups/deeds/structure/mustafar_bunker.lua")
+
+-- Xeno
+includeFile("groups/furniture/xeno_desk.lua")

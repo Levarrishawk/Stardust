@@ -1665,3 +1665,6 @@ includeFile("items/furniture/vader_pod.lua") --
 -- Buff Droid
 includeFile("items/buff_droid.lua") --
 
+-- Xeno
+includeFile("items/furniture/xeno_desk.lua") 
+
