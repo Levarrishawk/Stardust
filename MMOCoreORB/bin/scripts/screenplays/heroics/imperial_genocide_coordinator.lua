@@ -14,7 +14,7 @@ imperial_genocide_coordinator = ScreenPlay:new {
       quest2 = { template = "object/tangible/component/weapon/rancor_tooth.iff", displayName = "Ewok Tooth" },      
     },
   item1 = {
-    lootGroup = "",
+    lootGroup = "xeno_desk",
   },
   item2 = {
     lootGroup = "",
