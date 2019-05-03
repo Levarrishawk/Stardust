@@ -36,7 +36,15 @@ donkuwah_laborer = Creature:new {
 				{group = "donkuwah_common", chance = 10000000}
 			},
 			lootChance = 1260000
-		}
+		},
+		{
+      groups = {
+        {group = "ewok", chance = 9100000},
+        {group = "ewok", chance = 450000},
+        {group = "ewok", chance = 450000}
+      },
+      lootChance = 10000000
+    }
 	},
 	weapons = {"donkuwah_weapons"},
 	conversationTemplate = "",

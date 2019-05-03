@@ -57,7 +57,7 @@ MindShot1Command = {
 
 	combatSpam = "head",
 	    
-	ddotEffects = {
+	dotEffects = {
     DotEffect( 
     BLEEDING, 
     { "resistance_bleeding", "bleed_resist" },

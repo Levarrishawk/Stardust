@@ -37,7 +37,15 @@ eerie_donkuwah_spiritmaster = Creature:new {
 				{group = "wearables_uncommon", chance = 1000000},
 			},
 			lootChance = 1780000
-		}
+		},
+		{
+      groups = {
+        {group = "ewok", chance = 9100000},
+        {group = "ewok", chance = 450000},
+        {group = "ewok", chance = 450000}
+      },
+      lootChance = 10000000
+    }
 	},
 	weapons = {"donkuwah_weapons"},
 	conversationTemplate = "",

@@ -849,3 +849,6 @@ includeFile("heroics/tansarii_exit_teleporter.lua")
 
 -- Abandoned Warren
 includeFile("heroics/warren_information_officer.lua")
+
+-- Ewok Genocide
+includeFile("heroics/imperial_genocide_coordinator.lua")
