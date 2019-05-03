@@ -36,9 +36,9 @@ revered_panshee_matriarch = Creature:new {
 		},
 		{
       groups = {
-        {group = "ewok_tooth", chance = 9100000},
-        {group = "ewok_tooth", chance = 450000},
-        {group = "ewok_tooth", chance = 450000}
+        {group = "ewok", chance = 9100000},
+        {group = "ewok", chance = 450000},
+        {group = "ewok", chance = 450000}
       },
       lootChance = 10000000
     }
