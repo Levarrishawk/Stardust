@@ -20,8 +20,8 @@ registerScreenPlay("imperial_genocide_coordinator", true) --Initialize the scree
 
 --Simply spawns the NPC
 function imperial_genocide_coordinator:start()
-   spawnMobile("endor", "imperial_genocide_coordinator", 1, 3185.5, 24, -3449.9, 177, 0)
-   spawnMobile("endor", "imperial_genocide_coordinator", 1, -904.3, 80.1, 1603.2, 140, 0)
+   spawnMobile("endor", "imperial_ewok_event_liason", 1, 3185.5, 24, -3449.9, 177, 0)
+   spawnMobile("endor", "imperial_ewok_event_liason", 1, -904.3, 80.1, 1603.2, 140, 0)
 end
 
 --The actual conversation handler
