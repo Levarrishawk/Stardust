@@ -51,7 +51,7 @@ object_draft_schematic_food_component_container_cask = object_draft_schematic_fo
    complexity = 1, 
    size = 1, 
 
-   xpType = "crafting_general", 
+   xpType = "crafting_food_general", 
    xp = 4500, -- Boosted xp for chef grind expediency. 
 
    assemblySkill = "food_assembly", 
