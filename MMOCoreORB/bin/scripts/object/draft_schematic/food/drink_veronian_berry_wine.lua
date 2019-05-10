@@ -52,7 +52,7 @@ object_draft_schematic_food_drink_veronian_berry_wine = object_draft_schematic_f
    size = 1, 
 
    xpType = "crafting_food_general", 
-   xp = 400, 
+   xp = 3920, -- Boosted xp for chef grind expediency
 
    assemblySkill = "food_assembly", 
    experimentingSkill = "food_experimentation", 
