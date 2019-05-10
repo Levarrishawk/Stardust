@@ -52,7 +52,7 @@ object_draft_schematic_food_component_container_cask = object_draft_schematic_fo
    size = 1, 
 
    xpType = "crafting_general", 
-   xp = 450, 
+   xp = 450, --Reverted to original figures
 
    assemblySkill = "food_assembly", 
    experimentingSkill = "food_experimentation", 
