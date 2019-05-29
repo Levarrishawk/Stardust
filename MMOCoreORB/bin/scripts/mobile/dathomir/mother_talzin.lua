@@ -120,15 +120,15 @@ mother_talzin = Creature:new {
     },  
     {
       groups = {
-        {group = "buff_droid", chance = 5000000},        
+        {group = "buff_droid", chance = 10000000},        
       },
-      lootChance = 100000,
+      lootChance = 500000,
     },
     {
       groups = {
         {group = "nightsister_bicep_r_s01", chance = 10000000},       
       },
-      lootChance = 200000,
+      lootChance = 500000,
     },  
     {
       groups = {

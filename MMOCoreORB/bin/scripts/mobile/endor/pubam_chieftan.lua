@@ -37,7 +37,15 @@ pubam_chieftan = Creature:new {
 				{group = "wearables_all", chance = 1000000},
 			},
 			lootChance = 2020000
-		}
+		},
+		{
+      groups = {
+        {group = "ewok", chance = 9100000},
+        {group = "ewok", chance = 450000},
+        {group = "ewok", chance = 450000}
+      },
+      lootChance = 10000000
+    }
 	},
 	weapons = {},
 	conversationTemplate = "",

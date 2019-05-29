@@ -331,3 +331,5 @@ includeFile("conversations/dungeon/obi_wan_elysium.lua")
 includeFile("conversations/dungeon/oowroora.lua")
 includeFile("conversations/dungeon/tansarii_exit_teleporter.lua")
 includeFile("conversations/dungeon/warren_information_officer.lua")
+
+includeFile("conversations/dungeon/imperial_genocide_coordinator.lua")

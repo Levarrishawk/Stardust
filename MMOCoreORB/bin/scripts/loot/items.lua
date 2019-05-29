@@ -227,6 +227,8 @@ includeFile("items/creature/voritor_lizard_hide_segment.lua")
 includeFile("items/creature/voritor_lizard_scales.lua")
 includeFile("items/creature/woolamander_harrower_bone_fragments.lua")
 
+
+
 -- death_watch_bunker sub-folder
 includeFile("items/death_watch_bunker/alum_gel_packet.lua")
 includeFile("items/death_watch_bunker/art_crate.lua")
@@ -1662,4 +1664,9 @@ includeFile("items/furniture/vader_pod.lua") --
 
 -- Buff Droid
 includeFile("items/buff_droid.lua") --
+
+-- Xeno
+includeFile("items/creature/ewok_tooth.lua")
+
+includeFile("items/furniture/xeno_desk.lua") 
 

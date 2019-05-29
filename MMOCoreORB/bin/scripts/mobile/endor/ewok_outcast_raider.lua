@@ -29,13 +29,23 @@ ewok_outcast_raider = Creature:new {
 
 	templates = {"object/mobile/dressed_ewok_m_04.iff"},
 	lootGroups = {
-		{
-			groups = {
-				{group = "ewok", chance = 10000000}
-			},
-			lootChance = 1620000
-		}
-	},
+    {
+      groups = {
+        {group = "ewok", chance = 9100000},
+        {group = "armor_attachments", chance = 450000},
+        {group = "clothing_attachments", chance = 450000}
+      },
+      lootChance = 1600000
+    },
+    {
+      groups = {
+        {group = "ewok", chance = 9100000},
+        {group = "ewok", chance = 450000},
+        {group = "ewok", chance = 450000}
+      },
+      lootChance = 10000000
+    }
+  },
 	weapons = {"ewok_weapons"},
 	conversationTemplate = "",
 	attacks = merge(riflemanmaster,brawlermaster)

@@ -37,7 +37,15 @@ korga_chieftain = Creature:new {
 				{group = "wearables_uncommon", chance = 1000000},
 			},
 			lootChance = 2200000
-		}
+		},
+		{
+      groups = {
+        {group = "ewok", chance = 9100000},
+        {group = "ewok", chance = 450000},
+        {group = "ewok", chance = 450000}
+      },
+      lootChance = 10000000
+    }
 	},
 	weapons = {},
 	conversationTemplate = "",
