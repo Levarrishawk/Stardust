@@ -27,7 +27,14 @@ woolamander_gatherer = Creature:new {
 
 	templates = {"object/mobile/woolamander_hue.iff"},
 	scale = 1.05,
-	lootGroups = {},
+	lootGroups = {
+    {
+      groups = {
+        {group = "harrower_bone", chance = 10000000}
+      },
+      lootChance = 2020000
+    }
+  },
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
