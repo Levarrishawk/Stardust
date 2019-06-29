@@ -48,8 +48,8 @@ end
  
 function kaas_abandon_separ_facility_necrosis:despawnBoss(pBoss, pPlayer)
       forcePeace(pBoss)
-        spHelper.destroy(readData("kaasboss1"),true)
-      writeData("kaas_abandon_separ_facility_necrosis:spawnState", 0)
+       -- spHelper.destroy(readData("kaasboss1"),true)
+      --writeData("kaas_abandon_separ_facility_necrosis:spawnState", 0)
     return 0
 end
 
