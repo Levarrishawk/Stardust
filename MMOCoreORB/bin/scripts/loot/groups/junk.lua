@@ -25,7 +25,7 @@ junk = {
 		{itemTemplate = "hyperdrive_part", weight = 285500},
 		{itemTemplate = "ledger", weight = 285500},
 		{itemTemplate = "locked_briefcase", weight = 285500},
-		{itemTemplate = "locked_container", weight = 285500},
+		{itemTemplate = "locked_container", weight = 585500},
 		{itemTemplate = "loudspeaker", weight = 285500},
 		{itemTemplate = "palm_frond", weight = 285500},
 		{itemTemplate = "photographic_image", weight = 285500},
