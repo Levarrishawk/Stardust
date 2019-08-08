@@ -45,7 +45,7 @@ object_tangible_wearables_armor_bone_armor_bone_s01_chest_plate = object_tangibl
   templateType = ARMOROBJECT,
   
   	objectMenuComponent = "ArmorObjectMenuComponent", 
-	objectMenuComponent = "ArmorObjectMenuComponent", 
+	objectMenuComponent = "ArmorObjectMenuComponent1", 
 
   playerRaces = { "object/creature/player/bothan_male.iff",
         "object/creature/player/bothan_female.iff",
