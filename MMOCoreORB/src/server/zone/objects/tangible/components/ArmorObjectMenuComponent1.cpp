@@ -10,7 +10,7 @@
 #include "server/zone/objects/player/PlayerObject.h"
 #include "server/zone/objects/building/BuildingObject.h"
 #include "server/zone/objects/player/sui/colorbox/SuiColorBox.h"
-#include "ArmorObjectMenuComponent.h"
+#include "ArmorObjectMenuComponent1.h"
 #include "server/zone/packets/object/ObjectMenuResponse.h"
 #include "server/zone/objects/player/sui/callbacks/ColorArmorSuiCallback.h"
 #include "server/zone/ZoneServer.h"
