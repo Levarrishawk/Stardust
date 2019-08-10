@@ -775,7 +775,6 @@ bool LootManagerImplementation::createNamedLoot(SceneObject* container, const St
 	return true;
 }
 
-
 bool LootManagerImplementation::createLootSet(SceneObject* container, const String& lootGroup, int level, bool maxCondition, int setSize) {
 	Reference<LootGroupTemplate*> group = lootGroupMap->getLootGroupTemplate(lootGroup);
 
