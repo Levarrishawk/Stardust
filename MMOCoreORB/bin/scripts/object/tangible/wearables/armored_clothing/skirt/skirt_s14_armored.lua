@@ -1,6 +1,8 @@
 object_tangible_wearables_armored_clothing_skirt_skirt_s14_armored = object_tangible_wearables_armored_clothing_skirt_shared_skirt_s14_armored:new {
   templateType = ARMOROBJECT,
-
+	
+	objectMenuComponent = "ArmorObjectMenuComponent", 
+	
   playerRaces = { "object/creature/player/bothan_male.iff",
     "object/creature/player/bothan_female.iff",
     "object/creature/player/human_male.iff",

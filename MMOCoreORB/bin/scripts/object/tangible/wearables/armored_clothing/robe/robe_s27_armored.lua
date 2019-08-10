@@ -1,5 +1,7 @@
 object_tangible_wearables_armored_clothing_robe_robe_s27_armored = object_tangible_wearables_armored_clothing_robe_shared_robe_s27_armored:new {
 	templateType = ARMOROBJECT,
+		
+	objectMenuComponent = "ArmorObjectMenuComponent", 
 	
 	playerRaces = { "object/creature/player/bothan_male.iff",
 				"object/creature/player/bothan_female.iff",

@@ -1,5 +1,7 @@
 object_tangible_wearables_armored_clothing_jacket_jacket_s16_armored = object_tangible_wearables_armored_clothing_jacket_shared_jacket_s16_armored:new {
 	templateType = ARMOROBJECT,
+		
+	objectMenuComponent = "ArmorObjectMenuComponent", 
 	
 	playerRaces = { "object/creature/player/bothan_male.iff",
 				"object/creature/player/bothan_female.iff",
