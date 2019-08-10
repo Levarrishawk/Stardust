@@ -42,6 +42,9 @@
 
 
 object_tangible_wearables_bustier_bustier_s02 = object_tangible_wearables_bustier_shared_bustier_s02:new {
+		
+	objectMenuComponent = "ArmorObjectMenuComponent", 
+	
 	playerRaces = { "object/creature/player/bothan_female.iff",
 				"object/creature/player/human_female.iff",
 				"object/creature/player/moncal_female.iff",

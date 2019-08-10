@@ -42,6 +42,9 @@
 
 
 object_tangible_wearables_dress_dress_s13 = object_tangible_wearables_dress_shared_dress_s13:new {
+		
+	objectMenuComponent = "ArmorObjectMenuComponent", 
+	
 	playerRaces = { "object/creature/player/bothan_male.iff",
 				"object/creature/player/human_male.iff",
 				"object/creature/player/ithorian_male.iff",

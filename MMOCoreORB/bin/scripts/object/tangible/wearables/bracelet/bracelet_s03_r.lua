@@ -42,7 +42,10 @@
 
 
 object_tangible_wearables_bracelet_bracelet_s03_r = object_tangible_wearables_bracelet_shared_bracelet_s03_r:new {
-	playerRaces = { "object/creature/player/bothan_male.iff",
+		
+	objectMenuComponent = "ArmorObjectMenuComponent", 
+	
+		playerRaces = { "object/creature/player/bothan_male.iff",
 				"object/creature/player/bothan_female.iff",
 				"object/creature/player/human_male.iff",
 				"object/creature/player/human_female.iff",
