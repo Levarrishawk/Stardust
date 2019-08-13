@@ -1,5 +1,5 @@
 war_brackaset = Creature:new {
-	objectName = "@mob/creature_names:war_brackaset",
+	objectName = "",
 	customName = "a War Brackaset"
 	socialGroup = "brackaset",
 	faction = "",
