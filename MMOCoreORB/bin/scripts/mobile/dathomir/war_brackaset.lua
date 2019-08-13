@@ -45,4 +45,4 @@ war_brackaset = Creature:new {
 	}
 }
 
-CreatureTemplates:addCreatureTemplate(brackaset, "brackaset")
+CreatureTemplates:addCreatureTemplate(war_brackaset, "war_brackaset")
