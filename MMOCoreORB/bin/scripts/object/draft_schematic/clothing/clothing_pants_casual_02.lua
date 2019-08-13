@@ -63,10 +63,10 @@ object_draft_schematic_clothing_clothing_pants_casual_02 = object_draft_schemati
    customizationDefaults = {65, 95},
 
    ingredientTemplateNames = {"craft_clothing_ingredients_n","craft_clothing_ingredients_n",  "craft_clothing_ingredients_n", "craft_clothing_ingredients_n", "craft_clothing_ingredients_n"},
-   ingredientTitleNames = {"shell", "binding_and_hardware", "colorizable_cloth_panel", "enhancement_slot_1", "enhancement_slot_2"},
+   ingredientTitleNames = {"shell", "binding_and_hardware", "colorizable_cloth_panel", "enhancement one", "enhancement two"},
    ingredientSlotType = {0, 0, 0, 3, 3},
    resourceTypes = {"hide", "chemical", "hide","object/tangible/component/clothing/shared_synthetic_cloth.iff", "object/tangible/component/clothing/shared_synthetic_cloth.iff"},
-   resourceQuantities = {150, 20, 250, 1, 1},
+   resourceQuantities = {150, 20, 250, 3, 3},
    contribution = {100, 100, 100, 100, 100},
 
 
