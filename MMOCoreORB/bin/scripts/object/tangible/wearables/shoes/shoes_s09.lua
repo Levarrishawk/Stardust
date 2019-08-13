@@ -42,6 +42,9 @@
 
 
 object_tangible_wearables_shoes_shoes_s09 = object_tangible_wearables_shoes_shared_shoes_s09:new {
+			
+	objectMenuComponent = "ArmorObjectMenuComponent", 
+	
 	playerRaces = { "object/creature/player/bothan_female.iff",
 				"object/creature/player/human_female.iff",
 				"object/creature/player/moncal_female.iff",

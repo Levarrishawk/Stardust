@@ -42,6 +42,9 @@
 
 
 object_tangible_wearables_shirt_shirt_s12 = object_tangible_wearables_shirt_shared_shirt_s12:new {
+			
+	objectMenuComponent = "ArmorObjectMenuComponent", 
+	
 	playerRaces = { "object/creature/player/bothan_female.iff",
 				"object/creature/player/human_female.iff",
 				"object/creature/player/moncal_female.iff",

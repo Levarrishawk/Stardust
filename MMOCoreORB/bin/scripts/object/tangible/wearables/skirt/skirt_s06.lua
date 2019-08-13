@@ -42,6 +42,9 @@
 
 
 object_tangible_wearables_skirt_skirt_s06 = object_tangible_wearables_skirt_shared_skirt_s06:new {
+			
+	objectMenuComponent = "ArmorObjectMenuComponent", 
+	
 	playerRaces = { "object/creature/player/bothan_female.iff",
 				"object/creature/player/human_female.iff",
 				"object/creature/player/moncal_female.iff",
