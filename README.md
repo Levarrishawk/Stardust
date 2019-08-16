@@ -21,8 +21,11 @@ To not share what we do, completely, and totally as the SWGEmu team does.   Well
 This modified Core3 Repository utilizes the ModTheGalaxy Client TRE Files instead of the stock TRE Files included with the retail client. They are available for download from modthegalaxy.com, or directly from https://mega.nz/#F!fw0EzZ4I!RfRwyqE859Ad3kGlQv7T4Q
 
 Additionally there are specific TRE files native only to Stardust that are distributed through our launcher utility.  Download them from our website at www.stardust-swg.com  or directly from here:
+
 Stardust_01.tre  https://drive.google.com/open?id=1S6ZbmLkPhwrhzpryeR-5x4MLCAwBZrSG
+
 Stardust_02.tre  https://drive.google.com/open?id=1GEGUyQGN5dZgfg7Ili7b-tOLA4oZrq9w
+
 Stardust_03.tre  https://drive.google.com/open?id=1JaI1FE-xBYNeQvh6pPiv5EtUthDhlNiM
 
 ## PublicEngine ##
