@@ -20,12 +20,22 @@ To not share what we do, completely, and totally as the SWGEmu team does.   Well
 
 This modified Core3 Repository utilizes the ModTheGalaxy Client TRE Files instead of the stock TRE Files included with the retail client. They are available for download from modthegalaxy.com, or directly from https://mega.nz/#F!fw0EzZ4I!RfRwyqE859Ad3kGlQv7T4Q
 
-Additionally there are specific TRE files native only to Stardust that are distributed through our launcher utility.  Download them from our website at www.stardust-swg.com
+Additionally there are specific TRE files native only to Stardust that are distributed through our launcher utility.  Download them from our website at www.stardust-swg.com  or directly from here:
+
+Stardust_01.tre  https://drive.google.com/open?id=1S6ZbmLkPhwrhzpryeR-5x4MLCAwBZrSG
+
+Stardust_02.tre  https://drive.google.com/open?id=1GEGUyQGN5dZgfg7Ili7b-tOLA4oZrq9w
+
+Stardust_03.tre  https://drive.google.com/open?id=1JaI1FE-xBYNeQvh6pPiv5EtUthDhlNiM
+
+## PublicEngine ##
+
+Stardust is dependent on a specific version of SWGEmu's PublicEngine and will not function with later versions of it in an as-is state.    A fork of this version is available at https://github.com/Levarrishawk/PublicEngine
 
 ## Pre-Built Development Environment ##
 We have packaged together a pre-built Virtual Machine. based on the ZonamaDev VM for Third Party Developers to contribute to this project for use in both testing and development, or if they so chose to start their own server based on Stardust.   It is already set to work with this repository.    
 
-Disclaimer:  Portions of the EmuYoda application will break this VM.   I do not suggest using them for anything.
+Disclaimer:  Portions of the EmuYoda application will break this VM by auto-updating the engine version.   I do not suggest using them for anything.
 
 Bear in mind, we will not provide support for anyone who creates their own server based on this work.   With that said, here is the download link.
 
