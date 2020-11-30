@@ -54,6 +54,16 @@ void FrsManagerImplementation::initialize() {
 		voteStatusTask->schedule(VOTE_STATUS_TICK - miliDiff);
 }
 
+void FrsManagerImplementation::cancelTasks() {
+	if (voteStatusTask) {
+		voteStatusTask->cancel();
+	}
+
+	if (rankMaintenanceTask) {
+		rankMaintenanceTask->cancel();
+	}
+}
+
 void FrsManagerImplementation::loadFrsData() {
 	info("Loading frs manager data from frsmanager.db");
 
@@ -760,6 +770,15 @@ void FrsManagerImplementation::adjustFrsExperience(CreatureObject* player, int a
 		return;
 
 	if (amount > 0) {
+		
+		if (ghost->hasCappedExperience("force_rank_xp"))
+                {
+                	StringIdChatParameter message("base_player", "prose_hit_xp_cap"); //You have achieved your current limit for %TO experience.
+                	message.setTO("exp_n", "force_rank_xp");
+                	player->sendSystemMessage(message);
+                	return;
+                }
+		
 		ghost->addExperience("force_rank_xp", amount, true);
 
 		if (sendSystemMessage) {
@@ -1731,6 +1750,50 @@ void FrsManagerImplementation::runChallengeVoteUpdate() {
 void FrsManagerImplementation::runVotingUpdate(FrsRank* rankData) {
 	short councilType = rankData->getCouncilType();
 	int rank = rankData->getRank();
+	auto zoneServer = this->zoneServer.get();
+
+	SortedVector<uint64>* rankList = rankData->getPlayerList();
+	ManagedReference<PlayerManager*> playerManager = zoneServer->getPlayerManager();
+
+	for (int j = rankList->size() - 1; j >= 0; j--) {
+		uint64 playerID = rankList->get(j);
+		String playerName = playerManager->getPlayerName(playerID);
+
+		if (playerName.isEmpty()) {
+			rankData->removeFromPlayerList(playerID);
+			continue;
+		}
+
+		ManagedReference<CreatureObject*> player = zoneServer->getObject(rankList->get(j)).castTo<CreatureObject*>();
+
+		if (player == nullptr) {
+			rankData->removeFromPlayerList(playerID);
+			continue;
+		}
+
+		PlayerObject* ghost = player->getPlayerObject();
+
+		if (ghost == nullptr) {
+			rankData->removeFromPlayerList(playerID);
+			continue;
+		}
+
+		FrsData* playerData = ghost->getFrsData();
+		int playerRank = playerData->getRank();
+		int playerCouncil = playerData->getCouncilType();
+
+		if (playerCouncil != councilType) {
+			rankData->removeFromPlayerList(playerID);
+		} else if (playerRank != rank) {
+			ManagedReference<FrsManager*> strongMan = _this.getReferenceUnsafeStaticCast();
+			ManagedReference<CreatureObject*> strongRef = player->asCreatureObject();
+
+			Core::getTaskManager()->executeTask([strongMan, strongRef] () {
+				Locker locker(strongRef);
+				strongMan->validatePlayerData(strongRef);
+			}, "ValidatePlayerTask");
+		}
+	}
 
 	ChatManager* chatManager = zoneServer->getChatManager();
 
@@ -2696,7 +2759,16 @@ void FrsManagerImplementation::sendRankPlayerList(CreatureObject* player, int co
 		if (playerName.isEmpty())
 			continue;
 
+		if (ghost->isPrivileged())
+			playerName += " (" + String::valueOf(playerID) + ")";
+
 		box->addMenuItem(playerName);
+	}
+
+	int availSlots = getAvailableRankSlots(rankData);
+
+	for (int i = 0; i < availSlots; i++) {
+		box->addMenuItem("Open Seat");
 	}
 
 	ghost->addSuiBox(box);
@@ -2740,7 +2812,7 @@ void FrsManagerImplementation::handleArenaChallengeViewSui(CreatureObject* playe
 	if (getTotalOpenArenaChallenges(rank) <= 0)
 		return;
 
-	VectorMap<uint64, ManagedReference<ArenaChallengeData*> >* arenaChallenges = managerData->getArenaChallenges();
+	const VectorMap<uint64, ManagedReference<ArenaChallengeData*> >* arenaChallenges = managerData->getArenaChallenges();
 
 	clocker.release();
 

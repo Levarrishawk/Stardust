@@ -16,6 +16,7 @@ class ChallengeVoteData extends ManagedObject {
 	protected Time challengeVoteStart;
 	
 	unsigned long playerID;
+	unsigned long challengerID;
 	int playerRank;
 	int status;
 	
