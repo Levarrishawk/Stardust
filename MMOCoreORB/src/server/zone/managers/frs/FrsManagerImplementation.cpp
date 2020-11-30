@@ -54,6 +54,7 @@ void FrsManagerImplementation::initialize() {
 		voteStatusTask->schedule(VOTE_STATUS_TICK - miliDiff);
 }
 
+/*
 void FrsManagerImplementation::cancelTasks() {
 	if (voteStatusTask) {
 		voteStatusTask->cancel();
@@ -63,6 +64,7 @@ void FrsManagerImplementation::cancelTasks() {
 		rankMaintenanceTask->cancel();
 	}
 }
+*/   // Un-needed statement from adaptation of later Core3 commits.
 
 void FrsManagerImplementation::loadFrsData() {
 	info("Loading frs manager data from frsmanager.db");
