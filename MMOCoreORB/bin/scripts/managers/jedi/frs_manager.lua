@@ -14,7 +14,7 @@ voteChallengeDuration = 604800000 -- 7 days
 
 
 arenaOpenInterval = 3600000 -- 60 mins   -- 5400000 / 90 mins default
-arenaClosedInterval = 3600000 -- 60 mins  -- 30 hours / 108000000 default
+arenaClosedInterval = 3600000 -- -- 60 mins  -- 30 hours / 108000000 default
 arenaChallengeDuration = 3600000 -- 60 mins
 arenaChallengeCooldown = 90000000 -- 25 hours
 
